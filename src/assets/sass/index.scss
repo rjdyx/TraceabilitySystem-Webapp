@@ -1,0 +1,14 @@
+// Core variables , minxins , % and function
+@import "variables";
+@import "mixins";
+@import "function";
+@import "percent";
+
+// Reset and dependencies
+@import "public/reset";
+// @import "public/base";
+
+//转为rem函数用法
+//body {
+//  width: pxToRem(1000);
+//}

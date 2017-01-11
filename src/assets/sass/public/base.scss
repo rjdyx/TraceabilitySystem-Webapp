@@ -1,0 +1,226 @@
+html, body{
+	height: 100%;
+	font-size: $baseFontSize;
+	overflow-x: hidden;
+}
+
+#{$comonElements} {
+	box-sizing: border-box;
+}
+
+/*confirm black barrier*/
+.black-layer {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 19920219;
+}
+
+/* table list */
+.table-list {
+  width: 100%;
+    margin-bottom: pxToRem(63);
+  text-align: center;
+  table-layout:fixed;
+
+  .list-head {
+    background-color: #eaeaea;
+
+    .list-head-th {
+
+      th {
+        height: pxToRem(41);
+        font-weight: normal;
+
+        &:first-child {
+          //padding-left: pxToRem(14);
+        }
+      }
+
+    }
+
+  }
+
+  .list-body {
+
+    .list-body-tr {
+      height: pxToRem(41);
+    }
+
+    .list-body-tr-event {
+      background-color: #f9f9f9;
+    }
+
+  }
+
+  .list-foot {
+    tr {
+      height: pxToRem(39);
+      background-color: #eaeaea;
+      border-top: 1px solid #d2d2d2;
+
+      .btn-del {
+        float: left;
+        width: pxToRem(100);
+        height: pxToRem(31);
+        margin: pxToRem(5) 0;
+        background-color: #009acb;
+        color: white;
+        border: 0;
+      }
+    }
+  }
+}
+
+/* new/edit pop plane */
+.form-pop {
+
+  margin-top: pxToRem(6);
+
+  input.input-area {
+    width: 45%;
+  }
+
+  .area_unit {
+    float: left;
+    width: 20%;
+    height: pxToRem(39);
+    line-height:pxToRem(39);
+    border: 0;
+    border-top: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    position: relative;
+    text-align:left
+  }
+  .arrow {
+    position: absolute;
+    top:pxToRem(10);
+    right:0;
+  }
+
+  &>div {
+    width: 97%;
+    margin: 0 auto;
+
+    span {
+      display: inline-block;
+      width: 100%;
+      padding: 7px;
+      border: 1px solid #d4d4d4;
+      color: #F44336;
+      text-align: initial;
+    }
+  }
+
+  .label-tit {
+    float: left;
+    display: inline-block;
+    width: 35%;
+    height:pxToRem(39);
+    border: 1px solid #d4d4d4;
+    border-right: 0;
+    border-bottom: 0;
+    padding: pxToRem(7);
+    box-sizing: border-box;
+    text-align:center
+  }
+
+  .input-pop {
+    float: left;
+    display: inline-block;
+    width: 65%;
+    height:pxToRem(39);
+    border: 1px solid #d4d4d4;
+    border-bottom: 0;
+    padding: pxToRem(7);
+    box-sizing: border-box;
+    position: relative;
+    text-align:center
+  }
+
+  .footer {
+
+	  .footer-r {
+
+	    float: left;
+	    width: 50%;
+	    height: pxToRem(39);
+	    box-sizing: border-box;
+	    margin-bottom: pxToRem(6);
+
+	    &:first-child {
+	      button {
+	        border-right: 0;
+	      }
+	    }
+
+	    button {
+	      width: 100%;
+	      height: 100%;
+	      background-color: white;
+	      border: 1px solid #d4d4d4;
+	    }
+	  }
+	}
+}
+
+/* pop-area-unit */
+.maskLayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    z-index:100;
+    .list{
+      position: fixed;
+      bottom:0;
+      left: 0;
+      width: 100%;
+      z-index:200;
+    }
+    ul{
+      max-height:pxToRem(200);
+      overflow: hidden;
+      background:#EAEAEA;
+    }
+    ul li{
+      border-bottom:1px solid #CDCDCD;
+      width: 100%;
+      height:pxToRem(50);
+      line-height: pxToRem(50);
+      color: #6B6A6B;
+      text-align:center;
+    }
+    .title{
+       width: 100%;
+        height:pxToRem(50);
+        line-height: pxToRem(50);
+        background-color: #009ACB;
+        color: #fff;
+        text-align:center; 
+    }
+  }
+
+/* paginator outside module */
+.paginator-module {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: white;
+    box-shadow: 0 0 10px 0 #9E9E9E;
+}
+
+
+/* nprogress */
+@import '../../../node_modules/nprogress/nprogress.css';
+div#nprogress .bar {
+    height: 3px;
+    background: #4CAF50;
+}

@@ -1,0 +1,396 @@
+/**
+ * 果蔬档案新增/编辑组件
+ * @description 
+ * @author 苏锐佳
+ * @date 2016/12/14
+ * 
+ * Props:
+ * 
+ * @param  plant 
+ * 类型：Object
+ * 是否必填：false
+ * 默认值：{}
+ * 描述：果蔬信息对象
+ * 
+ * @param  edit 
+ * 类型：Boolean
+ * 是否必填：false
+ * 默认值：false
+ * 描述：表明此组件是用于新增还是编辑，true表示编辑，false表示新增
+ * 
+ * 
+ * 
+ * Events:
+ * 
+ * @function closeNew
+ * 返回：无
+ * 必用：true
+ * 描述：隐藏新增组件
+ * 
+ * @function closeEdit
+ * 返回：无
+ * 必用：true
+ * 描述：隐藏编辑组件
+ * 
+ * @function callback
+ * 返回：plant对象
+ * 必用：true
+ * 描述：
+ * 
+ * 
+ * 
+ */
+<template>
+    <form @submit.prevent="validateBeforeSubmit">
+        <div class="main form-pop">
+            <div>
+                <div @click="selectPic" class="pic-preview">
+                    <img v-if="plant.image == '' || plant.image == null" :src="$img(image)">
+                    <img v-else :src="$img(plant.image)">
+                </div>
+                <input name="file_name" type="file" hidden="hidden" @change="previewPic(plant, $event)">
+                <div class="delete-pic-btn">
+                    <button type="button" @click="deletePic">删除</button>
+                </div>
+            </div>
+            <div>
+                <label for="plant_categroy_select" class="label-tit">果蔬类别</label>
+                <!-- <select v-model="plant.category" name="category" id="plant_categroy_select" class="input-pop">
+                    <option value="蔬菜类">蔬菜类</option>
+                    <option value="水果类">水果类</option>
+                </select> -->
+                <!-- 果蔬分类模块 -->
+                <pop-select name="category" id="plant_categroy_select" class="input-pop"
+                    :items="categorys"
+                    :defaultIndex="parseInt(defaultIndex)"
+                    @callback="getMsg"
+                ></pop-select>
+            </div>
+            <div>
+                <label for="plant_new_fullName" class="label-tit">果蔬名称</label>
+                <input 
+                    v-model="plant.name" 
+                    v-validate.initial="plant.name" 
+                    data-vv-rules="required|max:255" 
+                    data-vv-as="果蔬名称" 
+                    class="input-pop" type="text" id="plant_new_fullName" name="name" placeholder="必填">
+                <span v-show="errors.has('name')">{{ errors.first('name') }}</span>
+            </div>
+            
+            <div>
+                <label for="plant_new_growth_cycle" class="label-tit">生长周期</label>
+                <input 
+                    v-model="plant.growth_cycle" 
+                    v-validate.initial="plant.growth_cycle" 
+                    data-vv-rules="required|decimal:2" 
+                    data-vv-as="生长周期" 
+                    class="input-pop" type="text" id="plant_new_growth_cycle" name="growth_cycle" placeholder="必填，单位（天）">
+                <span v-show="errors.has('growth_cycle')">{{ errors.first('growth_cycle') }}</span>
+            </div>
+            <div>
+                <label for="plant_new_description" class="label-tit">特征描述</label>
+                <input v-model="plant.description" class="input-pop" type="text" id="plant_new_description" name="description">
+            </div>
+            <div>
+                <label for="plant_new_note" class="label-tit">备注信息</label>
+                <input v-model="plant.memo" class="input-pop input-note" type="text" id="plant_new_note" name="memo">
+            </div>
+            <div class="footer">
+                <div class="footer-r">
+                    <button v-if="edit" @click="cancelEditPlantation" type="button">
+                        取消
+                    </button>
+                    <button v-else @click="cancelAddPlantation" type="button">
+                        取消
+                    </button>
+                </div>
+                <div class="footer-r">
+                    <button class="btn-pop">
+                        保存
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</template>
+
+<style lang="sass" scoped>
+
+@import "../../../sass/function";
+
+.form-pop {
+    .pic-preview {
+        width: 100%;
+        height: pxToRem(200);
+        border: 1px solid #d4d4d4;
+        text-align: center;
+
+        img {
+            height: 100%;
+        }
+    }
+    .delete-pic-btn {
+        text-align: center;
+
+        button {
+            width: pxToRem(100);
+            height: pxToRem(39);
+            margin: pxToRem(7) 0;
+            background-color: white;
+            border: 1px solid #d4d4d4;
+        }
+    }
+}
+
+</style>
+
+<script>
+
+    export default {
+        name: 'PopPlant',
+        props: {
+            plant: {
+                type: Object,
+                default() {
+                    return {
+                        'id': '',
+                        'image': '',
+                        'file_name': null,
+                        'category': '蔬菜类',
+                        'name': '',
+                        'growth_cycle': '',
+                        'description': '',
+                        'memo': ''
+                    }
+                }
+            },
+            // 表示此模块是编辑模块还是新增模块的标志
+            edit: {
+                type: Boolean,
+                default: false
+            },
+        },
+        data () {
+            return {
+                tmp: {
+                    'id': '',
+                    'image': '',
+                    'file_name': null,
+                    'category': '蔬菜类',
+                    'name': '',
+                    'growth_cycle': '',
+                    'description': '',
+                    'memo': ''
+                },
+                // 图片格式
+                pattern: {
+                    type: Array,
+                    default () {
+                        return ['jpeg', 'png'];
+                    }
+                },
+                image: '/common/images/inc/upload.png',
+                categorys: ['蔬菜类','水果类'],
+            }
+        },
+        computed: {
+            //判断是编辑状态还是新建状态，取出不同的下标
+            defaultIndex () {
+                if (this.edit == false) {
+                    return 0;
+                } else {
+                    for(let index in this.categorys){    
+                        if(this.categorys[index] == this.plant.category){
+                            return index;
+                        }  
+                    }
+                    
+                }
+            }
+
+        },
+        mounted () {
+            // 初始化tmp，同时过滤掉plant里面不需要的属性
+            for(let key of Object.keys(this.plant)){
+                // 如果plant里面的属性tmp里面也有，那么那对应的值赋予tmp
+                if((key in this.tmp)&&(this.tmp.hasOwnProperty(key))){
+                    this.tmp[key] = (this.plant[key] == null? '':this.plant[key]);
+                }else {
+                    // 否则删除此属性
+                    delete this.plant[key];
+                }
+            }
+            if(this.edit){
+                this.plant.imageFlag = 'no';
+            }
+        },
+        methods: {
+
+            /**
+            * 触发input[type="file"]的click事件来选择图片
+            * @param  {object} event
+            */
+            selectPic (event) {
+
+                // 取出空格
+                let obj = event.target.parentNode.nextSibling;
+                if(obj.tagName != 'INPUT'){
+                    obj = obj.nextSibling;
+                }
+
+                if(obj.tagName != 'INPUT'){
+                    obj = event.target.nextSibling.nextSibling;
+                }
+
+                // 触发input的click事件
+                obj.click();
+
+            },
+
+            /**
+            *  获取input[type="file"]里的图片，预览到页面上
+            */
+            previewPic (srcPic, event) {
+
+                // 获取选中的图片文件，并判断选中的图片数量是否合法
+                let file = event.target.files[0];
+
+                // 将pattern数组里的图片格式组装成"xxx|xxx|xxx"这样的格式，如："jpeg|png"
+                let regexParams = '';
+                for(let index = 0; index < this.pattern.length; index++) {
+                   regexParams += this.pattern[index]+(index == this.pattern.length - 1?'':'|');
+                }
+                // 将组装后的图片格式字符串传给正则表达式构造器，最后生成如/\/(?:jpeg|png)/i这样的正则表达式
+                let regex = new RegExp('\/(?:' + regexParams + ')', 'i');
+
+                // 过滤图片格式，如果出现格式不合法的，则取消此图片的上传操作
+                if (!regex.test(file.type)){
+                    alert("请选择格式为 " + this.pattern + " 的图片");
+                    return;
+                }
+
+                // 开始读取选中的图片，添加预览到页面
+                let reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = e => {
+                    this.plant.image = e.target.result;
+                    this.plant.file_name = file;
+                }
+
+            },
+
+            /**
+             * 删除图片
+             */
+            deletePic () {
+                this.plant.image = '/common/images/inc/upload.png';
+                this.plant.file_name = '';
+            },
+
+            /**
+            * 提交表单
+            */
+            validateBeforeSubmit () {
+                let params = {
+                    'id': this.plant.id,
+                    'field': 'name',
+                    'value': this.plant.name
+                };
+                this.$unique(this, 'plant', params, 'plant.name').then(() => {
+                    if(this.edit) {
+                        if(this.plant.file_name != null){
+
+                            let form = new FormData();
+                            for(let key of Object.keys(this.plant)){
+                                form.append(key, this.plant[key]);
+                            }
+
+                            this.$update(this, 'plant', form, true).then((response) => {
+                                for(let key of Object.keys(this.plant)){
+                                    this.tmp[key] = this.plant[key];
+                                }
+                                this.$alert('修改成功', 's');
+                            }, (response) => {
+                                this.$alert('连接出错', 'e');
+                            });
+
+                        }else {
+
+                            this.plant.image = '/common/images/inc/upload.png';
+                            this.$update(this, 'plant', this.plant).then((response) => {
+
+                                for(let key of Object.keys(this.plant)){
+                                    this.tmp[key] = this.plant[key];
+                                }
+                                this.$alert('修改成功', 's');
+
+                            }, (response) => {
+                                if(response != false) {
+                                    this.$alert('连接出错', 'e');
+                                }else {
+                                    return false;
+                                }
+                            });
+                        }
+
+                        
+                    }else {
+
+                        let form = new FormData();
+                        for(let key of Object.keys(this.plant)){
+                            form.append(key, this.plant[key]);
+                        }
+
+                        if(this.plant.file_name == null){
+                            this.plant.image = '/common/images/inc/upload.png';
+                        }
+
+                        this.$storeL(this, 'plant', form, true).then((response) => {
+                            this.plant.id = response.body;
+                            this.$emit('callback', this.plant);
+                            this.$alert('新增成功', 's');
+                        }, (response) => {
+                            if(response != false) {
+                                this.$alert('连接出错', 'e');
+                            }else {
+                                return false;
+                            }
+                        });
+                    }
+
+                }, () => {
+                    return false;
+                });
+            },
+            /**
+            * 隐藏新增模块
+            */
+            cancelAddPlantation () {
+                this.$emit('closeNew');
+            },
+
+            /**
+            * 隐藏编辑模块
+            * @param plant
+            */
+            cancelEditPlantation () {
+                this.$emit('closeEdit');
+            },
+            /**
+            * CallBack函数,执行回调函数 
+            */
+            getMsg (msg) {
+                this.plant.category = msg;
+            },
+
+        },
+        destroyed () {
+            if(this.edit){
+                for(let key of Object.keys(this.plant)){
+                        this.plant[key] = this.tmp[key];
+                    }
+            }
+        },
+    }
+
+</script>
