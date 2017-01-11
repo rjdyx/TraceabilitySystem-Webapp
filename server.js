@@ -6,6 +6,7 @@ const fs = require('fs')
 const env = require('./env')
 const path = require('path')
 const express = require('express')
+const favicon = require('serve-favicon')
 const compression = require('compression')  // 用于压缩response的中间件
 const serialize = require('serialize-javascript') //序列化插件
 const proxyMiddleware = require('http-proxy-middleware')  //http代理中间件
@@ -53,7 +54,7 @@ function parseIndex (template) {
 
 
 // proxy
-const proxyTable = ['/common/**', '/images', '/token', '/admin/c/**', '/login', '/logout'];
+const proxyTable = ['/images/upload/**', '/token', '/admin/c/**', '/login', '/logout'];
 const options = {target: env.app_url, changeOrigin: true};
 proxyTable.forEach(function (context) {
   app.use(proxyMiddleware(context, options))
@@ -62,8 +63,9 @@ proxyTable.forEach(function (context) {
 app.use(compression({ threshold: 0 }))
 // 使用Expires headers
 const serve = (path, cache) => express.static(resolve(path), {
-  maxAge: cache && isProd ? 60 * 60 * 24 * 30 : 0
+  maxAge: 60 * 60 * 24 * 30
 })
+app.use(favicon('./public/suyulogo.png'))
 app.use('/public', serve('./public'))
 app.use('/dist', serve('./dist'))
 

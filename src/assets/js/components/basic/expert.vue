@@ -47,7 +47,7 @@
                     <td class="td-note" name="table_type">{{ expert.table_type | table_name}}</td>
                     <td class="td-note" name="major">{{ expert.major }}</td>
                     <td @click="troggleEdit(expert.id)" class="align-c" name="open">
-                        <img :src="$img('/images/list.png')">
+                        <img :src="$img('list.png')">
                     </td>
                 </tr>
                 <tr v-if="showItemDetail != '' && showItemDetail == expert.id">

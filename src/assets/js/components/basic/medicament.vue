@@ -46,7 +46,7 @@
                     <td class="td-note" name="name">{{ medicament.name}}</td>
                     <td class="td-note" name="usage">{{ medicament.usage }}</td>
                     <td @click="troggleEdit(medicament.id)" class="align-c" name="open">
-                        <img :src="$img('/images/list.png')">
+                        <img :src="$img('list.png')">
                     </td>
                 </tr>
                 <tr v-if="showItemDetail != '' && showItemDetail == medicament.id">

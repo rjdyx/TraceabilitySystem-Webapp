@@ -12,7 +12,7 @@
         <!-- 顶部 -->
         <my-header :title="title">
             <div @click="show = true" class="show-sliderBar-btn">
-                <img :src="$img('/images/slider.png')" alt="">
+                <img :src="$img('slider.png')" alt="">
             </div>
         </my-header>
 

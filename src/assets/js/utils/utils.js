@@ -170,7 +170,7 @@ export default {
          * @param url
          * @returns {*}
          */
-        Vue.prototype.$img = (url) => {
+        Vue.prototype.$img = (url, flag=true) => {
             if(url == undefined){
                 return ;
             }
@@ -179,7 +179,11 @@ export default {
             }
             let regx = /^\/{1,}/g;
             url = url.replace(regx, '');
-            return host + '/' + url;
+            if(flag) {
+                return host + '/public/' + url;
+            }else {
+                return host + '/' + url;
+            }
         };
 
         /**

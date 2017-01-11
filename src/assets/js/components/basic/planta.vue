@@ -46,7 +46,7 @@
                     <td class="td-note" name="area">{{ planta.area + planta.area_unit }}</td>
                     <td class="td-note" name="director">{{ planta.director }}</td>
                     <td @click="troggleEdit(planta.id)" class="align-c" name="open">
-                        <img :src="$img('/images/list.png')">
+                        <img :src="$img('list.png')">
                     </td>
                 </tr>
                 <tr v-if="showItemDetail != '' && showItemDetail == planta.id">

@@ -45,6 +45,7 @@
     "opn": "^4.0.2",
     "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
+    "serve-favicon": "^2.3.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vee-validate": "^2.0.0-beta.18",

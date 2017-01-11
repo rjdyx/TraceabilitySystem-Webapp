@@ -36,10 +36,10 @@
                     <td class="td-note" name="plant_name">{{ log.plant_name}}</td>
                     <td class="td-note" name="operator">{{ log.cultivate_man }}</td>
                     <td class="td-note" name="finish">
-                        <img v-if="log.date !=null" :src="$img('/common/images/inc/ok.png')">
+                        <img v-if="log.date !=null" :src="$img('ok.png')">
                     </td>
                     <td @click="troggleEdit(log)" class="align-c" name="open">
-                        <img :src="$img('/images/list.png')">
+                        <img :src="$img('list.png')">
                     </td>
                 </tr>
                 <tr v-if="showItemDetail != '' && showItemDetail == log.cultivate_id">

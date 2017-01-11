@@ -46,7 +46,8 @@
             <div>
                 <div @click="selectPic" class="pic-preview">
                     <img v-if="plant.image == '' || plant.image == null" :src="$img(image)">
-                    <img v-else :src="$img(plant.image)">
+                    <img v-else-if="plant.image == 'upload.png'" :src="$img(plant.image)">
+                    <img v-else :src="$img(plant.image, false)">
                 </div>
                 <input name="file_name" type="file" hidden="hidden" @change="previewPic(plant, $event)">
                 <div class="delete-pic-btn">
@@ -189,7 +190,7 @@
                         return ['jpeg', 'png'];
                     }
                 },
-                image: '/common/images/inc/upload.png',
+                image: 'upload.png',
                 categorys: ['蔬菜类','水果类'],
             }
         },
@@ -283,7 +284,7 @@
              * 删除图片
              */
             deletePic () {
-                this.plant.image = '/common/images/inc/upload.png';
+                this.plant.image = 'upload.png';
                 this.plant.file_name = '';
             },
 
@@ -316,7 +317,7 @@
 
                         }else {
 
-                            this.plant.image = '/common/images/inc/upload.png';
+                            this.plant.image = 'upload.png';
                             this.$update(this, 'plant', this.plant).then((response) => {
 
                                 for(let key of Object.keys(this.plant)){
@@ -342,7 +343,7 @@
                         }
 
                         if(this.plant.file_name == null){
-                            this.plant.image = '/common/images/inc/upload.png';
+                            this.plant.image = 'upload.png';
                         }
 
                         this.$storeL(this, 'plant', form, true).then((response) => {

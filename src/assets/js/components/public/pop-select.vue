@@ -51,7 +51,7 @@
  */
 <template>
     <div>
-        <div @click.stop="show = !show">{{showMsg}}<img :src="$img('/images/arrow.png')" class="arrow"></div>
+        <div @click.stop="show = !show">{{showMsg}}<img :src="$img('arrow.png')" class="arrow"></div>
         <div class="maskLayer" v-if="show" @click="pop">
             <div class="list" v-if="show">
                 <div class="title">{{title}}</div>

@@ -18009,6 +18009,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ exports["default"] = {
@@ -18054,7 +18055,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                     return ['jpeg', 'png'];
                 }
             },
-            image: '/common/images/inc/upload.png',
+            image: 'upload.png',
             categorys: ['蔬菜类', '水果类']
         };
     },
@@ -18171,7 +18172,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
          * 删除图片
          */
         deletePic: function deletePic() {
-            this.plant.image = '/common/images/inc/upload.png';
+            this.plant.image = 'upload.png';
             this.plant.file_name = '';
         },
 
@@ -18249,7 +18250,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                         });
                     } else {
 
-                        _this2.plant.image = '/common/images/inc/upload.png';
+                        _this2.plant.image = 'upload.png';
                         _this2.$update(_this2, 'plant', _this2.plant).then(function (response) {
                             var _iteratorNormalCompletion4 = true;
                             var _didIteratorError4 = false;
@@ -18315,7 +18316,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                     }
 
                     if (_this2.plant.file_name == null) {
-                        _this2.plant.image = '/common/images/inc/upload.png';
+                        _this2.plant.image = 'upload.png';
                     }
 
                     _this2.$storeL(_this2, 'plant', _form, true).then(function (response) {
@@ -21760,6 +21761,8 @@ var routes = [{
          * @returns {*}
          */
         __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$img = function (url) {
+            var flag = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+
             if (url == undefined) {
                 return;
             }
@@ -21768,7 +21771,11 @@ var routes = [{
             }
             var regx = /^\/{1,}/g;
             url = url.replace(regx, '');
-            return host + '/' + url;
+            if (flag) {
+                return host + '/public/' + url;
+            } else {
+                return host + '/' + url;
+            }
         };
 
         /**
@@ -23661,7 +23668,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [(log.date != null) ? _c('img', {
       attrs: {
-        "src": _vm.$img('/common/images/inc/ok.png')
+        "src": _vm.$img('ok.png')
       }
     }) : _vm._e()]), _c('td', {
       staticClass: "align-c",
@@ -23675,7 +23682,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('img', {
       attrs: {
-        "src": _vm.$img('/images/list.png')
+        "src": _vm.$img('list.png')
       }
     })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == log.cultivate_id) ? _c('tr', [_c('td', {
       attrs: {
@@ -23935,7 +23942,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('img', {
       attrs: {
-        "src": _vm.$img('/images/list.png')
+        "src": _vm.$img('list.png')
       }
     })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == planta.id) ? _c('tr', [_c('td', {
       attrs: {
@@ -24060,7 +24067,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": _vm.$img('/images/slider.png'),
+      "src": _vm.$img('slider.png'),
       "alt": ""
     }
   })])]), _c('div', {
@@ -24218,7 +24225,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('img', {
       attrs: {
-        "src": _vm.$img('/images/list.png')
+        "src": _vm.$img('list.png')
       }
     })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == manure.id) ? _c('tr', [_c('td', {
       attrs: {
@@ -24426,10 +24433,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "name": "image"
       }
-    }, [(plant.image != null && plant.image != '' && plant.image != '/common/images/inc/upload.png') ? _c('img', {
+    }, [(plant.image != null && plant.image != '' && plant.image != 'upload.png') ? _c('img', {
       staticClass: "plant_img",
       attrs: {
-        "src": _vm.$img('/common/images/inc/ok.png')
+        "src": _vm.$img('ok.png')
       }
     }) : _vm._e()]), _c('td', {
       staticClass: "align-c",
@@ -24443,7 +24450,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('img', {
       attrs: {
-        "src": _vm.$img('/images/list.png')
+        "src": _vm.$img('list.png')
       }
     })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == plant.id) ? _c('tr', [_c('td', {
       attrs: {
@@ -25130,9 +25137,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": _vm.$img(_vm.image)
     }
-  }) : _c('img', {
+  }) : (_vm.plant.image == 'upload.png') ? _c('img', {
     attrs: {
       "src": _vm.$img(_vm.plant.image)
+    }
+  }) : _c('img', {
+    attrs: {
+      "src": _vm.$img(_vm.plant.image, false)
     }
   })]), _c('input', {
     attrs: {
@@ -25466,7 +25477,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('img', {
       attrs: {
-        "src": _vm.$img('/images/list.png')
+        "src": _vm.$img('list.png')
       }
     })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == medicament.id) ? _c('tr', [_c('td', {
       attrs: {
@@ -26204,7 +26215,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('img', {
       attrs: {
-        "src": _vm.$img('/images/list.png')
+        "src": _vm.$img('list.png')
       }
     })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == plantation.id) ? _c('tr', [_c('td', {
       attrs: {
@@ -26379,7 +26390,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v(_vm._s(_vm.showMsg)), _c('img', {
     staticClass: "arrow",
     attrs: {
-      "src": _vm.$img('/images/arrow.png')
+      "src": _vm.$img('arrow.png')
     }
   })]), (_vm.show) ? _c('div', {
     staticClass: "maskLayer",
@@ -26880,7 +26891,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('img', {
       attrs: {
-        "src": _vm.$img('/images/list.png')
+        "src": _vm.$img('list.png')
       }
     })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == expert.id) ? _c('tr', [_c('td', {
       attrs: {

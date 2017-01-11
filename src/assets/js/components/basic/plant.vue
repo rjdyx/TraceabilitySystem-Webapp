@@ -45,10 +45,10 @@
                     <td class="td-note" :title="plant.name" name="name">{{ plant.name }}</td>
                     <td class="td-note" name="growth_cycle">{{ plant.growth_cycle}}</td>
                     <td class="td-note" name="image">
-                        <img v-if="plant.image != null && plant.image != '' &&plant.image != '/common/images/inc/upload.png'" class="plant_img" :src="$img('/common/images/inc/ok.png')">
+                        <img v-if="plant.image != null && plant.image != '' &&plant.image != 'upload.png'" class="plant_img" :src="$img('ok.png')">
                     </td>
                     <td @click="troggleEdit(plant.id)" class="align-c" name="open">
-                        <img :src="$img('/images/list.png')">
+                        <img :src="$img('list.png')">
                     </td>
                 </tr>
                 <tr v-if="showItemDetail != '' && showItemDetail == plant.id">

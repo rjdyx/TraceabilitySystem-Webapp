@@ -65,7 +65,7 @@
             margin: 0 auto;
             padding-top: pxToRem(100);
             margin-bottom: pxToRem(50);
-            background-image: url(/images/logo.png);
+            background-image: url(/public/images/logo.png);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: bottom;
@@ -109,11 +109,11 @@
                 }
 
                 &:nth-child(1) span {
-                    background-image: url(/images/user.png);
+                    background-image: url(/public/images/user.png);
                 }
 
                 &:nth-child(2) span {
-                    background-image: url(/images/password.png);
+                    background-image: url(/public/images/password.png);
                 }
             }
         }
