@@ -180,7 +180,7 @@
                     display: block;
                     width: pxToRem(10);
                     margin: 0 auto;
-                    background: url(/common/images/inc/icon.png);
+                    background: url(/public/icon.png);
                     background-position: 244px 434px !important;
                 }
             }
