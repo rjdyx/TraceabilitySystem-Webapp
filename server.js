@@ -59,6 +59,10 @@ const options = {target: env.app_url, changeOrigin: true};
 proxyTable.forEach(function (context) {
   app.use(proxyMiddleware(context, options))
 })
+if(env.is_server) {
+  app.use(proxyMiddleware('/public/**', {target: env.app_ano_url, changeOrigin: true}))
+  app.use(proxyMiddleware('/dist/**', {target: env.app_ano_url, changeOrigin: true}))
+}
 // 压缩response
 app.use(compression({ threshold: 0 }))
 // 使用Expires headers
