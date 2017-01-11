@@ -54,6 +54,11 @@
         height: 100%;
         background-color: #009acb;
 
+        form {
+            padding-bottom: pxToRem(47);
+            background: #009acb;
+        }
+
         .logo {
             width: pxToRem(100);
             height: pxToRem(100);
@@ -210,25 +215,6 @@
                 if(this.errors.any()) {
                     return false;
                 }else {
-                    // this.$http.post('/login', this.user).then((response)=>{
-                    //     if(response.body == '用户名或密码错误'){
-
-                    //     }else {
-                    //         sessionStorage.setItem('user', response.body);
-                    //     }
-                    // },(error) => {
-
-                    // });
-                    // let param = Object.assign(this.user, {_token:Laravel.csrfToken})
-                    // $.post('/login', this.user, (response)=>{
-                    //     if(response == '用户名或密码错误'){
-
-                    //     }else {
-                    //         sessionStorage.setItem('user', response);
-                    //         this.$router.push('/webapp');
-                    //         console.log('yes');
-                    //     }
-                    // });
                     this.loginBtn = '登录中...'
                     this.isLogin = true;
                     axios.post('/login', this.user).then((response)=>{

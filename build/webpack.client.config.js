@@ -22,7 +22,7 @@ const config = merge(base, {
 
     // generate output HTML
     new HTMLPlugin({
-      filename: projectRoot + '/public/index.html',
+      filename: projectRoot + '/dist/index.html',
       template: 'src/views/index.template.html'
     })
 

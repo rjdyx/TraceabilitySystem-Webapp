@@ -18,8 +18,8 @@ let indexHTML // html-webpack-plugin生成的html
 let renderer  // webpack-generated server bundle 创建的renderer
 if (isProd) {
   // 作业模式下: 通过真实的fs生成server renderer和html
-  renderer = createRenderer(fs.readFileSync(resolve('./public/build/js/server-bundle.js'), 'utf-8'))
-  indexHTML = parseIndex(fs.readFileSync(resolve('./public/index.html'), 'utf-8'))
+  renderer = createRenderer(fs.readFileSync(resolve('./dist/build/js/server-bundle.js'), 'utf-8'))
+  indexHTML = parseIndex(fs.readFileSync(resolve('./dist/index.html'), 'utf-8'))
 } else {
   // 开发模式下: 配置开发模式的热加载
   require('./build/setup-dev-server')(app, {
@@ -65,7 +65,7 @@ const serve = (path, cache) => express.static(resolve(path), {
   maxAge: cache && isProd ? 60 * 60 * 24 * 30 : 0
 })
 app.use('/public', serve('./public'))
-
+app.use('/dist', serve('./dist'))
 
 
 // ssr

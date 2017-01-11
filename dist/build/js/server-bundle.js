@@ -61,7 +61,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/public/build/";
+/******/ 	__webpack_require__.p = "/dist/build/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 98);
@@ -20998,6 +20998,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -21048,25 +21053,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             if (this.errors.any()) {
                 return false;
             } else {
-                // this.$http.post('/login', this.user).then((response)=>{
-                //     if(response.body == '用户名或密码错误'){
-
-                //     }else {
-                //         sessionStorage.setItem('user', response.body);
-                //     }
-                // },(error) => {
-
-                // });
-                // let param = Object.assign(this.user, {_token:Laravel.csrfToken})
-                // $.post('/login', this.user, (response)=>{
-                //     if(response == '用户名或密码错误'){
-
-                //     }else {
-                //         sessionStorage.setItem('user', response);
-                //         this.$router.push('/webapp');
-                //         console.log('yes');
-                //     }
-                // });
                 this.loginBtn = '登录中...';
                 this.isLogin = true;
                 axios.post('/login', this.user).then(function (response) {

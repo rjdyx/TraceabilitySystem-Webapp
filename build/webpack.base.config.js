@@ -17,8 +17,8 @@ module.exports = {
         vendor: ['vue', 'vue-router', 'vuex', 'vuex-router-sync', 'vee-validate']
     },
     output: {
-        path: path.resolve(__dirname, '../public/build'),
-        publicPath: '/public/build/',
+        path: path.resolve(__dirname, '../dist/build'),
+        publicPath: '/dist/build/',
         filename: 'js/[name].[chunkhash].js'
     },
     module: {

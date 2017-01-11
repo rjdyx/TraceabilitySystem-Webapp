@@ -5,11 +5,7 @@ require('./http');
  */
 
 // 配置webpack动态加载模块的路径
-if(process.env.NODE_ENV === 'development') {
-    __webpack_public_path__ = '/build/';
-}else {
-    __webpack_public_path__ = '/build/';
-}
+__webpack_public_path__ = '/dist/build/';
 
 
 
