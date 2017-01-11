@@ -7,7 +7,7 @@ module.exports = merge(base, {
   devtool: false,
   entry: './src/assets/js/server-entry.js',
   output: Object.assign({}, base.output, {
-    filename: 'js/server-bundle.js',
+    filename: 'server-bundle.js',
     libraryTarget: 'commonjs2'
   }),
   externals: Object.keys(require('../package.json').dependencies),

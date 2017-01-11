@@ -19,7 +19,7 @@ let indexHTML // html-webpack-plugin生成的html
 let renderer  // webpack-generated server bundle 创建的renderer
 if (isProd) {
   // 作业模式下: 通过真实的fs生成server renderer和html
-  renderer = createRenderer(fs.readFileSync(resolve('./dist/build/js/server-bundle.js'), 'utf-8'))
+  renderer = createRenderer(fs.readFileSync(resolve('./dist/server-bundle.js'), 'utf-8'))
   indexHTML = parseIndex(fs.readFileSync(resolve('./dist/index.html'), 'utf-8'))
 } else {
   // 开发模式下: 配置开发模式的热加载
@@ -63,7 +63,7 @@ proxyTable.forEach(function (context) {
 app.use(compression({ threshold: 0 }))
 // 使用Expires headers
 const serve = (path, cache) => express.static(resolve(path), {
-  maxAge: 60 * 60 * 24 * 30
+  maxAge: 315360000
 })
 app.use(favicon('./public/suyulogo.png'))
 app.use('/public', serve('./public'))

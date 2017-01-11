@@ -17,9 +17,9 @@ module.exports = {
         vendor: ['vue', 'vue-router', 'vuex', 'vuex-router-sync', 'vee-validate']
     },
     output: {
-        path: path.resolve(__dirname, '../dist/build'),
-        publicPath: '/dist/build/',
-        filename: 'js/[name].[chunkhash].js'
+        path: path.resolve(__dirname, '../dist'),
+        publicPath: '/dist',
+        filename: '[name].[chunkhash].js'
     },
     module: {
         //加载器配置
@@ -69,7 +69,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin({filename:'css/[name].css', allChunks: true}),
+        new ExtractTextPlugin({filename:'[name].[chunkhash].css', allChunks: true}),
         providePlugin
     ]
 
