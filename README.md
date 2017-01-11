@@ -2,6 +2,14 @@
 
 溯源webapp版，由Vue 2.0 + vue-router + vuex构建，附加服务端渲染.
 
+<p align="center">
+  <a href="https://vue-hn.now.sh" target="_blank">
+    <img src="http://www.rigar.com.cn:8080/public/pic1.png" width="300px">
+    <img src="http://www.rigar.com.cn:8080/public/pic2.png" width="300px" style="margin-left: 100px">
+    <br>
+    Live Demo
+  </a>
+</p>
 
 ## 构建步骤
 

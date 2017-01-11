@@ -51,17 +51,16 @@
  */
 <template>
     <div>
-        <div @click.stop="show = !show">{{showMsg}}<img :src="$img('arrow.png')" class="arrow"></div>
-        <div class="maskLayer" v-if="show" @click="pop">
-            <div class="list" v-if="show">
-                <div class="title">{{title}}</div>
-                <ul>
-                    <li v-for="(item,index) in items" @click="getMsg(index)">
-                        <template v-if="protoBack == ''">{{item}}</template>
-                        <template v-else>{{item[protoShow]}}</template>
-                    </li>
-                </ul>
-            </div>
+        <div @click.stop="show = !show">{{showMsg}}<img :src="$img('/images/arrow.png')" class="arrow"></div>
+        <div class="maskLayer" :class="{ 'class-opacity': opacity }" v-if="show" @click="pop"></div>
+        <div class="list" v-if="show" @click="pop">
+            <div class="title">{{title}}</div>
+            <ul>
+                <li v-for="(item,index) in items" @click="getMsg(index)">
+                    <template v-if="protoBack == ''">{{item}}</template>
+                    <template v-else>{{item[protoShow]}}</template>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -130,7 +129,9 @@
             return {
             msg: '',
             show: false,
-            index: -1
+            index: -1,
+            opacity: true
+
           }
         },
         methods: {
@@ -147,6 +148,7 @@
             pop (){
                 if(this.show=true){
                     this.show=false;
+                    this.opacity=true
                 }
             },
             

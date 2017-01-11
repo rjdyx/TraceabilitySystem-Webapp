@@ -5,7 +5,7 @@ require('./http');
  */
 
 // 配置webpack动态加载模块的路径
-__webpack_public_path__ = '/dist/build/';
+__webpack_public_path__ = '/dist/';
 
 
 

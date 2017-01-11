@@ -116,6 +116,7 @@
             padding: 45px 0;
             text-align: center;
             background-color: #ffffff;
+            border-bottom: 1px solid #d7d7d7;
         }
 
         .btn {

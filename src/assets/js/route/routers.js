@@ -40,6 +40,14 @@ const log = require('../views/log.vue')
 // };
 const fourOFour = require('../views/404.vue')
 
+//---------------------------图片日志------------------------------
+// const dailylog = resolve => {
+//     require.ensure(['./views/dailylog.vue'], () =>{
+//         resolve(require('./views/dailylog.vue'));
+//     }, 'dailylog');
+// }
+const dailylog = require('../views/dailylog.vue')
+
 //=============================种植管理====================================
 
 //---------------------------基础信息管理----------------------------------
@@ -155,6 +163,12 @@ const routes = [
                 path: 'log/:id',
                 name: 'log',
                 component: log,
+                meta: { requiresAuth: true }
+            },
+            {
+                path: 'dailylog',
+                name: 'dailylog',
+                component: dailylog,
                 meta: { requiresAuth: true }
             }
         ]

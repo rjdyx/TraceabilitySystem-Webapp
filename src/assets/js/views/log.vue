@@ -64,6 +64,13 @@
                 @result="updateList"
             ></paginator> 
         </div>
+
+        <confirm
+            :show="show"
+            :message="message"
+            @confirmAction="showdailylog"
+            @cancelAction="show=false"
+        ></confirm>
         
 
     </div>
@@ -227,11 +234,24 @@
              */
             putAllStore () {
                 this.$http.post(this.$adminUrl('dailylog/allstore'), this.params.params).then((response) => {
-                    
+                    //判断今天是否提交
+                    if(response.data == 'false'){
+                        this.$alert('今天已经提交');
+                        this.show = false;
+                    }else{
+                        this.show = true;
+                    }
                 }, (response) => {
                     this.$alert('连接出错', 'e');
                 });
             },
+
+            /**
+             * 跳转生成图片日志
+             */
+            showdailylog () {
+                this.$router.push('/dailylog'); 
+            }, 
 
             /**
              * 更新操作人
