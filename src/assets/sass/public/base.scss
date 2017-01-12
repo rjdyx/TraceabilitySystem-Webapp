@@ -176,35 +176,45 @@ html, body{
     width: 100%;
     height:100%;
     z-index:100;
-    .list{
-      position: fixed;
-      bottom:0;
-      left: 0;
-      width: 100%;
-      z-index:200;
+}
+.list{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    z-index:200;
+    background:#fff;
+    ul{
+      max-height:pxToRem(200);
+      overflow: hidden;
+      
     }
     ul{
       max-height:pxToRem(200);
       overflow: hidden;
-      background:#EAEAEA;
+      background:#fff;
     }
     ul li{
       border-bottom:1px solid #CDCDCD;
       width: 100%;
       height:pxToRem(50);
       line-height: pxToRem(50);
-      color: #6B6A6B;
+      color: #000;
       text-align:center;
     }
     .title{
        width: 100%;
         height:pxToRem(50);
         line-height: pxToRem(50);
-        background-color: #009ACB;
-        color: #fff;
-        text-align:center; 
+        color: #6A6A6A;
+        text-align:center;
+        border-bottom:1px solid #CDCDCD; 
     }
-  }
+}    
+.class-opacity{
+    opacity: 0.7;
+    background-color: #000
+}
 
 /* paginator outside module */
 .paginator-module {
