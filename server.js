@@ -83,7 +83,7 @@ app.get(['/webapp', '/webapp/**','/basic/**', '/log/**', '/'], (req, res) => {
 
   renderStream.once('data', () => {
     if(env.is_server && indexHTML.head.indexOf(env.app_ano_url) == -1) {
-      indexHTML.head = indexHTML.head.replace('<link href="', '<link href="' + env.app_ano_url);
+      indexHTML.head = indexHTML.head.replace(/<link href="/g, '<link href="' + env.app_ano_url);
     }
     res.write(indexHTML.head)
   })
@@ -102,7 +102,7 @@ app.get(['/webapp', '/webapp/**','/basic/**', '/log/**', '/'], (req, res) => {
       )
     }
     if(env.is_server && indexHTML.tail.indexOf(env.app_ano_url) == -1) {
-      indexHTML.tail = indexHTML.tail.replace('<script type="text/javascript" src="', '<script type="text/javascript" src="' + env.app_ano_url);
+      indexHTML.tail = indexHTML.tail.replace(/<script type="text\/javascript" src="/g, '<script type="text/javascript" src="' + env.app_ano_url);
     }
     res.end(indexHTML.tail)
     console.log(`whole request: ${Date.now() - s}ms`)
