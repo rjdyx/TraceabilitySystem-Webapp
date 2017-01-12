@@ -56,9 +56,8 @@ export default {
             }, 1500);
         };
 
-        // windows = window?window:global;
-        // let host = 'http://' + windows.location.host;
-        let host = '';
+        const env = require('../../../../env')
+        let host = env.app_url;
         /**
          * 自动生成完整的前台url
          *
@@ -170,7 +169,6 @@ export default {
          * @param url
          * @returns {*}
          */
-        const env = require('../../../../env')
         Vue.prototype.$img = (url, flag=true) => {
             if(url == undefined){
                 return ;
@@ -181,13 +179,10 @@ export default {
             let regx = /^\/{1,}/g;
             url = url.replace(regx, '');
 
-            if(env.is_server) {
-                host = env.app_ano_url
-            }
             if(flag) {
-                return host + '/public/' + url;
+                return env.is_server?env.app_ano_url:'' + '/public/' + url;
             }else {
-                return host + '/' + url;
+                return env.is_server?env.app_ano_url:'' + '/' + url;
             }
         };
 

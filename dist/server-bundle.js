@@ -13987,7 +13987,7 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MOD
 
 module.exports = {
 	is_server: true,
-	app_url: 'http://find360.cn/',
+	app_url: 'http://find360.cn',
 	app_ano_url: 'http://m.rigar.com.cn:8080'
 };
 
@@ -21888,9 +21888,8 @@ var routes = [{
             }, 1500);
         };
 
-        // windows = window?window:global;
-        // let host = 'http://' + windows.location.host;
-        var host = '';
+        var env = __webpack_require__(7);
+        var host = env.app_url;
         /**
          * 自动生成完整的前台url
          *
@@ -22006,7 +22005,6 @@ var routes = [{
          * @param url
          * @returns {*}
          */
-        var env = __webpack_require__(7);
         __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$img = function (url) {
             var flag = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
@@ -22019,13 +22017,10 @@ var routes = [{
             var regx = /^\/{1,}/g;
             url = url.replace(regx, '');
 
-            if (env.is_server) {
-                host = env.app_ano_url;
-            }
             if (flag) {
-                return host + '/public/' + url;
+                return env.is_server ? env.app_ano_url : '' + '/public/' + url;
             } else {
-                return host + '/' + url;
+                return env.is_server ? env.app_ano_url : '' + '/' + url;
             }
         };
 
