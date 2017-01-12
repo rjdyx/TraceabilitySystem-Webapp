@@ -179,6 +179,11 @@ export default {
             }
             let regx = /^\/{1,}/g;
             url = url.replace(regx, '');
+
+            if(process.env.IS_SERVER) {
+                host = process.env.APP_ANO_URL
+            }
+            
             if(flag) {
                 return host + '/public/' + url;
             }else {

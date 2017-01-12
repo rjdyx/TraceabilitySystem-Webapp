@@ -11,6 +11,8 @@ const compression = require('compression')  // 用于压缩response的中间件
 const serialize = require('serialize-javascript') //序列化插件
 const proxyMiddleware = require('http-proxy-middleware')  //http代理中间件
 const resolve = file => path.resolve(__dirname, file)
+process.env.IS_SERVER = env.is_server
+process.env.APP_ANO_URL = env.app_ano_url
 
 
 const app = express()
@@ -59,10 +61,6 @@ const options = {target: env.app_url, changeOrigin: true};
 proxyTable.forEach(function (context) {
   app.use(proxyMiddleware(context, options))
 })
-if(env.is_server) {
-  app.use(proxyMiddleware('/public/**', {target: env.app_ano_url, changeOrigin: true}))
-  app.use(proxyMiddleware('/dist/**', {target: env.app_ano_url, changeOrigin: true}))
-}
 // 压缩response
 app.use(compression({ threshold: 0 }))
 // 使用Expires headers
@@ -87,6 +85,9 @@ app.get(['/webapp', '/webapp/**','/basic/**', '/log/**', '/'], (req, res) => {
   const renderStream = renderer.renderToStream(context)
 
   renderStream.once('data', () => {
+    if(env.is_server) {
+      indexHTML.head = indexHTML.head.replace('<link href="', '<link href="' + env.app_ano_url);
+    }
     res.write(indexHTML.head)
   })
 
@@ -102,6 +103,9 @@ app.get(['/webapp', '/webapp/**','/basic/**', '/log/**', '/'], (req, res) => {
           serialize(context.initialState, { isJSON: true })
         }</script>`
       )
+    }
+    if(env.is_server) {
+      indexHTML.tail = indexHTML.tail.replace('<script type="text/javascript" src="', '<script type="text/javascript" src="' + env.app_ano_url);
     }
     res.end(indexHTML.tail)
     console.log(`whole request: ${Date.now() - s}ms`)
