@@ -57,7 +57,8 @@ export default {
         };
 
         const env = require('../../../../env')
-        let host = env.app_url;
+        // let host = env.app_url;
+        let host = '';
         /**
          * 自动生成完整的前台url
          *
