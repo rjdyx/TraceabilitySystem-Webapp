@@ -13986,7 +13986,7 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MOD
 /***/ function(module, exports) {
 
 module.exports = {
-	is_server: true,
+	is_server: false,
 	app_url: 'http://find360.cn',
 	app_ano_url: 'http://m.rigar.com.cn:8080'
 };
