@@ -170,6 +170,7 @@ export default {
          * @param url
          * @returns {*}
          */
+        const env = require('../../../../env')
         Vue.prototype.$img = (url, flag=true) => {
             if(url == undefined){
                 return ;
@@ -180,10 +181,9 @@ export default {
             let regx = /^\/{1,}/g;
             url = url.replace(regx, '');
 
-            if(process.env.IS_SERVER) {
-                host = process.env.APP_ANO_URL
+            if(env.is_server) {
+                host = env.app_ano_url
             }
-            
             if(flag) {
                 return host + '/public/' + url;
             }else {

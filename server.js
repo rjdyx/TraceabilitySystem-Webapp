@@ -11,9 +11,6 @@ const compression = require('compression')  // 用于压缩response的中间件
 const serialize = require('serialize-javascript') //序列化插件
 const proxyMiddleware = require('http-proxy-middleware')  //http代理中间件
 const resolve = file => path.resolve(__dirname, file)
-process.env.IS_SERVER = env.is_server
-process.env.APP_ANO_URL = env.app_ano_url
-
 
 const app = express()
 
@@ -85,7 +82,7 @@ app.get(['/webapp', '/webapp/**','/basic/**', '/log/**', '/'], (req, res) => {
   const renderStream = renderer.renderToStream(context)
 
   renderStream.once('data', () => {
-    if(env.is_server) {
+    if(env.is_server && indexHTML.head.indexOf(env.app_ano_url) == -1) {
       indexHTML.head = indexHTML.head.replace('<link href="', '<link href="' + env.app_ano_url);
     }
     res.write(indexHTML.head)
@@ -104,7 +101,7 @@ app.get(['/webapp', '/webapp/**','/basic/**', '/log/**', '/'], (req, res) => {
         }</script>`
       )
     }
-    if(env.is_server) {
+    if(env.is_server && indexHTML.tail.indexOf(env.app_ano_url) == -1) {
       indexHTML.tail = indexHTML.tail.replace('<script type="text/javascript" src="', '<script type="text/javascript" src="' + env.app_ano_url);
     }
     res.end(indexHTML.tail)
