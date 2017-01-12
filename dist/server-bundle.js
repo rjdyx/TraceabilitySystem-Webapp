@@ -22018,12 +22018,10 @@ var routes = [{
             var regx = /^\/{1,}/g;
             url = url.replace(regx, '');
 
-            console.log(url);
-            console.log(env.is_server ? env.app_ano_url : '' + '/public/' + url);
             if (flag) {
-                return env.is_server ? env.app_ano_url : '' + '/public/' + url;
+                return (env.is_server ? env.app_ano_url : '') + '/public/' + url;
             } else {
-                return env.is_server ? env.app_ano_url : '' + '/' + url;
+                return (env.is_server ? env.app_ano_url : '') + '/' + url;
             }
         };
 
