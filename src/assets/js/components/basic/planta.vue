@@ -194,8 +194,12 @@
                 this.$index(this, 'planta').then((response) => {
                     this.total = response.body.plantas.last_page;
                     this.$set(this, 'list', response.body.plantas.data);
-                },(response) => {
-                    this.$alert('连接出错', 'e');
+                },(error) => {
+                    if(error.status == 401) {
+                        this.$router.push('/webapp/login')
+                    }else {
+                       this.$alert('连接出错', 'e'); 
+                    }
                 });
             },
 

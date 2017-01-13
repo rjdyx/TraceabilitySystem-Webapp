@@ -224,8 +224,12 @@
             getAllPlanta(){
                 this.$http.get(this.$adminUrl('dailylog/query'), {params: this.params}).then((response) => {
                     this.$set(this, 'list', response.body.data);
-                }, (response) => {
-
+                },(error) => {
+                    if(error.status == 401) {
+                        this.$router.push('/webapp/login')
+                    }else {
+                       this.$alert('连接出错', 'e'); 
+                    }
                 });
             },
 

@@ -157,3 +157,54 @@
 
 </script>
 
+<style lang="sass" scoped>
+
+@import "../../../sass/function";
+
+.maskLayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    z-index:100;
+}
+.list{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    z-index:200;
+    background:#fff;
+    ul{
+      max-height:pxToRem(200);
+      overflow: hidden;
+      
+    }
+    ul{
+      max-height:pxToRem(200);
+      overflow: hidden;
+      background:#fff;
+    }
+    ul li{
+      border-bottom:1px solid #CDCDCD;
+      width: 100%;
+      height:pxToRem(50);
+      line-height: pxToRem(50);
+      color: #000;
+      text-align:center;
+    }
+    .title{
+       width: 100%;
+        height:pxToRem(50);
+        line-height: pxToRem(50);
+        color: #6A6A6A;
+        text-align:center;
+        border-bottom:1px solid #CDCDCD; 
+    }
+}    
+.class-opacity{
+    opacity: 0.7;
+    background-color: #000
+}
+</style>

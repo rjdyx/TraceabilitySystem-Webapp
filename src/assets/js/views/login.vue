@@ -175,10 +175,15 @@
                     login: '',
                     password: ''
                 },
+                // 用户名表单验证出错的标志
                 isNameError: false,
+                // 密码表单验证出错的标志
                 isPasswordError: false,
+                // 后端用户名或密码不匹配的标志
                 isError: false,
+                // 登录按钮的文本
                 loginBtn: '登录',
+                // 登录按钮是否可用的标志，false表示可用
                 isLogin: false
             }
         },
@@ -219,16 +224,20 @@
                     this.isLogin = true;
                     axios.post('/login', this.user).then((response)=>{
                         if(response.data == '用户名或密码错误'){
-                            this.isError = true;
+                            this.isError = true
                             this.loginBtn = '登录'
-                            this.isLogin = false;
+                            this.isLogin = false
                         }else {
-                            sessionStorage.setItem('user', response.data);
-                            this.setUserInfo(response.data);
-                            this.$router.push('/webapp');
+                            sessionStorage.setItem('user', response.data)
+                            this.setUserInfo(response.data)
+                            this.$router.push('/webapp')
                         }
                     }).catch(function (error) {
-                        
+                        if(error.status == 500) {
+                            this.loginBtn = '登录'
+                            this.isLogin = false
+                            this.$alert('连接出错，请重新登录', 'e')
+                        }
                     });
                 }
             }

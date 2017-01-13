@@ -11,8 +11,11 @@
     <div>
         <!-- 顶部 -->
         <my-header :title="title">
-            <div @click="show = true" class="show-sliderBar-btn">
+            <div @click="show = true" slot="left" class="show-sliderBar-btn">
                 <img :src="$img('slider.png')" alt="">
+            </div>
+            <div @click="show = true" slot="right" class="right-btn">
+                <img :src="$img('eye.png')" alt="">
             </div>
         </my-header>
 
@@ -42,9 +45,8 @@
     	height: 3px;
 	}
 
-    .show-sliderBar-btn {
+    .btn {
         position: absolute;
-        left: pxToRem(25);
         bottom: 0;
         width: pxToRem(35);
         height: pxToRem(35);
@@ -59,6 +61,20 @@
             width: pxToRem(20);
             height: pxToRem(20);
             margin: auto;
+        }
+    }
+
+    .show-sliderBar-btn {
+        @extend .btn;
+        left: pxToRem(25);
+    }
+
+    .right-btn {
+        @extend .btn;
+        right: pxToRem(10);
+        img {
+            width: pxToRem(25);
+            height: pxToRem(20);
         }
     }
 </style>

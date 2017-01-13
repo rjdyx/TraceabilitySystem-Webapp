@@ -227,8 +227,12 @@
                 this.$http.get(this.$adminUrl('expert/query'), {params:{class_type: 0}}).then((response) => {
                     this.total = response.body.experts.last_page;
                     this.$set(this, 'list', response.body.experts.data);
-                },(response) => {
-                    this.$alert('连接出错', 'e');
+                },(error) => {
+                    if(error.status == 401) {
+                        this.$router.push('/webapp/login')
+                    }else {
+                       this.$alert('连接出错', 'e'); 
+                    }
                 });
             },
 

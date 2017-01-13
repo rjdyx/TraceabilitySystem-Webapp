@@ -23,8 +23,9 @@
  */
 <template>
     <header class="header">
-        <slot></slot>
+        <slot name="left"></slot>
         <h1 class="title">{{title}}</h1>
+        <slot name="right"></slot>
     </header>
 </template>
 
