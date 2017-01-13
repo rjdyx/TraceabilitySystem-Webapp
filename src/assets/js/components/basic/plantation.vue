@@ -37,28 +37,28 @@
             </tr>
             </thead>
             <tbody class="list-body">
-            <template v-for="(plantation, index) in list">
-                <tr v-touchDelete:showConfirmDialog="{vm:self, type:0, id:plantation.id, index:index}" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" name="order">
-                    <td class="checked">
-                        <input :value="{'id':plantation.id, 'index':index}" v-model="deletePlantations" type="checkbox">
-                    </td>
-                    <td class="td-note" :title="plantation.name" name="name">{{ plantation.name }}</td>
-                    <td class="td-note" name="area">{{ plantation.area + plantation.area_unit }}</td>
-                    <td class="td-note" name="director">{{ plantation.director }}</td>
-                    <td @click="troggleEdit(plantation.id)" class="align-c" name="open">
-                        <img :src="$img('list.png')">
-                    </td>
-                </tr>
-                <tr v-if="showItemDetail != '' && showItemDetail == plantation.id">
-                    <td colspan="5">
-                        <pop-plantation
-                                :plantation="plantation"
-                                :edit="showEditPane"
-                                @closeEdit="closeOwnEditPane(plantation)"
-                        ></pop-plantation>
-                    </td>
-                </tr>
-            </template>
+                <template v-for="(plantation, index) in list">
+                    <tr v-touchDelete:showConfirmDialog="{vm:self, type:0, id:plantation.id, index:index}" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" name="order">
+                        <td class="checked">
+                            <input :value="{'id':plantation.id, 'index':index}" v-model="deletePlantations" type="checkbox">
+                        </td>
+                        <td class="td-note" :title="plantation.name" name="name">{{ plantation.name }}</td>
+                        <td class="td-note" name="area">{{ plantation.area + plantation.area_unit }}</td>
+                        <td class="td-note" name="director">{{ plantation.director }}</td>
+                        <td @click="troggleEdit(plantation.id)" class="align-c" name="open">
+                            <img :src="$img('list.png')">
+                        </td>
+                    </tr>
+                    <tr v-if="showItemDetail != '' && showItemDetail == plantation.id">
+                        <td colspan="5">
+                            <pop-plantation
+                                    :plantation="plantation"
+                                    :edit="showEditPane"
+                                    @closeEdit="closeOwnEditPane(plantation)"
+                            ></pop-plantation>
+                        </td>
+                    </tr>
+                </template>
 
             </tbody>
             <tfoot class="list-foot">
@@ -92,9 +92,6 @@
                 @confirmAction="oneOrBatchdestroy"
                 @cancelAction="showConfirm=false"
         ></confirm>
-
-
-
     </div>
 </template>
 

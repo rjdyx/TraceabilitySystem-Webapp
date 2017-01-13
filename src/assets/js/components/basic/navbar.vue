@@ -22,7 +22,7 @@
     <div class="nav-top">
         <ul class="nt-ul">
             <li v-for="tap in taps" class="nt-li">
-                <router-link :to="tap.url" exact>{{tap.name}}</router-link>
+                <span @click="getKey(tap.key)" :class="{'link-active': activeKey == tap.key}">{{tap.name}}</span>
             </li>
         </ul>
     </div>
@@ -34,8 +34,19 @@
     props:{
         taps: {
             type:Array,
-            default: []
+            default: [{name: 'default', key: 'default'}]
         },
+    },
+    data () {
+        return {
+            activeKey: this.taps[0].key
+        }
+    },
+    methods: {
+        getKey (key) {
+            this.activeKey = key;
+            this.$emit('getKey', key);
+        }
     }
   }
 
@@ -61,14 +72,14 @@
         box-sizing: border-box;
         border-right: 0;
 
-        a {
+        span {
             display: inline-block;
             width: 100%;
             height: 100%;
             color: #4d4d4d;
             box-sizing: border-box;
 
-            &.router-link-active {
+            &.link-active {
               display: inline-block;
               width: 100%;
               height: 100%;

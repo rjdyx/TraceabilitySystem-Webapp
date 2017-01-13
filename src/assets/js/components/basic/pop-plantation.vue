@@ -6,7 +6,7 @@
  * 
  * Props:
  * 
- * @param  plantation 
+ * @param  letItem 
  * 类型：Object
  * 是否必填：false
  * 默认值：{}
@@ -46,8 +46,8 @@
             <div>
                 <label for="plantation_new_fullName" class="label-tit">种植场名称</label>
                 <input 
-                    v-model="plantation.name" 
-                    v-validate.initial="plantation.name" 
+                    v-model="letItem.name" 
+                    v-validate.initial="letItem.name" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="种植场名称" 
                     class="input-pop" type="text" id="plantation_new_fullName" name="name" placeholder="必填">
@@ -56,13 +56,13 @@
             <div>
                 <label for="plantation_new_area" class="label-tit">种植面积</label>
                 <input 
-                    v-model="plantation.area" 
-                    v-validate.initial="plantation.area" 
+                    v-model="letItem.area" 
+                    v-validate.initial="letItem.area" 
                     data-vv-rules="required|decimal:2" 
                     data-vv-as="种植面积" 
                     class="input-pop input-area" type="text" id="plantation_new_area" name="area"
                        placeholder="请填写数字(必填)">
-                <!--<select v-model="plantation.area_unit" class="area_unit" name="area_unit">-->
+                <!--<select v-model="letItem.area_unit" class="area_unit" name="area_unit">-->
                     <!--<option value="亩">亩</option>-->
                     <!--<option value="平方米">平方米</option>-->
                     <!--<option value="公顷">公顷</option>-->
@@ -80,23 +80,23 @@
             <div>
                 <label for="plantation_new_phone" class="label-tit">详细电话</label>
                 <input 
-                    v-model="plantation.phone" 
-                    v-validate.initial="plantation.phone" 
+                    v-model="letItem.phone" 
+                    v-validate.initial="letItem.phone" 
                     data-vv-rules="phone" 
                     class="input-pop" type="text" id="plantation_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)">
                 <span v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
             </div>
             <div>
                 <label for="plantation_new_address" class="label-tit">详细地址</label>
-                <input v-model="plantation.address" class="input-pop" type="text" id="plantation_new_address" name="address">
+                <input v-model="letItem.address" class="input-pop" type="text" id="plantation_new_address" name="address">
             </div>
             <div>
                 <label for="plantation_new_principal" class="label-tit">负责人</label>
-                <input v-model="plantation.director" class="input-pop" type="text" value="" id="plantation_new_principal" name="director">
+                <input v-model="letItem.director" class="input-pop" type="text" value="" id="plantation_new_principal" name="director">
             </div>
             <div>
                 <label for="plantation_new_note" class="label-tit">备注信息</label>
-                <input v-model="plantation.memo" class="input-pop input-note" type="text" id="plantation_new_note" name="memo">
+                <input v-model="letItem.memo" class="input-pop input-note" type="text" id="plantation_new_note" name="memo">
             </div>
             <div class="footer">
                 <div class="footer-r">
@@ -128,7 +128,7 @@
     export default {
         name: 'PopPlantation',
         props: {
-            plantation: {
+            letItem: {
                 type: Object,
                 default() {
                     return {
@@ -174,7 +174,7 @@
                     return 0;
                 } else {
                     for(let index in this.area_unit){
-                        if(this.area_unit[index] == this.plantation.area_unit){
+                        if(this.area_unit[index] == this.letItem.area_unit){
                             return index;
                         }
                     }
@@ -184,11 +184,11 @@
 
         },
         mounted () {
-            for(let key of Object.keys(this.plantation)){
-                this.tmp[key] = this.plantation[key];
+            for(let key of Object.keys(this.letItem)){
+                this.tmp[key] = this.letItem[key];
             }
             // 当作为编辑组件时，保存按钮一开始就能用
-            if(this.plantation.name != '') {
+            if(this.letItem.name != '') {
                 this.canSubmit = true;
             }
         },
@@ -200,15 +200,15 @@
             validateBeforeSubmit () {
 
                 let params = {
-                    'id': this.plantation.id,
+                    'id': this.letItem.id,
                     'field': 'name',
-                    'value': this.plantation.name
+                    'value': this.letItem.name
                 };
-                this.$unique(this, 'plantation', params, 'plantation.name').then(() => {
+                this.$unique(this, 'plantation', params, 'letItem.name').then(() => {
                     if(this.edit) {
-                        this.$update(this, 'plantation', this.plantation).then((response) => {
-                            for(let key of Object.keys(this.plantation)){
-                                this.tmp[key] = this.plantation[key];
+                        this.$update(this, 'plantation', this.letItem).then((response) => {
+                            for(let key of Object.keys(this.letItem)){
+                                this.tmp[key] = this.letItem[key];
                             }
                             this.$alert('修改成功', 's');
                         }, (response) => {
@@ -219,9 +219,9 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'plantation', this.plantation).then((response) => {
-                            this.plantation.id = response.body;
-                            this.$emit('callback', this.plantation);
+                        this.$storeL(this, 'plantation', this.letItem).then((response) => {
+                            this.letItem.id = response.body;
+                            this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
                         }, (response) => {
                             if(response != false) {
@@ -245,7 +245,7 @@
 
             /**
             * 隐藏编辑模块
-            * @param plantation
+            * @param letItem
             */
             cancelEditPlantation () {
                 this.$emit('closeEdit');
@@ -254,14 +254,14 @@
             * CallBack函数,执行回调函数 
             */
             getMsg (msg) {
-                this.plantation.area_unit = msg;
+                this.letItem.area_unit = msg;
             },
 
         },
         destroyed () {
             if(this.edit){
-                for(let key of Object.keys(this.plantation)){
-                        this.plantation[key] = this.tmp[key];
+                for(let key of Object.keys(this.letItem)){
+                        this.letItem[key] = this.tmp[key];
                     }
             }
         },
