@@ -155,7 +155,7 @@
                 default() {
                     return {
                         'pid': 0,
-                        'id': 0,
+                        'id': '',
                         'name': '',
                         'area': 0,
                         'area_unit': '亩',

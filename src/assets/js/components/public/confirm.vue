@@ -91,6 +91,7 @@
              */
             confirmMethod () {
                 this.$emit('confirmAction');
+                this.$emit('cancelAction');
             },
 
             /**

@@ -50,28 +50,25 @@
                 
             </tr>
             </thead>
-            <tbody class="list-body">
-            
+            <transition-group :name="slide" mode="out-in" tag="tbody" class="list-body">
                 <template v-for="(item, index) in list">
-                    <transition :name="slide" mode="out-in">
-                        <tr v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index}" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" name="order">
-                            <td class="checked">
-                                <input :value="{'id':item.id, 'index':index}" v-model="deleteLists" type="checkbox">
+                    <tr v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index}" :id="searchUrl + item.id" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" name="order">
+                        <td class="checked">
+                            <input :value="{'id':item.id, 'index':index}" v-model="deleteLists" type="checkbox">
+                        </td>
+                        <template v-for="proto in protos">
+                            <td v-if="proto instanceof Array" :name="proto[0]" class="td-note">
+                                {{item[proto] | joinName}}
                             </td>
-                            <template v-for="proto in protos">
-                                <td v-if="proto instanceof Array" :name="proto[0]" class="td-note">
-                                    {{item[proto] | joinName}}
-                                </td>
-                                <td v-else :name="proto" class="td-note">
-                                    {{item[proto]}}
-                                </td>
-                            </template>
-                            <td @click="troggleEdit(item.id)" class="align-c" name="open">
-                                <img :src="$img('list.png')">
+                            <td v-else :name="proto" class="td-note">
+                                {{item[proto]}}
                             </td>
-                        </tr>
-                    </transition>    
-                    <tr v-if="showItemDetail != '' && showItemDetail == item.id">
+                        </template>
+                        <td @click="troggleEdit(item.id)" class="align-c" name="open">
+                            <img :src="$img('list.png')">
+                        </td>
+                    </tr>
+                    <tr v-if="showItemDetail != '' && showItemDetail == item.id" :key="searchUrl + item.id + '-pop'">
                         <td colspan="5">
                             <component 
                                 :is="component"
@@ -83,8 +80,7 @@
                         </td>
                     </tr>
                 </template>
-            
-            </tbody>
+            </transition-group>
             <tfoot class="list-foot">
                 <tr class="list-foot-tr">
                     <td>
@@ -148,7 +144,7 @@
     }
 
     .slide-fade-enter-active, .slide-fade-leave-active{
-      transition: all .8s ease;
+      transition: all .5s ease;
     }
 
     .slide-fade-leave-active{
@@ -265,6 +261,8 @@
              * 获取所有列表项信息
              */
             getAllLists (url) {
+                // 加上这句，解决过渡动画重复元素的bug
+                this.$set(this, 'list', []);
                 this.$index(this, url).then((response) => {
                     let data = response.body[url + 's'];
                     this.total = data.last_page;

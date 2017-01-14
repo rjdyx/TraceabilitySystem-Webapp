@@ -21,7 +21,7 @@ export default {
                     break;
                 case 's':
                 case 'success':
-                    color = 'rgba(76,175,80,0.6)';
+                    color = 'rgba(76,175,80,0.8)';
                     break;
                 case 'e':
                 case 'error':
