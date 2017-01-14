@@ -18,24 +18,18 @@
             <button @click="showNewPanel=true" class="stl-btn">新建</button>
         </search>
         <!-- 新增模块 -->
-        <!-- <pop-List
-                v-if="showNewPanel"
-                :edit="false"
-                @callback="updateListByOne"
-                @closeNew="showNewPanel=false"
-        ></pop-List> -->
-        <slot 
-            name="pop-new"
-            :showNewPanel="showNewPanel"
-        ></slot>
+        <component 
+            :is="component"
+            v-if="showNewPanel"
+            :edit="false"
+            @callback="updateListByOne"
+            @closeNew="showNewPanel=false"
+        ></component>
 
         <table class="table-list">
             <thead class="list-head">
             <tr class="list-head-th">
                 <th name="order" class="fir">序号</th>
-                <!-- <th name="name">列表项名称</th>
-                <th name="area">种植面积</th>
-                <th name="director">负责人</th> -->
                 <template v-for="(thead, index) in theads">
                     <th 
                         v-if="protos[index] instanceof Array" 
@@ -59,14 +53,11 @@
             <tbody class="list-body">
             
                 <template v-for="(item, index) in list">
-                    <transition name="slide-fade" mode="out-in">
-                        <tr v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index}" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" :id="searchUrl + item.id" name="order">
+                    <transition :name="slide" mode="out-in">
+                        <tr v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index}" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" name="order">
                             <td class="checked">
                                 <input :value="{'id':item.id, 'index':index}" v-model="deleteLists" type="checkbox">
                             </td>
-                            <!-- <td class="td-note" :title="item.name" name="name">{{ item.name }}</td>
-                            <td class="td-note" name="area">{{ item.area + item.area_unit }}</td>
-                            <td class="td-note" name="director">{{ item.director }}</td> -->
                             <template v-for="proto in protos">
                                 <td v-if="proto instanceof Array" :name="proto[0]" class="td-note">
                                     {{item[proto] | joinName}}
@@ -82,16 +73,13 @@
                     </transition>    
                     <tr v-if="showItemDetail != '' && showItemDetail == item.id">
                         <td colspan="5">
-                            <!-- <pop-List
-                                    :List="item"
-                                    :edit="showEditPane"
-                                    @closeEdit="closeOwnEditPane(item)"
-                            ></pop-List> -->
-                            <slot 
-                                name="pop-edit"
-                                :item="item"
-                                :showEditPane="showEditPane"
-                            ></slot>
+                            <component 
+                                :is="component"
+                                v-if="showEditPane"
+                                :letItem="item"
+                                :edit="true"
+                                @closeEdit="showEditPane=false"
+                            ></component>
                         </td>
                     </tr>
                 </template>
@@ -159,12 +147,10 @@
         }
     }
 
-    .slide-fade-enter-active {
-      transition: all .3s ease;
+    .slide-fade-enter-active, .slide-fade-leave-active{
+      transition: all .8s ease;
     }
-    .slide-fade-leave-active {
-      transition: all .3s ease;
-    }
+
     .slide-fade-leave-active{
       transform: translateX(-10px);
       opacity: 0;
@@ -184,6 +170,13 @@
     export default {
         name: 'List',
         props: {
+            // 弹出框
+            component: {
+                type: Object,
+                default () {
+                    return null
+                }
+            },
             // 搜索框的placeholder
             searchPlaceholder: {
                 type: String,
@@ -244,7 +237,9 @@
                     'List_id': 0,
                     '_sort': 'id',
                     'order': ''
-                }
+                },
+                // 动画效果
+                slide: 'slide-fade'
             }
         },
         components: {

@@ -21,43 +21,52 @@
  * 
  * 
  */
-<template>
-    <template v-for="(item, index) in list">         
-        <tr v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index}" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" name="order">
-            <td class="checked">
-                <input :value="{'id':item.id, 'index':index}" v-model="deleteLists" type="checkbox">
+<template>       
+    <tr :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" name="order">
+        <template v-for="proto in protos">
+            <td v-if="proto instanceof Array" :name="proto[0]" class="td-note">
+                {{item[proto] | joinName}}
             </td>
-            <template v-for="proto in protos">
-                <td v-if="proto instanceof Array" :name="proto[0]" class="td-note">
-                    {{item[proto] | joinName}}
-                </td>
-                <td v-else :name="proto" class="td-note">
-                    {{item[proto]}}
-                </td>
-            </template>
-            <td @click="troggleEdit(item.id)" class="align-c" name="open">
-                <img :src="$img('list.png')">
+            <td v-else :name="proto" class="td-note">
+                {{item[proto]}}
             </td>
-        </tr>
-        
-    <tr v-if="showItemDetail != '' && showItemDetail == item.id">
-        <td colspan="5">
-            <slot name="pop-edit"></slot>
+        </template>
+        <td class="align-c" name="open">
+            <img :src="$img('list.png')">
         </td>
     </tr>
-</template>
 </template>
 
 <script>
   export default {
     name:'MyHead',
     props:{
-        title:{
-            type:String,
-            default:''
+        item:{
+            type:Object,
+            default () {
+                return null
+            }
+        },
+        // 属性
+        protos: {
+            type: Array,
+            default () {
+                return []
+            }
+        },
+    },
+    filters: {
+        joinName (arr) {
+            let str = '';
+            if(arr instanceof Array) {
+                for(let item of arr) {
+                    str += item;
+                }
+            }
+            return str;
         }
     }
-  }
+}
 </script>
 
 <style lang="sass" scoped>

@@ -16,33 +16,13 @@
         <!-- 列表模块 -->
         <table-list
             ref="tableList"
+            :component="component"
             :searchPlaceholder="searchPlaceholder"
             :searchUrl="searchUrl"
             :theads="theads"
             :protos="protos"
             :widths="widths"
         >
-            <template slot="pop-new" scope="props">
-                <component 
-                    :is="popComponent"
-                    v-if="props.showNewPanel"
-                    :edit="false"
-                    @callback="updateListByOne"
-                    @closeNew="$refs.tableList.closeNew()"
-                >
-            </template>
-
-            <!-- <template slot="pop-edit" scope="props">
-                <component 
-                    :is="popComponent"
-                    v-if="props.showEditPane"
-                    :letItem="props.item"
-                    :edit="true"
-                    @closeEdit="$refs.tableList.closeOwnEditPane(props.item)"
-                >
-            </template> -->
-            
-            </component>
         </table-list>
     </div>
 </template>
@@ -71,7 +51,7 @@
                     {name: '农药档案', key: 'medicament'},
                     {name: '专家档案', key: 'expert'}
                 ],
-                popComponent: null,
+                component: null,
                 searchPlaceholder: '',
                 searchUrl: '',
                 theads: [],
@@ -117,7 +97,7 @@
             this.widths = this.tableLists[0].widths;
         },
         mounted () {
-            this.popComponent = PopPlantation;
+            this.component = this.tableLists[0].component;
             this.$refs.tableList.getAllLists(this.searchUrl);
         },
         methods: {
@@ -133,7 +113,7 @@
                         this.theads = item.theads;
                         this.protos = item.protos;
                         this.widths = item.widths;
-                        this.popComponent = item.component;
+                        this.component = item.component;
                         // 同步调用获取数据的方法
                         this.$refs.tableList.getAllLists(item.searchUrl)
                         // 关闭新增弹窗
@@ -142,10 +122,6 @@
                         this.$refs.tableList.closeEdit()
                     }
                 }
-            },
-
-            updateListByOne (newOne) {
-                this.$refs.tableList.updateListByOne(newOne);
             }
         }
     }
