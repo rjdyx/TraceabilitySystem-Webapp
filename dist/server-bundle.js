@@ -64,87 +64,23 @@ module.exports =
 /******/ 	__webpack_require__.p = "/dist";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 102);
+/******/ 	return __webpack_require__(__webpack_require__.s = 96);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(25)
-
-/* template */
-var __vue_template__ = __webpack_require__(94)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-ceed9a7e"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(28)
-
-/* template */
-var __vue_template__ = __webpack_require__(91)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-b0cd62b0"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 2 */
 /***/ function(module, exports) {
 
 module.exports = require("vue");
 
 /***/ },
-/* 3 */
+/* 1 */
 /***/ function(module, exports) {
 
 module.exports = require("vuex");
 
 /***/ },
-/* 4 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10370,7 +10306,7 @@ return jQuery;
 
 
 /***/ },
-/* 5 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -13897,21 +13833,85 @@ var install = function install(Vue) {
 ;
 
 /***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(22)
+
+/* template */
+var __vue_template__ = __webpack_require__(88)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-ceed9a7e"
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(25)
+
+/* template */
+var __vue_template__ = __webpack_require__(86)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-b0cd62b0"
+
+module.exports = __vue_exports__
+
+
+/***/ },
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vuex_index_js__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__route_routers_js__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vuex_router_sync__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vuex_index_js__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__route_routers_js__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vuex_router_sync__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vuex_router_sync___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vuex_router_sync__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vee_validate__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vee_validate__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vee_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vee_validate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lang_zh_CN_vee_validate_js__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lang_zh_CN_vee_validate_js__ = __webpack_require__(43);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__route_routers_js__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__vuex_index_js__["a"]; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return app; });
@@ -13935,7 +13935,7 @@ if (process.env.COUNT_ENV == 1) {
 								});
 }
 
-__webpack_require__(38);
+__webpack_require__(36);
 
 // 用vuex的store同步化router
 // 这会注册 `store.state.route`
@@ -13988,7 +13988,7 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MOD
 module.exports = {
 	is_server: false,
 	app_url: 'http://find360.cn',
-	app_ano_url: 'http://m.rigar.com.cn:8080'
+	app_ano_url: 'http://s.find360.cn:8080'
 };
 
 /***/ },
@@ -14023,12 +14023,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_expert_vue__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pop_expert_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
@@ -14056,420 +14050,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
 
 /* harmony default export */ exports["default"] = {
-    name: 'Medicament',
-    data: function data() {
-        return {
-            // 存放专家的数组
-            list: [],
-            // 存放批量删除的专家的数组
-            deleteMedicaments: [],
-            // 临时记录待删除的专家信息
-            deleteMedicament: { 'id': 0, 'index': 0 },
-            // 单个删除或批量删除
-            oneOrBatch: 0,
-            // 是否显示新增模块
-            showNewPanel: false,
-            // 存放是否展开专家编辑模块的标志，
-            showItemDetail: '',
-            // 定义PopMedicament是新增模块还是编辑模块，true：编辑模块，false：新增模块
-            showEditPane: true,
-            // 是否显示确认模块
-            showConfirm: false,
-            // vue实例
-            self: this,
-            // 分页的总页数
-            total: 1,
-            // 搜索的参数对象
-            params: {
-                'query_text': '',
-                'expert_id': 0,
-                '_sort': 'id',
-                'order': ''
-            }
-        };
-    },
-
-    filters: {
-        table_name: function table_name(value) {
-            if (value == 'fertilize') {
-                return '施肥';
-            } else if (value == 'spray') {
-                return '病虫害';
-            } else if (value == 'detect') {
-                return '检验检测';
-            } else {
-                return '农事';
-            }
-        }
-    },
-    components: {
-        PopExpert: __WEBPACK_IMPORTED_MODULE_1__pop_expert_vue___default.a,
-        Paginator: __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default.a,
-        Search: __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default.a
-    },
-    mounted: function mounted() {
-        // 初始化，获取所有的专家信息
-        this.getAllMedicaments();
-    },
-
-    methods: {
-
-        /**
-         * 根据index获取不同的class
-         * @param  {Number} index 
-         * @return {String} 
-         */
-        getListClass: function getListClass(index) {
-            return index % 2 == 0 ? 'list-body-tr' : 'list-body-tr list-body-tr-event';
-        },
-
-
-        /**
-         * 获取所有专家信息
-         */
-        getAllMedicaments: function getAllMedicaments() {
-            var _this = this;
-
-            this.$http.get(this.$adminUrl('expert/query'), { params: { class_type: 0 } }).then(function (response) {
-                _this.total = response.body.experts.last_page;
-                _this.$set(_this, 'list', response.body.experts.data);
-            }, function (response) {
-                _this.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 全选或取消全选
-        * @param e
-        */
-        selectAll: function selectAll(e) {
-            if (e.target.checked) {
-                this.deleteMedicaments = [];
-                var _iteratorNormalCompletion = true;
-                var _didIteratorError = false;
-                var _iteratorError = undefined;
-
-                try {
-                    for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        var index = _step.value;
-
-                        this.deleteMedicaments.push({ 'id': this.list[index].id, 'index': index });
-                    }
-                } catch (err) {
-                    _didIteratorError = true;
-                    _iteratorError = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion && _iterator.return) {
-                            _iterator.return();
-                        }
-                    } finally {
-                        if (_didIteratorError) {
-                            throw _iteratorError;
-                        }
-                    }
-                }
-            } else {
-                this.deleteMedicaments = [];
-            }
-        },
-
-
-        /**
-        * 单个删除
-        */
-        destroy: function destroy() {
-            var _this2 = this;
-
-            this.$destroyL(this, 'expert', this.deleteMedicament.id).then(function (response) {
-                _this2.list.splice(_this2.deleteMedicament.index, 1);
-                _this2.deleteMedicament = { 'id': 0, 'index': 0 };
-                _this2.showConfirm = false;
-                _this2.$alert('删除成功');
-            }, function (response) {
-                _this2.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 批量删除
-        */
-        batchDestroy: function batchDestroy() {
-            var _this3 = this;
-
-            if (this.deleteMedicaments.length != 0) {
-                var ids = [];
-                var _iteratorNormalCompletion2 = true;
-                var _didIteratorError2 = false;
-                var _iteratorError2 = undefined;
-
-                try {
-                    for (var _iterator2 = this.deleteMedicaments[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                        var deleteMedicament = _step2.value;
-
-                        ids.push(deleteMedicament.id);
-                    }
-                } catch (err) {
-                    _didIteratorError2 = true;
-                    _iteratorError2 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                            _iterator2.return();
-                        }
-                    } finally {
-                        if (_didIteratorError2) {
-                            throw _iteratorError2;
-                        }
-                    }
-                }
-
-                this.$batchDestroy(this, 'expert', ids).then(function (response) {
-                    _this3.deleteMedicaments = _this3.$reverseObj(_this3.deleteMedicaments, 'index');
-                    var _iteratorNormalCompletion3 = true;
-                    var _didIteratorError3 = false;
-                    var _iteratorError3 = undefined;
-
-                    try {
-                        for (var _iterator3 = _this3.deleteMedicaments[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                            var deleteMedicament = _step3.value;
-
-                            _this3.list.splice(deleteMedicament.index, 1);
-                        }
-                    } catch (err) {
-                        _didIteratorError3 = true;
-                        _iteratorError3 = err;
-                    } finally {
-                        try {
-                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                                _iterator3.return();
-                            }
-                        } finally {
-                            if (_didIteratorError3) {
-                                throw _iteratorError3;
-                            }
-                        }
-                    }
-
-                    _this3.deleteMedicaments = [];
-                    _this3.showConfirm = false;
-                    _this3.$alert('成功删除' + response.body + '条');
-                }, function (response) {
-                    _this3.$alert('连接出错', 'e');
-                });
-            } else {
-                this.$alert('请选择专家');
-            }
-        },
-
-
-        /**
-         * 判断调用单个删除或批量删除
-         */
-        oneOrBatchdestroy: function oneOrBatchdestroy() {
-            if (this.oneOrBatch == 0) {
-                this.destroy();
-            } else {
-                this.batchDestroy();
-            }
-        },
-
-
-        /**
-        * 显示或隐藏编辑模块
-        * @param {Number} expert
-        */
-        troggleEdit: function troggleEdit(id) {
-            if (this.showItemDetail != id) {
-                this.showItemDetail = id;
-            } else {
-                this.showItemDetail = '';
-            }
-        },
-
-
-        /**
-        * 关闭编辑模块
-        * @param expert
-        */
-        closeOwnEditPane: function closeOwnEditPane(expert) {
-            this.troggleEdit(expert);
-        },
-
-
-        /**
-        * 显示确认窗口
-        * @param flag
-        * @param id
-        * @param index
-        */
-        showConfirmDialog: function showConfirmDialog(flag) {
-            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-
-            if (flag == 1 && this.deleteMedicaments.length == 0) {
-                this.$alert('请选择专家');
-            } else {
-                this.oneOrBatch = flag;
-                this.deleteMedicament.id = id;
-                this.deleteMedicament.index = index;
-                this.showConfirm = true;
-            }
-        },
-
-
-        /**
-        * 更新list中的一个
-        * @param expert
-        */
-        updateListByOne: function updateListByOne(newOne) {
-            this.showNewPanel = false;
-            this.list.unshift(newOne);
-        },
-
-
-        /**
-        * 更新list中的多个
-        * @param expert
-        */
-        updateListByMore: function updateListByMore(newList) {
-            this.$set(this, 'list', newList.data);
-            this.total = newList.last_page;
-            if (newList.query_text != undefined) {
-                this.params.query_text = newList.query_text;
+    name: 'AreaUnit',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
             }
         }
     }
@@ -14480,12 +14068,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_manure_vue__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_manure_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pop_manure_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
@@ -14513,387 +14095,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
 
 /* harmony default export */ exports["default"] = {
-    name: 'Manure',
-    data: function data() {
-        return {
-            // 存放肥料的数组
-            list: [],
-            // 存放批量删除的肥料的数组
-            deleteManures: [],
-            // 临时记录待删除的肥料信息
-            deleteManure: { 'id': 0, 'index': 0 },
-            // 单个删除或批量删除
-            oneOrBatch: 0,
-            // 是否显示新增模块
-            showNewPanel: false,
-            // 存放是否展开肥料编辑模块的标志，
-            showItemDetail: '',
-            // 定义PopManure是新增模块还是编辑模块，true：编辑模块，false：新增模块
-            showEditPane: true,
-            // 是否显示确认模块
-            showConfirm: false,
-            // vue实例
-            self: this,
-            // 分页的总页数
-            total: 1,
-            // 搜索的参数对象
-            params: {
-                'query_text': '',
-                'manure_id': 0,
-                '_sort': 'id',
-                'order': ''
-            }
-        };
-    },
-
-    components: {
-        PopManure: __WEBPACK_IMPORTED_MODULE_1__pop_manure_vue___default.a,
-        Paginator: __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default.a,
-        Search: __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default.a
-    },
-    mounted: function mounted() {
-        // 初始化，获取所有的肥料信息
-        this.getAllManures();
-    },
-
-    methods: {
-
-        /**
-         * 获取所有肥料信息
-         */
-        getAllManures: function getAllManures() {
-            var _this = this;
-
-            this.$index(this, 'manure').then(function (response) {
-                _this.total = response.body.manures.last_page;
-                _this.$set(_this, 'list', response.body.manures.data);
-            }, function (response) {
-                _this.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 全选或取消全选
-        * @param e
-        */
-        selectAll: function selectAll(e) {
-            if (e.target.checked) {
-                this.deleteManures = [];
-                var _iteratorNormalCompletion = true;
-                var _didIteratorError = false;
-                var _iteratorError = undefined;
-
-                try {
-                    for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        var index = _step.value;
-
-                        this.deleteManures.push({ 'id': this.list[index].id, 'index': index });
-                    }
-                } catch (err) {
-                    _didIteratorError = true;
-                    _iteratorError = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion && _iterator.return) {
-                            _iterator.return();
-                        }
-                    } finally {
-                        if (_didIteratorError) {
-                            throw _iteratorError;
-                        }
-                    }
-                }
-            } else {
-                this.deleteManures = [];
-            }
-        },
-
-
-        /**
-        * 单个删除
-        */
-        destroy: function destroy() {
-            var _this2 = this;
-
-            this.$destroyL(this, 'manure', this.deleteManure.id).then(function (response) {
-                _this2.list.splice(_this2.deleteManure.index, 1);
-                _this2.deleteManure = { 'id': 0, 'index': 0 };
-                _this2.showConfirm = false;
-                _this2.$alert('删除成功');
-            }, function (response) {
-                _this2.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 批量删除
-        */
-        batchDestroy: function batchDestroy() {
-            var _this3 = this;
-
-            if (this.deleteManures.length != 0) {
-                var ids = [];
-                var _iteratorNormalCompletion2 = true;
-                var _didIteratorError2 = false;
-                var _iteratorError2 = undefined;
-
-                try {
-                    for (var _iterator2 = this.deleteManures[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                        var deleteManure = _step2.value;
-
-                        ids.push(deleteManure.id);
-                    }
-                } catch (err) {
-                    _didIteratorError2 = true;
-                    _iteratorError2 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                            _iterator2.return();
-                        }
-                    } finally {
-                        if (_didIteratorError2) {
-                            throw _iteratorError2;
-                        }
-                    }
-                }
-
-                this.$batchDestroy(this, 'manure', ids).then(function (response) {
-                    _this3.deleteManures = _this3.$reverseObj(_this3.deleteManures, 'index');
-                    var _iteratorNormalCompletion3 = true;
-                    var _didIteratorError3 = false;
-                    var _iteratorError3 = undefined;
-
-                    try {
-                        for (var _iterator3 = _this3.deleteManures[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                            var deleteManure = _step3.value;
-
-                            _this3.list.splice(deleteManure.index, 1);
-                        }
-                    } catch (err) {
-                        _didIteratorError3 = true;
-                        _iteratorError3 = err;
-                    } finally {
-                        try {
-                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                                _iterator3.return();
-                            }
-                        } finally {
-                            if (_didIteratorError3) {
-                                throw _iteratorError3;
-                            }
-                        }
-                    }
-
-                    _this3.deleteManures = [];
-                    _this3.showConfirm = false;
-                    _this3.$alert('成功删除' + response.body + '条');
-                }, function (response) {
-                    _this3.$alert('连接出错', 'e');
-                });
-            } else {
-                this.$alert('请选择肥料');
-            }
-        },
-
-
-        /**
-         * 判断调用单个删除或批量删除
-         */
-        oneOrBatchdestroy: function oneOrBatchdestroy() {
-            if (this.oneOrBatch == 0) {
-                this.destroy();
-            } else {
-                this.batchDestroy();
-            }
-        },
-
-
-        /**
-        * 显示或隐藏编辑模块
-        * @param {Number} manure
-        */
-        troggleEdit: function troggleEdit(id) {
-            if (this.showItemDetail != id) {
-                this.showItemDetail = id;
-            } else {
-                this.showItemDetail = '';
-            }
-        },
-
-
-        /**
-        * 关闭编辑模块
-        * @param manure
-        */
-        closeOwnEditPane: function closeOwnEditPane(manure) {
-            this.troggleEdit(manure);
-        },
-
-
-        /**
-        * 显示确认窗口
-        * @param flag
-        * @param id
-        * @param index
-        */
-        showConfirmDialog: function showConfirmDialog(flag) {
-            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-
-            if (flag == 1 && this.deleteManures.length == 0) {
-                this.$alert('请选择肥料');
-            } else {
-                this.oneOrBatch = flag;
-                this.deleteManure.id = id;
-                this.deleteManure.index = index;
-                this.showConfirm = true;
-            }
-        },
-
-
-        /**
-        * 更新list中的一个
-        * @param manure
-        */
-        updateListByOne: function updateListByOne(newOne) {
-            this.showNewPanel = false;
-            this.list.unshift(newOne);
-        },
-
-
-        /**
-        * 更新list中的多个
-        * @param manure
-        */
-        updateListByMore: function updateListByMore(newList) {
-            this.$set(this, 'list', newList.data);
-            this.total = newList.last_page;
-            if (newList.query_text != undefined) {
-                this.params.query_text = newList.query_text;
+    name: 'MyImage',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
             }
         }
     }
@@ -14904,431 +14113,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_medicament_vue__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pop_medicament_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-/* harmony default export */ exports["default"] = {
-    name: 'Medicament',
-    data: function data() {
-        return {
-            // 存放农药的数组
-            list: [],
-            // 存放批量删除的农药的数组
-            deleteMedicaments: [],
-            // 临时记录待删除的农药信息
-            deleteMedicament: { 'id': 0, 'index': 0 },
-            // 单个删除或批量删除
-            oneOrBatch: 0,
-            // 是否显示新增模块
-            showNewPanel: false,
-            // 存放是否展开农药编辑模块的标志，
-            showItemDetail: '',
-            // 定义PopMedicament是新增模块还是编辑模块，true：编辑模块，false：新增模块
-            showEditPane: true,
-            // 是否显示确认模块
-            showConfirm: false,
-            // vue实例
-            self: this,
-            // 分页的总页数
-            total: 1,
-            // 搜索的参数对象
-            params: {
-                'query_text': '',
-                'medicament_id': 0,
-                '_sort': 'id',
-                'order': ''
-            }
-        };
-    },
-
-    components: {
-        PopMedicament: __WEBPACK_IMPORTED_MODULE_1__pop_medicament_vue___default.a,
-        Paginator: __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default.a,
-        Search: __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default.a
-    },
-    mounted: function mounted() {
-        // 初始化，获取所有的农药信息
-        this.getAllMedicaments();
-    },
-
-    methods: {
-
-        /**
-         * 获取所有农药信息
-         */
-        getAllMedicaments: function getAllMedicaments() {
-            var _this = this;
-
-            this.$index(this, 'medicament').then(function (response) {
-                _this.total = response.body.medicaments.last_page;
-                _this.$set(_this, 'list', response.body.medicaments.data);
-            }, function (response) {
-                _this.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 全选或取消全选
-        * @param e
-        */
-        selectAll: function selectAll(e) {
-            if (e.target.checked) {
-                this.deleteMedicaments = [];
-                var _iteratorNormalCompletion = true;
-                var _didIteratorError = false;
-                var _iteratorError = undefined;
-
-                try {
-                    for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        var index = _step.value;
-
-                        this.deleteMedicaments.push({ 'id': this.list[index].id, 'index': index });
-                    }
-                } catch (err) {
-                    _didIteratorError = true;
-                    _iteratorError = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion && _iterator.return) {
-                            _iterator.return();
-                        }
-                    } finally {
-                        if (_didIteratorError) {
-                            throw _iteratorError;
-                        }
-                    }
-                }
-            } else {
-                this.deleteMedicaments = [];
-            }
-        },
-
-
-        /**
-        * 单个删除
-        */
-        destroy: function destroy() {
-            var _this2 = this;
-
-            this.$destroyL(this, 'medicament', this.deleteMedicament.id).then(function (response) {
-                _this2.list.splice(_this2.deleteMedicament.index, 1);
-                _this2.deleteMedicament = { 'id': 0, 'index': 0 };
-                _this2.showConfirm = false;
-                _this2.$alert('删除成功');
-            }, function (response) {
-                _this2.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 批量删除
-        */
-        batchDestroy: function batchDestroy() {
-            var _this3 = this;
-
-            if (this.deleteMedicaments.length != 0) {
-                var ids = [];
-                var _iteratorNormalCompletion2 = true;
-                var _didIteratorError2 = false;
-                var _iteratorError2 = undefined;
-
-                try {
-                    for (var _iterator2 = this.deleteMedicaments[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                        var deleteMedicament = _step2.value;
-
-                        ids.push(deleteMedicament.id);
-                    }
-                } catch (err) {
-                    _didIteratorError2 = true;
-                    _iteratorError2 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                            _iterator2.return();
-                        }
-                    } finally {
-                        if (_didIteratorError2) {
-                            throw _iteratorError2;
-                        }
-                    }
-                }
-
-                this.$batchDestroy(this, 'medicament', ids).then(function (response) {
-                    _this3.deleteMedicaments = _this3.$reverseObj(_this3.deleteMedicaments, 'index');
-                    var _iteratorNormalCompletion3 = true;
-                    var _didIteratorError3 = false;
-                    var _iteratorError3 = undefined;
-
-                    try {
-                        for (var _iterator3 = _this3.deleteMedicaments[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                            var deleteMedicament = _step3.value;
-
-                            _this3.list.splice(deleteMedicament.index, 1);
-                        }
-                    } catch (err) {
-                        _didIteratorError3 = true;
-                        _iteratorError3 = err;
-                    } finally {
-                        try {
-                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                                _iterator3.return();
-                            }
-                        } finally {
-                            if (_didIteratorError3) {
-                                throw _iteratorError3;
-                            }
-                        }
-                    }
-
-                    _this3.deleteMedicaments = [];
-                    _this3.showConfirm = false;
-                    _this3.$alert('成功删除' + response.body + '条');
-                }, function (response) {
-                    _this3.$alert('连接出错', 'e');
-                });
-            } else {
-                this.$alert('请选择农药');
-            }
-        },
-
-
-        /**
-         * 判断调用单个删除或批量删除
-         */
-        oneOrBatchdestroy: function oneOrBatchdestroy() {
-            if (this.oneOrBatch == 0) {
-                this.destroy();
-            } else {
-                this.batchDestroy();
-            }
-        },
-
-
-        /**
-        * 显示或隐藏编辑模块
-        * @param {Number} medicament
-        */
-        troggleEdit: function troggleEdit(id) {
-            if (this.showItemDetail != id) {
-                this.showItemDetail = id;
-            } else {
-                this.showItemDetail = '';
-            }
-        },
-
-
-        /**
-        * 关闭编辑模块
-        * @param medicament
-        */
-        closeOwnEditPane: function closeOwnEditPane(medicament) {
-            this.troggleEdit(medicament);
-        },
-
-
-        /**
-        * 显示确认窗口
-        * @param flag
-        * @param id
-        * @param index
-        */
-        showConfirmDialog: function showConfirmDialog(flag) {
-            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-
-            if (flag == 1 && this.deleteMedicaments.length == 0) {
-                this.$alert('请选择农药');
-            } else {
-                this.oneOrBatch = flag;
-                this.deleteMedicament.id = id;
-                this.deleteMedicament.index = index;
-                this.showConfirm = true;
-            }
-        },
-
-
-        /**
-        * 更新list中的一个
-        * @param medicament
-        */
-        updateListByOne: function updateListByOne(newOne) {
-            this.showNewPanel = false;
-            this.list.unshift(newOne);
-        },
-
-
-        /**
-        * 更新list中的多个
-        * @param medicament
-        */
-        updateListByMore: function updateListByMore(newList) {
-            this.$set(this, 'list', newList.data);
-            this.total = newList.last_page;
-            if (newList.query_text != undefined) {
-                this.params.query_text = newList.query_text;
-            }
-        }
-    }
-};
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
@@ -15365,1288 +14151,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
     props: {
         taps: {
             type: Array,
-            default: []
+            default: [{ name: 'default', key: 'default' }]
         }
-    }
-};
-
-/***/ },
-/* 13 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_plant_vue__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_plant_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pop_plant_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__);
-Object.defineProperty(exports, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-/* harmony default export */ exports["default"] = {
-    name: 'Plant',
+    },
     data: function data() {
         return {
-            // 存放果蔬的数组
-            list: [],
-            // 存放批量删除的果蔬的数组
-            deletePlants: [],
-            // 临时记录待删除的果蔬信息
-            deletePlant: { 'id': 0, 'index': 0 },
-            // 单个删除或批量删除
-            oneOrBatch: 0,
-            // 是否显示新增模块
-            showNewPanel: false,
-            // 存放是否展开果蔬编辑模块的标志，
-            showItemDetail: '',
-            // 定义PopPlant是新增模块还是编辑模块，true：编辑模块，false：新增模块
-            showEditPane: true,
-            // 是否显示确认模块
-            showConfirm: false,
-            // vue实例
-            self: this,
-            // 分页的总页数
-            total: 1,
-            // 搜索的参数对象
-            params: {
-                'query_text': '',
-                'plant_id': 0,
-                '_sort': 'id',
-                'order': ''
-            }
+            activeKey: this.taps[0].key
         };
     },
 
-    components: {
-        PopPlant: __WEBPACK_IMPORTED_MODULE_1__pop_plant_vue___default.a,
-        Paginator: __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default.a,
-        Search: __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default.a
-    },
-    mounted: function mounted() {
-        // 初始化，获取所有的果蔬信息
-        this.getAllPlants();
-    },
-
     methods: {
-
-        /**
-         * 获取所有果蔬信息
-         */
-        getAllPlants: function getAllPlants() {
-            var _this = this;
-
-            this.$index(this, 'plant').then(function (response) {
-                _this.total = response.body.plants.last_page;
-                _this.$set(_this, 'list', response.body.plants.data);
-            }, function (response) {
-                _this.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 全选或取消全选
-        * @param e
-        */
-        selectAll: function selectAll(e) {
-            if (e.target.checked) {
-                this.deletePlants = [];
-                var _iteratorNormalCompletion = true;
-                var _didIteratorError = false;
-                var _iteratorError = undefined;
-
-                try {
-                    for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        var index = _step.value;
-
-                        this.deletePlants.push({ 'id': this.list[index].id, 'index': index });
-                    }
-                } catch (err) {
-                    _didIteratorError = true;
-                    _iteratorError = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion && _iterator.return) {
-                            _iterator.return();
-                        }
-                    } finally {
-                        if (_didIteratorError) {
-                            throw _iteratorError;
-                        }
-                    }
-                }
-            } else {
-                this.deletePlants = [];
-            }
-        },
-
-
-        /**
-        * 单个删除
-        */
-        destroy: function destroy() {
-            var _this2 = this;
-
-            this.$destroyL(this, 'plant', this.deletePlant.id).then(function (response) {
-                _this2.list.splice(_this2.deletePlant.index, 1);
-                _this2.deletePlant = { 'id': 0, 'index': 0 };
-                _this2.showConfirm = false;
-                _this2.$alert('删除成功');
-            }, function (response) {
-                _this2.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 批量删除
-        */
-        batchDestroy: function batchDestroy() {
-            var _this3 = this;
-
-            if (this.deletePlants.length != 0) {
-                var ids = [];
-                var _iteratorNormalCompletion2 = true;
-                var _didIteratorError2 = false;
-                var _iteratorError2 = undefined;
-
-                try {
-                    for (var _iterator2 = this.deletePlants[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                        var deletePlant = _step2.value;
-
-                        ids.push(deletePlant.id);
-                    }
-                } catch (err) {
-                    _didIteratorError2 = true;
-                    _iteratorError2 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                            _iterator2.return();
-                        }
-                    } finally {
-                        if (_didIteratorError2) {
-                            throw _iteratorError2;
-                        }
-                    }
-                }
-
-                this.$batchDestroy(this, 'plant', ids).then(function (response) {
-                    _this3.deletePlants = _this3.$reverseObj(_this3.deletePlants, 'index');
-                    var _iteratorNormalCompletion3 = true;
-                    var _didIteratorError3 = false;
-                    var _iteratorError3 = undefined;
-
-                    try {
-                        for (var _iterator3 = _this3.deletePlants[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                            var deletePlant = _step3.value;
-
-                            _this3.list.splice(deletePlant.index, 1);
-                        }
-                    } catch (err) {
-                        _didIteratorError3 = true;
-                        _iteratorError3 = err;
-                    } finally {
-                        try {
-                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                                _iterator3.return();
-                            }
-                        } finally {
-                            if (_didIteratorError3) {
-                                throw _iteratorError3;
-                            }
-                        }
-                    }
-
-                    _this3.deletePlants = [];
-                    _this3.showConfirm = false;
-                    _this3.$alert('成功删除' + response.body + '条');
-                }, function (response) {
-                    _this3.$alert('连接出错', 'e');
-                });
-            } else {
-                this.$alert('请选择果蔬');
-            }
-        },
-
-
-        /**
-         * 判断调用单个删除或批量删除
-         */
-        oneOrBatchdestroy: function oneOrBatchdestroy() {
-            if (this.oneOrBatch == 0) {
-                this.destroy();
-            } else {
-                this.batchDestroy();
-            }
-        },
-
-
-        /**
-        * 显示或隐藏编辑模块
-        * @param {Number} plant
-        */
-        troggleEdit: function troggleEdit(id) {
-            if (this.showItemDetail != id) {
-                this.showItemDetail = id;
-            } else {
-                this.showItemDetail = '';
-            }
-        },
-
-
-        /**
-        * 关闭编辑模块
-        * @param plant
-        */
-        closeOwnEditPane: function closeOwnEditPane(plant) {
-            this.troggleEdit(plant);
-        },
-
-
-        /**
-        * 显示确认窗口
-        * @param flag
-        * @param id
-        * @param index
-        */
-        showConfirmDialog: function showConfirmDialog(flag) {
-            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-
-            if (flag == 1 && this.deletePlants.length == 0) {
-                this.$alert('请选择果蔬');
-            } else {
-                this.oneOrBatch = flag;
-                this.deletePlant.id = id;
-                this.deletePlant.index = index;
-                this.showConfirm = true;
-            }
-        },
-
-
-        /**
-        * 更新list中的一个
-        * @param plant
-        */
-        updateListByOne: function updateListByOne(newOne) {
-            this.showNewPanel = false;
-            this.list.unshift(newOne);
-        },
-
-
-        /**
-        * 更新list中的多个
-        * @param plant
-        */
-        updateListByMore: function updateListByMore(newList) {
-            this.$set(this, 'list', newList.data);
-            this.total = newList.last_page;
-            if (newList.query_text != undefined) {
-                this.params.query_text = newList.query_text;
-            }
+        getKey: function getKey(key) {
+            this.activeKey = key;
+            this.$emit('getKey', key);
         }
     }
 };
 
 /***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_planta_vue__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_planta_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pop_planta_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__);
-Object.defineProperty(exports, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-/* harmony default export */ exports["default"] = {
-    name: 'Planta',
-    data: function data() {
-        return {
-            // 存放种植区的数组
-            list: [],
-            // 存放批量删除的种植区的数组
-            deletePlantas: [],
-            // 临时记录待删除的种植区信息
-            deletePlanta: { 'id': 0, 'index': 0 },
-            // 单个删除或批量删除
-            oneOrBatch: 0,
-            // 是否显示新增模块
-            showNewPanel: false,
-            // 存放是否展开种植区编辑模块的标志，
-            showItemDetail: '',
-            // 定义PopPlanta是新增模块还是编辑模块，true：编辑模块，false：新增模块
-            showEditPane: true,
-            // 是否显示确认模块
-            showConfirm: false,
-            // vue实例
-            self: this,
-            // 分页的总页数
-            total: 1,
-            // 搜索的参数对象
-            params: {
-                'query_text': '',
-                'planta_id': 0,
-                '_sort': 'id',
-                'order': ''
-            }
-        };
-    },
-
-    components: {
-        PopPlanta: __WEBPACK_IMPORTED_MODULE_1__pop_planta_vue___default.a,
-        Paginator: __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default.a,
-        Search: __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default.a
-    },
-    mounted: function mounted() {
-        // 初始化，获取所有的种植区信息
-        this.getAllPlantas();
-    },
-
-    methods: {
-
-        /**
-         * 获取所有种植区信息
-         */
-        getAllPlantas: function getAllPlantas() {
-            var _this = this;
-
-            this.$index(this, 'planta').then(function (response) {
-                _this.total = response.body.plantas.last_page;
-                _this.$set(_this, 'list', response.body.plantas.data);
-            }, function (response) {
-                _this.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 全选或取消全选
-        * @param e
-        */
-        selectAll: function selectAll(e) {
-            if (e.target.checked) {
-                this.deletePlantas = [];
-                var _iteratorNormalCompletion = true;
-                var _didIteratorError = false;
-                var _iteratorError = undefined;
-
-                try {
-                    for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        var index = _step.value;
-
-                        this.deletePlantas.push({ 'id': this.list[index].id, 'index': index });
-                    }
-                } catch (err) {
-                    _didIteratorError = true;
-                    _iteratorError = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion && _iterator.return) {
-                            _iterator.return();
-                        }
-                    } finally {
-                        if (_didIteratorError) {
-                            throw _iteratorError;
-                        }
-                    }
-                }
-            } else {
-                this.deletePlantas = [];
-            }
-        },
-
-
-        /**
-        * 单个删除
-        */
-        destroy: function destroy() {
-            var _this2 = this;
-
-            this.$destroyL(this, 'planta', this.deletePlanta.id).then(function (response) {
-                _this2.list.splice(_this2.deletePlanta.index, 1);
-                _this2.deletePlanta = { 'id': 0, 'index': 0 };
-                _this2.showConfirm = false;
-                _this2.$alert('删除成功');
-            }, function (response) {
-                _this2.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 批量删除
-        */
-        batchDestroy: function batchDestroy() {
-            var _this3 = this;
-
-            if (this.deletePlantas.length != 0) {
-                var ids = [];
-                var _iteratorNormalCompletion2 = true;
-                var _didIteratorError2 = false;
-                var _iteratorError2 = undefined;
-
-                try {
-                    for (var _iterator2 = this.deletePlantas[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                        var deletePlanta = _step2.value;
-
-                        ids.push(deletePlanta.id);
-                    }
-                } catch (err) {
-                    _didIteratorError2 = true;
-                    _iteratorError2 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                            _iterator2.return();
-                        }
-                    } finally {
-                        if (_didIteratorError2) {
-                            throw _iteratorError2;
-                        }
-                    }
-                }
-
-                this.$batchDestroy(this, 'planta', ids).then(function (response) {
-                    _this3.deletePlantas = _this3.$reverseObj(_this3.deletePlantas, 'index');
-                    var _iteratorNormalCompletion3 = true;
-                    var _didIteratorError3 = false;
-                    var _iteratorError3 = undefined;
-
-                    try {
-                        for (var _iterator3 = _this3.deletePlantas[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                            var deletePlanta = _step3.value;
-
-                            _this3.list.splice(deletePlanta.index, 1);
-                        }
-                    } catch (err) {
-                        _didIteratorError3 = true;
-                        _iteratorError3 = err;
-                    } finally {
-                        try {
-                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                                _iterator3.return();
-                            }
-                        } finally {
-                            if (_didIteratorError3) {
-                                throw _iteratorError3;
-                            }
-                        }
-                    }
-
-                    _this3.deletePlantas = [];
-                    _this3.showConfirm = false;
-                    _this3.$alert('成功删除' + response.body + '条');
-                }, function (response) {
-                    _this3.$alert('连接出错', 'e');
-                });
-            } else {
-                this.$alert('请选择种植区');
-            }
-        },
-
-
-        /**
-         * 判断调用单个删除或批量删除
-         */
-        oneOrBatchdestroy: function oneOrBatchdestroy() {
-            if (this.oneOrBatch == 0) {
-                this.destroy();
-            } else {
-                this.batchDestroy();
-            }
-        },
-
-
-        /**
-        * 显示或隐藏编辑模块
-        * @param {Number} planta
-        */
-        troggleEdit: function troggleEdit(id) {
-            if (this.showItemDetail != id) {
-                this.showItemDetail = id;
-            } else {
-                this.showItemDetail = '';
-            }
-        },
-
-
-        /**
-        * 关闭编辑模块
-        * @param planta
-        */
-        closeOwnEditPane: function closeOwnEditPane(planta) {
-            this.troggleEdit(planta);
-        },
-
-
-        /**
-        * 显示确认窗口
-        * @param flag
-        * @param id
-        * @param index
-        */
-        showConfirmDialog: function showConfirmDialog(flag) {
-            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-
-            if (flag == 1 && this.deletePlantas.length == 0) {
-                this.$alert('请选择种植区');
-            } else {
-                this.oneOrBatch = flag;
-                this.deletePlanta.id = id;
-                this.deletePlanta.index = index;
-                this.showConfirm = true;
-            }
-        },
-
-
-        /**
-        * 更新list中的一个
-        * @param planta
-        */
-        updateListByOne: function updateListByOne(newOne) {
-            this.showNewPanel = false;
-            this.list.unshift(newOne);
-        },
-
-
-        /**
-        * 更新list中的多个
-        * @param planta
-        */
-        updateListByMore: function updateListByMore(newList) {
-            this.$set(this, 'list', newList.data);
-            this.total = newList.last_page;
-            if (newList.query_text != undefined) {
-                this.params.query_text = newList.query_text;
-            }
-        }
-    }
-};
-
-/***/ },
-/* 15 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_plantation_vue__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_plantation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pop_plantation_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__public_paginator_vue__);
-Object.defineProperty(exports, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-
-/* harmony default export */ exports["default"] = {
-    name: 'Plantation',
-    data: function data() {
-        return {
-            // 存放种植场的数组
-            list: [],
-            // 存放批量删除的种植场的数组
-            deletePlantations: [],
-            // 临时记录待删除的种植场信息
-            deletePlantation: { 'id': 0, 'index': 0 },
-            // 单个删除或批量删除
-            oneOrBatch: 0,
-            // 是否显示新增模块
-            showNewPanel: false,
-            // 存放是否展开种植场编辑模块的标志，
-            showItemDetail: '',
-            // 定义PopPlantation是新增模块还是编辑模块，true：编辑模块，false：新增模块
-            showEditPane: true,
-            // 是否显示确认模块
-            showConfirm: false,
-            // vue实例
-            self: this,
-            // 分页的总页数
-            total: 1,
-            // 搜索的参数对象
-            params: {
-                'query_text': '',
-                'plantation_id': 0,
-                '_sort': 'id',
-                'order': ''
-            }
-        };
-    },
-
-    components: {
-        PopPlantation: __WEBPACK_IMPORTED_MODULE_1__pop_plantation_vue___default.a,
-        Paginator: __WEBPACK_IMPORTED_MODULE_2__public_paginator_vue___default.a,
-        Search: __WEBPACK_IMPORTED_MODULE_0__public_search_vue___default.a
-    },
-    mounted: function mounted() {
-        // 初始化，获取所有的种植场信息
-        this.getAllPlantations();
-    },
-
-    methods: {
-
-        /**
-         * 获取所有种植场信息
-         */
-        getAllPlantations: function getAllPlantations() {
-            var _this = this;
-
-            this.$index(this, 'plantation').then(function (response) {
-                _this.total = response.body.plantations.last_page;
-                _this.$set(_this, 'list', response.body.plantations.data);
-            }, function (response) {
-                _this.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 全选或取消全选
-        * @param e
-        */
-        selectAll: function selectAll(e) {
-            if (e.target.checked) {
-                this.deletePlantations = [];
-                var _iteratorNormalCompletion = true;
-                var _didIteratorError = false;
-                var _iteratorError = undefined;
-
-                try {
-                    for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        var index = _step.value;
-
-                        this.deletePlantations.push({ 'id': this.list[index].id, 'index': index });
-                    }
-                } catch (err) {
-                    _didIteratorError = true;
-                    _iteratorError = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion && _iterator.return) {
-                            _iterator.return();
-                        }
-                    } finally {
-                        if (_didIteratorError) {
-                            throw _iteratorError;
-                        }
-                    }
-                }
-            } else {
-                this.deletePlantations = [];
-            }
-        },
-
-
-        /**
-        * 单个删除
-        */
-        destroy: function destroy() {
-            var _this2 = this;
-
-            this.$destroyL(this, 'plantation', this.deletePlantation.id).then(function (response) {
-                _this2.list.splice(_this2.deletePlantation.index, 1);
-                _this2.deletePlantation = { 'id': 0, 'index': 0 };
-                _this2.showConfirm = false;
-                _this2.$alert('删除成功');
-            }, function (response) {
-                _this2.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 批量删除
-        */
-        batchDestroy: function batchDestroy() {
-            var _this3 = this;
-
-            if (this.deletePlantations.length != 0) {
-                var ids = [];
-                var _iteratorNormalCompletion2 = true;
-                var _didIteratorError2 = false;
-                var _iteratorError2 = undefined;
-
-                try {
-                    for (var _iterator2 = this.deletePlantations[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                        var deletePlantation = _step2.value;
-
-                        ids.push(deletePlantation.id);
-                    }
-                } catch (err) {
-                    _didIteratorError2 = true;
-                    _iteratorError2 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                            _iterator2.return();
-                        }
-                    } finally {
-                        if (_didIteratorError2) {
-                            throw _iteratorError2;
-                        }
-                    }
-                }
-
-                this.$batchDestroy(this, 'plantation', ids).then(function (response) {
-                    _this3.deletePlantations = _this3.$reverseObj(_this3.deletePlantations, 'index');
-                    var _iteratorNormalCompletion3 = true;
-                    var _didIteratorError3 = false;
-                    var _iteratorError3 = undefined;
-
-                    try {
-                        for (var _iterator3 = _this3.deletePlantations[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                            var deletePlantation = _step3.value;
-
-                            _this3.list.splice(deletePlantation.index, 1);
-                        }
-                    } catch (err) {
-                        _didIteratorError3 = true;
-                        _iteratorError3 = err;
-                    } finally {
-                        try {
-                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                                _iterator3.return();
-                            }
-                        } finally {
-                            if (_didIteratorError3) {
-                                throw _iteratorError3;
-                            }
-                        }
-                    }
-
-                    _this3.deletePlantations = [];
-                    _this3.showConfirm = false;
-                    _this3.$alert('成功删除' + response.body + '条');
-                }, function (response) {
-                    _this3.$alert('连接出错', 'e');
-                });
-            } else {
-                this.$alert('请选择种植场');
-            }
-        },
-
-
-        /**
-         * 判断调用单个删除或批量删除
-         */
-        oneOrBatchdestroy: function oneOrBatchdestroy() {
-            if (this.oneOrBatch == 0) {
-                this.destroy();
-            } else {
-                this.batchDestroy();
-            }
-        },
-
-
-        /**
-        * 显示或隐藏编辑模块
-        * @param {Number} plantation
-        */
-        troggleEdit: function troggleEdit(id) {
-            if (this.showItemDetail != id) {
-                this.showItemDetail = id;
-            } else {
-                this.showItemDetail = '';
-            }
-        },
-
-
-        /**
-        * 关闭编辑模块
-        * @param plantation
-        */
-        closeOwnEditPane: function closeOwnEditPane(plantation) {
-            this.troggleEdit(plantation);
-        },
-
-
-        /**
-        * 显示确认窗口
-        * @param flag
-        * @param id
-        * @param index
-        */
-        showConfirmDialog: function showConfirmDialog(flag) {
-            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-
-            if (flag == 1 && this.deletePlantations.length == 0) {
-                this.$alert('请选择种植场');
-            } else {
-                this.oneOrBatch = flag;
-                this.deletePlantation.id = id;
-                this.deletePlantation.index = index;
-                this.showConfirm = true;
-            }
-        },
-
-
-        /**
-        * 更新list中的一个
-        * @param plantation
-        */
-        updateListByOne: function updateListByOne(newOne) {
-            this.showNewPanel = false;
-            this.list.unshift(newOne);
-        },
-
-
-        /**
-        * 更新list中的多个
-        * @param plantation
-        */
-        updateListByMore: function updateListByMore(newList) {
-            this.$set(this, 'list', newList.data);
-            this.total = newList.last_page;
-            if (newList.query_text != undefined) {
-                this.params.query_text = newList.query_text;
-            }
-        }
-    }
-};
-
-/***/ },
-/* 16 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16826,12 +14349,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ exports["default"] = {
     expert_name: 'PopExpert',
     props: {
-        expert: {
+        letItem: {
             type: Object,
             default: function _default() {
                 return _defineProperty({
@@ -16883,7 +14413,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return 0;
             } else {
                 for (var index in this.tableType) {
-                    if (this.tableSet[index] == this.expert.table_type) {
+                    if (this.tableSet[index] == this.letItem.table_type) {
                         return index;
                     }
                 }
@@ -16894,7 +14424,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return 0;
             } else {
                 for (var index in this.sex) {
-                    if (this.sex[index] == this.expert.sex) {
+                    if (this.sex[index] == this.letItem.sex) {
                         return index;
                     }
                 };
@@ -16907,10 +14437,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         var _iteratorError = undefined;
 
         try {
-            for (var _iterator = Object.keys(this.expert)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                 var key = _step.value;
 
-                this.tmp[key] = this.expert[key];
+                this.tmp[key] = this.letItem[key];
             }
         } catch (err) {
             _didIteratorError = true;
@@ -16937,23 +14467,23 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             var _this = this;
 
             var params = {
-                'id': this.expert.id,
+                'id': this.letItem.id,
                 'field': 'expert_name',
-                'value': this.expert.expert_name
+                'value': this.letItem.expert_name
             };
-            this.$unique(this, 'expert', params, 'expert.expert_name').then(function () {
+            this.$unique(this, 'expert', params, 'letItem.expert_name').then(function () {
 
                 if (_this.edit) {
-                    _this.$update(_this, 'expert', _this.expert).then(function (response) {
+                    _this.$update(_this, 'expert', _this.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
 
                         try {
-                            for (var _iterator2 = Object.keys(_this.expert)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                                 var key = _step2.value;
 
-                                _this.tmp[key] = _this.expert[key];
+                                _this.tmp[key] = _this.letItem[key];
                             }
                         } catch (err) {
                             _didIteratorError2 = true;
@@ -16979,9 +14509,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                         }
                     });
                 } else {
-                    _this.$storeL(_this, 'expert', _this.expert).then(function (response) {
-                        _this.expert.id = response.body;
-                        _this.$emit('callback', _this.expert);
+                    _this.$storeL(_this, 'expert', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
                         _this.$alert('新增成功', 's');
                     }, function (response) {
                         if (response != false) {
@@ -16999,16 +14529,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         /**
         * 隐藏新增模块
         */
-        cancelAddPlanta: function cancelAddPlanta() {
+        cancelAddExpert: function cancelAddExpert() {
             this.$emit('closeNew');
         },
 
 
         /**
         * 隐藏编辑模块
-        * @param expert
+        * @param letItem
         */
-        cancelEditPlanta: function cancelEditPlanta() {
+        cancelEditExpert: function cancelEditExpert() {
             this.$emit('closeEdit');
         },
 
@@ -17016,24 +14546,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         * CallBack函数,执行回调函数 
         */
         getMsgType: function getMsgType(msg) {
-            console.log(this.expert.table_type);
-            this.expert.table_type = msg;
-        },
-        getMsgSex: function getMsgSex(msg) {
-            this.expert.sex = msg;
-        }
-    },
-    destroyed: function destroyed() {
-        if (this.edit) {
             var _iteratorNormalCompletion3 = true;
             var _didIteratorError3 = false;
             var _iteratorError3 = undefined;
 
             try {
-                for (var _iterator3 = Object.keys(this.expert)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                    var key = _step3.value;
+                for (var _iterator3 = Object.keys(this.tableType)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var index = _step3.value;
 
-                    this.expert[key] = this.tmp[key];
+                    if (this.tableType[index] == msg) {
+                        this.letItem.table_type = this.tableSet[index];
+                    }
                 }
             } catch (err) {
                 _didIteratorError3 = true;
@@ -17049,16 +14572,54 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                     }
                 }
             }
+        },
+        getMsgSex: function getMsgSex(msg) {
+            this.letItem.sex = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion4 = true;
+            var _didIteratorError4 = false;
+            var _iteratorError4 = undefined;
+
+            try {
+                for (var _iterator4 = Object.keys(this.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                    var key = _step4.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError4 = true;
+                _iteratorError4 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                        _iterator4.return();
+                    }
+                } finally {
+                    if (_didIteratorError4) {
+                        throw _iteratorError4;
+                    }
+                }
+            }
         }
     }
 };
 
 /***/ },
-/* 17 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -17195,7 +14756,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony default export */ exports["default"] = {
     name: 'PopManure',
     props: {
-        manure: {
+        letItem: {
             type: Object,
             default: function _default() {
                 return {
@@ -17243,7 +14804,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 return 0;
             } else {
                 for (var index in this.categorys) {
-                    if (this.categorys[index].name == this.manure.category_name) {
+                    if (this.categorys[index].id == this.letItem.category_id) {
                         return index;
                     }
                 }
@@ -17252,16 +14813,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
         }
     },
     mounted: function mounted() {
-        this.getAllPlantation();
+        this.getAllManure();
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
         var _iteratorError = undefined;
 
         try {
-            for (var _iterator = Object.keys(this.manure)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                 var key = _step.value;
 
-                this.tmp[key] = this.manure[key];
+                this.tmp[key] = this.letItem[key];
             }
         } catch (err) {
             _didIteratorError = true;
@@ -17284,7 +14845,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
         /**
         * 获取所有肥料分类
         */
-        getAllPlantation: function getAllPlantation() {
+        getAllManure: function getAllManure() {
             var _this = this;
 
             this.$http.get(this.$adminUrl('manure_category/query')).then(function (response) {
@@ -17300,11 +14861,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _this2 = this;
 
             var params = {
-                'id': this.manure.id,
+                'id': this.letItem.id,
                 'field': 'name',
-                'value': this.manure.name
+                'value': this.letItem.name
             };
-            this.$unique(this, 'manure', params, 'manure.name').then(function () {
+            this.$unique(this, 'manure', params, 'letItem.name').then(function () {
                 var _iteratorNormalCompletion2 = true;
                 var _didIteratorError2 = false;
                 var _iteratorError2 = undefined;
@@ -17313,8 +14874,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
                     for (var _iterator2 = _this2.categorys[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                         var category = _step2.value;
 
-                        if (category.id == _this2.manure.category_id) {
-                            _this2.manure.category_name = category.name;
+                        if (category.id == _this2.letItem.category_id) {
+                            _this2.letItem.category_name = category.name;
                         }
                     }
                 } catch (err) {
@@ -17333,16 +14894,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 }
 
                 if (_this2.edit) {
-                    _this2.$update(_this2, 'manure', _this2.manure).then(function (response) {
+                    _this2.$update(_this2, 'manure', _this2.letItem).then(function (response) {
                         var _iteratorNormalCompletion3 = true;
                         var _didIteratorError3 = false;
                         var _iteratorError3 = undefined;
 
                         try {
-                            for (var _iterator3 = Object.keys(_this2.manure)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                            for (var _iterator3 = Object.keys(_this2.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
                                 var key = _step3.value;
 
-                                _this2.tmp[key] = _this2.manure[key];
+                                _this2.tmp[key] = _this2.letItem[key];
                             }
                         } catch (err) {
                             _didIteratorError3 = true;
@@ -17368,9 +14929,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this2.$storeL(_this2, 'manure', _this2.manure).then(function (response) {
-                        _this2.manure.id = response.body;
-                        _this2.$emit('callback', _this2.manure);
+                    _this2.$storeL(_this2, 'manure', _this2.letItem).then(function (response) {
+                        _this2.letItem.id = response.body;
+                        _this2.$emit('callback', _this2.letItem);
                         _this2.$alert('新增成功', 's');
                     }, function (response) {
                         if (response != false) {
@@ -17388,16 +14949,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
         /**
         * 隐藏新增模块
         */
-        cancelAddPlanta: function cancelAddPlanta() {
+        cancelAddManure: function cancelAddManure() {
             this.$emit('closeNew');
         },
 
 
         /**
         * 隐藏编辑模块
-        * @param manure
+        * @param letItem
         */
-        cancelEditPlanta: function cancelEditPlanta() {
+        cancelEditManure: function cancelEditManure() {
             this.$emit('closeEdit');
         },
 
@@ -17405,7 +14966,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
         * CallBack函数,执行回调函数 
         */
         getMsg: function getMsg(msg) {
-            this.manure.category_id = msg;
+            this.letItem.category_id = msg;
         }
     },
     destroyed: function destroyed() {
@@ -17415,10 +14976,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _iteratorError4 = undefined;
 
             try {
-                for (var _iterator4 = Object.keys(this.manure)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                for (var _iterator4 = Object.keys(this.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
                     var key = _step4.value;
 
-                    this.manure[key] = this.tmp[key];
+                    this.letItem[key] = this.tmp[key];
                 }
             } catch (err) {
                 _didIteratorError4 = true;
@@ -17439,11 +15000,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 18 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -17604,7 +15172,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony default export */ exports["default"] = {
     name: 'PopMedicament',
     props: {
-        medicament: {
+        letItem: {
             type: Object,
             default: function _default() {
                 return {
@@ -17657,8 +15225,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 return 0;
             } else {
                 for (var index in this.categorys) {
-                    console.log(this.medicament.category_name);
-                    if (this.categorys[index].name == this.medicament.category_name) {
+                    if (this.categorys[index].id == this.letItem.category_id) {
                         return index;
                     }
                 }
@@ -17669,8 +15236,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 return 0;
             } else {
                 for (var index in this.toxicity) {
-                    if (this.toxicity[index] == this.medicament.toxicity_grade) {
-                        //console.log(this.medicament.toxicity_grade);
+                    if (this.toxicity[index] == this.letItem.toxicity_grade) {
+                        //console.log(this.letItem.toxicity_grade);
                         return index;
                     }
                 }
@@ -17684,10 +15251,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
         var _iteratorError = undefined;
 
         try {
-            for (var _iterator = Object.keys(this.medicament)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                 var key = _step.value;
 
-                this.tmp[key] = this.medicament[key];
+                this.tmp[key] = this.letItem[key];
             }
         } catch (err) {
             _didIteratorError = true;
@@ -17726,11 +15293,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _this2 = this;
 
             var params = {
-                'id': this.medicament.id,
+                'id': this.letItem.id,
                 'field': 'name',
-                'value': this.medicament.name
+                'value': this.letItem.name
             };
-            this.$unique(this, 'medicament', params, 'medicament.name').then(function () {
+            this.$unique(this, 'medicament', params, 'letItem.name').then(function () {
                 var _iteratorNormalCompletion2 = true;
                 var _didIteratorError2 = false;
                 var _iteratorError2 = undefined;
@@ -17739,8 +15306,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
                     for (var _iterator2 = _this2.categorys[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                         var category = _step2.value;
 
-                        if (category.id == _this2.medicament.category_id) {
-                            _this2.medicament.category_name = category.name;
+                        if (category.id == _this2.letItem.category_id) {
+                            _this2.letItem.category_name = category.name;
                         }
                     }
                 } catch (err) {
@@ -17759,16 +15326,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 }
 
                 if (_this2.edit) {
-                    _this2.$update(_this2, 'medicament', _this2.medicament).then(function (response) {
+                    _this2.$update(_this2, 'medicament', _this2.letItem).then(function (response) {
                         var _iteratorNormalCompletion3 = true;
                         var _didIteratorError3 = false;
                         var _iteratorError3 = undefined;
 
                         try {
-                            for (var _iterator3 = Object.keys(_this2.medicament)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                            for (var _iterator3 = Object.keys(_this2.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
                                 var key = _step3.value;
 
-                                _this2.tmp[key] = _this2.medicament[key];
+                                _this2.tmp[key] = _this2.letItem[key];
                             }
                         } catch (err) {
                             _didIteratorError3 = true;
@@ -17794,9 +15361,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this2.$storeL(_this2, 'medicament', _this2.medicament).then(function (response) {
-                        _this2.medicament.id = response.body;
-                        _this2.$emit('callback', _this2.medicament);
+                    _this2.$storeL(_this2, 'medicament', _this2.letItem).then(function (response) {
+                        _this2.letItem.id = response.body;
+                        _this2.$emit('callback', _this2.letItem);
                         _this2.$alert('新增成功', 's');
                     }, function (response) {
                         if (response != false) {
@@ -17814,16 +15381,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
         /**
         * 隐藏新增模块
         */
-        cancelAddPlanta: function cancelAddPlanta() {
+        cancelAddMedicament: function cancelAddMedicament() {
             this.$emit('closeNew');
         },
 
 
         /**
         * 隐藏编辑模块
-        * @param medicament
+        * @param letItem
         */
-        cancelEditPlanta: function cancelEditPlanta() {
+        cancelEditMedicament: function cancelEditMedicament() {
             this.$emit('closeEdit');
         },
 
@@ -17831,10 +15398,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
         * CallBack函数,执行回调函数 
         */
         getMsgId: function getMsgId(msg) {
-            this.medicament.category_id = msg;
+            this.letItem.category_id = msg;
         },
         getMsgGrade: function getMsgGrade(msg) {
-            this.medicament.toxicity_grade = msg;
+            this.letItem.toxicity_grade = msg;
         }
     },
     destroyed: function destroyed() {
@@ -17844,10 +15411,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _iteratorError4 = undefined;
 
             try {
-                for (var _iterator4 = Object.keys(this.medicament)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                for (var _iterator4 = Object.keys(this.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
                     var key = _step4.value;
 
-                    this.medicament[key] = this.tmp[key];
+                    this.letItem[key] = this.tmp[key];
                 }
             } catch (err) {
                 _didIteratorError4 = true;
@@ -17868,11 +15435,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 19 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18025,7 +15599,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony default export */ exports["default"] = {
     name: 'PopPlant',
     props: {
-        plant: {
+        letItem: {
             type: Object,
             default: function _default() {
                 return {
@@ -18077,7 +15651,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 return 0;
             } else {
                 for (var index in this.categorys) {
-                    if (this.categorys[index] == this.plant.category) {
+                    if (this.categorys[index] == this.letItem.category) {
                         return index;
                     }
                 }
@@ -18091,15 +15665,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
         var _iteratorError = undefined;
 
         try {
-            for (var _iterator = Object.keys(this.plant)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                 var key = _step.value;
 
                 // 如果plant里面的属性tmp里面也有，那么那对应的值赋予tmp
                 if (key in this.tmp && this.tmp.hasOwnProperty(key)) {
-                    this.tmp[key] = this.plant[key] == null ? '' : this.plant[key];
+                    this.tmp[key] = this.letItem[key] == null ? '' : this.letItem[key];
                 } else {
                     // 否则删除此属性
-                    delete this.plant[key];
+                    delete this.letItem[key];
                 }
             }
         } catch (err) {
@@ -18118,7 +15692,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
         }
 
         if (this.edit) {
-            this.plant.imageFlag = 'no';
+            this.letItem.imageFlag = 'no';
         }
     },
 
@@ -18172,8 +15746,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var reader = new FileReader();
             reader.readAsDataURL(file);
             reader.onload = function (e) {
-                _this.plant.image = e.target.result;
-                _this.plant.file_name = file;
+                _this.letItem.image = e.target.result;
+                _this.letItem.file_name = file;
             };
         },
 
@@ -18182,8 +15756,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
          * 删除图片
          */
         deletePic: function deletePic() {
-            this.plant.image = 'upload.png';
-            this.plant.file_name = '';
+            this.letItem.image = 'upload.png';
+            this.letItem.file_name = '';
         },
 
 
@@ -18194,13 +15768,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _this2 = this;
 
             var params = {
-                'id': this.plant.id,
+                'id': this.letItem.id,
                 'field': 'name',
-                'value': this.plant.name
+                'value': this.letItem.name
             };
-            this.$unique(this, 'plant', params, 'plant.name').then(function () {
+            this.$unique(this, 'plant', params, 'letItem.name').then(function () {
                 if (_this2.edit) {
-                    if (_this2.plant.file_name != null) {
+                    if (_this2.letItem.file_name != null) {
 
                         var form = new FormData();
                         var _iteratorNormalCompletion2 = true;
@@ -18208,10 +15782,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
                         var _iteratorError2 = undefined;
 
                         try {
-                            for (var _iterator2 = Object.keys(_this2.plant)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                                 var key = _step2.value;
 
-                                form.append(key, _this2.plant[key]);
+                                form.append(key, _this2.letItem[key]);
                             }
                         } catch (err) {
                             _didIteratorError2 = true;
@@ -18234,10 +15808,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
                             var _iteratorError3 = undefined;
 
                             try {
-                                for (var _iterator3 = Object.keys(_this2.plant)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                                for (var _iterator3 = Object.keys(_this2.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
                                     var key = _step3.value;
 
-                                    _this2.tmp[key] = _this2.plant[key];
+                                    _this2.tmp[key] = _this2.letItem[key];
                                 }
                             } catch (err) {
                                 _didIteratorError3 = true;
@@ -18260,18 +15834,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
                         });
                     } else {
 
-                        _this2.plant.image = 'upload.png';
-                        _this2.$update(_this2, 'plant', _this2.plant).then(function (response) {
+                        _this2.letItem.image = 'upload.png';
+                        _this2.$update(_this2, 'plant', _this2.letItem).then(function (response) {
                             var _iteratorNormalCompletion4 = true;
                             var _didIteratorError4 = false;
                             var _iteratorError4 = undefined;
 
                             try {
 
-                                for (var _iterator4 = Object.keys(_this2.plant)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                                for (var _iterator4 = Object.keys(_this2.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
                                     var _key = _step4.value;
 
-                                    _this2.tmp[_key] = _this2.plant[_key];
+                                    _this2.tmp[_key] = _this2.letItem[_key];
                                 }
                             } catch (err) {
                                 _didIteratorError4 = true;
@@ -18305,10 +15879,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
                     var _iteratorError5 = undefined;
 
                     try {
-                        for (var _iterator5 = Object.keys(_this2.plant)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                        for (var _iterator5 = Object.keys(_this2.letItem)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
                             var _key2 = _step5.value;
 
-                            _form.append(_key2, _this2.plant[_key2]);
+                            _form.append(_key2, _this2.letItem[_key2]);
                         }
                     } catch (err) {
                         _didIteratorError5 = true;
@@ -18325,13 +15899,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
                         }
                     }
 
-                    if (_this2.plant.file_name == null) {
-                        _this2.plant.image = 'upload.png';
+                    if (_this2.letItem.file_name == null) {
+                        _this2.letItem.image = 'upload.png';
                     }
 
                     _this2.$storeL(_this2, 'plant', _form, true).then(function (response) {
-                        _this2.plant.id = response.body;
-                        _this2.$emit('callback', _this2.plant);
+                        _this2.letItem.id = response.body;
+                        _this2.$emit('callback', _this2.letItem);
                         _this2.$alert('新增成功', 's');
                     }, function (response) {
                         if (response != false) {
@@ -18356,7 +15930,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
         /**
         * 隐藏编辑模块
-        * @param plant
+        * @param letItem
         */
         cancelEditPlantation: function cancelEditPlantation() {
             this.$emit('closeEdit');
@@ -18366,7 +15940,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
         * CallBack函数,执行回调函数 
         */
         getMsg: function getMsg(msg) {
-            this.plant.category = msg;
+            this.letItem.category = msg;
         }
     },
     destroyed: function destroyed() {
@@ -18376,10 +15950,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _iteratorError6 = undefined;
 
             try {
-                for (var _iterator6 = Object.keys(this.plant)[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+                for (var _iterator6 = Object.keys(this.letItem)[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
                     var key = _step6.value;
 
-                    this.plant[key] = this.tmp[key];
+                    this.letItem[key] = this.tmp[key];
                 }
             } catch (err) {
                 _didIteratorError6 = true;
@@ -18400,11 +15974,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 20 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18557,12 +16138,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony default export */ exports["default"] = {
     name: 'PopPlanta',
     props: {
-        planta: {
+        letItem: {
             type: Object,
             default: function _default() {
                 return {
                     'pid': 0,
-                    'id': 0,
+                    'id': '',
                     'name': '',
                     'area': 0,
                     'area_unit': '亩',
@@ -18604,7 +16185,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 return 0;
             } else {
                 for (var index in this.area_unit) {
-                    if (this.area_unit[index] == this.planta.area_unit) {
+                    if (this.area_unit[index] == this.letItem.area_unit) {
                         return index;
                     }
                 }
@@ -18615,7 +16196,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 return 0;
             } else {
                 for (var index in this.plantations) {
-                    if (this.plantations[index].name == this.planta.planta_name) {
+                    if (this.plantations[index].id == this.letItem.pid) {
                         return index;
                     }
                 }
@@ -18629,10 +16210,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
         var _iteratorError = undefined;
 
         try {
-            for (var _iterator = Object.keys(this.planta)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                 var key = _step.value;
 
-                this.tmp[key] = this.planta[key];
+                this.tmp[key] = this.letItem[key];
             }
         } catch (err) {
             _didIteratorError = true;
@@ -18671,22 +16252,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _this2 = this;
 
             var params = {
-                'id': this.planta.id,
+                'id': this.letItem.id,
                 'field': 'name',
-                'value': this.planta.name
+                'value': this.letItem.name
             };
-            this.$unique(this, 'planta', params, 'planta.name').then(function () {
+            this.$unique(this, 'planta', params, 'letItem.name').then(function () {
                 if (_this2.edit) {
-                    _this2.$update(_this2, 'planta', _this2.planta).then(function (response) {
+                    _this2.$update(_this2, 'planta', _this2.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
 
                         try {
-                            for (var _iterator2 = Object.keys(_this2.planta)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                                 var key = _step2.value;
 
-                                _this2.tmp[key] = _this2.planta[key];
+                                _this2.tmp[key] = _this2.letItem[key];
                             }
                         } catch (err) {
                             _didIteratorError2 = true;
@@ -18712,9 +16293,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this2.$storeL(_this2, 'planta', _this2.planta).then(function (response) {
-                        _this2.planta.id = response.body;
-                        _this2.$emit('callback', _this2.planta);
+                    _this2.$storeL(_this2, 'planta', _this2.letItem).then(function (response) {
+                        _this2.letItem.id = response.body;
+                        _this2.$emit('callback', _this2.letItem);
                         _this2.$alert('新增成功', 's');
                     }, function (response) {
                         if (response != false) {
@@ -18739,7 +16320,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
         /**
         * 隐藏编辑模块
-        * @param planta
+        * @param letItem
         */
         cancelEditPlanta: function cancelEditPlanta() {
             this.$emit('closeEdit');
@@ -18749,10 +16330,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
         * CallBack函数,执行回调函数 
         */
         getMsgPid: function getMsgPid(msg) {
-            this.planta.pid = msg;
+            this.letItem.pid = msg;
         },
         getMsgUnit: function getMsgUnit(msg) {
-            this.planta.area_unit = msg;
+            this.letItem.area_unit = msg;
         }
     },
     destroyed: function destroyed() {
@@ -18762,10 +16343,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _iteratorError3 = undefined;
 
             try {
-                for (var _iterator3 = Object.keys(this.planta)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
                     var key = _step3.value;
 
-                    this.planta[key] = this.tmp[key];
+                    this.letItem[key] = this.tmp[key];
                 }
             } catch (err) {
                 _didIteratorError3 = true;
@@ -18786,11 +16367,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 21 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -18921,7 +16504,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* harmony default export */ exports["default"] = {
     name: 'PopPlantation',
     props: {
-        plantation: {
+        letItem: {
             type: Object,
             default: function _default() {
                 return {
@@ -18968,7 +16551,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 return 0;
             } else {
                 for (var index in this.area_unit) {
-                    if (this.area_unit[index] == this.plantation.area_unit) {
+                    if (this.area_unit[index] == this.letItem.area_unit) {
                         return index;
                     }
                 }
@@ -18981,10 +16564,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
         var _iteratorError = undefined;
 
         try {
-            for (var _iterator = Object.keys(this.plantation)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                 var key = _step.value;
 
-                this.tmp[key] = this.plantation[key];
+                this.tmp[key] = this.letItem[key];
             }
             // 当作为编辑组件时，保存按钮一开始就能用
         } catch (err) {
@@ -19002,7 +16585,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
             }
         }
 
-        if (this.plantation.name != '') {
+        if (this.letItem.name != '') {
             this.canSubmit = true;
         }
     },
@@ -19016,22 +16599,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _this = this;
 
             var params = {
-                'id': this.plantation.id,
+                'id': this.letItem.id,
                 'field': 'name',
-                'value': this.plantation.name
+                'value': this.letItem.name
             };
-            this.$unique(this, 'plantation', params, 'plantation.name').then(function () {
+            this.$unique(this, 'plantation', params, 'letItem.name').then(function () {
                 if (_this.edit) {
-                    _this.$update(_this, 'plantation', _this.plantation).then(function (response) {
+                    _this.$update(_this, 'plantation', _this.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
 
                         try {
-                            for (var _iterator2 = Object.keys(_this.plantation)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                                 var key = _step2.value;
 
-                                _this.tmp[key] = _this.plantation[key];
+                                _this.tmp[key] = _this.letItem[key];
                             }
                         } catch (err) {
                             _didIteratorError2 = true;
@@ -19057,9 +16640,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this.$storeL(_this, 'plantation', _this.plantation).then(function (response) {
-                        _this.plantation.id = response.body;
-                        _this.$emit('callback', _this.plantation);
+                    _this.$storeL(_this, 'plantation', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
                         _this.$alert('新增成功', 's');
                     }, function (response) {
                         if (response != false) {
@@ -19084,7 +16667,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
         /**
         * 隐藏编辑模块
-        * @param plantation
+        * @param letItem
         */
         cancelEditPlantation: function cancelEditPlantation() {
             this.$emit('closeEdit');
@@ -19094,7 +16677,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
         * CallBack函数,执行回调函数 
         */
         getMsg: function getMsg(msg) {
-            this.plantation.area_unit = msg;
+            this.letItem.area_unit = msg;
         }
     },
     destroyed: function destroyed() {
@@ -19104,10 +16687,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
             var _iteratorError3 = undefined;
 
             try {
-                for (var _iterator3 = Object.keys(this.plantation)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
                     var key = _step3.value;
 
-                    this.plantation[key] = this.tmp[key];
+                    this.letItem[key] = this.tmp[key];
                 }
             } catch (err) {
                 _didIteratorError3 = true;
@@ -19128,7 +16711,65 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 22 */
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ exports["default"] = {
+    name: 'ResearchField',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    },
+    filters: {
+        table_name: function table_name(value) {
+            if (value == 'fertilize') {
+                return '施肥';
+            } else if (value == 'spray') {
+                return '病虫害';
+            } else if (value == 'detect') {
+                return '检验检测';
+            } else {
+                return '农事';
+            }
+        }
+    }
+};
+
+/***/ },
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19372,7 +17013,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 23 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19470,6 +17111,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
          */
         confirmMethod: function confirmMethod() {
             this.$emit('confirmAction');
+            this.$emit('cancelAction');
         },
 
 
@@ -19483,11 +17125,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 24 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
 //
 //
 //
@@ -19530,7 +17173,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 25 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19810,7 +17453,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 26 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19950,6 +17593,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
         };
     },
 
+    watch: {
+        items: function items(val) {
+            if (this.defaultIndex == -1 || this.defaultIndex == 0) {
+                this.getMsg(0);
+            }
+        }
+    },
     methods: {
         getMsg: function getMsg(index) {
             this.showMsg = index;
@@ -19971,7 +17621,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 27 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20022,7 +17672,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 28 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20165,7 +17815,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 29 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20316,7 +17966,516 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 30 */
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__search_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__search_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__paginator_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__paginator_vue__);
+Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ exports["default"] = {
+    name: 'List',
+    props: {
+        _key: {
+            type: String,
+            default: ''
+        },
+        // 弹出框
+        component: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        },
+        // 搜索框的placeholder
+        searchPlaceholder: {
+            type: String,
+            default: ''
+        },
+        // 搜索的url
+        searchUrl: {
+            type: String,
+            default: ''
+        },
+        // thead
+        theads: {
+            type: Array,
+            default: function _default() {
+                return [''];
+            }
+        },
+        // 属性
+        protos: {
+            type: Array,
+            default: function _default() {
+                return [];
+            }
+        },
+        // 列表th的宽：%
+        widths: {
+            type: Array,
+            default: function _default() {
+                return [];
+            }
+        }
+    },
+    data: function data() {
+        return {
+            // 存放列表项的数组
+            list: [],
+            // 存放批量删除的列表项的数组
+            deleteLists: [],
+            // 临时记录待删除的列表项信息
+            deleteList: { 'id': 0, 'index': 0 },
+            // 单个删除或批量删除
+            oneOrBatch: 0,
+            // 是否显示新增模块
+            showNewPanel: false,
+            // 存放是否展开列表项编辑模块的标志，
+            showItemDetail: '',
+            // 定义PopList是新增模块还是编辑模块，true：编辑模块，false：新增模块
+            showEditPane: true,
+            // 是否显示确认模块
+            showConfirm: false,
+            // vue实例
+            self: this,
+            // 分页的总页数
+            total: 1,
+            // 搜索的参数对象
+            params: {
+                'query_text': '',
+                'List_id': 0,
+                '_sort': 'id',
+                'order': ''
+            },
+            // 动画效果
+            slide: 'slide-fade'
+        };
+    },
+
+    watch: {
+        showItemDetail: function showItemDetail(val) {
+            this.slide = 'slide';
+        }
+    },
+    components: {
+        Paginator: __WEBPACK_IMPORTED_MODULE_1__paginator_vue___default.a,
+        Search: __WEBPACK_IMPORTED_MODULE_0__search_vue___default.a
+    },
+    mounted: function mounted() {},
+
+    methods: {
+
+        /**
+         * 获取所有列表项信息
+         */
+        getAllLists: function getAllLists(url) {
+            var _this = this;
+
+            // 加上这句，解决过渡动画重复元素的bug
+            this.slide = 'slide-fade';
+            this.$set(this, 'list', []);
+            this.$index(this, url).then(function (response) {
+                var data = response.body[url + 's'];
+                _this.total = data.last_page;
+                _this.$set(_this, 'list', data.data);
+            }, function (error) {
+                if (error.status == 401) {
+                    _this.$router.push('/webapp/login');
+                } else {
+                    _this.$alert('连接出错', 'e');
+                }
+            });
+        },
+
+
+        /**
+        * 全选或取消全选
+        * @param e
+        */
+        selectAll: function selectAll(e) {
+            if (e.target.checked) {
+                this.deleteLists = [];
+                var _iteratorNormalCompletion = true;
+                var _didIteratorError = false;
+                var _iteratorError = undefined;
+
+                try {
+                    for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                        var index = _step.value;
+
+                        this.deleteLists.push({ 'id': this.list[index].id, 'index': index });
+                    }
+                } catch (err) {
+                    _didIteratorError = true;
+                    _iteratorError = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion && _iterator.return) {
+                            _iterator.return();
+                        }
+                    } finally {
+                        if (_didIteratorError) {
+                            throw _iteratorError;
+                        }
+                    }
+                }
+            } else {
+                this.deleteLists = [];
+            }
+        },
+
+
+        /**
+        * 单个删除
+        */
+        destroy: function destroy() {
+            var _this2 = this;
+
+            this.$destroyL(this, this.searchUrl, this.deleteList.id).then(function (response) {
+                _this2.list.splice(_this2.deleteList.index, 1);
+                _this2.deleteList = { 'id': 0, 'index': 0 };
+                _this2.showConfirm = false;
+                _this2.$alert('删除成功');
+            }, function (response) {
+                _this2.$alert('连接出错', 'e');
+            });
+        },
+
+
+        /**
+        * 批量删除
+        */
+        batchDestroy: function batchDestroy() {
+            var _this3 = this;
+
+            if (this.deleteLists.length != 0) {
+                var ids = [];
+                var _iteratorNormalCompletion2 = true;
+                var _didIteratorError2 = false;
+                var _iteratorError2 = undefined;
+
+                try {
+                    for (var _iterator2 = this.deleteLists[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                        var deleteList = _step2.value;
+
+                        ids.push(deleteList.id);
+                    }
+                } catch (err) {
+                    _didIteratorError2 = true;
+                    _iteratorError2 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                            _iterator2.return();
+                        }
+                    } finally {
+                        if (_didIteratorError2) {
+                            throw _iteratorError2;
+                        }
+                    }
+                }
+
+                this.$batchDestroy(this, this.searchUrl, ids).then(function (response) {
+                    _this3.deleteLists = _this3.$reverseObj(_this3.deleteLists, 'index');
+                    var _iteratorNormalCompletion3 = true;
+                    var _didIteratorError3 = false;
+                    var _iteratorError3 = undefined;
+
+                    try {
+                        for (var _iterator3 = _this3.deleteLists[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                            var deleteList = _step3.value;
+
+                            _this3.list.splice(deleteList.index, 1);
+                        }
+                    } catch (err) {
+                        _didIteratorError3 = true;
+                        _iteratorError3 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                                _iterator3.return();
+                            }
+                        } finally {
+                            if (_didIteratorError3) {
+                                throw _iteratorError3;
+                            }
+                        }
+                    }
+
+                    _this3.deleteLists = [];
+                    _this3.showConfirm = false;
+                    _this3.$alert('成功删除' + response.body + '条');
+                }, function (response) {
+                    _this3.$alert('连接出错', 'e');
+                });
+            } else {
+                this.$alert('请选择列表项');
+            }
+        },
+
+
+        /**
+         * 判断调用单个删除或批量删除
+         */
+        oneOrBatchdestroy: function oneOrBatchdestroy() {
+            this.slide = 'slide-fade';
+            if (this.oneOrBatch == 0) {
+                this.destroy();
+            } else {
+                this.batchDestroy();
+            }
+        },
+
+
+        /**
+        * 显示或隐藏编辑模块
+        * @param {Number} List
+        */
+        troggleEdit: function troggleEdit(id) {
+            if (this.showItemDetail != id) {
+                this.showItemDetail = id;
+            } else {
+                this.showItemDetail = '';
+            }
+        },
+
+
+        /**
+        * 关闭编辑模块
+        * @param List
+        */
+        closeOwnEditPane: function closeOwnEditPane(List) {
+            this.troggleEdit(List);
+        },
+
+
+        /**
+        * 显示确认窗口
+        * @param flag
+        * @param id
+        * @param index
+        */
+        showConfirmDialog: function showConfirmDialog(flag) {
+            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+
+            if (flag == 1 && this.deleteLists.length == 0) {
+                this.$alert('请选择列表项');
+            } else {
+                this.oneOrBatch = flag;
+                this.deleteList.id = id;
+                this.deleteList.index = index;
+                this.showConfirm = true;
+            }
+        },
+
+
+        /**
+        * 更新list中的一个
+        * @param List
+        */
+        updateListByOne: function updateListByOne(newOne) {
+            this.slide = 'slide-fade';
+            this.showNewPanel = false;
+            this.list.unshift(newOne);
+        },
+
+
+        /**
+        * 更新list中的多个
+        * @param List
+        */
+        updateListByMore: function updateListByMore(newList) {
+            this.slide = 'slide-fade';
+            this.$set(this, 'list', newList.data);
+            this.total = newList.last_page;
+            if (newList.query_text != undefined) {
+                this.params.query_text = newList.query_text;
+            }
+        },
+
+
+        /**
+         * 关闭新增弹窗
+         */
+        closeNew: function closeNew() {
+            this.showNewPanel = false;
+        },
+
+
+        /**
+         * 关闭编辑弹窗
+         */
+        closeEdit: function closeEdit() {
+            this.showItemDetail = '';
+        }
+    }
+};
+
+/***/ },
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20360,14 +18519,34 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 31 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -20391,6 +18570,29 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -20401,24 +18603,140 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
     data: function data() {
         return {
             title: '基础信息管理',
-            taps: [{ name: '种植场信息', url: 'plantation' }, { name: '种植区信息', url: 'planta' }, { name: '果蔬档案', url: 'plant' }, { name: '肥料档案', url: 'manure' }, { name: '农药档案', url: 'medicament' }, { name: '专家档案', url: 'expert' }]
+            taps: [{ name: '种植场信息', key: 'plantation' }, { name: '种植区信息', key: 'planta' }, { name: '果蔬档案', key: 'plant' }, { name: '肥料档案', key: 'manure' }, { name: '农药档案', key: 'medicament' }, { name: '专家档案', key: 'expert' }],
+            _key: '',
+            component: null,
+            searchPlaceholder: '',
+            searchUrl: '',
+            theads: [],
+            protos: [],
+            widths: [],
+            tableLists: [{
+                key: 'plantation',
+                component: { plantation: __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default.a },
+                searchPlaceholder: '种植场名称',
+                searchUrl: 'plantation',
+                theads: ['种植场名称', '种植面积', '负责人'],
+                protos: ['name', 'area', 'director'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'planta',
+                component: { planta: __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default.a },
+                searchPlaceholder: '种植区名称',
+                searchUrl: 'planta',
+                theads: ['种植区名称', '种植面积', '负责人'],
+                protos: ['name', 'area', 'director'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'plant',
+                component: { plant: __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue___default.a, image: __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue___default.a },
+                searchPlaceholder: '果蔬名称',
+                searchUrl: 'plant',
+                theads: ['果蔬名称', '生长周期', '已传图片'],
+                protos: ['name', 'growth_cycle', 'image'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'manure',
+                component: { manure: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue___default.a },
+                searchPlaceholder: '肥料名称',
+                searchUrl: 'manure',
+                theads: ['肥料类别', '肥料名称', '用途'],
+                protos: ['category_name', 'name', 'usage'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'medicament',
+                component: { medicament: __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue___default.a },
+                searchPlaceholder: '农药名称',
+                searchUrl: 'medicament',
+                theads: ['农药类别', '农药名称', '用途'],
+                protos: ['category_name', 'name', 'usage'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'expert',
+                component: { expert: __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue___default.a, table_type: __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue___default.a },
+                searchPlaceholder: '专家名称',
+                searchUrl: 'expert',
+                theads: ['专家名称', '研究领域', '操作模块'],
+                protos: ['expert_name', 'major', 'table_type'],
+                widths: [32, 24, 17]
+            }]
         };
     },
 
     computed: {},
     components: {
-        Navbar: __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue___default.a
+        Navbar: __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue___default.a,
+        tableList: __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue___default.a,
+        PopPlantation: __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue___default.a,
+        AreaUnit: __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default.a,
+        PopPlanta: __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue___default.a,
+        PopPlant: __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue___default.a,
+        MyImage: __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue___default.a,
+        PopManure: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue___default.a,
+        PopMedicament: __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue___default.a,
+        PopExpert: __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue___default.a,
+        ResearchField: __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue___default.a
+    },
+    created: function created() {
+        this.setTitle('基础信息管理');
+        this._key = this.tableLists[0].key;
+        this.searchPlaceholder = this.tableLists[0].searchPlaceholder;
+        this.searchUrl = this.tableLists[0].searchUrl;
+        this.theads = this.tableLists[0].theads;
+        this.protos = this.tableLists[0].protos;
+        this.widths = this.tableLists[0].widths;
     },
     mounted: function mounted() {
-        this.$router.push('/webapp/basic/plantation');
-        this.setTitle('基础信息管理');
+        this.component = this.tableLists[0].component;
+        this.$refs.tableList.getAllLists(this.searchUrl);
     },
 
-    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']))
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']), {
+        flashList: function flashList(key) {
+            var _iteratorNormalCompletion = true;
+            var _didIteratorError = false;
+            var _iteratorError = undefined;
+
+            try {
+                for (var _iterator = this.tableLists[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                    var item = _step.value;
+
+                    if (item.key == key) {
+                        this._key = item.key;
+                        this.searchPlaceholder = item.searchPlaceholder;
+                        this.searchUrl = item.searchUrl;
+                        this.theads = item.theads;
+                        this.protos = item.protos;
+                        this.widths = item.widths;
+                        this.component = item.component;
+                        // 同步调用获取数据的方法
+                        this.$refs.tableList.getAllLists(item.searchUrl);
+                        // 关闭新增弹窗
+                        this.$refs.tableList.closeNew();
+                        // 关闭编辑弹窗
+                        this.$refs.tableList.closeEdit();
+                    }
+                }
+            } catch (err) {
+                _didIteratorError = true;
+                _iteratorError = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion && _iterator.return) {
+                        _iterator.return();
+                    }
+                } finally {
+                    if (_didIteratorError) {
+                        throw _iteratorError;
+                    }
+                }
+            }
+        }
+    })
 };
 
 /***/ },
-/* 32 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20616,19 +18934,35 @@ Object.defineProperty(exports, "__esModule", { value: true });
 };
 
 /***/ },
-/* 33 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -20715,7 +19049,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 name: '种植管理',
                 isEvent: false,
                 children: [{
-                    path: '/webapp/basic/plantation',
+                    path: '/webapp/basic',
                     name: '基础信息管理'
                 }]
             }]
@@ -20775,17 +19109,17 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 };
 
 /***/ },
-/* 34 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -21018,7 +19352,13 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
             this.$http.get(this.$adminUrl('dailylog/query'), { params: this.params }).then(function (response) {
                 _this.$set(_this, 'list', response.body.data);
-            }, function (response) {});
+            }, function (error) {
+                if (error.status == 401) {
+                    _this.$router.push('/webapp/login');
+                } else {
+                    _this.$alert('连接出错', 'e');
+                }
+            });
         },
 
 
@@ -21063,11 +19403,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 };
 
 /***/ },
-/* 35 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
 Object.defineProperty(exports, "__esModule", { value: true });
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -21249,10 +19589,15 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 login: '',
                 password: ''
             },
+            // 用户名表单验证出错的标志
             isNameError: false,
+            // 密码表单验证出错的标志
             isPasswordError: false,
+            // 后端用户名或密码不匹配的标志
             isError: false,
+            // 登录按钮的文本
             loginBtn: '登录',
+            // 登录按钮是否可用的标志，false表示可用
             isLogin: false
         };
     },
@@ -21299,14 +19644,20 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                         _this.setUserInfo(response.data);
                         _this.$router.push('/webapp');
                     }
-                }).catch(function (error) {});
+                }).catch(function (error) {
+                    if (error.status == 500) {
+                        this.loginBtn = '登录';
+                        this.isLogin = false;
+                        this.$alert('连接出错，请重新登录', 'e');
+                    }
+                });
             }
         }
     })
 };
 
 /***/ },
-/* 36 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
@@ -21386,10 +19737,10 @@ exports.sticky = function () {
         }
     };
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ },
-/* 37 */
+/* 35 */
 /***/ function(module, exports) {
 
 
@@ -21407,28 +19758,30 @@ exports.getItemFromObject = function (object, index) {
 };
 
 /***/ },
-/* 38 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vee_validate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__utils_validate_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__directive_directive_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_utils__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_easyAjax__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_utils__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_easyAjax__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__filters_filters_js__);
 
 
 // 注册全局组件
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('confirm', __webpack_require__(61));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('PopTransition', __webpack_require__(64));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('pop-select', __webpack_require__(63));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('confirm', __webpack_require__(56));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('PopTransition', __webpack_require__(59));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('pop-select', __webpack_require__(58));
+// Vue.component('table-list',require('../components/public/table-list.vue'));
+
 
 // 注册自定义验证规则
 
@@ -21456,7 +19809,7 @@ Object.keys(__WEBPACK_IMPORTED_MODULE_6__filters_filters_js___default.a).forEach
 });
 
 /***/ },
-/* 39 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21476,15 +19829,15 @@ function createView(component) {
 }
 
 /***/ },
-/* 40 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CreateView__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CreateView__ = __webpack_require__(37);
 /**
  * 路由
  */
@@ -21501,7 +19854,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 //         resolve(require('./views/index.vue'));
 //     }, 'index');
 // };
-var index = __webpack_require__(69);
+var index = __webpack_require__(65);
 
 //---------------------------登录租金----------------------------------
 // const login = resolve => {
@@ -21509,7 +19862,7 @@ var index = __webpack_require__(69);
 //         resolve(require('./views/login.vue'));
 //     }, 'login');
 // };
-var login = __webpack_require__(71);
+var login = __webpack_require__(67);
 
 //---------------------------农业日志----------------------------------
 // const log = resolve => {
@@ -21517,7 +19870,7 @@ var login = __webpack_require__(71);
 //         resolve(require('./views/log.vue'));
 //     }, 'basic');
 // };
-var log = __webpack_require__(70);
+var log = __webpack_require__(66);
 
 //---------------------------404----------------------------------
 // const fourOFour = resolve => {
@@ -21525,7 +19878,7 @@ var log = __webpack_require__(70);
 //         resolve(require('./views/404.vue'));
 //     }, 'fourOFour');
 // };
-var fourOFour = __webpack_require__(66);
+var fourOFour = __webpack_require__(62);
 
 //---------------------------图片日志------------------------------
 // const dailylog = resolve => {
@@ -21533,7 +19886,7 @@ var fourOFour = __webpack_require__(66);
 //         resolve(require('./views/dailylog.vue'));
 //     }, 'dailylog');
 // }
-var dailylog = __webpack_require__(68);
+var dailylog = __webpack_require__(64);
 
 //=============================种植管理====================================
 
@@ -21543,49 +19896,7 @@ var dailylog = __webpack_require__(68);
 //         resolve(require('./views/basic.vue'));
 //     }, 'basic');
 // };
-var basic = __webpack_require__(67);
-
-// const plantation = resolve => {
-//     require.ensure(['./components/basic/plantation.vue'], () =>{
-//         resolve(require('./components/basic/plantation.vue'));
-//     }, 'plantation');
-// };
-var plantation = __webpack_require__(53);
-
-// const planta = resolve => {
-//     require.ensure(['./components/basic/planta.vue'], () =>{
-//         resolve(require('./components/basic/planta.vue'));
-//     }, 'planta');
-// };
-var planta = __webpack_require__(52);
-
-// const plant = resolve => {
-//     require.ensure(['./components/basic/plant.vue'], () =>{
-//         resolve(require('./components/basic/plant.vue'));
-//     }, 'plant');
-// };
-var plant = __webpack_require__(51);
-
-// const manure = resolve => {
-//     require.ensure(['./components/basic/manure.vue'], () =>{
-//         resolve(require('./components/basic/manure.vue'));
-//     }, 'manure');
-// };
-var manure = __webpack_require__(48);
-
-// const medicament = resolve => {
-//     require.ensure(['./components/basic/medicament.vue'], () =>{
-//         resolve(require('./components/basic/medicament.vue'));
-//     }, 'medicament');
-// };
-var medicament = __webpack_require__(49);
-
-// const expert = resolve => {
-//     require.ensure(['./components/basic/expert.vue'], () =>{
-//         resolve(require('./components/basic/expert.vue'));
-//     }, 'expert');
-// };
-var expert = __webpack_require__(47);
+var basic = __webpack_require__(63);
 
 var routes = [{
     path: '/',
@@ -21601,37 +19912,7 @@ var routes = [{
         path: 'basic',
         name: 'basic',
         component: basic,
-        children: [{
-            path: 'plantation',
-            name: 'plantation',
-            component: plantation,
-            meta: { requiresAuth: true }
-        }, {
-            path: 'planta',
-            name: 'planta',
-            component: planta,
-            meta: { requiresAuth: true }
-        }, {
-            path: 'plant',
-            name: 'plant',
-            component: plant,
-            meta: { requiresAuth: true }
-        }, {
-            path: 'manure',
-            name: 'manure',
-            component: manure,
-            meta: { requiresAuth: true }
-        }, {
-            path: 'medicament',
-            name: 'medicament',
-            component: medicament,
-            meta: { requiresAuth: true }
-        }, {
-            path: 'expert',
-            name: 'expert',
-            component: expert,
-            meta: { requiresAuth: true }
-        }]
+        meta: { requiresAuth: true }
     }, {
         path: 'log/:id',
         name: 'log',
@@ -21659,11 +19940,11 @@ var routes = [{
 });
 
 /***/ },
-/* 41 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 
@@ -21822,11 +20103,11 @@ var routes = [{
 };
 
 /***/ },
-/* 42 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 
@@ -21853,7 +20134,7 @@ var routes = [{
                     break;
                 case 's':
                 case 'success':
-                    color = 'rgba(76,175,80,0.6)';
+                    color = 'rgba(76,175,80,0.8)';
                     break;
                 case 'e':
                 case 'error':
@@ -22037,10 +20318,10 @@ var routes = [{
         };
     }
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ },
-/* 43 */
+/* 41 */
 /***/ function(module, exports) {
 
 
@@ -22060,13 +20341,13 @@ exports.phone = function () {
 };
 
 /***/ },
-/* 44 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
 // Vuex
 
@@ -22107,7 +20388,7 @@ var store = new __WEBPACK_IMPORTED_MODULE_0_vuex___default.a.Store({
 /* harmony default export */ exports["a"] = store;
 
 /***/ },
-/* 45 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22238,7 +20519,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 };
 
 /***/ },
-/* 46 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22248,7 +20529,68 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(8)
 
 /* template */
-var __vue_template__ = __webpack_require__(79)
+var __vue_template__ = __webpack_require__(75)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(9)
+
+/* template */
+var __vue_template__ = __webpack_require__(89)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-d78373fa"
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(10)
+
+/* template */
+var __vue_template__ = __webpack_require__(83)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22276,106 +20618,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(9)
-
-/* template */
-var __vue_template__ = __webpack_require__(97)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-e33c8b0a"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(10)
-
-/* template */
-var __vue_template__ = __webpack_require__(82)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-5c55441f"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
 __vue_exports__ = __webpack_require__(11)
 
 /* template */
-var __vue_template__ = __webpack_require__(88)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-8637752c"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(12)
-
-/* template */
-var __vue_template__ = __webpack_require__(98)
+var __vue_template__ = __webpack_require__(92)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22395,7 +20641,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 51 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22404,106 +20650,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(13)
+__vue_exports__ = __webpack_require__(12)
 
 /* template */
-var __vue_template__ = __webpack_require__(84)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6a51e5aa"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 52 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(14)
-
-/* template */
-var __vue_template__ = __webpack_require__(78)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-3ace6cb2"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 53 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(15)
-
-/* template */
-var __vue_template__ = __webpack_require__(93)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-c311598a"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(16)
-
-/* template */
-var __vue_template__ = __webpack_require__(92)
+var __vue_template__ = __webpack_require__(87)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22523,7 +20673,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 55 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22532,10 +20682,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(17)
+__vue_exports__ = __webpack_require__(13)
 
 /* template */
-var __vue_template__ = __webpack_require__(85)
+var __vue_template__ = __webpack_require__(80)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22555,7 +20705,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 56 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22564,10 +20714,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(18)
+__vue_exports__ = __webpack_require__(14)
 
 /* template */
-var __vue_template__ = __webpack_require__(96)
+var __vue_template__ = __webpack_require__(91)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22587,7 +20737,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 57 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22596,10 +20746,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(19)
+__vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(87)
+var __vue_template__ = __webpack_require__(82)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22619,7 +20769,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 58 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22628,10 +20778,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(20)
+__vue_exports__ = __webpack_require__(16)
 
 /* template */
-var __vue_template__ = __webpack_require__(72)
+var __vue_template__ = __webpack_require__(68)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22651,7 +20801,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 59 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22660,10 +20810,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(21)
+__vue_exports__ = __webpack_require__(17)
 
 /* template */
-var __vue_template__ = __webpack_require__(86)
+var __vue_template__ = __webpack_require__(81)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22683,19 +20833,17 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 60 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
-/* styles */
-
 /* script */
-__vue_exports__ = __webpack_require__(22)
+__vue_exports__ = __webpack_require__(18)
 
 /* template */
-var __vue_template__ = __webpack_require__(73)
+var __vue_template__ = __webpack_require__(74)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22714,7 +20862,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 61 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22723,10 +20871,41 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(23)
+__vue_exports__ = __webpack_require__(19)
 
 /* template */
-var __vue_template__ = __webpack_require__(99)
+var __vue_template__ = __webpack_require__(69)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(20)
+
+/* template */
+var __vue_template__ = __webpack_require__(93)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22746,7 +20925,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 62 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22755,10 +20934,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(24)
+__vue_exports__ = __webpack_require__(21)
 
 /* template */
-var __vue_template__ = __webpack_require__(81)
+var __vue_template__ = __webpack_require__(77)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22778,17 +20957,176 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 63 */
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(23)
+
+/* template */
+var __vue_template__ = __webpack_require__(90)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-d7f2a610"
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
+__vue_exports__ = __webpack_require__(24)
+
+/* template */
+var __vue_template__ = __webpack_require__(70)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
 __vue_exports__ = __webpack_require__(26)
 
 /* template */
-var __vue_template__ = __webpack_require__(95)
+var __vue_template__ = __webpack_require__(73)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2e30aea7"
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(27)
+
+/* template */
+var __vue_template__ = __webpack_require__(79)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6cce69bd"
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(28)
+
+/* template */
+var __vue_template__ = __webpack_require__(71)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2cf2c367"
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(29)
+
+/* template */
+var __vue_template__ = __webpack_require__(84)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22813,137 +21151,13 @@ module.exports = __vue_exports__
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
-/* script */
-__vue_exports__ = __webpack_require__(27)
-
-/* template */
-var __vue_template__ = __webpack_require__(74)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(29)
-
-/* template */
-var __vue_template__ = __webpack_require__(77)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2e30aea7"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
 /* styles */
 
 /* script */
 __vue_exports__ = __webpack_require__(30)
 
 /* template */
-var __vue_template__ = __webpack_require__(75)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2cf2c367"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(31)
-
-/* template */
-var __vue_template__ = __webpack_require__(89)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(32)
-
-/* template */
-var __vue_template__ = __webpack_require__(83)
+var __vue_template__ = __webpack_require__(78)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22963,7 +21177,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 69 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22972,10 +21186,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(33)
+__vue_exports__ = __webpack_require__(31)
 
 /* template */
-var __vue_template__ = __webpack_require__(80)
+var __vue_template__ = __webpack_require__(76)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22995,7 +21209,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 70 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -23004,10 +21218,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(34)
+__vue_exports__ = __webpack_require__(32)
 
 /* template */
-var __vue_template__ = __webpack_require__(76)
+var __vue_template__ = __webpack_require__(72)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -23027,7 +21241,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 71 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -23036,10 +21250,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(35)
+__vue_exports__ = __webpack_require__(33)
 
 /* template */
-var __vue_template__ = __webpack_require__(90)
+var __vue_template__ = __webpack_require__(85)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -23059,7 +21273,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 72 */
+/* 68 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23105,13 +21319,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.planta.name),
-      expression: "planta.name"
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.planta.name),
-      expression: "planta.name",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
       modifiers: {
         "initial": true
       }
@@ -23126,12 +21340,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.planta.name)
+      "value": _vm._s(_vm.letItem.name)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.planta.name = $event.target.value
+        _vm.letItem.name = $event.target.value
       }
     }
   }), _c('span', {
@@ -23150,13 +21364,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.planta.area),
-      expression: "planta.area"
+      value: (_vm.letItem.area),
+      expression: "letItem.area"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.planta.area),
-      expression: "planta.area",
+      value: (_vm.letItem.area),
+      expression: "letItem.area",
       modifiers: {
         "initial": true
       }
@@ -23171,12 +21385,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "请填写数字(必填)"
     },
     domProps: {
-      "value": _vm._s(_vm.planta.area)
+      "value": _vm._s(_vm.letItem.area)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.planta.area = $event.target.value
+        _vm.letItem.area = $event.target.value
       }
     }
   }), _c('pop-select', {
@@ -23205,13 +21419,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.planta.phone),
-      expression: "planta.phone"
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.planta.phone),
-      expression: "planta.phone",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
       modifiers: {
         "initial": true
       }
@@ -23225,12 +21439,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "请输入11位手机号(固话用-隔开)"
     },
     domProps: {
-      "value": _vm._s(_vm.planta.phone)
+      "value": _vm._s(_vm.letItem.phone)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.planta.phone = $event.target.value
+        _vm.letItem.phone = $event.target.value
       }
     }
   }), _c('span', {
@@ -23249,8 +21463,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.planta.address),
-      expression: "planta.address"
+      value: (_vm.letItem.address),
+      expression: "letItem.address"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -23259,12 +21473,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "address"
     },
     domProps: {
-      "value": _vm._s(_vm.planta.address)
+      "value": _vm._s(_vm.letItem.address)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.planta.address = $event.target.value
+        _vm.letItem.address = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -23276,8 +21490,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.planta.director),
-      expression: "planta.director"
+      value: (_vm.letItem.director),
+      expression: "letItem.director"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -23288,12 +21502,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     domProps: {
       "value": "",
-      "value": _vm._s(_vm.planta.director)
+      "value": _vm._s(_vm.letItem.director)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.planta.director = $event.target.value
+        _vm.letItem.director = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -23305,8 +21519,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.planta.memo),
-      expression: "planta.memo"
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
     }],
     staticClass: "input-pop input-note",
     attrs: {
@@ -23315,43 +21529,55 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "memo"
     },
     domProps: {
-      "value": _vm._s(_vm.planta.memo)
+      "value": _vm._s(_vm.letItem.memo)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.planta.memo = $event.target.value
+        _vm.letItem.memo = $event.target.value
       }
     }
   })]), _c('div', {
     staticClass: "footer"
   }, [_c('div', {
     staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('button', {
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
       "click": _vm.cancelEditPlanta
     }
-  }, [_vm._v("\n                    取消\n                ")]) : _c('button', {
+  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
       "click": _vm.cancelAddPlanta
     }
-  }, [_vm._v("\n                    取消\n                ")])]), _vm._m(0)])])])
+  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                    保存\n                ")])])
+  }, [_vm._v("\n                        保存\n                    ")])])])
 }]}
 
 /***/ },
-/* 73 */
+/* 69 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23865,7 +22091,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 74 */
+/* 70 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23882,7 +22108,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 75 */
+/* 71 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23894,7 +22120,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 76 */
+/* 72 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24032,7 +22258,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 77 */
+/* 73 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24108,227 +22334,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 78 */
+/* 74 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('search', {
-    attrs: {
-      "placeholder": "种植区名称",
-      "searchUrl": "planta"
-    },
-    on: {
-      "callback": _vm.updateListByMore
-    }
-  }, [_c('button', {
-    staticClass: "stl-btn",
-    on: {
-      "click": function($event) {
-        _vm.showNewPanel = true
-      }
-    }
-  }, [_vm._v("新建")])]), (_vm.showNewPanel) ? _c('pop-planta', {
-    attrs: {
-      "edit": false
-    },
-    on: {
-      "callback": _vm.updateListByOne,
-      "closeNew": function($event) {
-        _vm.showNewPanel = false
-      }
-    }
-  }) : _vm._e(), _c('table', {
-    staticClass: "table-list"
-  }, [_vm._m(0), _c('tbody', {
-    staticClass: "list-body"
-  }, [_vm._l((_vm.list), function(planta, index) {
-    return [_c('tr', {
-      directives: [{
-        name: "touchDelete",
-        rawName: "v-touchDelete:showConfirmDialog",
-        value: ({
-          vm: _vm.self,
-          type: 0,
-          id: planta.id,
-          index: index
-        }),
-        expression: "{vm:self, type:0, id:planta.id, index:index}",
-        arg: "showConfirmDialog"
-      }],
-      class: {
-        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
-      },
-      attrs: {
-        "name": "order"
-      }
-    }, [_c('td', {
-      staticClass: "checked"
-    }, [_c('input', {
-      directives: [{
-        name: "model",
-        rawName: "v-model",
-        value: (_vm.deletePlantas),
-        expression: "deletePlantas"
-      }],
-      attrs: {
-        "type": "checkbox"
-      },
-      domProps: {
-        "value": {
-          'id': planta.id,
-          'index': index
-        },
-        "checked": Array.isArray(_vm.deletePlantas) ? _vm._i(_vm.deletePlantas, {
-          'id': planta.id,
-          'index': index
-        }) > -1 : (_vm.deletePlantas)
-      },
-      on: {
-        "change": function($event) {
-          var $$a = _vm.deletePlantas,
-            $$el = $event.target,
-            $$c = $$el.checked ? (true) : (false);
-          if (Array.isArray($$a)) {
-            var $$v = {
-                'id': planta.id,
-                'index': index
-              },
-              $$i = _vm._i($$a, $$v);
-            if ($$c) {
-              $$i < 0 && (_vm.deletePlantas = $$a.concat($$v))
-            } else {
-              $$i > -1 && (_vm.deletePlantas = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
-            }
-          } else {
-            _vm.deletePlantas = $$c
-          }
-        }
-      }
-    })]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "title": planta.name,
-        "name": "name"
-      }
-    }, [_vm._v(_vm._s(planta.name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "area"
-      }
-    }, [_vm._v(_vm._s(planta.area + planta.area_unit))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "director"
-      }
-    }, [_vm._v(_vm._s(planta.director))]), _c('td', {
-      staticClass: "align-c",
-      attrs: {
-        "name": "open"
-      },
-      on: {
-        "click": function($event) {
-          _vm.troggleEdit(planta.id)
-        }
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": _vm.$img('list.png')
-      }
-    })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == planta.id) ? _c('tr', [_c('td', {
-      attrs: {
-        "colspan": "5"
-      }
-    }, [_c('pop-planta', {
-      attrs: {
-        "planta": planta,
-        "edit": _vm.showEditPane
-      },
-      on: {
-        "closeEdit": function($event) {
-          _vm.closeOwnEditPane(planta)
-        }
-      }
-    })], 1)]) : _vm._e()]
-  })], 2), _c('tfoot', {
-    staticClass: "list-foot"
-  }, [_c('tr', {
-    staticClass: "list-foot-tr"
-  }, [_c('td', [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "name": "planta_check"
-    },
-    on: {
-      "click": _vm.selectAll
-    }
-  })]), _c('td', {
-    attrs: {
-      "colspan": "5"
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-del",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.showConfirmDialog(1)
-      }
-    }
-  }, [_vm._v("删除")])])])])], 1), _c('div', {
-    staticClass: "paginator-module"
-  }, [_c('paginator', {
-    attrs: {
-      "total": _vm.total,
-      "url": "planta/query",
-      "paginatorParams": _vm.params
-    },
-    on: {
-      "result": _vm.updateListByMore
-    }
-  })], 1), _c('confirm', {
-    attrs: {
-      "show": _vm.showConfirm
-    },
-    on: {
-      "confirmAction": _vm.oneOrBatchdestroy,
-      "cancelAction": function($event) {
-        _vm.showConfirm = false
-      }
-    }
-  })], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', {
-    staticClass: "list-head"
-  }, [_c('tr', {
-    staticClass: "list-head-th"
-  }, [_c('th', {
-    staticClass: "fir",
-    attrs: {
-      "name": "order"
-    }
-  }, [_vm._v("序号")]), _c('th', {
-    attrs: {
-      "name": "name"
-    }
-  }, [_vm._v("种植区名称")]), _c('th', {
-    attrs: {
-      "name": "area"
-    }
-  }, [_vm._v("种植面积")]), _c('th', {
-    attrs: {
-      "name": "director"
-    }
-  }, [_vm._v("负责人")]), _c('th', {
-    staticClass: "align-c",
-    attrs: {
-      "name": "open"
-    }
-  })])])
-}]}
+  return _c('div', [_vm._v("\n  " + _vm._s(_vm._f("table_name")(_vm.item.table_type)) + "\n")])
+},staticRenderFns: []}
 
 /***/ },
-/* 79 */
+/* 75 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24340,7 +22354,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 80 */
+/* 76 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24354,10 +22368,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": function($event) {
         _vm.show = true
       }
-    }
+    },
+    slot: "left"
   }, [_c('img', {
     attrs: {
       "src": _vm.$img('slider.png'),
+      "alt": ""
+    }
+  })]), _c('div', {
+    staticClass: "right-btn",
+    on: {
+      "click": function($event) {
+        _vm.show = true
+      }
+    },
+    slot: "right"
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('eye.png'),
       "alt": ""
     }
   })])]), _c('div', {
@@ -24379,239 +22407,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 81 */
+/* 77 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('header', {
     staticClass: "header"
-  }, [_vm._t("default"), _c('h1', {
+  }, [_vm._t("left"), _c('h1', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.title))])], 2)
+  }, [_vm._v(_vm._s(_vm.title))]), _vm._t("right")], 2)
 },staticRenderFns: []}
 
 /***/ },
-/* 82 */
-/***/ function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('search', {
-    attrs: {
-      "placeholder": "肥料名称",
-      "searchUrl": "manure"
-    },
-    on: {
-      "callback": _vm.updateListByMore
-    }
-  }, [_c('button', {
-    staticClass: "stl-btn",
-    on: {
-      "click": function($event) {
-        _vm.showNewPanel = true
-      }
-    }
-  }, [_vm._v("新建")])]), (_vm.showNewPanel) ? _c('pop-manure', {
-    attrs: {
-      "edit": false
-    },
-    on: {
-      "callback": _vm.updateListByOne,
-      "closeNew": function($event) {
-        _vm.showNewPanel = false
-      }
-    }
-  }) : _vm._e(), _c('table', {
-    staticClass: "table-list"
-  }, [_vm._m(0), _c('tbody', {
-    staticClass: "list-body"
-  }, [_vm._l((_vm.list), function(manure, index) {
-    return [_c('tr', {
-      directives: [{
-        name: "touchDelete",
-        rawName: "v-touchDelete:showConfirmDialog",
-        value: ({
-          vm: _vm.self,
-          type: 0,
-          id: manure.id,
-          index: index
-        }),
-        expression: "{vm:self, type:0, id:manure.id, index:index}",
-        arg: "showConfirmDialog"
-      }],
-      class: {
-        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
-      },
-      attrs: {
-        "name": "order"
-      }
-    }, [_c('td', {
-      staticClass: "checked"
-    }, [_c('input', {
-      directives: [{
-        name: "model",
-        rawName: "v-model",
-        value: (_vm.deleteManures),
-        expression: "deleteManures"
-      }],
-      attrs: {
-        "type": "checkbox"
-      },
-      domProps: {
-        "value": {
-          'id': manure.id,
-          'index': index
-        },
-        "checked": Array.isArray(_vm.deleteManures) ? _vm._i(_vm.deleteManures, {
-          'id': manure.id,
-          'index': index
-        }) > -1 : (_vm.deleteManures)
-      },
-      on: {
-        "change": function($event) {
-          var $$a = _vm.deleteManures,
-            $$el = $event.target,
-            $$c = $$el.checked ? (true) : (false);
-          if (Array.isArray($$a)) {
-            var $$v = {
-                'id': manure.id,
-                'index': index
-              },
-              $$i = _vm._i($$a, $$v);
-            if ($$c) {
-              $$i < 0 && (_vm.deleteManures = $$a.concat($$v))
-            } else {
-              $$i > -1 && (_vm.deleteManures = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
-            }
-          } else {
-            _vm.deleteManures = $$c
-          }
-        }
-      }
-    })]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "title": manure.category_name,
-        "name": "category_name"
-      }
-    }, [_vm._v(_vm._s(manure.category_name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "name"
-      }
-    }, [_vm._v(_vm._s(manure.name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "usage"
-      }
-    }, [_vm._v(_vm._s(manure.usage))]), _c('td', {
-      staticClass: "align-c",
-      attrs: {
-        "name": "open"
-      },
-      on: {
-        "click": function($event) {
-          _vm.troggleEdit(manure.id)
-        }
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": _vm.$img('list.png')
-      }
-    })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == manure.id) ? _c('tr', [_c('td', {
-      attrs: {
-        "colspan": "5"
-      }
-    }, [_c('pop-manure', {
-      attrs: {
-        "manure": manure,
-        "edit": _vm.showEditPane
-      },
-      on: {
-        "closeEdit": function($event) {
-          _vm.closeOwnEditPane(manure)
-        }
-      }
-    })], 1)]) : _vm._e()]
-  })], 2), _c('tfoot', {
-    staticClass: "list-foot"
-  }, [_c('tr', {
-    staticClass: "list-foot-tr"
-  }, [_c('td', [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "name": "manure_check"
-    },
-    on: {
-      "click": _vm.selectAll
-    }
-  })]), _c('td', {
-    attrs: {
-      "colspan": "5"
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-del",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.showConfirmDialog(1)
-      }
-    }
-  }, [_vm._v("删除")])])])])], 1), _c('div', {
-    staticClass: "paginator-module"
-  }, [_c('paginator', {
-    attrs: {
-      "total": _vm.total,
-      "url": "manure/query",
-      "paginatorParams": _vm.params
-    },
-    on: {
-      "result": _vm.updateListByMore
-    }
-  })], 1), _c('confirm', {
-    attrs: {
-      "show": _vm.showConfirm
-    },
-    on: {
-      "confirmAction": _vm.oneOrBatchdestroy,
-      "cancelAction": function($event) {
-        _vm.showConfirm = false
-      }
-    }
-  })], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', {
-    staticClass: "list-head"
-  }, [_c('tr', {
-    staticClass: "list-head-th"
-  }, [_c('th', {
-    staticClass: "fir",
-    attrs: {
-      "name": "order"
-    }
-  }, [_vm._v("序号")]), _c('th', {
-    attrs: {
-      "name": "category_name"
-    }
-  }, [_vm._v("肥料类别")]), _c('th', {
-    attrs: {
-      "name": "name"
-    }
-  }, [_vm._v("肥料名称")]), _c('th', {
-    attrs: {
-      "name": "usage"
-    }
-  }, [_vm._v("用途")]), _c('th', {
-    staticClass: "align-c",
-    attrs: {
-      "name": "open"
-    }
-  })])])
-}]}
-
-/***/ },
-/* 83 */
+/* 78 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24634,14 +22442,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 84 */
+/* 79 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('search', {
     attrs: {
-      "placeholder": "果蔬名称",
-      "searchUrl": "plant"
+      "placeholder": _vm.searchPlaceholder,
+      "searchUrl": _vm.searchUrl
     },
     on: {
       "callback": _vm.updateListByMore
@@ -24653,7 +22461,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.showNewPanel = true
       }
     }
-  }, [_vm._v("新建")])]), (_vm.showNewPanel) ? _c('pop-plant', {
+  }, [_vm._v("新建")])]), (_vm.showNewPanel) ? _c(_vm.component[_vm._key], {
+    tag: "component",
     attrs: {
       "edit": false
     },
@@ -24665,9 +22474,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }) : _vm._e(), _c('table', {
     staticClass: "table-list"
-  }, [_vm._m(0), _c('tbody', {
-    staticClass: "list-body"
-  }, [_vm._l((_vm.list), function(plant, index) {
+  }, [_c('thead', {
+    staticClass: "list-head"
+  }, [_c('tr', {
+    staticClass: "list-head-th"
+  }, [_c('th', {
+    staticClass: "fir",
+    attrs: {
+      "name": "order"
+    }
+  }, [_vm._v("序号")]), _vm._l((_vm.theads), function(thead, index) {
+    return [_c('th', {
+      style: ({
+        width: _vm.widths[index] + '%'
+      }),
+      attrs: {
+        "name": _vm.protos[index]
+      }
+    }, [_vm._v("\n                        " + _vm._s(thead) + "\n                    ")])]
+  }), _c('th', {
+    staticClass: "align-c",
+    attrs: {
+      "name": "open"
+    }
+  })], 2)]), _c('transition-group', {
+    staticClass: "list-body",
+    attrs: {
+      "name": _vm.slide,
+      "mode": "out-in",
+      "tag": "tbody"
+    }
+  }, [_vm._l((_vm.list), function(item, index) {
     return [_c('tr', {
       directives: [{
         name: "touchDelete",
@@ -24675,16 +22512,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         value: ({
           vm: _vm.self,
           type: 0,
-          id: plant.id,
+          id: item.id,
           index: index
         }),
-        expression: "{vm:self, type:0, id:plant.id, index:index}",
+        expression: "{vm:self, type:0, id:item.id, index:index}",
         arg: "showConfirmDialog"
       }],
+      key: _vm.searchUrl + item.id,
       class: {
         'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
       },
       attrs: {
+        "id": _vm.searchUrl + item.id,
         "name": "order"
       }
     }, [_c('td', {
@@ -24693,93 +22532,92 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       directives: [{
         name: "model",
         rawName: "v-model",
-        value: (_vm.deletePlants),
-        expression: "deletePlants"
+        value: (_vm.deleteLists),
+        expression: "deleteLists"
       }],
       attrs: {
         "type": "checkbox"
       },
       domProps: {
         "value": {
-          'id': plant.id,
+          'id': item.id,
           'index': index
         },
-        "checked": Array.isArray(_vm.deletePlants) ? _vm._i(_vm.deletePlants, {
-          'id': plant.id,
+        "checked": Array.isArray(_vm.deleteLists) ? _vm._i(_vm.deleteLists, {
+          'id': item.id,
           'index': index
-        }) > -1 : (_vm.deletePlants)
+        }) > -1 : (_vm.deleteLists)
       },
       on: {
         "change": function($event) {
-          var $$a = _vm.deletePlants,
+          var $$a = _vm.deleteLists,
             $$el = $event.target,
             $$c = $$el.checked ? (true) : (false);
           if (Array.isArray($$a)) {
             var $$v = {
-                'id': plant.id,
+                'id': item.id,
                 'index': index
               },
               $$i = _vm._i($$a, $$v);
             if ($$c) {
-              $$i < 0 && (_vm.deletePlants = $$a.concat($$v))
+              $$i < 0 && (_vm.deleteLists = $$a.concat($$v))
             } else {
-              $$i > -1 && (_vm.deletePlants = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
+              $$i > -1 && (_vm.deleteLists = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
             }
           } else {
-            _vm.deletePlants = $$c
+            _vm.deleteLists = $$c
           }
         }
       }
-    })]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "title": plant.name,
-        "name": "name"
-      }
-    }, [_vm._v(_vm._s(plant.name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "growth_cycle"
-      }
-    }, [_vm._v(_vm._s(plant.growth_cycle))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "image"
-      }
-    }, [(plant.image != null && plant.image != '' && plant.image != 'upload.png') ? _c('img', {
-      staticClass: "plant_img",
-      attrs: {
-        "src": _vm.$img('ok.png')
-      }
-    }) : _vm._e()]), _c('td', {
+    })]), _vm._l((_vm.protos), function(proto) {
+      return [(_vm.component[proto] != null) ? _c('td', {
+        staticClass: "td-note",
+        attrs: {
+          "name": "proto"
+        }
+      }, [_c(_vm.component[proto], {
+        tag: "component",
+        attrs: {
+          "item": item
+        }
+      })], 1) : _c('td', {
+        staticClass: "td-note",
+        attrs: {
+          "name": proto
+        }
+      }, [_vm._v("\n                            " + _vm._s(item[proto]) + "\n                        ")])]
+    }), _c('td', {
       staticClass: "align-c",
       attrs: {
         "name": "open"
       },
       on: {
         "click": function($event) {
-          _vm.troggleEdit(plant.id)
+          _vm.troggleEdit(item.id)
         }
       }
     }, [_c('img', {
       attrs: {
         "src": _vm.$img('list.png')
       }
-    })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == plant.id) ? _c('tr', [_c('td', {
+    })])], 2), (_vm.showItemDetail != '' && _vm.showItemDetail == item.id) ? _c('tr', {
+      key: _vm.searchUrl + item.id + '-pop'
+    }, [_c('td', {
       attrs: {
         "colspan": "5"
       }
-    }, [_c('pop-plant', {
+    }, [(_vm.showEditPane) ? _c(_vm.component[_vm._key], {
+      tag: "component",
       attrs: {
-        "plant": plant,
-        "edit": _vm.showEditPane
+        "letItem": item,
+        "edit": true
       },
       on: {
         "closeEdit": function($event) {
-          _vm.closeOwnEditPane(plant)
+          _vm.closeOwnEditPane(item)
         }
       }
-    })], 1)]) : _vm._e()]
+    }) : _vm._e()], 1)]) : _vm._e()]
   })], 2), _c('tfoot', {
     staticClass: "list-foot"
   }, [_c('tr', {
@@ -24787,7 +22625,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('td', [_c('input', {
     attrs: {
       "type": "checkbox",
-      "name": "plant_check"
+      "name": "List_check"
     },
     on: {
       "click": _vm.selectAll
@@ -24811,7 +22649,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('paginator', {
     attrs: {
       "total": _vm.total,
-      "url": "plant/query",
+      "url": _vm.searchUrl + '/query',
       "paginatorParams": _vm.params
     },
     on: {
@@ -24828,38 +22666,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   })], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', {
-    staticClass: "list-head"
-  }, [_c('tr', {
-    staticClass: "list-head-th"
-  }, [_c('th', {
-    staticClass: "fir",
-    attrs: {
-      "name": "order"
-    }
-  }, [_vm._v("序号")]), _c('th', {
-    attrs: {
-      "name": "name"
-    }
-  }, [_vm._v("果蔬名称")]), _c('th', {
-    attrs: {
-      "name": "growth_cycle"
-    }
-  }, [_vm._v("生长周期")]), _c('th', {
-    attrs: {
-      "name": "select-pic"
-    }
-  }, [_vm._v("已传图片")]), _c('th', {
-    staticClass: "align-c",
-    attrs: {
-      "name": "open"
-    }
-  })])])
-}]}
+},staticRenderFns: []}
 
 /***/ },
-/* 85 */
+/* 80 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24906,13 +22716,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.manure.name),
-      expression: "manure.name"
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.manure.name),
-      expression: "manure.name",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
       modifiers: {
         "initial": true
       }
@@ -24927,12 +22737,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.manure.name)
+      "value": _vm._s(_vm.letItem.name)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.manure.name = $event.target.value
+        _vm.letItem.name = $event.target.value
       }
     }
   }), _c('span', {
@@ -24951,8 +22761,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.manure.usage),
-      expression: "manure.usage"
+      value: (_vm.letItem.usage),
+      expression: "letItem.usage"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -24961,12 +22771,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "usage"
     },
     domProps: {
-      "value": _vm._s(_vm.manure.usage)
+      "value": _vm._s(_vm.letItem.usage)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.manure.usage = $event.target.value
+        _vm.letItem.usage = $event.target.value
       }
     }
   }), _c('span', {
@@ -24985,8 +22795,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.manure.specification),
-      expression: "manure.specification"
+      value: (_vm.letItem.specification),
+      expression: "letItem.specification"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -24995,12 +22805,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "specification"
     },
     domProps: {
-      "value": _vm._s(_vm.manure.specification)
+      "value": _vm._s(_vm.letItem.specification)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.manure.specification = $event.target.value
+        _vm.letItem.specification = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -25012,8 +22822,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.manure.dealer),
-      expression: "manure.dealer"
+      value: (_vm.letItem.dealer),
+      expression: "letItem.dealer"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -25024,12 +22834,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     domProps: {
       "value": "",
-      "value": _vm._s(_vm.manure.dealer)
+      "value": _vm._s(_vm.letItem.dealer)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.manure.dealer = $event.target.value
+        _vm.letItem.dealer = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -25041,8 +22851,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.manure.origin),
-      expression: "manure.origin"
+      value: (_vm.letItem.origin),
+      expression: "letItem.origin"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -25053,12 +22863,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     domProps: {
       "value": "",
-      "value": _vm._s(_vm.manure.origin)
+      "value": _vm._s(_vm.letItem.origin)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.manure.origin = $event.target.value
+        _vm.letItem.origin = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -25070,13 +22880,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.manure.phone),
-      expression: "manure.phone"
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.manure.phone),
-      expression: "manure.phone",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
       modifiers: {
         "initial": true
       }
@@ -25090,12 +22900,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "请输入11位手机号(固话用-隔开)"
     },
     domProps: {
-      "value": _vm._s(_vm.manure.phone)
+      "value": _vm._s(_vm.letItem.phone)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.manure.phone = $event.target.value
+        _vm.letItem.phone = $event.target.value
       }
     }
   }), _c('span', {
@@ -25114,8 +22924,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.manure.memo),
-      expression: "manure.memo"
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
     }],
     staticClass: "input-pop input-note",
     attrs: {
@@ -25124,43 +22934,55 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "memo"
     },
     domProps: {
-      "value": _vm._s(_vm.manure.memo)
+      "value": _vm._s(_vm.letItem.memo)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.manure.memo = $event.target.value
+        _vm.letItem.memo = $event.target.value
       }
     }
   })]), _c('div', {
     staticClass: "footer"
   }, [_c('div', {
     staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('button', {
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelEditPlanta
+      "click": _vm.cancelEditManure
     }
-  }, [_vm._v("\n                    取消\n                ")]) : _c('button', {
+  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelAddPlanta
+      "click": _vm.cancelAddManure
     }
-  }, [_vm._v("\n                    取消\n                ")])]), _vm._m(0)])])])
+  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                    保存\n                ")])])
+  }, [_vm._v("\n                        保存\n                    ")])])])
 }]}
 
 /***/ },
-/* 86 */
+/* 81 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25182,13 +23004,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plantation.name),
-      expression: "plantation.name"
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.plantation.name),
-      expression: "plantation.name",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
       modifiers: {
         "initial": true
       }
@@ -25203,12 +23025,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.plantation.name)
+      "value": _vm._s(_vm.letItem.name)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plantation.name = $event.target.value
+        _vm.letItem.name = $event.target.value
       }
     }
   }), _c('span', {
@@ -25227,13 +23049,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plantation.area),
-      expression: "plantation.area"
+      value: (_vm.letItem.area),
+      expression: "letItem.area"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.plantation.area),
-      expression: "plantation.area",
+      value: (_vm.letItem.area),
+      expression: "letItem.area",
       modifiers: {
         "initial": true
       }
@@ -25248,12 +23070,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "请填写数字(必填)"
     },
     domProps: {
-      "value": _vm._s(_vm.plantation.area)
+      "value": _vm._s(_vm.letItem.area)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plantation.area = $event.target.value
+        _vm.letItem.area = $event.target.value
       }
     }
   }), _c('pop-select', {
@@ -25282,13 +23104,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plantation.phone),
-      expression: "plantation.phone"
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.plantation.phone),
-      expression: "plantation.phone",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
       modifiers: {
         "initial": true
       }
@@ -25302,12 +23124,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "请输入11位手机号(固话用-隔开)"
     },
     domProps: {
-      "value": _vm._s(_vm.plantation.phone)
+      "value": _vm._s(_vm.letItem.phone)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plantation.phone = $event.target.value
+        _vm.letItem.phone = $event.target.value
       }
     }
   }), _c('span', {
@@ -25326,8 +23148,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plantation.address),
-      expression: "plantation.address"
+      value: (_vm.letItem.address),
+      expression: "letItem.address"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -25336,12 +23158,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "address"
     },
     domProps: {
-      "value": _vm._s(_vm.plantation.address)
+      "value": _vm._s(_vm.letItem.address)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plantation.address = $event.target.value
+        _vm.letItem.address = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -25353,8 +23175,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plantation.director),
-      expression: "plantation.director"
+      value: (_vm.letItem.director),
+      expression: "letItem.director"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -25365,12 +23187,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     domProps: {
       "value": "",
-      "value": _vm._s(_vm.plantation.director)
+      "value": _vm._s(_vm.letItem.director)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plantation.director = $event.target.value
+        _vm.letItem.director = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -25382,8 +23204,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plantation.memo),
-      expression: "plantation.memo"
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
     }],
     staticClass: "input-pop input-note",
     attrs: {
@@ -25392,43 +23214,55 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "memo"
     },
     domProps: {
-      "value": _vm._s(_vm.plantation.memo)
+      "value": _vm._s(_vm.letItem.memo)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plantation.memo = $event.target.value
+        _vm.letItem.memo = $event.target.value
       }
     }
   })]), _c('div', {
     staticClass: "footer"
   }, [_c('div', {
     staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('button', {
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
       "click": _vm.cancelEditPlantation
     }
-  }, [_vm._v("\n                    取消\n                ")]) : _c('button', {
+  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
       "click": _vm.cancelAddPlantation
     }
-  }, [_vm._v("\n                    取消\n                ")])]), _vm._m(0)])])])
+  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                    保存\n                ")])])
+  }, [_vm._v("\n                        保存\n                    ")])])])
 }]}
 
 /***/ },
-/* 87 */
+/* 82 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25446,17 +23280,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.selectPic
     }
-  }, [(_vm.plant.image == '' || _vm.plant.image == null) ? _c('img', {
+  }, [(_vm.letItem.image == '' || _vm.letItem.image == null) ? _c('img', {
     attrs: {
       "src": _vm.$img(_vm.image)
     }
-  }) : (_vm.plant.image == 'upload.png') ? _c('img', {
+  }) : (_vm.letItem.image == 'upload.png') ? _c('img', {
     attrs: {
-      "src": _vm.$img(_vm.plant.image)
+      "src": _vm.$img(_vm.letItem.image)
     }
   }) : _c('img', {
     attrs: {
-      "src": _vm.$img(_vm.plant.image, false)
+      "src": _vm.$img(_vm.letItem.image, false)
     }
   })]), _c('input', {
     attrs: {
@@ -25466,7 +23300,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "change": function($event) {
-        _vm.previewPic(_vm.plant, $event)
+        _vm.previewPic(_vm.letItem, $event)
       }
     }
   }), _c('div', {
@@ -25503,13 +23337,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plant.name),
-      expression: "plant.name"
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.plant.name),
-      expression: "plant.name",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
       modifiers: {
         "initial": true
       }
@@ -25524,12 +23358,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.plant.name)
+      "value": _vm._s(_vm.letItem.name)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plant.name = $event.target.value
+        _vm.letItem.name = $event.target.value
       }
     }
   }), _c('span', {
@@ -25548,13 +23382,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plant.growth_cycle),
-      expression: "plant.growth_cycle"
+      value: (_vm.letItem.growth_cycle),
+      expression: "letItem.growth_cycle"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.plant.growth_cycle),
-      expression: "plant.growth_cycle",
+      value: (_vm.letItem.growth_cycle),
+      expression: "letItem.growth_cycle",
       modifiers: {
         "initial": true
       }
@@ -25569,12 +23403,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填，单位（天）"
     },
     domProps: {
-      "value": _vm._s(_vm.plant.growth_cycle)
+      "value": _vm._s(_vm.letItem.growth_cycle)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plant.growth_cycle = $event.target.value
+        _vm.letItem.growth_cycle = $event.target.value
       }
     }
   }), _c('span', {
@@ -25593,8 +23427,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plant.description),
-      expression: "plant.description"
+      value: (_vm.letItem.description),
+      expression: "letItem.description"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -25603,12 +23437,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "description"
     },
     domProps: {
-      "value": _vm._s(_vm.plant.description)
+      "value": _vm._s(_vm.letItem.description)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plant.description = $event.target.value
+        _vm.letItem.description = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -25620,8 +23454,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.plant.memo),
-      expression: "plant.memo"
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
     }],
     staticClass: "input-pop input-note",
     attrs: {
@@ -25630,275 +23464,93 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "memo"
     },
     domProps: {
-      "value": _vm._s(_vm.plant.memo)
+      "value": _vm._s(_vm.letItem.memo)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.plant.memo = $event.target.value
+        _vm.letItem.memo = $event.target.value
       }
     }
   })]), _c('div', {
     staticClass: "footer"
   }, [_c('div', {
     staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('button', {
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
       "click": _vm.cancelEditPlantation
     }
-  }, [_vm._v("\n                    取消\n                ")]) : _c('button', {
+  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
       "click": _vm.cancelAddPlantation
     }
-  }, [_vm._v("\n                    取消\n                ")])]), _vm._m(0)])])])
+  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                    保存\n                ")])])
+  }, [_vm._v("\n                        保存\n                    ")])])])
 }]}
 
 /***/ },
-/* 88 */
+/* 83 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('search', {
+  return _c('div', [(_vm.item.image != null && _vm.item.image != '' && _vm.item.image != 'upload.png') ? _c('img', {
     attrs: {
-      "placeholder": "农药名称",
-      "searchUrl": "medicament"
-    },
-    on: {
-      "callback": _vm.updateListByMore
+      "src": _vm.$img('ok.png')
     }
-  }, [_c('button', {
-    staticClass: "stl-btn",
-    on: {
-      "click": function($event) {
-        _vm.showNewPanel = true
-      }
-    }
-  }, [_vm._v("新建")])]), (_vm.showNewPanel) ? _c('pop-medicament', {
-    attrs: {
-      "edit": false
-    },
-    on: {
-      "callback": _vm.updateListByOne,
-      "closeNew": function($event) {
-        _vm.showNewPanel = false
-      }
-    }
-  }) : _vm._e(), _c('table', {
-    staticClass: "table-list"
-  }, [_vm._m(0), _c('tbody', {
-    staticClass: "list-body"
-  }, [_vm._l((_vm.list), function(medicament, index) {
-    return [_c('tr', {
-      directives: [{
-        name: "touchDelete",
-        rawName: "v-touchDelete:showConfirmDialog",
-        value: ({
-          vm: _vm.self,
-          type: 0,
-          id: medicament.id,
-          index: index
-        }),
-        expression: "{vm:self, type:0, id:medicament.id, index:index}",
-        arg: "showConfirmDialog"
-      }],
-      class: {
-        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
-      },
-      attrs: {
-        "name": "order"
-      }
-    }, [_c('td', {
-      staticClass: "checked"
-    }, [_c('input', {
-      directives: [{
-        name: "model",
-        rawName: "v-model",
-        value: (_vm.deleteMedicaments),
-        expression: "deleteMedicaments"
-      }],
-      attrs: {
-        "type": "checkbox"
-      },
-      domProps: {
-        "value": {
-          'id': medicament.id,
-          'index': index
-        },
-        "checked": Array.isArray(_vm.deleteMedicaments) ? _vm._i(_vm.deleteMedicaments, {
-          'id': medicament.id,
-          'index': index
-        }) > -1 : (_vm.deleteMedicaments)
-      },
-      on: {
-        "change": function($event) {
-          var $$a = _vm.deleteMedicaments,
-            $$el = $event.target,
-            $$c = $$el.checked ? (true) : (false);
-          if (Array.isArray($$a)) {
-            var $$v = {
-                'id': medicament.id,
-                'index': index
-              },
-              $$i = _vm._i($$a, $$v);
-            if ($$c) {
-              $$i < 0 && (_vm.deleteMedicaments = $$a.concat($$v))
-            } else {
-              $$i > -1 && (_vm.deleteMedicaments = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
-            }
-          } else {
-            _vm.deleteMedicaments = $$c
-          }
-        }
-      }
-    })]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "title": medicament.category_name,
-        "name": "category_name"
-      }
-    }, [_vm._v(_vm._s(medicament.category_name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "name"
-      }
-    }, [_vm._v(_vm._s(medicament.name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "usage"
-      }
-    }, [_vm._v(_vm._s(medicament.usage))]), _c('td', {
-      staticClass: "align-c",
-      attrs: {
-        "name": "open"
-      },
-      on: {
-        "click": function($event) {
-          _vm.troggleEdit(medicament.id)
-        }
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": _vm.$img('list.png')
-      }
-    })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == medicament.id) ? _c('tr', [_c('td', {
-      attrs: {
-        "colspan": "5"
-      }
-    }, [_c('pop-medicament', {
-      attrs: {
-        "medicament": medicament,
-        "edit": _vm.showEditPane
-      },
-      on: {
-        "closeEdit": function($event) {
-          _vm.closeOwnEditPane(medicament)
-        }
-      }
-    })], 1)]) : _vm._e()]
-  })], 2), _c('tfoot', {
-    staticClass: "list-foot"
-  }, [_c('tr', {
-    staticClass: "list-foot-tr"
-  }, [_c('td', [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "name": "medicament_check"
-    },
-    on: {
-      "click": _vm.selectAll
-    }
-  })]), _c('td', {
-    attrs: {
-      "colspan": "5"
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-del",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.showConfirmDialog(1)
-      }
-    }
-  }, [_vm._v("删除")])])])])], 1), _c('div', {
-    staticClass: "paginator-module"
-  }, [_c('paginator', {
-    attrs: {
-      "total": _vm.total,
-      "url": "medicament/query",
-      "paginatorParams": _vm.params
-    },
-    on: {
-      "result": _vm.updateListByMore
-    }
-  })], 1), _c('confirm', {
-    attrs: {
-      "show": _vm.showConfirm
-    },
-    on: {
-      "confirmAction": _vm.oneOrBatchdestroy,
-      "cancelAction": function($event) {
-        _vm.showConfirm = false
-      }
-    }
-  })], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', {
-    staticClass: "list-head"
-  }, [_c('tr', {
-    staticClass: "list-head-th"
-  }, [_c('th', {
-    staticClass: "fir",
-    attrs: {
-      "name": "order"
-    }
-  }, [_vm._v("序号")]), _c('th', {
-    attrs: {
-      "name": "category_name"
-    }
-  }, [_vm._v("农药类别")]), _c('th', {
-    attrs: {
-      "name": "name"
-    }
-  }, [_vm._v("农药名称")]), _c('th', {
-    attrs: {
-      "name": "usage"
-    }
-  }, [_vm._v("用途")]), _c('th', {
-    staticClass: "align-c",
-    attrs: {
-      "name": "open"
-    }
-  })])])
-}]}
+  }) : _vm._e()])
+},staticRenderFns: []}
 
 /***/ },
-/* 89 */
+/* 84 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('navbar', {
     attrs: {
       "taps": _vm.taps
+    },
+    on: {
+      "getKey": _vm.flashList
     }
-  }), _c('router-view')], 1)
+  }), _c('table-list', {
+    ref: "tableList",
+    attrs: {
+      "_key": _vm._key,
+      "component": _vm.component,
+      "searchPlaceholder": _vm.searchPlaceholder,
+      "searchUrl": _vm.searchUrl,
+      "theads": _vm.theads,
+      "protos": _vm.protos,
+      "widths": _vm.widths
+    }
+  })], 1)
 },staticRenderFns: []}
 
 /***/ },
-/* 90 */
+/* 85 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25997,7 +23649,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 91 */
+/* 86 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26038,7 +23690,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 92 */
+/* 87 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26083,13 +23735,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.expert.expert_name),
-      expression: "expert.expert_name"
+      value: (_vm.letItem.expert_name),
+      expression: "letItem.expert_name"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.expert.expert_name),
-      expression: "expert.expert_name",
+      value: (_vm.letItem.expert_name),
+      expression: "letItem.expert_name",
       modifiers: {
         "initial": true
       }
@@ -26104,12 +23756,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.expert.expert_name)
+      "value": _vm._s(_vm.letItem.expert_name)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.expert.expert_name = $event.target.value
+        _vm.letItem.expert_name = $event.target.value
       }
     }
   }), _c('span', {
@@ -26128,13 +23780,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.expert.major),
-      expression: "expert.major"
+      value: (_vm.letItem.major),
+      expression: "letItem.major"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.expert.major),
-      expression: "expert.major",
+      value: (_vm.letItem.major),
+      expression: "letItem.major",
       modifiers: {
         "initial": true
       }
@@ -26149,12 +23801,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.expert.major)
+      "value": _vm._s(_vm.letItem.major)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.expert.major = $event.target.value
+        _vm.letItem.major = $event.target.value
       }
     }
   }), _c('span', {
@@ -26173,13 +23825,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.expert.level),
-      expression: "expert.level"
+      value: (_vm.letItem.level),
+      expression: "letItem.level"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.expert.level),
-      expression: "expert.level",
+      value: (_vm.letItem.level),
+      expression: "letItem.level",
       modifiers: {
         "initial": true
       }
@@ -26194,12 +23846,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.expert.level)
+      "value": _vm._s(_vm.letItem.level)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.expert.level = $event.target.value
+        _vm.letItem.level = $event.target.value
       }
     }
   }), _c('span', {
@@ -26241,13 +23893,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.expert.age),
-      expression: "expert.age"
+      value: (_vm.letItem.age),
+      expression: "letItem.age"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.expert.age),
-      expression: "expert.age",
+      value: (_vm.letItem.age),
+      expression: "letItem.age",
       modifiers: {
         "initial": true
       }
@@ -26261,12 +23913,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "age"
     },
     domProps: {
-      "value": _vm._s(_vm.expert.age)
+      "value": _vm._s(_vm.letItem.age)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.expert.age = $event.target.value
+        _vm.letItem.age = $event.target.value
       }
     }
   }), _c('span', {
@@ -26285,8 +23937,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.expert.unit),
-      expression: "expert.unit"
+      value: (_vm.letItem.unit),
+      expression: "letItem.unit"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -26297,12 +23949,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     domProps: {
       "value": "",
-      "value": _vm._s(_vm.expert.unit)
+      "value": _vm._s(_vm.letItem.unit)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.expert.unit = $event.target.value
+        _vm.letItem.unit = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -26314,13 +23966,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.expert.phone),
-      expression: "expert.phone"
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.expert.phone),
-      expression: "expert.phone",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
       modifiers: {
         "initial": true
       }
@@ -26334,12 +23986,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "请输入11位手机号(固话用-隔开)"
     },
     domProps: {
-      "value": _vm._s(_vm.expert.phone)
+      "value": _vm._s(_vm.letItem.phone)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.expert.phone = $event.target.value
+        _vm.letItem.phone = $event.target.value
       }
     }
   }), _c('span', {
@@ -26358,8 +24010,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.expert.memo),
-      expression: "expert.memo"
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
     }],
     staticClass: "input-pop input-note",
     attrs: {
@@ -26368,263 +24020,55 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "memo"
     },
     domProps: {
-      "value": _vm._s(_vm.expert.memo)
+      "value": _vm._s(_vm.letItem.memo)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.expert.memo = $event.target.value
+        _vm.letItem.memo = $event.target.value
       }
     }
   })]), _c('div', {
     staticClass: "footer"
   }, [_c('div', {
     staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('button', {
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelEditPlanta
+      "click": _vm.cancelEditExpert
     }
-  }, [_vm._v("\n                    取消\n                ")]) : _c('button', {
+  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelAddPlanta
+      "click": _vm.cancelAddExpert
     }
-  }, [_vm._v("\n                    取消\n                ")])]), _vm._m(0)])])])
+  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                    保存\n                ")])])
+  }, [_vm._v("\n                        保存\n                    ")])])])
 }]}
 
 /***/ },
-/* 93 */
-/***/ function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('search', {
-    attrs: {
-      "placeholder": "种植场名称",
-      "searchUrl": "plantation"
-    },
-    on: {
-      "callback": _vm.updateListByMore
-    }
-  }, [_c('button', {
-    staticClass: "stl-btn",
-    on: {
-      "click": function($event) {
-        _vm.showNewPanel = true
-      }
-    }
-  }, [_vm._v("新建")])]), (_vm.showNewPanel) ? _c('pop-plantation', {
-    attrs: {
-      "edit": false
-    },
-    on: {
-      "callback": _vm.updateListByOne,
-      "closeNew": function($event) {
-        _vm.showNewPanel = false
-      }
-    }
-  }) : _vm._e(), _c('table', {
-    staticClass: "table-list"
-  }, [_vm._m(0), _c('tbody', {
-    staticClass: "list-body"
-  }, [_vm._l((_vm.list), function(plantation, index) {
-    return [_c('tr', {
-      directives: [{
-        name: "touchDelete",
-        rawName: "v-touchDelete:showConfirmDialog",
-        value: ({
-          vm: _vm.self,
-          type: 0,
-          id: plantation.id,
-          index: index
-        }),
-        expression: "{vm:self, type:0, id:plantation.id, index:index}",
-        arg: "showConfirmDialog"
-      }],
-      class: {
-        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
-      },
-      attrs: {
-        "name": "order"
-      }
-    }, [_c('td', {
-      staticClass: "checked"
-    }, [_c('input', {
-      directives: [{
-        name: "model",
-        rawName: "v-model",
-        value: (_vm.deletePlantations),
-        expression: "deletePlantations"
-      }],
-      attrs: {
-        "type": "checkbox"
-      },
-      domProps: {
-        "value": {
-          'id': plantation.id,
-          'index': index
-        },
-        "checked": Array.isArray(_vm.deletePlantations) ? _vm._i(_vm.deletePlantations, {
-          'id': plantation.id,
-          'index': index
-        }) > -1 : (_vm.deletePlantations)
-      },
-      on: {
-        "change": function($event) {
-          var $$a = _vm.deletePlantations,
-            $$el = $event.target,
-            $$c = $$el.checked ? (true) : (false);
-          if (Array.isArray($$a)) {
-            var $$v = {
-                'id': plantation.id,
-                'index': index
-              },
-              $$i = _vm._i($$a, $$v);
-            if ($$c) {
-              $$i < 0 && (_vm.deletePlantations = $$a.concat($$v))
-            } else {
-              $$i > -1 && (_vm.deletePlantations = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
-            }
-          } else {
-            _vm.deletePlantations = $$c
-          }
-        }
-      }
-    })]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "title": plantation.name,
-        "name": "name"
-      }
-    }, [_vm._v(_vm._s(plantation.name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "area"
-      }
-    }, [_vm._v(_vm._s(plantation.area + plantation.area_unit))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "director"
-      }
-    }, [_vm._v(_vm._s(plantation.director))]), _c('td', {
-      staticClass: "align-c",
-      attrs: {
-        "name": "open"
-      },
-      on: {
-        "click": function($event) {
-          _vm.troggleEdit(plantation.id)
-        }
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": _vm.$img('list.png')
-      }
-    })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == plantation.id) ? _c('tr', [_c('td', {
-      attrs: {
-        "colspan": "5"
-      }
-    }, [_c('pop-plantation', {
-      attrs: {
-        "plantation": plantation,
-        "edit": _vm.showEditPane
-      },
-      on: {
-        "closeEdit": function($event) {
-          _vm.closeOwnEditPane(plantation)
-        }
-      }
-    })], 1)]) : _vm._e()]
-  })], 2), _c('tfoot', {
-    staticClass: "list-foot"
-  }, [_c('tr', {
-    staticClass: "list-foot-tr"
-  }, [_c('td', [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "name": "plantation_check"
-    },
-    on: {
-      "click": _vm.selectAll
-    }
-  })]), _c('td', {
-    attrs: {
-      "colspan": "5"
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-del",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.showConfirmDialog(1)
-      }
-    }
-  }, [_vm._v("删除")])])])])], 1), _c('div', {
-    staticClass: "paginator-module"
-  }, [_c('paginator', {
-    attrs: {
-      "total": _vm.total,
-      "url": "plantation/query",
-      "paginatorParams": _vm.params
-    },
-    on: {
-      "result": _vm.updateListByMore
-    }
-  })], 1), _c('confirm', {
-    attrs: {
-      "show": _vm.showConfirm
-    },
-    on: {
-      "confirmAction": _vm.oneOrBatchdestroy,
-      "cancelAction": function($event) {
-        _vm.showConfirm = false
-      }
-    }
-  })], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', {
-    staticClass: "list-head"
-  }, [_c('tr', {
-    staticClass: "list-head-th"
-  }, [_c('th', {
-    staticClass: "fir",
-    attrs: {
-      "name": "order"
-    }
-  }, [_vm._v("序号")]), _c('th', {
-    attrs: {
-      "name": "name"
-    }
-  }, [_vm._v("种植场名称")]), _c('th', {
-    attrs: {
-      "name": "area"
-    }
-  }, [_vm._v("种植面积")]), _c('th', {
-    attrs: {
-      "name": "director"
-    }
-  }, [_vm._v("负责人")]), _c('th', {
-    staticClass: "align-c",
-    attrs: {
-      "name": "open"
-    }
-  })])])
-}]}
-
-/***/ },
-/* 94 */
+/* 88 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26689,7 +24133,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 95 */
+/* 89 */
+/***/ function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._v("\n  " + _vm._s(_vm.item.area + _vm.item.area_unit) + " \n")])
+},staticRenderFns: []}
+
+/***/ },
+/* 90 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26732,7 +24184,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 96 */
+/* 91 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26779,13 +24231,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.medicament.name),
-      expression: "medicament.name"
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.medicament.name),
-      expression: "medicament.name",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
       modifiers: {
         "initial": true
       }
@@ -26800,12 +24252,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.medicament.name)
+      "value": _vm._s(_vm.letItem.name)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.medicament.name = $event.target.value
+        _vm.letItem.name = $event.target.value
       }
     }
   }), _c('span', {
@@ -26824,8 +24276,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.medicament.usage),
-      expression: "medicament.usage"
+      value: (_vm.letItem.usage),
+      expression: "letItem.usage"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -26834,12 +24286,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "usage"
     },
     domProps: {
-      "value": _vm._s(_vm.medicament.usage)
+      "value": _vm._s(_vm.letItem.usage)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.medicament.usage = $event.target.value
+        _vm.letItem.usage = $event.target.value
       }
     }
   }), _c('span', {
@@ -26858,8 +24310,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.medicament.control_objects),
-      expression: "medicament.control_objects"
+      value: (_vm.letItem.control_objects),
+      expression: "letItem.control_objects"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -26868,12 +24320,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "control_objects"
     },
     domProps: {
-      "value": _vm._s(_vm.medicament.control_objects)
+      "value": _vm._s(_vm.letItem.control_objects)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.medicament.control_objects = $event.target.value
+        _vm.letItem.control_objects = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -26908,8 +24360,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.medicament.specification),
-      expression: "medicament.specification"
+      value: (_vm.letItem.specification),
+      expression: "letItem.specification"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -26918,12 +24370,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "specification"
     },
     domProps: {
-      "value": _vm._s(_vm.medicament.specification)
+      "value": _vm._s(_vm.letItem.specification)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.medicament.specification = $event.target.value
+        _vm.letItem.specification = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -26935,8 +24387,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.medicament.dealer),
-      expression: "medicament.dealer"
+      value: (_vm.letItem.dealer),
+      expression: "letItem.dealer"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -26947,12 +24399,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     domProps: {
       "value": "",
-      "value": _vm._s(_vm.medicament.dealer)
+      "value": _vm._s(_vm.letItem.dealer)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.medicament.dealer = $event.target.value
+        _vm.letItem.dealer = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -26964,8 +24416,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.medicament.origin),
-      expression: "medicament.origin"
+      value: (_vm.letItem.origin),
+      expression: "letItem.origin"
     }],
     staticClass: "input-pop",
     attrs: {
@@ -26976,12 +24428,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     domProps: {
       "value": "",
-      "value": _vm._s(_vm.medicament.origin)
+      "value": _vm._s(_vm.letItem.origin)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.medicament.origin = $event.target.value
+        _vm.letItem.origin = $event.target.value
       }
     }
   })]), _c('div', [_c('label', {
@@ -26993,13 +24445,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.medicament.phone),
-      expression: "medicament.phone"
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.medicament.phone),
-      expression: "medicament.phone",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
       modifiers: {
         "initial": true
       }
@@ -27013,12 +24465,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "placeholder": "请输入11位手机号(固话用-隔开)"
     },
     domProps: {
-      "value": _vm._s(_vm.medicament.phone)
+      "value": _vm._s(_vm.letItem.phone)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.medicament.phone = $event.target.value
+        _vm.letItem.phone = $event.target.value
       }
     }
   }), _c('span', {
@@ -27037,8 +24489,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.medicament.memo),
-      expression: "medicament.memo"
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
     }],
     staticClass: "input-pop input-note",
     attrs: {
@@ -27047,266 +24499,55 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "memo"
     },
     domProps: {
-      "value": _vm._s(_vm.medicament.memo)
+      "value": _vm._s(_vm.letItem.memo)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.medicament.memo = $event.target.value
+        _vm.letItem.memo = $event.target.value
       }
     }
   })]), _c('div', {
     staticClass: "footer"
   }, [_c('div', {
     staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('button', {
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelEditPlanta
+      "click": _vm.cancelEditMedicament
     }
-  }, [_vm._v("\n                    取消\n                ")]) : _c('button', {
+  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelAddPlanta
+      "click": _vm.cancelAddMedicament
     }
-  }, [_vm._v("\n                    取消\n                ")])]), _vm._m(0)])])])
+  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                    保存\n                ")])])
+  }, [_vm._v("\n                        保存\n                    ")])])])
 }]}
 
 /***/ },
-/* 97 */
-/***/ function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('search', {
-    attrs: {
-      "placeholder": "专家名称",
-      "searchUrl": "expert",
-      "params": {
-        class_type: 0
-      }
-    },
-    on: {
-      "callback": _vm.updateListByMore
-    }
-  }, [_c('button', {
-    staticClass: "stl-btn",
-    on: {
-      "click": function($event) {
-        _vm.showNewPanel = true
-      }
-    }
-  }, [_vm._v("新建")])]), (_vm.showNewPanel) ? _c('pop-expert', {
-    attrs: {
-      "edit": false
-    },
-    on: {
-      "callback": _vm.updateListByOne,
-      "closeNew": function($event) {
-        _vm.showNewPanel = false
-      }
-    }
-  }) : _vm._e(), _c('table', {
-    staticClass: "table-list"
-  }, [_vm._m(0), _c('tbody', {
-    staticClass: "list-body"
-  }, [_vm._l((_vm.list), function(expert, index) {
-    return [_c('tr', {
-      directives: [{
-        name: "touchDelete",
-        rawName: "v-touchDelete:showConfirmDialog",
-        value: ({
-          vm: _vm.self,
-          type: 0,
-          id: expert.id,
-          index: index
-        }),
-        expression: "{vm:self, type:0, id:expert.id, index:index}",
-        arg: "showConfirmDialog"
-      }],
-      class: {
-        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
-      }
-    }, [_c('td', {
-      staticClass: "checked",
-      attrs: {
-        "name": "order"
-      }
-    }, [_c('input', {
-      directives: [{
-        name: "model",
-        rawName: "v-model",
-        value: (_vm.deleteMedicaments),
-        expression: "deleteMedicaments"
-      }],
-      attrs: {
-        "type": "checkbox"
-      },
-      domProps: {
-        "value": {
-          'id': expert.id,
-          'index': index
-        },
-        "checked": Array.isArray(_vm.deleteMedicaments) ? _vm._i(_vm.deleteMedicaments, {
-          'id': expert.id,
-          'index': index
-        }) > -1 : (_vm.deleteMedicaments)
-      },
-      on: {
-        "change": function($event) {
-          var $$a = _vm.deleteMedicaments,
-            $$el = $event.target,
-            $$c = $$el.checked ? (true) : (false);
-          if (Array.isArray($$a)) {
-            var $$v = {
-                'id': expert.id,
-                'index': index
-              },
-              $$i = _vm._i($$a, $$v);
-            if ($$c) {
-              $$i < 0 && (_vm.deleteMedicaments = $$a.concat($$v))
-            } else {
-              $$i > -1 && (_vm.deleteMedicaments = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
-            }
-          } else {
-            _vm.deleteMedicaments = $$c
-          }
-        }
-      }
-    })]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "title": expert.expert_name,
-        "name": "expert_name"
-      }
-    }, [_vm._v(_vm._s(expert.expert_name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "table_type"
-      }
-    }, [_vm._v(_vm._s(_vm._f("table_name")(expert.table_type)))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "major"
-      }
-    }, [_vm._v(_vm._s(expert.major))]), _c('td', {
-      staticClass: "align-c",
-      attrs: {
-        "name": "open"
-      },
-      on: {
-        "click": function($event) {
-          _vm.troggleEdit(expert.id)
-        }
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": _vm.$img('list.png')
-      }
-    })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == expert.id) ? _c('tr', [_c('td', {
-      attrs: {
-        "colspan": "5"
-      }
-    }, [_c('pop-expert', {
-      attrs: {
-        "expert": expert,
-        "edit": _vm.showEditPane
-      },
-      on: {
-        "closeEdit": function($event) {
-          _vm.closeOwnEditPane(expert)
-        }
-      }
-    })], 1)]) : _vm._e()]
-  })], 2), _c('tfoot', {
-    staticClass: "list-foot"
-  }, [_c('tr', {
-    staticClass: "list-foot-tr"
-  }, [_c('td', [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "name": "expert_check"
-    },
-    on: {
-      "click": _vm.selectAll
-    }
-  })]), _c('td', {
-    attrs: {
-      "colspan": "5"
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-del",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.showConfirmDialog(1)
-      }
-    }
-  }, [_vm._v("删除")])])])])], 1), _c('div', {
-    staticClass: "paginator-module"
-  }, [_c('paginator', {
-    attrs: {
-      "total": _vm.total,
-      "url": "expert/query",
-      "paginatorParams": _vm.params
-    },
-    on: {
-      "result": _vm.updateListByMore
-    }
-  })], 1), _c('confirm', {
-    attrs: {
-      "show": _vm.showConfirm
-    },
-    on: {
-      "confirmAction": _vm.oneOrBatchdestroy,
-      "cancelAction": function($event) {
-        _vm.showConfirm = false
-      }
-    }
-  })], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', {
-    staticClass: "list-head"
-  }, [_c('tr', {
-    staticClass: "list-head-th"
-  }, [_c('th', {
-    staticClass: "fir",
-    attrs: {
-      "name": "order"
-    }
-  }, [_vm._v("序号")]), _c('th', {
-    attrs: {
-      "name": "expert_name"
-    }
-  }, [_vm._v("专家名称")]), _c('th', {
-    attrs: {
-      "name": "major"
-    }
-  }, [_vm._v("操作模块")]), _c('th', {
-    attrs: {
-      "name": "table_type"
-    }
-  }, [_vm._v("研究领域")]), _c('th', {
-    staticClass: "align-c",
-    attrs: {
-      "name": "open"
-    }
-  })])])
-}]}
-
-/***/ },
-/* 98 */
+/* 92 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -27317,17 +24558,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, _vm._l((_vm.taps), function(tap) {
     return _c('li', {
       staticClass: "nt-li"
-    }, [_c('router-link', {
-      attrs: {
-        "to": tap.url,
-        "exact": ""
+    }, [_c('span', {
+      class: {
+        'link-active': _vm.activeKey == tap.key
+      },
+      on: {
+        "click": function($event) {
+          _vm.getKey(tap.key)
+        }
       }
-    }, [_vm._v(_vm._s(tap.name))])], 1)
+    }, [_vm._v(_vm._s(tap.name))])])
   }))])
 },staticRenderFns: []}
 
 /***/ },
-/* 99 */
+/* 93 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -27339,13 +24584,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "comfirn"
   }, [_c('div', {
     staticClass: "message"
-  }, [_vm._v("\n            " + _vm._s(_vm.message) + "\n        ")]), _c('div', [_c('div', {
+  }, [_vm._v("\n            " + _vm._s(_vm.message) + "\n        ")]), _c('div', [_c('a', {
     staticClass: "btn btn-cancel",
+    attrs: {
+      "href": "#"
+    },
     on: {
       "click": _vm.cancelMethod
     }
-  }, [_vm._v(_vm._s(_vm.cancel))]), _c('div', {
+  }, [_vm._v(_vm._s(_vm.cancel))]), _c('a', {
     staticClass: "btn btn-confirm",
+    attrs: {
+      "href": "#"
+    },
     on: {
       "click": _vm.confirmMethod
     }
@@ -27353,19 +24604,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 100 */
+/* 94 */
 /***/ function(module, exports) {
 
 module.exports = require("vue-router");
 
 /***/ },
-/* 101 */
+/* 95 */
 /***/ function(module, exports) {
 
 module.exports = require("vuex-router-sync");
 
 /***/ },
-/* 102 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
