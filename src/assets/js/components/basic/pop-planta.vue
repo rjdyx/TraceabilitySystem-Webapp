@@ -208,7 +208,7 @@
                     return 0;
                 } else {
                     for(let index in this.plantations){
-                        if(this.plantations[index].name == this.letItem.planta_name){
+                        if(this.plantations[index].id == this.letItem.pid){
                             return index;
                         }
                     }

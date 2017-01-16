@@ -20,35 +20,32 @@
  */
 <template>
     <div>
-      {{item.table_type | table_name}}
+      {{item.area + item.area_unit}} 
     </div>
 </template>
 
 <script>
   export default {
-    name:'ResearchField',
+    name:'AreaUnit',
     props:{
         item: {
             type: Object,
             default () {
                 return null
             }
-        }
-    },
-    filters : {
-        table_name (value) {
-            if(value == 'fertilize'){
-                return '施肥';
-            }else if(value == 'spray') {
-                return '病虫害';
-            }else if(value == 'detect') {
-                return '检验检测';
-            }else {
-                return '农事';
-            }
-        }
+        },
     }
   }
 
 
 </script>
+
+<style lang="sass" scoped>
+    @import "../../../sass/function";
+    @import "../../../sass/_percent.scss";
+
+    div {
+        width: 100%;
+        @extend %wrap;
+    }
+</style>

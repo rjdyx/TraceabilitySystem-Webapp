@@ -103,7 +103,7 @@
                         isEvent: false,
                         children: [
                             {
-                                path: '/webapp/basic/plantation',
+                                path: '/webapp/basic',
                                 name:'基础信息管理'
                             },
                         ]

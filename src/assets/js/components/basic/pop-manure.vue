@@ -181,7 +181,7 @@
                     return 0;
                 } else {
                     for(let index in this.categorys){
-                        if(this.categorys[index].name == this.letItem.category_name){
+                        if(this.categorys[index].id == this.letItem.category_id){
                             return index;
                         }
                     }
@@ -191,7 +191,7 @@
 
         },
         mounted () {
-            this.getAllPlantation();
+            this.getAllManure();
             for(let key of Object.keys(this.letItem)){
                 this.tmp[key] = this.letItem[key];
             }
@@ -201,7 +201,7 @@
             /**
             * 获取所有肥料分类
             */
-            getAllPlantation () {
+            getAllManure () {
                 this.$http.get(this.$adminUrl('manure_category/query')).then((response)=>{
                     this.$set(this, 'categorys', response.body.manure_categorys.data);
                 }, (response)=>{

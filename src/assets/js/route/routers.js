@@ -58,48 +58,6 @@ const dailylog = require('../views/dailylog.vue')
 // };
 const basic = require('../views/basic.vue')
 
-// const plantation = resolve => {
-//     require.ensure(['./components/basic/plantation.vue'], () =>{
-//         resolve(require('./components/basic/plantation.vue'));
-//     }, 'plantation');
-// };
-const plantation = require('../components/basic/plantation.vue')
-
-// const planta = resolve => {
-//     require.ensure(['./components/basic/planta.vue'], () =>{
-//         resolve(require('./components/basic/planta.vue'));
-//     }, 'planta');
-// };
-const planta = require('../components/basic/planta.vue')
-
-// const plant = resolve => {
-//     require.ensure(['./components/basic/plant.vue'], () =>{
-//         resolve(require('./components/basic/plant.vue'));
-//     }, 'plant');
-// };
-const plant = require('../components/basic/plant.vue')
-
-// const manure = resolve => {
-//     require.ensure(['./components/basic/manure.vue'], () =>{
-//         resolve(require('./components/basic/manure.vue'));
-//     }, 'manure');
-// };
-const manure = require('../components/basic/manure.vue')
-
-// const medicament = resolve => {
-//     require.ensure(['./components/basic/medicament.vue'], () =>{
-//         resolve(require('./components/basic/medicament.vue'));
-//     }, 'medicament');
-// };
-const medicament = require('../components/basic/medicament.vue')
-
-// const expert = resolve => {
-//     require.ensure(['./components/basic/expert.vue'], () =>{
-//         resolve(require('./components/basic/expert.vue'));
-//     }, 'expert');
-// };
-const expert = require('../components/basic/expert.vue')
-
 
 const routes = [
     
@@ -120,44 +78,7 @@ const routes = [
                 path: 'basic',
                 name:'basic',
                 component: basic,
-                children: [
-                    {
-                        path: 'plantation',
-                        name:'plantation',
-                        component: plantation,
-                        meta: { requiresAuth: true }
-                    },
-                    {
-                        path: 'planta',
-                        name: 'planta',
-                        component: planta,
-                        meta: { requiresAuth: true }
-                    },
-                    {
-                        path: 'plant',
-                        name: 'plant',
-                        component: plant,
-                        meta: { requiresAuth: true }
-                    },
-                    {
-                        path: 'manure',
-                        name: 'manure',
-                        component: manure,
-                        meta: { requiresAuth: true }
-                    },
-                    {
-                        path: 'medicament',
-                        name: 'medicament',
-                        component: medicament,
-                        meta: { requiresAuth: true }
-                    },
-                    {
-                        path: 'expert',
-                        name: 'expert',
-                        component: expert,
-                        meta: { requiresAuth: true }
-                    }
-                ]
+                meta: { requiresAuth: true }
             },
             {
                 path: 'log/:id',

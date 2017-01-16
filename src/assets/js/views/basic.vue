@@ -37,6 +37,7 @@
     import Navbar from '../components/basic/navbar.vue';
     import tableList from '../components/public/table-list.vue';
     import PopPlantation from '../components/basic/pop-plantation.vue';
+    import AreaUnit from '../components/basic/area-unit.vue';
     import PopPlanta from '../components/basic/pop-planta.vue';
     import PopPlant from '../components/basic/pop-plant.vue';
     import MyImage from '../components/basic/image.vue';
@@ -69,20 +70,20 @@
                 tableLists: [
                     {
                         key: 'plantation',
-                        component: {plantation: PopPlantation},
+                        component: {plantation: PopPlantation, area: AreaUnit},
                         searchPlaceholder: '种植场名称',
                         searchUrl: 'plantation',
                         theads: ['种植场名称', '种植面积', '负责人'],
-                        protos: ['name', ['area', 'area_unit'], 'director'],
+                        protos: ['name', 'area', 'director'],
                         widths: [32, 24, 17]
                     },
                     {
                         key: 'planta',
-                        component: {planta: PopPlanta},
+                        component: {planta: PopPlanta, area: AreaUnit},
                         searchPlaceholder: '种植区名称',
                         searchUrl: 'planta',
                         theads: ['种植区名称', '种植面积', '负责人'],
-                        protos: ['name', ['area', 'area_unit'], 'director'],
+                        protos: ['name', 'area', 'director'],
                         widths: [32, 24, 17]
                     },
                     {
@@ -131,6 +132,7 @@
             Navbar,
             tableList,
             PopPlantation,
+            AreaUnit,
             PopPlanta,
             PopPlant,
             MyImage,

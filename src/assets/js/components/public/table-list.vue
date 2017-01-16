@@ -32,14 +32,6 @@
                 <th name="order" class="fir">序号</th>
                 <template v-for="(thead, index) in theads">
                     <th 
-                        v-if="protos[index] instanceof Array" 
-                        :name="protos[index][0]"
-                        :style="{width: widths[index] + '%'}"    
-                    >
-                        {{thead}}
-                    </th>
-                    <th 
-                        v-else 
                         :name="protos[index]"
                         :style="{width: widths[index] + '%'}"
                     >
@@ -62,9 +54,6 @@
                                     :is="component[proto]"
                                     :item="item"
                                 ></component>
-                            </td>
-                            <td v-else-if="proto instanceof Array" :name="proto[0]" class="td-note">
-                                {{item[proto] | joinName}}
                             </td>
                             <td v-else :name="proto" class="td-note">
                                 {{item[proto]}}
@@ -150,7 +139,7 @@
     }
 
     .slide-fade-enter-active, .slide-fade-leave-active{
-      transition: all .5s ease;
+      transition: all .3s ease;
     }
 
     .slide-fade-leave-active{
@@ -259,17 +248,6 @@
         },
         mounted () {
         },
-        filters: {
-            joinName (arr) {
-                let str = '';
-                if(arr instanceof Array) {
-                    for(let item of arr) {
-                        str += item;
-                    }
-                }
-                return str;
-            }
-        },
         methods: {
 
             /**
@@ -351,6 +329,7 @@
              * 判断调用单个删除或批量删除
              */
             oneOrBatchdestroy () {
+                this.slide = 'slide-fade'
                 if(this.oneOrBatch == 0) {
                     this.destroy();
                 }else {
@@ -401,6 +380,7 @@
             * @param List
             */
             updateListByOne(newOne) {
+                this.slide = 'slide-fade'
                 this.showNewPanel = false;
                 this.list.unshift(newOne);
             },
@@ -410,6 +390,7 @@
             * @param List
             */
             updateListByMore(newList) {
+                this.slide = 'slide-fade'
                 this.$set(this, 'list', newList.data)
                 this.total = newList.last_page;
                 if(newList.query_text != undefined){
