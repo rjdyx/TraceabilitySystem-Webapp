@@ -57,8 +57,8 @@
                 {{message}}
             </div>
             <div>
-                <div @click="cancelMethod" class="btn btn-cancel">{{cancel}}</div>
-                <div @click="confirmMethod" class="btn btn-confirm">{{confirm}}</div>
+                <a href="#" @click="cancelMethod" class="btn btn-cancel">{{cancel}}</a>
+                <a href="#" @click="confirmMethod" class="btn btn-confirm">{{confirm}}</a>
             </div>
         </div>
     </pop-transition>
@@ -125,6 +125,14 @@
             width: 50%;
             text-align: center;
             padding: 15px 0;
+        }
+
+        a:link, a:visited, a:focus, a:hover, a:active {
+            color: #9E9E9E;
+        }
+
+        a:active {
+            background-color: #f0f0f0;
         }
 
         .btn-confirm {

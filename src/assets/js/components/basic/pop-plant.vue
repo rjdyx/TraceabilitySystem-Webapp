@@ -98,17 +98,24 @@
             </div>
             <div class="footer">
                 <div class="footer-r">
-                    <button v-if="edit" @click="cancelEditPlantation" type="button">
-                        取消
-                    </button>
-                    <button v-else @click="cancelAddPlantation" type="button">
-                        取消
-                    </button>
+                    <a v-if="edit" href="#">
+                        <button @click="cancelEditPlantation" type="button">
+                            取消
+                        </button>  
+                    </a>
+                    
+                    <a v-else href="#">
+                        <button @click="cancelAddPlantation" type="button">
+                            取消
+                        </button>
+                    </a>
                 </div>
                 <div class="footer-r">
-                    <button class="btn-pop">
-                        保存
-                    </button>
+                    <a href="#">
+                        <button class="btn-pop">
+                            保存
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

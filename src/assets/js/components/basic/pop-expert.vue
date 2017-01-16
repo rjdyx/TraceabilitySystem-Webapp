@@ -147,17 +147,24 @@
             </div>
             <div class="footer">
                 <div class="footer-r">
-                    <button v-if="edit" @click="cancelEditPlanta" type="button">
-                        取消
-                    </button>
-                    <button v-else @click="cancelAddPlanta" type="button">
-                        取消
-                    </button>
+                    <a v-if="edit" href="#">
+                        <button @click="cancelEditExpert" type="button">
+                            取消
+                        </button>  
+                    </a>
+                    
+                    <a v-else href="#">
+                        <button @click="cancelAddExpert" type="button">
+                            取消
+                        </button>
+                    </a>
                 </div>
                 <div class="footer-r">
-                    <button class="btn-pop">
-                        保存
-                    </button>
+                    <a href="#">
+                        <button class="btn-pop">
+                            保存
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -301,7 +308,7 @@
             /**
             * 隐藏新增模块
             */
-            cancelAddPlanta () {
+            cancelAddExpert () {
                 this.$emit('closeNew');
             },
 
@@ -309,7 +316,7 @@
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditPlanta () {
+            cancelEditExpert () {
                 this.$emit('closeEdit');
             },
             /**
@@ -321,7 +328,6 @@
                         this.letItem.table_type = this.tableSet[index];
                     }
                 }
-                console.log(this.letItem.table_type);
             },
             getMsgSex (msg) {
                     this.letItem.sex = msg;               

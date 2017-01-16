@@ -105,17 +105,24 @@
             </div>
             <div class="footer">
                 <div class="footer-r">
-                    <button v-if="edit" @click="cancelEditPlanta" type="button">
-                        取消
-                    </button>
-                    <button v-else @click="cancelAddPlanta" type="button">
-                        取消
-                    </button>
+                    <a v-if="edit" href="#">
+                        <button @click="cancelEditManure" type="button">
+                            取消
+                        </button>  
+                    </a>
+                    
+                    <a v-else href="#">
+                        <button @click="cancelAddManure" type="button">
+                            取消
+                        </button>
+                    </a>
                 </div>
                 <div class="footer-r">
-                    <button class="btn-pop">
-                        保存
-                    </button>
+                    <a href="#">
+                        <button class="btn-pop">
+                            保存
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -258,7 +265,7 @@
             /**
             * 隐藏新增模块
             */
-            cancelAddPlanta () {
+            cancelAddManure () {
                 this.$emit('closeNew');
             },
 
@@ -266,7 +273,7 @@
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditPlanta () {
+            cancelEditManure () {
                 this.$emit('closeEdit');
             },
             /**
