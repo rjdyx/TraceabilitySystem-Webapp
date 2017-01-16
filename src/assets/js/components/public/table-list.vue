@@ -28,19 +28,18 @@
 
         <table class="table-list">
             <thead class="list-head">
-            <tr class="list-head-th">
-                <th name="order" class="fir">序号</th>
-                <template v-for="(thead, index) in theads">
-                    <th 
-                        :name="protos[index]"
-                        :style="{width: widths[index] + '%'}"
-                    >
-                        {{thead}}
-                    </th>
-                </template>
-                <th name="open" class="align-c"></th>
-                
-            </tr>
+                <tr class="list-head-th">
+                    <th name="order" class="fir">序号</th>
+                    <template v-for="(thead, index) in theads">
+                        <th 
+                            :name="protos[index]"
+                            :style="{width: widths[index] + '%'}"
+                        >
+                            {{thead}}
+                        </th>
+                    </template>
+                    <th name="open" class="align-c"></th>
+                </tr>
             </thead>
             <transition-group :name="slide" mode="out-in" tag="tbody" class="list-body">
                 <template v-for="(item, index) in list">
@@ -155,8 +154,8 @@
 
 <script>
 
-    import Search from '../public/search.vue';
-    import Paginator from '../public/paginator.vue';
+    import Search from './search.vue';
+    import Paginator from './paginator.vue';
 
     export default {
         name: 'List',

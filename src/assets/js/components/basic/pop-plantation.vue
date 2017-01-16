@@ -62,11 +62,6 @@
                     data-vv-as="种植面积" 
                     class="input-pop input-area" type="text" id="plantation_new_area" name="area"
                        placeholder="请填写数字(必填)">
-                <!--<select v-model="letItem.area_unit" class="area_unit" name="area_unit">-->
-                    <!--<option value="亩">亩</option>-->
-                    <!--<option value="平方米">平方米</option>-->
-                    <!--<option value="公顷">公顷</option>-->
-                <!--</select>-->
 
                 <!--种植面积单位模块-->
                 <pop-select  class="area_unit" name="area_unit"
