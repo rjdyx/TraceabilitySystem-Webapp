@@ -136,7 +136,7 @@
         },
         watch: {
             items: function(val) {
-                if(this.index == -1 || this.index == 0){
+                if(this.defaultIndex == -1 || this.defaultIndex == 0){
                     this.getMsg(0);
                 }
             }

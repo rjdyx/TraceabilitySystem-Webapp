@@ -118,7 +118,7 @@
                         component: {expert: PopExpert, table_type: ResearchField},
                         searchPlaceholder: '专家名称',
                         searchUrl: 'expert',
-                        theads: ['专家名称', '操作模块', '研究领域'],
+                        theads: ['专家名称', '研究领域', '操作模块'],
                         protos: ['expert_name', 'major', 'table_type'],
                         widths: [32, 24, 17]
                     }

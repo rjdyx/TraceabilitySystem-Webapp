@@ -210,8 +210,7 @@
                     return 0;
                 } else {
                     for(let index in this.categorys){
-                        console.log(this.letItem.category_name);
-                        if(this.categorys[index].name == this.letItem.category_name){
+                        if(this.categorys[index].id == this.letItem.category_id){
                             return index;
                         }
                     }                                     

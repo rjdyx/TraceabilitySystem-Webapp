@@ -265,7 +265,7 @@
                     'field': 'expert_name',
                     'value': this.letItem.expert_name
                 };
-                this.$unique(this, 'letItem', params, 'letItem.expert_name').then(() => {
+                this.$unique(this, 'expert', params, 'letItem.expert_name').then(() => {
 
                     if(this.edit) {
                         this.$update(this, 'expert', this.letItem).then((response) => {
@@ -316,8 +316,12 @@
             * CallBack函数,执行回调函数 
             */
             getMsgType (msg) {
-                    console.log(this.letItem.table_type);
-                    this.letItem.table_type = msg;
+                for(let index of Object.keys(this.tableType)) {
+                    if(this.tableType[index] == msg) {
+                        this.letItem.table_type = this.tableSet[index];
+                    }
+                }
+                console.log(this.letItem.table_type);
             },
             getMsgSex (msg) {
                     this.letItem.sex = msg;               
