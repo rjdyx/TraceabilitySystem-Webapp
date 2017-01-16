@@ -19,7 +19,7 @@
         </search>
         <!-- 新增模块 -->
         <component 
-            :is="component"
+            :is="component[_key]"
             v-if="showNewPanel"
             :edit="false"
             @callback="updateListByOne"
@@ -57,7 +57,13 @@
                             <input :value="{'id':item.id, 'index':index}" v-model="deleteLists" type="checkbox">
                         </td>
                         <template v-for="proto in protos">
-                            <td v-if="proto instanceof Array" :name="proto[0]" class="td-note">
+                            <td v-if="component[proto] != null" name="proto" class="td-note">
+                                <component
+                                    :is="component[proto]"
+                                    :item="item"
+                                ></component>
+                            </td>
+                            <td v-else-if="proto instanceof Array" :name="proto[0]" class="td-note">
                                 {{item[proto] | joinName}}
                             </td>
                             <td v-else :name="proto" class="td-note">
@@ -71,11 +77,11 @@
                     <tr v-if="showItemDetail != '' && showItemDetail == item.id" :key="searchUrl + item.id + '-pop'">
                         <td colspan="5">
                             <component 
-                                :is="component"
+                                :is="component[_key]"
                                 v-if="showEditPane"
                                 :letItem="item"
                                 :edit="true"
-                                @closeEdit="showEditPane=false"
+                                @closeEdit="closeOwnEditPane(item)"
                             ></component>
                         </td>
                     </tr>
@@ -166,6 +172,10 @@
     export default {
         name: 'List',
         props: {
+            _key: {
+                type: String,
+                default: ''
+            },
             // 弹出框
             component: {
                 type: Object,
@@ -238,6 +248,11 @@
                 slide: 'slide-fade'
             }
         },
+        watch: {
+            showItemDetail: function(val) {
+                this.slide = 'slide'
+            }
+        },
         components: {
             Paginator,
             Search,
@@ -262,6 +277,7 @@
              */
             getAllLists (url) {
                 // 加上这句，解决过渡动画重复元素的bug
+                this.slide = 'slide-fade'
                 this.$set(this, 'list', []);
                 this.$index(this, url).then((response) => {
                     let data = response.body[url + 's'];

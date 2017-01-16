@@ -6,7 +6,7 @@
  * 
  * Props:
  * 
- * @param  medicament 
+ * @param  letItem 
  * 类型：Object
  * 是否必填：false
  * 默认值：{}
@@ -46,8 +46,8 @@
             <div>
                 <label for="medicament_category_id" class="label-tit">分类</label>
                 <!-- <select 
-                    v-model="medicament.category_id" 
-                    v-validate.initial="medicament.category_id" 
+                    v-model="letItem.category_id" 
+                    v-validate.initial="letItem.category_id" 
                     data-vv-rules="required" 
                     data-vv-as="分类" 
                     id="medicament_category_id" name="medicament_category_id" class="input-pop">
@@ -67,8 +67,8 @@
             <div>
                 <label for="medicament_new_fullName" class="label-tit">农药名称</label>
                 <input 
-                    v-model="medicament.name" 
-                    v-validate.initial="medicament.name" 
+                    v-model="letItem.name" 
+                    v-validate.initial="letItem.name" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="农药名称" 
                     class="input-pop" type="text" id="medicament_new_fullName" name="name" placeholder="必填">
@@ -76,18 +76,18 @@
             </div>
             <div>
                 <label for="medicament_usage" class="label-tit">用途</label>
-                <input v-model="medicament.usage" class="input-pop" type="text" id="medicament_usage" name="usage">
+                <input v-model="letItem.usage" class="input-pop" type="text" id="medicament_usage" name="usage">
                 <span v-show="errors.has('usage')">{{ errors.first('usage') }}</span>
             </div>
             <div>
                 <label for="medicament_new_control_objects" class="label-tit">防治对象</label>
-                <input v-model="medicament.control_objects" class="input-pop" type="text" id="medicament_new_control_objects" name="control_objects">
+                <input v-model="letItem.control_objects" class="input-pop" type="text" id="medicament_new_control_objects" name="control_objects">
             </div>
             <div>
                 <label for="medicament_toxicity_grade" class="label-tit">分类</label>
                 <!-- <select 
-                    v-model="medicament.toxicity_grade" 
-                    v-validate.initial="medicament.toxicity_grade" 
+                    v-model="letItem.toxicity_grade" 
+                    v-validate.initial="letItem.toxicity_grade" 
                     data-vv-rules="required" 
                     data-vv-as="分类" 
                     id="medicament_toxicity_grade" name="medicament_toxicity_grade" class="input-pop">
@@ -105,28 +105,28 @@
             </div>
             <div>
                 <label for="medicament_new_specification" class="label-tit">包装规格</label>
-                <input v-model="medicament.specification" class="input-pop" type="text" id="medicament_new_specification" name="specification">
+                <input v-model="letItem.specification" class="input-pop" type="text" id="medicament_new_specification" name="specification">
             </div>
             <div>
                 <label for="medicament_new_dealer" class="label-tit">经销商名称</label>
-                <input v-model="medicament.dealer" class="input-pop" type="text" value="" id="medicament_new_dealer" name="dealer">
+                <input v-model="letItem.dealer" class="input-pop" type="text" value="" id="medicament_new_dealer" name="dealer">
             </div>
             <div>
                 <label for="medicament_new_origin" class="label-tit">产地</label>
-                <input v-model="medicament.origin" class="input-pop" type="text" value="" id="medicament_new_origin" name="origin">
+                <input v-model="letItem.origin" class="input-pop" type="text" value="" id="medicament_new_origin" name="origin">
             </div>
             <div>
                 <label for="medicament_new_phone" class="label-tit">联系方式</label>
                 <input 
-                    v-model="medicament.phone" 
-                    v-validate.initial="medicament.phone" 
+                    v-model="letItem.phone" 
+                    v-validate.initial="letItem.phone" 
                     data-vv-rules="phone" 
                     class="input-pop" type="text" id="medicament_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)">
                 <span v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
             </div>
             <div>
                 <label for="medicament_new_note" class="label-tit">备注信息</label>
-                <input v-model="medicament.memo" class="input-pop input-note" type="text" id="medicament_new_note" name="memo">
+                <input v-model="letItem.memo" class="input-pop input-note" type="text" id="medicament_new_note" name="memo">
             </div>
             <div class="footer">
                 <div class="footer-r">
@@ -158,7 +158,7 @@
     export default {
         name: 'PopMedicament',
         props: {
-            medicament: {
+            letItem: {
                 type: Object,
                 default() {
                     return {
@@ -210,8 +210,8 @@
                     return 0;
                 } else {
                     for(let index in this.categorys){
-                        console.log(this.medicament.category_name);
-                        if(this.categorys[index].name == this.medicament.category_name){
+                        console.log(this.letItem.category_name);
+                        if(this.categorys[index].name == this.letItem.category_name){
                             return index;
                         }
                     }                                     
@@ -222,8 +222,8 @@
                     return 0;
                 } else {               
                     for(let index in this.toxicity){                       
-                        if(this.toxicity[index] == this.medicament.toxicity_grade){
-                            //console.log(this.medicament.toxicity_grade);
+                        if(this.toxicity[index] == this.letItem.toxicity_grade){
+                            //console.log(this.letItem.toxicity_grade);
                             return index;
                         }
                     }                         
@@ -233,8 +233,8 @@
         },
         mounted () {
             this.getAllPlantation();
-            for(let key of Object.keys(this.medicament)){
-                this.tmp[key] = this.medicament[key];
+            for(let key of Object.keys(this.letItem)){
+                this.tmp[key] = this.letItem[key];
             }
         },
         methods: {
@@ -255,20 +255,20 @@
             */
             validateBeforeSubmit () {
                 let params = {
-                    'id': this.medicament.id,
+                    'id': this.letItem.id,
                     'field': 'name',
-                    'value': this.medicament.name
+                    'value': this.letItem.name
                 };
-                this.$unique(this, 'medicament', params, 'medicament.name').then(() => {
+                this.$unique(this, 'medicament', params, 'letItem.name').then(() => {
                     for(let category of this.categorys){
-                        if(category.id == this.medicament.category_id){
-                            this.medicament.category_name = category.name;
+                        if(category.id == this.letItem.category_id){
+                            this.letItem.category_name = category.name;
                         }
                     }
                     if(this.edit) {
-                        this.$update(this, 'medicament', this.medicament).then((response) => {
-                            for(let key of Object.keys(this.medicament)){
-                                this.tmp[key] = this.medicament[key];
+                        this.$update(this, 'medicament', this.letItem).then((response) => {
+                            for(let key of Object.keys(this.letItem)){
+                                this.tmp[key] = this.letItem[key];
                             }
                             this.$alert('修改成功', 's');
                         }, (response) => {
@@ -279,9 +279,9 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'medicament', this.medicament).then((response) => {
-                            this.medicament.id = response.body;
-                            this.$emit('callback', this.medicament);
+                        this.$storeL(this, 'medicament', this.letItem).then((response) => {
+                            this.letItem.id = response.body;
+                            this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
                         }, (response) => {
                             if(response != false) {
@@ -305,7 +305,7 @@
 
             /**
             * 隐藏编辑模块
-            * @param medicament
+            * @param letItem
             */
             cancelEditPlanta () {
                 this.$emit('closeEdit');
@@ -314,16 +314,16 @@
             * CallBack函数,执行回调函数 
             */
             getMsgId (msg) {
-                    this.medicament.category_id = msg;
+                    this.letItem.category_id = msg;
             },
             getMsgGrade (msg) {
-                    this.medicament.toxicity_grade=msg;                
+                    this.letItem.toxicity_grade=msg;                
             },
         },
         destroyed () {
             if(this.edit){
-                for(let key of Object.keys(this.medicament)){
-                        this.medicament[key] = this.tmp[key];
+                for(let key of Object.keys(this.letItem)){
+                        this.letItem[key] = this.tmp[key];
                     }
             }
         },

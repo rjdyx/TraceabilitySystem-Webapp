@@ -6,7 +6,7 @@
  * 
  * Props:
  * 
- * @param  expert 
+ * @param  letItem 
  * 类型：Object
  * 是否必填：false
  * 默认值：{}
@@ -46,8 +46,8 @@
             <div>
                 <label for="expert_table_type" class="label-tit">操作模块</label>
                 <!-- <select 
-                    v-model="expert.table_type" 
-                    v-validate.initial="expert.table_type" 
+                    v-model="letItem.table_type" 
+                    v-validate.initial="letItem.table_type" 
                     data-vv-rules="required" 
                     data-vv-as="操作模块" 
                     id="expert_table_type" name="expert_table_type" class="input-pop">
@@ -67,8 +67,8 @@
             <div>
                 <label for="expert_new_fullName" class="label-tit">专家名称</label>
                 <input 
-                    v-model="expert.expert_name" 
-                    v-validate.initial="expert.expert_name" 
+                    v-model="letItem.expert_name" 
+                    v-validate.initial="letItem.expert_name" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="专家名称" 
                     class="input-pop" type="text" id="expert_new_fullName" name="expert_name" placeholder="必填">
@@ -77,8 +77,8 @@
             <div>
                 <label for="expert_major" class="label-tit">研究领域</label>
                 <input 
-                    v-model="expert.major" 
-                    v-validate.initial="expert.major" 
+                    v-model="letItem.major" 
+                    v-validate.initial="letItem.major" 
                     data-vv-rules="required" 
                     data-vv-as="研究领域" 
                     class="input-pop" type="text" id="expert_major" name="major" placeholder="必填">
@@ -87,8 +87,8 @@
             <div>
                 <label for="expert_level" class="label-tit">级别</label>
                 <input 
-                    v-model="expert.level" 
-                    v-validate.initial="expert.level" 
+                    v-model="letItem.level" 
+                    v-validate.initial="letItem.level" 
                     data-vv-rules="required" 
                     data-vv-as="级别" 
                     class="input-pop" type="text" id="expert_level" name="level" placeholder="必填">
@@ -97,8 +97,8 @@
             <div>
                 <label for="expert_sex" class="label-tit">性别</label>
                 <!-- <select 
-                    v-model="expert.sex" 
-                    v-validate.initial="expert.sex" 
+                    v-model="letItem.sex" 
+                    v-validate.initial="letItem.sex" 
                     data-vv-rules="required" 
                     data-vv-as="性别" 
                     id="expert_sex" name="expert_sex" class="input-pop">
@@ -117,8 +117,8 @@
             <div>
                 <label for="expert_new_age" class="label-tit">年龄</label>
                 <input 
-                    v-model="expert.age" 
-                    v-validate.initial="expert.age" 
+                    v-model="letItem.age" 
+                    v-validate.initial="letItem.age" 
                     data-vv-rules="decimal" 
                     data-vv-as="年龄" 
                     class="input-pop" type="text" id="expert_new_age" name="age">
@@ -127,14 +127,14 @@
             <div>
                 <label for="expert_new_unit" class="label-tit">所属单位</label>
                 <input 
-                    v-model="expert.unit" 
+                    v-model="letItem.unit" 
                     class="input-pop" type="text" value="" id="expert_new_unit" name="unit">
             </div>
             <div>
                 <label for="expert_new_phone" class="label-tit">联系方式</label>
                 <input 
-                    v-model="expert.phone" 
-                    v-validate.initial="expert.phone" 
+                    v-model="letItem.phone" 
+                    v-validate.initial="letItem.phone" 
                     data-vv-rules="phone" 
                     class="input-pop" type="text" id="expert_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)">
                 <span v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
@@ -142,7 +142,7 @@
             <div>
                 <label for="expert_new_note" class="label-tit">备注信息</label>
                 <input 
-                    v-model="expert.memo" 
+                    v-model="letItem.memo" 
                     class="input-pop input-note" type="text" id="expert_new_note" name="memo">
             </div>
             <div class="footer">
@@ -176,7 +176,7 @@
     export default {
         expert_name: 'PopExpert',
         props: {
-            expert: {
+            letItem: {
                 type: Object,
                 default() {
                     return {
@@ -229,7 +229,7 @@
                     return 0;
                 } else {
                     for(let index in this.tableType){
-                        if(this.tableSet[index] == this.expert.table_type){
+                        if(this.tableSet[index] == this.letItem.table_type){
                             return index;
                         }
                     }                                      
@@ -240,7 +240,7 @@
                     return 0;
                 } else {               
                     for(let index in this.sex){
-                        if(this.sex[index] == this.expert.sex){
+                        if(this.sex[index] == this.letItem.sex){
                             return index;
                         }
                     };                        
@@ -250,8 +250,8 @@
 
         },
         mounted () {
-            for(let key of Object.keys(this.expert)){
-                this.tmp[key] = this.expert[key];
+            for(let key of Object.keys(this.letItem)){
+                this.tmp[key] = this.letItem[key];
             }
         },
         methods: {
@@ -261,16 +261,16 @@
             */
             validateBeforeSubmit () {
                 let params = {
-                    'id': this.expert.id,
+                    'id': this.letItem.id,
                     'field': 'expert_name',
-                    'value': this.expert.expert_name
+                    'value': this.letItem.expert_name
                 };
-                this.$unique(this, 'expert', params, 'expert.expert_name').then(() => {
+                this.$unique(this, 'letItem', params, 'letItem.expert_name').then(() => {
 
                     if(this.edit) {
-                        this.$update(this, 'expert', this.expert).then((response) => {
-                            for(let key of Object.keys(this.expert)){
-                                this.tmp[key] = this.expert[key];
+                        this.$update(this, 'expert', this.letItem).then((response) => {
+                            for(let key of Object.keys(this.letItem)){
+                                this.tmp[key] = this.letItem[key];
                             }
                             this.$alert('修改成功', 's');
                         }, (response) => {
@@ -281,9 +281,9 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'expert', this.expert).then((response) => {
-                            this.expert.id = response.body;
-                            this.$emit('callback', this.expert);
+                        this.$storeL(this, 'expert', this.letItem).then((response) => {
+                            this.letItem.id = response.body;
+                            this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
                         }, (response) => {
                             if(response != false) {
@@ -307,7 +307,7 @@
 
             /**
             * 隐藏编辑模块
-            * @param expert
+            * @param letItem
             */
             cancelEditPlanta () {
                 this.$emit('closeEdit');
@@ -316,17 +316,17 @@
             * CallBack函数,执行回调函数 
             */
             getMsgType (msg) {
-                    console.log(this.expert.table_type);
-                    this.expert.table_type = msg;
+                    console.log(this.letItem.table_type);
+                    this.letItem.table_type = msg;
             },
             getMsgSex (msg) {
-                    this.expert.sex = msg;               
+                    this.letItem.sex = msg;               
             },
         },
         destroyed () {
             if(this.edit){
-                for(let key of Object.keys(this.expert)){
-                        this.expert[key] = this.tmp[key];
+                for(let key of Object.keys(this.letItem)){
+                        this.letItem[key] = this.tmp[key];
                     }
             }
         },

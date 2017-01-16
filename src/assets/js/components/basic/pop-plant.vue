@@ -6,7 +6,7 @@
  * 
  * Props:
  * 
- * @param  plant 
+ * @param  letItem 
  * 类型：Object
  * 是否必填：false
  * 默认值：{}
@@ -45,18 +45,18 @@
         <div class="main form-pop">
             <div>
                 <div @click="selectPic" class="pic-preview">
-                    <img v-if="plant.image == '' || plant.image == null" :src="$img(image)">
-                    <img v-else-if="plant.image == 'upload.png'" :src="$img(plant.image)">
-                    <img v-else :src="$img(plant.image, false)">
+                    <img v-if="letItem.image == '' || letItem.image == null" :src="$img(image)">
+                    <img v-else-if="letItem.image == 'upload.png'" :src="$img(letItem.image)">
+                    <img v-else :src="$img(letItem.image, false)">
                 </div>
-                <input name="file_name" type="file" hidden="hidden" @change="previewPic(plant, $event)">
+                <input name="file_name" type="file" hidden="hidden" @change="previewPic(letItem, $event)">
                 <div class="delete-pic-btn">
                     <button type="button" @click="deletePic">删除</button>
                 </div>
             </div>
             <div>
                 <label for="plant_categroy_select" class="label-tit">果蔬类别</label>
-                <!-- <select v-model="plant.category" name="category" id="plant_categroy_select" class="input-pop">
+                <!-- <select v-model="letItem.category" name="category" id="plant_categroy_select" class="input-pop">
                     <option value="蔬菜类">蔬菜类</option>
                     <option value="水果类">水果类</option>
                 </select> -->
@@ -70,8 +70,8 @@
             <div>
                 <label for="plant_new_fullName" class="label-tit">果蔬名称</label>
                 <input 
-                    v-model="plant.name" 
-                    v-validate.initial="plant.name" 
+                    v-model="letItem.name" 
+                    v-validate.initial="letItem.name" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="果蔬名称" 
                     class="input-pop" type="text" id="plant_new_fullName" name="name" placeholder="必填">
@@ -81,8 +81,8 @@
             <div>
                 <label for="plant_new_growth_cycle" class="label-tit">生长周期</label>
                 <input 
-                    v-model="plant.growth_cycle" 
-                    v-validate.initial="plant.growth_cycle" 
+                    v-model="letItem.growth_cycle" 
+                    v-validate.initial="letItem.growth_cycle" 
                     data-vv-rules="required|decimal:2" 
                     data-vv-as="生长周期" 
                     class="input-pop" type="text" id="plant_new_growth_cycle" name="growth_cycle" placeholder="必填，单位（天）">
@@ -90,11 +90,11 @@
             </div>
             <div>
                 <label for="plant_new_description" class="label-tit">特征描述</label>
-                <input v-model="plant.description" class="input-pop" type="text" id="plant_new_description" name="description">
+                <input v-model="letItem.description" class="input-pop" type="text" id="plant_new_description" name="description">
             </div>
             <div>
                 <label for="plant_new_note" class="label-tit">备注信息</label>
-                <input v-model="plant.memo" class="input-pop input-note" type="text" id="plant_new_note" name="memo">
+                <input v-model="letItem.memo" class="input-pop input-note" type="text" id="plant_new_note" name="memo">
             </div>
             <div class="footer">
                 <div class="footer-r">
@@ -150,7 +150,7 @@
     export default {
         name: 'PopPlant',
         props: {
-            plant: {
+            letItem: {
                 type: Object,
                 default() {
                     return {
@@ -201,7 +201,7 @@
                     return 0;
                 } else {
                     for(let index in this.categorys){    
-                        if(this.categorys[index] == this.plant.category){
+                        if(this.categorys[index] == this.letItem.category){
                             return index;
                         }  
                     }
@@ -212,17 +212,17 @@
         },
         mounted () {
             // 初始化tmp，同时过滤掉plant里面不需要的属性
-            for(let key of Object.keys(this.plant)){
+            for(let key of Object.keys(this.letItem)){
                 // 如果plant里面的属性tmp里面也有，那么那对应的值赋予tmp
                 if((key in this.tmp)&&(this.tmp.hasOwnProperty(key))){
-                    this.tmp[key] = (this.plant[key] == null? '':this.plant[key]);
+                    this.tmp[key] = (this.letItem[key] == null? '':this.letItem[key]);
                 }else {
                     // 否则删除此属性
-                    delete this.plant[key];
+                    delete this.letItem[key];
                 }
             }
             if(this.edit){
-                this.plant.imageFlag = 'no';
+                this.letItem.imageFlag = 'no';
             }
         },
         methods: {
@@ -274,8 +274,8 @@
                 let reader = new FileReader();
                 reader.readAsDataURL(file);
                 reader.onload = e => {
-                    this.plant.image = e.target.result;
-                    this.plant.file_name = file;
+                    this.letItem.image = e.target.result;
+                    this.letItem.file_name = file;
                 }
 
             },
@@ -284,8 +284,8 @@
              * 删除图片
              */
             deletePic () {
-                this.plant.image = 'upload.png';
-                this.plant.file_name = '';
+                this.letItem.image = 'upload.png';
+                this.letItem.file_name = '';
             },
 
             /**
@@ -293,22 +293,22 @@
             */
             validateBeforeSubmit () {
                 let params = {
-                    'id': this.plant.id,
+                    'id': this.letItem.id,
                     'field': 'name',
-                    'value': this.plant.name
+                    'value': this.letItem.name
                 };
-                this.$unique(this, 'plant', params, 'plant.name').then(() => {
+                this.$unique(this, 'plant', params, 'letItem.name').then(() => {
                     if(this.edit) {
-                        if(this.plant.file_name != null){
+                        if(this.letItem.file_name != null){
 
                             let form = new FormData();
-                            for(let key of Object.keys(this.plant)){
-                                form.append(key, this.plant[key]);
+                            for(let key of Object.keys(this.letItem)){
+                                form.append(key, this.letItem[key]);
                             }
 
                             this.$update(this, 'plant', form, true).then((response) => {
-                                for(let key of Object.keys(this.plant)){
-                                    this.tmp[key] = this.plant[key];
+                                for(let key of Object.keys(this.letItem)){
+                                    this.tmp[key] = this.letItem[key];
                                 }
                                 this.$alert('修改成功', 's');
                             }, (response) => {
@@ -317,11 +317,11 @@
 
                         }else {
 
-                            this.plant.image = 'upload.png';
-                            this.$update(this, 'plant', this.plant).then((response) => {
+                            this.letItem.image = 'upload.png';
+                            this.$update(this, 'plant', this.letItem).then((response) => {
 
-                                for(let key of Object.keys(this.plant)){
-                                    this.tmp[key] = this.plant[key];
+                                for(let key of Object.keys(this.letItem)){
+                                    this.tmp[key] = this.letItem[key];
                                 }
                                 this.$alert('修改成功', 's');
 
@@ -338,17 +338,17 @@
                     }else {
 
                         let form = new FormData();
-                        for(let key of Object.keys(this.plant)){
-                            form.append(key, this.plant[key]);
+                        for(let key of Object.keys(this.letItem)){
+                            form.append(key, this.letItem[key]);
                         }
 
-                        if(this.plant.file_name == null){
-                            this.plant.image = 'upload.png';
+                        if(this.letItem.file_name == null){
+                            this.letItem.image = 'upload.png';
                         }
 
                         this.$storeL(this, 'plant', form, true).then((response) => {
-                            this.plant.id = response.body;
-                            this.$emit('callback', this.plant);
+                            this.letItem.id = response.body;
+                            this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
                         }, (response) => {
                             if(response != false) {
@@ -372,7 +372,7 @@
 
             /**
             * 隐藏编辑模块
-            * @param plant
+            * @param letItem
             */
             cancelEditPlantation () {
                 this.$emit('closeEdit');
@@ -381,14 +381,14 @@
             * CallBack函数,执行回调函数 
             */
             getMsg (msg) {
-                this.plant.category = msg;
+                this.letItem.category = msg;
             },
 
         },
         destroyed () {
             if(this.edit){
-                for(let key of Object.keys(this.plant)){
-                        this.plant[key] = this.tmp[key];
+                for(let key of Object.keys(this.letItem)){
+                        this.letItem[key] = this.tmp[key];
                     }
             }
         },

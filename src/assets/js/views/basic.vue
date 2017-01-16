@@ -16,6 +16,7 @@
         <!-- 列表模块 -->
         <table-list
             ref="tableList"
+            :_key="_key"
             :component="component"
             :searchPlaceholder="searchPlaceholder"
             :searchUrl="searchUrl"
@@ -37,6 +38,13 @@
     import tableList from '../components/public/table-list.vue';
     import PopPlantation from '../components/basic/pop-plantation.vue';
     import PopPlanta from '../components/basic/pop-planta.vue';
+    import PopPlant from '../components/basic/pop-plant.vue';
+    import MyImage from '../components/basic/image.vue';
+    import PopManure from '../components/basic/pop-manure.vue';
+    import PopMedicament from '../components/basic/pop-medicament.vue';
+    import PopExpert from '../components/basic/pop-expert.vue';
+    import ResearchField from '../components/basic/research-field.vue';
+    
 
     export default{
         name: 'Basic',
@@ -51,6 +59,7 @@
                     {name: '农药档案', key: 'medicament'},
                     {name: '专家档案', key: 'expert'}
                 ],
+                _key: '',
                 component: null,
                 searchPlaceholder: '',
                 searchUrl: '',
@@ -60,7 +69,7 @@
                 tableLists: [
                     {
                         key: 'plantation',
-                        component: PopPlantation,
+                        component: {plantation: PopPlantation},
                         searchPlaceholder: '种植场名称',
                         searchUrl: 'plantation',
                         theads: ['种植场名称', '种植面积', '负责人'],
@@ -69,11 +78,47 @@
                     },
                     {
                         key: 'planta',
-                        component: PopPlanta,
+                        component: {planta: PopPlanta},
                         searchPlaceholder: '种植区名称',
                         searchUrl: 'planta',
                         theads: ['种植区名称', '种植面积', '负责人'],
                         protos: ['name', ['area', 'area_unit'], 'director'],
+                        widths: [32, 24, 17]
+                    },
+                    {
+                        key: 'plant',
+                        component: {plant: PopPlant, image: MyImage},
+                        searchPlaceholder: '果蔬名称',
+                        searchUrl: 'plant',
+                        theads: ['果蔬名称', '生长周期', '已传图片'],
+                        protos: ['name', 'growth_cycle', 'image'],
+                        widths: [32, 24, 17]
+                    },
+                    {
+                        key: 'manure',
+                        component: {manure: PopManure},
+                        searchPlaceholder: '肥料名称',
+                        searchUrl: 'manure',
+                        theads: ['肥料类别', '肥料名称', '用途'],
+                        protos: ['category_name', 'name', 'usage'],
+                        widths: [32, 24, 17]
+                    },
+                    {
+                        key: 'medicament',
+                        component: {medicament: PopMedicament},
+                        searchPlaceholder: '农药名称',
+                        searchUrl: 'medicament',
+                        theads: ['农药类别', '农药名称', '用途'],
+                        protos: ['category_name', 'name', 'usage'],
+                        widths: [32, 24, 17]
+                    },
+                    {
+                        key: 'expert',
+                        component: {expert: PopExpert, table_type: ResearchField},
+                        searchPlaceholder: '专家名称',
+                        searchUrl: 'expert',
+                        theads: ['专家名称', '操作模块', '研究领域'],
+                        protos: ['expert_name', 'major', 'table_type'],
                         widths: [32, 24, 17]
                     }
                 ]
@@ -86,10 +131,17 @@
             Navbar,
             tableList,
             PopPlantation,
-            PopPlanta
+            PopPlanta,
+            PopPlant,
+            MyImage,
+            PopManure,
+            PopMedicament,
+            PopExpert,
+            ResearchField
         },
         created () {
             this.setTitle('基础信息管理');
+            this._key = this.tableLists[0].key;
             this.searchPlaceholder = this.tableLists[0].searchPlaceholder;
             this.searchUrl = this.tableLists[0].searchUrl;
             this.theads = this.tableLists[0].theads;
@@ -108,6 +160,7 @@
             flashList (key) {
                 for(let item of this.tableLists){
                     if(item.key == key) {
+                        this._key = item.key;
                         this.searchPlaceholder = item.searchPlaceholder;
                         this.searchUrl = item.searchUrl;
                         this.theads = item.theads;
