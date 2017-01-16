@@ -22,7 +22,7 @@ html, body{
 /* table list */
 .table-list {
   width: 100%;
-    margin-bottom: pxToRem(63);
+  margin-bottom: pxToRem(93);
   text-align: center;
   table-layout:fixed;
 
@@ -57,10 +57,20 @@ html, body{
   }
 
   .list-foot {
+
+    position: fixed;
+    bottom: pxToRem(50);
+    display: table;
+    width: 100%;
+
     tr {
       height: pxToRem(39);
       background-color: #eaeaea;
       border-top: 1px solid #d2d2d2;
+      
+      &>td {
+        padding: 0 2px;
+      }
 
       .btn-del {
         float: left;
@@ -185,9 +195,9 @@ html, body{
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 4px 0;
     background: white;
-    box-shadow: 0 0 3px 0 #9E9E9E;
+    border-top: 1px solid #d2d2d2;
 }
 
 
