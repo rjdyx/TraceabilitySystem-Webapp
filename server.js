@@ -61,12 +61,13 @@ proxyTable.forEach(function (context) {
 // 压缩response
 app.use(compression({ threshold: 0 }))
 // 使用Expires headers
-const serve = (path, cache) => express.static(resolve(path), {
+const serveCache = (path, cache) => express.static(resolve(path), {
   maxAge: 315360000
 })
+const serveNoCache = (path, cache) => express.static(resolve(path))
 app.use(favicon('./public/suyulogo.png'))
 app.use('/public', serve('./public'))
-// app.use('/dist', serve('./dist'))
+app.use('/dist', serveNoCache('./dist'))
 
 
 // ssr
