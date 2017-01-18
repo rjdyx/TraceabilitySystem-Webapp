@@ -66,7 +66,7 @@ const serveCache = (path, cache) => express.static(resolve(path), {
 })
 const serveNoCache = (path, cache) => express.static(resolve(path))
 app.use(favicon('./public/suyulogo.png'))
-app.use('/public', serve('./public'))
+app.use('/public', serveCache('./public'))
 app.use('/dist', serveNoCache('./dist'))
 
 
