@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "/dist";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 96);
+/******/ 	return __webpack_require__(__webpack_require__.s = 97);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -13845,7 +13845,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(22)
 
 /* template */
-var __vue_template__ = __webpack_require__(88)
+var __vue_template__ = __webpack_require__(89)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13877,7 +13877,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(25)
 
 /* template */
-var __vue_template__ = __webpack_require__(86)
+var __vue_template__ = __webpack_require__(87)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13903,18 +13903,23 @@ module.exports = __vue_exports__
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__vuex_index_js__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__route_routers_js__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vuex_router_sync__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vuex_router_sync___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vuex_router_sync__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vee_validate__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vee_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vee_validate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lang_zh_CN_vee_validate_js__ = __webpack_require__(43);
-/* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__route_routers_js__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__vuex_index_js__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nprogress__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nprogress___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_nprogress__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__route_routers_js__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex_router_sync___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vee_validate__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vee_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vee_validate__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lang_zh_CN_vee_validate_js__ = __webpack_require__(43);
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__["a"]; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return app; });
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+
 
 
 
@@ -13924,22 +13929,22 @@ module.exports = __vue_exports__
  // 表单验证插件
 
 if (process.env.COUNT_ENV == 1) {
-								// 只需初始化一次，多次初始化会报错
-								process.env.COUNT_ENV = 2;
-								__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_5_vee_validate___default.a, {
-																locale: 'ar',
-																dictionary: {
-																								ar: { // locale key
-																																messages: __WEBPACK_IMPORTED_MODULE_6__lang_zh_CN_vee_validate_js__["a" /* default */] }
-																}
-								});
+	// 只需初始化一次，多次初始化会报错
+	process.env.COUNT_ENV = 2;
+	__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_6_vee_validate___default.a, {
+		locale: 'ar',
+		dictionary: {
+			ar: { // locale key
+				messages: __WEBPACK_IMPORTED_MODULE_7__lang_zh_CN_vee_validate_js__["a" /* default */] }
+		}
+	});
 }
 
 __webpack_require__(36);
 
 // 用vuex的store同步化router
 // 这会注册 `store.state.route`
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4_vuex_router_sync__["sync"])(__WEBPACK_IMPORTED_MODULE_2__vuex_index_js__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__route_routers_js__["a" /* default */]);
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__["sync"])(__WEBPACK_IMPORTED_MODULE_3__vuex_index_js__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a" /* default */]);
 
 // 处理刷新的时候vuex被清空但是用户已经登录的情况
 // if (sessionStorage.user) {
@@ -13969,14 +13974,25 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4_vuex_router_sync__["sync"])(__
 
 //     }
 // });
+__WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a" /* default */].beforeEach(function (to, from, next) {
+	if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) == undefined || (typeof window === 'undefined' ? 'undefined' : _typeof(window)) == 'object') {
+		__WEBPACK_IMPORTED_MODULE_2_nprogress___default.a.set(0.5);
+	}
+	next();
+});
 
+__WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a" /* default */].afterEach(function (route) {
+	if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) == undefined || (typeof window === 'undefined' ? 'undefined' : _typeof(window)) == 'object') {
+		__WEBPACK_IMPORTED_MODULE_2_nprogress___default.a.set(1);
+	}
+});
 
 // 创建一个app实例
 // 这里我们把routes和store注入所有子组件，
 // 使得像`this.$router` 和 `this.$store` 在任何地方都能生效
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_0_vue___default.a.util.extend({
-								router: __WEBPACK_IMPORTED_MODULE_3__route_routers_js__["a" /* default */],
-								store: __WEBPACK_IMPORTED_MODULE_2__vuex_index_js__["a" /* default */]
+	router: __WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a" /* default */],
+	store: __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__["a" /* default */]
 }, __WEBPACK_IMPORTED_MODULE_1__App_vue___default.a));
 
 
@@ -14177,6 +14193,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 Object.defineProperty(exports, "__esModule", { value: true });
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
 //
 //
 //
@@ -14752,6 +14770,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ exports["default"] = {
@@ -15006,6 +15035,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
 //
 //
 //
@@ -15441,6 +15473,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -16134,6 +16176,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ exports["default"] = {
@@ -16373,6 +16420,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18130,6 +18193,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -18211,7 +18287,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 'order': ''
             },
             // 动画效果
-            slide: 'slide-fade'
+            slide: 'slide-fade',
+            showUp: true
         };
     },
 
@@ -18234,13 +18311,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
         getAllLists: function getAllLists(url) {
             var _this = this;
 
-            // 加上这句，解决过渡动画重复元素的bug
-            this.slide = 'slide-fade';
-            this.$set(this, 'list', []);
+            this.showUp = false;
             this.$index(this, url).then(function (response) {
                 var data = response.body[url + 's'];
                 _this.total = data.last_page;
                 _this.$set(_this, 'list', data.data);
+                _this.showUp = true;
             }, function (error) {
                 if (error.status == 401) {
                     _this.$router.push('/webapp/login');
@@ -18381,7 +18457,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
          * 判断调用单个删除或批量删除
          */
         oneOrBatchdestroy: function oneOrBatchdestroy() {
-            this.slide = 'slide-fade';
             if (this.oneOrBatch == 0) {
                 this.destroy();
             } else {
@@ -18526,27 +18601,27 @@ Object.defineProperty(exports, "__esModule", { value: true });
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -18643,7 +18718,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 searchUrl: 'manure',
                 theads: ['肥料类别', '肥料名称', '用途'],
                 protos: ['category_name', 'name', 'usage'],
-                widths: [32, 24, 17]
+                widths: [24, 24, 25]
             }, {
                 key: 'medicament',
                 component: { medicament: __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue___default.a },
@@ -18941,9 +19016,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -19120,7 +19195,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__);
 Object.defineProperty(exports, "__esModule", { value: true });
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -19678,6 +19753,10 @@ exports.touchDelete = function () {
             }, 500);
         });
 
+        el.addEventListener("touchmove", function (event) {
+            clearTimeout(time);
+        });
+
         el.addEventListener("touchend", function (event) {
             clearTimeout(time);
         });
@@ -19778,9 +19857,9 @@ exports.getItemFromObject = function (object, index) {
 
 
 // 注册全局组件
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('confirm', __webpack_require__(56));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('PopTransition', __webpack_require__(59));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('pop-select', __webpack_require__(58));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('confirm', __webpack_require__(57));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('PopTransition', __webpack_require__(60));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('pop-select', __webpack_require__(59));
 // Vue.component('table-list',require('../components/public/table-list.vue'));
 
 
@@ -19836,7 +19915,7 @@ function createView(component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_router__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CreateView__ = __webpack_require__(37);
 /**
@@ -19855,7 +19934,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 //         resolve(require('./views/index.vue'));
 //     }, 'index');
 // };
-var index = __webpack_require__(65);
+var index = __webpack_require__(66);
 
 //---------------------------登录租金----------------------------------
 // const login = resolve => {
@@ -19863,7 +19942,7 @@ var index = __webpack_require__(65);
 //         resolve(require('./views/login.vue'));
 //     }, 'login');
 // };
-var login = __webpack_require__(67);
+var login = __webpack_require__(68);
 
 //---------------------------农业日志----------------------------------
 // const log = resolve => {
@@ -19871,7 +19950,7 @@ var login = __webpack_require__(67);
 //         resolve(require('./views/log.vue'));
 //     }, 'basic');
 // };
-var log = __webpack_require__(66);
+var log = __webpack_require__(67);
 
 //---------------------------404----------------------------------
 // const fourOFour = resolve => {
@@ -19879,7 +19958,7 @@ var log = __webpack_require__(66);
 //         resolve(require('./views/404.vue'));
 //     }, 'fourOFour');
 // };
-var fourOFour = __webpack_require__(62);
+var fourOFour = __webpack_require__(63);
 
 //---------------------------图片日志------------------------------
 // const dailylog = resolve => {
@@ -19887,7 +19966,7 @@ var fourOFour = __webpack_require__(62);
 //         resolve(require('./views/dailylog.vue'));
 //     }, 'dailylog');
 // }
-var dailylog = __webpack_require__(64);
+var dailylog = __webpack_require__(65);
 
 //=============================种植管理====================================
 
@@ -19897,7 +19976,7 @@ var dailylog = __webpack_require__(64);
 //         resolve(require('./views/basic.vue'));
 //     }, 'basic');
 // };
-var basic = __webpack_require__(63);
+var basic = __webpack_require__(64);
 
 var routes = [{
     path: '/',
@@ -20528,6 +20607,488 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 /* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
+ * @license MIT */
+
+;(function(root, factory) {
+
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if (typeof exports === 'object') {
+    module.exports = factory();
+  } else {
+    root.NProgress = factory();
+  }
+
+})(this, function() {
+  var NProgress = {};
+
+  NProgress.version = '0.2.0';
+
+  var Settings = NProgress.settings = {
+    minimum: 0.08,
+    easing: 'ease',
+    positionUsing: '',
+    speed: 200,
+    trickle: true,
+    trickleRate: 0.02,
+    trickleSpeed: 800,
+    showSpinner: true,
+    barSelector: '[role="bar"]',
+    spinnerSelector: '[role="spinner"]',
+    parent: 'body',
+    template: '<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>'
+  };
+
+  /**
+   * Updates configuration.
+   *
+   *     NProgress.configure({
+   *       minimum: 0.1
+   *     });
+   */
+  NProgress.configure = function(options) {
+    var key, value;
+    for (key in options) {
+      value = options[key];
+      if (value !== undefined && options.hasOwnProperty(key)) Settings[key] = value;
+    }
+
+    return this;
+  };
+
+  /**
+   * Last number.
+   */
+
+  NProgress.status = null;
+
+  /**
+   * Sets the progress bar status, where `n` is a number from `0.0` to `1.0`.
+   *
+   *     NProgress.set(0.4);
+   *     NProgress.set(1.0);
+   */
+
+  NProgress.set = function(n) {
+    var started = NProgress.isStarted();
+
+    n = clamp(n, Settings.minimum, 1);
+    NProgress.status = (n === 1 ? null : n);
+
+    var progress = NProgress.render(!started),
+        bar      = progress.querySelector(Settings.barSelector),
+        speed    = Settings.speed,
+        ease     = Settings.easing;
+
+    progress.offsetWidth; /* Repaint */
+
+    queue(function(next) {
+      // Set positionUsing if it hasn't already been set
+      if (Settings.positionUsing === '') Settings.positionUsing = NProgress.getPositioningCSS();
+
+      // Add transition
+      css(bar, barPositionCSS(n, speed, ease));
+
+      if (n === 1) {
+        // Fade out
+        css(progress, { 
+          transition: 'none', 
+          opacity: 1 
+        });
+        progress.offsetWidth; /* Repaint */
+
+        setTimeout(function() {
+          css(progress, { 
+            transition: 'all ' + speed + 'ms linear', 
+            opacity: 0 
+          });
+          setTimeout(function() {
+            NProgress.remove();
+            next();
+          }, speed);
+        }, speed);
+      } else {
+        setTimeout(next, speed);
+      }
+    });
+
+    return this;
+  };
+
+  NProgress.isStarted = function() {
+    return typeof NProgress.status === 'number';
+  };
+
+  /**
+   * Shows the progress bar.
+   * This is the same as setting the status to 0%, except that it doesn't go backwards.
+   *
+   *     NProgress.start();
+   *
+   */
+  NProgress.start = function() {
+    if (!NProgress.status) NProgress.set(0);
+
+    var work = function() {
+      setTimeout(function() {
+        if (!NProgress.status) return;
+        NProgress.trickle();
+        work();
+      }, Settings.trickleSpeed);
+    };
+
+    if (Settings.trickle) work();
+
+    return this;
+  };
+
+  /**
+   * Hides the progress bar.
+   * This is the *sort of* the same as setting the status to 100%, with the
+   * difference being `done()` makes some placebo effect of some realistic motion.
+   *
+   *     NProgress.done();
+   *
+   * If `true` is passed, it will show the progress bar even if its hidden.
+   *
+   *     NProgress.done(true);
+   */
+
+  NProgress.done = function(force) {
+    if (!force && !NProgress.status) return this;
+
+    return NProgress.inc(0.3 + 0.5 * Math.random()).set(1);
+  };
+
+  /**
+   * Increments by a random amount.
+   */
+
+  NProgress.inc = function(amount) {
+    var n = NProgress.status;
+
+    if (!n) {
+      return NProgress.start();
+    } else {
+      if (typeof amount !== 'number') {
+        amount = (1 - n) * clamp(Math.random() * n, 0.1, 0.95);
+      }
+
+      n = clamp(n + amount, 0, 0.994);
+      return NProgress.set(n);
+    }
+  };
+
+  NProgress.trickle = function() {
+    return NProgress.inc(Math.random() * Settings.trickleRate);
+  };
+
+  /**
+   * Waits for all supplied jQuery promises and
+   * increases the progress as the promises resolve.
+   *
+   * @param $promise jQUery Promise
+   */
+  (function() {
+    var initial = 0, current = 0;
+
+    NProgress.promise = function($promise) {
+      if (!$promise || $promise.state() === "resolved") {
+        return this;
+      }
+
+      if (current === 0) {
+        NProgress.start();
+      }
+
+      initial++;
+      current++;
+
+      $promise.always(function() {
+        current--;
+        if (current === 0) {
+            initial = 0;
+            NProgress.done();
+        } else {
+            NProgress.set((initial - current) / initial);
+        }
+      });
+
+      return this;
+    };
+
+  })();
+
+  /**
+   * (Internal) renders the progress bar markup based on the `template`
+   * setting.
+   */
+
+  NProgress.render = function(fromStart) {
+    if (NProgress.isRendered()) return document.getElementById('nprogress');
+
+    addClass(document.documentElement, 'nprogress-busy');
+    
+    var progress = document.createElement('div');
+    progress.id = 'nprogress';
+    progress.innerHTML = Settings.template;
+
+    var bar      = progress.querySelector(Settings.barSelector),
+        perc     = fromStart ? '-100' : toBarPerc(NProgress.status || 0),
+        parent   = document.querySelector(Settings.parent),
+        spinner;
+    
+    css(bar, {
+      transition: 'all 0 linear',
+      transform: 'translate3d(' + perc + '%,0,0)'
+    });
+
+    if (!Settings.showSpinner) {
+      spinner = progress.querySelector(Settings.spinnerSelector);
+      spinner && removeElement(spinner);
+    }
+
+    if (parent != document.body) {
+      addClass(parent, 'nprogress-custom-parent');
+    }
+
+    parent.appendChild(progress);
+    return progress;
+  };
+
+  /**
+   * Removes the element. Opposite of render().
+   */
+
+  NProgress.remove = function() {
+    removeClass(document.documentElement, 'nprogress-busy');
+    removeClass(document.querySelector(Settings.parent), 'nprogress-custom-parent');
+    var progress = document.getElementById('nprogress');
+    progress && removeElement(progress);
+  };
+
+  /**
+   * Checks if the progress bar is rendered.
+   */
+
+  NProgress.isRendered = function() {
+    return !!document.getElementById('nprogress');
+  };
+
+  /**
+   * Determine which positioning CSS rule to use.
+   */
+
+  NProgress.getPositioningCSS = function() {
+    // Sniff on document.body.style
+    var bodyStyle = document.body.style;
+
+    // Sniff prefixes
+    var vendorPrefix = ('WebkitTransform' in bodyStyle) ? 'Webkit' :
+                       ('MozTransform' in bodyStyle) ? 'Moz' :
+                       ('msTransform' in bodyStyle) ? 'ms' :
+                       ('OTransform' in bodyStyle) ? 'O' : '';
+
+    if (vendorPrefix + 'Perspective' in bodyStyle) {
+      // Modern browsers with 3D support, e.g. Webkit, IE10
+      return 'translate3d';
+    } else if (vendorPrefix + 'Transform' in bodyStyle) {
+      // Browsers without 3D support, e.g. IE9
+      return 'translate';
+    } else {
+      // Browsers without translate() support, e.g. IE7-8
+      return 'margin';
+    }
+  };
+
+  /**
+   * Helpers
+   */
+
+  function clamp(n, min, max) {
+    if (n < min) return min;
+    if (n > max) return max;
+    return n;
+  }
+
+  /**
+   * (Internal) converts a percentage (`0..1`) to a bar translateX
+   * percentage (`-100%..0%`).
+   */
+
+  function toBarPerc(n) {
+    return (-1 + n) * 100;
+  }
+
+
+  /**
+   * (Internal) returns the correct CSS for changing the bar's
+   * position given an n percentage, and speed and ease from Settings
+   */
+
+  function barPositionCSS(n, speed, ease) {
+    var barCSS;
+
+    if (Settings.positionUsing === 'translate3d') {
+      barCSS = { transform: 'translate3d('+toBarPerc(n)+'%,0,0)' };
+    } else if (Settings.positionUsing === 'translate') {
+      barCSS = { transform: 'translate('+toBarPerc(n)+'%,0)' };
+    } else {
+      barCSS = { 'margin-left': toBarPerc(n)+'%' };
+    }
+
+    barCSS.transition = 'all '+speed+'ms '+ease;
+
+    return barCSS;
+  }
+
+  /**
+   * (Internal) Queues a function to be executed.
+   */
+
+  var queue = (function() {
+    var pending = [];
+    
+    function next() {
+      var fn = pending.shift();
+      if (fn) {
+        fn(next);
+      }
+    }
+
+    return function(fn) {
+      pending.push(fn);
+      if (pending.length == 1) next();
+    };
+  })();
+
+  /**
+   * (Internal) Applies css properties to an element, similar to the jQuery 
+   * css method.
+   *
+   * While this helper does assist with vendor prefixed property names, it 
+   * does not perform any manipulation of values prior to setting styles.
+   */
+
+  var css = (function() {
+    var cssPrefixes = [ 'Webkit', 'O', 'Moz', 'ms' ],
+        cssProps    = {};
+
+    function camelCase(string) {
+      return string.replace(/^-ms-/, 'ms-').replace(/-([\da-z])/gi, function(match, letter) {
+        return letter.toUpperCase();
+      });
+    }
+
+    function getVendorProp(name) {
+      var style = document.body.style;
+      if (name in style) return name;
+
+      var i = cssPrefixes.length,
+          capName = name.charAt(0).toUpperCase() + name.slice(1),
+          vendorName;
+      while (i--) {
+        vendorName = cssPrefixes[i] + capName;
+        if (vendorName in style) return vendorName;
+      }
+
+      return name;
+    }
+
+    function getStyleProp(name) {
+      name = camelCase(name);
+      return cssProps[name] || (cssProps[name] = getVendorProp(name));
+    }
+
+    function applyCss(element, prop, value) {
+      prop = getStyleProp(prop);
+      element.style[prop] = value;
+    }
+
+    return function(element, properties) {
+      var args = arguments,
+          prop, 
+          value;
+
+      if (args.length == 2) {
+        for (prop in properties) {
+          value = properties[prop];
+          if (value !== undefined && properties.hasOwnProperty(prop)) applyCss(element, prop, value);
+        }
+      } else {
+        applyCss(element, args[1], args[2]);
+      }
+    }
+  })();
+
+  /**
+   * (Internal) Determines if an element or space separated list of class names contains a class name.
+   */
+
+  function hasClass(element, name) {
+    var list = typeof element == 'string' ? element : classList(element);
+    return list.indexOf(' ' + name + ' ') >= 0;
+  }
+
+  /**
+   * (Internal) Adds a class to an element.
+   */
+
+  function addClass(element, name) {
+    var oldList = classList(element),
+        newList = oldList + name;
+
+    if (hasClass(oldList, name)) return; 
+
+    // Trim the opening space.
+    element.className = newList.substring(1);
+  }
+
+  /**
+   * (Internal) Removes a class from an element.
+   */
+
+  function removeClass(element, name) {
+    var oldList = classList(element),
+        newList;
+
+    if (!hasClass(element, name)) return;
+
+    // Replace the class name.
+    newList = oldList.replace(' ' + name + ' ', ' ');
+
+    // Trim the opening and closing spaces.
+    element.className = newList.substring(1, newList.length - 1);
+  }
+
+  /**
+   * (Internal) Gets a space separated list of the class names on the element. 
+   * The list is wrapped with a single space on each end to facilitate finding 
+   * matches within the list.
+   */
+
+  function classList(element) {
+    return (' ' + (element.className || '') + ' ').replace(/\s+/gi, ' ');
+  }
+
+  /**
+   * (Internal) Removes an element from the DOM.
+   */
+
+  function removeElement(element) {
+    element && element.parentNode && element.parentNode.removeChild(element);
+  }
+
+  return NProgress;
+});
+
+
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
@@ -20537,7 +21098,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(8)
 
 /* template */
-var __vue_template__ = __webpack_require__(75)
+var __vue_template__ = __webpack_require__(76)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20556,7 +21117,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20568,7 +21129,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(9)
 
 /* template */
-var __vue_template__ = __webpack_require__(89)
+var __vue_template__ = __webpack_require__(90)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20588,7 +21149,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20598,7 +21159,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(10)
 
 /* template */
-var __vue_template__ = __webpack_require__(83)
+var __vue_template__ = __webpack_require__(84)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20617,7 +21178,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20629,7 +21190,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(11)
 
 /* template */
-var __vue_template__ = __webpack_require__(92)
+var __vue_template__ = __webpack_require__(93)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20649,7 +21210,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20661,7 +21222,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(12)
 
 /* template */
-var __vue_template__ = __webpack_require__(87)
+var __vue_template__ = __webpack_require__(88)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20681,7 +21242,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20693,7 +21254,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(13)
 
 /* template */
-var __vue_template__ = __webpack_require__(80)
+var __vue_template__ = __webpack_require__(81)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20713,7 +21274,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20725,7 +21286,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(14)
 
 /* template */
-var __vue_template__ = __webpack_require__(91)
+var __vue_template__ = __webpack_require__(92)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20745,7 +21306,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20757,7 +21318,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(82)
+var __vue_template__ = __webpack_require__(83)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20777,7 +21338,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20789,7 +21350,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(16)
 
 /* template */
-var __vue_template__ = __webpack_require__(68)
+var __vue_template__ = __webpack_require__(69)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20809,7 +21370,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20821,7 +21382,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(17)
 
 /* template */
-var __vue_template__ = __webpack_require__(81)
+var __vue_template__ = __webpack_require__(82)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20841,7 +21402,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -20851,38 +21412,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(18)
 
 /* template */
-var __vue_template__ = __webpack_require__(74)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 55 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(19)
-
-/* template */
-var __vue_template__ = __webpack_require__(69)
+var __vue_template__ = __webpack_require__(75)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -20910,101 +21440,7 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(20)
-
-/* template */
-var __vue_template__ = __webpack_require__(93)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-fa478820"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 57 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(21)
-
-/* template */
-var __vue_template__ = __webpack_require__(77)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-47d0d10d"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 58 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(23)
-
-/* template */
-var __vue_template__ = __webpack_require__(90)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-d7f2a610"
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 59 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(24)
+__vue_exports__ = __webpack_require__(19)
 
 /* template */
 var __vue_template__ = __webpack_require__(70)
@@ -21026,7 +21462,132 @@ module.exports = __vue_exports__
 
 
 /***/ },
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(20)
+
+/* template */
+var __vue_template__ = __webpack_require__(94)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-fa478820"
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(21)
+
+/* template */
+var __vue_template__ = __webpack_require__(78)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-47d0d10d"
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(23)
+
+/* template */
+var __vue_template__ = __webpack_require__(91)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-d7f2a610"
+
+module.exports = __vue_exports__
+
+
+/***/ },
 /* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(24)
+
+/* template */
+var __vue_template__ = __webpack_require__(71)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21038,7 +21599,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(26)
 
 /* template */
-var __vue_template__ = __webpack_require__(73)
+var __vue_template__ = __webpack_require__(74)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21058,7 +21619,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21070,7 +21631,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(27)
 
 /* template */
-var __vue_template__ = __webpack_require__(79)
+var __vue_template__ = __webpack_require__(80)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21090,7 +21651,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21102,7 +21663,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(28)
 
 /* template */
-var __vue_template__ = __webpack_require__(71)
+var __vue_template__ = __webpack_require__(72)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21122,7 +21683,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21134,7 +21695,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(29)
 
 /* template */
-var __vue_template__ = __webpack_require__(84)
+var __vue_template__ = __webpack_require__(85)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21153,7 +21714,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21165,7 +21726,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(30)
 
 /* template */
-var __vue_template__ = __webpack_require__(78)
+var __vue_template__ = __webpack_require__(79)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21185,7 +21746,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21197,7 +21758,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(31)
 
 /* template */
-var __vue_template__ = __webpack_require__(76)
+var __vue_template__ = __webpack_require__(77)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21217,7 +21778,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21229,7 +21790,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(32)
 
 /* template */
-var __vue_template__ = __webpack_require__(72)
+var __vue_template__ = __webpack_require__(73)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21249,7 +21810,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21261,7 +21822,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(33)
 
 /* template */
-var __vue_template__ = __webpack_require__(85)
+var __vue_template__ = __webpack_require__(86)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21281,7 +21842,7 @@ module.exports = __vue_exports__
 
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -21292,15 +21853,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('div', {
+  }, [_c('table', {
     staticClass: "main form-pop"
-  }, [_c('div', [_c('label', {
-    staticClass: "label-tit",
-    attrs: {
-      "for": "plantation_fullName"
-    }
-  }, [_vm._v("种植场名称")]), _c('pop-select', {
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
     staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
     attrs: {
       "name": "pid",
       "items": _vm.plantations,
@@ -21311,19 +21873,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsgPid
     }
-  }), _c('span', {
+  })], 1)]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('pid')),
       expression: "errors.has('pid')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('pid')))])], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "planta_new_fullName"
+      "colspan": "2"
     }
-  }, [_vm._v("种植区名称")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('pid')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -21338,7 +21905,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required|max:255",
       "data-vv-as": "种植区名称",
@@ -21356,19 +21922,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.name = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('name')),
       expression: "errors.has('name')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "planta_new_area"
+      "colspan": "2"
     }
-  }, [_vm._v("种植面积")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop input-area"
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -21383,7 +21951,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop input-area",
     attrs: {
       "data-vv-rules": "required|decimal:2",
       "data-vv-as": "种植面积",
@@ -21401,8 +21968,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.area = $event.target.value
       }
     }
-  }), _c('pop-select', {
-    staticClass: "area_unit",
+  })]), _c('td', {
+    staticClass: "area_unit"
+  }, [_c('pop-select', {
     attrs: {
       "name": "area_unit",
       "items": _vm.area_unit,
@@ -21411,19 +21979,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsgUnit
     }
-  }), _c('span', {
+  })], 1)]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('area')),
       expression: "errors.has('area')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('area')))])], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "planta_new_phone"
+      "colspan": "3"
     }
-  }, [_vm._v("详细电话")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -21438,7 +22011,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "phone",
       "type": "text",
@@ -21455,26 +22027,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.phone = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('phone')),
       expression: "errors.has('phone')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "planta_new_address"
+      "colspan": "3"
     }
-  }, [_vm._v("详细地址")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.address),
       expression: "letItem.address"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "id": "planta_new_address",
@@ -21489,19 +22065,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.address = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "planta_new_principal"
+      "colspan": "2"
     }
-  }, [_vm._v("负责人")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.director),
       expression: "letItem.director"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "value": "",
@@ -21517,19 +22092,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.director = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "planta_new_note"
+      "colspan": "2"
     }
-  }, [_vm._v("备注信息")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.memo),
       expression: "letItem.memo"
     }],
-    staticClass: "input-pop input-note",
     attrs: {
       "type": "text",
       "id": "planta_new_note",
@@ -21544,8 +22118,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.memo = $event.target.value
       }
     }
-  })]), _c('div', {
-    staticClass: "footer"
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
   }, [_c('div', {
     staticClass: "footer-r"
   }, [(_vm.edit) ? _c('a', {
@@ -21559,7 +22135,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelEditPlanta
     }
-  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
     attrs: {
       "href": "#"
     }
@@ -21570,8 +22146,64 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelAddPlanta
     }
-  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(7)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_fullName"
+    }
+  }, [_vm._v("种植场名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "planta_new_fullName"
+    }
+  }, [_vm._v("种植区名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "planta_new_area"
+    }
+  }, [_vm._v("种植面积")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "planta_new_phone"
+    }
+  }, [_vm._v("详细电话")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "planta_new_address"
+    }
+  }, [_vm._v("详细地址")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "planta_new_principal"
+    }
+  }, [_vm._v("负责人")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "planta_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
   }, [_c('a', {
@@ -21580,11 +22212,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                        保存\n                    ")])])])
+  }, [_vm._v("\n                                保存\n                            ")])])])
 }]}
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22098,7 +22730,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22115,7 +22747,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22127,7 +22759,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22265,7 +22897,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22341,15 +22973,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n  " + _vm._s(_vm._f("table_name")(_vm.item.table_type)) + "\n")])
+  return _c('span', [_vm._v("\n  " + _vm._s(_vm._f("table_name")(_vm.item.table_type)) + "\n")])
 },staticRenderFns: []}
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22370,7 +23002,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22423,7 +23055,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22435,7 +23067,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22458,7 +23090,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22488,19 +23120,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.showNewPanel = false
       }
     }
-  }) : _vm._e(), _c('table', {
+  }) : _vm._e(), _c('div', {
     staticClass: "table-list"
-  }, [_c('thead', {
+  }, [_c('div', {
     staticClass: "list-head"
-  }, [_c('tr', {
+  }, [_c('div', {
     staticClass: "list-head-th"
-  }, [_c('th', {
+  }, [_c('span', {
     staticClass: "fir",
     attrs: {
       "name": "order"
     }
   }, [_vm._v("序号")]), _vm._l((_vm.theads), function(thead, index) {
-    return [_c('th', {
+    return [_c('span', {
       style: ({
         width: _vm.widths[index] + '%'
       }),
@@ -22508,20 +23140,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "name": _vm.protos[index]
       }
     }, [_vm._v("\n                        " + _vm._s(thead) + "\n                    ")])]
-  }), _c('th', {
+  }), _c('span', {
     staticClass: "align-c",
     attrs: {
       "name": "open"
     }
-  })], 2)]), _c('transition-group', {
+  })], 2)]), _c('transition', {
+    attrs: {
+      "name": "slide-fade"
+    }
+  }, [(_vm.showUp) ? _c('transition-group', {
+    key: "tbody",
     staticClass: "list-body",
     attrs: {
-      "name": _vm.slide,
-      "mode": "out-in",
-      "tag": "tbody"
+      "name": "slide-up",
+      "tag": "ul"
     }
   }, [_vm._l((_vm.list), function(item, index) {
-    return [_c('tr', {
+    return [_c('li', {
       directives: [{
         name: "touchDelete",
         rawName: "v-touchDelete:showConfirmDialog",
@@ -22542,8 +23178,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "id": _vm.searchUrl + item.id,
         "name": "order"
       }
-    }, [_c('td', {
-      staticClass: "checked"
+    }, [_c('span', {
+      staticClass: "checked",
+      attrs: {
+        "name": "order"
+      }
     }, [_c('input', {
       directives: [{
         name: "model",
@@ -22585,24 +23224,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           }
         }
       }
-    })]), _vm._l((_vm.protos), function(proto) {
-      return [(_vm.component[proto] != null) ? _c('td', {
+    })]), _vm._l((_vm.protos), function(proto, indexProto) {
+      return [(_vm.component[proto] != null) ? _c('span', {
         staticClass: "td-note",
+        style: ({
+          width: _vm.widths[indexProto] + '%'
+        }),
         attrs: {
-          "name": "proto"
+          "name": proto
         }
       }, [_c(_vm.component[proto], {
         tag: "component",
         attrs: {
           "item": item
         }
-      })], 1) : _c('td', {
+      })], 1) : _c('span', {
         staticClass: "td-note",
+        style: ({
+          width: _vm.widths[indexProto] + '%'
+        }),
         attrs: {
           "name": proto
         }
-      }, [_vm._v("\n                            " + _vm._s(item[proto]) + "\n                        ")])]
-    }), _c('td', {
+      }, [_vm._v("\n                                    " + _vm._s(item[proto]) + "\n                                ")])]
+    }), _c('span', {
       staticClass: "align-c",
       attrs: {
         "name": "open"
@@ -22616,12 +23261,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "src": _vm.$img('list.png')
       }
-    })])], 2), (_vm.showItemDetail != '' && _vm.showItemDetail == item.id) ? _c('tr', {
+    })])], 2), (_vm.showItemDetail != '' && _vm.showItemDetail == item.id) ? _c('li', {
       key: _vm.searchUrl + item.id + '-pop'
-    }, [_c('td', {
-      attrs: {
-        "colspan": "5"
-      }
     }, [(_vm.showEditPane) ? _c(_vm.component[_vm._key], {
       tag: "component",
       attrs: {
@@ -22633,12 +23274,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           _vm.closeOwnEditPane(item)
         }
       }
-    }) : _vm._e()], 1)]) : _vm._e()]
-  })], 2), _c('tfoot', {
+    }) : _vm._e()], 1) : _vm._e()]
+  })], 2) : _vm._e()], 1), _c('div', {
     staticClass: "list-foot"
-  }, [_c('tr', {
+  }, [_c('div', {
     staticClass: "list-foot-tr"
-  }, [_c('td', [_c('input', {
+  }, [_c('span', {
+    attrs: {
+      "name": "order"
+    }
+  }, [_c('input', {
     attrs: {
       "type": "checkbox",
       "name": "List_check"
@@ -22646,9 +23291,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.selectAll
     }
-  })]), _c('td', {
-    attrs: {
-      "colspan": "5"
+  })]), _c('span', {
+    staticStyle: {
+      "width": "86%"
     }
   }, [_c('button', {
     staticClass: "btn btn-del",
@@ -22685,7 +23330,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22696,15 +23341,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('div', {
+  }, [_c('table', {
     staticClass: "main form-pop"
-  }, [_c('div', [_c('label', {
-    staticClass: "label-tit",
-    attrs: {
-      "for": "manure_category_id"
-    }
-  }, [_vm._v("分类")]), _c('pop-select', {
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
     staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
     attrs: {
       "id": "manure_category_id",
       "name": "manure_category_id",
@@ -22716,19 +23362,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsg
     }
-  }), _c('span', {
+  })], 1)]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('category_id')),
       expression: "errors.has('category_id')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('category_id')))])], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "manure_new_fullName"
+      "colspan": "2"
     }
-  }, [_vm._v("肥料名称")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('category_id')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22743,7 +23394,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required|max:255",
       "data-vv-as": "肥料名称",
@@ -22761,26 +23411,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.name = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('name')),
       expression: "errors.has('name')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "manure_usage"
+      "colspan": "3"
     }
-  }, [_vm._v("用途")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.usage),
       expression: "letItem.usage"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "id": "manure_usage",
@@ -22795,26 +23449,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.usage = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('usage')),
       expression: "errors.has('usage')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('usage')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "manure_new_specification"
+      "colspan": "3"
     }
-  }, [_vm._v("包装规格")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('usage')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.specification),
       expression: "letItem.specification"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "id": "manure_new_specification",
@@ -22829,12 +23487,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.specification = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "manure_new_dealer"
+      "colspan": "2"
     }
-  }, [_vm._v("经销商名称")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22857,22 +23515,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.dealer = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "manure_new_origin"
+      "colspan": "2"
     }
-  }, [_vm._v("产地")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.origin),
       expression: "letItem.origin"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
-      "value": "",
       "id": "manure_new_origin",
       "name": "origin"
     },
@@ -22885,12 +23541,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.origin = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "manure_new_phone"
+      "colspan": "2"
     }
-  }, [_vm._v("联系方式")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22905,7 +23561,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "phone",
       "type": "text",
@@ -22922,26 +23577,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.phone = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('phone')),
       expression: "errors.has('phone')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "manure_new_note"
+      "colspan": "3"
     }
-  }, [_vm._v("备注信息")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.memo),
       expression: "letItem.memo"
     }],
-    staticClass: "input-pop input-note",
     attrs: {
       "type": "text",
       "id": "manure_new_note",
@@ -22956,8 +23615,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.memo = $event.target.value
       }
     }
-  })]), _c('div', {
-    staticClass: "footer"
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
   }, [_c('div', {
     staticClass: "footer-r"
   }, [(_vm.edit) ? _c('a', {
@@ -22971,7 +23632,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelEditManure
     }
-  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
     attrs: {
       "href": "#"
     }
@@ -22982,8 +23643,72 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelAddManure
     }
-  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_category_id"
+    }
+  }, [_vm._v("分类")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_fullName"
+    }
+  }, [_vm._v("肥料名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_usage"
+    }
+  }, [_vm._v("用途")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_specification"
+    }
+  }, [_vm._v("包装规格")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_dealer"
+    }
+  }, [_vm._v("经销商名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_origin"
+    }
+  }, [_vm._v("产地")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_phone"
+    }
+  }, [_vm._v("联系方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
   }, [_c('a', {
@@ -22992,11 +23717,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                        保存\n                    ")])])])
+  }, [_vm._v("\n                                保存\n                            ")])])])
 }]}
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23007,14 +23732,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('div', {
+  }, [_c('table', {
     staticClass: "main form-pop"
-  }, [_c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "plantation_new_fullName"
+      "colspan": "2"
     }
-  }, [_vm._v("种植场名称")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23029,7 +23756,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required|max:255",
       "data-vv-as": "种植场名称",
@@ -23047,19 +23773,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.name = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('name')),
       expression: "errors.has('name')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "plantation_new_area"
+      "colspan": "2"
     }
-  }, [_vm._v("种植面积")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop input-area"
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23074,7 +23802,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop input-area",
     attrs: {
       "data-vv-rules": "required|decimal:2",
       "data-vv-as": "种植面积",
@@ -23092,8 +23819,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.area = $event.target.value
       }
     }
-  }), _c('pop-select', {
-    staticClass: "area_unit",
+  })]), _c('td', {
+    staticClass: "area_unit"
+  }, [_c('pop-select', {
     attrs: {
       "name": "area_unit",
       "items": _vm.area_unit,
@@ -23102,19 +23830,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsg
     }
-  }), _c('span', {
+  })], 1)]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('area')),
       expression: "errors.has('area')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('area')))])], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "plantation_new_phone"
+      "colspan": "3"
     }
-  }, [_vm._v("详细电话")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23129,7 +23862,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "phone",
       "type": "text",
@@ -23146,26 +23878,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.phone = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('phone')),
       expression: "errors.has('phone')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "plantation_new_address"
+      "colspan": "3"
     }
-  }, [_vm._v("详细地址")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.address),
       expression: "letItem.address"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "id": "plantation_new_address",
@@ -23180,19 +23916,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.address = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "plantation_new_principal"
+      "colspan": "2"
     }
-  }, [_vm._v("负责人")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.director),
       expression: "letItem.director"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "value": "",
@@ -23208,19 +23943,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.director = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "plantation_new_note"
+      "colspan": "2"
     }
-  }, [_vm._v("备注信息")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.memo),
       expression: "letItem.memo"
     }],
-    staticClass: "input-pop input-note",
     attrs: {
       "type": "text",
       "id": "plantation_new_note",
@@ -23235,8 +23969,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.memo = $event.target.value
       }
     }
-  })]), _c('div', {
-    staticClass: "footer"
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
   }, [_c('div', {
     staticClass: "footer-r"
   }, [(_vm.edit) ? _c('a', {
@@ -23250,7 +23986,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelEditPlantation
     }
-  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
     attrs: {
       "href": "#"
     }
@@ -23261,8 +23997,56 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelAddPlantation
     }
-  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(6)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_fullName"
+    }
+  }, [_vm._v("种植场名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_area"
+    }
+  }, [_vm._v("种植面积")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_phone"
+    }
+  }, [_vm._v("详细电话")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_address"
+    }
+  }, [_vm._v("详细地址")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_principal"
+    }
+  }, [_vm._v("负责人")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
   }, [_c('a', {
@@ -23271,11 +24055,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                        保存\n                    ")])])])
+  }, [_vm._v("\n                                保存\n                            ")])])])
 }]}
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23286,9 +24070,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('div', {
+  }, [_c('table', {
     staticClass: "main form-pop"
-  }, [_c('div', [_c('div', {
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
     staticClass: "pic-preview",
     on: {
       "click": _vm.selectPic
@@ -23325,13 +24115,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.deletePic
     }
-  }, [_vm._v("删除")])])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
-    attrs: {
-      "for": "plant_categroy_select"
-    }
-  }, [_vm._v("果蔬类别")]), _c('pop-select', {
+  }, [_vm._v("删除")])])])]), _c('tr', [_vm._m(0), _c('td', {
     staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
     attrs: {
       "name": "category",
       "id": "plant_categroy_select",
@@ -23341,12 +24130,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsg
     }
-  })], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
-    attrs: {
-      "for": "plant_new_fullName"
-    }
-  }, [_vm._v("果蔬名称")]), _c('input', {
+  })], 1)]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop"
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23361,7 +24147,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required|max:255",
       "data-vv-as": "果蔬名称",
@@ -23379,19 +24164,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.name = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('name')),
       expression: "errors.has('name')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "plant_new_growth_cycle"
+      "colspan": "3"
     }
-  }, [_vm._v("生长周期")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23406,7 +24196,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required|decimal:2",
       "data-vv-as": "生长周期",
@@ -23424,26 +24213,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.growth_cycle = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('growth_cycle')),
       expression: "errors.has('growth_cycle')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('growth_cycle')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "plant_new_description"
+      "colspan": "3"
     }
-  }, [_vm._v("特征描述")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('growth_cycle')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.description),
       expression: "letItem.description"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "id": "plant_new_description",
@@ -23458,19 +24251,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.description = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "plant_new_note"
+      "colspan": "2"
     }
-  }, [_vm._v("备注信息")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.memo),
       expression: "letItem.memo"
     }],
-    staticClass: "input-pop input-note",
     attrs: {
       "type": "text",
       "id": "plant_new_note",
@@ -23485,8 +24277,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.memo = $event.target.value
       }
     }
-  })]), _c('div', {
-    staticClass: "footer"
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
   }, [_c('div', {
     staticClass: "footer-r"
   }, [(_vm.edit) ? _c('a', {
@@ -23500,7 +24294,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelEditPlantation
     }
-  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
     attrs: {
       "href": "#"
     }
@@ -23511,8 +24305,48 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelAddPlantation
     }
-  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(5)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_categroy_select"
+    }
+  }, [_vm._v("果蔬类别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_new_fullName"
+    }
+  }, [_vm._v("果蔬名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_new_growth_cycle"
+    }
+  }, [_vm._v("生长周期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_new_description"
+    }
+  }, [_vm._v("特征描述")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
   }, [_c('a', {
@@ -23521,15 +24355,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                        保存\n                    ")])])])
+  }, [_vm._v("\n                                保存\n                            ")])])])
 }]}
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.item.image != null && _vm.item.image != '' && _vm.item.image != 'upload.png') ? _c('img', {
+  return _c('span', [(_vm.item.image != null && _vm.item.image != '' && _vm.item.image != 'upload.png') ? _c('img', {
     attrs: {
       "src": _vm.$img('ok.png')
     }
@@ -23537,7 +24371,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 84 */
+/* 85 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23563,12 +24397,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 85 */
+/* 86 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "content"
+    staticClass: "content",
+    attrs: {
+      "id": "mynprogress"
+    }
   }, [_c('div', {
     staticClass: "logo"
   }), _c('form', {
@@ -23662,7 +24499,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 86 */
+/* 87 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23703,7 +24540,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 87 */
+/* 88 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23714,15 +24551,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('div', {
+  }, [_c('table', {
     staticClass: "main form-pop"
-  }, [_c('div', [_c('label', {
-    staticClass: "label-tit",
-    attrs: {
-      "for": "expert_table_type"
-    }
-  }, [_vm._v("操作模块")]), _c('pop-select', {
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
     staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
     attrs: {
       "id": "expert_table_type",
       "name": "expert_table_type",
@@ -23732,19 +24570,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsgType
     }
-  }), _c('span', {
+  })], 1)]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('table_type')),
       expression: "errors.has('table_type')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('table_type')))])], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "expert_new_fullName"
+      "colspan": "2"
     }
-  }, [_vm._v("专家名称")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('table_type')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23759,7 +24602,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required|max:255",
       "data-vv-as": "专家名称",
@@ -23777,19 +24619,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.expert_name = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('expert_name')),
       expression: "errors.has('expert_name')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('expert_name')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "expert_major"
+      "colspan": "3"
     }
-  }, [_vm._v("研究领域")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('expert_name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23804,7 +24651,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required",
       "data-vv-as": "研究领域",
@@ -23822,19 +24668,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.major = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('major')),
       expression: "errors.has('major')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('major')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "expert_level"
+      "colspan": "3"
     }
-  }, [_vm._v("级别")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('major')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23849,7 +24700,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required",
       "data-vv-as": "级别",
@@ -23867,20 +24717,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.level = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('level')),
       expression: "errors.has('level')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('level')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "expert_sex"
+      "colspan": "3"
     }
-  }, [_vm._v("性别")]), _c('pop-select', {
+  }, [_vm._v(_vm._s(_vm.errors.first('level')))])]), _c('tr', [_vm._m(4), _c('td', {
     staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
     attrs: {
       "id": "expert_sex",
       "name": "expert_sex",
@@ -23890,19 +24744,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsgSex
     }
-  }), _c('span', {
+  })], 1)]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('sex')),
       expression: "errors.has('sex')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('sex')))])], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "expert_new_age"
+      "colspan": "3"
     }
-  }, [_vm._v("年龄")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('sex')))])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23917,7 +24776,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "decimal",
       "data-vv-as": "年龄",
@@ -23934,19 +24792,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.age = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('age')),
       expression: "errors.has('age')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('age')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "expert_new_unit"
+      "colspan": "3"
     }
-  }, [_vm._v("所属单位")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('age')))])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23969,12 +24832,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.unit = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "expert_new_phone"
+      "colspan": "2"
     }
-  }, [_vm._v("联系方式")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -23989,7 +24852,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "phone",
       "type": "text",
@@ -24006,26 +24868,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.phone = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('phone')),
       expression: "errors.has('phone')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "expert_new_note"
+      "colspan": "3"
     }
-  }, [_vm._v("备注信息")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(8), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.memo),
       expression: "letItem.memo"
     }],
-    staticClass: "input-pop input-note",
     attrs: {
       "type": "text",
       "id": "expert_new_note",
@@ -24040,8 +24906,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.memo = $event.target.value
       }
     }
-  })]), _c('div', {
-    staticClass: "footer"
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
   }, [_c('div', {
     staticClass: "footer-r"
   }, [(_vm.edit) ? _c('a', {
@@ -24055,7 +24923,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelEditExpert
     }
-  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
     attrs: {
       "href": "#"
     }
@@ -24066,8 +24934,80 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelAddExpert
     }
-  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(9)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_table_type"
+    }
+  }, [_vm._v("操作模块")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_fullName"
+    }
+  }, [_vm._v("专家名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_major"
+    }
+  }, [_vm._v("研究领域")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_level"
+    }
+  }, [_vm._v("级别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_sex"
+    }
+  }, [_vm._v("性别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_age"
+    }
+  }, [_vm._v("年龄")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_unit"
+    }
+  }, [_vm._v("所属单位")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_phone"
+    }
+  }, [_vm._v("联系方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
   }, [_c('a', {
@@ -24076,11 +25016,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                        保存\n                    ")])])])
+  }, [_vm._v("\n                                保存\n                            ")])])])
 }]}
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24145,7 +25085,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24153,7 +25093,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 90 */
+/* 91 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24196,7 +25136,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 91 */
+/* 92 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24207,15 +25147,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('div', {
+  }, [_c('table', {
     staticClass: "main form-pop"
-  }, [_c('div', [_c('label', {
-    staticClass: "label-tit",
-    attrs: {
-      "for": "medicament_category_id"
-    }
-  }, [_vm._v("分类")]), _c('pop-select', {
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
     staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
     attrs: {
       "id": "medicament_category_id",
       "name": "medicament_category_id",
@@ -24227,19 +25168,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsgId
     }
-  }), _c('span', {
+  })], 1)]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('category_id')),
       expression: "errors.has('category_id')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('category_id')))])], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "medicament_new_fullName"
+      "colspan": "2"
     }
-  }, [_vm._v("农药名称")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('category_id')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -24254,7 +25200,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "required|max:255",
       "data-vv-as": "农药名称",
@@ -24272,26 +25217,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.name = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('name')),
       expression: "errors.has('name')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "medicament_usage"
+      "colspan": "3"
     }
-  }, [_vm._v("用途")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.usage),
       expression: "letItem.usage"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "id": "medicament_usage",
@@ -24306,19 +25255,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.usage = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('usage')),
       expression: "errors.has('usage')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('usage')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "medicament_new_control_objects"
+      "colspan": "3"
     }
-  }, [_vm._v("防治对象")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('usage')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -24340,13 +25294,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.control_objects = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
-    attrs: {
-      "for": "medicament_toxicity_grade"
-    }
-  }, [_vm._v("分类")]), _c('pop-select', {
+  })])]), _c('tr', [_vm._m(4), _c('td', {
     staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
     attrs: {
       "id": "medicament_toxicity_grade",
       "name": "medicament_toxicity_grade",
@@ -24356,26 +25309,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "callback": _vm.getMsgGrade
     }
-  }), _c('span', {
+  })], 1)]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('toxicity_grade')),
       expression: "errors.has('toxicity_grade')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('toxicity_grade')))])], 1), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "medicament_new_specification"
+      "colspan": "3"
     }
-  }, [_vm._v("包装规格")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('toxicity_grade')))])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.specification),
       expression: "letItem.specification"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
       "id": "medicament_new_specification",
@@ -24390,22 +25347,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.specification = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "medicament_new_dealer"
+      "colspan": "2"
     }
-  }, [_vm._v("经销商名称")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.dealer),
       expression: "letItem.dealer"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
-      "value": "",
       "id": "medicament_new_dealer",
       "name": "dealer"
     },
@@ -24418,22 +25373,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.dealer = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "medicament_new_origin"
+      "colspan": "2"
     }
-  }, [_vm._v("产地")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.origin),
       expression: "letItem.origin"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
-      "value": "",
       "id": "medicament_new_origin",
       "name": "origin"
     },
@@ -24446,12 +25399,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.origin = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(8), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "medicament_new_phone"
+      "colspan": "2"
     }
-  }, [_vm._v("联系方式")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -24466,7 +25419,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "initial": true
       }
     }],
-    staticClass: "input-pop",
     attrs: {
       "data-vv-rules": "phone",
       "type": "text",
@@ -24483,26 +25435,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.phone = $event.target.value
       }
     }
-  }), _c('span', {
+  })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
       value: (_vm.errors.has('phone')),
       expression: "errors.has('phone')"
     }]
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('td', {
+    staticClass: "error",
     attrs: {
-      "for": "medicament_new_note"
+      "colspan": "3"
     }
-  }, [_vm._v("备注信息")]), _c('input', {
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(9), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.memo),
       expression: "letItem.memo"
     }],
-    staticClass: "input-pop input-note",
     attrs: {
       "type": "text",
       "id": "medicament_new_note",
@@ -24517,8 +25473,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.letItem.memo = $event.target.value
       }
     }
-  })]), _c('div', {
-    staticClass: "footer"
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
   }, [_c('div', {
     staticClass: "footer-r"
   }, [(_vm.edit) ? _c('a', {
@@ -24532,7 +25490,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelEditMedicament
     }
-  }, [_vm._v("\n                        取消\n                    ")])]) : _c('a', {
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
     attrs: {
       "href": "#"
     }
@@ -24543,8 +25501,88 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelAddMedicament
     }
-  }, [_vm._v("\n                        取消\n                    ")])])]), _vm._m(0)])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(10)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_category_id"
+    }
+  }, [_vm._v("分类")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_new_fullName"
+    }
+  }, [_vm._v("农药名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_usage"
+    }
+  }, [_vm._v("用途")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_new_control_objects"
+    }
+  }, [_vm._v("防治对象")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_toxicity_grade"
+    }
+  }, [_vm._v("分类")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_new_specification"
+    }
+  }, [_vm._v("包装规格")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_new_dealer"
+    }
+  }, [_vm._v("经销商名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_new_origin"
+    }
+  }, [_vm._v("产地")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_new_phone"
+    }
+  }, [_vm._v("联系方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
   }, [_c('a', {
@@ -24553,11 +25591,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                        保存\n                    ")])])])
+  }, [_vm._v("\n                                保存\n                            ")])])])
 }]}
 
 /***/ },
-/* 92 */
+/* 93 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24582,7 +25620,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -24614,19 +25652,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports) {
 
 module.exports = require("vue-router");
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports) {
 
 module.exports = require("vuex-router-sync");
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";

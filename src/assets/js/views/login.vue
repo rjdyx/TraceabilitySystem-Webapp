@@ -7,7 +7,7 @@
  * 
  */
 <template>
-    <div class="content">
+    <div class="content" id="mynprogress">
         <div class="logo"></div>
         <form @submit.prevent="login">
             <ul>

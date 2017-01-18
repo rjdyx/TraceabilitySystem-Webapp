@@ -15,6 +15,10 @@ exports.touchDelete = () => {
             }, 500);
         });
 
+        el.addEventListener("touchmove", (event) => {
+            clearTimeout(time);
+        });
+
         el.addEventListener("touchend", (event) => {
             clearTimeout(time);
         });
