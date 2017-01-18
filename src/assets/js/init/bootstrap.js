@@ -21,5 +21,8 @@ nprogress.configure({
 	minimum: 0.1,	// 设置最小百分百
 	showSpinner: false,	// 取消圆环加载
     speed: 800, // 进度条加载速度ms
+    trickle: true,
+    trickleRate: 0.02,
+    trickleSpeed: 800,
 	parent: '#mynprogress'
 });

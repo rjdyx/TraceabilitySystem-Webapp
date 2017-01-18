@@ -102,7 +102,7 @@
                         searchUrl: 'manure',
                         theads: ['肥料类别', '肥料名称', '用途'],
                         protos: ['category_name', 'name', 'usage'],
-                        widths: [32, 24, 17]
+                        widths: [23.6, 23.6, 24.8]
                     },
                     {
                         key: 'medicament',

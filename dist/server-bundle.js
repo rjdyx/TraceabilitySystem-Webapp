@@ -13987,7 +13987,7 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MOD
 
 module.exports = {
 	is_server: false,
-	app_url: 'http://find360.cn',
+	app_url: 'http://119.29.34.160',
 	app_ano_url: 'http://s.find360.cn:8080'
 };
 
@@ -13997,6 +13997,7 @@ module.exports = {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
 //
 //
 //
@@ -19640,8 +19641,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                         _this.loginBtn = '登录';
                         _this.isLogin = false;
                     } else {
-                        sessionStorage.setItem('user', response.data);
-                        _this.setUserInfo(response.data);
+                        // sessionStorage.setItem('user', response.data)
+                        // this.setUserInfo(response.data)
                         _this.$router.push('/webapp');
                     }
                 }).catch(function (error) {
@@ -20311,9 +20312,14 @@ var routes = [{
          * @param  {Object} progressEvent
          */
         __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$myProgress = function (progressEvent) {
-            if (progressEvent.lengthComputable) {
-                var progress = 1.0 * progressEvent.loaded / progressEvent.total;
-                nprogress.set(progress);
+            __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$mySpinner(false);
+        };
+
+        __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$mySpinner = function (flag) {
+            if (!flag) {
+                $('.nprogress-spinner').css('display', 'none');
+            } else {
+                $('.nprogress-spinner').css('display', 'block');
             }
         };
     }
@@ -20524,6 +20530,8 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
+
+/* styles */
 
 /* script */
 __vue_exports__ = __webpack_require__(8)
@@ -21501,7 +21509,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "director"
     },
     domProps: {
-      "value": "",
       "value": _vm._s(_vm.letItem.director)
     },
     on: {
@@ -22350,8 +22357,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "app"
     }
-  }, [_c('router-view')], 1)
-},staticRenderFns: []}
+  }, [_c('router-view'), _vm._m(0)], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', {
+    staticClass: "nprogress-spinner",
+    attrs: {
+      "role": "nprogress-spinner"
+    }
+  }, [_c('span', {
+    staticClass: "nprogress-spinner-icon"
+  })])
+}]}
 
 /***/ },
 /* 76 */
@@ -22549,7 +22565,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }) > -1 : (_vm.deleteLists)
       },
       on: {
-        "change": function($event) {
+        "click": function($event) {
           var $$a = _vm.deleteLists,
             $$el = $event.target,
             $$c = $$el.checked ? (true) : (false);
@@ -22833,7 +22849,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "dealer"
     },
     domProps: {
-      "value": "",
       "value": _vm._s(_vm.letItem.dealer)
     },
     on: {
@@ -22862,7 +22877,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "origin"
     },
     domProps: {
-      "value": "",
       "value": _vm._s(_vm.letItem.origin)
     },
     on: {
@@ -23186,7 +23200,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "director"
     },
     domProps: {
-      "value": "",
       "value": _vm._s(_vm.letItem.director)
     },
     on: {
@@ -23948,7 +23961,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "unit"
     },
     domProps: {
-      "value": "",
       "value": _vm._s(_vm.letItem.unit)
     },
     on: {
@@ -24398,7 +24410,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "dealer"
     },
     domProps: {
-      "value": "",
       "value": _vm._s(_vm.letItem.dealer)
     },
     on: {
@@ -24427,7 +24438,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "origin"
     },
     domProps: {
-      "value": "",
       "value": _vm._s(_vm.letItem.origin)
     },
     on: {

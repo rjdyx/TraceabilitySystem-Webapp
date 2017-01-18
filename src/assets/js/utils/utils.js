@@ -192,9 +192,14 @@ export default {
          * @param  {Object} progressEvent
          */
         Vue.prototype.$myProgress = (progressEvent) => {
-            if(progressEvent.lengthComputable) {
-                let progress = (1.0*progressEvent.loaded)/progressEvent.total;
-                nprogress.set(progress);
+            Vue.prototype.$mySpinner(false);
+        };
+
+        Vue.prototype.$mySpinner = (flag) => {
+            if(!flag){
+                $('.nprogress-spinner').css('display', 'none');
+            }else {
+                $('.nprogress-spinner').css('display', 'block');
             }
         };
     }

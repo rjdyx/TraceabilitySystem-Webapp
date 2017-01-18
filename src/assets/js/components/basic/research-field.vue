@@ -19,9 +19,9 @@
  * 
  */
 <template>
-    <div>
+    <span>
       {{item.table_type | table_name}}
-    </div>
+    </span>
 </template>
 
 <script>

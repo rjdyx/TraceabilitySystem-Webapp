@@ -42,80 +42,96 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <div class="main form-pop">
-            <div>
-                <label for="plantation_new_fullName" class="label-tit">种植场名称</label>
-                <input 
+        <table class="main form-pop">
+            <tbody class="form-body">
+                <tr>
+                    <td class="label-tit"><label for="plantation_new_fullName">种植场名称</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.name" 
                     v-validate.initial="letItem.name" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="种植场名称" 
-                    class="input-pop" type="text" id="plantation_new_fullName" name="name" placeholder="必填">
-                <span v-show="errors.has('name')">{{ errors.first('name') }}</span>
-            </div>
-            <div>
-                <label for="plantation_new_area" class="label-tit">种植面积</label>
-                <input 
+                    type="text" id="plantation_new_fullName" name="name" placeholder="必填"></td>
+                </tr>
+                <tr v-show="errors.has('name')">
+                    <td colspan="2" class="error">{{ errors.first('name') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plantation_new_area">种植面积</label></td>
+                    <td class="input-pop input-area"><input 
                     v-model="letItem.area" 
                     v-validate.initial="letItem.area" 
                     data-vv-rules="required|decimal:2" 
                     data-vv-as="种植面积" 
-                    class="input-pop input-area" type="text" id="plantation_new_area" name="area"
-                       placeholder="请填写数字(必填)">
-
-                <!--种植面积单位模块-->
-                <pop-select  class="area_unit" name="area_unit"
+                    type="text" id="plantation_new_area" name="area"
+                       placeholder="请填写数字(必填)"></td>
+                   <td class="area_unit">
+                       <pop-select name="area_unit"
                         :items="area_unit"      
                         :defaultIndex="parseInt(defaultIndex)"
                         @callback="getMsg"  
-                ></pop-select>
+                        ></pop-select>
+                   </td>
+                </tr>
+                <tr v-show="errors.has('area')">
+                    <td colspan="3" class="error">{{ errors.first('area') }}</td>
+                </tr>
 
-                <span v-show="errors.has('area')">{{ errors.first('area') }}</span>
-            </div>
-            <div>
-                <label for="plantation_new_phone" class="label-tit">详细电话</label>
-                <input 
+                <tr>
+                    <td class="label-tit"><label for="plantation_new_phone">详细电话</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.phone" 
                     v-validate.initial="letItem.phone" 
                     data-vv-rules="phone" 
-                    class="input-pop" type="text" id="plantation_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)">
-                <span v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
-            </div>
-            <div>
-                <label for="plantation_new_address" class="label-tit">详细地址</label>
-                <input v-model="letItem.address" class="input-pop" type="text" id="plantation_new_address" name="address">
-            </div>
-            <div>
-                <label for="plantation_new_principal" class="label-tit">负责人</label>
-                <input v-model="letItem.director" class="input-pop" type="text" value="" id="plantation_new_principal" name="director">
-            </div>
-            <div>
-                <label for="plantation_new_note" class="label-tit">备注信息</label>
-                <input v-model="letItem.memo" class="input-pop input-note" type="text" id="plantation_new_note" name="memo">
-            </div>
-            <div class="footer">
-                <div class="footer-r">
-                    <a v-if="edit" href="#">
-                        <button @click="cancelEditPlantation" type="button">
-                            取消
-                        </button>  
-                    </a>
-                    
-                    <a v-else href="#">
-                        <button @click="cancelAddPlantation" type="button">
-                            取消
-                        </button>
-                    </a>
-                </div>
-                <div class="footer-r">
-                    <a href="#">
-                        <button class="btn-pop">
-                            保存
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
+                    type="text" id="plantation_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
+                </tr>
+                <tr v-show="errors.has('phone')">
+                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plantation_new_address">详细地址</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="plantation_new_address" name="address"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plantation_new_principal">负责人</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.director" type="text" value="" id="plantation_new_principal" name="director"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plantation_new_note">备注信息</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="plantation_new_note" name="memo"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class="footer-r">
+                            <a v-if="edit" href="#">
+                                <button @click="cancelEditPlantation" type="button">
+                                    取消
+                                </button>  
+                            </a>
+                            
+                            <a v-else href="#">
+                                <button @click="cancelAddPlantation" type="button">
+                                    取消
+                                </button>
+                            </a>
+                        </div>
+                        <div class="footer-r">
+                            <a href="#">
+                                <button class="btn-pop">
+                                    保存
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
     </form>
 </template>
 

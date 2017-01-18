@@ -228,8 +228,8 @@
                             this.loginBtn = '登录'
                             this.isLogin = false
                         }else {
-                            sessionStorage.setItem('user', response.data)
-                            this.setUserInfo(response.data)
+                            // sessionStorage.setItem('user', response.data)
+                            // this.setUserInfo(response.data)
                             this.$router.push('/webapp')
                         }
                     }).catch(function (error) {

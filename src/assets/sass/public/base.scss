@@ -27,17 +27,17 @@ html, body{
   table-layout:fixed;
 
   .list-head {
+    width: 100%;
     background-color: #eaeaea;
 
     .list-head-th {
+      width: 100%;
+      height: pxToRem(41);
+      line-height: pxToRem(41);
 
-      th {
-        height: pxToRem(41);
+      span {
+        display: inline-block;
         font-weight: normal;
-
-        &:first-child {
-          //padding-left: pxToRem(14);
-        }
       }
 
     }
@@ -47,7 +47,14 @@ html, body{
   .list-body {
 
     .list-body-tr {
+      background-color: white;
       height: pxToRem(41);
+      line-height: pxToRem(41);
+
+      &>span {
+        display: inline-block;
+        font-weight: normal;
+      }
     }
 
     .list-body-tr-event {
@@ -60,15 +67,16 @@ html, body{
 
     position: fixed;
     bottom: pxToRem(50);
-    display: table;
     width: 100%;
 
-    tr {
+    div {
       height: pxToRem(39);
+      line-height: 2.4375rem;
       background-color: #eaeaea;
       border-top: 1px solid #d2d2d2;
       
-      &>td {
+      &>span {
+        display: inline-block;
         padding: 0 2px;
       }
 
@@ -88,36 +96,11 @@ html, body{
 /* new/edit pop plane */
 .form-pop {
 
-  margin-top: pxToRem(6);
-
-  input.input-area {
-    width: 45%;
-  }
-
-  .area_unit {
-    float: left;
-    width: 20%;
-    height: pxToRem(39);
-    line-height:pxToRem(39);
-    border: 0;
-    border-top: 1px solid #d4d4d4;
-    border-right: 1px solid #d4d4d4;
-    box-sizing: border-box;
-    position: relative;
-    text-align:left
-  }
-  .arrow {
-    position: absolute;
-    top:pxToRem(10);
-    right:0;
-  }
-
   &>div {
     width: 97%;
     margin: 0 auto;
 
     span {
-      float: left;
       display: inline-block;
       width: 100%;
       padding: 7px;
@@ -127,53 +110,84 @@ html, body{
     }
   }
 
-  .label-tit {
-    float: left;
-    display: inline-block;
-    width: 35%;
-    height:pxToRem(39);
-    border: 1px solid #d4d4d4;
-    border-right: 0;
-    border-bottom: 0;
-    padding: pxToRem(7);
-    box-sizing: border-box;
-    text-align:center
-  }
-
-  .input-pop {
-    float: left;
-    display: inline-block;
-    width: 65%;
-    height:pxToRem(39);
-    border: 1px solid #d4d4d4;
-    border-bottom: 0;
-    padding: pxToRem(7);
-    box-sizing: border-box;
-    position: relative;
-    text-align:center
-  }
 
   .footer {
 
-	  .footer-r {
+	  
+	}
+}
 
-	    float: left;
-	    width: 50%;
-	    height: pxToRem(39);
-	    box-sizing: border-box;
-	    margin-bottom: pxToRem(6);
+.form-pop {
+  width: 97%;
+  margin: pxToRem(6) auto;
 
-	    &:first-child {
-	      button {
-	        border-right: 0;
-	      }
-	    }
+  .form-body {
+
+    tr {
+      width: 97%;
+      border: 1px solid #d4d4d4;
+      text-align: center;
+      
+      .label-tit, .input-pop {
+        height: pxToRem(39);
+        border-right: 1px solid #d4d4d4;
+      }
+
+      .label-tit {
+        width: 35%;
+      }
+
+      .input-pop {
+        width: 65%;
+
+        input {
+          width: 100%;
+          border: 0;
+          text-align: center;
+        }
+      }
+
+      .input-area {
+        width: 45%;
+      }
+
+      .area_unit {
+        position: relative;
+        width: 20%;
+      }
+
+      .arrow {
+        position: absolute;
+        top:pxToRem(10);
+        right:0;
+      }
+
+      .error {
+        height: pxToRem(39);
+        color: red;
+      }
+
+    }
+  }
+
+  .footer-r {
+
+      float: left;
+      width: 50%;
+      height: pxToRem(39);
+      box-sizing: border-box;
+
+      &:first-child {
+        button {
+          border-right: 1px solid #d4d4d4;
+        }
+      }
       a {
         button {
           width: 100%;
           height: 100%;
           background-color: white;
-          border: 1px solid #d4d4d4;
+          border: 0;
         }
 
         &:active {
@@ -182,11 +196,9 @@ html, body{
           }
         }
       }
-	    
-	  }
-	}
+      
+    }
 }
-
 
 
 /* paginator outside module */

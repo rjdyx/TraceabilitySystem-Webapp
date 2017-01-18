@@ -19,9 +19,9 @@
  * 
  */
 <template>
-    <div>
+    <span>
       <img v-if="item.image != null && item.image != '' &&item.image != 'upload.png'" :src="$img('ok.png')">  
-    </div>
+    </span>
 </template>
 
 <script>

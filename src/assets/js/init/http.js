@@ -8,8 +8,8 @@ require('./require');
 Vue.http.interceptors.push((request, next) => {
     
     // 删除请求无法回调，故排除删除请求
-    if(request.method != 'DELETE'){
-        nprogress.set(0.5);
+    if(request.method != 'DELETE' && request.url.indexOf('admin') != -1){
+        Vue.prototype.$mySpinner(true);
         // 给请求加上progress回调函数，用于结束进度条加载
         request = Object.assign(request, {progress:Vue.prototype.$myProgress});
     }

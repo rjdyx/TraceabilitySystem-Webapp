@@ -70,7 +70,7 @@ app.use('/dist', serve('./dist'))
 
 
 // ssr
-app.get(['/webapp', '/webapp/**','/basic/**', '/log/**', '/'], (req, res) => {
+app.get(['/webapp', '/webapp/**', '/'], (req, res) => {
   if (!renderer) {
     return res.end('waiting for compilation... refresh in a moment.')
   }

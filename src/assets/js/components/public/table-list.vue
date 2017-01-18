@@ -26,44 +26,45 @@
             @closeNew="showNewPanel=false"
         ></component>
 
-        <table class="table-list">
-            <thead class="list-head">
-                <tr class="list-head-th">
-                    <th name="order" class="fir">序号</th>
+        <div class="table-list">
+            <div class="list-head">
+                <div class="list-head-th">
+                    <span name="order" class="fir">序号</span>
                     <template v-for="(thead, index) in theads">
-                        <th 
+                        <span 
                             :name="protos[index]"
                             :style="{width: widths[index] + '%'}"
                         >
                             {{thead}}
-                        </th>
+                        </span>
                     </template>
-                    <th name="open" class="align-c"></th>
-                </tr>
-            </thead>
-            <transition-group :name="slide" mode="out-in" tag="tbody" class="list-body">
-                <template v-for="(item, index) in list">
-                    <tr v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index}" :id="searchUrl + item.id" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" name="order">
-                        <td class="checked">
-                            <input :value="{'id':item.id, 'index':index}" v-model="deleteLists" type="checkbox">
-                        </td>
-                        <template v-for="proto in protos">
-                            <td v-if="component[proto] != null" name="proto" class="td-note">
-                                <component
-                                    :is="component[proto]"
-                                    :item="item"
-                                ></component>
-                            </td>
-                            <td v-else :name="proto" class="td-note">
-                                {{item[proto]}}
-                            </td>
-                        </template>
-                        <td @click="troggleEdit(item.id)" class="align-c" name="open">
-                            <img :src="$img('list.png')">
-                        </td>
-                    </tr>
-                    <tr v-if="showItemDetail != '' && showItemDetail == item.id" :key="searchUrl + item.id + '-pop'">
-                        <td colspan="5">
+                    <span name="open" class="align-c"></span>
+                </div>
+            </div>
+            <transition name="slide-fade">
+                <transition-group name="slide-up" tag="ul" key="tbody" class="list-body" v-if="showUp">
+                    <template v-for="(item, index) in list">
+                            <li v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index}" :id="searchUrl + item.id" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" name="order">
+                                <span class="checked" name="order">
+                                    <input :value="{'id':item.id, 'index':index}" v-model="deleteLists" type="checkbox">
+                                </span>
+                                <template v-for="(proto, indexProto) in protos">
+                                    <span v-if="component[proto] != null" :style="{width: widths[indexProto] + '%'}" :name="proto" class="td-note">
+                                        <component
+                                            :is="component[proto]"
+                                            :item="item"
+                                        ></component>
+                                    </span>
+                                    <span v-else :name="proto" :style="{width: widths[indexProto] + '%'}" class="td-note">
+                                        {{item[proto]}}
+                                    </span>
+                                </template>
+                                <span @click="troggleEdit(item.id)" class="align-c" name="open">
+                                    <img :src="$img('list.png')">
+                                </span>
+                            </li>
+                        
+                        <li v-if="showItemDetail != '' && showItemDetail == item.id" :key="searchUrl + item.id + '-pop'">
                             <component 
                                 :is="component[_key]"
                                 v-if="showEditPane"
@@ -71,21 +72,21 @@
                                 :edit="true"
                                 @closeEdit="closeOwnEditPane(item)"
                             ></component>
-                        </td>
-                    </tr>
-                </template>
-            </transition-group>
-            <tfoot class="list-foot">
-                <tr class="list-foot-tr">
-                    <td>
+                        </li>
+                    </template>
+                </transition-group>
+            </transition>
+            <div class="list-foot">
+                <div class="list-foot-tr">
+                    <span  name="order">
                         <input @click="selectAll" type="checkbox" name="List_check">
-                    </td>
-                    <td colspan="5">
+                    </span>
+                    <span style="width: 86%">
                         <button @click="showConfirmDialog(1)" class="btn btn-del" type="button">删除</button>
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
+                    </span>
+                </div>
+            </div>
+        </div>
 
 
         <div class="paginator-module">
@@ -115,20 +116,16 @@
 
 
 
-    th[name="order"] {
+    span[name="order"] {
         width: 14%;
     }
 
-    td {
+    span {
         @extend %wrap;
     }
 
-    td[name="area"]{
-        padding: 0 pxToRem(14);
-    }
-
-    th[name="open"] {
-        width: 14%;
+    span[name="open"] {
+        width: 13%;
     }
 
     .align-c {
@@ -138,18 +135,34 @@
     }
 
     .slide-fade-enter-active, .slide-fade-leave-active{
-      transition: all .3s ease;
+      transition: all .8s ease;
     }
 
     .slide-fade-leave-active{
-      transform: translateX(-10px);
+      transform: translateX(-30px);
       opacity: 0;
     }
 
     .slide-fade-enter {
-      transform: translateX(10px);
+      transform: translateX(30px);
       opacity: 0;
     }
+
+    .slide-up-enter-active, .slide-up-leave-active{
+      transition: all .3s ease;
+    }
+
+    .table-list {
+        .list-body {
+            li.slide-up-leave-active, li.slide-up-enter{
+              transform: translateY(-10px);
+              height: 0px;
+              line-height: 0px;
+              opacity: 0;
+            }
+        }
+    }
+    
 </style>
 
 <script>
@@ -233,7 +246,8 @@
                     'order': ''
                 },
                 // 动画效果
-                slide: 'slide-fade'
+                slide: 'slide-fade',
+                showUp: true
             }
         },
         watch: {
@@ -253,13 +267,12 @@
              * 获取所有列表项信息
              */
             getAllLists (url) {
-                // 加上这句，解决过渡动画重复元素的bug
-                this.slide = 'slide-fade'
-                this.$set(this, 'list', []);
+                this.showUp = false;
                 this.$index(this, url).then((response) => {
                     let data = response.body[url + 's'];
                     this.total = data.last_page;
                     this.$set(this, 'list', data.data);
+                    this.showUp = true;
                 },(error) => {
                     if(error.status == 401) {
                         this.$router.push('/webapp/login')
@@ -328,7 +341,6 @@
              * 判断调用单个删除或批量删除
              */
             oneOrBatchdestroy () {
-                this.slide = 'slide-fade'
                 if(this.oneOrBatch == 0) {
                     this.destroy();
                 }else {
