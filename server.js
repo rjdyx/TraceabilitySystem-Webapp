@@ -66,7 +66,7 @@ const serve = (path, cache) => express.static(resolve(path), {
 })
 app.use(favicon('./public/suyulogo.png'))
 app.use('/public', serve('./public'))
-app.use('/dist', serve('./dist'))
+// app.use('/dist', serve('./dist'))
 
 
 // ssr

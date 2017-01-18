@@ -31,88 +31,114 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <div class="main form-pop">
-            <div>
-                <label for="logtion_name" class="label-tit">种植场名称</label>
-                <input v-model="log.plantation_name" class="input-pop" type="text" id="log_name" name="log_name" disabled="disabled">
-            </div>
-            <div>
-                <label for="planta_name" class="label-tit">种植区名称</label>
-                <input v-model="log.planta_name" class="input-pop" type="text" placeholder="" id="planta_name" name="planta_name" disabled="disabled">
-            </div>
-            <div>
-                <label for="plant_name" class="label-tit">果蔬名称</label>
-                <input v-model="log.plant_name" class="input-pop" type="text" placeholder="" id="plant_name" name="plant_name" disabled="disabled">
-            </div>
-            <div>
-                <label for="plant_varieties" class="label-tit">播种/育苗品种</label>
-                <input v-model="log.plant_varieties" class="input-pop" type="text" placeholder="" id="plant_varieties" name="plant_varieties">
-            </div>
-            <div>
-                <label for="cultivate_mode" class="label-tit">播种/育苗方式</label>
-                <input v-model="log.cultivate_mode" class="input-pop" type="text" placeholder="" id="cultivate_mode" name="cultivate_mode">
-            </div>
-            <div>
-                <label for="plant_tp_variety" class="label-tit">移栽品种</label>
-                <input v-model="log.plant_tp_variety" class="input-pop" type="text" placeholder="" id="plant_tp_variety" name="plant_tp_variety">
-            </div>
-            <div>
-                <label for="cultivate_density" class="label-tit">移栽密度</label>
-                <input v-model="log.cultivate_density" class="input-pop" type="text" placeholder="" id="cultivate_density" name="cultivate_density">
-            </div>
-            <div>
-                <label for="manure_name" class="label-tit">施肥种类</label>
-                <input v-model="log.manure_name" class="input-pop" type="text" placeholder="" id="manure_name" name="manure_name">
-            </div>
-            <div>
-                <label for="fertilize_amount" class="label-tit">施肥数量</label>
-                <input v-model="log.fertilize_amount" class="input-pop" type="text" placeholder="" id="fertilize_amount" name="fertilize_amount">
-            </div>
-            <div>
-                <label for="fertilize_way" class="label-tit">施肥方式</label>
-                <input v-model="log.fertilize_way" class="input-pop" type="text" placeholder="" id="fertilize_way" name="fertilize_way">
-            </div>
-            <div>
-                <label for="medicament_name" class="label-tit">病虫害名称</label>
-                <input v-model="log.medicament_name" class="input-pop" type="text" placeholder="" id="medicament_name" name="medicament_name">
-            </div>
-            <div>
-                <label for="spray_way" class="label-tit">施药方式</label>
-                <input v-model="log.spray_way" class="input-pop" type="text" placeholder="" id="spray_way" name="spray_way">
-            </div>
-            <div>
-                <label for="control_objects" class="label-tit">防治对象</label>
-                <input v-model="log.control_objects" class="input-pop" type="text" placeholder="" id="control_objects" name="control_objects">
-            </div>
-            <div>
-                <label for="plant_growth" class="label-tit">生长周期</label>
-                <input v-model="log.plant_growth" class="input-pop" type="text" placeholder="" id="plant_growth" name="plant_growth" disabled="disabled">
-            </div>
-            <div>
-                <label for="planta_area" class="label-tit">种植面积</label>
-                <input v-model="log.planta_area" class="input-pop" type="text" placeholder="" id="planta_area" name="planta_area" disabled="disabled">
-            </div>
-            <div>
-                <label for="harvest_amount" class="label-tit">采收重量</label>
-                <input v-model="log.harvest_amount" class="input-pop" type="text" placeholder="" id="harvest_amount" name="harvest_amount">
-            </div>
-            <div>
-                <label for="cultivate_man" class="label-tit">操作人</label>
-                <input v-model="log.cultivate_man" class="input-pop" type="text" placeholder="" id="cultivate_man" name="cultivate_man">
-            </div>
-            <div class="footer">
-                <div class="footer-r">
-                    <button @click="cancelPanel" type="button">
-                        取消
-                    </button>
-                </div>
-                <div class="footer-r">
-                    <button class="btn-pop">
-                        保存
-                    </button>
-                </div>
-            </div>
-        </div>
+        <table class="main form-pop">
+            <tbody class="form-body">
+
+                <tr>
+                    <td class="label-tit"><label for="logtion_name">种植场名称</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.plantation_name" class="input-pop" type="text" id="log_name" name="log_name" disabled="disabled"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="planta_name">种植区名称</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.planta_name" class="input-pop" type="text" placeholder="" id="planta_name" name="planta_name" disabled="disabled"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_name">果蔬名称</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.plant_name" class="input-pop" type="text" placeholder="" id="plant_name" name="plant_name" disabled="disabled"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_varieties">播种/育苗品种</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.plant_varieties" class="input-pop" type="text" placeholder="" id="plant_varieties" name="plant_varieties"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="cultivate_mode">播种/育苗方式</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.cultivate_mode" class="input-pop" type="text" placeholder="" id="cultivate_mode" name="cultivate_mode"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_tp_variety">移栽品种</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.plant_tp_variety" class="input-pop" type="text" placeholder="" id="plant_tp_variety" name="plant_tp_variety"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="cultivate_density">移栽密度</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.cultivate_density" class="input-pop" type="text" placeholder="" id="cultivate_density" name="cultivate_density"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="manure_name">施肥种类</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.manure_name" class="input-pop" type="text" placeholder="" id="manure_name" name="manure_name"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="fertilize_amount">施肥数量</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.fertilize_amount" class="input-pop" type="text" placeholder="" id="fertilize_amount" name="fertilize_amount"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="fertilize_way">施肥方式</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.fertilize_way" class="input-pop" type="text" placeholder="" id="fertilize_way" name="fertilize_way"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_name">病虫害名称</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.medicament_name" class="input-pop" type="text" placeholder="" id="medicament_name" name="medicament_name"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="spray_way">施药方式</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.spray_way" class="input-pop" type="text" placeholder="" id="spray_way" name="spray_way"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="control_objects">防治对象</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.control_objects" class="input-pop" type="text" placeholder="" id="control_objects" name="control_objects"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_growth">生长周期</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.plant_growth" class="input-pop" type="text" placeholder="" id="plant_growth" name="plant_growth" disabled="disabled"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="planta_area">种植面积</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.planta_area" class="input-pop" type="text" placeholder="" id="planta_area" name="planta_area" disabled="disabled"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="harvest_amount">采收重量</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.harvest_amount" class="input-pop" type="text" placeholder="" id="harvest_amount" name="harvest_amount"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="cultivate_man">操作人</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="log.cultivate_man" class="input-pop" type="text" placeholder="" id="cultivate_man" name="cultivate_man"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class="footer-r">
+                            <a href="#">
+                                <button @click="cancelPanel" type="button">
+                                    取消
+                                </button>
+                            </a>
+                        </div>
+                        <div class="footer-r">
+                            <a href="#">
+                                <button class="btn-pop">
+                                    保存
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </form>
 </template>
 

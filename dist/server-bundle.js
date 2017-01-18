@@ -16966,6 +16966,32 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ exports["default"] = {
@@ -22227,14 +22253,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('div', {
+  }, [_c('table', {
     staticClass: "main form-pop"
-  }, [_c('div', [_c('label', {
-    staticClass: "label-tit",
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "logtion_name"
+      "colspan": "2"
     }
-  }, [_vm._v("种植场名称")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22257,12 +22285,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.plantation_name = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "planta_name"
+      "colspan": "2"
     }
-  }, [_vm._v("种植区名称")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22286,12 +22314,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.planta_name = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "plant_name"
+      "colspan": "2"
     }
-  }, [_vm._v("果蔬名称")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22315,12 +22343,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.plant_name = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "plant_varieties"
+      "colspan": "2"
     }
-  }, [_vm._v("播种/育苗品种")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22343,12 +22371,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.plant_varieties = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "cultivate_mode"
+      "colspan": "2"
     }
-  }, [_vm._v("播种/育苗方式")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22371,12 +22399,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.cultivate_mode = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "plant_tp_variety"
+      "colspan": "2"
     }
-  }, [_vm._v("移栽品种")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22399,12 +22427,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.plant_tp_variety = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "cultivate_density"
+      "colspan": "2"
     }
-  }, [_vm._v("移栽密度")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22427,12 +22455,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.cultivate_density = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "manure_name"
+      "colspan": "2"
     }
-  }, [_vm._v("施肥种类")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22455,12 +22483,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.manure_name = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(8), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "fertilize_amount"
+      "colspan": "2"
     }
-  }, [_vm._v("施肥数量")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22483,12 +22511,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.fertilize_amount = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(9), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "fertilize_way"
+      "colspan": "2"
     }
-  }, [_vm._v("施肥方式")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22511,12 +22539,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.fertilize_way = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(10), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "medicament_name"
+      "colspan": "2"
     }
-  }, [_vm._v("病虫害名称")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22539,12 +22567,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.medicament_name = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(11), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "spray_way"
+      "colspan": "2"
     }
-  }, [_vm._v("施药方式")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22567,12 +22595,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.spray_way = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(12), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "control_objects"
+      "colspan": "2"
     }
-  }, [_vm._v("防治对象")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22595,12 +22623,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.control_objects = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(13), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "plant_growth"
+      "colspan": "2"
     }
-  }, [_vm._v("生长周期")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22624,12 +22652,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.plant_growth = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(14), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "planta_area"
+      "colspan": "2"
     }
-  }, [_vm._v("种植面积")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22653,12 +22681,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.planta_area = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(15), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "harvest_amount"
+      "colspan": "2"
     }
-  }, [_vm._v("采收重量")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22681,12 +22709,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.harvest_amount = $event.target.value
       }
     }
-  })]), _c('div', [_c('label', {
-    staticClass: "label-tit",
+  })])]), _c('tr', [_vm._m(16), _c('td', {
+    staticClass: "input-pop",
     attrs: {
-      "for": "cultivate_man"
+      "colspan": "2"
     }
-  }, [_vm._v("操作人")]), _c('input', {
+  }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -22709,10 +22737,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.log.cultivate_man = $event.target.value
       }
     }
-  })]), _c('div', {
-    staticClass: "footer"
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
   }, [_c('div', {
     staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
   }, [_c('button', {
     attrs: {
       "type": "button"
@@ -22720,13 +22754,153 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "click": _vm.cancelPanel
     }
-  }, [_vm._v("\n                    取消\n                ")])]), _vm._m(0)])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(17)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "logtion_name"
+    }
+  }, [_vm._v("种植场名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "planta_name"
+    }
+  }, [_vm._v("种植区名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_name"
+    }
+  }, [_vm._v("果蔬名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_varieties"
+    }
+  }, [_vm._v("播种/育苗品种")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "cultivate_mode"
+    }
+  }, [_vm._v("播种/育苗方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_tp_variety"
+    }
+  }, [_vm._v("移栽品种")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "cultivate_density"
+    }
+  }, [_vm._v("移栽密度")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_name"
+    }
+  }, [_vm._v("施肥种类")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fertilize_amount"
+    }
+  }, [_vm._v("施肥数量")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fertilize_way"
+    }
+  }, [_vm._v("施肥方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "medicament_name"
+    }
+  }, [_vm._v("病虫害名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "spray_way"
+    }
+  }, [_vm._v("施药方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "control_objects"
+    }
+  }, [_vm._v("防治对象")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_growth"
+    }
+  }, [_vm._v("生长周期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "planta_area"
+    }
+  }, [_vm._v("种植面积")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "harvest_amount"
+    }
+  }, [_vm._v("采收重量")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "cultivate_man"
+    }
+  }, [_vm._v("操作人")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
   }, [_c('button', {
     staticClass: "btn-pop"
-  }, [_vm._v("\n                    保存\n                ")])])
+  }, [_vm._v("\n                                保存\n                            ")])])])
 }]}
 
 /***/ },
