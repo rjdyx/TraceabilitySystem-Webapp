@@ -42,115 +42,118 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <div class="main form-pop">
-            <div>
-                <label for="medicament_category_id" class="label-tit">分类</label>
-                <!-- <select 
-                    v-model="letItem.category_id" 
-                    v-validate.initial="letItem.category_id" 
-                    data-vv-rules="required" 
-                    data-vv-as="分类" 
-                    id="medicament_category_id" name="medicament_category_id" class="input-pop">
-                    <option value>请选择分类</option>
-                    <option v-for="category in categorys" :value="category.id">{{category.name}}</option>
-                    <PopSelect id="medicament_category_id" name="medicament_category_id" class="input-pop"
-                </select> -->
-                <pop-select id="medicament_category_id" name="medicament_category_id" class="input-pop"
+        <table class="main form-pop">
+            <tbody class="form-body">
+                <tr>
+                    <td class="label-tit"><label for="medicament_category_id">分类</label></td>
+                    <td class="input-pop" colspan="2"><pop-select id="medicament_category_id" name="medicament_category_id"
                     :items="categorys"
                     :defaultIndex="parseInt(defaulCatIndex)"
                     protoBack="id"
                     protoShow="name"
                     @callback="getMsgId"
-                ></pop-select>
-                <span v-show="errors.has('category_id')">{{ errors.first('category_id') }}</span>
-            </div>
-            <div>
-                <label for="medicament_new_fullName" class="label-tit">农药名称</label>
-                <input 
+                ></pop-select></td>
+                </tr>
+                <tr v-show="errors.has('category_id')">
+                    <td colspan="2" class="error">{{ errors.first('category_id') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_new_fullName">农药名称</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.name" 
                     v-validate.initial="letItem.name" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="农药名称" 
-                    class="input-pop" type="text" id="medicament_new_fullName" name="name" placeholder="必填">
-                <span v-show="errors.has('name')">{{ errors.first('name') }}</span>
-            </div>
-            <div>
-                <label for="medicament_usage" class="label-tit">用途</label>
-                <input v-model="letItem.usage" class="input-pop" type="text" id="medicament_usage" name="usage">
-                <span v-show="errors.has('usage')">{{ errors.first('usage') }}</span>
-            </div>
-            <div>
-                <label for="medicament_new_control_objects" class="label-tit">防治对象</label>
-                <input v-model="letItem.control_objects" class="input-pop" type="text" id="medicament_new_control_objects" name="control_objects">
-            </div>
-            <div>
-                <label for="medicament_toxicity_grade" class="label-tit">分类</label>
-                <!-- <select 
-                    v-model="letItem.toxicity_grade" 
-                    v-validate.initial="letItem.toxicity_grade" 
-                    data-vv-rules="required" 
-                    data-vv-as="分类" 
-                    id="medicament_toxicity_grade" name="medicament_toxicity_grade" class="input-pop">
-                    <option value="微毒">微毒</option>
-                    <option value="低毒">低毒</option>
-                    <option value="中毒">中毒</option>
-                    <option value="高毒">高毒</option>
-                </select> -->
-                <pop-select id="medicament_toxicity_grade" name="medicament_toxicity_grade" class="input-pop"
+                    type="text" id="medicament_new_fullName" name="name" placeholder="必填"></td>
+                </tr>
+                <tr v-show="errors.has('name')">
+                    <td colspan="3" class="error">{{ errors.first('name') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_usage">用途</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.usage" type="text" id="medicament_usage" name="usage"></td>
+                </tr>
+                <tr v-show="errors.has('usage')">
+                    <td colspan="3" class="error">{{ errors.first('usage') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_new_control_objects">防治对象</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.control_objects" class="input-pop" type="text" id="medicament_new_control_objects" name="control_objects"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_toxicity_grade">分类</label></td>
+                    <td class="input-pop" colspan="2"><pop-select id="medicament_toxicity_grade" name="medicament_toxicity_grade"
                     :items="toxicity"
                     :defaultIndex="parseInt(defaultToxIndex)"
                     @callback="getMsgGrade"
-                ></pop-select>
-                <span v-show="errors.has('toxicity_grade')">{{ errors.first('toxicity_grade') }}</span>
-            </div>
-            <div>
-                <label for="medicament_new_specification" class="label-tit">包装规格</label>
-                <input v-model="letItem.specification" class="input-pop" type="text" id="medicament_new_specification" name="specification">
-            </div>
-            <div>
-                <label for="medicament_new_dealer" class="label-tit">经销商名称</label>
-                <input v-model="letItem.dealer" class="input-pop" type="text" value="" id="medicament_new_dealer" name="dealer">
-            </div>
-            <div>
-                <label for="medicament_new_origin" class="label-tit">产地</label>
-                <input v-model="letItem.origin" class="input-pop" type="text" value="" id="medicament_new_origin" name="origin">
-            </div>
-            <div>
-                <label for="medicament_new_phone" class="label-tit">联系方式</label>
-                <input 
+                ></pop-select></td>
+                </tr>
+                <tr v-show="errors.has('toxicity_grade')">
+                    <td colspan="3" class="error">{{ errors.first('toxicity_grade') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_new_specification">包装规格</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.specification" type="text" id="medicament_new_specification" name="specification"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_new_dealer">经销商名称</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.dealer" type="text" id="medicament_new_dealer" name="dealer"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_new_origin">产地</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.origin" type="text" id="medicament_new_origin" name="origin"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_new_phone">联系方式</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.phone" 
                     v-validate.initial="letItem.phone" 
                     data-vv-rules="phone" 
-                    class="input-pop" type="text" id="medicament_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)">
-                <span v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
-            </div>
-            <div>
-                <label for="medicament_new_note" class="label-tit">备注信息</label>
-                <input v-model="letItem.memo" class="input-pop input-note" type="text" id="medicament_new_note" name="memo">
-            </div>
-            <div class="footer">
-                <div class="footer-r">
-                    <a v-if="edit" href="#">
-                        <button @click="cancelEditMedicament" type="button">
-                            取消
-                        </button>  
-                    </a>
-                    
-                    <a v-else href="#">
-                        <button @click="cancelAddMedicament" type="button">
-                            取消
-                        </button>
-                    </a>
-                </div>
-                <div class="footer-r">
-                    <a href="#">
-                        <button class="btn-pop">
-                            保存
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
+                    type="text" id="medicament_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
+                </tr>
+                <tr v-show="errors.has('phone')">
+                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="medicament_new_note">备注信息</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="medicament_new_note" name="memo"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class="footer-r">
+                            <a v-if="edit" href="#">
+                                <button @click="cancelEditMedicament" type="button">
+                                    取消
+                                </button>  
+                            </a>
+                            
+                            <a v-else href="#">
+                                <button @click="cancelAddMedicament" type="button">
+                                    取消
+                                </button>
+                            </a>
+                        </div>
+                        <div class="footer-r">
+                            <a href="#">
+                                <button class="btn-pop">
+                                    保存
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </form>
 </template>
 

@@ -42,83 +42,93 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <div class="main form-pop">
-            <div>
-                <div @click="selectPic" class="pic-preview">
-                    <img v-if="letItem.image == '' || letItem.image == null" :src="$img(image)">
-                    <img v-else-if="letItem.image == 'upload.png'" :src="$img(letItem.image)">
-                    <img v-else :src="$img(letItem.image, false)">
-                </div>
-                <input name="file_name" type="file" hidden="hidden" @change="previewPic(letItem, $event)">
-                <div class="delete-pic-btn">
-                    <button type="button" @click="deletePic">删除</button>
-                </div>
-            </div>
-            <div>
-                <label for="plant_categroy_select" class="label-tit">果蔬类别</label>
-                <!-- <select v-model="letItem.category" name="category" id="plant_categroy_select" class="input-pop">
-                    <option value="蔬菜类">蔬菜类</option>
-                    <option value="水果类">水果类</option>
-                </select> -->
-                <!-- 果蔬分类模块 -->
-                <pop-select name="category" id="plant_categroy_select" class="input-pop"
+        <table class="main form-pop">
+            <tbody class="form-body">
+                <tr>
+                    <td colspan="3">
+                        <div @click="selectPic" class="pic-preview">
+                            <img v-if="letItem.image == '' || letItem.image == null" :src="$img(image)">
+                            <img v-else-if="letItem.image == 'upload.png'" :src="$img(letItem.image)">
+                            <img v-else :src="$img(letItem.image, false)">
+                        </div>
+                        <input name="file_name" type="file" hidden="hidden" @change="previewPic(letItem, $event)">
+                        <div class="delete-pic-btn">
+                            <button type="button" @click="deletePic">删除</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_categroy_select">果蔬类别</label></td>
+                    <td class="input-pop" colspan="2"><pop-select name="category" id="plant_categroy_select"
                     :items="categorys"
                     :defaultIndex="parseInt(defaultIndex)"
                     @callback="getMsg"
-                ></pop-select>
-            </div>
-            <div>
-                <label for="plant_new_fullName" class="label-tit">果蔬名称</label>
-                <input 
+                ></pop-select></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_new_fullName">果蔬名称</label></td>
+                    <td class="input-pop"><input 
                     v-model="letItem.name" 
                     v-validate.initial="letItem.name" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="果蔬名称" 
-                    class="input-pop" type="text" id="plant_new_fullName" name="name" placeholder="必填">
-                <span v-show="errors.has('name')">{{ errors.first('name') }}</span>
-            </div>
-            
-            <div>
-                <label for="plant_new_growth_cycle" class="label-tit">生长周期</label>
-                <input 
+                    type="text" id="plant_new_fullName" name="name" placeholder="必填"></td>
+                </tr>
+                <tr v-show="errors.has('name')">
+                    <td colspan="3" class="error">{{ errors.first('name') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_new_growth_cycle">生长周期</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.growth_cycle" 
                     v-validate.initial="letItem.growth_cycle" 
                     data-vv-rules="required|decimal:2" 
                     data-vv-as="生长周期" 
-                    class="input-pop" type="text" id="plant_new_growth_cycle" name="growth_cycle" placeholder="必填，单位（天）">
-                <span v-show="errors.has('growth_cycle')">{{ errors.first('growth_cycle') }}</span>
-            </div>
-            <div>
-                <label for="plant_new_description" class="label-tit">特征描述</label>
-                <input v-model="letItem.description" class="input-pop" type="text" id="plant_new_description" name="description">
-            </div>
-            <div>
-                <label for="plant_new_note" class="label-tit">备注信息</label>
-                <input v-model="letItem.memo" class="input-pop input-note" type="text" id="plant_new_note" name="memo">
-            </div>
-            <div class="footer">
-                <div class="footer-r">
-                    <a v-if="edit" href="#">
-                        <button @click="cancelEditPlantation" type="button">
-                            取消
-                        </button>  
-                    </a>
-                    
-                    <a v-else href="#">
-                        <button @click="cancelAddPlantation" type="button">
-                            取消
-                        </button>
-                    </a>
-                </div>
-                <div class="footer-r">
-                    <a href="#">
-                        <button class="btn-pop">
-                            保存
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
+                    type="text" id="plant_new_growth_cycle" name="growth_cycle" placeholder="必填，单位（天）"></td>
+                </tr>
+                <tr v-show="errors.has('growth_cycle')">
+                    <td colspan="3" class="error">{{ errors.first('growth_cycle') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_new_description">特征描述</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.description" type="text" id="plant_new_description" name="description"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="plant_new_note">备注信息</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="plant_new_note" name="memo"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class="footer-r">
+                            <a v-if="edit" href="#">
+                                <button @click="cancelEditPlantation" type="button">
+                                    取消
+                                </button>  
+                            </a>
+                            
+                            <a v-else href="#">
+                                <button @click="cancelAddPlantation" type="button">
+                                    取消
+                                </button>
+                            </a>
+                        </div>
+                        <div class="footer-r">
+                            <a href="#">
+                                <button class="btn-pop">
+                                    保存
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </form>
 </template>
 
@@ -130,7 +140,7 @@
     .pic-preview {
         width: 100%;
         height: pxToRem(200);
-        border: 1px solid #d4d4d4;
+        border-bottom: 1px solid #d4d4d4;
         text-align: center;
 
         img {

@@ -42,132 +42,134 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <div class="main form-pop">
-            <div>
-                <label for="expert_table_type" class="label-tit">操作模块</label>
-                <!-- <select 
-                    v-model="letItem.table_type" 
-                    v-validate.initial="letItem.table_type" 
-                    data-vv-rules="required" 
-                    data-vv-as="操作模块" 
-                    id="expert_table_type" name="expert_table_type" class="input-pop">
-                    <option value='fertilize'>施肥</option>
-                    <option value='spray'>病虫害</option>
-                    <option value='detect'>检验检测</option>
-                    <option value='farming'>农事</option>
-                </select> -->
-                <!-- 操作模块 -->
-                <pop-select id="expert_table_type" name="expert_table_type" class="input-pop"
+        <table class="main form-pop">
+            <tbody class="form-body">
+                <tr>
+                    <td class="label-tit"><label for="expert_table_type">操作模块</label></td>
+                    <td class="input-pop" colspan="2"><pop-select id="expert_table_type" name="expert_table_type"
                     :items="tableType"
                     :defaultIndex="parseInt(defaultTypeIndex)"
                     @callback="getMsgType"
-                ></pop-select>
-                <span v-show="errors.has('table_type')">{{ errors.first('table_type') }}</span>
-            </div>
-            <div>
-                <label for="expert_new_fullName" class="label-tit">专家名称</label>
-                <input 
+                ></pop-select></td>
+                </tr>
+                <tr v-show="errors.has('table_type')">
+                    <td colspan="2" class="error">{{ errors.first('table_type') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="expert_new_fullName">专家名称</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.expert_name" 
                     v-validate.initial="letItem.expert_name" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="专家名称" 
-                    class="input-pop" type="text" id="expert_new_fullName" name="expert_name" placeholder="必填">
-                <span v-show="errors.has('expert_name')">{{ errors.first('expert_name') }}</span>
-            </div>
-            <div>
-                <label for="expert_major" class="label-tit">研究领域</label>
-                <input 
+                    type="text" id="expert_new_fullName" name="expert_name" placeholder="必填"></td>
+                </tr>
+                <tr v-show="errors.has('expert_name')">
+                    <td colspan="3" class="error">{{ errors.first('expert_name') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="expert_major">研究领域</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.major" 
                     v-validate.initial="letItem.major" 
                     data-vv-rules="required" 
                     data-vv-as="研究领域" 
-                    class="input-pop" type="text" id="expert_major" name="major" placeholder="必填">
-                <span v-show="errors.has('major')">{{ errors.first('major') }}</span>
-            </div>
-            <div>
-                <label for="expert_level" class="label-tit">级别</label>
-                <input 
+                    type="text" id="expert_major" name="major" placeholder="必填"></td>
+                </tr>
+                <tr v-show="errors.has('major')">
+                    <td colspan="3" class="error">{{ errors.first('major') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="expert_level">级别</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.level" 
                     v-validate.initial="letItem.level" 
                     data-vv-rules="required" 
                     data-vv-as="级别" 
-                    class="input-pop" type="text" id="expert_level" name="level" placeholder="必填">
-                <span v-show="errors.has('level')">{{ errors.first('level') }}</span>
-            </div>
-            <div>
-                <label for="expert_sex" class="label-tit">性别</label>
-                <!-- <select 
-                    v-model="letItem.sex" 
-                    v-validate.initial="letItem.sex" 
-                    data-vv-rules="required" 
-                    data-vv-as="性别" 
-                    id="expert_sex" name="expert_sex" class="input-pop">
-                    <option value="男">男</option>
-                    <option value="女">女</option>
-                </select> -->
+                    type="text" id="expert_level" name="level" placeholder="必填"></td>
+                </tr>
+                <tr v-show="errors.has('level')">
+                    <td colspan="3" class="error">{{ errors.first('level') }}</td>
+                </tr>
 
-                <!-- 性别选择模块 -->
-                <pop-select id="expert_sex" name="expert_sex" class="input-pop"
+                <tr>
+                    <td class="label-tit"><label for="expert_sex">性别</label></td>
+                    <td class="input-pop" colspan="2"><pop-select id="expert_sex" name="expert_sex"
                     :items="sex"
                     :defaultIndex="parseInt(defaultSexIndex)"
                     @callback="getMsgSex"
-                ></pop-select>
-                <span v-show="errors.has('sex')">{{ errors.first('sex') }}</span>
-            </div>
-            <div>
-                <label for="expert_new_age" class="label-tit">年龄</label>
-                <input 
+                ></pop-select></td>
+                </tr>
+                <tr v-show="errors.has('sex')">
+                    <td colspan="3" class="error">{{ errors.first('sex') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="expert_new_age">年龄</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.age" 
                     v-validate.initial="letItem.age" 
                     data-vv-rules="decimal" 
                     data-vv-as="年龄" 
-                    class="input-pop" type="text" id="expert_new_age" name="age">
-                <span v-show="errors.has('age')">{{ errors.first('age') }}</span>
-            </div>
-            <div>
-                <label for="expert_new_unit" class="label-tit">所属单位</label>
-                <input 
+                    type="text" id="expert_new_age" name="age"></td>
+                </tr>
+                <tr v-show="errors.has('age')">
+                    <td colspan="3" class="error">{{ errors.first('age') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="expert_new_unit">所属单位</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.unit" 
-                    class="input-pop" type="text" value="" id="expert_new_unit" name="unit">
-            </div>
-            <div>
-                <label for="expert_new_phone" class="label-tit">联系方式</label>
-                <input 
+                    class="input-pop" type="text" value="" id="expert_new_unit" name="unit"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="expert_new_phone">联系方式</label></td>
+                    <td class="input-pop" colspan="2"><input 
                     v-model="letItem.phone" 
                     v-validate.initial="letItem.phone" 
                     data-vv-rules="phone" 
-                    class="input-pop" type="text" id="expert_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)">
-                <span v-show="errors.has('phone')">{{ errors.first('phone') }}</span>
-            </div>
-            <div>
-                <label for="expert_new_note" class="label-tit">备注信息</label>
-                <input 
-                    v-model="letItem.memo" 
-                    class="input-pop input-note" type="text" id="expert_new_note" name="memo">
-            </div>
-            <div class="footer">
-                <div class="footer-r">
-                    <a v-if="edit" href="#">
-                        <button @click="cancelEditExpert" type="button">
-                            取消
-                        </button>  
-                    </a>
-                    
-                    <a v-else href="#">
-                        <button @click="cancelAddExpert" type="button">
-                            取消
-                        </button>
-                    </a>
-                </div>
-                <div class="footer-r">
-                    <a href="#">
-                        <button class="btn-pop">
-                            保存
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
+                    type="text" id="expert_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
+                </tr>
+                <tr v-show="errors.has('phone')">
+                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="expert_new_note">备注信息</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="expert_new_note" name="memo"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class="footer-r">
+                            <a v-if="edit" href="#">
+                                <button @click="cancelEditExpert" type="button">
+                                    取消
+                                </button>  
+                            </a>
+                            
+                            <a v-else href="#">
+                                <button @click="cancelAddExpert" type="button">
+                                    取消
+                                </button>
+                            </a>
+                        </div>
+                        <div class="footer-r">
+                            <a href="#">
+                                <button class="btn-pop">
+                                    保存
+                                </button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </form>
 </template>
 
