@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue';
+import nprogress from 'nprogress';
 import store from './vuex/index.js';
 import router from './route/routers.js';
 import { sync } from 'vuex-router-sync'
@@ -55,7 +56,18 @@ sync(store, router)
         
 //     }
 // });
+router.beforeEach((to, from, next) => {
+	if (typeof window == undefined || typeof window == 'object') {
+		nprogress.set(0.5);
+	}
+    next();
+});
 
+router.afterEach(route => {
+  	if (typeof window == undefined || typeof window == 'object') {
+		nprogress.set(1);
+	}
+})
 
 // 创建一个app实例
 // 这里我们把routes和store注入所有子组件，
