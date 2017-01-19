@@ -19746,7 +19746,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                         _this.$router.push('/webapp');
                     }
                 }).catch(function (error) {
-                    if (error.status == 500) {
+                    if (error.status != 200) {
                         this.loginBtn = '登录';
                         this.isLogin = false;
                         this.$alert('连接出错，请重新登录', 'e');
@@ -23171,7 +23171,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('span', {
     staticClass: "nprogress-spinner-icon"
-  })])
+  }, [_vm._v("111")])])
 }]}
 
 /***/ },
