@@ -14030,7 +14030,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ exports["default"] = {
     name: 'App'
@@ -16993,6 +16992,38 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ exports["default"] = {
@@ -17021,7 +17052,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
                 planta_area: '',
                 harvest_amount: 0,
                 cultivate_man: ''
-            }
+            },
+            // 施肥方式
+            fertilizeWays: [],
+            // 施肥种类
+            manureNames: [],
+            // 病虫害名称
+            medicamentNames: [],
+            // 施药方式
+            sprayWays: []
         };
     },
     mounted: function mounted() {
@@ -17038,6 +17077,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
             this.$http.get(this.$adminUrl('dailylog') + '/' + this.cultivateId + '/edit').then(function (response) {
                 _this.$set(_this, 'log', response.body.dailylog);
+                _this.$set(_this, 'fertilizeWays', response.body.fertilize_way);
+                _this.$set(_this, 'manureNames', response.body.manure_category_name);
+                _this.$set(_this, 'medicamentNames', response.body.medicament_category_name);
+                _this.$set(_this, 'sprayWays', response.body.spray_way);
+
                 // 将后台传过来的log对象里面值null的属性改成空字符串
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
@@ -17099,6 +17143,42 @@ Object.defineProperty(exports, "__esModule", { value: true });
         */
         cancelPanel: function cancelPanel() {
             this.$emit('closeEdit');
+        },
+
+
+        /**
+         * 获取施肥方式
+         * @param  {String} FertilizeWay
+         */
+        getFertilizeWay: function getFertilizeWay(FertilizeWay) {
+            this.log.fertilize_way = FertilizeWay;
+        },
+
+
+        /**
+         * 获取施肥种类
+         * @param  {Integer} ManureNameId 
+         */
+        getManureName: function getManureName(ManureNameId) {
+            this.log.manure_name = ManureNameId;
+        },
+
+
+        /**
+         * 获取病虫害名称
+         * @param  {Integer} MedicamentNameId
+         */
+        getMedicamentName: function getMedicamentName(MedicamentNameId) {
+            this.log.medicament_name = MedicamentNameId;
+        },
+
+
+        /**
+         * 获取施药方式
+         * @param  {String} SprayWay 
+         */
+        getSprayWay: function getSprayWay(SprayWay) {
+            this.log.spray_way = SprayWay;
         }
     }
 };
@@ -17174,6 +17254,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ exports["default"] = {
@@ -17182,6 +17265,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
         show: {
             type: Boolean,
             default: false
+        },
+        title: {
+            type: String,
+            default: '删除选项'
         },
         message: {
             type: String,
@@ -17600,6 +17687,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+//
 //
 //
 //
@@ -18354,6 +18442,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
             showConfirm: false,
             // vue实例
             self: this,
+            // 无法删除时的提示信息
+            tipMsg: '被使用，无法删除',
             // 分页的总页数
             total: 1,
             // 搜索的参数对象
@@ -18419,7 +18509,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
                     for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                         var index = _step.value;
 
-                        this.deleteLists.push({ 'id': this.list[index].id, 'index': index });
+                        this.deleteLists.push({ 'id': this.list[index].id, 'index': index, 'flag': this.list[index].serial_state });
                     }
                 } catch (err) {
                     _didIteratorError = true;
@@ -18573,6 +18663,33 @@ Object.defineProperty(exports, "__esModule", { value: true });
         showConfirmDialog: function showConfirmDialog(flag) {
             var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
             var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+            var _iteratorNormalCompletion4 = true;
+            var _didIteratorError4 = false;
+            var _iteratorError4 = undefined;
+
+            try {
+                for (var _iterator4 = this.deleteLists[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                    var deleteList = _step4.value;
+
+                    if (deleteList.flag) {
+                        this.$alert(this.tipMsg);
+                        return false;
+                    }
+                }
+            } catch (err) {
+                _didIteratorError4 = true;
+                _iteratorError4 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                        _iterator4.return();
+                    }
+                } finally {
+                    if (_didIteratorError4) {
+                        throw _iteratorError4;
+                    }
+                }
+            }
 
             if (flag == 1 && this.deleteLists.length == 0) {
                 this.$alert('请选择列表项');
@@ -19822,11 +19939,18 @@ exports.touchDelete = function () {
         var time = null;
         el.addEventListener("touchstart", function (event) {
             time = setTimeout(function () {
+                var vm = binding.value.vm;
                 var type = binding.value.type;
                 var id = binding.value.id;
                 var index = binding.value.index;
-                var deleteFunction = binding.arg;
-                binding.value.vm[deleteFunction](type, id, index);
+                var flag = binding.value.flag;
+                var tip = binding.value.tip;
+                if (!flag) {
+                    var deleteFunction = binding.arg;
+                    vm[deleteFunction](type, id, index);
+                } else {
+                    vm.$alert(tip);
+                }
             }, 500);
         });
 
@@ -22542,30 +22666,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "colspan": "2"
     }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.log.manure_name),
-      expression: "log.manure_name"
-    }],
-    staticClass: "input-pop",
+  }, [_c('pop-select', {
     attrs: {
-      "type": "text",
-      "placeholder": "",
-      "id": "manure_name",
-      "name": "manure_name"
-    },
-    domProps: {
-      "value": _vm._s(_vm.log.manure_name)
+      "name": "manure_name",
+      "items": _vm.manureNames,
+      "defaultIndex": 0,
+      "protoBack": "manure_category_id",
+      "protoShow": "manure_category_name"
     },
     on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.log.manure_name = $event.target.value
-      }
+      "callback": _vm.getManureName
     }
-  })])]), _c('tr', [_vm._m(8), _c('td', {
+  })], 1)]), _c('tr', [_vm._m(8), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -22598,86 +22710,50 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "colspan": "2"
     }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.log.fertilize_way),
-      expression: "log.fertilize_way"
-    }],
-    staticClass: "input-pop",
+  }, [_c('pop-select', {
     attrs: {
-      "type": "text",
-      "placeholder": "",
-      "id": "fertilize_way",
-      "name": "fertilize_way"
-    },
-    domProps: {
-      "value": _vm._s(_vm.log.fertilize_way)
+      "name": "fertilize_way",
+      "items": _vm.fertilizeWays,
+      "defaultIndex": 0,
+      "protoBack": "fertilize_way",
+      "protoShow": "fertilize_way"
     },
     on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.log.fertilize_way = $event.target.value
-      }
+      "callback": _vm.getFertilizeWay
     }
-  })])]), _c('tr', [_vm._m(10), _c('td', {
+  })], 1)]), _c('tr', [_vm._m(10), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
     }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.log.medicament_name),
-      expression: "log.medicament_name"
-    }],
-    staticClass: "input-pop",
+  }, [_c('pop-select', {
     attrs: {
-      "type": "text",
-      "placeholder": "",
-      "id": "medicament_name",
-      "name": "medicament_name"
-    },
-    domProps: {
-      "value": _vm._s(_vm.log.medicament_name)
+      "name": "medicament_name",
+      "items": _vm.medicamentNames,
+      "defaultIndex": 0,
+      "protoBack": "medicament_category_id",
+      "protoShow": "medicament_name"
     },
     on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.log.medicament_name = $event.target.value
-      }
+      "callback": _vm.getMedicamentName
     }
-  })])]), _c('tr', [_vm._m(11), _c('td', {
+  })], 1)]), _c('tr', [_vm._m(11), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
     }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.log.spray_way),
-      expression: "log.spray_way"
-    }],
-    staticClass: "input-pop",
+  }, [_c('pop-select', {
     attrs: {
-      "type": "text",
-      "placeholder": "",
-      "id": "spray_way",
-      "name": "spray_way"
-    },
-    domProps: {
-      "value": _vm._s(_vm.log.spray_way)
+      "name": "spray_way",
+      "items": _vm.sprayWays,
+      "defaultIndex": 0,
+      "protoBack": "spray_way",
+      "protoShow": "spray_way"
     },
     on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.log.spray_way = $event.target.value
-      }
+      "callback": _vm.getSprayWay
     }
-  })])]), _c('tr', [_vm._m(12), _c('td', {
+  })], 1)]), _c('tr', [_vm._m(12), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -23333,8 +23409,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "xmlns:xlink": "http://www.w3.org/1999/xlink",
       "x": "0px",
       "y": "0px",
-      "width": "40px",
-      "height": "40px",
+      "width": "25px",
+      "height": "25px",
       "viewBox": "0 0 50 50",
       "xml:space": "preserve"
     }
@@ -23456,9 +23532,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           vm: _vm.self,
           type: 0,
           id: item.id,
-          index: index
+          index: index,
+          flag: item.serial_state,
+          tip: _vm.tipMsg
         }),
-        expression: "{vm:self, type:0, id:item.id, index:index}",
+        expression: "{vm:self, type:0, id:item.id, index:index, flag:item.serial_state, tip:tipMsg}",
         arg: "showConfirmDialog"
       }],
       key: _vm.searchUrl + item.id,
@@ -23487,11 +23565,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       domProps: {
         "value": {
           'id': item.id,
-          'index': index
+          'index': index,
+          flag: item.serial_state
         },
         "checked": Array.isArray(_vm.deleteLists) ? _vm._i(_vm.deleteLists, {
           'id': item.id,
-          'index': index
+          'index': index,
+          flag: item.serial_state
         }) > -1 : (_vm.deleteLists)
       },
       on: {
@@ -23502,7 +23582,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           if (Array.isArray($$a)) {
             var $$v = {
                 'id': item.id,
-                'index': index
+                'index': index,
+                flag: item.serial_state
               },
               $$i = _vm._i($$a, $$v);
             if ($$c) {
@@ -25415,7 +25496,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.title))]), _c('ul', _vm._l((_vm.items), function(item, index) {
+  }, [_vm._v(_vm._s(_vm.title))]), _c('ul', [_vm._l((_vm.items), function(item, index) {
     return _c('li', {
       on: {
         "click": function($event) {
@@ -25423,7 +25504,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }
       }
     }, [(_vm.protoBack == '') ? [_vm._v(_vm._s(item))] : [_vm._v(_vm._s(item[_vm.protoShow]))]], 2)
-  }))]) : _vm._e()])
+  }), _c('li', {
+    staticClass: "cancel",
+    on: {
+      "click": function($event) {
+        _vm.show = false
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("取消")])])], 2)]) : _vm._e()])
 },staticRenderFns: []}
 
 /***/ },
@@ -25920,10 +26012,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "black-layer"
   }) : _vm._e(), (_vm.show) ? _c('div', {
     key: "dialog",
-    staticClass: "comfirn"
+    staticClass: "confirm"
   }, [_c('div', {
+    staticClass: "title"
+  }, [_vm._v("\n            " + _vm._s(_vm.title) + "\n        ")]), _c('div', {
     staticClass: "message"
-  }, [_vm._v("\n            " + _vm._s(_vm.message) + "\n        ")]), _c('div', [_c('a', {
+  }, [_vm._v("\n            " + _vm._s(_vm.message) + "\n        ")]), _c('div', {
+    staticClass: "btns"
+  }, [_c('a', {
     staticClass: "btn btn-cancel",
     attrs: {
       "href": "#"
