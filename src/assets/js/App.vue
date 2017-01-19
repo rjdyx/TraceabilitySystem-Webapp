@@ -21,7 +21,7 @@
     }
 </script>
 
-<style>
+<style scoped>
 	.nprogress-spinner {
 	    display: none;
 	    position: fixed;
@@ -40,5 +40,38 @@
 	    border-radius: 50%;
 	    -webkit-animation: nprogress-spinner 400ms linear infinite;
 	    animation: nprogress-spinner 400ms linear infinite;
+	}
+	@keyframes nprogress-spinner {
+		from {
+			transform: rotate(0deg);
+			-ms-transform: rotate(0deg);		/* IE 9 */
+			-webkit-transform: rotate(0deg);	/* Safari and Chrome */
+			-o-transform: rotate(0deg);		/* Opera */
+			-moz-transform: rotate(0deg);		/* Firefox */
+		}
+		to {
+			transform: rotate(360deg);
+			-ms-transform: rotate(360deg);		/* IE 9 */
+			-webkit-transform: rotate(360deg);	/* Safari and Chrome */
+			-o-transform: rotate(360deg);		/* Opera */
+			-moz-transform: rotate(360deg);		/* Firefox */
+		}
+	}
+
+	@-webkit-keyframes nprogress-spinner {
+		from {
+			transform: rotate(0deg);
+			-ms-transform: rotate(0deg);		/* IE 9 */
+			-webkit-transform: rotate(0deg);	/* Safari and Chrome */
+			-o-transform: rotate(0deg);		/* Opera */
+			-moz-transform: rotate(0deg);		/* Firefox */
+		}
+		to {
+			transform: rotate(360deg);
+			-ms-transform: rotate(360deg);		/* IE 9 */
+			-webkit-transform: rotate(360deg);	/* Safari and Chrome */
+			-o-transform: rotate(360deg);		/* Opera */
+			-moz-transform: rotate(360deg);		/* Firefox */
+		}
 	}
 </style>

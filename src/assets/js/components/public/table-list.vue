@@ -155,7 +155,6 @@
     .table-list {
         .list-body {
             li.slide-up-leave-active, li.slide-up-enter{
-              transform: translateY(-10px);
               height: 0px;
               line-height: 0px;
               opacity: 0;
