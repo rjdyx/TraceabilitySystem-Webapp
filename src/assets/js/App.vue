@@ -10,7 +10,6 @@
 
     <div id="app">
         <router-view></router-view>
-        <!-- <span class="mynprogress-spinner"><span class="mynprogress-spinner-icon"></span></span> -->
         <loading></loading>
     </div>
 

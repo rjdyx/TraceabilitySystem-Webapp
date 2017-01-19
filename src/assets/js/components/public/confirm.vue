@@ -52,11 +52,14 @@
 <template>
     <pop-transition>
         <div v-if="show" key="black" class="black-layer"></div>
-        <div v-if="show" key="dialog" class="comfirn">
+        <div v-if="show" key="dialog" class="confirm">
+            <div class="title">
+                {{title}}
+            </div>
             <div class="message">
                 {{message}}
             </div>
-            <div>
+            <div class="btns">
                 <a href="#" @click="cancelMethod" class="btn btn-cancel">{{cancel}}</a>
                 <a href="#" @click="confirmMethod" class="btn btn-confirm">{{confirm}}</a>
             </div>
@@ -71,6 +74,10 @@
             show: {
                 type: Boolean,
                 default: false
+            },
+            title: {
+                type: String,
+                default: '删除选项'
             },
             message: {
                 type: String,
@@ -106,29 +113,50 @@
 <style lang="sass" scoped>
 
 
-    .comfirn {
+    .confirm {
         position: absolute;
         bottom: 0;
         width: 100%;
         color: #9E9E9E;
+        background-color: white;
         z-index: 19920220;
 
-        .message {
-            padding: 45px 0;
+        .title {
+            padding: 18px 0;
+            padding-bottom: 0;
+            background-color: white;
+            color: black;
+            font-weight: 600;
             text-align: center;
-            background-color: #ffffff;
-            border-bottom: 1px solid #d7d7d7;
         }
 
-        .btn {
-            float: left;
-            width: 50%;
-            text-align: center;
-            padding: 15px 0;
+        .message {
+            width: 80%;
+            margin: 0 auto;
+            padding: 17px 0;
+            background-color: #ffffff;
+            // border-bottom: 1px solid #d7d7d7;
         }
+        
+        .btns {
+            
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 24px;
+
+            .btn {
+                display: inline-block;
+                width: 50%;
+                height: 37px;
+                text-align: center;
+                line-height: 37px;
+            }
+        }
+        
 
         a:link, a:visited, a:focus, a:hover, a:active {
-            color: #9E9E9E;
+            color: #6c6c6c;
         }
 
         a:active {
@@ -137,12 +165,15 @@
 
         .btn-confirm {
             background-color: #ffffff;
+            border: 1px solid #d7d7d7;
+            border-radius: 0 40px 40px 0;
         }
 
         .btn-cancel {
             background-color: #ffffff;
-            color: #9E9E9E;
-            border-right: 1px solid #d7d7d7;
+            border: 1px solid #d7d7d7;
+            border-right: 0;
+            border-radius: 40px 0 0 40px;
             box-sizing: border-box;
         }
 
