@@ -20471,11 +20471,11 @@ var routes = [{
         };
 
         __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$mySpinner = function (flag) {
-            // if(!flag){
-            //     $('.loader').css('display', 'none');
-            // }else {
-            //     $('.loader').css('display', 'block');
-            // }
+            if (!flag) {
+                $('.loader').css('display', 'none');
+            } else {
+                $('.loader').css('display', 'block');
+            }
         };
     }
 };
@@ -23340,8 +23340,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('path', {
     attrs: {
-      "stroke": "#2196F3",
-      "fill": "none",
+      "fill": "#2196F3",
       "stroke-width": "1",
       "d": "M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
     }

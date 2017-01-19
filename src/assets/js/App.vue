@@ -24,7 +24,7 @@
 
 <style>
 	.loader {
-	    display: block;
+	    display: none;
 	    position: fixed;
 	    z-index: 2000;
 	    bottom: 105px;

@@ -196,11 +196,11 @@ export default {
         };
 
         Vue.prototype.$mySpinner = (flag) => {
-            // if(!flag){
-            //     $('.loader').css('display', 'none');
-            // }else {
-            //     $('.loader').css('display', 'block');
-            // }
+            if(!flag){
+                $('.loader').css('display', 'none');
+            }else {
+                $('.loader').css('display', 'block');
+            }
         };
     }
 };
