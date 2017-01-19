@@ -20421,9 +20421,9 @@ var routes = [{
 
         __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$mySpinner = function (flag) {
             if (!flag) {
-                $('.nprogress-spinner').css('display', 'none');
+                $('.mynprogress-spinner').css('display', 'none');
             } else {
-                $('.nprogress-spinner').css('display', 'block');
+                $('.mynprogress-spinner').css('display', 'block');
             }
         };
     }
@@ -23165,13 +23165,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('router-view'), _vm._m(0)], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('span', {
-    staticClass: "nprogress-spinner",
-    attrs: {
-      "role": "nprogress-spinner"
-    }
+    staticClass: "mynprogress-spinner"
   }, [_c('span', {
-    staticClass: "nprogress-spinner-icon"
-  }, [_vm._v("111")])])
+    staticClass: "mynprogress-spinner-icon"
+  })])
 }]}
 
 /***/ },

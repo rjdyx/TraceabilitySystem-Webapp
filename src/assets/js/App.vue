@@ -10,7 +10,7 @@
 
     <div id="app">
         <router-view></router-view>
-        <span class="nprogress-spinner" role="nprogress-spinner"><span class="nprogress-spinner-icon">111</span></span>
+        <span class="mynprogress-spinner"><span class="mynprogress-spinner-icon"></span></span>
     </div>
 
 </template>
@@ -22,14 +22,14 @@
 </script>
 
 <style>
-	.nprogress-spinner {
-	    display: none;
+	.mynprogress-spinner {
+	    display: block;
 	    position: fixed;
 	    z-index: 2000;
 	    bottom: 105px;
 	    right: 15px;
 	}
-	.nprogress-spinner-icon {
+	.mynprogress-spinner-icon {
 		display: block;
 	    width: 18px;
 	    height: 18px;
@@ -38,15 +38,15 @@
 	    border-top-color: #5eb95e;
 	    border-left-color: #5eb95e;
 	    border-radius: 50%;
-	    -webkit-animation: nprogress-spinner 400ms linear infinite;
-	    animation: nprogress-spinner 400ms linear infinite;
+	    -webkit-animation: mynprogress-spinner 400ms linear infinite;
+	    animation: mynprogress-spinner 400ms linear infinite;
 	}
 
-	@-webkit-keyframes nprogress-spinner {
+	@-webkit-keyframes mynprogress-spinner {
 	  0%   { -webkit-transform: rotate(0deg); }
 	  100% { -webkit-transform: rotate(360deg); }
 	}
-	@keyframes nprogress-spinner {
+	@keyframes mynprogress-spinner {
 	  0%   { transform: rotate(0deg); }
 	  100% { transform: rotate(360deg); }
 	}

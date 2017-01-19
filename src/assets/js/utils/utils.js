@@ -197,9 +197,9 @@ export default {
 
         Vue.prototype.$mySpinner = (flag) => {
             if(!flag){
-                $('.nprogress-spinner').css('display', 'none');
+                $('.mynprogress-spinner').css('display', 'none');
             }else {
-                $('.nprogress-spinner').css('display', 'block');
+                $('.mynprogress-spinner').css('display', 'block');
             }
         };
     }
