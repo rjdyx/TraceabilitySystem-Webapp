@@ -234,6 +234,9 @@
                 return '密码';
             }
         },
+        mounted () {
+            this.$mySpinner(false);
+        },
         methods: {
 
             ...mapMutations([
