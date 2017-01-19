@@ -10,7 +10,7 @@
 
     <div id="app">
         <router-view></router-view>
-        <span class="nprogress-spinner" role="nprogress-spinner"><span class="nprogress-spinner-icon"></span></span>
+        <span class="nprogress-spinner" role="nprogress-spinner"><span class="nprogress-spinner-icon">111</span></span>
     </div>
 
 </template>

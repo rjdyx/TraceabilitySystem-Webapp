@@ -233,7 +233,7 @@
                             this.$router.push('/webapp')
                         }
                     }).catch(function (error) {
-                        if(error.status == 500) {
+                        if(error.status != 200) {
                             this.loginBtn = '登录'
                             this.isLogin = false
                             this.$alert('连接出错，请重新登录', 'e')
