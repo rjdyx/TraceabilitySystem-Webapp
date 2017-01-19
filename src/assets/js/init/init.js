@@ -4,7 +4,7 @@ import Vue from 'vue'
 Vue.component('confirm', require('../components/public/confirm.vue'));
 Vue.component('PopTransition', require('../components/public/pop-transition.vue'));
 Vue.component('pop-select',require('../components/public/pop-select.vue'));
-// Vue.component('table-list',require('../components/public/table-list.vue'));
+Vue.component('loading',require('../components/public/loading.vue'));
 
 
 
