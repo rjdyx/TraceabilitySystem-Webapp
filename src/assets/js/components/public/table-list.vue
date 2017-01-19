@@ -44,9 +44,9 @@
             <transition name="slide-fade">
                 <transition-group name="slide-up" tag="ul" key="tbody" class="list-body" v-if="showUp">
                     <template v-for="(item, index) in list">
-                            <li v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index}" :id="searchUrl + item.id" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" name="order">
+                            <li v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:item.serial_state, tip:tipMsg}" :id="searchUrl + item.id" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" name="order">
                                 <span class="checked" name="order">
-                                    <input :value="{'id':item.id, 'index':index}" v-model="deleteLists" type="checkbox">
+                                    <input :value="{'id':item.id, 'index':index, flag:item.serial_state}" v-model="deleteLists" type="checkbox">
                                 </span>
                                 <template v-for="(proto, indexProto) in protos">
                                     <span v-if="component[proto] != null" :style="{width: widths[indexProto] + '%'}" :name="proto" class="td-note">
@@ -235,6 +235,8 @@
                 showConfirm: false,
                 // vue实例
                 self: this,
+                // 无法删除时的提示信息
+                tipMsg: '被使用，无法删除',
                 // 分页的总页数
                 total: 1,
                 // 搜索的参数对象
@@ -289,7 +291,7 @@
                 if(e.target.checked) {
                     this.deleteLists = [];
                     for(let index of this.list.keys()) {
-                        this.deleteLists.push({'id':this.list[index].id, 'index':index});
+                        this.deleteLists.push({'id':this.list[index].id, 'index':index, 'flag':this.list[index].serial_state});
                     }
                 }else {
                     this.deleteLists = [];
@@ -374,6 +376,12 @@
             * @param index
             */
             showConfirmDialog (flag, id=0, index=0) {
+                for(let deleteList of this.deleteLists) {
+                    if(deleteList.flag) {
+                        this.$alert(this.tipMsg);
+                        return false;
+                    }
+                }
                 if(flag == 1 &&this.deleteLists.length == 0){
                     this.$alert('请选择列表项');
                 }else {

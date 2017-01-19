@@ -7,11 +7,19 @@ exports.touchDelete = () => {
         let time = null;
         el.addEventListener("touchstart", (event) => {
             time = setTimeout(() => {
+                let vm = binding.value.vm;
                 let type = binding.value.type;
                 let id = binding.value.id;
                 let index = binding.value.index;
-                let deleteFunction = binding.arg;
-                binding.value.vm[deleteFunction](type, id, index);
+                let flag = binding.value.flag;
+                let tip = binding.value.tip;
+                if(!flag) {
+                    let deleteFunction = binding.arg;
+                    vm[deleteFunction](type, id, index);
+                }else {
+                    vm.$alert(tip);
+                }
+                
             }, 500);
         });
 
