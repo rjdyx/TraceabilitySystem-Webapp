@@ -45,6 +45,37 @@ exports.focus = () => {
 };
 
 /**
+ * 失去焦点
+ * @param {Array} 传入的参数必须为数组，数组第一个值为vue实例
+ */
+exports.unfocus = () => {
+    return {
+        inserted:(el, binding, vnode) => {
+            // 参数必须为数组
+            if(!(binding.value instanceof Array)){
+
+                console.error('arguments must be array in v-touchstart');
+
+            }else if(binding.value.length >= 1) {// 且参数数组不能为空
+
+                // 参数数组第一个数据必须是vue实例
+                if(!(binding.value[0] instanceof Vue && binding.value[0].constructor != Vue)){
+                    console.error('the first argument must be Vue instance in v-touchstart');
+                }else {
+                    let params = binding.value.slice(1);
+                    let myFunction = binding.arg;
+                    let $el = $(el);
+                    $el.blur(() => {
+                        binding.value[0][myFunction](event, params)
+                    });
+                }
+            }
+            
+        }
+    };
+};
+
+/**
  * 触摸开始
  * @param {Array} 传入的参数必须为数组，数组第一个值为vue实例
  */

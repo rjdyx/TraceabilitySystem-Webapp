@@ -8,13 +8,17 @@
  */
 <template>
     <div class="content" id="mynprogress">
-        <div class="logo"></div>
-        <form @submit.prevent="login">
+        <transition name="hide-logo" mode="out-in">
+            <div class="logo" v-if="showLogo" key="logo"></div>
+            <div class="logo-hide" v-if="!showLogo" key="logo-hide"></div>
+        </transition>
+        <form @submit.prevent="login" :style="formPadding">
             <ul>
                 <li>
                     <div v-if="isError" class="err-tip">用户名或密码错误</div>
                     <input 
                     v-focus 
+                    v-touchstart:hideLogo="[self]" 
                     v-model="user.login" 
                     v-validate.initial="user.login" 
                     data-vv-rules="required" 
@@ -26,6 +30,7 @@
                 </li>
                 <li>
                     <input 
+                    v-touchstart:hideLogo="[self]"
                     v-model="user.password" 
                     v-validate.initial="user.password" 
                     data-vv-rules="required" 
@@ -69,6 +74,14 @@
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: bottom;
+        }
+
+        .logo-hide {
+            width: 0;
+            height: 0;
+            margin: 0 auto;
+            padding-top: pxToRem(100);
+            margin-bottom: pxToRem(50);
         }
 
         .err-tip {
@@ -139,6 +152,20 @@
             }
         }
     }
+
+    .hide-logo-enter-active, .hide-logo-leave-active{
+      transition: all .8s ease;
+    }
+
+    .content {
+        .hide-logo-leave-active, .hide-logo-enter{
+          width: 0;
+          height: 0;
+          opacity: 0;
+          margin-bottom: 0;
+        }
+    }
+    
       
     /*placeholder*/
     ::-webkit-input-placeholder {
@@ -171,6 +198,7 @@
         name: 'Login',
         data(){
             return{
+                self: this,
                 user: {
                     login: '',
                     password: ''
@@ -184,7 +212,10 @@
                 // 登录按钮的文本
                 loginBtn: '登录',
                 // 登录按钮是否可用的标志，false表示可用
-                isLogin: false
+                isLogin: false,
+                // 是否显示logo
+                showLogo: true,
+                formPadding: null
             }
         },
         computed: {
@@ -213,7 +244,7 @@
              * 登录
              */
             login () {
-                
+                this.showLogoFn();
                 // 验证表单
                 this.$validator.validateAll();
                 // 如果表单报错则不提交
@@ -240,6 +271,14 @@
                         }
                     });
                 }
+            },
+
+            hideLogo () {
+                this.showLogo = false;
+            },
+
+            showLogoFn () {
+                this.showLogo = true;
             }
         }
     }

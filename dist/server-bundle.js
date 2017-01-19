@@ -19847,6 +19847,33 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -19855,6 +19882,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
     name: 'Login',
     data: function data() {
         return {
+            self: this,
             user: {
                 login: '',
                 password: ''
@@ -19868,7 +19896,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             // 登录按钮的文本
             loginBtn: '登录',
             // 登录按钮是否可用的标志，false表示可用
-            isLogin: false
+            isLogin: false,
+            // 是否显示logo
+            showLogo: true,
+            formPadding: null
         };
     },
 
@@ -19896,6 +19927,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         login: function login() {
             var _this = this;
 
+            this.showLogoFn();
             // 验证表单
             this.$validator.validateAll();
             // 如果表单报错则不提交
@@ -19922,6 +19954,12 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                     }
                 });
             }
+        },
+        hideLogo: function hideLogo() {
+            this.showLogo = false;
+        },
+        showLogoFn: function showLogoFn() {
+            this.showLogo = true;
         }
     })
 };
@@ -19971,6 +20009,38 @@ exports.focus = function () {
     return {
         inserted: function inserted(el, binding, vnode) {
             el.focus();
+        }
+    };
+};
+
+/**
+ * 失去焦点
+ * @param {Array} 传入的参数必须为数组，数组第一个值为vue实例
+ */
+exports.unfocus = function () {
+    return {
+        inserted: function inserted(el, binding, vnode) {
+            // 参数必须为数组
+            if (!(binding.value instanceof Array)) {
+
+                console.error('arguments must be array in v-touchstart');
+            } else if (binding.value.length >= 1) {
+                // 且参数数组不能为空
+
+                // 参数数组第一个数据必须是vue实例
+                if (!(binding.value[0] instanceof Vue && binding.value[0].constructor != Vue)) {
+                    console.error('the first argument must be Vue instance in v-touchstart');
+                } else {
+                    (function () {
+                        var params = binding.value.slice(1);
+                        var myFunction = binding.arg;
+                        var $el = $(el);
+                        $el.blur(function () {
+                            binding.value[0][myFunction](event, params);
+                        });
+                    })();
+                }
+            }
         }
     };
 };
@@ -24778,9 +24848,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "mynprogress"
     }
-  }, [_c('div', {
+  }, [_c('transition', {
+    attrs: {
+      "name": "hide-logo",
+      "mode": "out-in"
+    }
+  }, [(_vm.showLogo) ? _c('div', {
+    key: "logo",
     staticClass: "logo"
-  }), _c('form', {
+  }) : _vm._e(), (!_vm.showLogo) ? _c('div', {
+    key: "logo-hide",
+    staticClass: "logo-hide"
+  }) : _vm._e()]), _c('form', {
+    style: (_vm.formPadding),
     on: {
       "submit": function($event) {
         $event.preventDefault();
@@ -24794,15 +24874,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       name: "focus",
       rawName: "v-focus"
     }, {
+      name: "touchstart",
+      rawName: "v-touchstart:hideLogo",
+      value: ([_vm.self]),
+      expression: "[self]",
+      arg: "hideLogo"
+    }, {
       name: "model",
       rawName: "v-model",
       value: (_vm.user.login),
-      expression: "user.login"
+      expression: "user.login",
+      arg: "hideLogo"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
       value: (_vm.user.login),
       expression: "user.login",
+      arg: "hideLogo",
       modifiers: {
         "initial": true
       }
@@ -24828,15 +24916,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _c('span')]), _c('li', [_c('input', {
     directives: [{
+      name: "touchstart",
+      rawName: "v-touchstart:hideLogo",
+      value: ([_vm.self]),
+      expression: "[self]",
+      arg: "hideLogo"
+    }, {
       name: "model",
       rawName: "v-model",
       value: (_vm.user.password),
-      expression: "user.password"
+      expression: "user.password",
+      arg: "hideLogo"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
       value: (_vm.user.password),
       expression: "user.password",
+      arg: "hideLogo",
       modifiers: {
         "initial": true
       }
@@ -24867,7 +24963,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "submit",
       "disabled": _vm.isLogin
     }
-  }, [_vm._v(_vm._s(_vm.loginBtn))])])])])])
+  }, [_vm._v(_vm._s(_vm.loginBtn))])])])])], 1)
 },staticRenderFns: []}
 
 /***/ },
