@@ -21,7 +21,7 @@
     }
 </script>
 
-<style scoped>
+<style>
 	.nprogress-spinner {
 	    display: none;
 	    position: fixed;
@@ -41,37 +41,13 @@
 	    -webkit-animation: nprogress-spinner 400ms linear infinite;
 	    animation: nprogress-spinner 400ms linear infinite;
 	}
-	@keyframes nprogress-spinner {
-		from {
-			transform: rotate(0deg);
-			-ms-transform: rotate(0deg);		/* IE 9 */
-			-webkit-transform: rotate(0deg);	/* Safari and Chrome */
-			-o-transform: rotate(0deg);		/* Opera */
-			-moz-transform: rotate(0deg);		/* Firefox */
-		}
-		to {
-			transform: rotate(360deg);
-			-ms-transform: rotate(360deg);		/* IE 9 */
-			-webkit-transform: rotate(360deg);	/* Safari and Chrome */
-			-o-transform: rotate(360deg);		/* Opera */
-			-moz-transform: rotate(360deg);		/* Firefox */
-		}
-	}
 
 	@-webkit-keyframes nprogress-spinner {
-		from {
-			transform: rotate(0deg);
-			-ms-transform: rotate(0deg);		/* IE 9 */
-			-webkit-transform: rotate(0deg);	/* Safari and Chrome */
-			-o-transform: rotate(0deg);		/* Opera */
-			-moz-transform: rotate(0deg);		/* Firefox */
-		}
-		to {
-			transform: rotate(360deg);
-			-ms-transform: rotate(360deg);		/* IE 9 */
-			-webkit-transform: rotate(360deg);	/* Safari and Chrome */
-			-o-transform: rotate(360deg);		/* Opera */
-			-moz-transform: rotate(360deg);		/* Firefox */
-		}
+	  0%   { -webkit-transform: rotate(0deg); }
+	  100% { -webkit-transform: rotate(360deg); }
+	}
+	@keyframes nprogress-spinner {
+	  0%   { transform: rotate(0deg); }
+	  100% { transform: rotate(360deg); }
 	}
 </style>
