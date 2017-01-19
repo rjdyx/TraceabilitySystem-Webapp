@@ -71,7 +71,15 @@
 
                 <tr>
                     <td class="label-tit"><label for="manure_name">施肥种类</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="log.manure_name" class="input-pop" type="text" placeholder="" id="manure_name" name="manure_name"></td>
+                    <td class="input-pop" colspan="2">
+                        <pop-select name="manure_name"
+                        :items="manureNames"
+                        :defaultIndex="0"
+                        protoBack="manure_category_id"
+                        protoShow="manure_category_name"
+                        @callback="getManureName"
+                    ></pop-select>
+                    </td>
                 </tr>
 
                 <tr>
@@ -81,17 +89,41 @@
 
                 <tr>
                     <td class="label-tit"><label for="fertilize_way">施肥方式</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="log.fertilize_way" class="input-pop" type="text" placeholder="" id="fertilize_way" name="fertilize_way"></td>
+                    <td class="input-pop" colspan="2">
+                    <pop-select name="fertilize_way"
+                        :items="fertilizeWays"
+                        :defaultIndex="0"
+                        protoBack="fertilize_way"
+                        protoShow="fertilize_way"
+                        @callback="getFertilizeWay"
+                    ></pop-select>
+                    </td>
                 </tr>
 
                 <tr>
                     <td class="label-tit"><label for="medicament_name">病虫害名称</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="log.medicament_name" class="input-pop" type="text" placeholder="" id="medicament_name" name="medicament_name"></td>
+                    <td class="input-pop" colspan="2">
+                        <pop-select name="medicament_name"
+                            :items="medicamentNames"
+                            :defaultIndex="0"
+                            protoBack="medicament_category_id"
+                            protoShow="medicament_name"
+                            @callback="getMedicamentName"
+                        ></pop-select>
+                    </td>
                 </tr>
 
                 <tr>
                     <td class="label-tit"><label for="spray_way">施药方式</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="log.spray_way" class="input-pop" type="text" placeholder="" id="spray_way" name="spray_way"></td>
+                    <td class="input-pop" colspan="2">
+                    <pop-select name="spray_way"
+                        :items="sprayWays"
+                        :defaultIndex="0"
+                        protoBack="spray_way"
+                        protoShow="spray_way"
+                        @callback="getSprayWay"
+                    ></pop-select>
+                    </td>
                 </tr>
 
                 <tr>
@@ -181,6 +213,14 @@
                     harvest_amount: 0,
                     cultivate_man: ''
                 },
+                // 施肥方式
+                fertilizeWays: [],
+                // 施肥种类
+                manureNames: [],
+                // 病虫害名称
+                medicamentNames: [],
+                // 施药方式
+                sprayWays: []
             }
         },
         mounted () {
@@ -194,6 +234,12 @@
             getAllMsg () {
                 this.$http.get(this.$adminUrl('dailylog') + '/' + this.cultivateId + '/edit').then((response)=>{
                     this.$set(this, 'log', response.body.dailylog);
+                    this.$set(this, 'fertilizeWays', response.body.fertilize_way);
+                    this.$set(this, 'manureNames', response.body.manure_category_name);
+                    this.$set(this, 'medicamentNames', response.body.medicament_category_name);
+                    this.$set(this, 'sprayWays', response.body.spray_way);
+
+
                     // 将后台传过来的log对象里面值null的属性改成空字符串
                     for(let key of Object.keys(this.log)){
                         if(this.log[key] == null){
@@ -233,6 +279,38 @@
             cancelPanel () {
                 this.$emit('closeEdit');
             },
+
+            /**
+             * 获取施肥方式
+             * @param  {String} FertilizeWay
+             */
+            getFertilizeWay (FertilizeWay) {
+                this.log.fertilize_way = FertilizeWay;
+            },
+
+            /**
+             * 获取施肥种类
+             * @param  {Integer} ManureNameId 
+             */
+            getManureName (ManureNameId) {
+                this.log.manure_name = ManureNameId;
+            },
+
+            /**
+             * 获取病虫害名称
+             * @param  {Integer} MedicamentNameId
+             */
+            getMedicamentName (MedicamentNameId) {
+                this.log.medicament_name = MedicamentNameId;
+            },
+
+            /**
+             * 获取施药方式
+             * @param  {String} SprayWay 
+             */
+            getSprayWay (SprayWay) {
+                this.log.spray_way = SprayWay;
+            }
         },
     }
 

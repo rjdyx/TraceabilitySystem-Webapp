@@ -60,6 +60,7 @@
                     <template v-if="protoBack == ''">{{item}}</template>
                     <template v-else>{{item[protoShow]}}</template>
                 </li>
+                <li class="cancel" @click="show=false"><a href="#">取消</a></li>
             </ul>
         </div>
     </div>
@@ -190,7 +191,7 @@
     }
     ul{
       max-height:pxToRem(200);
-      overflow: hidden;
+      overflow: auto;
       background:#fff;
     }
     ul li{
@@ -208,6 +209,23 @@
         color: #6A6A6A;
         text-align:center;
         border-bottom:1px solid #CDCDCD; 
+    }
+    .cancel {
+        color: #6A6A6A;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        a:link, a:visited, a:focus, a:hover, a:active {
+            color: #6A6A6A;
+        }
+
+        a:active {
+            background-color: #f0f0f0;
+        }
     }
 }    
 .class-opacity{
