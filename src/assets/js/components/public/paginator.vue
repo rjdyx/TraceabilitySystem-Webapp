@@ -150,6 +150,7 @@
                 if(!this.leftBtn) {
                     return ;
                 }
+                this.$emit('lastPageEvent');
                 this.$http.get(this.$adminUrl(this.url)+ '?page=' + lastIndex + '&' + this.$objectToParam(this.paginatorParams)).then((response) => {
                     for(let proto of Object.keys(response.body)){
                         if(response.body[proto] instanceof Object){
@@ -172,6 +173,7 @@
                 if(!this.rightBtn) {
                     return ;
                 }
+                this.$emit('nextPageEvent');
                 this.$http.get(this.$adminUrl(this.url)+ '?page=' + nestIndex + '&' + this.$objectToParam(this.paginatorParams)).then((response) => {
                     for(let proto of Object.keys(response.body)){
                         if(response.body[proto] instanceof Object){

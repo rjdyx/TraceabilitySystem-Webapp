@@ -118,6 +118,8 @@
                 :total="total"
                 :url="searchUrl + '/query'"
                 :paginatorParams="params"
+                @lastPageEvent="showUp=false"
+                @nextPageEvent="showUp=false"
                 @result="updateListByMore"
             ></paginator> 
         </div>
@@ -520,7 +522,8 @@
             * @param List
             */
             updateListByMore(newList) {
-                this.slide = 'slide-fade'
+                this.showUp = true;
+                this.init();
                 this.$set(this, 'list', newList.data)
                 this.total = newList.last_page;
                 if(newList.query_text != undefined){

@@ -28,7 +28,7 @@
 				searchUrl: 'record',
 				theads: ['日期','天气','操作人'],
 				protos: ['date','weathe','recorder'],
-				widths: [32, 24, 17]
+				widths: [28, 28, 17]
 			}
 		},
 		components: {
