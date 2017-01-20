@@ -154,7 +154,7 @@
     }
 
     .hide-logo-enter-active, .hide-logo-leave-active{
-      transition: all .8s ease;
+      transition: all .5s ease;
     }
 
     .content {

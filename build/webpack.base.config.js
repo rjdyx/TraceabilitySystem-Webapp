@@ -54,17 +54,15 @@ module.exports = {
                 // loader: 'style-loader!css-loader!sass-loader'
             },
             {
-                test   : /\.woff/,
-                loader : 'url?prefix=font/&limit=10000&mimetype=application/font-woff'
-            }, {
-                test   : /\.ttf/,
-                loader : 'file?prefix=font/'
-            }, {
-                test   : /\.eot/,
-                loader : 'file?prefix=font/'
-            }, {
-                test   : /\.svg/,
-                loader : 'file?prefix=font/'
+                test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+                loader: 'file-loader'
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
+                loader: 'file-loader',
+                query: {
+                    name: '[name].[ext]?[hash]'
+                }
             }
         ]
     },

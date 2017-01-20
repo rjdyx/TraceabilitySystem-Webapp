@@ -18371,6 +18371,53 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -18428,8 +18475,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
             list: [],
             // 存放批量删除的列表项的数组
             deleteLists: [],
+            // 是否全选
+            isAllCheck: false,
             // 临时记录待删除的列表项信息
-            deleteList: { 'id': 0, 'index': 0 },
+            deleteList: { 'id': 0, 'index': 0, 'flag': null },
             // 单个删除或批量删除
             oneOrBatch: 0,
             // 是否显示新增模块
@@ -18473,11 +18522,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
     methods: {
 
         /**
+         * 初始化数据
+         */
+        init: function init() {
+            this.deleteLists = [];
+            this.deleteList = { 'id': 0, 'index': 0, 'flag': null };
+            this.oneOrBatch = 0;
+            this.isAllCheck = false;
+        },
+
+
+        /**
          * 获取所有列表项信息
          */
         getAllLists: function getAllLists(url) {
             var _this = this;
 
+            this.init();
             this.showUp = false;
             this.$index(this, url).then(function (response) {
                 var data = response.body[url + 's'];
@@ -18498,8 +18559,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
         * 全选或取消全选
         * @param e
         */
-        selectAll: function selectAll(e) {
-            if (e.target.checked) {
+        selectAll: function selectAll() {
+            if (!this.isAllCheck) {
+                this.isAllCheck = true;
                 this.deleteLists = [];
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
@@ -18526,8 +18588,82 @@ Object.defineProperty(exports, "__esModule", { value: true });
                     }
                 }
             } else {
+                this.isAllCheck = false;
                 this.deleteLists = [];
             }
+        },
+
+
+        /**
+         * 将选中的checkbox信息存入deleteLists
+         * @param  {Object} checkedMsg 
+         */
+        checkedBox: function checkedBox(checkedMsg) {
+            var _iteratorNormalCompletion2 = true;
+            var _didIteratorError2 = false;
+            var _iteratorError2 = undefined;
+
+            try {
+                for (var _iterator2 = Object.keys(this.deleteLists)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                    var index = _step2.value;
+
+                    if (this.deleteLists[index].id == checkedMsg.id) {
+                        this.deleteLists.splice(index, 1);
+                        return true;
+                    }
+                }
+            } catch (err) {
+                _didIteratorError2 = true;
+                _iteratorError2 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                        _iterator2.return();
+                    }
+                } finally {
+                    if (_didIteratorError2) {
+                        throw _iteratorError2;
+                    }
+                }
+            }
+
+            this.deleteLists.push(checkedMsg);
+        },
+
+
+        /**
+         * 判断checkbox是否被选中
+         * @param  {Integer}  id
+         */
+        isCheck: function isCheck(id) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.deleteLists)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var index = _step3.value;
+
+                    if (this.deleteLists[index].id == id) {
+                        return true;
+                    }
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+
+            return false;
         },
 
 
@@ -18556,54 +18692,54 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
             if (this.deleteLists.length != 0) {
                 var ids = [];
-                var _iteratorNormalCompletion2 = true;
-                var _didIteratorError2 = false;
-                var _iteratorError2 = undefined;
+                var _iteratorNormalCompletion4 = true;
+                var _didIteratorError4 = false;
+                var _iteratorError4 = undefined;
 
                 try {
-                    for (var _iterator2 = this.deleteLists[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                        var deleteList = _step2.value;
+                    for (var _iterator4 = this.deleteLists[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                        var deleteList = _step4.value;
 
                         ids.push(deleteList.id);
                     }
                 } catch (err) {
-                    _didIteratorError2 = true;
-                    _iteratorError2 = err;
+                    _didIteratorError4 = true;
+                    _iteratorError4 = err;
                 } finally {
                     try {
-                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                            _iterator2.return();
+                        if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                            _iterator4.return();
                         }
                     } finally {
-                        if (_didIteratorError2) {
-                            throw _iteratorError2;
+                        if (_didIteratorError4) {
+                            throw _iteratorError4;
                         }
                     }
                 }
 
                 this.$batchDestroy(this, this.searchUrl, ids).then(function (response) {
                     _this3.deleteLists = _this3.$reverseObj(_this3.deleteLists, 'index');
-                    var _iteratorNormalCompletion3 = true;
-                    var _didIteratorError3 = false;
-                    var _iteratorError3 = undefined;
+                    var _iteratorNormalCompletion5 = true;
+                    var _didIteratorError5 = false;
+                    var _iteratorError5 = undefined;
 
                     try {
-                        for (var _iterator3 = _this3.deleteLists[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                            var deleteList = _step3.value;
+                        for (var _iterator5 = _this3.deleteLists[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                            var deleteList = _step5.value;
 
                             _this3.list.splice(deleteList.index, 1);
                         }
                     } catch (err) {
-                        _didIteratorError3 = true;
-                        _iteratorError3 = err;
+                        _didIteratorError5 = true;
+                        _iteratorError5 = err;
                     } finally {
                         try {
-                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                                _iterator3.return();
+                            if (!_iteratorNormalCompletion5 && _iterator5.return) {
+                                _iterator5.return();
                             }
                         } finally {
-                            if (_didIteratorError3) {
-                                throw _iteratorError3;
+                            if (_didIteratorError5) {
+                                throw _iteratorError5;
                             }
                         }
                     }
@@ -18663,13 +18799,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
         showConfirmDialog: function showConfirmDialog(flag) {
             var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
             var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-            var _iteratorNormalCompletion4 = true;
-            var _didIteratorError4 = false;
-            var _iteratorError4 = undefined;
+            var _iteratorNormalCompletion6 = true;
+            var _didIteratorError6 = false;
+            var _iteratorError6 = undefined;
 
             try {
-                for (var _iterator4 = this.deleteLists[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-                    var deleteList = _step4.value;
+                for (var _iterator6 = this.deleteLists[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+                    var deleteList = _step6.value;
 
                     if (deleteList.flag) {
                         this.$alert(this.tipMsg);
@@ -18677,16 +18813,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
                     }
                 }
             } catch (err) {
-                _didIteratorError4 = true;
-                _iteratorError4 = err;
+                _didIteratorError6 = true;
+                _iteratorError6 = err;
             } finally {
                 try {
-                    if (!_iteratorNormalCompletion4 && _iterator4.return) {
-                        _iterator4.return();
+                    if (!_iteratorNormalCompletion6 && _iterator6.return) {
+                        _iterator6.return();
                     }
                 } finally {
-                    if (_didIteratorError4) {
-                        throw _iteratorError4;
+                    if (_didIteratorError6) {
+                        throw _iteratorError6;
                     }
                 }
             }
@@ -23626,48 +23762,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "name": "order"
       }
-    }, [_c('input', {
-      directives: [{
-        name: "model",
-        rawName: "v-model",
-        value: (_vm.deleteLists),
-        expression: "deleteLists"
-      }],
-      attrs: {
-        "type": "checkbox"
-      },
-      domProps: {
-        "value": {
-          'id': item.id,
-          'index': index,
-          flag: item.serial_state
-        },
-        "checked": Array.isArray(_vm.deleteLists) ? _vm._i(_vm.deleteLists, {
-          'id': item.id,
-          'index': index,
-          flag: item.serial_state
-        }) > -1 : (_vm.deleteLists)
+    }, [_c('span', {
+      class: {
+        'f-checkbox': true, 'f-checkbox-check': _vm.isCheck(item.id)
       },
       on: {
         "click": function($event) {
-          var $$a = _vm.deleteLists,
-            $$el = $event.target,
-            $$c = $$el.checked ? (true) : (false);
-          if (Array.isArray($$a)) {
-            var $$v = {
-                'id': item.id,
-                'index': index,
-                flag: item.serial_state
-              },
-              $$i = _vm._i($$a, $$v);
-            if ($$c) {
-              $$i < 0 && (_vm.deleteLists = $$a.concat($$v))
-            } else {
-              $$i > -1 && (_vm.deleteLists = $$a.slice(0, $$i).concat($$a.slice($$i + 1)))
-            }
-          } else {
-            _vm.deleteLists = $$c
-          }
+          _vm.checkedBox({
+            'id': item.id,
+            'index': index,
+            flag: item.serial_state
+          })
         }
       }
     })]), _vm._l((_vm.protos), function(proto, indexProto) {
@@ -23729,10 +23834,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "name": "order"
     }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "name": "List_check"
+  }, [_c('span', {
+    class: {
+      'f-checkbox': true, 'f-checkbox-check': _vm.isAllCheck
     },
     on: {
       "click": _vm.selectAll

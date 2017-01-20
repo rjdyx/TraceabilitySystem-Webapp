@@ -44,9 +44,14 @@
             <transition name="slide-fade">
                 <transition-group name="slide-up" tag="ul" key="tbody" class="list-body" v-if="showUp">
                     <template v-for="(item, index) in list">
-                            <li v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:item.serial_state, tip:tipMsg}" :id="searchUrl + item.id" :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" :key="searchUrl + item.id" name="order">
+                            <li 
+                                v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:item.serial_state, tip:tipMsg}" 
+                                :id="searchUrl + item.id" 
+                                :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" 
+                                :key="searchUrl + item.id" 
+                                name="order">
                                 <span class="checked" name="order">
-                                    <input :value="{'id':item.id, 'index':index, flag:item.serial_state}" v-model="deleteLists" type="checkbox">
+                                    <span :class="{'f-checkbox':true, 'f-checkbox-check': isCheck(item.id)}" @click="checkedBox({'id':item.id, 'index':index, flag:item.serial_state})"></span>
                                 </span>
                                 <template v-for="(proto, indexProto) in protos">
                                     <span v-if="component[proto] != null" :style="{width: widths[indexProto] + '%'}" :name="proto" class="td-note">
@@ -79,7 +84,7 @@
             <div class="list-foot">
                 <div class="list-foot-tr">
                     <span  name="order">
-                        <input @click="selectAll" type="checkbox" name="List_check">
+                        <span :class="{'f-checkbox':true, 'f-checkbox-check': isAllCheck}" @click="selectAll"></span>
                     </span>
                     <span style="width: 86%">
                         <button @click="showConfirmDialog(1)" class="btn btn-del" type="button">删除</button>
@@ -114,7 +119,49 @@
     @import "../../../sass/function";
     @import "../../../sass/_percent.scss";
 
+    .f-checkbox {
+        position: relative;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #bfcbd9;
+        border-radius: 4px;
+        vertical-align: middle;
+    }
 
+    .f-checkbox-check {
+        background-color: #009acb;
+        border-color: #009acb;
+    }
+
+    .f-checkbox-check::after{
+        position: absolute;
+        left: 6px;
+        top: 2px;
+        width:4px;
+        height:8px;
+        content:"1";
+        box-sizing:content-box;
+        border:2px solid #fff;
+        border-left:0;
+        border-top:0;
+        color: rgba(255, 0, 0, 0);
+
+        transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        
+
+        transition:transform .15s cubic-bezier(.71,-.46,.88,.6) .05s;
+
+        -webkit-transition:transform .15s cubic-bezier(.71,-.46,.88,.6) .05s;
+        -ms-transform-origin:center;
+        -webkit-transform-origin:center;
+
+        transform-origin:center;
+        -ms-transform-origin:center;
+        -webkit-transform-origin:center;
+    }
 
     span[name="order"] {
         width: 14%;
@@ -221,8 +268,10 @@
                 list: [],
                 // 存放批量删除的列表项的数组
                 deleteLists: [],
+                // 是否全选
+                isAllCheck: false,
                 // 临时记录待删除的列表项信息
-                deleteList: {'id':0, 'index': 0},
+                deleteList: {'id':0, 'index': 0, 'flag': null},
                 // 单个删除或批量删除
                 oneOrBatch: 0,
                 // 是否显示新增模块
@@ -265,9 +314,20 @@
         methods: {
 
             /**
+             * 初始化数据
+             */
+            init () {
+                this.deleteLists = [];
+                this.deleteList = {'id':0, 'index': 0, 'flag': null};
+                this.oneOrBatch = 0;
+                this.isAllCheck = false;
+            },
+
+            /**
              * 获取所有列表项信息
              */
             getAllLists (url) {
+                this.init();
                 this.showUp = false;
                 this.$index(this, url).then((response) => {
                     let data = response.body[url + 's'];
@@ -287,15 +347,44 @@
             * 全选或取消全选
             * @param e
             */
-            selectAll (e) {
-                if(e.target.checked) {
+            selectAll () {
+                if(!this.isAllCheck) {
+                    this.isAllCheck = true;
                     this.deleteLists = [];
                     for(let index of this.list.keys()) {
                         this.deleteLists.push({'id':this.list[index].id, 'index':index, 'flag':this.list[index].serial_state});
                     }
                 }else {
+                    this.isAllCheck = false;
                     this.deleteLists = [];
                 }
+            },
+
+            /**
+             * 将选中的checkbox信息存入deleteLists
+             * @param  {Object} checkedMsg 
+             */
+            checkedBox (checkedMsg) {
+                for(let index of Object.keys(this.deleteLists)) {
+                    if(this.deleteLists[index].id == checkedMsg.id) {
+                        this.deleteLists.splice(index, 1);
+                        return true;
+                    }
+                }
+                this.deleteLists.push(checkedMsg);
+            },
+
+            /**
+             * 判断checkbox是否被选中
+             * @param  {Integer}  id
+             */
+            isCheck (id) {
+                for(let index of Object.keys(this.deleteLists)) {
+                    if(this.deleteLists[index].id == id) {
+                        return true;
+                    }
+                }
+                return false;
             },
 
             /**
