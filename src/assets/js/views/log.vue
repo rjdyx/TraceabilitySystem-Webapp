@@ -80,7 +80,9 @@
     @import "../../sass/function";
     @import "../../sass/_percent.scss";
 
-
+    #log {
+        padding-bottom: pxToRem(92);
+    }
 
     th[name="planta_name"] {
         width: 32%;
