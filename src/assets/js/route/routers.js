@@ -48,6 +48,9 @@ const fourOFour = require('../views/404.vue')
 // }
 const dailylog = require('../views/dailylog.vue')
 
+//---------------------------历史图片------------------------------\
+const record = require('../views/record.vue')
+
 //=============================种植管理====================================
 
 //---------------------------基础信息管理----------------------------------
@@ -90,6 +93,12 @@ const routes = [
                 path: 'dailylog',
                 name: 'dailylog',
                 component: dailylog,
+                meta: { requiresAuth: true }
+            },
+            {
+                path: 'record',
+                name: 'record',
+                component: record,
                 meta: { requiresAuth: true }
             }
         ]

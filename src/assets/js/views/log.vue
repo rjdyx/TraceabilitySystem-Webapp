@@ -16,7 +16,7 @@
             :params="params"
             @callback="updateList"
         >
-            <button @click="putAllStore" class="stl-btn">提交内容</button>
+            <button @click="show = true" class="stl-btn">提交内容</button>
         </search>
 
         <table class="table-list">
@@ -68,7 +68,7 @@
         <confirm
             :show="show"
             :message="message"
-            @confirmAction="showdailylog"
+            @confirmAction="putAllStore(1)"
             @cancelAction="show=false"
         ></confirm>
         
@@ -160,6 +160,8 @@
                 showItemDetail: '',
                 // 临时存储种植区项
                 plantaTmp: null,
+                show: false,
+                message: '是否保存当前内容并生成图片',
             }
         },
         computed: {
@@ -238,26 +240,22 @@
             /**
              * 提交种植场对应种植区所有信息
              */
-            putAllStore () {
-                this.$http.post(this.$adminUrl('dailylog/allstore'), this.params.params).then((response) => {
-                    //判断今天是否提交
-                    if(response.data == 'false'){
-                        this.$alert('今天已经提交');
-                        this.show = false;
-                    }else{
-                        this.show = true;
-                    }
+            putAllStore (num) {
+                this.$http.post(this.$adminUrl('dailylog/allstore'), {params: this.params.params}).then((response) => {
+                    this.show = false
+                    this.$alert('操作成功','s')
                 }, (response) => {
                     this.$alert('连接出错', 'e');
                 });
+                //等于1表示是生成图片
+                if (num == 1) {
+                    this.$http.post(this.$adminUrl('dailylog/wad')).then((response) => {
+                        this.$router.push('/webapp/dailylog')
+                    },(response) => {
+                        this.$alert('连接出错', 'e')
+                    })
+                }
             },
-
-            /**
-             * 跳转生成图片日志
-             */
-            showdailylog () {
-                this.$router.push('/dailylog'); 
-            }, 
 
             /**
              * 更新操作人

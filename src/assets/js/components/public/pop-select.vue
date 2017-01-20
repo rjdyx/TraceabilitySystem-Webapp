@@ -145,6 +145,9 @@
         methods: {
             getMsg (index) {
                 this.showMsg = index;
+                if (this.items.length == 0) {
+                    return false;
+                }
                 if(this.protoBack == '') {
                     this.$emit('callback', this.items[index]);
                 }else {

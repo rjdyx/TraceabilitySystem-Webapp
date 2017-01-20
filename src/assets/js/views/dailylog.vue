@@ -1,6 +1,6 @@
 <template>
     <div>
-        <canvas id="canvas" width="1120" height="500" >当前浏览器不支持</canvas>
+        <canvas id="canvas" width="1120" height="899" >当前浏览器不支持</canvas>
         <img src="" id="Img" width="80%" height="100%" />
     </div>    
 </template>
@@ -63,7 +63,7 @@
         methods: {
             //获取日志详细信息
             getDailylog () {
-                this.$http.get(this.$adminUrl('dailylog/getlog')).then((response)=>{
+                this.$http.get(this.$adminUrl('dailylog/getlog'),{params:this.$route.params}).then((response)=>{
                     //获取种植区的信息
                     this.$set(this, 'dailylog', response.data.arr);
                     this.tabHead(70,70,this.dailylog.length,16,0,140,this.dailylog);

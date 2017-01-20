@@ -14,7 +14,7 @@
             <div @click="show = true" slot="left" class="show-sliderBar-btn">
                 <img :src="$img('slider.png')" alt="">
             </div>
-            <div @click="show = true" slot="right" class="right-btn">
+            <div @click="record" slot="right" class="right-btn">
                 <img :src="$img('eye.png')" alt="">
             </div>
         </my-header>
@@ -144,8 +144,13 @@
 
                     });
                 }
+            },
+            /**
+             * 历史图片页面
+             */
+            record() {
+                this.$router.push('/webapp/record');
             }
-
         }
     }
 

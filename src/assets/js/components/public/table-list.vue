@@ -15,21 +15,26 @@
             :searchUrl="searchUrl"
             @callback="updateListByMore"
         >
-            <button @click="showNewPanel=true" class="stl-btn">新建</button>
+            <slot name="search">
+               <button @click="showNewPanel=true" class="stl-btn">新建</button> 
+            </slot>
         </search>
         <!-- 新增模块 -->
-        <component 
-            :is="component[_key]"
-            v-if="showNewPanel"
-            :edit="false"
-            @callback="updateListByOne"
-            @closeNew="showNewPanel=false"
-        ></component>
+        <template v-if="component != null && component[_key] != null">
+            <component 
+                :is="component[_key]"
+                v-if="showNewPanel"
+                :edit="false"
+                @callback="updateListByOne"
+                @closeNew="showNewPanel=false"
+            ></component>
+        </template>
+        
 
         <div class="table-list">
             <div class="list-head">
                 <div class="list-head-th">
-                    <span name="order" class="fir">序号</span>
+                    <span v-if="showCheckbox" name="order" class="fir">序号</span>
                     <template v-for="(thead, index) in theads">
                         <span 
                             :name="protos[index]"
@@ -50,11 +55,14 @@
                                 :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" 
                                 :key="searchUrl + item.id" 
                                 name="order">
-                                <span class="checked" name="order">
+                                <!-- checkbox -->
+                                <span v-if="showCheckbox" class="checked" name="order">
                                     <span :class="{'f-checkbox':true, 'f-checkbox-check': isCheck(item.id)}" @click="checkedBox({'id':item.id, 'index':index, flag:item.serial_state})"></span>
                                 </span>
+                                
+                                <!-- middle item -->
                                 <template v-for="(proto, indexProto) in protos">
-                                    <span v-if="component[proto] != null" :style="{width: widths[indexProto] + '%'}" :name="proto" class="td-note">
+                                    <span v-if="component != null && component[proto] != null" :style="{width: widths[indexProto] + '%'}" :name="proto" class="td-note">
                                         <component
                                             :is="component[proto]"
                                             :item="item"
@@ -64,19 +72,29 @@
                                         {{item[proto]}}
                                     </span>
                                 </template>
-                                <span @click="troggleEdit(item.id)" class="align-c" name="open">
+
+                                <!-- open button -->
+                                <span v-if="component != null && component.hispic != null" class="align-c" name="open">
+                                    <component
+                                        :is="component.hispic"
+                                        :item="item"
+                                    ></component>
+                                </span>
+                                <span v-else @click="troggleEdit(item.id)" class="align-c" name="open">
                                     <img :src="$img('list.png')">
                                 </span>
                             </li>
                         
                         <li v-if="showItemDetail != '' && showItemDetail == item.id" :key="searchUrl + item.id + '-pop'">
-                            <component 
-                                :is="component[_key]"
-                                v-if="showEditPane"
-                                :letItem="item"
-                                :edit="true"
-                                @closeEdit="closeOwnEditPane(item)"
-                            ></component>
+                            <template v-if="component != null && component[_key] != null">
+                                <component 
+                                    :is="component[_key]"
+                                    v-if="showEditPane"
+                                    :letItem="item"
+                                    :edit="true"
+                                    @closeEdit="closeOwnEditPane(item)"
+                                ></component>
+                            </template>
                         </li>
                     </template>
                 </transition-group>
@@ -260,6 +278,11 @@
                 default () {
                     return []
                 }
+            },
+            // 是否显示checkbox
+            showCheckbox: {
+                type: Boolean,
+                default: true
             }
         },
         data () {
