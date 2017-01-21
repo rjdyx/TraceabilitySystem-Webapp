@@ -185,7 +185,7 @@
     }
 
     span[name="order"] {
-        width: 11%;
+        width: 14%;
     }
 
     span {
