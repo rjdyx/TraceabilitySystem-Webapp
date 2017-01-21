@@ -1,19 +1,20 @@
 <template>
     <div>
         <canvas id="canvas" width="1120" height="899" >当前浏览器不支持</canvas>
-        <img src="" id="Img" width="80%" height="100%" />
+        <img :src="imageSrc" id="Img" width="80%" />
     </div>    
 </template>
 <style lang="sass" scoped>
     @import "../../sass/function";
     @import "../../sass/_percent.scss";
-    *{margin: 0;padding: 0}
+
     #canvas{
         position: absolute;
-        left:70%;top:54px;
+        left:70%;
+        top:54px;
         margin-left: -560px;
         margin-right: 0;
-        display:none
+        display:none;
     }
     #Img{
         margin-left:10%;
@@ -36,7 +37,7 @@
                 data6: [['品种','方式','品种','密度(cm)','种类','数量(kg)','方式','名称','施用方法','对象']],
                 dailylog: [],
                 daily_record: [],
-
+                imageSrc: ''
             }
         },
         mounted () {
@@ -145,7 +146,10 @@
                         //坐标
                         var x_zuobiao=x+width/2;
                         var y_zuobiao=y+height/2+8;
+                        cxt.fillStyle="#ffffff";
+                        cxt.fillRect(x,y,width,height);
                         cxt.rect(x,y,width,height);
+                        cxt.fillStyle="#000000";
                         if(data[l-1][r-1] != undefined) {
                             this.canvasTextAutoLine(data[l-1][r-1],c,x_zuobiao,y_zuobiao,16,width);    
                         }
@@ -175,9 +179,8 @@
             //将图片显示在网页中
             show(){
                 var canvas = document.getElementById("canvas");
-                var Img = document.getElementById("Img");
                 var ImgSrc = canvas.toDataURL("image/png");
-                Img.src=ImgSrc;
+                this.imageSrc=ImgSrc;
             }
         }
     }

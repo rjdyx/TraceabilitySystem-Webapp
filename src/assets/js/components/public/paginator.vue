@@ -144,6 +144,13 @@
                 }
             },
         },
+        watch: {
+            total: function(val){
+                this.index = 1;
+                this.showInput = true;
+                this.inputIndex = '';
+            }
+        },
         methods: {
 
             lastPage (lastIndex) {
@@ -152,17 +159,8 @@
                 }
                 this.$emit('lastPageEvent');
                 this.$http.get(this.$adminUrl(this.url)+ '?page=' + lastIndex + '&' + this.$objectToParam(this.paginatorParams)).then((response) => {
-                    for(let proto of Object.keys(response.body)){
-                        if(response.body[proto] instanceof Object){
-                            if(proto == 'data'){
-                                this.index = response.body.current_page;
-                                this.$emit('result', response.body);
-                            }else {
-                                this.index = response.body[proto].current_page;
-                                this.$emit('result', response.body[proto]);
-                            }
-                        }
-                    }
+                    
+                    this.getResult(response);
                     
                 },(response) => {
 
@@ -175,17 +173,9 @@
                 }
                 this.$emit('nextPageEvent');
                 this.$http.get(this.$adminUrl(this.url)+ '?page=' + nestIndex + '&' + this.$objectToParam(this.paginatorParams)).then((response) => {
-                    for(let proto of Object.keys(response.body)){
-                        if(response.body[proto] instanceof Object){
-                            if(proto == 'data'){
-                                this.index = response.body.current_page;
-                                this.$emit('result', response.body);
-                            }else {
-                                this.index = response.body[proto].current_page;
-                                this.$emit('result', response.body[proto]);
-                            }
-                        }
-                    }
+
+                    this.getResult(response);
+
                 },(response) => {
 
                 });
@@ -196,23 +186,30 @@
             },
 
             changeIndex () {
+                this.$emit('changePageEvent');
                 this.$http.get(this.$adminUrl(this.url)+ '?page=' + this.inputIndex + '&' + this.$objectToParam(this.paginatorParams)).then((response) => {
+
                     this.showInput = true;
-                    for(let proto of Object.keys(response.body)){
-                        if(response.body[proto] instanceof Object){
-                            if(proto == 'data'){
-                                this.index = response.body.current_page;
-                                this.$emit('result', response.body);
-                            }else {
-                                this.index = response.body[proto].current_page;
-                                this.$emit('result', response.body[proto]);
-                            }
-                        }
-                        
-                    }
+                    this.getResult(response);
+
                 },(response) => {
 
                 });
+            },
+
+            getResult (response) {
+                for(let proto of Object.keys(response.body)){
+                    if(response.body[proto] instanceof Object && !(response.body[proto] instanceof Array)){
+                        if(proto == 'data'){
+                            this.index = response.body.current_page;
+                            this.$emit('result', response.body);
+                        }else {
+                            this.index = response.body[proto].current_page;
+                            this.$emit('result', response.body[proto]);
+                        }
+                    }
+                    
+                }
             }
         }
     }

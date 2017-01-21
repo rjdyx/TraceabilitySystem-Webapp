@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const vuxLoader = require('vux-loader');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const vueConfig = require('./vue-loader.config');
 const projectRoot = path.resolve(__dirname, '../');
@@ -11,7 +10,7 @@ const providePlugin = new webpack.ProvidePlugin({
     'window.$': 'jquery',
 });
 
-let webpackConfig = {
+module.exports = {
     devtool: '#source-map',
         entry: {
         app: './src/assets/js/client-entry.js',
@@ -32,8 +31,7 @@ let webpackConfig = {
             },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-                // loader: ExtractTextPlugin.extract({fallbackLoader: 'style-loader', loader: 'css-loader'})
+                loader: ExtractTextPlugin.extract({fallbackLoader: 'style-loader', loader: 'css-loader'})
                 // loader: 'style-loader!css-loader'
             },
             {
@@ -52,8 +50,7 @@ let webpackConfig = {
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader?sourceMap')
-                // loader: ExtractTextPlugin.extract({fallbackLoader:'style-loader', loader: 'css-loader!sass-loader'})
+                loader: ExtractTextPlugin.extract({fallbackLoader:'style-loader', loader: 'css-loader!sass-loader'})
                 // loader: 'style-loader!css-loader!sass-loader'
             },
             {
@@ -70,20 +67,8 @@ let webpackConfig = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('css/[name].css', { allChunks: true }),
-        // new ExtractTextPlugin({filename:'[name].[chunkhash].css', allChunks: true}),
+        new ExtractTextPlugin({filename:'[name].[chunkhash].css', allChunks: true}),
         providePlugin
     ]
 
 }
-
-module.exports = vuxLoader.merge(webpackConfig, {
-  plugins: [
-    {
-      name: 'vux-ui'
-    },
-    {
-      name: 'duplicate-style'
-    }
-  ]
-})

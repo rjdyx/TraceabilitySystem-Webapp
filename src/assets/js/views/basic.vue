@@ -111,7 +111,7 @@
                         searchUrl: 'medicament',
                         theads: ['农药类别', '农药名称', '用途'],
                         protos: ['category_name', 'name', 'usage'],
-                        widths: [32, 24, 17]
+                        widths: [26, 28, 19]
                     },
                     {
                         key: 'expert',
@@ -120,7 +120,7 @@
                         searchUrl: 'expert',
                         theads: ['专家名称', '研究领域', '操作模块'],
                         protos: ['expert_name', 'major', 'table_type'],
-                        widths: [32, 24, 17]
+                        widths: [24, 28, 21]
                     }
                 ]
             }

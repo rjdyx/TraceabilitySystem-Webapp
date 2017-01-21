@@ -22,7 +22,6 @@
 </script>
 
 <style>
-	/*@import '~vux/src/styles/reset.less';*/
 	.loader {
 	    display: none;
 	    position: fixed;

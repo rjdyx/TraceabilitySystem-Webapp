@@ -120,6 +120,7 @@
                 :paginatorParams="params"
                 @lastPageEvent="showUp=false"
                 @nextPageEvent="showUp=false"
+                @changePageEvent="showUp=false"
                 @result="updateListByMore"
             ></paginator> 
         </div>
