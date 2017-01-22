@@ -157,7 +157,7 @@
 
     .f-checkbox-check::after{
         position: absolute;
-        left: 6px;
+        left: 5px;
         top: 2px;
         width:4px;
         height:8px;
