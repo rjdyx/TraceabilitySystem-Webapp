@@ -19186,6 +19186,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = {
@@ -19203,29 +19204,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             data6: [['品种', '方式', '品种', '密度(cm)', '种类', '数量(kg)', '方式', '名称', '施用方法', '对象']],
             dailylog: [],
             daily_record: [],
-            imageSrc: ''
+            imageSrc: '',
+            canvasHeight: 140
         };
     },
     mounted: function mounted() {
-        //标题
-        this.tabHead(1120, 40, 1, 1, 0, 0, this.title);
-        //天气
-        this.tabHead(1120, 30, 1, 1, 0, 40, this.empty);
-        //地块，作物
-        this.tabHead(70, 70, 1, 2, 0, 70, this.data1);
-        //播种，移栽
-        this.tabHead(140, 30, 1, 2, 140, 70, this.data2);
-        //施肥
-        this.tabHead(210, 30, 1, 1, 420, 70, this.data3);
-        //病虫害
-        this.tabHead(210, 30, 1, 1, 630, 70, this.data4);
-        //除草后6个
-        this.tabHead(70, 70, 1, 4, 840, 70, this.data5);
-        //品种后的所有
-        this.tabHead(70, 40, 1, 10, 140, 100, this.data6);
         this.getDailylog();
-        //时间列固定
-        this.getFixation();
     },
 
     methods: {
@@ -19234,13 +19218,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this = this;
 
             this.$http.get(this.$adminUrl('dailylog/getlog'), { params: this.$route.params }).then(function (response) {
-                //获取种植区的信息
+                //计算canvas高度
+                _this.canvasHeight = 180 + 80 * response.data.arr.length;
+                var canvas = document.getElementById("canvas");
+                canvas.height = _this.canvasHeight;
+
+                //标题
+                _this.tabHead(1120, 40, 1, 1, 0, 0, _this.title);
+                //天气
+                _this.tabHead(1120, 30, 1, 1, 0, 40, _this.empty);
+                //地块，作物
+                _this.tabHead(70, 110, 1, 2, 0, 70, _this.data1);
+                //播种，移栽
+                _this.tabHead(140, 40, 1, 2, 140, 70, _this.data2);
+                //施肥
+                _this.tabHead(210, 40, 1, 1, 420, 70, _this.data3);
+                //病虫害
+                _this.tabHead(210, 40, 1, 1, 630, 70, _this.data4);
+                //除草后6个
+                _this.tabHead(70, 110, 1, 4, 840, 70, _this.data5);
+                //品种后的所有
+                _this.tabHead(70, 70, 1, 10, 140, 110, _this.data6);
+
                 _this.$set(_this, 'dailylog', response.data.arr);
-                _this.tabHead(70, 70, _this.dailylog.length, 16, 0, 140, _this.dailylog);
+                _this.tabHead(70, 80, _this.dailylog.length, 16, 0, 180, _this.dailylog);
 
                 //获取时间，天气，操作人，期数
                 _this.$set(_this, 'daily_record', response.data.daily_record);
                 _this.getMessage();
+
+                //时间列固定
+                _this.getFixation();
 
                 //显示图片日志
                 _this.show();
@@ -19316,13 +19324,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     var y = beginY + (l - 1) * height;
                     //坐标
                     var x_zuobiao = x + width / 2;
-                    var y_zuobiao = y + height / 2 + 8;
+                    var y_zuobiao = y + height / 2;
                     cxt.fillStyle = "#ffffff";
                     cxt.fillRect(x, y, width, height);
                     cxt.rect(x, y, width, height);
                     cxt.fillStyle = "#000000";
                     if (data[l - 1][r - 1] != undefined) {
-                        this.canvasTextAutoLine(data[l - 1][r - 1], c, x_zuobiao, y_zuobiao, 16, width);
+                        this.canvasTextAutoLine(data[l - 1][r - 1], c, x_zuobiao, y_zuobiao, 16, width, height);
                     }
                 }
             }
@@ -19330,13 +19338,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
 
         //文本框超出规定最大宽度自动换行
-        canvasTextAutoLine: function canvasTextAutoLine(str, canvas, initX, initY, lineHeight, maxWidth) {
+        canvasTextAutoLine: function canvasTextAutoLine(str, canvas, initX, initY, lineHeight, maxWidth, maxHeight) {
             var ctx = canvas.getContext("2d");
             var lineWidth = 0;
             var lastSubStrIndex = 0;
             for (var i = 0; i < str.length; i++) {
                 lineWidth += ctx.measureText(str[i]).width;
-                if (lineWidth > maxWidth) {
+                if (lineWidth > maxWidth - 10) {
                     //防止边界问题
                     ctx.fillText(str.substring(lastSubStrIndex, i), initX, initY);
                     initY += lineHeight;
@@ -23831,7 +23839,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "canvas",
       "width": "1120",
-      "height": "899"
+      "height": "140"
     }
   }, [_vm._v("当前浏览器不支持")]), _c('img', {
     attrs: {
