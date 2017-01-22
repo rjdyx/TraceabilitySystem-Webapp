@@ -18,6 +18,7 @@ window.Vuex = require('vuex');	// vue状态管理插件
 Vue.use(VueResource);
 Vue.use(VueRouter);
 
+
 // 进度条
 window.nprogress = require('nprogress');
 nprogress.configure({
