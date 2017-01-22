@@ -19187,6 +19187,47 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = {
@@ -19205,7 +19246,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             dailylog: [],
             daily_record: [],
             imageSrc: '',
-            canvasHeight: 140
+            showpic: false
         };
     },
     mounted: function mounted() {
@@ -19363,6 +19404,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var canvas = document.getElementById("canvas");
             var ImgSrc = canvas.toDataURL("image/png");
             this.imageSrc = ImgSrc;
+        },
+        showpop: function showpop() {
+            this.showpic = true;
+        },
+        toHide: function toHide() {
+            this.showpic = false;
         }
     }
 };
@@ -23850,15 +23897,40 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "canvas",
       "width": "1120",
-      "height": "140"
+      "height": "899"
     }
   }, [_vm._v("当前浏览器不支持")]), _c('img', {
     attrs: {
       "src": _vm.imageSrc,
       "id": "Img",
       "width": "80%"
+    },
+    on: {
+      "click": _vm.showpop
     }
-  })])
+  }), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showpic),
+      expression: "showpic"
+    }],
+    staticClass: "wrap"
+  }, [_c('div', {
+    ref: "box",
+    staticClass: "box",
+    on: {
+      "click": _vm.toHide
+    }
+  }, [_c('div', {
+    ref: "iBox",
+    staticClass: "innerBox"
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imageSrc,
+      "alt": "图片"
+    }
+  })])])])])
 },staticRenderFns: []}
 
 /***/ }),
