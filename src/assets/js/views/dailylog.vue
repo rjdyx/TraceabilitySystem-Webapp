@@ -1,8 +1,15 @@
 <template>
     <div>
         <canvas id="canvas" width="1120" height="899" >当前浏览器不支持</canvas>
-        <img :src="imageSrc" id="Img" width="80%" />
-    </div>    
+        <img :src="imageSrc" id="Img" width="80%" @click="showpop"/>
+        <div v-show="showpic" class="wrap">
+            <div class="box" ref="box" @click="toHide">
+                <div class="innerBox" ref="iBox">
+                    <img :src="imageSrc" alt="图片" >
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 <style lang="sass" scoped>
     @import "../../sass/function";
@@ -18,6 +25,39 @@
     }
     #Img{
         margin-left:10%;
+    }
+    .wrap{
+        position: fixed;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0,0,0,0.9);
+        z-index:100;
+    }
+    .box{
+        overflow:auto;
+        bottom:20px;
+        height: 100vh;
+        width: 100%;
+        margin-left: 1%;
+        border-radius:5px;
+        box-sizing:border-box;
+        padding-top: 20px;
+        .vertical{
+            top:66%!important;
+        }
+    }
+    .innerBox{
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 20px;
+        position: relative;
+        top:50%;
+        transform:translate(0,-50%);
+        img{
+            width: 100%;
+        }
     }
 </style>
 <script>
@@ -37,7 +77,8 @@
                 data6: [['品种','方式','品种','密度(cm)','种类','数量(kg)','方式','名称','施用方法','对象']],
                 dailylog: [],
                 daily_record: [],
-                imageSrc: ''
+                imageSrc: '',
+                showpic: false
             }
         },
         mounted () {
@@ -181,6 +222,12 @@
                 var canvas = document.getElementById("canvas");
                 var ImgSrc = canvas.toDataURL("image/png");
                 this.imageSrc=ImgSrc;
+            },
+            showpop() {
+                this.showpic = true
+            },
+            toHide() {
+                this.showpic = false
             }
         }
     }
