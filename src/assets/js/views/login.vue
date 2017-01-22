@@ -235,6 +235,17 @@
             }
         },
         mounted () {
+            if(this.$route.params.code == '401') {
+                axios.get('/token').then((response)=>{
+                    Laravel.csrfToken = response.data;
+                }).catch(function (error) {
+                    if(error.status != 200) {
+                        this.loginBtn = '登录'
+                        this.isLogin = false
+                        alert('token获取失败');
+                    }
+                });
+            }
             this.$mySpinner(false);
         },
         methods: {

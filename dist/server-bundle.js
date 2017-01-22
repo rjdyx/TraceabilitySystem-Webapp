@@ -18563,7 +18563,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.showUp = true;
             }, function (error) {
                 if (error.status == 401) {
-                    _this.$router.push('/webapp/login');
+                    _this.$router.push('/webapp/login/401');
                 } else {
                     _this.$alert('连接出错', 'e');
                 }
@@ -19819,7 +19819,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 _this.$set(_this, 'list', response.body.data);
             }, function (error) {
                 if (error.status == 401) {
-                    _this.$router.push('/webapp/login');
+                    _this.$router.push('/webapp/login/401');
                 } else {
                     _this.$alert('连接出错', 'e');
                 }
@@ -20110,6 +20110,17 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
         }
     },
     mounted: function mounted() {
+        if (this.$route.params.code == '401') {
+            axios.get('/token').then(function (response) {
+                Laravel.csrfToken = response.data;
+            }).catch(function (error) {
+                if (error.status != 200) {
+                    this.loginBtn = '登录';
+                    this.isLogin = false;
+                    alert('token获取失败');
+                }
+            });
+        }
         this.$mySpinner(false);
     },
 
@@ -20510,7 +20521,7 @@ var basic = __webpack_require__(68);
 
 var routes = [{
     path: '/',
-    redirect: '/webapp/login'
+    redirect: '/webapp/login/200'
 }, {
     path: '/webapp',
     component: index,
@@ -20540,7 +20551,7 @@ var routes = [{
         meta: { requiresAuth: true }
     }]
 }, {
-    path: '/webapp/login',
+    path: '/webapp/login/:code',
     name: 'login',
     component: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__CreateView__["a" /* createView */])(login)
 }, {

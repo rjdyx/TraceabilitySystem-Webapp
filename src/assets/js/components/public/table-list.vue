@@ -362,7 +362,7 @@
                     this.showUp = true;
                 },(error) => {
                     if(error.status == 401) {
-                        this.$router.push('/webapp/login')
+                        this.$router.push('/webapp/login/401')
                     }else {
                        this.$alert('连接出错', 'e'); 
                     }

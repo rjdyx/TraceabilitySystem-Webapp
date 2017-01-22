@@ -66,7 +66,7 @@ const routes = [
     
     { 
         path: '/', 
-        redirect: '/webapp/login' 
+        redirect: '/webapp/login/200' 
     },
     {
         path: '/webapp',
@@ -104,7 +104,7 @@ const routes = [
         ]
     },
     {
-        path: '/webapp/login',
+        path: '/webapp/login/:code',
         name: 'login',
         component: createView(login)
     },
