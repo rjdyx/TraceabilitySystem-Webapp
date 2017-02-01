@@ -27,35 +27,6 @@ require('./init/init')
 sync(store, router)
 
 
-
-// 处理刷新的时候vuex被清空但是用户已经登录的情况
-// if (sessionStorage.user) {
-//     store.dispatch('setUserInfo', sessionStorage.user);
-// }
-
-// // 登录中间验证，页面需要登录而没有登录的情况直接跳转登录
-// router.beforeEach((to, from, next) => {
-//     if (to.matched.some(record => record.meta.requiresAuth)) {
-
-//         if (store.state.userInfo.userId) {
-//             next();
-//         } else {
-//             next({
-//                 path: '/login'
-//             });
-//         }
-        
-//     } else {
-//         if (to.matched.some(record => record.name === 'login' || record.name === '404')) {
-//             next();
-//         }else {
-//             next({
-//                 path: '/404'
-//             });
-//         }
-        
-//     }
-// });
 router.beforeEach((to, from, next) => {
 	if (typeof window == undefined || typeof window == 'object') {
 		nprogress.set(0.5);

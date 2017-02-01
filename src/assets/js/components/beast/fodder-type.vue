@@ -1,8 +1,8 @@
 /**
- * 研究领域组件
+ * 饲料类别组件
  * @description 
  * @author 苏锐佳
- * @date 2016/12/14
+ * @date 2017/02/01
  * 
  * Props:
  * 
@@ -16,7 +16,7 @@
  */
 <template>
     <span>
-      {{item.table_type | table_name}}
+      {{item.fodder_type | table_name}}
     </span>
 </template>
 
@@ -33,14 +33,13 @@
     },
     filters : {
         table_name (value) {
-            if(value == 'fertilize'){
-                return '施肥';
-            }else if(value == 'spray') {
-                return '病虫害';
-            }else if(value == 'detect') {
-                return '检验检测';
-            }else {
-                return '农事';
+            switch (value) {
+                case 1: return '粗粮类';
+                case 2: return '维生素类';
+                case 3: return '青蔬类';
+                case 4: return '矿物质类';
+                case 5: return '干草料类';
+                case 6: return '其他类';
             }
         }
     }

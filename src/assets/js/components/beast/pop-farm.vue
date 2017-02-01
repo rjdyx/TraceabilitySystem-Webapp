@@ -1,8 +1,8 @@
 /**
- * 种植场新增/编辑组件
+ * 养殖场新增/编辑组件
  * @description 
  * @author 苏锐佳
- * @date 2016/12/14
+ * @date 2017/02/01
  * 
  * Props:
  * 
@@ -10,7 +10,7 @@
  * 类型：Object
  * 是否必填：false
  * 默认值：{}
- * 描述：种植场信息对象
+ * 描述：养殖场信息对象
  * 
  * @param  edit 
  * 类型：Boolean
@@ -33,7 +33,7 @@
  * 描述：隐藏编辑组件
  * 
  * @function callback
- * 返回：plantation对象
+ * 返回：farm对象
  * 必用：true
  * 描述：
  * 
@@ -45,77 +45,68 @@
         <table class="main form-pop">
             <tbody class="form-body">
                 <tr>
-                    <td class="label-tit"><label for="plantation_new_fullName">种植场名称</label></td>
+                    <td class="label-tit"><label for="farm_new_fullName">养殖场名称</label></td>
                     <td class="input-pop" colspan="2"><input 
                     v-model="letItem.name" 
                     v-validate.initial="letItem.name" 
                     data-vv-rules="required|max:255" 
-                    data-vv-as="种植场名称" 
-                    type="text" id="plantation_new_fullName" name="name" placeholder="必填"></td>
+                    data-vv-as="养殖场名称" 
+                    type="text" id="farm_new_fullName" name="name" placeholder="必填"></td>
                 </tr>
                 <tr v-show="errors.has('name')">
                     <td colspan="2" class="error">{{ errors.first('name') }}</td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="plantation_new_area">种植面积</label></td>
-                    <td class="input-pop input-area"><input 
+                    <td class="label-tit"><label for="farm_new_area">养殖面积</label></td>
+                    <td class="input-pop"><input 
                     v-model="letItem.area" 
                     v-validate.initial="letItem.area" 
                     data-vv-rules="required|decimal:2" 
-                    data-vv-as="种植面积" 
-                    type="text" id="plantation_new_area" name="area"
-                       placeholder="请填写数字(必填)"></td>
-                   <td class="area_unit">
-                       <pop-select name="area_unit"
-                        :items="area_unit"      
-                        :defaultIndex="parseInt(defaultIndex)"
-                        @callback="getMsg"  
-                        ></pop-select>
-                   </td>
+                    data-vv-as="养殖面积" 
+                    type="text" id="farm_new_area" name="area"
+                       placeholder="请填写数字(必填),单位是亩"></td>
                 </tr>
                 <tr v-show="errors.has('area')">
                     <td colspan="3" class="error">{{ errors.first('area') }}</td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="plantation_new_phone">详细电话</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.phone" 
-                    v-validate.initial="letItem.phone" 
-                    data-vv-rules="phone" 
-                    type="text" id="plantation_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
-                </tr>
-                <tr v-show="errors.has('phone')">
-                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
+                    <td class="label-tit"><label for="farm_new_principal">负责人</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.principal" type="text" value="" id="farm_new_principal" name="principal"></td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="plantation_new_address">详细地址</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="plantation_new_address" name="address"></td>
+                    <td class="label-tit"><label for="farm_new_kind">养殖畜禽种类</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.kind" type="text" value="" id="farm_new_kind" name="kind"></td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="plantation_new_principal">负责人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.director" type="text" value="" id="plantation_new_principal" name="director"></td>
+                    <td class="label-tit"><label for="farm_new_scale">养殖规模</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.scale" type="text" value="" id="farm_new_scale" name="scale"></td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="plantation_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="plantation_new_note" name="memo"></td>
+                    <td class="label-tit"><label for="farm_new_address">地址</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="farm_new_address" name="address"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="farm_new_note">备注信息</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="farm_new_note" name="memo"></td>
                 </tr>
 
                 <tr>
                     <td colspan="3">
                         <div class="footer-r">
                             <a v-if="edit" href="#">
-                                <button @click="cancelEditPlantation" type="button">
+                                <button @click="cancelEditfarm" type="button">
                                     取消
                                 </button>  
                             </a>
                             
                             <a v-else href="#">
-                                <button @click="cancelAddPlantation" type="button">
+                                <button @click="cancelAddfarm" type="button">
                                     取消
                                 </button>
                             </a>
@@ -144,7 +135,7 @@
 <script>
 
     export default {
-        name: 'PopPlantation',
+        name: 'Popfarm',
         props: {
             letItem: {
                 type: Object,
@@ -153,10 +144,10 @@
                         'id': '',
                         'name': '',
                         'area': 0,
-                        'area_unit': '亩',
-                        'phone': '',
+                        'kind': '',
+                        'scale': '',
                         'address': '',
-                        'director': '',
+                        'principal': '',
                         'memo': ''
                     }
                 }
@@ -169,37 +160,19 @@
         },
         data () {
             return {
-                // 单位
-                area_unit:['亩', '平方米', '公顷'],
                 // 作为编辑组件时，用于临时备份父组件传递过来的数据，
                 // 以便在修改了数据但不保存时可以复原数据
                 tmp: {
                     'id': '',
                     'name': '',
                     'area': 0,
-                    'area_unit': '亩',
-                    'phone': '',
+                    'kind': '',
+                    'scale': '',
                     'address': '',
-                    'director': '',
+                    'principal': '',
                     'memo': ''
                 }
             }
-        },
-        computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaultIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.area_unit){
-                        if(this.area_unit[index] == this.letItem.area_unit){
-                            return index;
-                        }
-                    }
-                    
-                }
-            }
-
         },
         mounted () {
             for(let key of Object.keys(this.letItem)){
@@ -213,14 +186,14 @@
             */
             validateBeforeSubmit () {
 
-                let params = {
-                    'id': this.letItem.id,
-                    'field': 'name',
-                    'value': this.letItem.name
-                };
-                this.$unique(this, 'plantation', params, 'letItem.name').then(() => {
+                // let params = {
+                //     'id': this.letItem.id,
+                //     'field': 'name',
+                //     'value': this.letItem.name
+                // };
+                // this.$unique(this, 'farm', params, 'letItem.name').then(() => {
                     if(this.edit) {
-                        this.$update(this, 'plantation', this.letItem).then((response) => {
+                        this.$update(this, 'farm', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }
@@ -233,7 +206,7 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'plantation', this.letItem).then((response) => {
+                        this.$storeL(this, 'farm', this.letItem).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -245,15 +218,15 @@
                             }
                         });
                     }
-                }, () => {
-                    return false;
-                });
+                // }, () => {
+                //     return false;
+                // });
                 
             },
             /**
             * 隐藏新增模块
             */
-            cancelAddPlantation () {
+            cancelAddfarm () {
                 this.$emit('closeNew');
             },
 
@@ -261,15 +234,9 @@
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditPlantation () {
+            cancelEditfarm () {
                 this.$emit('closeEdit');
-            },
-            /**
-            * CallBack函数,执行回调函数 
-            */
-            getMsg (msg) {
-                this.letItem.area_unit = msg;
-            },
+            }
 
         },
         destroyed () {

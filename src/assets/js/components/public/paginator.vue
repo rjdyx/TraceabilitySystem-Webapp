@@ -40,6 +40,23 @@
  * 描述：点击上一页、下一页或定向跳转页面后，返回从后台获取到的数据。后台返回的数据可以直接暴露data，也可以把data存入某个对象里面
  * 
  * 
+ * @function lastPageEvent
+ * 返回：
+ * 必用：false
+ * 描述：点击上一页按钮时触发的事件
+ * 
+ * 
+ * @function nextPageEvent
+ * 返回：
+ * 必用：false
+ * 描述：点击下一页按钮式触发的事件
+ * 
+ * 
+ * @function changePageEvent
+ * 返回：
+ * 必用：false
+ * 描述：点击中间的输入框时触发的事件
+ * 
  */
 <template>
     <div class="paginator">
@@ -49,6 +66,7 @@
         <div @click="nextPage(index+1)" :disabled="!rightBtn" class="right">&gt;</div>
     </div>
 </template>
+
 <style lang="sass" scoped>
 
     @import "../../../sass/function";
@@ -100,6 +118,7 @@
     }
     }
 </style>
+
 <script>
 
     export default{

@@ -15,9 +15,14 @@
  * 
  * Slots:
  * 
- * @name 
+ * @name left
  * 位置：title之前
- * 默认内容：无
+ * 默认内容：
+ * 
+ * 
+ * @name right
+ * 位置：title之后
+ * 默认内容：
  * 
  * 
  */

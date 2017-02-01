@@ -1,8 +1,8 @@
 /**
- * 研究领域组件
+ * 兽药类别组件
  * @description 
  * @author 苏锐佳
- * @date 2016/12/14
+ * @date 2017/02/01
  * 
  * Props:
  * 
@@ -16,7 +16,7 @@
  */
 <template>
     <span>
-      {{item.table_type | table_name}}
+      {{item.drug_type | table_name}}
     </span>
 </template>
 
@@ -33,14 +33,12 @@
     },
     filters : {
         table_name (value) {
-            if(value == 'fertilize'){
-                return '施肥';
-            }else if(value == 'spray') {
-                return '病虫害';
-            }else if(value == 'detect') {
-                return '检验检测';
-            }else {
-                return '农事';
+            switch (value) {
+                case 1: return '疾病防治药';
+                case 2: return '传染病防治药';
+                case 3: return '寄生虫病防治药';
+                case 4: return '促生长药';
+                case 5: return '其他类';
             }
         }
     }

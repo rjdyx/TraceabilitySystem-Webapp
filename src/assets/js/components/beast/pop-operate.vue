@@ -1,8 +1,8 @@
 /**
- * 种植区新增/编辑组件
+ * 人物档案新增/编辑组件
  * @description 
  * @author 苏锐佳
- * @date 2016/12/14
+ * @date 2017/02/01
  * 
  * Props:
  * 
@@ -10,7 +10,7 @@
  * 类型：Object
  * 是否必填：false
  * 默认值：{}
- * 描述：种植区信息对象
+ * 描述：人物信息对象
  * 
  * @param  edit 
  * 类型：Boolean
@@ -33,7 +33,7 @@
  * 描述：隐藏编辑组件
  * 
  * @function callback
- * 返回：planta对象
+ * 返回：operate对象
  * 必用：true
  * 描述：
  * 
@@ -42,96 +42,91 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-
         <table class="main form-pop">
             <tbody class="form-body">
 
                 <tr>
-                    <td class="label-tit"><label for="plantation_fullName">种植场名称</label></td>
-                    <td class="input-pop" colspan="2"><pop-select name="pid"
-                    :items="plantations"
-                    :defaultIndex="parseInt(defaultPlaIndex)"
-                    protoBack="id"
-                    protoShow="name"
-                    @callback="getMsgPid"
-                ></pop-select></td>
-                </tr>
-                <tr v-show="errors.has('pid')">
-                    <td colspan="2" class="error">{{ errors.first('pid') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="planta_new_fullName">种植区名称</label></td>
+                    <td class="label-tit"><label for="operate_new_fullName">姓名</label></td>
                     <td class="input-pop" colspan="2"><input 
                     v-model="letItem.name" 
                     v-validate.initial="letItem.name" 
                     data-vv-rules="required|max:255" 
-                    data-vv-as="种植区名称" 
-                    type="text" id="planta_new_fullName" name="name" placeholder="必填"></td>
+                    data-vv-as="姓名" 
+                    type="text" id="operate_new_fullName" name="name" placeholder="必填"></td>
                 </tr>
                 <tr v-show="errors.has('name')">
-                    <td colspan="2" class="error">{{ errors.first('name') }}</td>
+                    <td colspan="3" class="error">{{ errors.first('name') }}</td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="planta_new_area">种植面积</label></td>
-                    <td class="input-pop input-area"><input 
-                    v-model="letItem.area" 
-                    v-validate.initial="letItem.area" 
-                    data-vv-rules="required|decimal:2" 
-                    data-vv-as="种植面积" 
-                    type="text" id="planta_new_area" name="area"
-                       placeholder="请填写数字(必填)"></td>
-                   <td class="area_unit">
-                       <pop-select name="area_unit"
-                        :items="area_unit"
-                        :defaultIndex="parseInt(defaultUnitIndex)" 
-                        @callback="getMsgUnit"      
-                ></pop-select>
-                   </td>
+                    <td class="label-tit"><label for="operate_sex">性别</label></td>
+                    <td class="input-pop" colspan="2">
+                        <pop-select id="operate_sex" name="operate_sex"
+                            :items="sex"
+                            protoBack="id"
+                            protoShow="sex"
+                            :defaultIndex="parseInt(defaultSexIndex)"
+                            @callback="getMsgSex"
+                        ></pop-select>
+                    </td>
                 </tr>
-                <tr v-show="errors.has('area')">
-                    <td colspan="3" class="error">{{ errors.first('area') }}</td>
+                <tr v-show="errors.has('sex')">
+                    <td colspan="3" class="error">{{ errors.first('sex') }}</td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="planta_new_phone">详细电话</label></td>
+                    <td class="label-tit"><label for="operate_new_age">年龄</label></td>
+                    <td class="input-pop" colspan="2"><input 
+                    v-model="letItem.age" 
+                    v-validate.initial="letItem.age" 
+                    data-vv-rules="decimal" 
+                    data-vv-as="年龄" 
+                    type="text" id="operate_new_age" name="age"></td>
+                </tr>
+                <tr v-show="errors.has('age')">
+                    <td colspan="3" class="error">{{ errors.first('age') }}</td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="operate_new_identity">身份</label></td>
+                    <td class="input-pop" colspan="2"><input 
+                    v-model="letItem.identity" 
+                    class="input-pop" type="text" value="" id="operate_new_identity" name="identity" placeholder="如后勤主管"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="operate_new_phone">联系方式</label></td>
                     <td class="input-pop" colspan="2"><input 
                     v-model="letItem.phone" 
                     v-validate.initial="letItem.phone" 
                     data-vv-rules="phone" 
-                    type="text" id="planta_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
+                    type="text" id="operate_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
                 </tr>
                 <tr v-show="errors.has('phone')">
                     <td colspan="3" class="error">{{ errors.first('phone') }}</td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="planta_new_address">详细地址</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="planta_new_address" name="address"></td>
+                    <td class="label-tit"><label for="fodder_new_address">联系地址</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="fodder_new_address" name="address"></td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="planta_new_principal">负责人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.director" type="text" value="" id="planta_new_principal" name="director"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="planta_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="planta_new_note" name="memo"></td>
+                    <td class="label-tit"><label for="operate_new_note">备注信息</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="operate_new_note" name="memo"></td>
                 </tr>
 
                 <tr>
                     <td colspan="3">
                         <div class="footer-r">
                             <a v-if="edit" href="#">
-                                <button @click="cancelEditPlanta" type="button">
+                                <button @click="cancelEditoperate" type="button">
                                     取消
                                 </button>  
                             </a>
                             
                             <a v-else href="#">
-                                <button @click="cancelAddPlanta" type="button">
+                                <button @click="cancelAddoperate" type="button">
                                     取消
                                 </button>
                             </a>
@@ -147,7 +142,6 @@
                 </tr>
             </tbody>
         </table>
-        
     </form>
 </template>
 
@@ -155,25 +149,25 @@
 
 @import "../../../sass/function";
 
+
 </style>
 
 <script>
 
     export default {
-        name: 'PopPlanta',
+        name: 'Popoperate',
         props: {
             letItem: {
                 type: Object,
                 default() {
                     return {
-                        'pid': 0,
-                        'id': '',
+                        'id': 0,
                         'name': '',
-                        'area': 0,
-                        'area_unit': '亩',
+                        'sex': 0,
+                        'age': '',
+                        'identity': '',
                         'phone': '',
                         'address': '',
-                        'director': '',
                         'memo': ''
                     }
                 }
@@ -186,68 +180,42 @@
         },
         data () {
             return {
-                area_unit:['亩', '平方米', '公顷'],
                 tmp: {
-                    'pid': 0,
-                    'id': '',
+                    'id': 0,
                     'name': '',
-                    'area': 0,
-                    'area_unit': '亩',
+                    'sex': 0,
+                    'age': '',
+                    'identity': '',
                     'phone': '',
                     'address': '',
-                    'director': '',
                     'memo': ''
                 },
-                plantations: [],
+                sex: [
+                    {id: 0, sex: '男'},
+                    {id: 1, sex: '女'}
+                ],
             }
         },
         computed: {
             //判断是编辑状态还是新建状态，取出不同的下标
-            defaultUnitIndex () {
+            defaultSexIndex () {
                 if (this.edit == false) {
                     return 0;
-                } else {
-                    for(let index in this.area_unit){
-                        if(this.area_unit[index] == this.letItem.area_unit){
+                } else {               
+                    for(let index in this.sex){
+                        if(this.sex[index].id == this.letItem.sex){
                             return index;
                         }
-                    }
-                    
-                }
-            },
-            defaultPlaIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.plantations){
-                        if(this.plantations[index].id == this.letItem.pid){
-                            return index;
-                        }
-                    }
-                    
+                    };                        
                 }
             }
-
-
         },
         mounted () {
-            this.getAllPlantation();
             for(let key of Object.keys(this.letItem)){
                 this.tmp[key] = this.letItem[key];
             }
         },
         methods: {
-
-            /**
-            * 获取所有种植场
-            */
-            getAllPlantation () {
-                this.$http.get(this.$adminUrl('planta/create')).then((response)=>{
-                    this.$set(this, 'plantations', response.body);
-                }, (response)=>{
-
-                });
-            },
 
             /**
             * 提交表单
@@ -258,9 +226,10 @@
                     'field': 'name',
                     'value': this.letItem.name
                 };
-                this.$unique(this, 'planta', params, 'letItem.name').then(() => {
+                this.$unique(this, 'operate', params, 'letItem.name').then(() => {
+
                     if(this.edit) {
-                        this.$update(this, 'planta', this.letItem).then((response) => {
+                        this.$update(this, 'operate', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }
@@ -273,7 +242,7 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'planta', this.letItem).then((response) => {
+                        this.$storeL(this, 'operate', this.letItem).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -293,7 +262,7 @@
             /**
             * 隐藏新增模块
             */
-            cancelAddPlanta () {
+            cancelAddoperate () {
                 this.$emit('closeNew');
             },
 
@@ -301,17 +270,14 @@
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditPlanta () {
+            cancelEditoperate () {
                 this.$emit('closeEdit');
             },
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgPid (msg) {
-                this.letItem.pid = msg;
-            },
-            getMsgUnit (msg) {
-                this.letItem.area_unit = msg;                
+            getMsgSex (msg) {
+                this.letItem.sex = msg;               
             },
         },
         destroyed () {

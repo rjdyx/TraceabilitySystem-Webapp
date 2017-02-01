@@ -104,7 +104,17 @@
                         children: [
                             {
                                 path: '/webapp/basic',
-                                name:'基础信息管理'
+                                name:'种植基础信息管理'
+                            },
+                        ]
+                    },
+                    {
+                        name:'养殖管理',
+                        isEvent: false,
+                        children: [
+                            {
+                                path: '/webapp/beast',
+                                name:'养殖基础信息管理'
                             },
                         ]
                     },

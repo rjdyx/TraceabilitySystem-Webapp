@@ -33,7 +33,6 @@ if (isProd) {
 }
 
 function createRenderer (bundle) {
-  // https://github.com/vuejs/vue/blob/next/packages/vue-server-renderer/README.md#why-use-bundlerenderer
   return require('vue-server-renderer').createBundleRenderer(bundle, {
     cache: require('lru-cache')({
       max: 1000,
@@ -114,7 +113,7 @@ app.get(['/webapp', '/webapp/**', '/'], (req, res) => {
       res.status(404).end('404 | Page Not Found')
       return
     }
-    // Render Error Page or Redirect
+    // 渲染错误的页面或重定向
     res.status(500).end('Internal Error 500')
     console.error(`error during render : ${req.url}`)
     console.error(err)

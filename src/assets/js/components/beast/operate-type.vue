@@ -1,8 +1,8 @@
 /**
- * 研究领域组件
+ * 兽药类别组件
  * @description 
  * @author 苏锐佳
- * @date 2016/12/14
+ * @date 2017/02/01
  * 
  * Props:
  * 
@@ -33,14 +33,11 @@
     },
     filters : {
         table_name (value) {
-            if(value == 'fertilize'){
-                return '施肥';
-            }else if(value == 'spray') {
-                return '病虫害';
-            }else if(value == 'detect') {
-                return '检验检测';
-            }else {
-                return '农事';
+            switch (value) {
+                case 'fodderuse': return '饲料使用';
+                case 'disease': return '畜禽病疫';
+                case 'detection': return '畜禽检疫';
+                case 'area': return '畜禽圈舍';
             }
         }
     }

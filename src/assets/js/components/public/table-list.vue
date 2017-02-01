@@ -1,9 +1,66 @@
 /**
  * 
- * 列表项信息管理
+ * 列表项信息管理组件
  * @description 
  * @author 苏锐佳
- * @date 2016/12/14
+ * @date 2017/01/13
+ * 
+ * 
+ * Props:
+ * 
+ * @param  _key 
+ * 类型：String
+ * 是否必填：true
+ * 默认值：''
+ * 描述：显示此table-list的唯一标识
+ * 
+ * @param  component 
+ * 类型：Object
+ * 是否必填：true
+ * 默认值：null
+ * 描述：此prop传入的是一个包含“新增/编辑弹窗”组件的对象，
+ * 包含“新增/编辑弹窗”组件的属性名必须和_key完全一致；
+ * 此外，如果每一列中的某个属性不是简单地显示字符串，可以给此prop对象添加新的属性，属性名与protos数组里的保持一致；
+ * 例如：{planta: PopPlanta, area: AreaUnit}：
+ * 其中'planta'属性名与_key完全一样，
+ * 'area'属性名与protos数组里的某个值完全一样，
+ * 这样遍历到此属性的时候，会用AreaUnit组件去显示而不是简单显示字符串
+ * 
+ * @param  searchPlaceholder 
+ * 类型：String
+ * 是否必填：false
+ * 默认值：''
+ * 描述：搜索框的placeholder
+ * 
+ * @param  searchUrl 
+ * 类型：String
+ * 是否必填：true
+ * 默认值：''
+ * 描述：搜索的url
+ * 
+ * @param  theads 
+ * 类型：Array
+ * 是否必填：true
+ * 默认值：['']
+ * 描述：table的thead里每一列显示的名字，例如['种植区名称', '种植面积', '负责人']
+ * 
+ * @param  protos 
+ * 类型：Array
+ * 是否必填：true
+ * 默认值：[]
+ * 描述：属性，例如['name', 'area', 'director']
+ * 
+ * @param  widths 
+ * 类型：Array
+ * 是否必填：true
+ * 默认值：[]
+ * 描述：table除去前后两列后的每一列的宽（单位%），合计不超过73%，例如[32, 24, 17]
+ * 
+ * @param  showCheckbox 
+ * 类型：Boolean
+ * 是否必填：false
+ * 默认值：true
+ * 描述：是否显示每一行的checkbox
  * 
  */
 <template xmlns:v-touchDelete="http://www.w3.org/1999/xhtml">
@@ -19,6 +76,7 @@
                <button @click="showNewPanel=true" class="stl-btn">新建</button> 
             </slot>
         </search>
+
         <!-- 新增模块 -->
         <template v-if="component != null && component[_key] != null">
             <component 
@@ -55,14 +113,19 @@
                                 :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" 
                                 :key="searchUrl + item.id" 
                                 name="order">
+
                                 <!-- checkbox -->
                                 <span v-if="showCheckbox" class="checked" name="order">
-                                    <span :class="{'f-checkbox':true, 'f-checkbox-check': isCheck(item.id)}" @click="checkedBox({'id':item.id, 'index':index, flag:item.serial_state})"></span>
+                                    <span 
+                                        :class="{'f-checkbox':true, 'f-checkbox-check': isCheck(item.id)}" 
+                                        @click="checkedBox({'id':item.id, 'index':index, flag:item.serial_state})"></span>
                                 </span>
                                 
                                 <!-- middle item -->
                                 <template v-for="(proto, indexProto) in protos">
-                                    <span v-if="component != null && component[proto] != null" :style="{width: widths[indexProto] + '%'}" :name="proto" class="td-note">
+                                    <span 
+                                        v-if="component != null && component[proto] != null" :style="{width: widths[indexProto] + '%'}" 
+                                        :name="proto" class="td-note">
                                         <component
                                             :is="component[proto]"
                                             :item="item"
@@ -242,6 +305,7 @@
         props: {
             _key: {
                 type: String,
+                required: true,
                 default: ''
             },
             // 弹出框
@@ -259,11 +323,13 @@
             // 搜索的url
             searchUrl: {
                 type: String,
+                required: true,
                 default: ''
             },
             // thead
             theads: {
                 type: Array,
+                required: true,
                 default () {
                     return ['']
                 }
@@ -271,6 +337,7 @@
             // 属性
             protos: {
                 type: Array,
+                required: true,
                 default () {
                     return []
                 }
@@ -278,6 +345,7 @@
             // 列表th的宽：%
             widths: {
                 type: Array,
+                required: true,
                 default () {
                     return []
                 }

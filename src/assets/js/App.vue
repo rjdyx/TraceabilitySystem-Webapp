@@ -1,7 +1,7 @@
 /**
  * 
  * 最顶层组件
- * @description 最顶层的组件，但不包含登录、404页面这些组件
+ * @description 最顶层的组件，包含路由跳转组件元素和loading组件
  * @author 苏锐佳
  * @date 2016/12/14
  * 

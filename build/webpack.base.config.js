@@ -3,16 +3,10 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const vueConfig = require('./vue-loader.config');
 const projectRoot = path.resolve(__dirname, '../');
-const providePlugin = new webpack.ProvidePlugin({
-    $: 'jquery',
-    jQuery: 'jquery',
-    'window.jQuery': 'jquery',
-    'window.$': 'jquery',
-});
 
 module.exports = {
     devtool: '#source-map',
-        entry: {
+    entry: {
         app: './src/assets/js/client-entry.js',
         vendor: ['vue', 'vue-router', 'vuex', 'vuex-router-sync', 'vee-validate']
     },
@@ -67,8 +61,16 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin({filename:'[name].[chunkhash].css', allChunks: true}),
-        providePlugin
+        new ExtractTextPlugin({
+            filename:'[name].[chunkhash].css', 
+            allChunks: true
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+            'window.$': 'jquery',
+        })
     ]
 
 }

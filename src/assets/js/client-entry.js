@@ -15,15 +15,6 @@ Vue.use(VeeValidate, {
     }
 });
 
-// router.beforeEach((to, from, next) => {
-// 	console.log('in');
-// 	nprogress.set(0.5);
-//     next();
-// });
-
-// router.afterEach(route => {
-//   	nprogress.set(1);
-// })
 
 // prime the store with server-initialized state.
 // the state is determined during SSR and inlined in the page markup.

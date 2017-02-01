@@ -8,23 +8,11 @@
  */
 <template>
     <div>
-        <!-- tap模块 -->
-        <navbar 
-        :taps="taps"
-        @getKey="flashList"
-        ></navbar>
-        <!-- 列表模块 -->
-        <table-list
-            ref="tableList"
-            :_key="_key"
-            :component="component"
-            :searchPlaceholder="searchPlaceholder"
-            :searchUrl="searchUrl"
-            :theads="theads"
-            :protos="protos"
-            :widths="widths"
-        >
-        </table-list>
+        <basic-model
+            title="种植基础信息管理"
+            :taps="taps"
+            :tableLists="tableLists"
+        ></basic-model>
     </div>
 </template>
 
@@ -33,14 +21,12 @@
 
 <script>
 
-    import {mapMutations} from 'vuex';
-    import Navbar from '../components/basic/navbar.vue';
-    import tableList from '../components/public/table-list.vue';
+    import BasicModel from '../components/public/basic-model.vue';
     import PopPlantation from '../components/basic/pop-plantation.vue';
-    import AreaUnit from '../components/basic/area-unit.vue';
+    import AreaUnit from '../components/public/area-unit.vue';
     import PopPlanta from '../components/basic/pop-planta.vue';
     import PopPlant from '../components/basic/pop-plant.vue';
-    import MyImage from '../components/basic/image.vue';
+    import MyImage from '../components/public/image.vue';
     import PopManure from '../components/basic/pop-manure.vue';
     import PopMedicament from '../components/basic/pop-medicament.vue';
     import PopExpert from '../components/basic/pop-expert.vue';
@@ -51,7 +37,6 @@
         name: 'Basic',
         data(){
             return{
-                title: '基础信息管理',
                 taps:[
                     {name: '种植场信息', key: 'plantation'},
                     {name: '种植区信息', key: 'planta'},
@@ -60,13 +45,6 @@
                     {name: '农药档案', key: 'medicament'},
                     {name: '专家档案', key: 'expert'}
                 ],
-                _key: '',
-                component: null,
-                searchPlaceholder: '',
-                searchUrl: '',
-                theads: [],
-                protos: [],
-                widths: [],
                 tableLists: [
                     {
                         key: 'plantation',
@@ -125,12 +103,8 @@
                 ]
             }
         },
-        computed: {
-
-        },
         components:{
-            Navbar,
-            tableList,
+            BasicModel,
             PopPlantation,
             AreaUnit,
             PopPlanta,
@@ -140,44 +114,6 @@
             PopMedicament,
             PopExpert,
             ResearchField
-        },
-        created () {
-            this.setTitle('基础信息管理');
-            this._key = this.tableLists[0].key;
-            this.searchPlaceholder = this.tableLists[0].searchPlaceholder;
-            this.searchUrl = this.tableLists[0].searchUrl;
-            this.theads = this.tableLists[0].theads;
-            this.protos = this.tableLists[0].protos;
-            this.widths = this.tableLists[0].widths;
-        },
-        mounted () {
-            this.component = this.tableLists[0].component;
-            this.$refs.tableList.getAllLists(this.searchUrl);
-        },
-        methods: {
-            ...mapMutations([
-                'setTitle'
-            ]),
-
-            flashList (key) {
-                for(let item of this.tableLists){
-                    if(item.key == key) {
-                        this._key = item.key;
-                        this.searchPlaceholder = item.searchPlaceholder;
-                        this.searchUrl = item.searchUrl;
-                        this.theads = item.theads;
-                        this.protos = item.protos;
-                        this.widths = item.widths;
-                        this.component = item.component;
-                        // 同步调用获取数据的方法
-                        this.$refs.tableList.getAllLists(item.searchUrl)
-                        // 关闭新增弹窗
-                        this.$refs.tableList.closeNew()
-                        // 关闭编辑弹窗
-                        this.$refs.tableList.closeEdit()
-                    }
-                }
-            }
         }
     }
 </script>
