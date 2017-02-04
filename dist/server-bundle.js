@@ -21431,7 +21431,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
          * @return {Boolean}
          */
         hasRole: function hasRole(navbar) {
-            if (((typeof window === 'undefined' ? 'undefined' : _typeof(window)) == undefined || (typeof window === 'undefined' ? 'undefined' : _typeof(window)) == 'object') && window.role) {
+            if (((typeof window === 'undefined' ? 'undefined' : _typeof(window)) == undefined || (typeof window === 'undefined' ? 'undefined' : _typeof(window)) == 'object') && window.role && window.role.role1) {
                 return window.role.role1.some(function (item, index) {
                     return navbar.role == item;
                 });
@@ -23597,6 +23597,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                     } else {
                         // sessionStorage.setItem('user', response.data)
                         // this.setUserInfo(response.data)
+                        window.role = response.data;
                         var isPlantation = response.data.role1.some(function (item, index) {
                             return item === 'plantation';
                         });

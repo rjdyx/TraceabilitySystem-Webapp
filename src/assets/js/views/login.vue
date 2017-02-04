@@ -276,6 +276,7 @@
                         }else {
                             // sessionStorage.setItem('user', response.data)
                             // this.setUserInfo(response.data)
+                            window.role = response.data;
                             let isPlantation = response.data.role1.some(function(item, index) {
                                 return item === 'plantation'
                             })

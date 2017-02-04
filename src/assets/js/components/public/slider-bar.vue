@@ -143,7 +143,7 @@
              * @return {Boolean}
              */
             hasRole (navbar) {
-                if ((typeof window == undefined || typeof window == 'object') && window.role) {
+                if ((typeof window == undefined || typeof window == 'object') && window.role && window.role.role1) {
                     return window.role.role1.some(function(item, index) {
                         return navbar.role == item;
                     }) 
