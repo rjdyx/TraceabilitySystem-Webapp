@@ -13,7 +13,10 @@ exports.touchDelete = () => {
                 let index = binding.value.index;
                 let flag = binding.value.flag;
                 let tip = binding.value.tip;
-                if(!flag) {
+                let canDelete = flag.every(function(item, index) {
+                    return item == null
+                })
+                if(canDelete) {
                     let deleteFunction = binding.arg;
                     vm[deleteFunction](type, id, index);
                 }else {

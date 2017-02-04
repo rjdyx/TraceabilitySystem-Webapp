@@ -108,7 +108,7 @@
                 <transition-group name="slide-up" tag="ul" key="tbody" class="list-body" v-if="showUp">
                     <template v-for="(item, index) in list">
                             <li 
-                                v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:item.serial_state, tip:tipMsg}" 
+                                v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:getAllState(item), tip:tipMsg}" 
                                 :id="searchUrl + item.id" 
                                 :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" 
                                 :key="searchUrl + item.id" 
@@ -118,7 +118,7 @@
                                 <span v-if="showCheckbox" class="checked" name="order">
                                     <span 
                                         :class="{'f-checkbox':true, 'f-checkbox-check': isCheck(item.id)}" 
-                                        @click="checkedBox({'id':item.id, 'index':index, flag:item.serial_state})"></span>
+                                        @click="checkedBox({'id':item.id, 'index':index, flag:getAllState(item)})"></span>
                                 </span>
                                 
                                 <!-- middle item -->
@@ -446,7 +446,7 @@
                     this.isAllCheck = true;
                     this.deleteLists = [];
                     for(let index of this.list.keys()) {
-                        this.deleteLists.push({'id':this.list[index].id, 'index':index, 'flag':this.list[index].serial_state});
+                        this.deleteLists.push({'id':this.list[index].id, 'index':index, 'flag':this.getAllState(this.list[index])});
                     }
                 }else {
                     this.isAllCheck = false;
@@ -560,7 +560,11 @@
             */
             showConfirmDialog (flag, id=0, index=0) {
                 for(let deleteList of this.deleteLists) {
-                    if(deleteList.flag) {
+                    let flag = deleteList.flag;
+                    let canDelete = flag.every(function(item, index) {
+                        return item == null
+                    })
+                    if(!canDelete) {
                         this.$alert(this.tipMsg);
                         return false;
                     }
@@ -613,6 +617,21 @@
              */
             closeEdit () {
                 this.showItemDetail = '';
+            },
+
+            /**
+             * 从item中获取所有含有“state”字段的属性
+             * @param  {Object} item 
+             * @return {Array}
+             */
+            getAllState (item) {
+                let stateArr = new Array();
+                for(let proto in item) {
+                    if(proto.indexOf('_state') != -1 && proto != 'deleted_state') {
+                        stateArr.push(item[proto])
+                    }
+                }
+                return stateArr
             }
 
         }
