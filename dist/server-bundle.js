@@ -20576,9 +20576,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     name: 'Navbar',
@@ -30208,21 +30205,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.toggleTap()
       }
     }
-  }) : _vm._e(), _c('div', {
-    directives: [{
-      name: "touchstart",
-      rawName: "v-touchstart:touchstart",
-      value: ([_vm.self]),
-      expression: "[self]",
-      arg: "touchstart"
-    }, {
-      name: "touchmove",
-      rawName: "v-touchmove:touchmove",
-      value: ([_vm.self]),
-      expression: "[self]",
-      arg: "touchmove"
-    }]
-  }, [_vm._t("default")], 2)], 1)
+  }) : _vm._e(), _c('div', [_vm._t("default")], 2)], 1)
 },staticRenderFns: []}
 
 /***/ }),

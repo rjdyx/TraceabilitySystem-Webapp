@@ -45,10 +45,7 @@
             :class="{'tap-more': isMore, 'tap-shrink': !isMore}"
         ></div>
 
-        <div 
-            v-touchstart:touchstart="[self]"
-            v-touchmove:touchmove="[self]"
-        >
+        <div>
             <slot></slot>
         </div>
     </div>
@@ -156,7 +153,7 @@
         text-align: center;
         border: 1px solid #d4d4d4;
         box-sizing: border-box;
-        border-right: 0;
+        border-left: 0;
 
         span {
             display: inline-block;
