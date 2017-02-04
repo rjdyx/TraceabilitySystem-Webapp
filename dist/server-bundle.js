@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "/dist";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 106);
+/******/ 	return __webpack_require__(__webpack_require__.s = 142);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -13843,10 +13843,102 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(24)
+__vue_exports__ = __webpack_require__(31)
 
 /* template */
-var __vue_template__ = __webpack_require__(98)
+var __vue_template__ = __webpack_require__(138)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-f3783018"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(32)
+
+/* template */
+var __vue_template__ = __webpack_require__(113)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(35)
+
+/* template */
+var __vue_template__ = __webpack_require__(137)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(38)
+
+/* template */
+var __vue_template__ = __webpack_require__(133)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13866,7 +13958,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 5 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -13875,10 +13967,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(27)
+__vue_exports__ = __webpack_require__(41)
 
 /* template */
-var __vue_template__ = __webpack_require__(96)
+var __vue_template__ = __webpack_require__(130)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13898,7 +13990,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 6 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -13907,10 +13999,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(29)
+__vue_exports__ = __webpack_require__(43)
 
 /* template */
-var __vue_template__ = __webpack_require__(88)
+var __vue_template__ = __webpack_require__(118)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13930,23 +14022,23 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 7 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nprogress__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nprogress__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nprogress___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_nprogress__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__route_routers_js__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__route_routers_js__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex_router_sync___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vee_validate__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vee_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vee_validate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lang_zh_CN_vee_validate_js__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lang_zh_CN_vee_validate_js__ = __webpack_require__(62);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__["a"]; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return app; });
@@ -13973,40 +14065,12 @@ if (process.env.COUNT_ENV == 1) {
 	});
 }
 
-__webpack_require__(40);
+__webpack_require__(55);
 
 // 用vuex的store同步化router
 // 这会注册 `store.state.route`
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__["sync"])(__WEBPACK_IMPORTED_MODULE_3__vuex_index_js__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a" /* default */]);
 
-// 处理刷新的时候vuex被清空但是用户已经登录的情况
-// if (sessionStorage.user) {
-//     store.dispatch('setUserInfo', sessionStorage.user);
-// }
-
-// // 登录中间验证，页面需要登录而没有登录的情况直接跳转登录
-// router.beforeEach((to, from, next) => {
-//     if (to.matched.some(record => record.meta.requiresAuth)) {
-
-//         if (store.state.userInfo.userId) {
-//             next();
-//         } else {
-//             next({
-//                 path: '/login'
-//             });
-//         }
-
-//     } else {
-//         if (to.matched.some(record => record.name === 'login' || record.name === '404')) {
-//             next();
-//         }else {
-//             next({
-//                 path: '/404'
-//             });
-//         }
-
-//     }
-// });
 __WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a" /* default */].beforeEach(function (to, from, next) {
 	if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) == undefined || (typeof window === 'undefined' ? 'undefined' : _typeof(window)) == 'object') {
 		__WEBPACK_IMPORTED_MODULE_2_nprogress___default.a.set(0.5);
@@ -14031,131 +14095,13 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MOD
 
 
 /***/ }),
-/* 8 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = {
 	is_server: false,
 	app_url: 'http://find360.cn',
 	app_ano_url: 'http://s.find360.cn:8080'
-};
-
-/***/ }),
-/* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = {
-    name: 'App'
-};
-
-/***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = {
-    name: 'AreaUnit',
-    props: {
-        item: {
-            type: Object,
-            default: function _default() {
-                return null;
-            }
-        }
-    }
-};
-
-/***/ }),
-/* 11 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = {
-    name: 'MyImage',
-    props: {
-        item: {
-            type: Object,
-            default: function _default() {
-                return null;
-            }
-        }
-    }
 };
 
 /***/ }),
@@ -14181,41 +14127,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = {
-    name: 'Navbar',
-    props: {
-        taps: {
-            type: Array,
-            default: [{ name: 'default', key: 'default' }]
-        }
-    },
-    data: function data() {
-        return {
-            activeKey: this.taps[0].key
-        };
-    },
-
-    methods: {
-        getKey: function getKey(key) {
-            this.activeKey = key;
-            this.$emit('getKey', key);
-        }
-    }
+    name: 'App'
 };
 
 /***/ }),
@@ -16666,7 +16580,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
                 this.tmp[key] = this.letItem[key];
             }
-            // 当作为编辑组件时，保存按钮一开始就能用
         } catch (err) {
             _didIteratorError = true;
             _iteratorError = err;
@@ -16680,10 +16593,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     throw _iteratorError;
                 }
             }
-        }
-
-        if (this.letItem.name != '') {
-            this.canSubmit = true;
         }
     },
 
@@ -16835,10 +16744,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     name: 'ResearchField',
@@ -16867,6 +16772,2938 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 20 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'ResearchField',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    },
+    filters: {
+        table_name: function table_name(value) {
+            switch (value) {
+                case 1:
+                    return '疾病防治药';
+                case 2:
+                    return '传染病防治药';
+                case 3:
+                    return '寄生虫病防治药';
+                case 4:
+                    return '促生长药';
+                case 5:
+                    return '其他类';
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 21 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'ResearchField',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    },
+    filters: {
+        table_name: function table_name(value) {
+            switch (value) {
+                case 1:
+                    return '粗粮类';
+                case 2:
+                    return '维生素类';
+                case 3:
+                    return '青蔬类';
+                case 4:
+                    return '矿物质类';
+                case 5:
+                    return '干草料类';
+                case 6:
+                    return '其他类';
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 22 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'ResearchField',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    },
+    filters: {
+        table_name: function table_name(value) {
+            switch (value) {
+                case 'fodderuse':
+                    return '饲料使用';
+                case 'disease':
+                    return '畜禽病疫';
+                case 'detection':
+                    return '畜禽检疫';
+                case 'area':
+                    return '畜禽圈舍';
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 23 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popbeast',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'id': '',
+                    'image': '',
+                    'name': '',
+                    'ear': '',
+                    'desctiption': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'id': '',
+                'image': '',
+                'name': '',
+                'ear': '',
+                'desctiption': '',
+                'memo': ''
+            },
+            // 图片格式
+            pattern: {
+                type: Array,
+                default: function _default() {
+                    return ['jpeg', 'png'];
+                }
+            },
+            image: 'upload.png'
+        };
+    },
+
+    computed: {
+        //判断是编辑状态还是新建状态，取出不同的下标
+        defaultIndex: function defaultIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.categorys) {
+                    if (this.categorys[index] == this.letItem.category) {
+                        return index;
+                    }
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        // 初始化tmp，同时过滤掉beast里面不需要的属性
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                // 如果beast里面的属性tmp里面也有，那么那对应的值赋予tmp
+                if (key in this.tmp && this.tmp.hasOwnProperty(key)) {
+                    this.tmp[key] = this.letItem[key] == null ? '' : this.letItem[key];
+                } else {
+                    // 否则删除此属性
+                    delete this.letItem[key];
+                }
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+
+        if (this.edit) {
+            this.letItem.imageFlag = 'no';
+        }
+    },
+
+    methods: {
+
+        /**
+        * 触发input[type="file"]的click事件来选择图片
+        * @param  {object} event
+        */
+        selectPic: function selectPic(event) {
+
+            // 取出空格
+            var obj = event.target.parentNode.nextSibling;
+            if (obj.tagName != 'INPUT') {
+                obj = obj.nextSibling;
+            }
+
+            if (obj.tagName != 'INPUT') {
+                obj = event.target.nextSibling.nextSibling;
+            }
+
+            // 触发input的click事件
+            obj.click();
+        },
+
+
+        /**
+        *  获取input[type="file"]里的图片，预览到页面上
+        */
+        previewPic: function previewPic(srcPic, event) {
+            var _this = this;
+
+            // 获取选中的图片文件，并判断选中的图片数量是否合法
+            var file = event.target.files[0];
+
+            // 将pattern数组里的图片格式组装成"xxx|xxx|xxx"这样的格式，如："jpeg|png"
+            var regexParams = '';
+            for (var index = 0; index < this.pattern.length; index++) {
+                regexParams += this.pattern[index] + (index == this.pattern.length - 1 ? '' : '|');
+            }
+            // 将组装后的图片格式字符串传给正则表达式构造器，最后生成如/\/(?:jpeg|png)/i这样的正则表达式
+            var regex = new RegExp('\/(?:' + regexParams + ')', 'i');
+
+            // 过滤图片格式，如果出现格式不合法的，则取消此图片的上传操作
+            if (!regex.test(file.type)) {
+                alert("请选择格式为 " + this.pattern + " 的图片");
+                return;
+            }
+
+            // 开始读取选中的图片，添加预览到页面
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function (e) {
+                _this.letItem.image = e.target.result;
+                _this.letItem.file_name = file;
+            };
+        },
+
+
+        /**
+         * 删除图片
+         */
+        deletePic: function deletePic() {
+            this.letItem.image = 'upload.png';
+            this.letItem.file_name = '';
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            var params = {
+                'id': this.letItem.id,
+                'field': 'name',
+                'value': this.letItem.name
+            };
+            this.$unique(this, 'beast', params, 'letItem.name').then(function () {
+                if (_this2.edit) {
+                    if (_this2.letItem.file_name != null) {
+
+                        var form = new FormData();
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
+
+                        try {
+                            for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                form.append(key, _this2.letItem[key]);
+                            }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
+                            }
+                        }
+
+                        _this2.$update(_this2, 'beast', form, true).then(function (response) {
+                            var _iteratorNormalCompletion3 = true;
+                            var _didIteratorError3 = false;
+                            var _iteratorError3 = undefined;
+
+                            try {
+                                for (var _iterator3 = Object.keys(_this2.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                                    var key = _step3.value;
+
+                                    _this2.tmp[key] = _this2.letItem[key];
+                                }
+                            } catch (err) {
+                                _didIteratorError3 = true;
+                                _iteratorError3 = err;
+                            } finally {
+                                try {
+                                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                                        _iterator3.return();
+                                    }
+                                } finally {
+                                    if (_didIteratorError3) {
+                                        throw _iteratorError3;
+                                    }
+                                }
+                            }
+
+                            _this2.$alert('修改成功', 's');
+                        }, function (response) {
+                            _this2.$alert('连接出错', 'e');
+                        });
+                    } else {
+
+                        _this2.letItem.image = 'upload.png';
+                        _this2.$update(_this2, 'beast', _this2.letItem).then(function (response) {
+                            var _iteratorNormalCompletion4 = true;
+                            var _didIteratorError4 = false;
+                            var _iteratorError4 = undefined;
+
+                            try {
+
+                                for (var _iterator4 = Object.keys(_this2.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                                    var _key = _step4.value;
+
+                                    _this2.tmp[_key] = _this2.letItem[_key];
+                                }
+                            } catch (err) {
+                                _didIteratorError4 = true;
+                                _iteratorError4 = err;
+                            } finally {
+                                try {
+                                    if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                                        _iterator4.return();
+                                    }
+                                } finally {
+                                    if (_didIteratorError4) {
+                                        throw _iteratorError4;
+                                    }
+                                }
+                            }
+
+                            _this2.$alert('修改成功', 's');
+                        }, function (response) {
+                            if (response != false) {
+                                _this2.$alert('连接出错', 'e');
+                            } else {
+                                return false;
+                            }
+                        });
+                    }
+                } else {
+
+                    var _form = new FormData();
+                    var _iteratorNormalCompletion5 = true;
+                    var _didIteratorError5 = false;
+                    var _iteratorError5 = undefined;
+
+                    try {
+                        for (var _iterator5 = Object.keys(_this2.letItem)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                            var _key2 = _step5.value;
+
+                            _form.append(_key2, _this2.letItem[_key2]);
+                        }
+                    } catch (err) {
+                        _didIteratorError5 = true;
+                        _iteratorError5 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion5 && _iterator5.return) {
+                                _iterator5.return();
+                            }
+                        } finally {
+                            if (_didIteratorError5) {
+                                throw _iteratorError5;
+                            }
+                        }
+                    }
+
+                    if (_this2.letItem.file_name == null) {
+                        _this2.letItem.image = 'upload.png';
+                    }
+
+                    _this2.$storeL(_this2, 'beast', _form, true).then(function (response) {
+                        _this2.letItem.id = response.body;
+                        _this2.$emit('callback', _this2.letItem);
+                        _this2.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this2.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAddbeastation: function cancelAddbeastation() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditbeastation: function cancelEditbeastation() {
+            this.$emit('closeEdit');
+        },
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsg: function getMsg(msg) {
+            this.letItem.category = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion6 = true;
+            var _didIteratorError6 = false;
+            var _iteratorError6 = undefined;
+
+            try {
+                for (var _iterator6 = Object.keys(this.letItem)[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+                    var key = _step6.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError6 = true;
+                _iteratorError6 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion6 && _iterator6.return) {
+                        _iterator6.return();
+                    }
+                } finally {
+                    if (_didIteratorError6) {
+                        throw _iteratorError6;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 24 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popdrug',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'id': '',
+                    'drug_type': 1,
+                    'name': '',
+                    'use': '',
+                    'specification': '',
+                    'vender_name': '',
+                    'address': '',
+                    'phone': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            // 作为编辑组件时，用于临时备份父组件传递过来的数据，
+            // 以便在修改了数据但不保存时可以复原数据
+            tmp: {
+                'id': '',
+                'drug_type': 1,
+                'name': '',
+                'use': '',
+                'specification': '',
+                'vender_name': '',
+                'address': '',
+                'phone': '',
+                'memo': ''
+            },
+            categorys: [{ id: 1, name: '疾病防治药' }, { id: 2, name: '传染病防治药' }, { id: 3, name: '寄生虫病防治药' }, { id: 4, name: '促生长药' }, { id: 5, name: '其他类' }]
+        };
+    },
+
+    computed: {
+        defaultdrugIndex: function defaultdrugIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.categorys) {
+                    if (this.categorys[index].id == this.letItem.drug_type) {
+                        return index;
+                    }
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this = this;
+
+            var params = {
+                'id': this.letItem.id,
+                'field': 'name',
+                'value': this.letItem.name
+            };
+            this.$unique(this, 'drug', params, 'letItem.name').then(function () {
+                if (_this.edit) {
+                    _this.$update(_this, 'drug', _this.letItem).then(function (response) {
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
+
+                        try {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                _this.tmp[key] = _this.letItem[key];
+                            }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
+                            }
+                        }
+
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                } else {
+                    _this.$storeL(_this, 'drug', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdddrug: function cancelAdddrug() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditdrug: function cancelEditdrug() {
+            this.$emit('closeEdit');
+        },
+
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgPid: function getMsgPid(msg) {
+            this.letItem.drug_type = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    expert_name: 'PopExpert',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'class_type': 1,
+                    'table_type': 'fodderuse',
+                    'id': 0,
+                    'expert_name': '',
+                    'major': '',
+                    'level': '',
+                    'sex': '男',
+                    'age': '',
+                    'unit': '',
+                    'phone': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'class_type': 1,
+                'table_type': 'fodderuse',
+                'id': 0,
+                'expert_name': '',
+                'major': '',
+                'level': '',
+                'sex': '男',
+                'age': '',
+                'unit': '',
+                'phone': '',
+                'memo': ''
+            },
+            sex: ['男', '女'],
+            tableType: ['饲料使用', '畜禽病疫', '畜禽检疫', '畜禽圈舍'],
+            tableSet: ['fodderuse', 'disease', 'detection', 'area']
+        };
+    },
+
+    computed: {
+        //判断是编辑状态还是新建状态，取出不同的下标
+        defaultTypeIndex: function defaultTypeIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.tableType) {
+                    if (this.tableSet[index] == this.letItem.table_type) {
+                        return index;
+                    }
+                }
+            }
+        },
+        defaultSexIndex: function defaultSexIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.sex) {
+                    if (this.sex[index] == this.letItem.sex) {
+                        return index;
+                    }
+                };
+            }
+        }
+    },
+    mounted: function mounted() {
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this = this;
+
+            var params = {
+                'id': this.letItem.id,
+                'field': 'expert_name',
+                'value': this.letItem.expert_name
+            };
+            this.$unique(this, 'expert', params, 'letItem.expert_name').then(function () {
+
+                if (_this.edit) {
+                    _this.$update(_this, 'expert', _this.letItem).then(function (response) {
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
+
+                        try {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                _this.tmp[key] = _this.letItem[key];
+                            }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
+                            }
+                        }
+
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                } else {
+                    _this.$storeL(_this, 'expert', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAddExpert: function cancelAddExpert() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditExpert: function cancelEditExpert() {
+            this.$emit('closeEdit');
+        },
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgType: function getMsgType(msg) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.tableType)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var index = _step3.value;
+
+                    if (this.tableType[index] == msg) {
+                        this.letItem.table_type = this.tableSet[index];
+                    }
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        },
+        getMsgSex: function getMsgSex(msg) {
+            this.letItem.sex = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion4 = true;
+            var _didIteratorError4 = false;
+            var _iteratorError4 = undefined;
+
+            try {
+                for (var _iterator4 = Object.keys(this.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                    var key = _step4.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError4 = true;
+                _iteratorError4 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                        _iterator4.return();
+                    }
+                } finally {
+                    if (_didIteratorError4) {
+                        throw _iteratorError4;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 26 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popfarm',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'id': '',
+                    'name': '',
+                    'area': 0,
+                    'kind': '',
+                    'scale': '',
+                    'address': '',
+                    'principal': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            // 作为编辑组件时，用于临时备份父组件传递过来的数据，
+            // 以便在修改了数据但不保存时可以复原数据
+            tmp: {
+                'id': '',
+                'name': '',
+                'area': 0,
+                'kind': '',
+                'scale': '',
+                'address': '',
+                'principal': '',
+                'memo': ''
+            }
+        };
+    },
+    mounted: function mounted() {
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this = this;
+
+            // let params = {
+            //     'id': this.letItem.id,
+            //     'field': 'name',
+            //     'value': this.letItem.name
+            // };
+            // this.$unique(this, 'farm', params, 'letItem.name').then(() => {
+            if (this.edit) {
+                this.$update(this, 'farm', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this.tmp[key] = _this.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                this.$storeL(this, 'farm', this.letItem).then(function (response) {
+                    _this.letItem.id = response.body;
+                    _this.$emit('callback', _this.letItem);
+                    _this.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+            // }, () => {
+            //     return false;
+            // });
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAddfarm: function cancelAddfarm() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditfarm: function cancelEditfarm() {
+            this.$emit('closeEdit');
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 27 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popfarmed',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'pid': 0,
+                    'id': '',
+                    'name': '',
+                    'area': 0,
+                    'kind': '',
+                    'scale': '',
+                    'address': '',
+                    'principal': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            // 作为编辑组件时，用于临时备份父组件传递过来的数据，
+            // 以便在修改了数据但不保存时可以复原数据
+            tmp: {
+                'pid': 0,
+                'id': '',
+                'name': '',
+                'area': 0,
+                'kind': '',
+                'scale': '',
+                'address': '',
+                'principal': '',
+                'memo': ''
+            },
+            farms: []
+        };
+    },
+
+    computed: {
+        defaultfarmedIndex: function defaultfarmedIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.farms) {
+                    if (this.farms[index].id == this.letItem.pid) {
+                        return index;
+                    }
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        this.getAllfarmeds();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 获取所有养殖场
+        */
+        getAllfarmeds: function getAllfarmeds() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('farmed/create')).then(function (response) {
+                _this.$set(_this, 'farms', response.body);
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            // let params = {
+            //     'id': this.letItem.id,
+            //     'field': 'name',
+            //     'value': this.letItem.name
+            // };
+            // this.$unique(this, 'farmed', params, 'letItem.name').then(() => {
+            if (this.edit) {
+                this.$update(this, 'farmed', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                this.$storeL(this, 'farmed', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+            // }, () => {
+            //     return false;
+            // });
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAddfarmed: function cancelAddfarmed() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditfarmed: function cancelEditfarmed() {
+            this.$emit('closeEdit');
+        },
+
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgPid: function getMsgPid(msg) {
+            this.letItem.pid = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 28 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popfodder',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'id': '',
+                    'fodder_type': 1,
+                    'name': '',
+                    'use': '',
+                    'specification': '',
+                    'vender_name': '',
+                    'address': '',
+                    'phone': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            // 作为编辑组件时，用于临时备份父组件传递过来的数据，
+            // 以便在修改了数据但不保存时可以复原数据
+            tmp: {
+                'id': '',
+                'fodder_type': 1,
+                'name': '',
+                'use': '',
+                'specification': '',
+                'vender_name': '',
+                'address': '',
+                'phone': '',
+                'memo': ''
+            },
+            categorys: [{ id: 1, name: '粗粮类' }, { id: 2, name: '维生素类' }, { id: 3, name: '青蔬类' }, { id: 4, name: '矿物质类' }, { id: 5, name: '干草料类' }, { id: 6, name: '其他类' }]
+        };
+    },
+
+    computed: {
+        defaultfodderIndex: function defaultfodderIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.categorys) {
+                    if (this.categorys[index].id == this.letItem.fodder_type) {
+                        return index;
+                    }
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this = this;
+
+            var params = {
+                'id': this.letItem.id,
+                'field': 'name',
+                'value': this.letItem.name
+            };
+            this.$unique(this, 'fodder', params, 'letItem.name').then(function () {
+                if (_this.edit) {
+                    _this.$update(_this, 'fodder', _this.letItem).then(function (response) {
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
+
+                        try {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                _this.tmp[key] = _this.letItem[key];
+                            }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
+                            }
+                        }
+
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                } else {
+                    _this.$storeL(_this, 'fodder', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAddfodder: function cancelAddfodder() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditfodder: function cancelEditfodder() {
+            this.$emit('closeEdit');
+        },
+
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgPid: function getMsgPid(msg) {
+            this.letItem.fodder_type = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popoperate',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'id': 0,
+                    'name': '',
+                    'sex': 0,
+                    'age': '',
+                    'identity': '',
+                    'phone': '',
+                    'address': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'id': 0,
+                'name': '',
+                'sex': 0,
+                'age': '',
+                'identity': '',
+                'phone': '',
+                'address': '',
+                'memo': ''
+            },
+            sex: [{ id: 0, sex: '男' }, { id: 1, sex: '女' }]
+        };
+    },
+
+    computed: {
+        //判断是编辑状态还是新建状态，取出不同的下标
+        defaultSexIndex: function defaultSexIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.sex) {
+                    if (this.sex[index].id == this.letItem.sex) {
+                        return index;
+                    }
+                };
+            }
+        }
+    },
+    mounted: function mounted() {
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this = this;
+
+            var params = {
+                'id': this.letItem.id,
+                'field': 'name',
+                'value': this.letItem.name
+            };
+            this.$unique(this, 'operate', params, 'letItem.name').then(function () {
+
+                if (_this.edit) {
+                    _this.$update(_this, 'operate', _this.letItem).then(function (response) {
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
+
+                        try {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                _this.tmp[key] = _this.letItem[key];
+                            }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
+                            }
+                        }
+
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                } else {
+                    _this.$storeL(_this, 'operate', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAddoperate: function cancelAddoperate() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditoperate: function cancelEditoperate() {
+            this.$emit('closeEdit');
+        },
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgSex: function getMsgSex(msg) {
+            this.letItem.sex = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17217,7 +20054,218 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 21 */
+/* 31 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'AreaUnit',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    },
+    computed: {
+        area: function area() {
+            var area_with_unit = '';
+            if (this.item.area != null) {
+                area_with_unit += this.item.area;
+            }
+            if (this.item.area_unit != null) {
+                area_with_unit += this.item.area_unit;
+            }
+            return area_with_unit;
+        }
+    }
+};
+
+/***/ }),
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_vue__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__navbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_list_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__table_list_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Basic',
+    props: {
+        title: {
+            type: String,
+            default: '基础信息管理'
+        },
+        taps: {
+            type: Array,
+            default: function _default() {
+                return [{ name: '', key: '' }];
+            }
+        },
+        tableLists: {
+            type: Array,
+            default: function _default() {
+                return [{
+                    key: '',
+                    component: null,
+                    searchPlaceholder: '',
+                    searchUrl: '',
+                    theads: [''],
+                    protos: [''],
+                    widths: [0]
+                }];
+            }
+        }
+    },
+    data: function data() {
+        return {
+            _key: '',
+            component: null,
+            searchPlaceholder: '',
+            searchUrl: '',
+            theads: [],
+            protos: [],
+            widths: []
+        };
+    },
+
+    components: {
+        Navbar: __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default.a,
+        tableList: __WEBPACK_IMPORTED_MODULE_2__table_list_vue___default.a
+    },
+    created: function created() {
+        this.setTitle(this.title);
+        this._key = this.tableLists[0].key;
+        this.searchPlaceholder = this.tableLists[0].searchPlaceholder;
+        this.searchUrl = this.tableLists[0].searchUrl;
+        this.theads = this.tableLists[0].theads;
+        this.protos = this.tableLists[0].protos;
+        this.widths = this.tableLists[0].widths;
+    },
+    mounted: function mounted() {
+        this.component = this.tableLists[0].component;
+        this.$refs.tableList.getAllLists(this.searchUrl);
+    },
+
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']), {
+        flashList: function flashList(key) {
+            var _iteratorNormalCompletion = true;
+            var _didIteratorError = false;
+            var _iteratorError = undefined;
+
+            try {
+                for (var _iterator = this.tableLists[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                    var item = _step.value;
+
+                    if (item.key == key) {
+                        this._key = item.key;
+                        this.searchPlaceholder = item.searchPlaceholder;
+                        this.searchUrl = item.searchUrl;
+                        this.theads = item.theads;
+                        this.protos = item.protos;
+                        this.widths = item.widths;
+                        this.component = item.component;
+                        // 同步调用获取数据的方法
+                        this.$refs.tableList.getAllLists(item.searchUrl);
+                        // 关闭新增弹窗
+                        this.$refs.tableList.closeNew();
+                        // 关闭编辑弹窗
+                        this.$refs.tableList.closeEdit();
+                    }
+                }
+            } catch (err) {
+                _didIteratorError = true;
+                _iteratorError = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion && _iterator.return) {
+                        _iterator.return();
+                    }
+                } finally {
+                    if (_didIteratorError) {
+                        throw _iteratorError;
+                    }
+                }
+            }
+        }
+    })
+};
+
+/***/ }),
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17322,7 +20370,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
          */
         confirmMethod: function confirmMethod() {
             this.$emit('confirmAction');
-            this.$emit('cancelAction');
+            this.cancelMethod();
         },
 
 
@@ -17336,11 +20384,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 22 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -17384,11 +20437,108 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 23 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'MyImage',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    },
+    computed: {
+        showImg: function showImg() {
+            return this.item.image != null && this.item.image != '' && this.item.image != 'upload.png';
+        }
+    }
+};
+
+/***/ }),
+/* 36 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+  name: 'Loading'
+};
+
+/***/ }),
+/* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -17431,15 +20581,105 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = {
-  name: 'Loading'
+    name: 'Navbar',
+    props: {
+        taps: {
+            type: Array,
+            default: [{ name: 'default', key: 'default' }]
+        }
+    },
+    data: function data() {
+        return {
+            self: this,
+            activeKey: this.taps[0].key,
+            // 初始位置
+            yPosition: 0,
+            // 箭头的样式
+            isMore: true,
+            body: null
+        };
+    },
+
+    methods: {
+
+        /**
+         * 点击tap获取相应的key，以此改变tap的样式以及把key传回父组件
+         * @param  {[type]} key [description]
+         * @return {[type]}     [description]
+         */
+        getKey: function getKey(key) {
+            this.activeKey = key;
+            this.$emit('getKey', key);
+        },
+        enter: function enter(el, done) {
+            el.style.height = 0;
+            var num = Math.ceil((this.taps.length - 3) / 3);
+            var totalHeight = 45.4 * num + 'px';
+            Velocity(el, { height: totalHeight }, { duration: 300 });
+            Velocity(el, { height: totalHeight }, { complete: done });
+        },
+        leave: function leave(el, done) {
+            var num = Math.ceil((this.taps.length - 3) / 3);
+            var totalHeight = 45.4 * num + 'px';
+            el.style.height = totalHeight;
+            Velocity(el, { height: 0 }, { duration: 300 });
+            Velocity(el, { height: 0 }, { complete: done });
+        },
+        touchstart: function touchstart(event) {
+            //获取第一个触摸点
+            var touch = event.targetTouches[0];
+            this.yPosition = touch.pageY;
+        },
+        touchmove: function touchmove(event) {
+
+            var touch = event.targetTouches[0];
+            var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+            if (scrollTop == 0) {
+                // 下滑，则展开tap
+                if (touch.pageY - this.yPosition > 20) {
+                    this.isMore = false;
+                }
+                // 上滑，则收起tap
+                if (this.yPosition - touch.pageY > 20) {
+                    this.isMore = true;
+                }
+            }
+        },
+        toggleTap: function toggleTap() {
+            if (this.isMore) {
+                this.isMore = false;
+            } else {
+                this.isMore = true;
+            }
+        }
+    }
 };
 
 /***/ }),
-/* 24 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -17669,7 +20909,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 25 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17841,7 +21081,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 26 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17892,7 +21132,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 27 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18035,11 +21275,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 28 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 //
 //
 //
@@ -18180,21 +21422,100 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             if (event.target.className.indexOf('not-hide') == -1) {
                 this.hide();
             }
+        },
+
+
+        /**
+         * 判断用户是否有此操作栏的权限
+         * @param  {Object}  navbar 
+         * @return {Boolean}
+         */
+        hasRole: function hasRole(navbar) {
+            if (((typeof window === 'undefined' ? 'undefined' : _typeof(window)) == undefined || (typeof window === 'undefined' ? 'undefined' : _typeof(window)) == 'object') && window.role) {
+                return window.role.role1.some(function (item, index) {
+                    return navbar.role == item;
+                });
+            } else {
+                return true;
+            }
         }
     }
 
 };
 
 /***/ }),
-/* 29 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__search_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__search_vue__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__paginator_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__paginator_vue__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__paginator_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18439,6 +21760,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     props: {
         _key: {
             type: String,
+            required: true,
             default: ''
         },
         // 弹出框
@@ -18456,11 +21778,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         // 搜索的url
         searchUrl: {
             type: String,
+            required: true,
             default: ''
         },
         // thead
         theads: {
             type: Array,
+            required: true,
             default: function _default() {
                 return [''];
             }
@@ -18468,6 +21792,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         // 属性
         protos: {
             type: Array,
+            required: true,
             default: function _default() {
                 return [];
             }
@@ -18475,6 +21800,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         // 列表th的宽：%
         widths: {
             type: Array,
+            required: true,
             default: function _default() {
                 return [];
             }
@@ -18898,7 +22224,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 30 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18942,37 +22268,168 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 31 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue__);
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_public_image_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_public_image_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_public_image_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Basic',
+    data: function data() {
+        return {
+            taps: [{ name: '种植场信息', key: 'plantation' }, { name: '种植区信息', key: 'planta' }, { name: '果蔬档案', key: 'plant' }, { name: '肥料档案', key: 'manure' }, { name: '农药档案', key: 'medicament' }, { name: '专家档案', key: 'expert' }],
+            tableLists: [{
+                key: 'plantation',
+                component: { plantation: __WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue___default.a },
+                searchPlaceholder: '种植场名称',
+                searchUrl: 'plantation',
+                theads: ['种植场名称', '种植面积', '负责人'],
+                protos: ['name', 'area', 'director'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'planta',
+                component: { planta: __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue___default.a },
+                searchPlaceholder: '种植区名称',
+                searchUrl: 'planta',
+                theads: ['种植区名称', '种植面积', '负责人'],
+                protos: ['name', 'area', 'director'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'plant',
+                component: { plant: __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue___default.a, image: __WEBPACK_IMPORTED_MODULE_5__components_public_image_vue___default.a },
+                searchPlaceholder: '果蔬名称',
+                searchUrl: 'plant',
+                theads: ['果蔬名称', '生长周期', '已传图片'],
+                protos: ['name', 'growth_cycle', 'image'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'manure',
+                component: { manure: __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue___default.a },
+                searchPlaceholder: '肥料名称',
+                searchUrl: 'manure',
+                theads: ['肥料类别', '肥料名称', '用途'],
+                protos: ['category_name', 'name', 'usage'],
+                widths: [24, 24, 25]
+            }, {
+                key: 'medicament',
+                component: { medicament: __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue___default.a },
+                searchPlaceholder: '农药名称',
+                searchUrl: 'medicament',
+                theads: ['农药类别', '农药名称', '用途'],
+                protos: ['category_name', 'name', 'usage'],
+                widths: [26, 28, 19]
+            }, {
+                key: 'expert',
+                component: { expert: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue___default.a, table_type: __WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue___default.a },
+                searchPlaceholder: '专家名称',
+                searchUrl: 'expert',
+                theads: ['专家名称', '研究领域', '操作模块'],
+                protos: ['expert_name', 'major', 'table_type'],
+                widths: [24, 28, 21]
+            }]
+        };
+    },
+
+    components: {
+        BasicModel: __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default.a,
+        PopPlantation: __WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue___default.a,
+        AreaUnit: __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue___default.a,
+        PopPlanta: __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue___default.a,
+        PopPlant: __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue___default.a,
+        MyImage: __WEBPACK_IMPORTED_MODULE_5__components_public_image_vue___default.a,
+        PopManure: __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue___default.a,
+        PopMedicament: __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue___default.a,
+        PopExpert: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue___default.a,
+        ResearchField: __WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue___default.a
+    }
+};
+
+/***/ }),
+/* 46 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_image_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_image_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_image_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue__);
 //
 //
 //
@@ -18994,18 +22451,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 
 
@@ -19025,141 +22471,85 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
     name: 'Basic',
     data: function data() {
         return {
-            title: '基础信息管理',
-            taps: [{ name: '种植场信息', key: 'plantation' }, { name: '种植区信息', key: 'planta' }, { name: '果蔬档案', key: 'plant' }, { name: '肥料档案', key: 'manure' }, { name: '农药档案', key: 'medicament' }, { name: '专家档案', key: 'expert' }],
-            _key: '',
-            component: null,
-            searchPlaceholder: '',
-            searchUrl: '',
-            theads: [],
-            protos: [],
-            widths: [],
+            taps: [{ name: '养殖场信息', key: 'farm' }, { name: '养殖区信息', key: 'farmed' }, { name: '畜禽档案', key: 'beast' }, { name: '饲料档案', key: 'fodder' }, { name: '兽药档案', key: 'drug' }, { name: '人物档案', key: 'operate' }, { name: '专家档案', key: 'expert' }],
             tableLists: [{
-                key: 'plantation',
-                component: { plantation: __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default.a },
-                searchPlaceholder: '种植场名称',
-                searchUrl: 'plantation',
-                theads: ['种植场名称', '种植面积', '负责人'],
-                protos: ['name', 'area', 'director'],
+                key: 'farm',
+                component: { farm: __WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue___default.a },
+                searchPlaceholder: '养殖场名称',
+                searchUrl: 'farm',
+                theads: ['养殖场名称', '养殖面积', '负责人'],
+                protos: ['name', 'area', 'principal'],
                 widths: [32, 24, 17]
             }, {
-                key: 'planta',
-                component: { planta: __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default.a },
-                searchPlaceholder: '种植区名称',
-                searchUrl: 'planta',
-                theads: ['种植区名称', '种植面积', '负责人'],
-                protos: ['name', 'area', 'director'],
+                key: 'farmed',
+                component: { farmed: __WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue___default.a },
+                searchPlaceholder: '养殖区名称',
+                searchUrl: 'farmed',
+                theads: ['养殖区名称', '养殖面积', '负责人'],
+                protos: ['name', 'area', 'principal'],
                 widths: [32, 24, 17]
             }, {
-                key: 'plant',
-                component: { plant: __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue___default.a, image: __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue___default.a },
-                searchPlaceholder: '果蔬名称',
-                searchUrl: 'plant',
-                theads: ['果蔬名称', '生长周期', '已传图片'],
-                protos: ['name', 'growth_cycle', 'image'],
+                key: 'beast',
+                component: { beast: __WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue___default.a, image: __WEBPACK_IMPORTED_MODULE_2__components_public_image_vue___default.a },
+                searchPlaceholder: '畜禽名称',
+                searchUrl: 'beast',
+                theads: ['畜禽种类', '畜禽名称', '已传图片'],
+                protos: ['type_name', 'name', 'image'],
                 widths: [32, 24, 17]
             }, {
-                key: 'manure',
-                component: { manure: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue___default.a },
-                searchPlaceholder: '肥料名称',
-                searchUrl: 'manure',
-                theads: ['肥料类别', '肥料名称', '用途'],
-                protos: ['category_name', 'name', 'usage'],
-                widths: [24, 24, 25]
+                key: 'fodder',
+                component: { fodder: __WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue___default.a, fodder_type: __WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue___default.a },
+                searchPlaceholder: '饲料名称',
+                searchUrl: 'fodder',
+                theads: ['饲料类别', '饲料名称', '用途'],
+                protos: ['fodder_type', 'name', 'use'],
+                widths: [32, 24, 17]
             }, {
-                key: 'medicament',
-                component: { medicament: __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue___default.a },
-                searchPlaceholder: '农药名称',
-                searchUrl: 'medicament',
-                theads: ['农药类别', '农药名称', '用途'],
-                protos: ['category_name', 'name', 'usage'],
-                widths: [26, 28, 19]
+                key: 'drug',
+                component: { drug: __WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue___default.a, drug_type: __WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue___default.a },
+                searchPlaceholder: '兽药名称',
+                searchUrl: 'drug',
+                theads: ['兽药类别', '兽药名称', '用途'],
+                protos: ['drug_type', 'name', 'use'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'operate',
+                component: { operate: __WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue___default.a },
+                searchPlaceholder: '姓名',
+                searchUrl: 'operate',
+                theads: ['姓名', '年龄', '身份'],
+                protos: ['name', 'age', 'identity'],
+                widths: [28, 24, 21]
             }, {
                 key: 'expert',
-                component: { expert: __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue___default.a, table_type: __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue___default.a },
+                component: { expert: __WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue___default.a, table_type: __WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue___default.a },
                 searchPlaceholder: '专家名称',
                 searchUrl: 'expert',
-                theads: ['专家名称', '研究领域', '操作模块'],
-                protos: ['expert_name', 'major', 'table_type'],
-                widths: [24, 28, 21]
+                theads: ['操作模块', '专家名称', '研究领域'],
+                protos: ['table_type', 'expert_name', 'major'],
+                widths: [28, 24, 21]
             }]
         };
     },
 
-    computed: {},
     components: {
-        Navbar: __WEBPACK_IMPORTED_MODULE_1__components_basic_navbar_vue___default.a,
-        tableList: __WEBPACK_IMPORTED_MODULE_2__components_public_table_list_vue___default.a,
-        PopPlantation: __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_plantation_vue___default.a,
-        AreaUnit: __WEBPACK_IMPORTED_MODULE_4__components_basic_area_unit_vue___default.a,
-        PopPlanta: __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_planta_vue___default.a,
-        PopPlant: __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_plant_vue___default.a,
-        MyImage: __WEBPACK_IMPORTED_MODULE_7__components_basic_image_vue___default.a,
-        PopManure: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_manure_vue___default.a,
-        PopMedicament: __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_medicament_vue___default.a,
-        PopExpert: __WEBPACK_IMPORTED_MODULE_10__components_basic_pop_expert_vue___default.a,
-        ResearchField: __WEBPACK_IMPORTED_MODULE_11__components_basic_research_field_vue___default.a
-    },
-    created: function created() {
-        this.setTitle('基础信息管理');
-        this._key = this.tableLists[0].key;
-        this.searchPlaceholder = this.tableLists[0].searchPlaceholder;
-        this.searchUrl = this.tableLists[0].searchUrl;
-        this.theads = this.tableLists[0].theads;
-        this.protos = this.tableLists[0].protos;
-        this.widths = this.tableLists[0].widths;
-    },
-    mounted: function mounted() {
-        this.component = this.tableLists[0].component;
-        this.$refs.tableList.getAllLists(this.searchUrl);
-    },
-
-    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']), {
-        flashList: function flashList(key) {
-            var _iteratorNormalCompletion = true;
-            var _didIteratorError = false;
-            var _iteratorError = undefined;
-
-            try {
-                for (var _iterator = this.tableLists[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                    var item = _step.value;
-
-                    if (item.key == key) {
-                        this._key = item.key;
-                        this.searchPlaceholder = item.searchPlaceholder;
-                        this.searchUrl = item.searchUrl;
-                        this.theads = item.theads;
-                        this.protos = item.protos;
-                        this.widths = item.widths;
-                        this.component = item.component;
-                        // 同步调用获取数据的方法
-                        this.$refs.tableList.getAllLists(item.searchUrl);
-                        // 关闭新增弹窗
-                        this.$refs.tableList.closeNew();
-                        // 关闭编辑弹窗
-                        this.$refs.tableList.closeEdit();
-                    }
-                }
-            } catch (err) {
-                _didIteratorError = true;
-                _iteratorError = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion && _iterator.return) {
-                        _iterator.return();
-                    }
-                } finally {
-                    if (_didIteratorError) {
-                        throw _iteratorError;
-                    }
-                }
-            }
-        }
-    })
+        BasicModel: __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default.a,
+        AreaUnit: __WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue___default.a,
+        MyImage: __WEBPACK_IMPORTED_MODULE_2__components_public_image_vue___default.a,
+        PopFarm: __WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue___default.a,
+        PopFarmed: __WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue___default.a,
+        PopBeast: __WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue___default.a,
+        PopFodder: __WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue___default.a,
+        FodderType: __WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue___default.a,
+        PopDrug: __WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue___default.a,
+        DrugType: __WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue___default.a,
+        PopOperate: __WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue___default.a,
+        OperateType: __WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue___default.a
+    }
 };
 
 /***/ }),
-/* 32 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19415,7 +22805,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 33 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19435,16 +22825,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 34 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -19544,14 +22934,24 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             // 侧边栏数据
             navbars: [{
                 name: '农业日志',
+                role: 'log',
                 isEvent: true,
                 children: []
             }, {
                 name: '种植管理',
+                role: 'plantation',
                 isEvent: false,
                 children: [{
                     path: '/webapp/basic',
-                    name: '基础信息管理'
+                    name: '种植基础信息管理'
+                }]
+            }, {
+                name: '养殖管理',
+                role: 'beast',
+                isEvent: false,
+                children: [{
+                    path: '/webapp/beast',
+                    name: '养殖基础信息管理'
                 }]
             }]
         };
@@ -19617,18 +23017,18 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 };
 
 /***/ }),
-/* 35 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -19910,7 +23310,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 };
 
 /***/ }),
-/* 36 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20159,7 +23559,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
     mounted: function mounted() {
         if (this.$route.params.code == '401') {
             axios.get('/token').then(function (response) {
-                Laravel.csrfToken = response.data;
+                window.role = response.data;
+                Laravel.csrfToken = response.data.token;
             }).catch(function (error) {
                 if (error.status != 200) {
                     this.loginBtn = '登录';
@@ -20196,7 +23597,16 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                     } else {
                         // sessionStorage.setItem('user', response.data)
                         // this.setUserInfo(response.data)
-                        _this.$router.push('/webapp');
+                        var isPlantation = response.data.role1.some(function (item, index) {
+                            return item === 'plantation';
+                        });
+
+                        if (isPlantation) {
+                            _this.$router.push('/webapp');
+                            return true;
+                        } else {
+                            _this.$router.push('/webapp/beast');
+                        }
                     }
                 }).catch(function (error) {
                     if (error.status != 200) {
@@ -20217,14 +23627,14 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 };
 
 /***/ }),
-/* 37 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_table_list_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_table_list_vue__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_table_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_public_table_list_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hispic_vue__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hispic_vue__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hispic_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__hispic_vue__);
 //
 //
@@ -20279,7 +23689,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 38 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
@@ -20367,26 +23777,58 @@ exports.touchstart = function () {
     return {
         bind: function bind(el, binding) {
             el.addEventListener("touchstart", function (event) {
-                // 参数必须为数组
-                if (!(binding.value instanceof Array)) {
-
-                    console.error('arguments must be array in v-touchstart');
-                } else if (binding.value.length >= 1) {
-                    // 且参数数组不能为空
-
-                    // 参数数组第一个数据必须是vue实例
-                    if (!(binding.value[0] instanceof Vue && binding.value[0].constructor != Vue)) {
-                        console.error('the first argument must be Vue instance in v-touchstart');
-                    } else {
-                        var params = binding.value.slice(1);
-                        var myFunction = binding.arg;
-                        binding.value[0][myFunction](event, params);
-                    }
-                }
+                reactiveFn(binding, 'arguments must be array in v-touchstart', 'the first argument must be Vue instance in v-touchstart');
             });
         }
     };
 };
+
+/**
+ * 触摸移动
+ * @param {Array} 传入的参数必须为数组，数组第一个值为vue实例
+ */
+exports.touchmove = function () {
+    return {
+        bind: function bind(el, binding) {
+            el.addEventListener("touchmove", function (event) {
+                reactiveFn(binding, 'arguments must be array in v-touchmove', 'the first argument must be Vue instance in v-touchmove');
+            });
+        }
+    };
+};
+
+/**
+ * 触摸结束
+ * @param {Array} 传入的参数必须为数组，数组第一个值为vue实例
+ */
+exports.touchend = function () {
+    return {
+        bind: function bind(el, binding) {
+            el.addEventListener("touchend", function (event) {
+                reactiveFn(binding, 'arguments must be array in v-touchend', 'the first argument must be Vue instance in v-touchend');
+            });
+        }
+    };
+};
+
+function reactiveFn(binding, firErr, SecErr) {
+    // 参数必须为数组
+    if (!(binding.value instanceof Array)) {
+
+        console.error(firErr);
+    } else if (binding.value.length >= 1) {
+        // 且参数数组不能为空
+
+        // 参数数组第一个数据必须是vue实例
+        if (!(binding.value[0] instanceof Vue && binding.value[0].constructor != Vue)) {
+            console.error(SecErr);
+        } else {
+            var params = binding.value.slice(1);
+            var myFunction = binding.arg;
+            binding.value[0][myFunction](event, params);
+        }
+    }
+}
 
 /**
  * 固定元素
@@ -20405,7 +23847,7 @@ exports.sticky = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 39 */
+/* 54 */
 /***/ (function(module, exports) {
 
 
@@ -20423,7 +23865,7 @@ exports.getItemFromObject = function (object, index) {
 };
 
 /***/ }),
-/* 40 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20432,21 +23874,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vee_validate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__utils_validate_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__directive_directive_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_utils__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_easyAjax__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_utils__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_easyAjax__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__filters_filters_js__);
 
 
 // 注册全局组件
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('confirm', __webpack_require__(61));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('PopTransition', __webpack_require__(65));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('pop-select', __webpack_require__(64));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('loading', __webpack_require__(63));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('confirm', __webpack_require__(83));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('PopTransition', __webpack_require__(88));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('pop-select', __webpack_require__(87));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('loading', __webpack_require__(85));
 
 // 注册自定义验证规则
 
@@ -20474,7 +23916,7 @@ Object.keys(__WEBPACK_IMPORTED_MODULE_6__filters_filters_js___default.a).forEach
 });
 
 /***/ }),
-/* 41 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20494,15 +23936,15 @@ function createView(component) {
 }
 
 /***/ }),
-/* 42 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CreateView__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CreateView__ = __webpack_require__(56);
 /**
  * 路由
  */
@@ -20514,57 +23956,32 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 //=============================顶层组件====================================
 //---------------------------最顶层组件----------------------------------
-// const index = resolve => {
-//     require.ensure(['./views/index.vue'], () =>{
-//         resolve(require('./views/index.vue'));
-//     }, 'index');
-// };
-var index = __webpack_require__(71);
+var index = __webpack_require__(95);
 
 //---------------------------登录租金----------------------------------
-// const login = resolve => {
-//     require.ensure(['./views/login.vue'], () =>{
-//         resolve(require('./views/login.vue'));
-//     }, 'login');
-// };
-var login = __webpack_require__(73);
+var login = __webpack_require__(97);
 
 //---------------------------农业日志----------------------------------
-// const log = resolve => {
-//     require.ensure(['./views/log.vue'], () =>{
-//         resolve(require('./views/log.vue'));
-//     }, 'basic');
-// };
-var log = __webpack_require__(72);
+var log = __webpack_require__(96);
 
 //---------------------------404----------------------------------
-// const fourOFour = resolve => {
-//     require.ensure(['./views/404.vue'], () =>{
-//         resolve(require('./views/404.vue'));
-//     }, 'fourOFour');
-// };
-var fourOFour = __webpack_require__(67);
+var notFound = __webpack_require__(90);
 
 //---------------------------图片日志------------------------------
-// const dailylog = resolve => {
-//     require.ensure(['./views/dailylog.vue'], () =>{
-//         resolve(require('./views/dailylog.vue'));
-//     }, 'dailylog');
-// }
-var dailylog = __webpack_require__(69);
+var dailylog = __webpack_require__(93);
 
-//---------------------------历史图片------------------------------\
-var record = __webpack_require__(74);
+//---------------------------历史图片------------------------------
+var record = __webpack_require__(98);
 
 //=============================种植管理====================================
 
-//---------------------------基础信息管理----------------------------------
-// const basic = resolve => {
-//     require.ensure(['./views/basic.vue'], () =>{
-//         resolve(require('./views/basic.vue'));
-//     }, 'basic');
-// };
-var basic = __webpack_require__(68);
+//---------------------------种植基础信息管理----------------------------------
+var basic = __webpack_require__(91);
+
+//=============================养殖管理====================================
+
+//---------------------------养殖基础信息管理----------------------------------
+var beast = __webpack_require__(92);
 
 var routes = [{
     path: '/',
@@ -20580,6 +23997,11 @@ var routes = [{
         path: 'basic',
         name: 'basic',
         component: basic,
+        meta: { requiresAuth: true }
+    }, {
+        path: 'beast',
+        name: 'beast',
+        component: beast,
         meta: { requiresAuth: true }
     }, {
         path: 'log/:id',
@@ -20604,7 +24026,7 @@ var routes = [{
 }, {
     path: '/404',
     name: '404',
-    component: fourOFour
+    component: notFound
 }];
 
 /* harmony default export */ __webpack_exports__["a"] = new __WEBPACK_IMPORTED_MODULE_1_vue_router___default.a({
@@ -20613,7 +24035,7 @@ var routes = [{
 });
 
 /***/ }),
-/* 43 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20776,7 +24198,7 @@ var routes = [{
 };
 
 /***/ }),
-/* 44 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20842,7 +24264,7 @@ var routes = [{
             }, 1500);
         };
 
-        var env = __webpack_require__(8);
+        var env = __webpack_require__(11);
         // let host = env.app_url;
         var host = '';
         /**
@@ -20999,7 +24421,7 @@ var routes = [{
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
 /***/ }),
-/* 45 */
+/* 60 */
 /***/ (function(module, exports) {
 
 
@@ -21019,7 +24441,7 @@ exports.phone = function () {
 };
 
 /***/ }),
-/* 46 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21066,7 +24488,7 @@ var store = new __WEBPACK_IMPORTED_MODULE_0_vuex___default.a.Store({
 /* harmony default export */ __webpack_exports__["a"] = store;
 
 /***/ }),
-/* 47 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21197,7 +24619,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 };
 
 /***/ }),
-/* 48 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
@@ -21683,99 +25105,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, 
 
 
 /***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(9)
-
-/* template */
-var __vue_template__ = __webpack_require__(83)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(10)
-
-/* template */
-var __vue_template__ = __webpack_require__(99)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-d78373fa"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(11)
-
-/* template */
-var __vue_template__ = __webpack_require__(93)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 52 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21787,7 +25117,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(12)
 
 /* template */
-var __vue_template__ = __webpack_require__(102)
+var __vue_template__ = __webpack_require__(111)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21801,13 +25131,12 @@ if (typeof __vue_options__ === "function") {
 
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-f372f53e"
 
 module.exports = __vue_exports__
 
 
 /***/ }),
-/* 53 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21819,7 +25148,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(13)
 
 /* template */
-var __vue_template__ = __webpack_require__(97)
+var __vue_template__ = __webpack_require__(131)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21839,7 +25168,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 54 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21851,7 +25180,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(14)
 
 /* template */
-var __vue_template__ = __webpack_require__(90)
+var __vue_template__ = __webpack_require__(121)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21871,7 +25200,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 55 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21883,7 +25212,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(101)
+var __vue_template__ = __webpack_require__(136)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21903,7 +25232,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 56 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21915,7 +25244,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(16)
 
 /* template */
-var __vue_template__ = __webpack_require__(92)
+var __vue_template__ = __webpack_require__(125)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21935,7 +25264,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 57 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21947,7 +25276,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(17)
 
 /* template */
-var __vue_template__ = __webpack_require__(76)
+var __vue_template__ = __webpack_require__(101)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21967,7 +25296,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 58 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -21979,7 +25308,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(18)
 
 /* template */
-var __vue_template__ = __webpack_require__(91)
+var __vue_template__ = __webpack_require__(122)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -21999,7 +25328,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 59 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -22009,7 +25338,7 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(19)
 
 /* template */
-var __vue_template__ = __webpack_require__(82)
+var __vue_template__ = __webpack_require__(110)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22023,385 +25352,6 @@ if (typeof __vue_options__ === "function") {
 
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(20)
-
-/* template */
-var __vue_template__ = __webpack_require__(77)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(21)
-
-/* template */
-var __vue_template__ = __webpack_require__(103)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-fa478820"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(22)
-
-/* template */
-var __vue_template__ = __webpack_require__(85)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-47d0d10d"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(23)
-
-/* template */
-var __vue_template__ = __webpack_require__(86)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6082986c"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(25)
-
-/* template */
-var __vue_template__ = __webpack_require__(100)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-d7f2a610"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(26)
-
-/* template */
-var __vue_template__ = __webpack_require__(78)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(28)
-
-/* template */
-var __vue_template__ = __webpack_require__(81)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2e30aea7"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(30)
-
-/* template */
-var __vue_template__ = __webpack_require__(79)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2cf2c367"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(31)
-
-/* template */
-var __vue_template__ = __webpack_require__(94)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(32)
-
-/* template */
-var __vue_template__ = __webpack_require__(87)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6a4cda6c"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(33)
-
-/* template */
-var __vue_template__ = __webpack_require__(89)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6d4a5459"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(34)
-
-/* template */
-var __vue_template__ = __webpack_require__(84)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-41f5877e"
 
 module.exports = __vue_exports__
 
@@ -22413,13 +25363,11 @@ module.exports = __vue_exports__
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
-/* styles */
-
 /* script */
-__vue_exports__ = __webpack_require__(35)
+__vue_exports__ = __webpack_require__(20)
 
 /* template */
-var __vue_template__ = __webpack_require__(80)
+var __vue_template__ = __webpack_require__(124)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22433,7 +25381,6 @@ if (typeof __vue_options__ === "function") {
 
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2d9fb773"
 
 module.exports = __vue_exports__
 
@@ -22445,13 +25392,11 @@ module.exports = __vue_exports__
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
-/* styles */
-
 /* script */
-__vue_exports__ = __webpack_require__(36)
+__vue_exports__ = __webpack_require__(21)
 
 /* template */
-var __vue_template__ = __webpack_require__(95)
+var __vue_template__ = __webpack_require__(102)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22465,7 +25410,6 @@ if (typeof __vue_options__ === "function") {
 
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-aea64150"
 
 module.exports = __vue_exports__
 
@@ -22477,13 +25421,11 @@ module.exports = __vue_exports__
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
-/* styles */
-
 /* script */
-__vue_exports__ = __webpack_require__(37)
+__vue_exports__ = __webpack_require__(22)
 
 /* template */
-var __vue_template__ = __webpack_require__(75)
+var __vue_template__ = __webpack_require__(116)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -22503,6 +25445,1021 @@ module.exports = __vue_exports__
 
 /***/ }),
 /* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(23)
+
+/* template */
+var __vue_template__ = __webpack_require__(99)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-00d1b213"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(24)
+
+/* template */
+var __vue_template__ = __webpack_require__(120)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6f46cb1c"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(25)
+
+/* template */
+var __vue_template__ = __webpack_require__(105)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-293f8ba6"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(26)
+
+/* template */
+var __vue_template__ = __webpack_require__(127)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-92158e9c"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(27)
+
+/* template */
+var __vue_template__ = __webpack_require__(106)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2b46bf51"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(28)
+
+/* template */
+var __vue_template__ = __webpack_require__(126)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-853cde1c"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(29)
+
+/* template */
+var __vue_template__ = __webpack_require__(134)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-d71f7290"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(30)
+
+/* template */
+var __vue_template__ = __webpack_require__(103)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(33)
+
+/* template */
+var __vue_template__ = __webpack_require__(139)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-fa478820"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(34)
+
+/* template */
+var __vue_template__ = __webpack_require__(114)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-47d0d10d"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(36)
+
+/* template */
+var __vue_template__ = __webpack_require__(115)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6082986c"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(37)
+
+/* template */
+var __vue_template__ = __webpack_require__(123)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-755edde0"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(39)
+
+/* template */
+var __vue_template__ = __webpack_require__(135)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-d7f2a610"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(40)
+
+/* template */
+var __vue_template__ = __webpack_require__(104)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(42)
+
+/* template */
+var __vue_template__ = __webpack_require__(109)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2e30aea7"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(44)
+
+/* template */
+var __vue_template__ = __webpack_require__(107)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2cf2c367"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(45)
+
+/* template */
+var __vue_template__ = __webpack_require__(128)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(46)
+
+/* template */
+var __vue_template__ = __webpack_require__(132)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(47)
+
+/* template */
+var __vue_template__ = __webpack_require__(117)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6a4cda6c"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(48)
+
+/* template */
+var __vue_template__ = __webpack_require__(119)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6d4a5459"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(49)
+
+/* template */
+var __vue_template__ = __webpack_require__(112)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-41f5877e"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(50)
+
+/* template */
+var __vue_template__ = __webpack_require__(108)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2d9fb773"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(51)
+
+/* template */
+var __vue_template__ = __webpack_require__(129)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-aea64150"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(52)
+
+/* template */
+var __vue_template__ = __webpack_require__(100)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "pic-preview",
+    on: {
+      "click": _vm.selectPic
+    }
+  }, [(_vm.letItem.image == '' || _vm.letItem.image == null) ? _c('img', {
+    attrs: {
+      "src": _vm.$img(_vm.image)
+    }
+  }) : (_vm.letItem.image == 'upload.png') ? _c('img', {
+    attrs: {
+      "src": _vm.$img(_vm.letItem.image)
+    }
+  }) : _c('img', {
+    attrs: {
+      "src": _vm.$img(_vm.letItem.image, false)
+    }
+  })]), _c('input', {
+    attrs: {
+      "name": "file_name",
+      "type": "file",
+      "hidden": "hidden"
+    },
+    on: {
+      "change": function($event) {
+        _vm.previewPic(_vm.letItem, $event)
+      }
+    }
+  }), _c('div', {
+    staticClass: "delete-pic-btn"
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.deletePic
+    }
+  }, [_vm._v("删除")])])])]), _c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "畜禽名称",
+      "type": "text",
+      "id": "beast_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.desctiption),
+      expression: "letItem.desctiption"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "beast_new_desctiption",
+      "name": "desctiption"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.desctiption)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.desctiption = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.ear),
+      expression: "letItem.ear"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "beast_new_ear",
+      "name": "ear"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.ear)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.ear = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "beast_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditbeastation
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddbeastation
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(4)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "beast_new_fullName"
+    }
+  }, [_vm._v("畜禽名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "beast_new_desctiption"
+    }
+  }, [_vm._v("品种描述")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "beast_new_ear"
+    }
+  }, [_vm._v("RFID位置")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "beast_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 100 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22527,7 +26484,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 76 */
+/* 101 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -22901,7 +26858,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 77 */
+/* 102 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', [_vm._v("\n  " + _vm._s(_vm._f("table_name")(_vm.item.fodder_type)) + "\n")])
+},staticRenderFns: []}
+
+/***/ }),
+/* 103 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23515,7 +27480,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 78 */
+/* 104 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -23532,1901 +27497,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 79 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: "content"
-  }, [_vm._v("\n      404  \n    ")])])
-}]}
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    attrs: {
-      "id": "log"
-    }
-  }, [_c('search', {
-    attrs: {
-      "placeholder": "搜索种植区",
-      "searchUrl": "dailylog",
-      "params": _vm.params
-    },
-    on: {
-      "callback": _vm.updateList
-    }
-  }, [_c('button', {
-    staticClass: "stl-btn",
-    on: {
-      "click": function($event) {
-        _vm.show = true
-      }
-    }
-  }, [_vm._v("提交内容")])]), _c('table', {
-    staticClass: "table-list"
-  }, [_vm._m(0), _c('tbody', {
-    staticClass: "list-body"
-  }, [_vm._l((_vm.list), function(log, index) {
-    return [_c('tr', {
-      class: {
-        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
-      }
-    }, [_c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "planta_name"
-      }
-    }, [_vm._v(_vm._s(log.planta_name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "plant_name"
-      }
-    }, [_vm._v(_vm._s(log.plant_name))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "operator"
-      }
-    }, [_vm._v(_vm._s(log.cultivate_man))]), _c('td', {
-      staticClass: "td-note",
-      attrs: {
-        "name": "finish"
-      }
-    }, [(log.date != null) ? _c('img', {
-      attrs: {
-        "src": _vm.$img('ok.png')
-      }
-    }) : _vm._e()]), _c('td', {
-      staticClass: "align-c",
-      attrs: {
-        "name": "open"
-      },
-      on: {
-        "click": function($event) {
-          _vm.troggleEdit(log)
-        }
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": _vm.$img('list.png')
-      }
-    })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == log.cultivate_id) ? _c('tr', [_c('td', {
-      attrs: {
-        "colspan": "5"
-      }
-    }, [_c('pop-log', {
-      attrs: {
-        "cultivateId": log.cultivate_id
-      },
-      on: {
-        "closeEdit": function($event) {
-          _vm.closeOwnEditPane(log.cultivate_id)
-        },
-        "operatorBack": _vm.changeOperator
-      }
-    })], 1)]) : _vm._e()]
-  })], 2)]), _c('div', {
-    staticClass: "paginator-module"
-  }, [_c('paginator', {
-    attrs: {
-      "total": _vm.total,
-      "url": "dailylog/query",
-      "paginatorParams": _vm.params
-    },
-    on: {
-      "result": _vm.updateList
-    }
-  })], 1), _c('confirm', {
-    attrs: {
-      "show": _vm.show,
-      "message": _vm.message
-    },
-    on: {
-      "confirmAction": function($event) {
-        _vm.putAllStore(1)
-      },
-      "cancelAction": function($event) {
-        _vm.show = false
-      }
-    }
-  })], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', {
-    staticClass: "list-head"
-  }, [_c('tr', {
-    staticClass: "list-head-th"
-  }, [_c('th', {
-    staticClass: "fir",
-    attrs: {
-      "name": "planta_name"
-    }
-  }, [_vm._v("种植区")]), _c('th', {
-    attrs: {
-      "name": "plant_name"
-    }
-  }, [_vm._v("果蔬名称")]), _c('th', {
-    attrs: {
-      "name": "operator"
-    }
-  }, [_vm._v("操作人")]), _c('th', {
-    attrs: {
-      "name": "finish"
-    }
-  }, [_vm._v("完成")]), _c('th', {
-    staticClass: "align-c",
-    attrs: {
-      "name": "open"
-    }
-  })])])
-}]}
-
-/***/ }),
-/* 81 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('transition-group', {
-    attrs: {
-      "name": "animate-class-transition",
-      "enter-active-class": "animated slideInLeft",
-      "leave-active-class": "animated slideOutLeft"
-    }
-  }, [_c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.show),
-      expression: "show"
-    }, {
-      name: "touchstart",
-      rawName: "v-touchstart:initTouch",
-      value: ([_vm.self]),
-      expression: "[self]",
-      arg: "initTouch"
-    }],
-    key: "black",
-    staticClass: "black-layer"
-  }), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.show),
-      expression: "show"
-    }, {
-      name: "touchstart",
-      rawName: "v-touchstart:initTouch",
-      value: ([_vm.self]),
-      expression: "[self]",
-      arg: "initTouch"
-    }],
-    key: "slider",
-    staticClass: "slider-bar"
-  }, [_c('ul', [_c('li', {
-    attrs: {
-      "id": "top"
-    }
-  }, [_c('span', {
-    staticClass: "top-img"
-  })]), _vm._l((_vm.navbars), function(navbar, index) {
-    return [_c('li', [_c('span', {
-      staticClass: "not-hide",
-      on: {
-        "click": function($event) {
-          _vm.triggle(navbar.name, navbar.isEvent, index)
-        }
-      }
-    }, [_vm._v(_vm._s(navbar.name))])]), (navbar.children.length != 0 && _vm.subNavbarIndex == index) ? _c('ul', _vm._l((navbar.children), function(subNavbar) {
-      return _c('li', {
-        on: {
-          "click": _vm.hide
-        }
-      }, [_c('router-link', {
-        staticClass: "not-hide",
-        attrs: {
-          "to": subNavbar.path,
-          "tag": "span",
-          "exact": ""
-        }
-      }, [_vm._v(_vm._s(subNavbar.name))])], 1)
-    })) : _vm._e()]
-  })], 2), _c('div', {
-    attrs: {
-      "id": "bottom"
-    }
-  }, [_c('button', [_vm._v("返回")])])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('span', [_vm._v("\n  " + _vm._s(_vm._f("table_name")(_vm.item.table_type)) + "\n")])
-},staticRenderFns: []}
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    attrs: {
-      "id": "app"
-    }
-  }, [_c('router-view'), _c('loading')], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('my-header', {
-    attrs: {
-      "title": _vm.title
-    }
-  }, [_c('div', {
-    staticClass: "show-sliderBar-btn",
-    on: {
-      "click": function($event) {
-        _vm.show = true
-      }
-    },
-    slot: "left"
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.$img('slider.png'),
-      "alt": ""
-    }
-  })]), _c('div', {
-    staticClass: "right-btn",
-    on: {
-      "click": _vm.record
-    },
-    slot: "right"
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.$img('eye.png'),
-      "alt": ""
-    }
-  })])]), _c('div', {
-    attrs: {
-      "id": "mynprogress"
-    }
-  }), _c('router-view'), _c('slider-bar', {
-    attrs: {
-      "show": _vm.show,
-      "navbars": _vm.navbars
-    },
-    on: {
-      "hide": function($event) {
-        _vm.show = !_vm.show
-      },
-      "getSubNavbars": _vm.getSubNavbars
-    }
-  })], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('header', {
-    staticClass: "header"
-  }, [_vm._t("left"), _c('h1', {
-    staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.title))]), _vm._t("right")], 2)
-},staticRenderFns: []}
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('span', {
-    staticClass: "loader",
-    attrs: {
-      "title": "2"
-    }
-  }, [_c('svg', {
-    staticStyle: {
-      "enable-background": "new 0 0 50 50"
-    },
-    attrs: {
-      "version": "1.1",
-      "xmlns": "http://www.w3.org/2000/svg",
-      "xmlns:xlink": "http://www.w3.org/1999/xlink",
-      "x": "0px",
-      "y": "0px",
-      "width": "25px",
-      "height": "25px",
-      "viewBox": "0 0 50 50",
-      "xml:space": "preserve"
-    }
-  }, [_c('path', {
-    attrs: {
-      "fill": "#2196F3",
-      "stroke-width": "1",
-      "d": "M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
-    }
-  }, [_c('animateTransform', {
-    attrs: {
-      "attributeType": "xml",
-      "attributeName": "transform",
-      "type": "rotate",
-      "from": "0 25 25",
-      "to": "360 25 25",
-      "dur": "0.6s",
-      "repeatCount": "indefinite"
-    }
-  })], 1)])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('canvas', {
-    attrs: {
-      "id": "canvas",
-      "width": "1120",
-      "height": "899"
-    }
-  }, [_vm._v("当前浏览器不支持")]), _c('img', {
-    attrs: {
-      "src": _vm.imageSrc,
-      "id": "Img",
-      "width": "80%"
-    },
-    on: {
-      "click": _vm.showpop
-    }
-  }), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.showpic),
-      expression: "showpic"
-    }],
-    staticClass: "wrap"
-  }, [_c('div', {
-    ref: "box",
-    staticClass: "box",
-    on: {
-      "click": _vm.toHide
-    }
-  }, [_c('div', {
-    ref: "iBox",
-    staticClass: "innerBox"
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.imageSrc,
-      "alt": "图片"
-    }
-  })])])])])
-},staticRenderFns: []}
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('search', {
-    attrs: {
-      "placeholder": _vm.searchPlaceholder,
-      "searchUrl": _vm.searchUrl
-    },
-    on: {
-      "callback": _vm.updateListByMore
-    }
-  }, [_vm._t("search", [_c('button', {
-    staticClass: "stl-btn",
-    on: {
-      "click": function($event) {
-        _vm.showNewPanel = true
-      }
-    }
-  }, [_vm._v("新建")])])], 2), (_vm.component != null && _vm.component[_vm._key] != null) ? [(_vm.showNewPanel) ? _c(_vm.component[_vm._key], {
-    tag: "component",
-    attrs: {
-      "edit": false
-    },
-    on: {
-      "callback": _vm.updateListByOne,
-      "closeNew": function($event) {
-        _vm.showNewPanel = false
-      }
-    }
-  }) : _vm._e()] : _vm._e(), _c('div', {
-    staticClass: "table-list"
-  }, [_c('div', {
-    staticClass: "list-head"
-  }, [_c('div', {
-    staticClass: "list-head-th"
-  }, [(_vm.showCheckbox) ? _c('span', {
-    staticClass: "fir",
-    attrs: {
-      "name": "order"
-    }
-  }, [_vm._v("序号")]) : _vm._e(), _vm._l((_vm.theads), function(thead, index) {
-    return [_c('span', {
-      style: ({
-        width: _vm.widths[index] + '%'
-      }),
-      attrs: {
-        "name": _vm.protos[index]
-      }
-    }, [_vm._v("\n                        " + _vm._s(thead) + "\n                    ")])]
-  }), _c('span', {
-    staticClass: "align-c",
-    attrs: {
-      "name": "open"
-    }
-  })], 2)]), _c('transition', {
-    attrs: {
-      "name": "slide-fade"
-    }
-  }, [(_vm.showUp) ? _c('transition-group', {
-    key: "tbody",
-    staticClass: "list-body",
-    attrs: {
-      "name": "slide-up",
-      "tag": "ul"
-    }
-  }, [_vm._l((_vm.list), function(item, index) {
-    return [_c('li', {
-      directives: [{
-        name: "touchDelete",
-        rawName: "v-touchDelete:showConfirmDialog",
-        value: ({
-          vm: _vm.self,
-          type: 0,
-          id: item.id,
-          index: index,
-          flag: item.serial_state,
-          tip: _vm.tipMsg
-        }),
-        expression: "{vm:self, type:0, id:item.id, index:index, flag:item.serial_state, tip:tipMsg}",
-        arg: "showConfirmDialog"
-      }],
-      key: _vm.searchUrl + item.id,
-      class: {
-        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
-      },
-      attrs: {
-        "id": _vm.searchUrl + item.id,
-        "name": "order"
-      }
-    }, [(_vm.showCheckbox) ? _c('span', {
-      staticClass: "checked",
-      attrs: {
-        "name": "order"
-      }
-    }, [_c('span', {
-      class: {
-        'f-checkbox': true, 'f-checkbox-check': _vm.isCheck(item.id)
-      },
-      on: {
-        "click": function($event) {
-          _vm.checkedBox({
-            'id': item.id,
-            'index': index,
-            flag: item.serial_state
-          })
-        }
-      }
-    })]) : _vm._e(), _vm._l((_vm.protos), function(proto, indexProto) {
-      return [(_vm.component != null && _vm.component[proto] != null) ? _c('span', {
-        staticClass: "td-note",
-        style: ({
-          width: _vm.widths[indexProto] + '%'
-        }),
-        attrs: {
-          "name": proto
-        }
-      }, [_c(_vm.component[proto], {
-        tag: "component",
-        attrs: {
-          "item": item
-        }
-      })], 1) : _c('span', {
-        staticClass: "td-note",
-        style: ({
-          width: _vm.widths[indexProto] + '%'
-        }),
-        attrs: {
-          "name": proto
-        }
-      }, [_vm._v("\n                                    " + _vm._s(item[proto]) + "\n                                ")])]
-    }), (_vm.component != null && _vm.component.hispic != null) ? _c('span', {
-      staticClass: "align-c",
-      attrs: {
-        "name": "open"
-      }
-    }, [_c(_vm.component.hispic, {
-      tag: "component",
-      attrs: {
-        "item": item
-      }
-    })], 1) : _c('span', {
-      staticClass: "align-c",
-      attrs: {
-        "name": "open"
-      },
-      on: {
-        "click": function($event) {
-          _vm.troggleEdit(item.id)
-        }
-      }
-    }, [_c('img', {
-      attrs: {
-        "src": _vm.$img('list.png')
-      }
-    })])], 2), (_vm.showItemDetail != '' && _vm.showItemDetail == item.id) ? _c('li', {
-      key: _vm.searchUrl + item.id + '-pop'
-    }, [(_vm.component != null && _vm.component[_vm._key] != null) ? [(_vm.showEditPane) ? _c(_vm.component[_vm._key], {
-      tag: "component",
-      attrs: {
-        "letItem": item,
-        "edit": true
-      },
-      on: {
-        "closeEdit": function($event) {
-          _vm.closeOwnEditPane(item)
-        }
-      }
-    }) : _vm._e()] : _vm._e()], 2) : _vm._e()]
-  })], 2) : _vm._e()], 1), _c('div', {
-    staticClass: "list-foot"
-  }, [_c('div', {
-    staticClass: "list-foot-tr"
-  }, [_c('span', {
-    attrs: {
-      "name": "order"
-    }
-  }, [_c('span', {
-    class: {
-      'f-checkbox': true, 'f-checkbox-check': _vm.isAllCheck
-    },
-    on: {
-      "click": _vm.selectAll
-    }
-  })]), _c('span', {
-    staticStyle: {
-      "width": "86%"
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-del",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.showConfirmDialog(1)
-      }
-    }
-  }, [_vm._v("删除")])])])])], 1), _c('div', {
-    staticClass: "paginator-module"
-  }, [_c('paginator', {
-    attrs: {
-      "total": _vm.total,
-      "url": _vm.searchUrl + '/query',
-      "paginatorParams": _vm.params
-    },
-    on: {
-      "lastPageEvent": function($event) {
-        _vm.showUp = false
-      },
-      "nextPageEvent": function($event) {
-        _vm.showUp = false
-      },
-      "changePageEvent": function($event) {
-        _vm.showUp = false
-      },
-      "result": _vm.updateListByMore
-    }
-  })], 1), _c('confirm', {
-    attrs: {
-      "show": _vm.showConfirm
-    },
-    on: {
-      "confirmAction": _vm.oneOrBatchdestroy,
-      "cancelAction": function($event) {
-        _vm.showConfirm = false
-      }
-    }
-  })], 2)
-},staticRenderFns: []}
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('router-link', {
-    attrs: {
-      "to": {
-        name: 'dailylog',
-        params: {
-          date: _vm.item.date
-        }
-      },
-      "tag": "span",
-      "replace": ""
-    }
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.$img('rightRaw.png'),
-      "alt": ""
-    }
-  })])
-},staticRenderFns: []}
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        _vm.validateBeforeSubmit($event)
-      }
-    }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "id": "manure_category_id",
-      "name": "manure_category_id",
-      "items": _vm.categorys,
-      "defaultIndex": parseInt(_vm.defaultIndex),
-      "protoBack": "id",
-      "protoShow": "name"
-    },
-    on: {
-      "callback": _vm.getMsg
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('category_id')),
-      expression: "errors.has('category_id')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('category_id')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "肥料名称",
-      "type": "text",
-      "id": "manure_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.usage),
-      expression: "letItem.usage"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "manure_usage",
-      "name": "usage"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.usage)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.usage = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('usage')),
-      expression: "errors.has('usage')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('usage')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.specification),
-      expression: "letItem.specification"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "manure_new_specification",
-      "name": "specification"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.specification)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.specification = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.dealer),
-      expression: "letItem.dealer"
-    }],
-    staticClass: "input-pop",
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "manure_new_dealer",
-      "name": "dealer"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.dealer)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.dealer = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.origin),
-      expression: "letItem.origin"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "manure_new_origin",
-      "name": "origin"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.origin)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.origin = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "manure_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(7), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "manure_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditManure
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddManure
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_category_id"
-    }
-  }, [_vm._v("分类")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_fullName"
-    }
-  }, [_vm._v("肥料名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_usage"
-    }
-  }, [_vm._v("用途")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_specification"
-    }
-  }, [_vm._v("包装规格")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_dealer"
-    }
-  }, [_vm._v("经销商名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_origin"
-    }
-  }, [_vm._v("产地")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_phone"
-    }
-  }, [_vm._v("联系方式")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
-
-/***/ }),
-/* 91 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        _vm.validateBeforeSubmit($event)
-      }
-    }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "种植场名称",
-      "type": "text",
-      "id": "plantation_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop input-area"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.area),
-      expression: "letItem.area"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.area),
-      expression: "letItem.area",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|decimal:2",
-      "data-vv-as": "种植面积",
-      "type": "text",
-      "id": "plantation_new_area",
-      "name": "area",
-      "placeholder": "请填写数字(必填)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.area)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.area = $event.target.value
-      }
-    }
-  })]), _c('td', {
-    staticClass: "area_unit"
-  }, [_c('pop-select', {
-    attrs: {
-      "name": "area_unit",
-      "items": _vm.area_unit,
-      "defaultIndex": parseInt(_vm.defaultIndex)
-    },
-    on: {
-      "callback": _vm.getMsg
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('area')),
-      expression: "errors.has('area')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "plantation_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.address),
-      expression: "letItem.address"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "plantation_new_address",
-      "name": "address"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.address = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.director),
-      expression: "letItem.director"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "plantation_new_principal",
-      "name": "director"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.director)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.director = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "plantation_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditPlantation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddPlantation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(6)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_fullName"
-    }
-  }, [_vm._v("种植场名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_area"
-    }
-  }, [_vm._v("种植面积")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_phone"
-    }
-  }, [_vm._v("详细电话")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_address"
-    }
-  }, [_vm._v("详细地址")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_principal"
-    }
-  }, [_vm._v("负责人")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
-
-/***/ }),
-/* 92 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        _vm.validateBeforeSubmit($event)
-      }
-    }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "pic-preview",
-    on: {
-      "click": _vm.selectPic
-    }
-  }, [(_vm.letItem.image == '' || _vm.letItem.image == null) ? _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.image)
-    }
-  }) : (_vm.letItem.image == 'upload.png') ? _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.letItem.image)
-    }
-  }) : _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.letItem.image, false)
-    }
-  })]), _c('input', {
-    attrs: {
-      "name": "file_name",
-      "type": "file",
-      "hidden": "hidden"
-    },
-    on: {
-      "change": function($event) {
-        _vm.previewPic(_vm.letItem, $event)
-      }
-    }
-  }), _c('div', {
-    staticClass: "delete-pic-btn"
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.deletePic
-    }
-  }, [_vm._v("删除")])])])]), _c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "name": "category",
-      "id": "plant_categroy_select",
-      "items": _vm.categorys,
-      "defaultIndex": parseInt(_vm.defaultIndex)
-    },
-    on: {
-      "callback": _vm.getMsg
-    }
-  })], 1)]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "果蔬名称",
-      "type": "text",
-      "id": "plant_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.growth_cycle),
-      expression: "letItem.growth_cycle"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.growth_cycle),
-      expression: "letItem.growth_cycle",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|decimal:2",
-      "data-vv-as": "生长周期",
-      "type": "text",
-      "id": "plant_new_growth_cycle",
-      "name": "growth_cycle",
-      "placeholder": "必填，单位（天）"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.growth_cycle)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.growth_cycle = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('growth_cycle')),
-      expression: "errors.has('growth_cycle')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('growth_cycle')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.description),
-      expression: "letItem.description"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "plant_new_description",
-      "name": "description"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.description)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.description = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "plant_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditPlantation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddPlantation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(5)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_categroy_select"
-    }
-  }, [_vm._v("果蔬类别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_new_fullName"
-    }
-  }, [_vm._v("果蔬名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_new_growth_cycle"
-    }
-  }, [_vm._v("生长周期")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_new_description"
-    }
-  }, [_vm._v("特征描述")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
-
-/***/ }),
-/* 93 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('span', [(_vm.item.image != null && _vm.item.image != '' && _vm.item.image != 'upload.png') ? _c('img', {
-    attrs: {
-      "src": _vm.$img('ok.png')
-    }
-  }) : _vm._e()])
-},staticRenderFns: []}
-
-/***/ }),
-/* 94 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('navbar', {
-    attrs: {
-      "taps": _vm.taps
-    },
-    on: {
-      "getKey": _vm.flashList
-    }
-  }), _c('table-list', {
-    ref: "tableList",
-    attrs: {
-      "_key": _vm._key,
-      "component": _vm.component,
-      "searchPlaceholder": _vm.searchPlaceholder,
-      "searchUrl": _vm.searchUrl,
-      "theads": _vm.theads,
-      "protos": _vm.protos,
-      "widths": _vm.widths
-    }
-  })], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "content",
-    attrs: {
-      "id": "mynprogress"
-    }
-  }, [_c('transition', {
-    attrs: {
-      "name": "hide-logo",
-      "mode": "out-in"
-    }
-  }, [(_vm.showLogo) ? _c('div', {
-    key: "logo",
-    staticClass: "logo"
-  }) : _vm._e(), (!_vm.showLogo) ? _c('div', {
-    key: "logo-hide",
-    staticClass: "logo-hide"
-  }) : _vm._e()]), _c('form', {
-    style: (_vm.formPadding),
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        _vm.login($event)
-      }
-    }
-  }, [_c('ul', [_c('li', [(_vm.isError) ? _c('div', {
-    staticClass: "err-tip"
-  }, [_vm._v("用户名或密码错误")]) : _vm._e(), _c('input', {
-    directives: [{
-      name: "focus",
-      rawName: "v-focus"
-    }, {
-      name: "touchstart",
-      rawName: "v-touchstart:hideLogo",
-      value: ([_vm.self]),
-      expression: "[self]",
-      arg: "hideLogo"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.user.login),
-      expression: "user.login",
-      arg: "hideLogo"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.user.login),
-      expression: "user.login",
-      arg: "hideLogo",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    class: {
-      red: _vm.isNameError
-    },
-    attrs: {
-      "data-vv-rules": "required",
-      "data-vv-as": "用户名",
-      "placeholder": _vm.userNamePlaceholder,
-      "name": "login",
-      "type": "text"
-    },
-    domProps: {
-      "value": _vm._s(_vm.user.login)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.user.login = $event.target.value
-      }
-    }
-  }), _c('span')]), _c('li', [_c('input', {
-    directives: [{
-      name: "touchstart",
-      rawName: "v-touchstart:hideLogo",
-      value: ([_vm.self]),
-      expression: "[self]",
-      arg: "hideLogo"
-    }, {
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.user.password),
-      expression: "user.password",
-      arg: "hideLogo"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.user.password),
-      expression: "user.password",
-      arg: "hideLogo",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    class: {
-      red: _vm.isPasswordError
-    },
-    attrs: {
-      "data-vv-rules": "required",
-      "data-vv-as": "密码",
-      "placeholder": _vm.passwordPlaceholder,
-      "name": "password",
-      "type": "password"
-    },
-    domProps: {
-      "value": _vm._s(_vm.user.password)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.user.password = $event.target.value
-      }
-    }
-  }), _c('span')])]), _c('div', {
-    staticClass: "login-btn"
-  }, [_c('a', [_c('button', {
-    attrs: {
-      "type": "submit",
-      "disabled": _vm.isLogin
-    }
-  }, [_vm._v(_vm._s(_vm.loginBtn))])])])])], 1)
-},staticRenderFns: []}
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "search-top"
-  }, [_vm._t("default", [_c('button', {
-    staticClass: "stl-btn"
-  }, [_vm._v("新建")])]), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.searchInput),
-      expression: "searchInput"
-    }],
-    staticClass: "str-inp",
-    attrs: {
-      "type": "text",
-      "placeholder": _vm.placeholder
-    },
-    domProps: {
-      "value": _vm._s(_vm.searchInput)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.searchInput = $event.target.value
-      }
-    }
-  }), _c('button', {
-    staticClass: "str-btn",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.search
-    }
-  }, [_vm._v("搜索")])], 2)
-},staticRenderFns: []}
-
-/***/ }),
-/* 97 */
+/* 105 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25906,7 +27977,3960 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 98 */
+/* 106 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "pid",
+      "items": _vm.farms,
+      "defaultIndex": parseInt(_vm.defaultfarmedIndex),
+      "protoBack": "id",
+      "protoShow": "name"
+    },
+    on: {
+      "callback": _vm.getMsgPid
+    }
+  })], 1)]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('pid')),
+      expression: "errors.has('pid')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('pid')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "养殖区名称",
+      "type": "text",
+      "id": "farmed_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.area),
+      expression: "letItem.area"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.area),
+      expression: "letItem.area",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|decimal:2",
+      "data-vv-as": "养殖面积",
+      "type": "text",
+      "id": "farmed_new_area",
+      "name": "area",
+      "placeholder": "请填写数字(必填),单位是亩"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.area)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.area = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('area')),
+      expression: "errors.has('area')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.principal),
+      expression: "letItem.principal"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "farmed_new_principal",
+      "name": "principal"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.principal)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.principal = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.kind),
+      expression: "letItem.kind"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "farmed_new_kind",
+      "name": "kind"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.kind)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.kind = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.scale),
+      expression: "letItem.scale"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "farmed_new_scale",
+      "name": "scale"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.scale)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.scale = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.address),
+      expression: "letItem.address"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "farmed_new_address",
+      "name": "address"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.address = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "farmed_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditfarmed
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddfarmed
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farmeded_new_select"
+    }
+  }, [_vm._v("养殖场名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farmed_new_fullName"
+    }
+  }, [_vm._v("养殖区名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farmed_new_area"
+    }
+  }, [_vm._v("养殖面积")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farmed_new_principal"
+    }
+  }, [_vm._v("负责人")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farmed_new_kind"
+    }
+  }, [_vm._v("养殖畜禽种类")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farmed_new_scale"
+    }
+  }, [_vm._v("养殖规模")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farmed_new_address"
+    }
+  }, [_vm._v("地址")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farmed_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "content"
+  }, [_vm._v("\n      404  \n    ")])])
+}]}
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "log"
+    }
+  }, [_c('search', {
+    attrs: {
+      "placeholder": "搜索种植区",
+      "searchUrl": "dailylog",
+      "params": _vm.params
+    },
+    on: {
+      "callback": _vm.updateList
+    }
+  }, [_c('button', {
+    staticClass: "stl-btn",
+    on: {
+      "click": function($event) {
+        _vm.show = true
+      }
+    }
+  }, [_vm._v("提交内容")])]), _c('table', {
+    staticClass: "table-list"
+  }, [_vm._m(0), _c('tbody', {
+    staticClass: "list-body"
+  }, [_vm._l((_vm.list), function(log, index) {
+    return [_c('tr', {
+      class: {
+        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
+      }
+    }, [_c('td', {
+      staticClass: "td-note",
+      attrs: {
+        "name": "planta_name"
+      }
+    }, [_vm._v(_vm._s(log.planta_name))]), _c('td', {
+      staticClass: "td-note",
+      attrs: {
+        "name": "plant_name"
+      }
+    }, [_vm._v(_vm._s(log.plant_name))]), _c('td', {
+      staticClass: "td-note",
+      attrs: {
+        "name": "operator"
+      }
+    }, [_vm._v(_vm._s(log.cultivate_man))]), _c('td', {
+      staticClass: "td-note",
+      attrs: {
+        "name": "finish"
+      }
+    }, [(log.date != null) ? _c('img', {
+      attrs: {
+        "src": _vm.$img('ok.png')
+      }
+    }) : _vm._e()]), _c('td', {
+      staticClass: "align-c",
+      attrs: {
+        "name": "open"
+      },
+      on: {
+        "click": function($event) {
+          _vm.troggleEdit(log)
+        }
+      }
+    }, [_c('img', {
+      attrs: {
+        "src": _vm.$img('list.png')
+      }
+    })])]), (_vm.showItemDetail != '' && _vm.showItemDetail == log.cultivate_id) ? _c('tr', [_c('td', {
+      attrs: {
+        "colspan": "5"
+      }
+    }, [_c('pop-log', {
+      attrs: {
+        "cultivateId": log.cultivate_id
+      },
+      on: {
+        "closeEdit": function($event) {
+          _vm.closeOwnEditPane(log.cultivate_id)
+        },
+        "operatorBack": _vm.changeOperator
+      }
+    })], 1)]) : _vm._e()]
+  })], 2)]), _c('div', {
+    staticClass: "paginator-module"
+  }, [_c('paginator', {
+    attrs: {
+      "total": _vm.total,
+      "url": "dailylog/query",
+      "paginatorParams": _vm.params
+    },
+    on: {
+      "result": _vm.updateList
+    }
+  })], 1), _c('confirm', {
+    attrs: {
+      "show": _vm.show,
+      "message": _vm.message
+    },
+    on: {
+      "confirmAction": function($event) {
+        _vm.putAllStore(1)
+      },
+      "cancelAction": function($event) {
+        _vm.show = false
+      }
+    }
+  })], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', {
+    staticClass: "list-head"
+  }, [_c('tr', {
+    staticClass: "list-head-th"
+  }, [_c('th', {
+    staticClass: "fir",
+    attrs: {
+      "name": "planta_name"
+    }
+  }, [_vm._v("种植区")]), _c('th', {
+    attrs: {
+      "name": "plant_name"
+    }
+  }, [_vm._v("果蔬名称")]), _c('th', {
+    attrs: {
+      "name": "operator"
+    }
+  }, [_vm._v("操作人")]), _c('th', {
+    attrs: {
+      "name": "finish"
+    }
+  }, [_vm._v("完成")]), _c('th', {
+    staticClass: "align-c",
+    attrs: {
+      "name": "open"
+    }
+  })])])
+}]}
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('transition-group', {
+    attrs: {
+      "name": "animate-class-transition",
+      "enter-active-class": "animated slideInLeft",
+      "leave-active-class": "animated slideOutLeft"
+    }
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show),
+      expression: "show"
+    }, {
+      name: "touchstart",
+      rawName: "v-touchstart:initTouch",
+      value: ([_vm.self]),
+      expression: "[self]",
+      arg: "initTouch"
+    }],
+    key: "black",
+    staticClass: "black-layer"
+  }), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show),
+      expression: "show"
+    }, {
+      name: "touchstart",
+      rawName: "v-touchstart:initTouch",
+      value: ([_vm.self]),
+      expression: "[self]",
+      arg: "initTouch"
+    }],
+    key: "slider",
+    staticClass: "slider-bar"
+  }, [_c('ul', [_c('li', {
+    attrs: {
+      "id": "top"
+    }
+  }, [_c('span', {
+    staticClass: "top-img"
+  })]), _vm._l((_vm.navbars), function(navbar, index) {
+    return [(_vm.hasRole(navbar)) ? _c('li', [_c('span', {
+      staticClass: "not-hide",
+      on: {
+        "click": function($event) {
+          _vm.triggle(navbar.name, navbar.isEvent, index)
+        }
+      }
+    }, [_vm._v(_vm._s(navbar.name))])]) : _vm._e(), (navbar.children.length != 0 && _vm.subNavbarIndex == index) ? _c('ul', _vm._l((navbar.children), function(subNavbar) {
+      return _c('li', {
+        on: {
+          "click": _vm.hide
+        }
+      }, [_c('router-link', {
+        staticClass: "not-hide",
+        attrs: {
+          "to": subNavbar.path,
+          "tag": "span",
+          "exact": ""
+        }
+      }, [_vm._v(_vm._s(subNavbar.name))])], 1)
+    })) : _vm._e()]
+  })], 2), _c('div', {
+    attrs: {
+      "id": "bottom"
+    }
+  }, [_c('button', [_vm._v("返回")])])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', [_vm._v("\n  " + _vm._s(_vm._f("table_name")(_vm.item.table_type)) + "\n")])
+},staticRenderFns: []}
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "app"
+    }
+  }, [_c('router-view'), _c('loading')], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('my-header', {
+    attrs: {
+      "title": _vm.title
+    }
+  }, [_c('div', {
+    staticClass: "show-sliderBar-btn",
+    on: {
+      "click": function($event) {
+        _vm.show = true
+      }
+    },
+    slot: "left"
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('slider.png'),
+      "alt": ""
+    }
+  })]), _c('div', {
+    staticClass: "right-btn",
+    on: {
+      "click": _vm.record
+    },
+    slot: "right"
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('eye.png'),
+      "alt": ""
+    }
+  })])]), _c('div', {
+    attrs: {
+      "id": "mynprogress"
+    }
+  }), _c('router-view'), _c('slider-bar', {
+    attrs: {
+      "show": _vm.show,
+      "navbars": _vm.navbars
+    },
+    on: {
+      "hide": function($event) {
+        _vm.show = !_vm.show
+      },
+      "getSubNavbars": _vm.getSubNavbars
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 113 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('navbar', {
+    attrs: {
+      "taps": _vm.taps
+    },
+    on: {
+      "getKey": _vm.flashList
+    }
+  }, [_c('table-list', {
+    ref: "tableList",
+    attrs: {
+      "_key": _vm._key,
+      "component": _vm.component,
+      "searchPlaceholder": _vm.searchPlaceholder,
+      "searchUrl": _vm.searchUrl,
+      "theads": _vm.theads,
+      "protos": _vm.protos,
+      "widths": _vm.widths
+    }
+  })], 1)], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('header', {
+    staticClass: "header"
+  }, [_vm._t("left"), _c('h1', {
+    staticClass: "title"
+  }, [_vm._v(_vm._s(_vm.title))]), _vm._t("right")], 2)
+},staticRenderFns: []}
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', {
+    staticClass: "loader",
+    attrs: {
+      "title": "2"
+    }
+  }, [_c('svg', {
+    staticStyle: {
+      "enable-background": "new 0 0 50 50"
+    },
+    attrs: {
+      "version": "1.1",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "xmlns:xlink": "http://www.w3.org/1999/xlink",
+      "x": "0px",
+      "y": "0px",
+      "width": "25px",
+      "height": "25px",
+      "viewBox": "0 0 50 50",
+      "xml:space": "preserve"
+    }
+  }, [_c('path', {
+    attrs: {
+      "fill": "#2196F3",
+      "stroke-width": "1",
+      "d": "M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"
+    }
+  }, [_c('animateTransform', {
+    attrs: {
+      "attributeType": "xml",
+      "attributeName": "transform",
+      "type": "rotate",
+      "from": "0 25 25",
+      "to": "360 25 25",
+      "dur": "0.6s",
+      "repeatCount": "indefinite"
+    }
+  })], 1)])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', [_vm._v("\n  " + _vm._s(_vm._f("table_name")(_vm.item.table_type)) + "\n")])
+},staticRenderFns: []}
+
+/***/ }),
+/* 117 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('canvas', {
+    attrs: {
+      "id": "canvas",
+      "width": "1120",
+      "height": "899"
+    }
+  }, [_vm._v("当前浏览器不支持")]), _c('img', {
+    attrs: {
+      "src": _vm.imageSrc,
+      "id": "Img",
+      "width": "80%"
+    },
+    on: {
+      "click": _vm.showpop
+    }
+  }), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.showpic),
+      expression: "showpic"
+    }],
+    staticClass: "wrap"
+  }, [_c('div', {
+    ref: "box",
+    staticClass: "box",
+    on: {
+      "click": _vm.toHide
+    }
+  }, [_c('div', {
+    ref: "iBox",
+    staticClass: "innerBox"
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.imageSrc,
+      "alt": "图片"
+    }
+  })])])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('search', {
+    attrs: {
+      "placeholder": _vm.searchPlaceholder,
+      "searchUrl": _vm.searchUrl
+    },
+    on: {
+      "callback": _vm.updateListByMore
+    }
+  }, [_vm._t("search", [_c('button', {
+    staticClass: "stl-btn",
+    on: {
+      "click": function($event) {
+        _vm.showNewPanel = true
+      }
+    }
+  }, [_vm._v("新建")])])], 2), (_vm.component != null && _vm.component[_vm._key] != null) ? [(_vm.showNewPanel) ? _c(_vm.component[_vm._key], {
+    tag: "component",
+    attrs: {
+      "edit": false
+    },
+    on: {
+      "callback": _vm.updateListByOne,
+      "closeNew": function($event) {
+        _vm.showNewPanel = false
+      }
+    }
+  }) : _vm._e()] : _vm._e(), _c('div', {
+    staticClass: "table-list"
+  }, [_c('div', {
+    staticClass: "list-head"
+  }, [_c('div', {
+    staticClass: "list-head-th"
+  }, [(_vm.showCheckbox) ? _c('span', {
+    staticClass: "fir",
+    attrs: {
+      "name": "order"
+    }
+  }, [_vm._v("序号")]) : _vm._e(), _vm._l((_vm.theads), function(thead, index) {
+    return [_c('span', {
+      style: ({
+        width: _vm.widths[index] + '%'
+      }),
+      attrs: {
+        "name": _vm.protos[index]
+      }
+    }, [_vm._v("\n                        " + _vm._s(thead) + "\n                    ")])]
+  }), _c('span', {
+    staticClass: "align-c",
+    attrs: {
+      "name": "open"
+    }
+  })], 2)]), _c('transition', {
+    attrs: {
+      "name": "slide-fade"
+    }
+  }, [(_vm.showUp) ? _c('transition-group', {
+    key: "tbody",
+    staticClass: "list-body",
+    attrs: {
+      "name": "slide-up",
+      "tag": "ul"
+    }
+  }, [_vm._l((_vm.list), function(item, index) {
+    return [_c('li', {
+      directives: [{
+        name: "touchDelete",
+        rawName: "v-touchDelete:showConfirmDialog",
+        value: ({
+          vm: _vm.self,
+          type: 0,
+          id: item.id,
+          index: index,
+          flag: item.serial_state,
+          tip: _vm.tipMsg
+        }),
+        expression: "{vm:self, type:0, id:item.id, index:index, flag:item.serial_state, tip:tipMsg}",
+        arg: "showConfirmDialog"
+      }],
+      key: _vm.searchUrl + item.id,
+      class: {
+        'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
+      },
+      attrs: {
+        "id": _vm.searchUrl + item.id,
+        "name": "order"
+      }
+    }, [(_vm.showCheckbox) ? _c('span', {
+      staticClass: "checked",
+      attrs: {
+        "name": "order"
+      }
+    }, [_c('span', {
+      class: {
+        'f-checkbox': true, 'f-checkbox-check': _vm.isCheck(item.id)
+      },
+      on: {
+        "click": function($event) {
+          _vm.checkedBox({
+            'id': item.id,
+            'index': index,
+            flag: item.serial_state
+          })
+        }
+      }
+    })]) : _vm._e(), _vm._l((_vm.protos), function(proto, indexProto) {
+      return [(_vm.component != null && _vm.component[proto] != null) ? _c('span', {
+        staticClass: "td-note",
+        style: ({
+          width: _vm.widths[indexProto] + '%'
+        }),
+        attrs: {
+          "name": proto
+        }
+      }, [_c(_vm.component[proto], {
+        tag: "component",
+        attrs: {
+          "item": item
+        }
+      })], 1) : _c('span', {
+        staticClass: "td-note",
+        style: ({
+          width: _vm.widths[indexProto] + '%'
+        }),
+        attrs: {
+          "name": proto
+        }
+      }, [_vm._v("\n                                    " + _vm._s(item[proto]) + "\n                                ")])]
+    }), (_vm.component != null && _vm.component.hispic != null) ? _c('span', {
+      staticClass: "align-c",
+      attrs: {
+        "name": "open"
+      }
+    }, [_c(_vm.component.hispic, {
+      tag: "component",
+      attrs: {
+        "item": item
+      }
+    })], 1) : _c('span', {
+      staticClass: "align-c",
+      attrs: {
+        "name": "open"
+      },
+      on: {
+        "click": function($event) {
+          _vm.troggleEdit(item.id)
+        }
+      }
+    }, [_c('img', {
+      attrs: {
+        "src": _vm.$img('list.png')
+      }
+    })])], 2), (_vm.showItemDetail != '' && _vm.showItemDetail == item.id) ? _c('li', {
+      key: _vm.searchUrl + item.id + '-pop'
+    }, [(_vm.component != null && _vm.component[_vm._key] != null) ? [(_vm.showEditPane) ? _c(_vm.component[_vm._key], {
+      tag: "component",
+      attrs: {
+        "letItem": item,
+        "edit": true
+      },
+      on: {
+        "closeEdit": function($event) {
+          _vm.closeOwnEditPane(item)
+        }
+      }
+    }) : _vm._e()] : _vm._e()], 2) : _vm._e()]
+  })], 2) : _vm._e()], 1), _c('div', {
+    staticClass: "list-foot"
+  }, [_c('div', {
+    staticClass: "list-foot-tr"
+  }, [_c('span', {
+    attrs: {
+      "name": "order"
+    }
+  }, [_c('span', {
+    class: {
+      'f-checkbox': true, 'f-checkbox-check': _vm.isAllCheck
+    },
+    on: {
+      "click": _vm.selectAll
+    }
+  })]), _c('span', {
+    staticStyle: {
+      "width": "86%"
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-del",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.showConfirmDialog(1)
+      }
+    }
+  }, [_vm._v("删除")])])])])], 1), _c('div', {
+    staticClass: "paginator-module"
+  }, [_c('paginator', {
+    attrs: {
+      "total": _vm.total,
+      "url": _vm.searchUrl + '/query',
+      "paginatorParams": _vm.params
+    },
+    on: {
+      "lastPageEvent": function($event) {
+        _vm.showUp = false
+      },
+      "nextPageEvent": function($event) {
+        _vm.showUp = false
+      },
+      "changePageEvent": function($event) {
+        _vm.showUp = false
+      },
+      "result": _vm.updateListByMore
+    }
+  })], 1), _c('confirm', {
+    attrs: {
+      "show": _vm.showConfirm
+    },
+    on: {
+      "confirmAction": _vm.oneOrBatchdestroy,
+      "cancelAction": function($event) {
+        _vm.showConfirm = false
+      }
+    }
+  })], 2)
+},staticRenderFns: []}
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'dailylog',
+        params: {
+          date: _vm.item.date
+        }
+      },
+      "tag": "span",
+      "replace": ""
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('rightRaw.png'),
+      "alt": ""
+    }
+  })])
+},staticRenderFns: []}
+
+/***/ }),
+/* 120 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "drug_type",
+      "items": _vm.categorys,
+      "defaultIndex": parseInt(_vm.defaultdrugIndex),
+      "protoBack": "id",
+      "protoShow": "name"
+    },
+    on: {
+      "callback": _vm.getMsgPid
+    }
+  })], 1)]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('drug_type')),
+      expression: "errors.has('drug_type')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('drug_type')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "兽药名称",
+      "type": "text",
+      "id": "drug_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.use),
+      expression: "letItem.use"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "drug_new_use",
+      "name": "use"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.use)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.use = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.specification),
+      expression: "letItem.specification"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "drug_new_specification",
+      "name": "specification"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.specification)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.specification = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.vender_name),
+      expression: "letItem.vender_name"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "drug_new_vender_name",
+      "name": "vender_name"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.vender_name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.vender_name = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.address),
+      expression: "letItem.address"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "drug_new_address",
+      "name": "address"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.address = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "phone",
+      "type": "text",
+      "id": "drug_new_phone",
+      "name": "phone",
+      "placeholder": "请输入11位手机号(固话用-隔开)"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.phone)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.phone = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('phone')),
+      expression: "errors.has('phone')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "drug_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditdrug
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAdddrug
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "drug_new_select"
+    }
+  }, [_vm._v("兽药类别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "drug_new_fullName"
+    }
+  }, [_vm._v("兽药名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "drug_new_use"
+    }
+  }, [_vm._v("用途")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "drug_new_specification"
+    }
+  }, [_vm._v("包装规格")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "drug_new_vender_name"
+    }
+  }, [_vm._v("生产厂家名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "drug_new_address"
+    }
+  }, [_vm._v("产地")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "drug_new_phone"
+    }
+  }, [_vm._v("联系方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "drug_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "id": "manure_category_id",
+      "name": "manure_category_id",
+      "items": _vm.categorys,
+      "defaultIndex": parseInt(_vm.defaultIndex),
+      "protoBack": "id",
+      "protoShow": "name"
+    },
+    on: {
+      "callback": _vm.getMsg
+    }
+  })], 1)]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('category_id')),
+      expression: "errors.has('category_id')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('category_id')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "肥料名称",
+      "type": "text",
+      "id": "manure_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.usage),
+      expression: "letItem.usage"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "manure_usage",
+      "name": "usage"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.usage)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.usage = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('usage')),
+      expression: "errors.has('usage')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('usage')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.specification),
+      expression: "letItem.specification"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "manure_new_specification",
+      "name": "specification"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.specification)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.specification = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.dealer),
+      expression: "letItem.dealer"
+    }],
+    staticClass: "input-pop",
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "manure_new_dealer",
+      "name": "dealer"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.dealer)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.dealer = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.origin),
+      expression: "letItem.origin"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "manure_new_origin",
+      "name": "origin"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.origin)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.origin = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "phone",
+      "type": "text",
+      "id": "manure_new_phone",
+      "name": "phone",
+      "placeholder": "请输入11位手机号(固话用-隔开)"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.phone)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.phone = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('phone')),
+      expression: "errors.has('phone')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "manure_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditManure
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddManure
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_category_id"
+    }
+  }, [_vm._v("分类")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_fullName"
+    }
+  }, [_vm._v("肥料名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_usage"
+    }
+  }, [_vm._v("用途")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_specification"
+    }
+  }, [_vm._v("包装规格")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_dealer"
+    }
+  }, [_vm._v("经销商名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_origin"
+    }
+  }, [_vm._v("产地")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_phone"
+    }
+  }, [_vm._v("联系方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "manure_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 122 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "种植场名称",
+      "type": "text",
+      "id": "plantation_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop input-area"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.area),
+      expression: "letItem.area"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.area),
+      expression: "letItem.area",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|decimal:2",
+      "data-vv-as": "种植面积",
+      "type": "text",
+      "id": "plantation_new_area",
+      "name": "area",
+      "placeholder": "请填写数字(必填)"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.area)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.area = $event.target.value
+      }
+    }
+  })]), _c('td', {
+    staticClass: "area_unit"
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "area_unit",
+      "items": _vm.area_unit,
+      "defaultIndex": parseInt(_vm.defaultIndex)
+    },
+    on: {
+      "callback": _vm.getMsg
+    }
+  })], 1)]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('area')),
+      expression: "errors.has('area')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "phone",
+      "type": "text",
+      "id": "plantation_new_phone",
+      "name": "phone",
+      "placeholder": "请输入11位手机号(固话用-隔开)"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.phone)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.phone = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('phone')),
+      expression: "errors.has('phone')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.address),
+      expression: "letItem.address"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "plantation_new_address",
+      "name": "address"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.address = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.director),
+      expression: "letItem.director"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "plantation_new_principal",
+      "name": "director"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.director)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.director = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "plantation_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditPlantation
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddPlantation
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(6)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_fullName"
+    }
+  }, [_vm._v("种植场名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_area"
+    }
+  }, [_vm._v("种植面积")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_phone"
+    }
+  }, [_vm._v("详细电话")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_address"
+    }
+  }, [_vm._v("详细地址")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_principal"
+    }
+  }, [_vm._v("负责人")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plantation_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 123 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "nav-top"
+  }, [_c('ul', {
+    staticClass: "nt-ul"
+  }, _vm._l((_vm.taps), function(tap, index) {
+    return (index < 3) ? _c('li', {
+      staticClass: "nt-li"
+    }, [_c('span', {
+      class: {
+        'link-active': _vm.activeKey == tap.key
+      },
+      on: {
+        "click": function($event) {
+          _vm.getKey(tap.key)
+        }
+      }
+    }, [_vm._v(_vm._s(tap.name))])]) : _vm._e()
+  })), _c('transition', {
+    attrs: {
+      "css": false
+    },
+    on: {
+      "enter": _vm.enter,
+      "leave": _vm.leave
+    }
+  }, [(!_vm.isMore) ? _c('ul', {
+    staticClass: "nt-ul"
+  }, _vm._l((_vm.taps), function(tap, index) {
+    return (index >= 3) ? _c('li', {
+      staticClass: "nt-li"
+    }, [_c('span', {
+      class: {
+        'link-active': _vm.activeKey == tap.key
+      },
+      on: {
+        "click": function($event) {
+          _vm.getKey(tap.key)
+        }
+      }
+    }, [_vm._v(_vm._s(tap.name))])]) : _vm._e()
+  })) : _vm._e()]), (_vm.taps.length > 3) ? _c('div', {
+    class: {
+      'tap-more': _vm.isMore, 'tap-shrink': !_vm.isMore
+    },
+    on: {
+      "click": function($event) {
+        _vm.toggleTap()
+      }
+    }
+  }) : _vm._e(), _c('div', {
+    directives: [{
+      name: "touchstart",
+      rawName: "v-touchstart:touchstart",
+      value: ([_vm.self]),
+      expression: "[self]",
+      arg: "touchstart"
+    }, {
+      name: "touchmove",
+      rawName: "v-touchmove:touchmove",
+      value: ([_vm.self]),
+      expression: "[self]",
+      arg: "touchmove"
+    }]
+  }, [_vm._t("default")], 2)], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', [_vm._v("\n  " + _vm._s(_vm._f("table_name")(_vm.item.drug_type)) + "\n")])
+},staticRenderFns: []}
+
+/***/ }),
+/* 125 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "pic-preview",
+    on: {
+      "click": _vm.selectPic
+    }
+  }, [(_vm.letItem.image == '' || _vm.letItem.image == null) ? _c('img', {
+    attrs: {
+      "src": _vm.$img(_vm.image)
+    }
+  }) : (_vm.letItem.image == 'upload.png') ? _c('img', {
+    attrs: {
+      "src": _vm.$img(_vm.letItem.image)
+    }
+  }) : _c('img', {
+    attrs: {
+      "src": _vm.$img(_vm.letItem.image, false)
+    }
+  })]), _c('input', {
+    attrs: {
+      "name": "file_name",
+      "type": "file",
+      "hidden": "hidden"
+    },
+    on: {
+      "change": function($event) {
+        _vm.previewPic(_vm.letItem, $event)
+      }
+    }
+  }), _c('div', {
+    staticClass: "delete-pic-btn"
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.deletePic
+    }
+  }, [_vm._v("删除")])])])]), _c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "category",
+      "id": "plant_categroy_select",
+      "items": _vm.categorys,
+      "defaultIndex": parseInt(_vm.defaultIndex)
+    },
+    on: {
+      "callback": _vm.getMsg
+    }
+  })], 1)]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "果蔬名称",
+      "type": "text",
+      "id": "plant_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.growth_cycle),
+      expression: "letItem.growth_cycle"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.growth_cycle),
+      expression: "letItem.growth_cycle",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|decimal:2",
+      "data-vv-as": "生长周期",
+      "type": "text",
+      "id": "plant_new_growth_cycle",
+      "name": "growth_cycle",
+      "placeholder": "必填，单位（天）"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.growth_cycle)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.growth_cycle = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('growth_cycle')),
+      expression: "errors.has('growth_cycle')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('growth_cycle')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.description),
+      expression: "letItem.description"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "plant_new_description",
+      "name": "description"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.description)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.description = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "plant_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditPlantation
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddPlantation
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(5)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_categroy_select"
+    }
+  }, [_vm._v("果蔬类别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_new_fullName"
+    }
+  }, [_vm._v("果蔬名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_new_growth_cycle"
+    }
+  }, [_vm._v("生长周期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_new_description"
+    }
+  }, [_vm._v("特征描述")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "plant_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 126 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "fodder_type",
+      "items": _vm.categorys,
+      "defaultIndex": parseInt(_vm.defaultfodderIndex),
+      "protoBack": "id",
+      "protoShow": "name"
+    },
+    on: {
+      "callback": _vm.getMsgPid
+    }
+  })], 1)]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('fodder_type')),
+      expression: "errors.has('fodder_type')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('fodder_type')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "饲料名称",
+      "type": "text",
+      "id": "fodder_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.use),
+      expression: "letItem.use"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "fodder_new_use",
+      "name": "use"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.use)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.use = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.specification),
+      expression: "letItem.specification"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "fodder_new_specification",
+      "name": "specification"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.specification)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.specification = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.vender_name),
+      expression: "letItem.vender_name"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "fodder_new_vender_name",
+      "name": "vender_name"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.vender_name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.vender_name = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.address),
+      expression: "letItem.address"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "fodder_new_address",
+      "name": "address"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.address = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "phone",
+      "type": "text",
+      "id": "fodder_new_phone",
+      "name": "phone",
+      "placeholder": "请输入11位手机号(固话用-隔开)"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.phone)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.phone = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('phone')),
+      expression: "errors.has('phone')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "fodder_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditfodder
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddfodder
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_select"
+    }
+  }, [_vm._v("饲料类别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_fullName"
+    }
+  }, [_vm._v("饲料名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_use"
+    }
+  }, [_vm._v("用途")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_specification"
+    }
+  }, [_vm._v("包装规格")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_vender_name"
+    }
+  }, [_vm._v("生产厂家名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_address"
+    }
+  }, [_vm._v("产地")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_phone"
+    }
+  }, [_vm._v("联系方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "养殖场名称",
+      "type": "text",
+      "id": "farm_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.area),
+      expression: "letItem.area"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.area),
+      expression: "letItem.area",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|decimal:2",
+      "data-vv-as": "养殖面积",
+      "type": "text",
+      "id": "farm_new_area",
+      "name": "area",
+      "placeholder": "请填写数字(必填),单位是亩"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.area)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.area = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('area')),
+      expression: "errors.has('area')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.principal),
+      expression: "letItem.principal"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "farm_new_principal",
+      "name": "principal"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.principal)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.principal = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.kind),
+      expression: "letItem.kind"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "farm_new_kind",
+      "name": "kind"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.kind)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.kind = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.scale),
+      expression: "letItem.scale"
+    }],
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "farm_new_scale",
+      "name": "scale"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.scale)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.scale = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.address),
+      expression: "letItem.address"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "farm_new_address",
+      "name": "address"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.address = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "farm_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditfarm
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddfarm
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(7)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farm_new_fullName"
+    }
+  }, [_vm._v("养殖场名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farm_new_area"
+    }
+  }, [_vm._v("养殖面积")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farm_new_principal"
+    }
+  }, [_vm._v("负责人")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farm_new_kind"
+    }
+  }, [_vm._v("养殖畜禽种类")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farm_new_scale"
+    }
+  }, [_vm._v("养殖规模")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farm_new_address"
+    }
+  }, [_vm._v("地址")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "farm_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 128 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('basic-model', {
+    attrs: {
+      "title": "种植基础信息管理",
+      "taps": _vm.taps,
+      "tableLists": _vm.tableLists
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 129 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "content",
+    attrs: {
+      "id": "mynprogress"
+    }
+  }, [_c('transition', {
+    attrs: {
+      "name": "hide-logo",
+      "mode": "out-in"
+    }
+  }, [(_vm.showLogo) ? _c('div', {
+    key: "logo",
+    staticClass: "logo"
+  }) : _vm._e(), (!_vm.showLogo) ? _c('div', {
+    key: "logo-hide",
+    staticClass: "logo-hide"
+  }) : _vm._e()]), _c('form', {
+    style: (_vm.formPadding),
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.login($event)
+      }
+    }
+  }, [_c('ul', [_c('li', [(_vm.isError) ? _c('div', {
+    staticClass: "err-tip"
+  }, [_vm._v("用户名或密码错误")]) : _vm._e(), _c('input', {
+    directives: [{
+      name: "focus",
+      rawName: "v-focus"
+    }, {
+      name: "touchstart",
+      rawName: "v-touchstart:hideLogo",
+      value: ([_vm.self]),
+      expression: "[self]",
+      arg: "hideLogo"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.user.login),
+      expression: "user.login",
+      arg: "hideLogo"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.user.login),
+      expression: "user.login",
+      arg: "hideLogo",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    class: {
+      red: _vm.isNameError
+    },
+    attrs: {
+      "data-vv-rules": "required",
+      "data-vv-as": "用户名",
+      "placeholder": _vm.userNamePlaceholder,
+      "name": "login",
+      "type": "text"
+    },
+    domProps: {
+      "value": _vm._s(_vm.user.login)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.user.login = $event.target.value
+      }
+    }
+  }), _c('span')]), _c('li', [_c('input', {
+    directives: [{
+      name: "touchstart",
+      rawName: "v-touchstart:hideLogo",
+      value: ([_vm.self]),
+      expression: "[self]",
+      arg: "hideLogo"
+    }, {
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.user.password),
+      expression: "user.password",
+      arg: "hideLogo"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.user.password),
+      expression: "user.password",
+      arg: "hideLogo",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    class: {
+      red: _vm.isPasswordError
+    },
+    attrs: {
+      "data-vv-rules": "required",
+      "data-vv-as": "密码",
+      "placeholder": _vm.passwordPlaceholder,
+      "name": "password",
+      "type": "password"
+    },
+    domProps: {
+      "value": _vm._s(_vm.user.password)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.user.password = $event.target.value
+      }
+    }
+  }), _c('span')])]), _c('div', {
+    staticClass: "login-btn"
+  }, [_c('a', [_c('button', {
+    attrs: {
+      "type": "submit",
+      "disabled": _vm.isLogin
+    }
+  }, [_vm._v(_vm._s(_vm.loginBtn))])])])])], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "search-top"
+  }, [_vm._t("default", [_c('button', {
+    staticClass: "stl-btn"
+  }, [_vm._v("新建")])]), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.searchInput),
+      expression: "searchInput"
+    }],
+    staticClass: "str-inp",
+    attrs: {
+      "type": "text",
+      "placeholder": _vm.placeholder
+    },
+    domProps: {
+      "value": _vm._s(_vm.searchInput)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.searchInput = $event.target.value
+      }
+    }
+  }), _c('button', {
+    staticClass: "str-btn",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.search
+    }
+  }, [_vm._v("搜索")])], 2)
+},staticRenderFns: []}
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "id": "expert_table_type",
+      "name": "expert_table_type",
+      "items": _vm.tableType,
+      "defaultIndex": parseInt(_vm.defaultTypeIndex)
+    },
+    on: {
+      "callback": _vm.getMsgType
+    }
+  })], 1)]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('table_type')),
+      expression: "errors.has('table_type')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('table_type')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.expert_name),
+      expression: "letItem.expert_name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.expert_name),
+      expression: "letItem.expert_name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "专家名称",
+      "type": "text",
+      "id": "expert_new_fullName",
+      "name": "expert_name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.expert_name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.expert_name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('expert_name')),
+      expression: "errors.has('expert_name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('expert_name')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.major),
+      expression: "letItem.major"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.major),
+      expression: "letItem.major",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required",
+      "data-vv-as": "研究领域",
+      "type": "text",
+      "id": "expert_major",
+      "name": "major",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.major)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.major = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('major')),
+      expression: "errors.has('major')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('major')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.level),
+      expression: "letItem.level"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.level),
+      expression: "letItem.level",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required",
+      "data-vv-as": "级别",
+      "type": "text",
+      "id": "expert_level",
+      "name": "level",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.level)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.level = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('level')),
+      expression: "errors.has('level')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('level')))])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "id": "expert_sex",
+      "name": "expert_sex",
+      "items": _vm.sex,
+      "defaultIndex": parseInt(_vm.defaultSexIndex)
+    },
+    on: {
+      "callback": _vm.getMsgSex
+    }
+  })], 1)]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('sex')),
+      expression: "errors.has('sex')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('sex')))])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.age),
+      expression: "letItem.age"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.age),
+      expression: "letItem.age",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "decimal",
+      "data-vv-as": "年龄",
+      "type": "text",
+      "id": "expert_new_age",
+      "name": "age"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.age)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.age = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('age')),
+      expression: "errors.has('age')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('age')))])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.unit),
+      expression: "letItem.unit"
+    }],
+    staticClass: "input-pop",
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "expert_new_unit",
+      "name": "unit"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.unit)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.unit = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "phone",
+      "type": "text",
+      "id": "expert_new_phone",
+      "name": "phone",
+      "placeholder": "请输入11位手机号(固话用-隔开)"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.phone)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.phone = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('phone')),
+      expression: "errors.has('phone')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(8), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "expert_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditExpert
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddExpert
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(9)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_table_type"
+    }
+  }, [_vm._v("操作模块")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_fullName"
+    }
+  }, [_vm._v("专家名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_major"
+    }
+  }, [_vm._v("研究领域")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_level"
+    }
+  }, [_vm._v("级别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_sex"
+    }
+  }, [_vm._v("性别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_age"
+    }
+  }, [_vm._v("年龄")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_unit"
+    }
+  }, [_vm._v("所属单位")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_phone"
+    }
+  }, [_vm._v("联系方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "expert_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 132 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('basic-model', {
+    attrs: {
+      "title": "养殖基础信息管理",
+      "taps": _vm.taps,
+      "tableLists": _vm.tableLists
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 133 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25971,15 +31995,375 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 99 */
+/* 134 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n  " + _vm._s(_vm.item.area + _vm.item.area_unit) + " \n")])
-},staticRenderFns: []}
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.name),
+      expression: "letItem.name"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.name),
+      expression: "letItem.name",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "姓名",
+      "type": "text",
+      "id": "operate_new_fullName",
+      "name": "name",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.name = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('name')),
+      expression: "errors.has('name')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "id": "operate_sex",
+      "name": "operate_sex",
+      "items": _vm.sex,
+      "protoBack": "id",
+      "protoShow": "sex",
+      "defaultIndex": parseInt(_vm.defaultSexIndex)
+    },
+    on: {
+      "callback": _vm.getMsgSex
+    }
+  })], 1)]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('sex')),
+      expression: "errors.has('sex')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('sex')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.age),
+      expression: "letItem.age"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.age),
+      expression: "letItem.age",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "decimal",
+      "data-vv-as": "年龄",
+      "type": "text",
+      "id": "operate_new_age",
+      "name": "age"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.age)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.age = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('age')),
+      expression: "errors.has('age')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('age')))])]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.identity),
+      expression: "letItem.identity"
+    }],
+    staticClass: "input-pop",
+    attrs: {
+      "type": "text",
+      "value": "",
+      "id": "operate_new_identity",
+      "name": "identity",
+      "placeholder": "如后勤主管"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.identity)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.identity = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.phone),
+      expression: "letItem.phone",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "phone",
+      "type": "text",
+      "id": "operate_new_phone",
+      "name": "phone",
+      "placeholder": "请输入11位手机号(固话用-隔开)"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.phone)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.phone = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('phone')),
+      expression: "errors.has('phone')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.address),
+      expression: "letItem.address"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "fodder_new_address",
+      "name": "address"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.address = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "operate_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditoperate
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddoperate
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(7)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "operate_new_fullName"
+    }
+  }, [_vm._v("姓名")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "operate_sex"
+    }
+  }, [_vm._v("性别")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "operate_new_age"
+    }
+  }, [_vm._v("年龄")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "operate_new_identity"
+    }
+  }, [_vm._v("身份")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "operate_new_phone"
+    }
+  }, [_vm._v("联系方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "fodder_new_address"
+    }
+  }, [_vm._v("联系地址")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "operate_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
 
 /***/ }),
-/* 100 */
+/* 135 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26033,7 +32417,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 101 */
+/* 136 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26492,32 +32876,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 102 */
+/* 137 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "nav-top"
-  }, [_c('ul', {
-    staticClass: "nt-ul"
-  }, _vm._l((_vm.taps), function(tap) {
-    return _c('li', {
-      staticClass: "nt-li"
-    }, [_c('span', {
-      class: {
-        'link-active': _vm.activeKey == tap.key
-      },
-      on: {
-        "click": function($event) {
-          _vm.getKey(tap.key)
-        }
-      }
-    }, [_vm._v(_vm._s(tap.name))])])
-  }))])
+  return _c('span', [(_vm.showImg) ? _c('img', {
+    attrs: {
+      "src": _vm.$img('ok.png')
+    }
+  }) : _vm._e()])
 },staticRenderFns: []}
 
 /***/ }),
-/* 103 */
+/* 138 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._v("\n  " + _vm._s(_vm.area) + " \n")])
+},staticRenderFns: []}
+
+/***/ }),
+/* 139 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26553,61 +32932,46 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 104 */
+/* 140 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-router");
 
 /***/ }),
-/* 105 */
+/* 141 */
 /***/ (function(module, exports) {
 
 module.exports = require("vuex-router-sync");
 
 /***/ }),
-/* 106 */
+/* 142 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(10);
 
 
 var isDev = "production" !== 'production';
 
-// This exported function will be called by `bundleRenderer`.
-// This is where we perform data-prefetching to determine the
-// state of our application before actually rendering it.
-// Since data fetching is async, this function is expected to
-// return a Promise that resolves to the app instance.
 /* harmony default export */ __webpack_exports__["default"] = function (context) {
   var s = isDev && Date.now();
 
-  // set router's location
+  // 设置路由的url
   __WEBPACK_IMPORTED_MODULE_0__index__["a" /* router */].push(context.url);
   var matchedComponents = __WEBPACK_IMPORTED_MODULE_0__index__["a" /* router */].getMatchedComponents();
 
-  // no matched routes
+  // 如果没有url匹配
   if (!matchedComponents.length) {
     return Promise.reject({ code: '404' });
   }
 
-  // Call preFetch hooks on components matched by the route.
-  // A preFetch hook dispatches a store action and returns a Promise,
-  // which is resolved when the action is complete and store state has been
-  // updated.
   return Promise.all(matchedComponents.map(function (component) {
     if (component.preFetch) {
       return component.preFetch(__WEBPACK_IMPORTED_MODULE_0__index__["b" /* store */]);
     }
   })).then(function () {
     isDev && console.log('data pre-fetch: ' + (Date.now() - s) + 'ms');
-    // After all preFetch hooks are resolved, our store is now
-    // filled with the state needed to render the app.
-    // Expose the state on the render context, and let the request handler
-    // inline the state in the HTML response. This allows the client-side
-    // store to pick-up the server-side state without having to duplicate
-    // the initial data fetching on the client.
     context.initialState = __WEBPACK_IMPORTED_MODULE_0__index__["b" /* store */].state;
     return __WEBPACK_IMPORTED_MODULE_0__index__["c" /* app */];
   });

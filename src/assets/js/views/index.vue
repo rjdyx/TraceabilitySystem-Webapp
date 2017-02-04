@@ -95,11 +95,13 @@
                 navbars: [
                     {
                         name:'农业日志',
+                        role: 'log',
                         isEvent: true,
                         children: []
                     },
                     {
                         name:'种植管理',
+                        role: 'plantation',
                         isEvent: false,
                         children: [
                             {
@@ -110,6 +112,7 @@
                     },
                     {
                         name:'养殖管理',
+                        role: 'beast',
                         isEvent: false,
                         children: [
                             {

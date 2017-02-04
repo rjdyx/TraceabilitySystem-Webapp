@@ -12,20 +12,22 @@
         <navbar 
             :taps="taps"
             @getKey="flashList"
-        ></navbar>
-        
-        <!-- 列表模块 -->
-        <table-list
-            ref="tableList"
-            :_key="_key"
-            :component="component"
-            :searchPlaceholder="searchPlaceholder"
-            :searchUrl="searchUrl"
-            :theads="theads"
-            :protos="protos"
-            :widths="widths"
         >
-        </table-list>
+            <!-- 列表模块 -->
+            <table-list
+                ref="tableList"
+                :_key="_key"
+                :component="component"
+                :searchPlaceholder="searchPlaceholder"
+                :searchUrl="searchUrl"
+                :theads="theads"
+                :protos="protos"
+                :widths="widths"
+            >
+            </table-list> 
+        </navbar>
+        
+        
     </div>
 </template>
 

@@ -47,7 +47,7 @@
 
     
 
-<link href="/dist/app.6ef72a291bf5f4aadeb1.css" rel="stylesheet"></head>
+<link href="/dist/app.011a8ddee3564135daf0.css" rel="stylesheet"></head>
 <body>
 
 <!-- APP -->
@@ -81,7 +81,8 @@
       {// 4 = "loaded"
       if (xmlhttp.status==200)
         {// 200 = OK
-            window.Laravel = {csrfToken:xmlhttp.responseText};
+            window.role = JSON.parse(xmlhttp.responseText);
+            window.Laravel = {csrfToken:JSON.parse(xmlhttp.responseText).token};
         }
       else
         {
@@ -94,5 +95,5 @@
         loadXMLDoc('/token');
     }
 </script>
-<script type="text/javascript" src="/dist/client-vendor-bundle.js"></script><script type="text/javascript" src="/dist/app.6ef72a291bf5f4aadeb1.js"></script></body>
+<script type="text/javascript" src="/dist/client-vendor-bundle.js"></script><script type="text/javascript" src="/dist/app.011a8ddee3564135daf0.js"></script></body>
 </html>

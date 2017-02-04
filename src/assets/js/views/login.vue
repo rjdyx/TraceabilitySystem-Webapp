@@ -237,7 +237,8 @@
         mounted () {
             if(this.$route.params.code == '401') {
                 axios.get('/token').then((response)=>{
-                    Laravel.csrfToken = response.data;
+                    window.role = response.data;
+                    Laravel.csrfToken = response.data.token;
                 }).catch(function (error) {
                     if(error.status != 200) {
                         this.loginBtn = '登录'
@@ -275,7 +276,17 @@
                         }else {
                             // sessionStorage.setItem('user', response.data)
                             // this.setUserInfo(response.data)
-                            this.$router.push('/webapp')
+                            let isPlantation = response.data.role1.some(function(item, index) {
+                                return item === 'plantation'
+                            })
+
+                            if(isPlantation) {
+                                this.$router.push('/webapp')
+                                return true
+                            }else {
+                                this.$router.push('/webapp/beast')
+                            }
+                            
                         }
                     }).catch(function (error) {
                         if(error.status != 200) {

@@ -58,7 +58,7 @@
                     <span class="top-img"></span>
                 </li>
                 <template v-for="(navbar, index) in navbars">
-                    <li>
+                    <li v-if="hasRole(navbar)">
                         <span @click="triggle(navbar.name, navbar.isEvent, index)" class="not-hide">{{navbar.name}}</span>
                     </li>
                     <ul v-if="navbar.children.length != 0 && subNavbarIndex == index">
@@ -135,6 +135,22 @@
                 if(event.target.className.indexOf('not-hide') == -1){
                     this.hide();
                 }
+            },
+
+            /**
+             * 判断用户是否有此操作栏的权限
+             * @param  {Object}  navbar 
+             * @return {Boolean}
+             */
+            hasRole (navbar) {
+                if ((typeof window == undefined || typeof window == 'object') && window.role) {
+                    return window.role.role1.some(function(item, index) {
+                        return navbar.role == item;
+                    }) 
+                }else {
+                    return true;
+                }
+                
             }
         }
 

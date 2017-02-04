@@ -81,7 +81,8 @@
       {// 4 = "loaded"
       if (xmlhttp.status==200)
         {// 200 = OK
-            window.Laravel = {csrfToken:xmlhttp.responseText};
+            window.role = JSON.parse(xmlhttp.responseText);
+            window.Laravel = {csrfToken:JSON.parse(xmlhttp.responseText).token};
         }
       else
         {
