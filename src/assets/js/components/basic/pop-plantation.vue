@@ -54,7 +54,7 @@
                     type="text" id="plantation_new_fullName" name="name" placeholder="必填"></td>
                 </tr>
                 <tr v-show="errors.has('name')">
-                    <td colspan="2" class="error">{{ errors.first('name') }}</td>
+                    <td colspan="3" class="error">{{ errors.first('name') }}</td>
                 </tr>
 
                 <tr>

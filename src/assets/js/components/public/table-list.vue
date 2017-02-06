@@ -20,11 +20,14 @@
  * 默认值：null
  * 描述：此prop传入的是一个包含“新增/编辑弹窗”组件的对象，
  * 包含“新增/编辑弹窗”组件的属性名必须和_key完全一致；
- * 此外，如果每一列中的某个属性不是简单地显示字符串，可以给此prop对象添加新的属性，属性名与protos数组里的保持一致；
+ * 第一，如果每一列中的某个属性不是简单地显示字符串，可以给此prop对象添加新的属性，属性名与protos数组里的保持一致；
  * 例如：{planta: PopPlanta, area: AreaUnit}：
  * 其中'planta'属性名与_key完全一样，
  * 'area'属性名与protos数组里的某个值完全一样，
  * 这样遍历到此属性的时候，会用AreaUnit组件去显示而不是简单显示字符串
+ * 第二，如果想要自定义每一行的操作按钮，则可以给此prop添加open属性，
+ * open属性的值为{component: null, next: false}，其中next决定传给component属性的组件是作用于
+ * 操作按钮还是作用于下一行组件
  * 
  * @param  searchPlaceholder 
  * 类型：String
@@ -137,9 +140,9 @@
                                 </template>
 
                                 <!-- open button -->
-                                <span v-if="component != null && component.hispic != null" class="align-c" name="open">
+                                <span v-if="cusButton" class="align-c" name="open">
                                     <component
-                                        :is="component.hispic"
+                                        :is="component.open.component"
                                         :item="item"
                                     ></component>
                                 </span>
@@ -149,7 +152,13 @@
                             </li>
                         
                         <li v-if="showItemDetail != '' && showItemDetail == item.id" :key="searchUrl + item.id + '-pop'">
-                            <template v-if="component != null && component[_key] != null">
+                            <template v-if="cusComponent">
+                                <component
+                                    :is="component.open.component"
+                                    :item="item"
+                                ></component>
+                            </template>
+                            <template v-else-if="component != null && component[_key] != null">
                                 <component 
                                     :is="component[_key]"
                                     v-if="showEditPane"
@@ -158,6 +167,7 @@
                                     @closeEdit="closeOwnEditPane(item)"
                                 ></component>
                             </template>
+                            
                         </li>
                     </template>
                 </transition-group>
@@ -392,6 +402,16 @@
                 // 动画效果
                 slide: 'slide-fade',
                 showUp: true
+            }
+        },
+        computed: {
+            // 是否显示自定义操作按钮
+            cusButton () {
+                return this.component != null && this.component.open != null && this.component.open.component != null && !this.component.open.next
+            },
+            // 是否在下一行显示自定义组件
+            cusComponent () {
+                return this.component != null && this.component.open != null && this.component.open.component != null && this.component.open.next
             }
         },
         watch: {

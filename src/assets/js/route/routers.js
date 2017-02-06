@@ -26,15 +26,21 @@ const dailylog = require('../views/dailylog.vue')
 //---------------------------历史图片------------------------------
 const record = require('../views/record.vue')
 
-//=============================种植管理====================================
 
+
+//=============================种植管理====================================
 //---------------------------种植基础信息管理----------------------------------
 const basic = require('../views/basic.vue')
 
-//=============================养殖管理====================================
+//---------------------------种植批次管理----------------------------------
+const plantCultivate = require('../views/plant-cultivate.vue')
 
+
+
+//=============================养殖管理====================================
 //---------------------------养殖基础信息管理----------------------------------
 const beast = require('../views/beast.vue')
+
 
 const routes = [
     
@@ -55,6 +61,12 @@ const routes = [
                 path: 'basic',
                 name:'basic',
                 component: basic,
+                meta: { requiresAuth: true }
+            },
+            {
+                path: 'plant-cultivate',
+                name:'plant-cultivate',
+                component: plantCultivate,
                 meta: { requiresAuth: true }
             },
             {

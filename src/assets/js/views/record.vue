@@ -17,13 +17,13 @@
 
 <script>
 	import tableList from '../components/public/table-list.vue';
-	import Hispic from './hispic.vue'
+	import Hispic from '../components/log/hispic.vue'
 	export default {
 		name: 'record',
 		data() {
 			return {
 				key: 'record',
-				component: {open: null, hispic:Hispic},
+				component: {open: {component: Hispic, next: false}},
 				searchPlaceholder: '历史日期',
 				searchUrl: 'record',
 				theads: ['日期','天气','操作人'],

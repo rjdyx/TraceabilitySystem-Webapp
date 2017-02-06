@@ -106,8 +106,12 @@
                         children: [
                             {
                                 path: '/webapp/basic',
-                                name:'种植基础信息管理'
+                                name:'基础信息管理'
                             },
+                            {
+                                path: '/webapp/plant-cultivate',
+                                name:'种植批次管理'
+                            }
                         ]
                     },
                     {
@@ -117,7 +121,7 @@
                         children: [
                             {
                                 path: '/webapp/beast',
-                                name:'养殖基础信息管理'
+                                name:'基础信息管理'
                             },
                         ]
                     },
