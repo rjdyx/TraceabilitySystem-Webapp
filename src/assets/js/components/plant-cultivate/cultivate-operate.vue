@@ -17,22 +17,37 @@
 <template>
     <div>
       <ul>
-        <li @click="changeState"><a href="javascript:void(0)">状态</a></li>
+        <li @click="showConfirm=true"><a href="javascript:void(0)">状态</a></li>
         <li @click="popDialog('farm')"><a href="javascript:void(0)">农事</a></li>
         <li @click="popDialog('fertilize')"><a href="javascript:void(0)">施肥</a></li>
         <li @click="popDialog('medicament')"><a href="javascript:void(0)">施药</a></li>
         <li @click="popDialog('detect')"><a href="javascript:void(0)">检测</a></li>
         <li @click="popDialog('harvest')"><a href="javascript:void(0)">采收</a></li>
         <li @click="popDialog('grow')"><a href="javascript:void(0)">图片</a></li>
-        <li><a href="javascript:void(0)">编辑</a></li>
+        <li @click="popDialog('cultivate')"><a href="javascript:void(0)">编辑</a></li>
       </ul>
-      <div v-if="show" class="pop">
+      <div v-if="show && !edit" class="pop">
         <component
           :is="component"
           :cultivateId="item.id"
           @closeNew="show=false"
         ></component>
       </div>
+      <div v-if="show && edit" class="pop">
+        <pop-cultivate
+          :letItem="item"
+          :edit="edit"
+          @closeEdit="show=false"
+        ></pop-cultivate>
+      </div>
+      <!-- 确认模块 -->
+      <confirm
+        :show="showConfirm"
+        title="修改状态"
+        message="确定要修改批次状态吗？"
+        @confirmAction="changeState"
+        @cancelAction="showConfirm=false"
+      ></confirm>
     </div>
     
 </template>
@@ -44,6 +59,7 @@
   import PopDetect from './pop-detect.vue'
   import PopHarvest from './pop-harvest.vue'
   import PopGrow from './pop-grow.vue'
+  import PopCultivate from './pop-cultivate.vue'
 
   export default {
     name:'CultivateOperate',
@@ -58,26 +74,56 @@
     data() {
       return {
         show: false,
-        component: null
+        component: null,
+        edit: false,
+        showConfirm: false
       }
+    },
+    components: {
+      PopCultivate
     },
     methods: {
 
+      /**
+       * 修改批次状态
+       */
       changeState () {
-
+        this.$http.get(this.$adminUrl('cultivate/state?params=1')).then((response) => {
+            if(response.data) {
+              this.$alert('修改成功', 's');
+            }
+        }, (error) => {
+            this.$alert('连接出错', 'e');
+        });
       },
 
       popDialog (dialog) {
         this.show = true;
+        this.edit=false;
         switch(dialog) {
-          case 'farm': this.component = PopFarm;break;
-          case 'fertilize': this.component = PopFertilize;break;
-          case 'medicament': this.component = PopMedicament;break;
-          case 'detect': this.component = PopDetect;break;
-          case 'harvest': this.component = PopHarvest;break;
-          case 'grow': this.component = PopGrow;break;
+          case 'farm': 
+            this.component = PopFarm;
+            break;
+          case 'fertilize': 
+            this.component = PopFertilize;
+            break;
+          case 'medicament': 
+            this.component = PopMedicament;
+            break;
+          case 'detect': 
+            this.component = PopDetect;
+            break;
+          case 'harvest': 
+            this.component = PopHarvest;
+            break;
+          case 'grow': 
+            this.component = PopGrow;
+            break;
+          case 'cultivate': 
+            this.edit=true;
+            break;
         }
-      },
+      }
 
     }
   }

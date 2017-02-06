@@ -47,27 +47,27 @@
             <tbody class="form-body">
 
                 <tr>
-                    <td class="label-tit"><label for="manure_select">所属种植区</label></td>
+                    <td class="label-tit"><label for="plantation_name">所属种植区</label></td>
                     <td class="input-pop" colspan="2">
-                        <pop-select name="manure_select"
-                            :items="ManureSelects"
+                        <pop-select name="plantation_name"
+                            :items="PlantationNames"
                             protoBack="id"
                             protoShow="name"
-                            :defaultIndex="parseInt(defaultManureSelectIndex)"
-                            @callback="getMsgManureSelect"
+                            :defaultIndex="parseInt(defaultPlantationNameIndex)"
+                            @callback="getMsgPlantationName"
                         ></pop-select>
                     </td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="manure_id">种植果蔬名称</label></td>
+                    <td class="label-tit"><label for="plant_name">种植果蔬名称</label></td>
                     <td class="input-pop" colspan="2">
-                        <pop-select name="manure_id"
-                            :items="ManureIds"
+                        <pop-select name="plant_name"
+                            :items="PlantNames"
                             protoBack="id"
                             protoShow="name"
-                            :defaultIndex="parseInt(defaultManureIdIndex)"
-                            @callback="getMsgManureId"
+                            :defaultIndex="parseInt(defaultPlantNameIndex)"
+                            @callback="getMsgPlantName"
                         ></pop-select>
                     </td>
                 </tr>
@@ -76,46 +76,51 @@
                     <td class="label-tit"><label for="fertilize_new_amount">种植面积</label></td>
                     <td class="input-pop input-area">
                         <input 
-                        v-model="letItem.amount" 
-                        v-validate.initial="letItem.amount" 
+                        v-model="letItem.area" 
+                        v-validate.initial="letItem.area" 
                         data-vv-rules="required|decimal:2" 
-                        data-vv-as="平均肥料用量" 
-                        type="text" id="fertilize_new_amount" name="amount"
+                        data-vv-as="种植面积" 
+                        type="text" id="fertilize_new_amount" name="area"
                            placeholder="请填写数字(必填)">
                     </td>
                     <td class="area_unit">
-                       <pop-select name="unit"
-                        :items="unit"      
+                       <pop-select name="area_unit"
+                        :items="area_unit"      
                         :defaultIndex="parseInt(defaultIndex)"
                         @callback="getMsg"  
                         ></pop-select>
                     </td>
                 </tr>
-                <tr v-show="errors.has('amount')">
-                    <td colspan="3" class="error">{{ errors.first('amount') }}</td>
+                <tr v-show="errors.has('area')">
+                    <td colspan="3" class="error">{{ errors.first('area') }}</td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="fertilize_date">种植日期</label></td>
+                    <td class="label-tit"><label for="cultivate_date">种植日期</label></td>
                     <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.fertilize_date" 
-                    v-validate.initial="letItem.fertilize_date" 
+                    v-model="letItem.cultivate_date" 
+                    v-validate.initial="letItem.cultivate_date" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="操作日期" 
-                    type="text" id="fertilize_date" name="fertilize_date" placeholder="必填"></td>
+                    type="text" id="cultivate_date" name="cultivate_date" placeholder="必填"></td>
                 </tr>
-                <tr v-show="errors.has('fertilize_date')">
-                    <td colspan="3" class="error">{{ errors.first('fertilize_date') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="fertilize_new_user">批次人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.operator" type="text" id="fertilize_new_user" name="operator"></td>
+                <tr v-show="errors.has('cultivate_date')">
+                    <td colspan="3" class="error">{{ errors.first('cultivate_date') }}</td>
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="fertilize_new_way">批次方式</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.way" type="text" id="fertilize_new_way" name="way"></td>
+                    <td class="label-tit"><label for="fertilize_mode">育苗方式</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.mode" type="text" id="fertilize_mode" name="mode"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="fertilize_density">移栽密度</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.density" type="text" id="fertilize_density" name="density"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-tit"><label for="fertilize_operator">种植人</label></td>
+                    <td class="input-pop" colspan="2"><input v-model="letItem.operator" type="text" id="fertilize_operator" name="operator"></td>
                 </tr>
 
                 <tr>
@@ -164,23 +169,18 @@
     export default {
         name: 'Popfertilize',
         props: {
-            cultivateId: {
-                type: Number,
-                default: ''
-            },
             letItem: {
                 type: Object,
                 default() {
                     return {
-                        'cultivate_id': 0,
                         'id': '',
-                        'manure_id': '',
-                        'fertilize_date': '',
-                        'amount': '',
-                        'unit': '',
-                        'expert_id': '',
+                        'plantation_id': '',
+                        'area': '',
+                        'area_unit': '亩',
+                        'cultivate_date': '',
+                        'mode': '',
+                        'density': '',
                         'operator': '',
-                        'way': '',
                         'memo': ''
                     }
                 }
@@ -193,20 +193,18 @@
         },
         data () {
             return {
-                ManureSelects:[],
-                ManureIds:[],
-                expertIds: [],
-                unit:['kg/亩', 'kg/平方米', 'kg/公顷'],
+                PlantationNames:[],
+                PlantNames:[],
+                area_unit:['亩', '平方米', '公顷'],
                 tmp: {
-                    'cultivate_id': 0,
                     'id': '',
-                    'manure_id': '',
-                    'fertilize_date': '',
-                    'amount': '',
-                    'unit': '',
-                    'expert_id': '',
+                    'plantation_id': '',
+                    'area': '',
+                    'area_unit': '亩',
+                    'cultivate_date': '',
+                    'mode': '',
+                    'density': '',
                     'operator': '',
-                    'way': '',
                     'memo': ''
                 },
                 
@@ -214,36 +212,24 @@
         },
         computed: {
             //判断是编辑状态还是新建状态，取出不同的下标
-            defaultExpertIdIndex () {
+            defaultPlantationNameIndex () {
                 if (this.edit == false) {
                     return 0;
                 } else {
-                    for(let index in this.expertIds){
-                        if(this.expertIds[index].id == this.letItem.expert_id){
+                    for(let index in this.PlantationNames){
+                        if(this.PlantationNames[index].name == this.letItem.plantation_name){
                             return index;
                         }
                     }
                     
                 }
             },
-            defaultManureSelectIndex () {
+            defaultPlantNameIndex () {
                 if (this.edit == false) {
                     return 0;
                 } else {
-                    for(let index in this.ManureSelects){
-                        if(this.ManureSelects[index] == this.letItem.manure_select){
-                            return index;
-                        }
-                    }
-                    
-                }
-            },
-            defaultManureIdIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.ManureIds){
-                        if(this.ManureIds[index] == this.letItem.manure_id){
+                    for(let index in this.PlantNames){
+                        if(this.PlantNames[index].name == this.letItem.plant_name){
                             return index;
                         }
                     }
@@ -254,8 +240,8 @@
                 if (this.edit == false) {
                     return 0;
                 } else {
-                    for(let index in this.unit){
-                        if(this.unit[index] == this.letItem.unit){
+                    for(let index in this.area_unit){
+                        if(this.area_unit[index] == this.letItem.area_unit){
                             return index;
                         }
                     }
@@ -266,8 +252,8 @@
         mounted () {
             let time = new Date();
             let date = time.getFullYear()+'-'+(time.getMonth()+1)+'-'+time.getDate();
-            this.letItem.fertilize_date = date;
-            this.getAllfertilizetion();
+            this.letItem.cultivate_date = date;
+            this.getAllPlantations();
             for(let key of Object.keys(this.letItem)){
                 this.tmp[key] = this.letItem[key];
             }
@@ -275,18 +261,13 @@
         methods: {
 
             /**
-            * 获取所有肥料类别和专家
+            * 获取所有种植相关信息
             */
-            getAllfertilizetion () {
+            getAllPlantations () {
 
-                this.$http.get(this.$adminUrl('manure_category/query')).then((response)=>{
-                    this.$set(this, 'ManureSelects', response.body.manure_categorys.data);
-                }, (response)=>{
-
-                });
-
-                this.$http.get(this.$adminUrl('expert/query?params[type]=fertilize')).then((response)=>{
-                    this.$set(this, 'expertIds', response.body.experts.data);
+                this.$http.get(this.$adminUrl('cultivate/create?params=')).then((response)=>{
+                    this.$set(this, 'PlantationNames', response.body.plantations);
+                    this.$set(this, 'PlantNames', response.body.plants);
                 }, (response)=>{
 
                 });
@@ -297,7 +278,7 @@
             */
             validateBeforeSubmit () {
                 if(this.edit) {
-                    this.$update(this, 'fertilize', this.letItem).then((response) => {
+                    this.$update(this, 'cultivate', this.letItem).then((response) => {
                         for(let key of Object.keys(this.letItem)){
                             this.tmp[key] = this.letItem[key];
                         }
@@ -311,7 +292,7 @@
                     });
                 }else {
                     this.letItem.cultivate_id = this.cultivateId;
-                    this.$storeL(this, 'fertilize', this.letItem).then((response) => {
+                    this.$storeL(this, 'cultivate', this.letItem).then((response) => {
                         this.letItem.id = response.body;
                         this.$emit('callback', this.letItem);
                         this.$alert('新增成功', 's');
@@ -341,19 +322,11 @@
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgManureSelect (msg) {
-                this.letItem.manure_select = msg;
-                this.$http.get(this.$adminUrl('manure/query?params[query_class]='+msg)).then((response)=>{
-                    this.$set(this, 'ManureIds', response.body.manures.data);
-                }, (response)=>{
-
-                });
+            getMsgPlantationName (msg) {
+                this.letItem.plantation_id = msg;
             },
-            getMsgManureId (msg) {
-                this.letItem.manure_id = msg;
-            },
-            getMsgExpertId (msg) {
-                this.letItem.expert_id = msg;                
+            getMsgPlantName (msg) {
+                this.letItem.plant_id = msg;
             },
             getMsg (msg) {
                 this.letItem.unit = msg;

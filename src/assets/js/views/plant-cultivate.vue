@@ -31,13 +31,14 @@
     
     import {mapMutations} from 'vuex';
     import TableList from '../components/public/table-list.vue';
+    import PopCultivate from '../components/plant-cultivate/pop-cultivate.vue';
     import CultivateOperate from '../components/plant-cultivate/cultivate-operate.vue';
 
     export default{
         name: 'PlantCultivate',
         data(){
             return{
-                component: {cultivate: null, open: {component: CultivateOperate, next: true}},
+                component: {cultivate: PopCultivate, open: {component: CultivateOperate, next: true}},
                 theads: ['种植区', '批次号', '果蔬名称'],
                 protos: ['plantation_name', 'serial', 'plant_name'],
                 widths: [26, 30, 17]
@@ -45,6 +46,7 @@
         },
         components:{
             TableList,
+            PopCultivate,
             CultivateOperate
         },
         mounted () {
