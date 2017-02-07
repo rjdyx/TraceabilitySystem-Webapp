@@ -189,7 +189,7 @@
         props: {
             cultivateId: {
                 type: Number,
-                default: ''
+                default: 0
             },
             letItem: {
                 type: Object,
@@ -246,11 +246,11 @@
                     return 0;
                 } else {
                     for(let index in this.expertIds){
-                        if(this.expertIds[index].id == this.letItem.expert_id){
+                        if(this.expertIds[index].expert_name == this.letItem.expert_name){
                             return index;
                         }
                     }
-                    
+                    return 0;
                 }
             },
             defaultMedicamentSelectIndex () {
@@ -258,11 +258,11 @@
                     return 0;
                 } else {
                     for(let index in this.medicamentSelects){
-                        if(this.medicamentSelects[index] == this.letItem.medicament_catagroy){
+                        if(this.medicamentSelects[index].id == this.letItem.category_id){
                             return index;
                         }
                     }
-                    
+                    return 0;
                 }
             },
             defaultMedicamentIdIndex () {
@@ -270,11 +270,11 @@
                     return 0;
                 } else {
                     for(let index in this.medicamentIds){
-                        if(this.medicamentIds[index] == this.letItem.medicament_id){
+                        if(this.medicamentIds[index].id == this.letItem.medicament_id){
                             return index;
                         }
                     }
-                    
+                    return 0;
                 }
             },
             defaultIndex () {
@@ -312,8 +312,17 @@
 
                 });
 
-                this.$http.get(this.$adminUrl('expert/query?params[type]=medicament')).then((response)=>{
+                if (this.edit) {
+                    this.$http.get(this.$adminUrl('spray/select_category?params='+this.letItem.category_id)).then((response)=>{
+                        this.$set(this, 'medicamentIds', response.body);
+                    }, (response)=>{
+
+                    });
+                }
+
+                this.$http.get(this.$adminUrl('expert/query?params[type]=spray')).then((response)=>{
                     this.$set(this, 'expertIds', response.body.experts.data);
+                    this.expertIds.unshift({id: '' ,expert_name: '无'})
                 }, (response)=>{
 
                 });
@@ -337,7 +346,8 @@
                         }
                     });
                 }else {
-                    this.letItem.cultivate_id = this.cultivateId;
+                    let cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                    this.letItem.cultivate_id = cultivateId;
                     this.$storeL(this, 'spray', this.letItem).then((response) => {
                         this.letItem.id = response.body;
                         this.$emit('callback', this.letItem);

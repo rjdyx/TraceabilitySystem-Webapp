@@ -1,14 +1,22 @@
+/**
+ * 
+ * 农业日志记录组件
+ * @description 
+ * @author 郑启强
+ * @date 2017/01/20
+ * 
+ */
 <template>
 	<div>
 		<table-list
-		ref="tableList"
-		:component="component"
-		:_key="_key"
-		:searchPlaceholder="searchPlaceholder"
-		:searchUrl="searchUrl"
-		:theads="theads"
-		:protos="protos"
-		:widths="widths"
+			ref="tableList"
+			:component="component"
+			:_key="_key"
+			:searchPlaceholder="searchPlaceholder"
+			:searchUrl="searchUrl"
+			:theads="theads"
+			:protos="protos"
+			:widths="widths"
 		>
 		<button slot="search" class="stl-btn" @click="back">返回</button>
 		</table-list>

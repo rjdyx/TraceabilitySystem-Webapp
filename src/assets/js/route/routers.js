@@ -34,6 +34,7 @@ const basic = require('../views/basic.vue')
 
 //---------------------------种植批次管理----------------------------------
 const plantCultivate = require('../views/plant-cultivate.vue')
+const plantCultivateDetail = require('../components/plant-cultivate/plant-cultivate-detail.vue')
 
 
 
@@ -67,6 +68,12 @@ const routes = [
                 path: 'plant-cultivate',
                 name:'plant-cultivate',
                 component: plantCultivate,
+                meta: { requiresAuth: true }
+            },
+            {
+                path: 'plant-cultivate-detail/:id',
+                name:'plant-cultivate-detail',
+                component: plantCultivateDetail,
                 meta: { requiresAuth: true }
             },
             {

@@ -13,9 +13,9 @@ export default {
          * @param resolve
          * @param reject
          */
-        Vue.prototype.$index = (vm, url) => {
+        Vue.prototype.$index = (vm, url, params) => {
             return new Promise(function(resolve, reject){
-                vm.$http.get(vm.$adminUrl(url + '/query')).then((response) => {
+                vm.$http.get(vm.$adminUrl(url + '/query'), {params:params}).then((response) => {
                     resolve(response);
                 }, (error) => {
                     reject(error);

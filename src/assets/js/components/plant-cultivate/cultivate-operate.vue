@@ -18,13 +18,13 @@
     <div>
       <ul>
         <li @click="showConfirm=true"><a href="javascript:void(0)">状态</a></li>
-        <li @click="popDialog('farm')"><a href="javascript:void(0)">农事</a></li>
-        <li @click="popDialog('fertilize')"><a href="javascript:void(0)">施肥</a></li>
-        <li @click="popDialog('medicament')"><a href="javascript:void(0)">施药</a></li>
-        <li @click="popDialog('detect')"><a href="javascript:void(0)">检测</a></li>
-        <li @click="popDialog('harvest')"><a href="javascript:void(0)">采收</a></li>
-        <li @click="popDialog('grow')"><a href="javascript:void(0)">图片</a></li>
-        <li @click="popDialog('cultivate')"><a href="javascript:void(0)">编辑</a></li>
+        <li @click="popDialog('farm')" :class="{active: isActive=='farm'}"><a href="javascript:void(0)">农事</a></li>
+        <li @click="popDialog('fertilize')" :class="{active: isActive=='fertilize'}"><a href="javascript:void(0)">施肥</a></li>
+        <li @click="popDialog('medicament')" :class="{active: isActive=='medicament'}"><a href="javascript:void(0)">施药</a></li>
+        <li @click="popDialog('detect')" :class="{active: isActive=='detect'}"><a href="javascript:void(0)">检测</a></li>
+        <li @click="popDialog('harvest')" :class="{active: isActive=='harvest'}"><a href="javascript:void(0)">采收</a></li>
+        <li @click="popDialog('grow')" :class="{active: isActive=='grow'}"><a href="javascript:void(0)">图片</a></li>
+        <li @click="popDialog('cultivate')" :class="{active: isActive=='cultivate'}"><a href="javascript:void(0)">编辑</a></li>
       </ul>
       <div v-if="show && !edit" class="pop">
         <component
@@ -76,7 +76,8 @@
         show: false,
         component: null,
         edit: false,
-        showConfirm: false
+        showConfirm: false,
+        isActive: ''
       }
     },
     components: {
@@ -103,24 +104,31 @@
         switch(dialog) {
           case 'farm': 
             this.component = PopFarm;
+            this.isActive = 'farm';
             break;
           case 'fertilize': 
             this.component = PopFertilize;
+            this.isActive = 'fertilize';
             break;
           case 'medicament': 
             this.component = PopMedicament;
+            this.isActive = 'medicament';
             break;
           case 'detect': 
             this.component = PopDetect;
+            this.isActive = 'detect';
             break;
           case 'harvest': 
             this.component = PopHarvest;
+            this.isActive = 'harvest';
             break;
           case 'grow': 
             this.component = PopGrow;
+            this.isActive = 'grow';
             break;
           case 'cultivate': 
             this.edit=true;
+            this.isActive = 'cultivate';
             break;
         }
       }
@@ -163,5 +171,9 @@
         }
       }
     }
+  }
+
+  .active {
+    background-color: #f0f0f0;
   }
 </style>

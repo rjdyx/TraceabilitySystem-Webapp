@@ -1,3 +1,16 @@
+/**
+ * 
+ * 农业日志图片组件
+ * @description 
+ * @author 何翠香
+ * @date 2017/01/11
+ * 
+ * 加入图片弹出功能
+ * @description 
+ * @author 郑启强
+ * @date 2017/01/22
+ * 
+ */
 <template>
     <div>
 

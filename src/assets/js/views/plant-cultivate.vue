@@ -33,12 +33,13 @@
     import TableList from '../components/public/table-list.vue';
     import PopCultivate from '../components/plant-cultivate/pop-cultivate.vue';
     import CultivateOperate from '../components/plant-cultivate/cultivate-operate.vue';
+    import CultivateNumber from '../components/plant-cultivate/cultivate-number.vue';
 
     export default{
         name: 'PlantCultivate',
         data(){
             return{
-                component: {cultivate: PopCultivate, open: {component: CultivateOperate, next: true}},
+                component: {cultivate: PopCultivate, open: {component: CultivateOperate, next: true}, serial: CultivateNumber},
                 theads: ['种植区', '批次号', '果蔬名称'],
                 protos: ['plantation_name', 'serial', 'plant_name'],
                 widths: [26, 30, 17]

@@ -179,7 +179,7 @@
         props: {
             cultivateId: {
                 type: Number,
-                default: ''
+                default: 0
             },
             letItem: {
                 type: Object,
@@ -232,11 +232,11 @@
                     return 0;
                 } else {
                     for(let index in this.expertIds){
-                        if(this.expertIds[index].id == this.letItem.expert_id){
+                        if(this.expertIds[index].expert_name == this.letItem.expert_name){
                             return index;
                         }
                     }
-                    
+                    return 0;
                 }
             },
             defaultManureSelectIndex () {
@@ -244,11 +244,11 @@
                     return 0;
                 } else {
                     for(let index in this.ManureSelects){
-                        if(this.ManureSelects[index] == this.letItem.manure_select){
+                        if(this.ManureSelects[index].id == this.letItem.category_id){
                             return index;
                         }
                     }
-                    
+                    return 0;
                 }
             },
             defaultManureIdIndex () {
@@ -256,11 +256,11 @@
                     return 0;
                 } else {
                     for(let index in this.ManureIds){
-                        if(this.ManureIds[index] == this.letItem.manure_id){
+                        if(this.ManureIds[index].id == this.letItem.manure_id){
                             return index;
                         }
                     }
-                    
+                    return 0;
                 }
             },
             defaultIndex () {
@@ -298,8 +298,17 @@
 
                 });
 
+                if (this.edit) {
+                    this.$http.get(this.$adminUrl('fertilize/select_category?params='+this.letItem.category_id)).then((response)=>{
+                        this.$set(this, 'ManureIds', response.body);
+                    }, (response)=>{
+
+                    });
+                }
+
                 this.$http.get(this.$adminUrl('expert/query?params[type]=fertilize')).then((response)=>{
                     this.$set(this, 'expertIds', response.body.experts.data);
+                    this.expertIds.unshift({id: '' ,expert_name: '无'})
                 }, (response)=>{
 
                 });
@@ -323,7 +332,8 @@
                         }
                     });
                 }else {
-                    this.letItem.cultivate_id = this.cultivateId;
+                    let cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                    this.letItem.cultivate_id = cultivateId;
                     this.$storeL(this, 'fertilize', this.letItem).then((response) => {
                         this.letItem.id = response.body;
                         this.$emit('callback', this.letItem);

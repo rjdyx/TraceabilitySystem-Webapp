@@ -440,10 +440,10 @@
             /**
              * 获取所有列表项信息
              */
-            getAllLists (url) {
+            getAllLists (url, params) {
                 this.init();
                 this.showUp = false;
-                this.$index(this, url).then((response) => {
+                this.$index(this, url, params).then((response) => {
                     let data = response.body[url + 's'];
                     this.total = data.last_page;
                     this.$set(this, 'list', data.data);

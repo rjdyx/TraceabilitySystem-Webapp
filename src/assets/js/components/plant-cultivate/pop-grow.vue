@@ -160,7 +160,7 @@
         props: {
             cultivateId: {
                 type: Number,
-                default: ''
+                default: 0
             },
             letItem: {
                 type: Object,
@@ -307,7 +307,8 @@
                         });
 
                     }else {
-                        this.letItem.cultivate_id = this.cultivateId;
+                        let cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                        this.letItem.cultivate_id = cultivateId;
                         this.letItem.image = 'upload.png';
                         this.$update(this, 'grow', this.letItem).then((response) => {
 

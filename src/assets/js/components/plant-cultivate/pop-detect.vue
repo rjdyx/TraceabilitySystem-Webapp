@@ -165,7 +165,7 @@
         props: {
             cultivateId: {
                 type: Number,
-                default: ''
+                default: 0
             },
             letItem: {
                 type: Object,
@@ -267,6 +267,7 @@
 
                 this.$http.get(this.$adminUrl('expert/query?params[type]=detect')).then((response)=>{
                     this.$set(this, 'expertIds', response.body.experts.data);
+                    this.expertIds.unshift({id: '' ,expert_name: '无'})
                 }, (response)=>{
 
                 });
@@ -277,6 +278,9 @@
             */
             validateBeforeSubmit () {
                 if(this.edit) {
+                    if (this.letItem.Approval == null) {
+                        this.letItem.Approval = '';
+                    }
                     this.$update(this, 'detect', this.letItem).then((response) => {
                         for(let key of Object.keys(this.letItem)){
                             this.tmp[key] = this.letItem[key];
@@ -290,7 +294,8 @@
                         }
                     });
                 }else {
-                    this.letItem.cultivate_id = this.cultivateId;
+                    let cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                    this.letItem.cultivate_id = cultivateId;
                     this.$storeL(this, 'detect', this.letItem).then((response) => {
                         this.letItem.id = response.body;
                         this.$emit('callback', this.letItem);

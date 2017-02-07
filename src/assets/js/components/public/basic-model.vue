@@ -1,6 +1,6 @@
 /**
  * 
- * 基础信息管理顶层组件
+ * 包含tap的列表顶层组件
  * @description 
  * @author 苏锐佳
  * @date 2017/02/01
@@ -67,6 +67,10 @@
                         widths: [0]
                     }]
                 }
+            },
+            params: {
+                type: String,
+                default: ''
             }
         },
         data(){
@@ -95,7 +99,7 @@
         },
         mounted () {
             this.component = this.tableLists[0].component;
-            this.$refs.tableList.getAllLists(this.searchUrl);
+            this.$refs.tableList.getAllLists(this.searchUrl, this.tableLists[0].params);
         },
         methods: {
             ...mapMutations([
@@ -113,7 +117,7 @@
                         this.widths = item.widths;
                         this.component = item.component;
                         // 同步调用获取数据的方法
-                        this.$refs.tableList.getAllLists(item.searchUrl)
+                        this.$refs.tableList.getAllLists(item.searchUrl, this.tableLists[0].params)
                         // 关闭新增弹窗
                         this.$refs.tableList.closeNew()
                         // 关闭编辑弹窗
