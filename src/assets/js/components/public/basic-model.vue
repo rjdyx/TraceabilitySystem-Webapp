@@ -11,6 +11,7 @@
         <!-- tap模块 -->
         <navbar
             :taps="taps"
+            :number="number"
             @getKey="flashList"
         >
             <!-- 列表模块 -->
@@ -53,6 +54,10 @@
                 default () {
                     return [{name: '', key: ''}]
                 }
+            },
+            number: {
+                type: Number,
+                default: 3
             },
             tableLists: {
                 type: Array,

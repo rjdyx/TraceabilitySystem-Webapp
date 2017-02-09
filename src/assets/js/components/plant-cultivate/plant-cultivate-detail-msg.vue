@@ -7,22 +7,55 @@
  * 
  */
 <template>
-    <div>
+    <div class="content">
+        <div class="title">种植批次详细信息</div>
         <ul>
-            <li>种植批次号:{{cultivateMsg.serial}}</li>
-            <li>所属种植场:{{cultivateMsg.plantation_name}}</li>
-            <li>种植人:{{cultivateMsg.operator}}</li>
-            <li>种植日期:{{cultivateMsg.cultivate_date}}</li>
-            <li>所属种植区:{{cultivateMsg.name}}</li>
-            <li>种植地址:{{cultivateMsg.address}}</li>
-            <li>种植果蔬名称:{{cultivateMsg.plant_name}}</li>
-            <li>当前批次面积:{{cultivateMsg.area+cultivateMsg.area_unit}}</li>
-            <li>种植备注:{{cultivateMsg.memo}}</li>
+            <li><span>种植批次号:</span>{{cultivateMsg.serial}}</li>
+            <li><span>所属种植场:</span>{{cultivateMsg.plantation_name}}</li>
+            <li><span>种植人:</span>{{cultivateMsg.operator}}</li>
+            <li><span>种植日期:</span>{{cultivateMsg.cultivate_date}}</li>
+            <li><span>所属种植区:</span>{{cultivateMsg.name}}</li>
+            <li><span>种植地址:</span>{{cultivateMsg.address}}</li>
+            <li><span>种植果蔬名称:</span>{{cultivateMsg.plant_name}}</li>
+            <li><span>当前批次面积:</span>{{cultivateMsg.area+cultivateMsg.area_unit}}</li>
+            <li><span>种植备注:</span>{{cultivateMsg.memo}}</li>
         </ul>
     </div>
 </template>
 
-<style>
+<style lang="sass" scoped>
+
+    @import "../../../sass/function";
+
+    .content {
+        position: relative;
+    }
+    
+    .title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-bottom: pxToRem(10);
+        text-align: center;
+        font-size: pxToRem(16);
+        border-bottom: 1px solid #dfdfdf;
+        background: white;
+    }
+
+    ul {
+        padding-top: pxToRem(36);
+        overflow-y: scroll;
+
+        li {
+            margin: pxToRem(7) 0;
+
+            span {
+                margin-right: pxToRem(10);
+                color: #7f7f7f;
+            }
+        }
+    }
 </style>
 
 <script>

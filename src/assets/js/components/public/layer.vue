@@ -4,55 +4,14 @@
  * @author 苏锐佳
  * @date 2017/02/08
  * 
- * Props:
- * 
- * @param  show 
- * 类型：Boolean
- * 是否必填：false
- * 默认值：true
- * 描述：显示或隐藏提示框的标志
- * 
- * 
- * @param  title 
- * 类型：String
- * 是否必填：false
- * 默认值：'删除选项'
- * 描述：提示框的提示信息——标题
- * 
- * 
- * @param  message 
- * 类型：String
- * 是否必填：false
- * 默认值：'确认删除？'
- * 描述：提示框的提示信息——内容
- * 
- * 
- * @param  confirm 
- * 类型：String
- * 是否必填：false
- * 默认值：'确定'
- * 描述：提示框的右边按钮的文字
- * 
- * 
- * @param  cancel 
- * 类型：String
- * 是否必填：false
- * 默认值：'取消'
- * 描述：提示框的左边按钮的文字
- * 
- * 
  * 
  * Events:
  * 
- * @function confirmAction
+ * @function confirm
  * 返回：无
  * 必用：false
- * 描述：右边按钮的触发事件
+ * 描述：确认按钮的触发事件
  * 
- * @function cancelAction
- * 返回：无
- * 必用：false
- * 描述：左边按钮的触发事件
  * 
  * 
  */
@@ -67,7 +26,9 @@
             <div class="content">
                 <slot></slot>
             </div>
-            <div id="confirm" @click="confirm">确定</div>
+            <div class="confirm">
+                <div id="confirm-btn" @click="confirm">确定</div>
+            </div>
         </div>
     </transition-group>
 </template>
@@ -75,8 +36,6 @@
 
     export default {
         name: 'Dialog',
-        props: {
-        },
         methods: {
             confirm () {
                 this.$emit('confirm');
@@ -89,7 +48,7 @@
     .layer {
         position: absolute;
         width: 80%;
-        height: 300px;
+        height: 45%;
         margin: auto;
         left: 0;
         right: 0;
@@ -107,19 +66,25 @@
         }
     }
 
-    #confirm {
+    .confirm {
+        
         position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 8px;
+        bottom: 0;
+        width: 100%;
         height: 40px;
         line-height: 40px;
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-        background: #009acb;
-        color: white;
+        padding: 4px 0px;
+        background: white;
+
+        #confirm-btn {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background: #009acb;
+            color: white;
+        }
     }
+    
 
     .animated {
       -webkit-animation-duration: .3s;

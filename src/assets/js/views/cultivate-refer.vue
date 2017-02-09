@@ -1,9 +1,9 @@
 /**
  * 
- * 包含tap的列表顶层组件
+ * 与批次关联的新增组件
  * @description 
  * @author 苏锐佳
- * @date 2017/02/01
+ * @date 2017/02/09
  * 
  */
 <template>
@@ -11,6 +11,7 @@
         <!-- tap模块 -->
         <navbar 
             :taps="taps"
+            :number="2"
             @getKey="changeWindow"
         ></navbar>
         

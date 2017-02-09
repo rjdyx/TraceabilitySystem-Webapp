@@ -17,12 +17,18 @@
  *        name:'种植管理',  // tap名
  *    }
  * 
+ * @param  number 
+ * 类型：Number
+ * 是否必填：false
+ * 默认值：3
+ * 描述：定义每一行显示多少个tap
+ * 
  */
 <template>
     <div class="nav-top">
 
         <ul class="nt-ul">
-            <li v-for="(tap, index) in taps" v-if="index < 3" class="nt-li">
+            <li v-for="(tap, index) in taps" v-if="index < number" class="nt-li" :style="{width: 100/number + '%'}">
                 <span @click="getKey(tap.key)" :class="{'link-active': activeKey == tap.key}">{{tap.name}}</span>
             </li>
         </ul>
@@ -32,7 +38,7 @@
             v-bind:css="false"
         >
             <ul class="nt-ul" v-if="!isMore">
-                <li v-for="(tap, index) in taps" v-if="index >= 3" class="nt-li">
+                <li v-for="(tap, index) in taps" v-if="index >= number" class="nt-li" :style="{width: 100/number + '%'}">
                     <span @click="getKey(tap.key)" :class="{'link-active': activeKey == tap.key}">{{tap.name}}</span>
                 </li>
             </ul>
@@ -56,9 +62,13 @@
     name:'Navbar',
     props:{
         taps: {
-            type:Array,
+            type: Array,
             default: [{name: 'default', key: 'default'}]
         },
+        number: {
+            type: Number,
+            default: 3
+        }
     },
     data () {
         return {
@@ -85,14 +95,14 @@
 
         enter (el, done) {
             el.style.height = 0;
-            let num = Math.ceil((this.taps.length - 3)/3);
+            let num = Math.ceil((this.taps.length - this.number)/this.number);
             let totalHeight = 45.4 * num + 'px';
             Velocity(el, { height: totalHeight }, { duration: 300 });
             Velocity(el, { height: totalHeight }, { complete: done });
         },
 
         leave (el, done) {
-            let num = Math.ceil((this.taps.length - 3)/3);
+            let num = Math.ceil((this.taps.length - this.number)/this.number);
             let totalHeight = 45.4 * num + 'px';
             el.style.height = totalHeight;
             Velocity(el, { height: 0 }, { duration: 300 });
