@@ -5,6 +5,7 @@ Vue.component('confirm', require('../components/public/confirm.vue'));
 Vue.component('PopTransition', require('../components/public/pop-transition.vue'));
 Vue.component('pop-select',require('../components/public/pop-select.vue'));
 Vue.component('loading',require('../components/public/loading.vue'));
+Vue.component('date-picker',require('../components/public/date-picker.vue'));
 
 
 
