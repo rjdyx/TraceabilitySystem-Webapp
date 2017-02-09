@@ -9,7 +9,7 @@
 <template>
     <div>
         <!-- tap模块 -->
-        <navbar 
+        <navbar
             :taps="taps"
             @getKey="flashList"
         >

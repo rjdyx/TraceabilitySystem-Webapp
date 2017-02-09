@@ -48,12 +48,15 @@
 
                 <tr>
                     <td class="label-tit"><label for="farming_farming_date">操作日期</label></td>
-                    <td class="input-pop" colspan="2"><input 
+                    <td class="input-pop" colspan="2">
+                    <date-picker></date-picker>
+                    <!-- <input 
                     v-model="letItem.farming_date" 
                     v-validate.initial="letItem.farming_date" 
                     data-vv-rules="required|max:255" 
                     data-vv-as="操作日期" 
-                    type="text" id="farming_farming_date" name="farming_date" placeholder="必填"></td>
+                    type="text" id="farming_farming_date" name="farming_date" placeholder="必填" > -->
+                    </td>
                 </tr>
                 <tr v-show="errors.has('farming_date')">
                     <td colspan="3" class="error">{{ errors.first('farming_date') }}</td>
