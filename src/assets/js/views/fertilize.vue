@@ -1,23 +1,24 @@
 /**
  * 
- * 种植批次管理
+ * 施肥管理
  * @description 
  * @author 苏锐佳
- * @date 2017/02/04
+ * @date 2017/02/07
  * 
  */
 <template>
-    <div id="cultivate">
+    <div id="fertilize">
         <table-manage
             ref="tableList"
-            _key="cultivate"
+            _key="fertilize"
             :component="component"
-            searchPlaceholder="种植批次号搜索"
-            searchUrl="cultivate"
+            searchPlaceholder="肥料名称"
+            searchUrl="fertilize"
             :theads="theads"
             :protos="protos"
             :widths="widths"
         >
+        <router-link :to="{name:'cultivate-refer',params:{type: 'fertilize'}}" tag="button" slot="search" class="stl-btn" exact>新建</router-link>
         </table-manage> 
     </div>
 </template>
@@ -31,29 +32,24 @@
     
     import {mapMutations} from 'vuex';
     import TableManage from '../components/public/table-manage.vue';
-    import PopCultivate from '../components/plant-cultivate/pop-cultivate.vue';
-    import CultivateOperate from '../components/plant-cultivate/cultivate-operate.vue';
-    import CultivateNumber from '../components/plant-cultivate/cultivate-number.vue';
 
     export default{
         name: 'PlantCultivate',
         data(){
             return{
-                component: {cultivate: PopCultivate, open: {component: CultivateOperate, next: true}, serial: CultivateNumber},
+                component: {fertilize: null},
                 theads: ['种植区', '批次号', '果蔬名称'],
                 protos: ['plantation_name', 'serial', 'plant_name'],
                 widths: [26, 30, 17]
             }
         },
         components:{
-            TableManage,
-            PopCultivate,
-            CultivateOperate
+            TableManage
         },
         mounted () {
-            this.setTitle('种植批次管理');
+            this.setTitle('施肥管理');
             // 同步调用获取数据的方法
-            this.$refs.tableList.getAllLists('cultivate')
+            this.$refs.tableList.getAllLists('fertilize')
         },
         methods: {
 

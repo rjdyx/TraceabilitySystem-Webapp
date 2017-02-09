@@ -66,6 +66,7 @@
         </div>
 
         <confirm
+            title="提交"
             :show="show"
             :message="message"
             @confirmAction="putAllStore(1)"
@@ -145,6 +146,7 @@
     import Search from '../components/public/search.vue';
     import Paginator from '../components/public/paginator.vue';
     import PopLog from '../components/log/pop-log.vue';
+    import HeadRightRecord from '../components/index/head-right-record.vue';
 
     export default{
         name: 'Basic',
@@ -177,6 +179,7 @@
         },
         mounted () {
             this.setTitle('农业日志');
+            this.setHeadRightComponent(HeadRightRecord)
             this.getAllPlanta();
         },
         watch: {
@@ -187,7 +190,8 @@
         methods: {
 
             ...mapMutations([
-                'setTitle'
+                'setTitle',
+                'setHeadRightComponent'
             ]),
 
             /**
@@ -266,6 +270,9 @@
                 this.plantaTmp.date = '';
                 this.plantaTmp = null;
             }
+        },
+        destroyed () {
+            this.setHeadRightComponent(null)
         }
     }
 </script>

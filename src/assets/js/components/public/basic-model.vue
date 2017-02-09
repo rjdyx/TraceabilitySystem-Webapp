@@ -14,8 +14,8 @@
             @getKey="flashList"
         >
             <!-- 列表模块 -->
-            <table-list
-                ref="tableList"
+            <table-manage
+                ref="tableManage"
                 :_key="_key"
                 :component="component"
                 :searchPlaceholder="searchPlaceholder"
@@ -24,7 +24,7 @@
                 :protos="protos"
                 :widths="widths"
             >
-            </table-list> 
+            </table-manage> 
         </navbar>
         
         
@@ -38,7 +38,7 @@
 
     import {mapMutations} from 'vuex';
     import Navbar from './navbar.vue';
-    import tableList from './table-list.vue';
+    import tableManage from './table-manage.vue';
     
 
     export default{
@@ -86,7 +86,7 @@
         },
         components:{
             Navbar,
-            tableList
+            tableManage
         },
         created () {
             this.setTitle(this.title);
@@ -99,7 +99,7 @@
         },
         mounted () {
             this.component = this.tableLists[0].component;
-            this.$refs.tableList.getAllLists(this.searchUrl, this.tableLists[0].params);
+            this.$refs.tableManage.getAllLists(this.searchUrl, this.tableLists[0].params);
         },
         methods: {
             ...mapMutations([
@@ -117,11 +117,7 @@
                         this.widths = item.widths;
                         this.component = item.component;
                         // 同步调用获取数据的方法
-                        this.$refs.tableList.getAllLists(item.searchUrl, this.tableLists[0].params)
-                        // 关闭新增弹窗
-                        this.$refs.tableList.closeNew()
-                        // 关闭编辑弹窗
-                        this.$refs.tableList.closeEdit()
+                        this.$refs.tableManage.getAllLists(item.searchUrl, this.tableLists[0].params)
                     }
                 }
             }

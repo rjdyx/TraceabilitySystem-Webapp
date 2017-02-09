@@ -76,7 +76,9 @@
     }
 </style>
 <script>
-
+    import {mapMutations} from 'vuex';
+    import HeadLeftBack from '../components/index/head-left-back.vue';
+    import HeadLeftSlider from '../components/index/head-left-slider.vue';
     export default{
         name: 'dailylog',
         data(){
@@ -97,9 +99,15 @@
             }
         },
         mounted () {
+            this.setHeadLeftComponent(HeadLeftBack);
             this.getDailylog();          
         },
         methods: {
+
+            ...mapMutations([
+                'setHeadLeftComponent'
+            ]),
+
             //获取日志详细信息
             getDailylog () {
                 this.$http.get(this.$adminUrl('dailylog/getlog'),{params:this.$route.params}).then((response)=>{
@@ -250,6 +258,9 @@
             toHide() {
                 this.showpic = false
             }
+        },
+        destroyed () {
+            this.setHeadLeftComponent(HeadLeftSlider)
         }
     }
 </script>

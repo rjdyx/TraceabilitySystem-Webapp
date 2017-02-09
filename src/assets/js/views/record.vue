@@ -8,8 +8,8 @@
  */
 <template>
 	<div>
-		<table-list
-			ref="tableList"
+		<table-manage
+			ref="TableManage"
 			:component="component"
 			:_key="_key"
 			:searchPlaceholder="searchPlaceholder"
@@ -19,12 +19,12 @@
 			:widths="widths"
 		>
 		<button slot="search" class="stl-btn" @click="back">返回</button>
-		</table-list>
+		</table-manage>
 	</div>
 </template>
 
 <script>
-	import tableList from '../components/public/table-list.vue';
+	import TableManage from '../components/public/table-manage.vue';
 	import Hispic from '../components/log/hispic.vue'
 	export default {
 		name: 'record',
@@ -40,11 +40,11 @@
 			}
 		},
 		components: {
-			tableList,
+			TableManage,
 			Hispic
 		},
 		mounted () {
-			this.$refs.tableList.getAllLists(this.searchUrl);
+			this.$refs.TableManage.getAllLists(this.searchUrl);
 		},
 		methods: {
 			/**

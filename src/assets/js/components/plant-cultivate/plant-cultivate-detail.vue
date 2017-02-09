@@ -21,6 +21,7 @@
 
 <script>
 
+    import {mapMutations} from 'vuex';
     import BasicModel from '../public/basic-model.vue';
     import PopFarm from './pop-farm.vue'
     import PopFertilize from './pop-fertilize.vue'
@@ -28,7 +29,9 @@
     import PopDetect from './pop-detect.vue'
     import PopGrow from './pop-grow.vue'
     import AmountUnit from '../public/amount-unit.vue'
-    
+    import HeadLeftSlider from '../index/head-left-slider.vue';
+    import HeadLeftBack from '../index/head-left-back.vue';
+    import HeadRightMore from '../index/head-right-more.vue';
 
     export default{
         name: 'Basic',
@@ -105,6 +108,21 @@
             for(let item of this.tableLists) {
                 item.params = params;
             }
+            
+        },
+        mounted () {
+            this.setHeadLeftComponent(HeadLeftBack);
+            this.setHeadRightComponent(HeadRightMore);
+        },
+        methods: {
+            ...mapMutations([
+                'setHeadLeftComponent',
+                'setHeadRightComponent'
+            ])
+        },
+        destroyed () {
+            this.setHeadLeftComponent(HeadLeftSlider)
+            this.setHeadRightComponent(null)
         }
     }
 </script>

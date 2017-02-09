@@ -34,8 +34,11 @@ const basic = require('../views/basic.vue')
 
 //---------------------------种植批次管理----------------------------------
 const plantCultivate = require('../views/plant-cultivate.vue')
+const cultivateRefer = require('../views/cultivate-refer.vue')
 const plantCultivateDetail = require('../components/plant-cultivate/plant-cultivate-detail.vue')
 
+//---------------------------施肥管理----------------------------------
+const fertilize = require('../views/fertilize.vue')
 
 
 //=============================养殖管理====================================
@@ -74,6 +77,18 @@ const routes = [
                 path: 'plant-cultivate-detail/:id',
                 name:'plant-cultivate-detail',
                 component: plantCultivateDetail,
+                meta: { requiresAuth: true }
+            },
+            {
+                path: 'cultivate-refer/:type',
+                name:'cultivate-refer',
+                component: cultivateRefer,
+                meta: { requiresAuth: true }
+            },
+            {
+                path: 'fertilize',
+                name:'fertilize',
+                component: fertilize,
                 meta: { requiresAuth: true }
             },
             {

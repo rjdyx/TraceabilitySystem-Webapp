@@ -11,12 +11,16 @@
     <div>
         <!-- 顶部 -->
         <my-header :title="title">
-            <div @click="show = true" slot="left" class="show-sliderBar-btn">
-                <img :src="$img('slider.png')" alt="">
-            </div>
-            <div @click="record" slot="right" class="right-btn">
-                <img :src="$img('eye.png')" alt="">
-            </div>
+            <component
+                :is="headLeftComponent"
+                slot="left"
+                @clickEvent="clickLeftBtn"
+            ></component>
+            <component
+                :is="headRightComponent"
+                slot="right"
+                @clickEvent="clickRightBtn"
+            ></component>
         </my-header>
 
 		<!-- 进度条 -->
@@ -33,6 +37,14 @@
             @getSubNavbars="getSubNavbars"
         ></slider-bar>
 
+        <!-- 消息弹窗 -->
+        <layer
+            v-if="showLayer"
+            @confirm="setShowLayer(false)"
+        >
+            <component :is="layerComponent"></component>
+        </layer>
+
     </div>
 </template>
 <style lang="sass" scoped>
@@ -45,38 +57,6 @@
     	height: 3px;
 	}
 
-    .btn {
-        position: absolute;
-        bottom: 0;
-        width: pxToRem(35);
-        height: pxToRem(35);
-        margin: auto;
-        top: 0;
-
-        img {
-            display: block;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: pxToRem(20);
-            height: pxToRem(20);
-            margin: auto;
-        }
-    }
-
-    .show-sliderBar-btn {
-        @extend .btn;
-        left: pxToRem(25);
-    }
-
-    .right-btn {
-        @extend .btn;
-        right: pxToRem(10);
-        img {
-            width: pxToRem(25);
-            height: pxToRem(20);
-        }
-    }
 </style>
 <script>
 
@@ -84,6 +64,9 @@
     import {mapMutations} from 'vuex';
     import MyHeader from '../components/public/header.vue';
     import SliderBar from '../components/public/slider-bar.vue';
+    import Layer from '../components/public/layer.vue';
+    import HeadLeftSlider from '../components/index/head-left-slider.vue';
+    
 
     export default{
         name:'Index',
@@ -111,6 +94,10 @@
                             {
                                 path: '/webapp/plant-cultivate',
                                 name:'种植批次管理'
+                            },
+                            {
+                                path: '/webapp/fertilize',
+                                name:'施肥管理'
                             }
                         ]
                     },
@@ -130,16 +117,27 @@
         },
         computed: {
             ...mapState([
-                'title'
+                'title',
+                'headLeftComponent',
+                'headRightComponent',
+                'showLayer',
+                'layerComponent'
             ]),
         },
         components: {
             MyHeader,
-            SliderBar
+            SliderBar,
+            Layer
+        },
+        mounted () {
+            if(this.headLeftComponent == null || this.headLeftComponent.name == 'HeadLeftSlider') {
+                this.setHeadLeftComponent(HeadLeftSlider);
+            }
         },
         methods: {
             ...mapMutations([
-
+                'setHeadLeftComponent',
+                'setShowLayer'
             ]),
 
             /**
@@ -167,6 +165,24 @@
              */
             record() {
                 this.$router.push('/webapp/record');
+            },
+
+            /**
+             * 点击顶部左边按钮后的回调函数
+             */
+            clickLeftBtn (type) {
+                if (type == 'slider') {
+                    this.show = true;
+                }
+            },
+
+            /**
+             * 点击顶部右边按钮后的回调函数
+             */
+            clickRightBtn (type) {
+                if (type == 'record') {
+                   this.record(); 
+                }
             }
         }
     }

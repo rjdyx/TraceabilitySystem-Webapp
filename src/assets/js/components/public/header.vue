@@ -28,9 +28,9 @@
  */
 <template>
     <header class="header">
-        <slot name="left"></slot>
+        <slot name="left" class="left-btn"></slot>
         <h1 class="title">{{title}}</h1>
-        <slot name="right"></slot>
+        <slot name="right" class="right-btn"></slot>
     </header>
 </template>
 
@@ -61,6 +61,39 @@
         color: #fff;
         line-height: pxToRem(54);
         text-align: center;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 0;
+        width: pxToRem(35);
+        height: pxToRem(35);
+        margin: auto;
+        top: 0;
+
+        img {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: pxToRem(20);
+            height: pxToRem(20);
+            margin: auto;
+        }
+    }
+
+    .left-btn {
+        @extend .btn;
+        left: pxToRem(25);
+    }
+
+    .right-btn {
+        @extend .btn;
+        right: pxToRem(10);
+        img {
+            width: pxToRem(25);
+            height: pxToRem(20);
+        }
     }
 
 </style>

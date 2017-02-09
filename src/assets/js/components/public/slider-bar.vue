@@ -253,4 +253,9 @@
         background-color: rgba(255, 255, 255, 0.0);
         z-index: 19920219;
     }
+
+    .animated {
+      -webkit-animation-duration: .6s;
+      animation-duration: .6s;
+    }
 </style>

@@ -1,6 +1,6 @@
 /**
  * 
- * 列表项信息管理组件
+ * 列表项信息组件
  * @description 
  * @author 苏锐佳
  * @date 2017/01/13
@@ -28,12 +28,6 @@
  * 第二，如果想要自定义每一行的操作按钮，则可以给此prop添加open属性，
  * open属性的值为{component: null, next: false}，其中next决定传给component属性的组件是作用于
  * 操作按钮还是作用于下一行组件
- * 
- * @param  searchPlaceholder 
- * 类型：String
- * 是否必填：false
- * 默认值：''
- * 描述：搜索框的placeholder
  * 
  * @param  searchUrl 
  * 类型：String
@@ -68,30 +62,6 @@
  */
 <template xmlns:v-touchDelete="http://www.w3.org/1999/xhtml">
     <div>
-
-        <!-- 搜索模块 -->
-        <search
-            :placeholder="searchPlaceholder"
-            :searchUrl="searchUrl"
-            @callback="updateListByMore"
-        >
-            <slot name="search">
-               <button @click="showNewPanel=true" class="stl-btn">新建</button> 
-            </slot>
-        </search>
-
-        <!-- 新增模块 -->
-        <template v-if="component != null && component[_key] != null">
-            <component 
-                :is="component[_key]"
-                v-if="showNewPanel"
-                :edit="false"
-                @callback="updateListByOne"
-                @closeNew="showNewPanel=false"
-            ></component>
-        </template>
-        
-
         <div class="table-list">
             <div class="list-head">
                 <div class="list-head-th">
@@ -108,7 +78,7 @@
                 </div>
             </div>
             <transition name="slide-fade">
-                <transition-group name="slide-up" tag="ul" key="tbody" class="list-body" v-if="showUp">
+                <transition-group name="slide-up" tag="ul" key="tbody" class="list-body" v-if="showList">
                     <template v-for="(item, index) in list">
                             <li 
                                 v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:getAllState(item), tip:tipMsg}" 
@@ -183,23 +153,6 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="paginator-module">
-            <!-- 分页模块 -->
-            <paginator
-                :total="total"
-                :url="searchUrl + '/query'"
-                :paginatorParams="params"
-                @lastPageEvent="showUp=false"
-                @nextPageEvent="showUp=false"
-                @changePageEvent="showUp=false"
-                @result="updateListByMore"
-            ></paginator> 
-        </div>
-
-        
-
         <!-- 确认模块 -->
         <confirm
                 :show="showConfirm"
@@ -302,13 +255,11 @@
             }
         }
     }
-    
 </style>
 
 <script>
 
-    import Search from './search.vue';
-    import Paginator from './paginator.vue';
+    import { mapState, mapMutations } from 'vuex';
 
     export default {
         name: 'List',
@@ -324,11 +275,6 @@
                 default () {
                     return null
                 }
-            },
-            // 搜索框的placeholder
-            searchPlaceholder: {
-                type: String,
-                default: ''
             },
             // 搜索的url
             searchUrl: {
@@ -368,18 +314,12 @@
         },
         data () {
             return {
-                // 存放列表项的数组
-                list: [],
-                // 存放批量删除的列表项的数组
-                deleteLists: [],
                 // 是否全选
                 isAllCheck: false,
                 // 临时记录待删除的列表项信息
                 deleteList: {'id':0, 'index': 0, 'flag': null},
                 // 单个删除或批量删除
                 oneOrBatch: 0,
-                // 是否显示新增模块
-                showNewPanel: false,
                 // 存放是否展开列表项编辑模块的标志，
                 showItemDetail: '',
                 // 定义PopList是新增模块还是编辑模块，true：编辑模块，false：新增模块
@@ -390,21 +330,18 @@
                 self: this,
                 // 无法删除时的提示信息
                 tipMsg: '被使用，无法删除',
-                // 分页的总页数
-                total: 1,
-                // 搜索的参数对象
-                params: {
-                    'query_text': '',
-                    'List_id': 0,
-                    '_sort': 'id',
-                    'order': ''
-                },
                 // 动画效果
-                slide: 'slide-fade',
-                showUp: true
+                slide: 'slide-fade'
             }
         },
         computed: {
+
+            ...mapState([
+                'list',
+                'deleteLists',
+                'showList'
+            ]),
+
             // 是否显示自定义操作按钮
             cusButton () {
                 return this.component != null && this.component.open != null && this.component.open.component != null && !this.component.open.next
@@ -419,19 +356,24 @@
                 this.slide = 'slide'
             }
         },
-        components: {
-            Paginator,
-            Search,
-        },
-        mounted () {
-        },
         methods: {
+
+            ...mapMutations([
+                'setList',
+                'spliceList',
+                'unshiftList',
+                'setDeleteLists',
+                'pushDeleteLists',
+                'spliceDeleteLists',
+                'reverseDeleteLists',
+                'setShowList'
+            ]),
 
             /**
              * 初始化数据
              */
             init () {
-                this.deleteLists = [];
+                this.setDeleteLists([]);
                 this.deleteList = {'id':0, 'index': 0, 'flag': null};
                 this.oneOrBatch = 0;
                 this.isAllCheck = false;
@@ -442,12 +384,13 @@
              */
             getAllLists (url, params) {
                 this.init();
-                this.showUp = false;
+                this.setShowList(false);
+                this.closeEdit();
                 this.$index(this, url, params).then((response) => {
                     let data = response.body[url + 's'];
                     this.total = data.last_page;
-                    this.$set(this, 'list', data.data);
-                    this.showUp = true;
+                    this.setList(data.data);
+                    this.setShowList(true);
                 },(error) => {
                     if(error.status == 401) {
                         this.$router.push('/webapp/login/401')
@@ -464,13 +407,13 @@
             selectAll () {
                 if(!this.isAllCheck) {
                     this.isAllCheck = true;
-                    this.deleteLists = [];
+                    this.setDeleteLists([]);
                     for(let index of this.list.keys()) {
-                        this.deleteLists.push({'id':this.list[index].id, 'index':index, 'flag':this.getAllState(this.list[index])});
+                        this.pushDeleteLists({'id':this.list[index].id, 'index':index, 'flag':this.getAllState(this.list[index])});
                     }
                 }else {
                     this.isAllCheck = false;
-                    this.deleteLists = [];
+                    this.setDeleteLists([]);
                 }
             },
 
@@ -481,11 +424,11 @@
             checkedBox (checkedMsg) {
                 for(let index of Object.keys(this.deleteLists)) {
                     if(this.deleteLists[index].id == checkedMsg.id) {
-                        this.deleteLists.splice(index, 1);
+                        this.spliceDeleteLists(index);
                         return true;
                     }
                 }
-                this.deleteLists.push(checkedMsg);
+                this.pushDeleteLists(checkedMsg);
             },
 
             /**
@@ -506,7 +449,7 @@
             */
             destroy() {
                 this.$destroyL(this, this.searchUrl, this.deleteList.id).then((response) => {
-                    this.list.splice(this.deleteList.index, 1);
+                    this.spliceList(this.deleteList.index);
                     this.deleteList = {'id':0, 'index': 0};
                     this.showConfirm = false;
                     this.$alert('删除成功');
@@ -525,11 +468,11 @@
                         ids.push(deleteList.id);
                     }
                     this.$batchDestroy(this, this.searchUrl, ids).then((response) => {
-                        this.deleteLists = this.$reverseObj(this.deleteLists,'index');
+                        this.reverseDeleteLists('index');
                         for(let deleteList of this.deleteLists) {
-                            this.list.splice(deleteList.index, 1);
+                            this.spliceList(deleteList.inde);
                         }
-                        this.deleteLists = [];
+                        this.setDeleteLists([]);
                         this.showConfirm = false;
                         this.$alert('成功删除'+response.body+'条');
                     },(response) => {
@@ -601,38 +544,6 @@
             },
 
             /**
-            * 更新list中的一个
-            * @param List
-            */
-            updateListByOne(newOne) {
-                this.slide = 'slide-fade'
-                this.showNewPanel = false;
-                this.list.unshift(newOne);
-            },
-
-            /**
-            * 更新list中的多个
-            * @param List
-            */
-            updateListByMore(newList) {
-                this.showUp = true;
-                this.init();
-                this.$set(this, 'list', newList.data)
-                this.total = newList.last_page;
-                if(newList.query_text != undefined){
-                   this.params.query_text = newList.query_text; 
-                }
-                
-            },
-
-            /**
-             * 关闭新增弹窗
-             */
-            closeNew () {
-                this.showNewPanel=false;
-            },
-
-            /**
              * 关闭编辑弹窗
              */
             closeEdit () {
@@ -653,7 +564,6 @@
                 }
                 return stateArr
             }
-
         }
     }
 </script>
