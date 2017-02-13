@@ -234,6 +234,7 @@
             */
             updateListByOne(newOne) {
                 this.showNewPanel = false;
+                console.log(newOne)
                 this.unshiftList(newOne);
             },
 

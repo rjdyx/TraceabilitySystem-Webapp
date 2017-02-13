@@ -12,8 +12,6 @@
     <input v-model="dateVal" @click="getDate"  readonly="readonly">
     <div class="maskLayer" :class="{ 'class-opacity': opacity }" v-if="show" @click="pop"></div>
     <div class="list" v-if="show">
-
-
       <div class='date-div no-mode-translate-demo-wrapper' v-for="(items,set) in boxArr">
         <ul>
           <i :class='items.classTop' @click="slideTop(items.clickTop)"><img :src="$img('arrowTop.png')"></i>

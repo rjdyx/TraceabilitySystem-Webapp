@@ -40,6 +40,9 @@ const plantCultivateDetail = require('../components/plant-cultivate/plant-cultiv
 //---------------------------施肥管理----------------------------------
 const fertilize = require('../views/fertilize.vue')
 
+//=============================果蔬加工管理====================================
+//-----------------------------------------------------------------------------
+const processBasic = require('../views/process-basic.vue')
 
 //=============================养殖管理====================================
 //---------------------------养殖基础信息管理----------------------------------
@@ -113,6 +116,12 @@ const routes = [
                 path: 'record',
                 name: 'record',
                 component: record,
+                meta: { requiresAuth: true }
+            },
+            {
+                path: 'process-basic',
+                name: 'process-basic',
+                component: processBasic,
                 meta: { requiresAuth: true }
             }
         ]

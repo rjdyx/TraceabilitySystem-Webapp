@@ -111,7 +111,18 @@
                                 name:'基础信息管理'
                             },
                         ]
-                    }
+                    },
+                    {
+                        name:'果蔬加工管理',
+                        role: 'process',
+                        isEvent: false,
+                        children: [
+                            {
+                                path: '/webapp/process-basic',
+                                name:'基础信息管理'
+                            },
+                        ]
+                    },
                 ],
             }
         },

@@ -42,121 +42,16 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-
-        <table class="main form-pop">
-            <tbody class="form-body">
-
-                <tr>
-                    <td class="label-tit"><label for="farming_farming_date">操作日期</label></td>
-                    <td class="input-pop" colspan="2">
-                    <date-picker></date-picker>
-                    <!-- <input 
-                    v-model="letItem.farming_date" 
-                    v-validate.initial="letItem.farming_date" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="操作日期" 
-                    type="text" id="farming_farming_date" name="farming_date" placeholder="必填" > -->
-                    </td>
-                </tr>
-                <tr v-show="errors.has('farming_date')">
-                    <td colspan="3" class="error">{{ errors.first('farming_date') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farming_method">操作方法</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.method" 
-                    v-validate.initial="letItem.method" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="操作方法" 
-                    type="text" id="farming_method" name="method" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('method')">
-                    <td colspan="3" class="error">{{ errors.first('method') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farming_content">操作内容</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.content" 
-                    v-validate.initial="letItem.content" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="操作内容" 
-                    type="text" id="farming_content" name="content" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('content')">
-                    <td colspan="3" class="error">{{ errors.first('content') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farming_operate">操作人员</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.operate" 
-                    v-validate.initial="letItem.operate" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="操作人员" 
-                    type="text" id="farming_operate" name="operate" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('operate')">
-                    <td colspan="3" class="error">{{ errors.first('operate') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="weather">天气状态</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="weather"
-                            :items="weathers"
-                            :defaultIndex="parseInt(defaultWeatherIndex)"
-                            @callback="getMsgWeather"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_id">指导专家</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="expert_id"
-                            :items="expertIds"
-                            protoBack="id"
-                            protoShow="expert_name"
-                            :defaultIndex="parseInt(defaultExpertIdIndex)"
-                            @callback="getMsgExpertId"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farming_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="farming_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="#">
-                                <button @click="cancelEditfarming" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="#">
-                                <button @click="cancelAddfarming" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="#">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :selectRoute="selectRoute"
+            :edit="edit"
+            :select="expertIds"
+            :selectFault="weathers"
+            @closeNew="cancelAdd"
+            @thisSet="getThis"
+        ></form-submit>
     </form>
 </template>
 
@@ -212,48 +107,81 @@
                     'memo': ''
                 },
                 expertIds: [],
+                inputData: {
+                    'farming_date':
+                    {
+                        'label': '操作日期',
+                        'divfor': 'farming_farming_date',
+                        'placeholder': '必填',
+                        'rules': 'required',
+                        'date': true,
+                    },
+                    'method':
+                    {
+                        'label': '操作方法',
+                        'divfor': 'farming_method',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'content':
+                    {
+                        'label': '操作内容',
+                        'divfor': 'farming_content',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'operate': 
+                    {
+                        'label': '操作人员',
+                        'divfor': 'farming_operate',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'weather': 
+                    {
+                        'label': '天气状态',
+                        'divfor': 'weather',
+                        'placeholder': '',
+                        'rules': 'max:255',
+                        'select': '2',
+                        // 'selectName':''
+                    },
+                    'expert_id': 
+                    {
+                        'label': '指导专家',
+                        'divfor': 'product_new_place_origin',
+                        'placeholder': '必填',
+                        'rules': 'max:255',
+                        'select': '1',
+                        'selectName':'expert_name'
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'farming_new_note',
+                        'placeholder': '',
+                        'rules': 'max:255'
+                    }
+                },
+                selectRoute: 
+                {
+                    'select': true,
+                    'data_id':'id',
+                    'letItem_id':'expert_id'
+                },
+                val:''
             }
         },
         computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaultExpertIdIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.expertIds){
-                        if(this.expertIds[index].id == this.letItem.expert_id){
-                            return index;
-                        }
-                    }
-                    return 0;
-                }
-            },
-            defaultWeatherIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.weathers){
-                        if(this.weathers[index] == this.letItem.weather){
-                            return index;
-                        }
-                    }
-                    return 0;
-                }
-            }
-
 
         },
         mounted () {
-            let time = new Date();
-            let date = time.getFullYear()+'-'+(time.getMonth()+1)+'-'+time.getDate();
-            this.letItem.farming_date = date;
             this.getAllfarmingtion();
             for(let key of Object.keys(this.letItem)){
                 this.tmp[key] = this.letItem[key];
             }
         },
         methods: {
-
             /**
             * 获取所有专家
             */
@@ -265,13 +193,15 @@
 
                 });
             },
-
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
             * 提交表单
             */
             validateBeforeSubmit () {
                 if(this.edit) {
-                    this.$update(this, 'farming', this.letItem).then((response) => {
+                    this.$update(this.val, 'farming', this.letItem).then((response) => {
                         for(let key of Object.keys(this.letItem)){
                             this.tmp[key] = this.letItem[key];
                         }
@@ -286,7 +216,7 @@
                 }else {
                     let cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
                     this.letItem.cultivate_id = cultivateId;
-                    this.$storeL(this, 'farming', this.letItem).then((response) => {
+                    this.$storeL(this.val, 'farming', this.letItem).then((response) => {
                         this.letItem.id = response.body;
                         this.$emit('callback', this.letItem);
                         this.$alert('新增成功', 's');
@@ -302,32 +232,15 @@
             /**
             * 隐藏新增模块
             */
-            cancelAddfarming () {
+            cancelAdd () {
                 this.$emit('closeNew');
-            },
-
-            /**
-            * 隐藏编辑模块
-            * @param letItem
-            */
-            cancelEditfarming () {
-                this.$emit('closeEdit');
-            },
-            /**
-            * CallBack函数,执行回调函数 
-            */
-            getMsgWeather (msg) {
-                this.letItem.weather = msg;
-            },
-            getMsgExpertId (msg) {
-                this.letItem.expert_id = msg;                
-            },
+            }
         },
         destroyed () {
             if(this.edit){
                 for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
+                    this.letItem[key] = this.tmp[key];
+                }
             }
         },
     }
