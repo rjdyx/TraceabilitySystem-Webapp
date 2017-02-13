@@ -6,6 +6,7 @@ Vue.component('PopTransition', require('../components/public/pop-transition.vue'
 Vue.component('pop-select',require('../components/public/pop-select.vue'));
 Vue.component('loading',require('../components/public/loading.vue'));
 Vue.component('date-picker',require('../components/public/date-picker.vue'));
+Vue.component('form-submit',require('../components/public/form-submit.vue'));
 
 
 
