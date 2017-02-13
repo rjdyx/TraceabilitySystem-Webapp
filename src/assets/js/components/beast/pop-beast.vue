@@ -89,20 +89,20 @@
                 <tr>
                     <td colspan="3">
                         <div class="footer-r">
-                            <a v-if="edit" href="#">
+                            <a v-if="edit" href="javascript:void(0)">
                                 <button @click="cancelEditbeastation" type="button">
                                     取消
                                 </button>  
                             </a>
                             
-                            <a v-else href="#">
+                            <a v-else href="javascript:void(0)">
                                 <button @click="cancelAddbeastation" type="button">
                                     取消
                                 </button>
                             </a>
                         </div>
                         <div class="footer-r">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <button class="btn-pop">
                                     保存
                                 </button>

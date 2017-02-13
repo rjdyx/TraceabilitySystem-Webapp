@@ -48,8 +48,6 @@
         },
         mounted () {
             this.setTitle('施肥管理');
-            // 同步调用获取数据的方法
-            this.$refs.tableList.getAllLists('fertilize')
         },
         methods: {
 

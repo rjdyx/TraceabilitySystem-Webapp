@@ -165,12 +165,16 @@
         },
         watch: {
             total: function(val){
-                this.index = 1;
-                this.showInput = true;
-                this.inputIndex = '';
+                this.init();
             }
         },
         methods: {
+
+            init () {
+                this.index = 1;
+                this.showInput = true;
+                this.inputIndex = '';
+            },
 
             lastPage (lastIndex) {
                 if(!this.leftBtn) {

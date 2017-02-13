@@ -30,7 +30,7 @@
             </tr>
             </thead>
             <tbody class="list-body">
-            <template v-for="(log, index) in list">
+            <template v-for="(log, index) in logList">
                 <tr :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}">
                     <td class="td-note" name="planta_name">{{ log.planta_name }}</td>
                     <td class="td-note" name="plant_name">{{ log.plant_name}}</td>
@@ -155,7 +155,7 @@
                 // 顶部栏标题
                 title: '每日农业日志',
                 // 种植区列表数据
-                list: [],
+                logList: [],
                 // 分页总数
                 total: 1,
                 // 存放是否展开编辑模块的标志，
@@ -199,7 +199,7 @@
              * @param  {Object} newList
              */
             updateList (newList) {
-                this.$set(this, 'list', newList.data);
+                this.$set(this, 'logList', newList.data);
                 this.total = newList.last_page;
             },
 
@@ -231,7 +231,7 @@
              */
             getAllPlanta(){
                 this.$http.get(this.$adminUrl('dailylog/query'), {params: this.params}).then((response) => {
-                    this.$set(this, 'list', response.body.data);
+                    this.$set(this, 'logList', response.body.data);
                 },(error) => {
                     if(error.status == 401) {
                         this.$router.push('/webapp/login/401')

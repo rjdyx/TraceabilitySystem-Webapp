@@ -52,8 +52,6 @@
         },
         mounted () {
             this.setTitle('种植批次管理');
-            // 同步调用获取数据的方法
-            this.$refs.tableList.getAllLists('cultivate')
         },
         methods: {
 

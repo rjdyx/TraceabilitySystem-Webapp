@@ -98,21 +98,29 @@
             :_key="_key"
             :component="component"
             :searchUrl="searchUrl"
+            :params="params"
+            :excInit="excInit"
             :theads="theads"
             :protos="protos"
             :widths="widths"
-        ></table-list>
-
+            :showOperate="showOperate"
+            @getAllLists="init"
+            @troggleEdit="troggleEdit"
+        >
+            <component :is="batchButtons" slot="batchButtons"></component>
+        </table-list>
+    
 
         <div class="paginator-module">
             <!-- 分页模块 -->
             <paginator
+                ref="paginator"
                 :total="total"
                 :url="searchUrl + '/query'"
                 :paginatorParams="params"
-                @lastPageEvent="setShowUp(false)"
-                @nextPageEvent="setShowUp(false)"
-                @changePageEvent="setShowUp(false)"
+                @lastPageEvent="lastPageClicked"
+                @nextPageEvent="nextPageClicked"
+                @changePageEvent="$tableList.setShowList(false)"
                 @result="updateListByMore"
             ></paginator> 
         </div>
@@ -125,7 +133,6 @@
     import { mapState, mapMutations } from 'vuex';
     import Search from './search.vue';
     import Paginator from './paginator.vue';
-    import TableList from './table-list.vue';
 
     export default {
         name: 'List',
@@ -152,6 +159,18 @@
                 type: String,
                 required: true,
                 default: ''
+            },
+            // url参数
+            params: {
+                type: Object,
+                default () {
+                    return null;
+                }
+            },
+            // 更新list的时候是否执行初始化函数
+            excInit: {
+                type: Boolean,
+                default: true
             },
             // thead
             theads: {
@@ -181,6 +200,18 @@
             showCheckbox: {
                 type: Boolean,
                 default: true
+            },
+            // 是否显示操作按钮
+            showOperate: {
+                type: Boolean,
+                default: true
+            },
+            // 底部批量操作模块
+            batchButtons: {
+                type: Object,
+                default() {
+                    return null
+                }
             }
         },
         data () {
@@ -190,7 +221,7 @@
                 // 分页的总页数
                 total: 1,
                 // 搜索的参数对象
-                params: {
+                searchParams: {
                     'query_text': '',
                     'List_id': 0,
                     '_sort': 'id',
@@ -198,35 +229,11 @@
                 }
             }
         },
-        computed: {
-
-            ...mapState([
-                'list',
-                'showList'
-            ])
-
-        },
         components: {
             Paginator,
-            Search,
-            TableList
+            Search
         },
         methods: {
-
-            ...mapMutations([
-                'setList',
-                'unshiftList',
-                'setShowUp'
-            ]),
-
-            /**
-             * 获取所有列表项信息
-             */
-            getAllLists (url, params) {
-                // 同步调用获取数据的方法
-                this.$refs.tableList.getAllLists(url, params)
-                this.closeNew();
-            },
 
             /**
             * 更新list中的一个
@@ -234,7 +241,8 @@
             */
             updateListByOne(newOne) {
                 this.showNewPanel = false;
-                this.unshiftList(newOne);
+                this.$tableList.setSlideListItem('slide-up');
+                this.$tableList.unshiftList(newOne);
             },
 
             /**
@@ -242,14 +250,24 @@
             * @param List
             */
             updateListByMore(newList) {
-                this.setShowUp(true);
-                this.$refs.tableList.init();
-                this.setList(newList.data)
+                this.$tableList.setShowList(true);
+                this.$tableList.invokingInit();
+                this.$tableList.setList(newList.data)
                 this.total = newList.last_page;
                 if(newList.query_text != undefined){
-                   this.params.query_text = newList.query_text; 
+                   this.searchParams.query_text = newList.query_text; 
                 }
                 
+            },
+
+            lastPageClicked () {
+                this.$tableList.setSlideList('slide-fade-left');
+                this.$tableList.setShowList(false);
+            },
+
+            nextPageClicked () {
+                this.$tableList.setSlideList('slide-fade-right');
+                this.$tableList.setShowList(false);
             },
 
             /**
@@ -257,6 +275,20 @@
              */
             closeNew () {
                 this.showNewPanel=false;
+            },
+
+            init(data) {
+                this.total = data.last_page;
+                this.$refs.paginator.init();
+            },
+
+            troggleEdit(result) {
+                if(result) {
+                    this.$tableList.setSlideListItem();
+                }else {
+                    this.$tableList.setSlideListItem('slide-up');
+                }
+                
             }
 
         }

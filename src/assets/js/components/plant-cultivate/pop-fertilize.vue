@@ -136,23 +136,23 @@
                     <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="fertilize_new_note" name="memo"></td>
                 </tr>
 
-                <tr>
+                <tr v-if="!referCultivate">
                     <td colspan="3">
                         <div class="footer-r">
-                            <a v-if="edit" href="#">
+                            <a v-if="edit" href="javascript:void(0)">
                                 <button @click="cancelEditfertilize" type="button">
                                     取消
                                 </button>  
                             </a>
                             
-                            <a v-else href="#">
+                            <a v-else href="javascript:void(0)">
                                 <button @click="cancelAddfertilize" type="button">
                                     取消
                                 </button>
                             </a>
                         </div>
                         <div class="footer-r">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <button class="btn-pop">
                                     保存
                                 </button>
@@ -203,6 +203,11 @@
                 type: Boolean,
                 default: false
             },
+            // 是否与批次相关联
+            referCultivate: {
+                type: Boolean,
+                default: false
+            }
         },
         data () {
             return {
@@ -380,6 +385,14 @@
             },
             getMsg (msg) {
                 this.letItem.unit = msg;
+            },
+
+            /**
+             * 获取表单信息
+             * @return {Object} 表单对象
+             */
+            getFormMsg () {
+                return this.letItem;
             }
         },
         destroyed () {

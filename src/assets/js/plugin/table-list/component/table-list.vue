@@ -85,8 +85,8 @@
             </div>
 
             <!-- 表格的中间数据栏tbody -->
-            <transition name="slide-fade">
-                <transition-group name="slide-up" tag="ul" key="tbody" class="list-body" v-if="showList">
+            <transition :name="slideList">
+                <transition-group :name="slideListItem" tag="ul" key="tbody" class="list-body" v-if="showList">
                     <template v-for="(item, index) in list">
                             <li 
                                 v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:getAllState(item), tip:tipMsg}" 
@@ -176,8 +176,8 @@
 </template>
 
 <style lang="sass" scoped>
-    @import "../../../sass/function";
-    @import "../../../sass/_percent.scss";
+    @import "../../../../sass/function";
+    @import "../../../../sass/_percent.scss";
 
     .f-checkbox {
         position: relative;
@@ -241,16 +241,29 @@
         }
     }
 
-    .slide-fade-enter-active, .slide-fade-leave-active{
+    .slide-fade-left-enter-active, 
+    .slide-fade-left-leave-active, 
+    .slide-fade-right-enter-active, 
+    .slide-fade-right-leave-active{
       transition: all .8s ease;
     }
 
-    .slide-fade-leave-active{
+    .slide-fade-left-leave-active{
+      transform: translateX(30px);
+      opacity: 0;
+    }
+
+    .slide-fade-left-enter {
       transform: translateX(-30px);
       opacity: 0;
     }
 
-    .slide-fade-enter {
+    .slide-fade-right-leave-active{
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+
+    .slide-fade-right-enter {
       transform: translateX(30px);
       opacity: 0;
     }
@@ -272,7 +285,7 @@
 
 <script>
 
-    import { mapState, mapMutations } from 'vuex';
+    import confirm from './confirm.vue';
 
     export default {
         name: 'List',
@@ -294,6 +307,18 @@
                 type: String,
                 required: true,
                 default: ''
+            },
+            // url参数
+            params: {
+                type: Object,
+                default () {
+                    return null;
+                }
+            },
+            // 更新list的时候是否执行初始化函数
+            excInit: {
+                type: Boolean,
+                default: true
             },
             // thead
             theads: {
@@ -354,12 +379,6 @@
         },
         computed: {
 
-            ...mapState([
-                'list',
-                'selectedLists',
-                'showList'
-            ]),
-
             // 是否显示自定义操作按钮
             cusButton () {
                 return this.component != null && this.component.open != null && this.component.open.component != null && !this.component.open.next
@@ -377,26 +396,27 @@
                 if(this.selectedLists.length == 0) {
                     this.isAllCheck = false;
                 }
+            },
+            searchUrl: function(val) {
+                this.getAllLists()
+            },
+            invokeInit: function(val) {
+                this.init()
             }
         },
+        components: {
+            confirm
+        },
+        mounted() {
+            this.getAllLists();
+        },
         methods: {
-
-            ...mapMutations([
-                'setList',
-                'spliceList',
-                'unshiftList',
-                'setSelectedLists',
-                'pushSelectedLists',
-                'spliceSelectedLists',
-                'reverseSelectedLists',
-                'setShowList'
-            ]),
 
             /**
              * 初始化数据
              */
             init () {
-                this.setSelectedLists([]);
+                this.$tableList.setSelectedLists([]);
                 this.deleteList = {'id':0, 'index': 0, 'flag': null};
                 this.oneOrBatch = 0;
                 this.isAllCheck = false;
@@ -405,17 +425,20 @@
             /**
              * 获取所有列表项信息
              */
-            getAllLists (url, params, init=true) {
-                if(init) {
+            getAllLists () {
+                if(this.excInit) {
                     this.init();
-                    this.setShowList(false);
+                    this.$tableList.setShowList(false);
                     this.closeEdit();
                 }
-                this.$index(this, url, params).then((response) => {
-                    let data = response.body[url + 's'];
-                    this.$emit('initCallBack', data);
-                    this.setList(data.data);
-                    this.setShowList(true);
+                this.$tableList.setSlideList('slide-fade-right');
+                this.$tableList.setSlideListItem('slide-up');
+
+                this.$index(this, this.searchUrl, this.params).then((response) => {
+                    let data = response.body[this.searchUrl + 's'];
+                    this.$emit('getAllLists', data);
+                    this.$tableList.setList(data.data);
+                    this.$tableList.setShowList(true);
                 },(error) => {
                     if(error.status == 401) {
                         this.$router.push('/webapp/login/401')
@@ -431,15 +454,16 @@
             */
             selectAll () {
                 if(!this.isAllCheck) {
-                    this.setSelectedLists([]);
+                    this.$tableList.setSelectedLists([]);
                     this.isAllCheck = true;
                     for(let index of this.list.keys()) {
-                        this.pushSelectedLists({'id':this.list[index].id, 'index':index, 'flag':this.getAllState(this.list[index])});
+                        this.$tableList.pushSelectedLists({'id':this.list[index].id, 'index':index, 'flag':this.getAllState(this.list[index])});
                     }
                 }else {
                     this.isAllCheck = false;
-                    this.setSelectedLists([]);
+                    this.$tableList.setSelectedLists([]);
                 }
+                this.$emit('selectAll');
             },
 
             /**
@@ -449,11 +473,12 @@
             checkedBox (checkedMsg) {
                 for(let index of Object.keys(this.selectedLists)) {
                     if(this.selectedLists[index].id == checkedMsg.id) {
-                        this.spliceSelectedLists(index);
+                        this.$tableList.spliceSelectedLists(index);
                         return true;
                     }
                 }
-                this.pushSelectedLists(checkedMsg);
+                this.$tableList.pushSelectedLists(checkedMsg);
+                this.$emit('checkedBox', checkedMsg);
             },
 
             /**
@@ -474,9 +499,10 @@
             */
             destroy() {
                 this.$destroyL(this, this.searchUrl, this.deleteList.id).then((response) => {
-                    this.spliceList(this.deleteList.index);
+                    this.$tableList.spliceList(this.deleteList.index);
                     this.deleteList = {'id':0, 'index': 0};
                     this.showConfirm = false;
+                    this.$emit('destroy');
                     this.$alert('删除成功');
                 },(response) => {
                     this.$alert('连接出错', 'e');
@@ -493,12 +519,13 @@
                         ids.push(deleteList.id);
                     }
                     this.$batchDestroy(this, this.searchUrl, ids).then((response) => {
-                        this.reverseSelectedLists('index');
+                        this.$tableList.reverseSelectedLists('index');
                         for(let deleteList of this.selectedLists) {
-                            this.spliceList(deleteList.inde);
+                            this.$tableList.spliceList(deleteList.inde);
                         }
-                        this.setSelectedLists([]);
+                        this.$tableList.setSelectedLists([]);
                         this.showConfirm = false;
+                        this.$emit('batchDestroy');
                         this.$alert('成功删除'+response.body+'条');
                     },(response) => {
                         this.$alert('连接出错', 'e');
@@ -508,11 +535,11 @@
                 }
             },
 
-
             /**
              * 判断调用单个删除或批量删除
              */
             oneOrBatchdestroy () {
+                this.$tableList.setSlideListItem('slide-up');
                 if(this.oneOrBatch == 0) {
                     this.destroy();
                 }else {
@@ -530,6 +557,7 @@
                 }else {
                     this.showItemDetail = '';
                 }
+                this.$emit('troggleEdit', this.showItemDetail != id)
             },
 
             /**

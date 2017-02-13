@@ -23,10 +23,12 @@ Object.keys(directive).forEach(k => Vue.directive(k, directive[k]()));
 
 
 // 注册全局方法
+require('../plugin');
 import utils from '../utils/utils';
 import easyAjax from '../utils/easyAjax';
 Vue.use(utils);
 Vue.use(easyAjax);
+
 
 
 

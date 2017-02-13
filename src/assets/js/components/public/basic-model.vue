@@ -93,7 +93,7 @@
             Navbar,
             tableManage
         },
-        created () {
+        created (){
             this.setTitle(this.title);
             this._key = this.tableLists[0].key;
             this.searchPlaceholder = this.tableLists[0].searchPlaceholder;
@@ -104,7 +104,6 @@
         },
         mounted () {
             this.component = this.tableLists[0].component;
-            this.$refs.tableManage.getAllLists(this.searchUrl, this.tableLists[0].params);
         },
         methods: {
             ...mapMutations([
@@ -121,8 +120,7 @@
                         this.protos = item.protos;
                         this.widths = item.widths;
                         this.component = item.component;
-                        // 同步调用获取数据的方法
-                        this.$refs.tableManage.getAllLists(item.searchUrl, this.tableLists[0].params)
+                        this.$refs.tableManage.closeNew();
                     }
                 }
             }

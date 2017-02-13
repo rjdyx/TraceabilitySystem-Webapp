@@ -98,7 +98,7 @@
                 this.$queryWithParams(this, this.searchUrl, {params:param}).then((response) => {
 
                     for(let proto of Object.keys(response.body)){
-                        if(response.body[proto] instanceof Object){
+                        if(response.body[proto] instanceof Object && !(response.body[proto] instanceof Array)){
                             if(proto == 'data'){
                                 this.$emit('callback', {data:response.body.data, last_page:response.body.last_page, query_text: this.searchInput});
                             }else {

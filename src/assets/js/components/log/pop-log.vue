@@ -154,14 +154,14 @@
                 <tr>
                     <td colspan="3">
                         <div class="footer-r">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <button @click="cancelPanel" type="button">
                                     取消
                                 </button>
                             </a>
                         </div>
                         <div class="footer-r">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 <button class="btn-pop">
                                     保存
                                 </button>

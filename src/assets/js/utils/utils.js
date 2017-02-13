@@ -159,7 +159,9 @@ export default {
          */
         Vue.prototype.$objectToParam = (object) => {
             let params = '';
-            Object.keys(object).forEach(k => params += k + '=' + object[k] + '&');
+            if(object) {
+               Object.keys(object).forEach(k => params += k + '=' + object[k] + '&'); 
+            }
             return params;
         };
 
