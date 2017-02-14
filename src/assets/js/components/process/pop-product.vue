@@ -45,13 +45,11 @@
         <form-submit
             :letItem="letItem"
             :inputData="inputData"
-            :selectRoute="selectRoute"
             :edit="edit"
-            :select="plants"
-            :selectFault="selectFault"
             @closeNew="cancelAdd"
             @closeEdit="cancelEdit"
             @thisSet="getThis"
+            @getMsgDataId="getMsgDataId"
         ></form-submit>
     </form>
 </template>
@@ -104,8 +102,6 @@
                     'enforce_standard': '',
                     'memo': ''
                 },
-                plants: [],
-                selectFault:[],
                 inputData: {
                     'plant_id':
                     {
@@ -113,8 +109,11 @@
                         'divfor': 'product_new_plant',
                         'placeholder': '必填',
                         'rules': 'required',
+                        'protoBack': 'plant_id',
                         'select': '1',
-                        'selectName':'plant_name'
+                        'selectName':'plant_name',
+                        'index': 0,
+                        'data': []
                     },
                     'name':
                     {
@@ -165,17 +164,6 @@
                         'placeholder': '',
                         'rules': 'max:255'
                     }
-            },
-            /**
-            *下拉框信息
-            */
-            selectRoute: {
-                //下拉框是否存在'select'
-                'select': true,
-                //下拉框返回数据类型
-                'data_id':'plant_id',
-                //获取传值对比id
-                'letItem_id':'plant_id'
             },
             val:''
         }
@@ -228,15 +216,31 @@
                     return false;
                 }); 
             },
+            //判断是新建还是编辑
+            getIndex: function() {
+                if (this.edit == false) {
+                    this.inputData['plant_id']['index']=0;
+                } else {
+                    for(let index in this.inputData['plant_id']['data']) {
+                        if(this.inputData['plant_id']['data'][index].plant_id== this.letItem.plant_id){
+                            this.inputData['plant_id']['index']=parseInt(index);
+                        }
+                    }   
+                }
+            },
             getAllData () {
               this.$http.get(this.$adminUrl('harvest/query')).then((response)=>{
-                  this.$set(this, 'plants', response.body.harvests.data);
+                  this.$set(this['inputData']['plant_id'],'data', response.body.harvests.data);
+                  this.getIndex();
               }, (response)=>{
 
               });
-          },
+            },
             getThis: function(val) {
                 this.val=val;
+            },
+            getMsgDataId: function(msg) {
+                this.letItem.plant_id=msg;
             },
             /**
             * 隐藏新增模块

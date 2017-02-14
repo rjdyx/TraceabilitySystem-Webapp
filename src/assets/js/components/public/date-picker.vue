@@ -193,6 +193,7 @@ export default {
       var v=y.join('-');
       this.dateVal=v;
       this.getBox();
+      this.$emit('getDate', this.dateVal);
     },
     //获取日期最大一天
     getMaxDay: function() {
