@@ -240,7 +240,7 @@
                 this.val=val;
             },
             getMsgDataId: function(msg) {
-                this.letItem.plant_id=msg;
+                this.letItem.plant_id=msg[1];
             },
             /**
             * 隐藏新增模块

@@ -69,27 +69,33 @@
     <template v-for="(item,key) in inputData">
       <tr v-if="item.date">
           <td class="label-tit"><label :for="item.divfor">{{item.label}}</label></td>
-          <td class="input-pop" colspan="2"><date-picker :name="key"
-          @getDate="getDate"></date-picker></td>
+          <td class="input-pop" colspan="2">
+          <date-picker 
+            :name="key"
+            :date="letItem[key]"
+            @getDate="getDate">
+          </date-picker></td>
       </tr>
-      <!--下拉框非固定-->
+      <!--下拉框非固定值-->
       <tr v-else-if="item.select=='1'">
           <td class="label-tit"><label :for="item.divfor">{{item.label}}</label></td>
-          <td class="input-pop" colspan="2" @click="getChange(item.getSelect)"><pop-select :name="key"
+          <td class="input-pop" colspan="2"><pop-select :name="key"
               :items="item.data"
               :defaultIndex="item.index"
               :protoBack="item.protoBack"
               :protoShow="item.selectName"
+              :showVal="item.showVal"
               @callback="getMsgDataId"
           ></pop-select></td>
       </tr>
-      <!--下拉框固定-->
+      <!--下拉框固定值-->
       <tr v-else-if="item.select=='2'">
           <td class="label-tit"><label :for="item.divfor">{{item.label}}</label></td>
           <td class="input-pop" colspan="2">
               <pop-select name="weather"
                   :items="item.data"
                   :defaultIndex="item.index"
+                  :showVal="item.showVal"
                   @callback="getMsgDataVal"
               ></pop-select>
           </td>
@@ -113,6 +119,13 @@
               @callback="getMsg"  
               ></pop-select>
           </td>
+      </tr>
+      <!--input框有传值-->
+      <tr v-else-if="item.val">
+          <td class="label-tit"><label v-bind:for="item.divfor">{{item.label}}</label></td>
+          <td class="input-pop" colspan="2"><input 
+          v-model="constItem[key]"  class="input-pop"
+          type="text" v-bind:id="item.divfor" :name="key" v-bind:placeholder="item.placeholder" disabled="disabled"></td>
       </tr>
       <!--input框-->
       <tr v-else="">
@@ -166,10 +179,7 @@ export default {
     name: 'form-submit',
     data () {
         return {
-          defaultData:0,
-          number: 0,
-          arr: [],
-          msg:''
+          defaultData:0
       }
     },
     props: {
@@ -192,6 +202,12 @@ export default {
         edit: {
             type: Boolean,
             default: false
+        },
+        constItem: {
+          type: Object,
+          default() {
+            return {}
+          }
         }
     },
     methods: {
@@ -202,26 +218,7 @@ export default {
         this.$emit('getDate',val);
       },
       getMsgDataId (msg) {
-        this.number++
-        this.msg=msg;
-        if(this.number>1) {
-
-        }
-        else {
           this.$emit('getMsgDataId',msg);
-        }
-      },
-      getChange: function(val) {
-        if(val==1) {
-          this.setMsg=val;
-          this.$emit('getMsgDataId',this.msg);
-        }
-        else if(val==2){
-          this.$emit('getNameId',this.msg);
-        }
-        else {
-          this.$emit('getExpertId',this.msg);
-        }
       },
       getMsg (msg) {
         this.$emit('getMsg',msg);

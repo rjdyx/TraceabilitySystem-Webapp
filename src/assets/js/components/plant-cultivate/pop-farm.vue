@@ -255,13 +255,13 @@
             * 获取下拉框id值
             */
             getMsgDataId: function(msg) {
-                this.letItem.expert_id=msg;
+                this.letItem.expert_id=msg[1];
             },
             /**
             * 隐藏获取下拉框非id值
             */
             getMsgDataVal: function(msg) {
-                this.letItem.weather=msg;
+                this.letItem.weather=msg[1];
             }
         },
         destroyed () {
