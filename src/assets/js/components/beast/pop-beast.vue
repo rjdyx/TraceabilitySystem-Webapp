@@ -42,7 +42,17 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <table class="main form-pop">
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @closeEdit="cancelEdit"
+            @thisSet="getThis"
+            @getPic="getPic"
+        ></form-submit>
+
+        <!-- <table class="main form-pop">
             <tbody class="form-body">
                 <tr>
                     <td colspan="3">
@@ -111,7 +121,7 @@
                     </td>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
     </form>
 </template>
 
@@ -156,6 +166,7 @@
                     return {
                         'id': '',
                         'image': '',
+                        'file_name': null,
                         'name': '',
                         'ear': '',
                         'desctiption': '',
@@ -174,35 +185,68 @@
                 tmp: {
                     'id': '',
                     'image': '',
+                    'file_name': null,
                     'name': '',
                     'ear': '',
                     'desctiption': '',
                     'memo': ''
                 },
-                // 图片格式
-                pattern: {
-                    type: Array,
-                    default () {
-                        return ['jpeg', 'png'];
+                inputData: {
+                    'file_name':
+                    {
+                        'label': '畜禽图片',
+                        'file_name':'file_name',
+                        'pic': true,
+                        'image':'',
+                        'placeholder': '',
+                        'rules':''
+                    },
+                    'name':
+                    {
+                        'label': '畜禽名称',
+                        'divfor': 'beast_new_fullName',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'desctiption': 
+                    {
+                        'label': '品种描述',
+                        'divfor': 'beast_new_desctiption',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'ear': 
+                    {
+                        'label': 'RFID位置',
+                        'divfor': 'beast_new_ear',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'beast_new_note',
+                        'placeholder': '',
+                        'rules': ''
                     }
                 },
-                image: 'upload.png'
+                val:''
             }
         },
         computed: {
             //判断是编辑状态还是新建状态，取出不同的下标
-            defaultIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.categorys){    
-                        if(this.categorys[index] == this.letItem.category){
-                            return index;
-                        }  
-                    }
+            // defaultIndex () {
+            //     if (this.edit == false) {
+            //         return 0;
+            //     } else {
+            //         for(let index in this.categorys){    
+            //             if(this.categorys[index] == this.letItem.category){
+            //                 return index;
+            //             }  
+            //         }
                     
-                }
-            }
+            //     }
+            // }
 
         },
         mounted () {
@@ -221,68 +265,6 @@
             }
         },
         methods: {
-
-            /**
-            * 触发input[type="file"]的click事件来选择图片
-            * @param  {object} event
-            */
-            selectPic (event) {
-
-                // 取出空格
-                let obj = event.target.parentNode.nextSibling;
-                if(obj.tagName != 'INPUT'){
-                    obj = obj.nextSibling;
-                }
-
-                if(obj.tagName != 'INPUT'){
-                    obj = event.target.nextSibling.nextSibling;
-                }
-
-                // 触发input的click事件
-                obj.click();
-
-            },
-
-            /**
-            *  获取input[type="file"]里的图片，预览到页面上
-            */
-            previewPic (srcPic, event) {
-
-                // 获取选中的图片文件，并判断选中的图片数量是否合法
-                let file = event.target.files[0];
-
-                // 将pattern数组里的图片格式组装成"xxx|xxx|xxx"这样的格式，如："jpeg|png"
-                let regexParams = '';
-                for(let index = 0; index < this.pattern.length; index++) {
-                   regexParams += this.pattern[index]+(index == this.pattern.length - 1?'':'|');
-                }
-                // 将组装后的图片格式字符串传给正则表达式构造器，最后生成如/\/(?:jpeg|png)/i这样的正则表达式
-                let regex = new RegExp('\/(?:' + regexParams + ')', 'i');
-
-                // 过滤图片格式，如果出现格式不合法的，则取消此图片的上传操作
-                if (!regex.test(file.type)){
-                    alert("请选择格式为 " + this.pattern + " 的图片");
-                    return;
-                }
-
-                // 开始读取选中的图片，添加预览到页面
-                let reader = new FileReader();
-                reader.readAsDataURL(file);
-                reader.onload = e => {
-                    this.letItem.image = e.target.result;
-                    this.letItem.file_name = file;
-                }
-
-            },
-
-            /**
-             * 删除图片
-             */
-            deletePic () {
-                this.letItem.image = 'upload.png';
-                this.letItem.file_name = '';
-            },
-
             /**
             * 提交表单
             */
@@ -292,7 +274,7 @@
                     'field': 'name',
                     'value': this.letItem.name
                 };
-                this.$unique(this, 'beast', params, 'letItem.name').then(() => {
+                this.$unique(this.val, 'beast', params, 'letItem.name').then(() => {
                     if(this.edit) {
                         if(this.letItem.file_name != null){
 
@@ -301,7 +283,7 @@
                                 form.append(key, this.letItem[key]);
                             }
 
-                            this.$update(this, 'beast', form, true).then((response) => {
+                            this.$update(this.val, 'beast', form, true).then((response) => {
                                 for(let key of Object.keys(this.letItem)){
                                     this.tmp[key] = this.letItem[key];
                                 }
@@ -313,7 +295,7 @@
                         }else {
 
                             this.letItem.image = 'upload.png';
-                            this.$update(this, 'beast', this.letItem).then((response) => {
+                            this.$update(this.val, 'beast', this.letItem).then((response) => {
 
                                 for(let key of Object.keys(this.letItem)){
                                     this.tmp[key] = this.letItem[key];
@@ -341,7 +323,7 @@
                             this.letItem.image = 'upload.png';
                         }
 
-                        this.$storeL(this, 'beast', form, true).then((response) => {
+                        this.$storeL(this.val, 'beast', form, true).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -359,26 +341,27 @@
                 });
             },
             /**
+            * 获取图片路径
+            */
+            getPic: function(val) {
+                this.letItem.file_name=val;
+            },
+            getThis: function(val) {
+                this.val=val;
+            },
+            /**
             * 隐藏新增模块
             */
-            cancelAddbeastation () {
+            cancelAdd: function() {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditbeastation () {
+            cancelEdit: function() {
                 this.$emit('closeEdit');
-            },
-            /**
-            * CallBack函数,执行回调函数 
-            */
-            getMsg (msg) {
-                this.letItem.category = msg;
-            },
-
+            }
         },
         destroyed () {
             if(this.edit){

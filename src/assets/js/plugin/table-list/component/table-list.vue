@@ -29,11 +29,6 @@
  * open属性的值为{component: null, next: false}，其中next决定传给component属性的组件是作用于
  * 操作按钮还是作用于下一行组件
  * 
- * @param  searchUrl 
- * 类型：String
- * 是否必填：true
- * 默认值：''
- * 描述：搜索的url
  * 
  * @param  theads 
  * 类型：Array
@@ -58,6 +53,47 @@
  * 是否必填：false
  * 默认值：true
  * 描述：是否显示每一行的checkbox
+ * 
+ * @param  showOperate 
+ * 类型：Boolean
+ * 是否必填：false
+ * 默认值：true
+ * 描述：是否显示每一行的操作按钮
+ * 
+ * @param  showFooter 
+ * 类型：Boolean
+ * 是否必填：false
+ * 默认值：true
+ * 描述：是否显示底部批量操作模块
+ * 
+ * Events:
+ * 
+ * @function selectAll
+ * 返回：
+ * 必用：false
+ * 描述：点击全选按钮的事件回调
+ * 
+ * 
+ * @function checkedBox
+ * 返回：{'id':item.id, 'index':index, flag:getAllState(item)}
+ * 必用：false
+ * 描述：点击checkbox后发生的事件回调
+ * 
+ * 
+ * @function destroy
+ * 返回：
+ * 必用：false
+ * 描述：单个删除的回调事件
+ * 
+ * @function batchDestroy
+ * 返回：
+ * 必用：false
+ * 描述：批量删除的回调事件
+ * 
+ * @function troggleEdit
+ * 返回：true or false
+ * 必用：false
+ * 描述：点击每一行的操作按钮的回调事件
  * 
  */
 <template xmlns:v-touchDelete="http://www.w3.org/1999/xhtml">
@@ -90,9 +126,9 @@
                     <template v-for="(item, index) in list">
                             <li 
                                 v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:getAllState(item), tip:tipMsg}" 
-                                :id="searchUrl + item.id" 
+                                :id="_key + item.id" 
                                 :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" 
-                                :key="searchUrl + item.id" 
+                                :key="_key + item.id" 
                                 name="order">
 
                                 <!-- checkbox -->
@@ -129,7 +165,7 @@
                                 </span>
                             </li>
                         
-                        <li v-if="showItemDetail != '' && showItemDetail == item.id" :key="searchUrl + item.id + '-pop'">
+                        <li v-if="showItemDetail != '' && showItemDetail == item.id" :key="_key + item.id + '-pop'">
                             <template v-if="cusComponent">
                                 <component
                                     :is="component.open.component"
@@ -152,7 +188,7 @@
             </transition>
 
             <!-- 表格的底部栏tfoot -->
-            <div class="list-foot">
+            <div v-if="showFooter" class="list-foot">
                 <div class="list-foot-tr">
                     <span  name="order">
                         <span :class="{'f-checkbox':true, 'f-checkbox-check': isAllCheck}" @click="selectAll"></span>
@@ -302,24 +338,6 @@
                     return null
                 }
             },
-            // 搜索的url
-            searchUrl: {
-                type: String,
-                required: true,
-                default: ''
-            },
-            // url参数
-            params: {
-                type: Object,
-                default () {
-                    return null;
-                }
-            },
-            // 更新list的时候是否执行初始化函数
-            excInit: {
-                type: Boolean,
-                default: true
-            },
             // thead
             theads: {
                 type: Array,
@@ -353,6 +371,11 @@
             showOperate: {
                 type: Boolean,
                 default: true
+            },
+            // 是否显示底部批量操作模块
+            showFooter: {
+                type: Boolean,
+                default: true
             }
         },
         data () {
@@ -372,9 +395,7 @@
                 // vue实例
                 self: this,
                 // 无法删除时的提示信息
-                tipMsg: '被使用，无法删除',
-                // 动画效果
-                slide: 'slide-fade'
+                tipMsg: '被使用，无法删除'
             }
         },
         computed: {
@@ -389,16 +410,11 @@
             }
         },
         watch: {
-            showItemDetail: function(val) {
-                this.slide = 'slide'
-            },
+            // 如果不是全部选中，则取消全选按钮的选中状态
             selectedLists: function(val) {
-                if(this.selectedLists.length == 0) {
+                if(this.selectedLists.length !== this.list.length) {
                     this.isAllCheck = false;
                 }
-            },
-            searchUrl: function(val) {
-                this.getAllLists()
             },
             invokeInit: function(val) {
                 this.init()
@@ -406,9 +422,6 @@
         },
         components: {
             confirm
-        },
-        mounted() {
-            this.getAllLists();
         },
         methods: {
 
@@ -420,33 +433,9 @@
                 this.deleteList = {'id':0, 'index': 0, 'flag': null};
                 this.oneOrBatch = 0;
                 this.isAllCheck = false;
+                this.closeEdit();
             },
 
-            /**
-             * 获取所有列表项信息
-             */
-            getAllLists () {
-                if(this.excInit) {
-                    this.init();
-                    this.$tableList.setShowList(false);
-                    this.closeEdit();
-                }
-                this.$tableList.setSlideList('slide-fade-right');
-                this.$tableList.setSlideListItem('slide-up');
-
-                this.$index(this, this.searchUrl, this.params).then((response) => {
-                    let data = response.body[this.searchUrl + 's'];
-                    this.$emit('getAllLists', data);
-                    this.$tableList.setList(data.data);
-                    this.$tableList.setShowList(true);
-                },(error) => {
-                    if(error.status == 401) {
-                        this.$router.push('/webapp/login/401')
-                    }else {
-                       this.$alert('连接出错', 'e'); 
-                    }
-                });
-            },
 
             /**
             * 全选或取消全选
@@ -498,15 +487,9 @@
             * 单个删除
             */
             destroy() {
-                this.$destroyL(this, this.searchUrl, this.deleteList.id).then((response) => {
-                    this.$tableList.spliceList(this.deleteList.index);
-                    this.deleteList = {'id':0, 'index': 0};
-                    this.showConfirm = false;
-                    this.$emit('destroy');
-                    this.$alert('删除成功');
-                },(response) => {
-                    this.$alert('连接出错', 'e');
-                });
+                this.deleteList = {'id':0, 'index': 0};
+                this.showConfirm = false;
+                this.$emit('destroy');
             },
 
             /**
@@ -518,18 +501,8 @@
                     for(let deleteList of this.selectedLists) {
                         ids.push(deleteList.id);
                     }
-                    this.$batchDestroy(this, this.searchUrl, ids).then((response) => {
-                        this.$tableList.reverseSelectedLists('index');
-                        for(let deleteList of this.selectedLists) {
-                            this.$tableList.spliceList(deleteList.inde);
-                        }
-                        this.$tableList.setSelectedLists([]);
-                        this.showConfirm = false;
-                        this.$emit('batchDestroy');
-                        this.$alert('成功删除'+response.body+'条');
-                    },(response) => {
-                        this.$alert('连接出错', 'e');
-                    });
+                    this.showConfirm = false;
+                    this.$emit('batchDestroy', ids);
                 }else {
                     this.$alert('请选择列表项');
                 }

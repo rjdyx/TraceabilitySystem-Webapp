@@ -214,7 +214,7 @@
                 };
                 this.$unique(this.val, 'planta', params, 'letItem.name').then(() => {
                     if(this.edit) {
-                        this.$update(this, 'planta', this.letItem).then((response) => {
+                        this.$update(this.val, 'planta', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }

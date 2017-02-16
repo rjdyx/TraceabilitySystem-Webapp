@@ -86,7 +86,7 @@
                 <img v-else :src="$img(letItem.image, false)">
             </div>
             <input :name="key" type="file" hidden="hidden" @change="previewPic(item, $event)">
-            <input :name="key" v-model="imgHidden" type="text" hidden="hidden" @change="previewPic(item, $event)" 
+            <input :name="key" v-model="imgHidden" type="text" hidden="hidden" 
             v-bind:placeholder="item.placeholder" 
             v-validate.initial="letItem[key]" 
             v-bind:data-vv-rules="item.rules" 

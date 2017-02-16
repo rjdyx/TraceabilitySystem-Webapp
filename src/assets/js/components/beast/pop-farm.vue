@@ -42,87 +42,14 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <table class="main form-pop">
-            <tbody class="form-body">
-                <tr>
-                    <td class="label-tit"><label for="farm_new_fullName">养殖场名称</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.name" 
-                    v-validate.initial="letItem.name" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="养殖场名称" 
-                    type="text" id="farm_new_fullName" name="name" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('name')">
-                    <td colspan="2" class="error">{{ errors.first('name') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farm_new_area">养殖面积</label></td>
-                    <td class="input-pop"><input 
-                    v-model="letItem.area" 
-                    v-validate.initial="letItem.area" 
-                    data-vv-rules="required|decimal:2" 
-                    data-vv-as="养殖面积" 
-                    type="text" id="farm_new_area" name="area"
-                       placeholder="请填写数字(必填),单位是亩"></td>
-                </tr>
-                <tr v-show="errors.has('area')">
-                    <td colspan="3" class="error">{{ errors.first('area') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farm_new_principal">负责人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.principal" type="text" value="" id="farm_new_principal" name="principal"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farm_new_kind">养殖畜禽种类</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.kind" type="text" value="" id="farm_new_kind" name="kind"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farm_new_scale">养殖规模</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.scale" type="text" value="" id="farm_new_scale" name="scale"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farm_new_address">地址</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="farm_new_address" name="address"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="farm_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="farm_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditfarm" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAddfarm" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @closeEdit="cancelEdit"
+            @thisSet="getThis"
+        ></form-submit>
     </form>
 </template>
 
@@ -171,7 +98,59 @@
                     'address': '',
                     'principal': '',
                     'memo': ''
-                }
+                },
+                inputData: {
+                    'name':
+                    {
+                        'label': '养殖场名称',
+                        'divfor': 'farm_new_fullName',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'area':
+                    {
+                        'label': '养殖面积',
+                        'divfor': 'farm_new_area',
+                        'placeholder': '请填写数字(必填),单位是亩',
+                        'rules': 'required|decimal:2',
+                    },
+                    'principal':
+                    {
+                        'label': '负责人',
+                        'divfor': 'farm_new_principal',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'kind': 
+                    {
+                        'label': '养殖畜禽种类',
+                        'divfor': 'farm_new_kind',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'scale': 
+                    {
+                        'label': '养殖规模',
+                        'divfor': 'farm_new_scale',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'address': 
+                    {
+                        'label': '地址',
+                        'divfor': 'farm_new_address',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'farm_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:''
             }
         },
         mounted () {
@@ -186,14 +165,14 @@
             */
             validateBeforeSubmit () {
 
-                // let params = {
-                //     'id': this.letItem.id,
-                //     'field': 'name',
-                //     'value': this.letItem.name
-                // };
-                // this.$unique(this, 'farm', params, 'letItem.name').then(() => {
+                let params = {
+                    'id': this.letItem.id,
+                    'field': 'name',
+                    'value': this.letItem.name
+                };
+                this.$unique(this.val, 'farm', params, 'letItem.name').then(() => {
                     if(this.edit) {
-                        this.$update(this, 'farm', this.letItem).then((response) => {
+                        this.$update(this.val, 'farm', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }
@@ -206,7 +185,7 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'farm', this.letItem).then((response) => {
+                        this.$storeL(this.val, 'farm', this.letItem).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -218,32 +197,32 @@
                             }
                         });
                     }
-                // }, () => {
-                //     return false;
-                // });
-                
+                }, () => {
+                    return false;
+                }); 
+            },
+            getThis: function(val) {
+                this.val=val;
             },
             /**
             * 隐藏新增模块
             */
-            cancelAddfarm () {
+            cancelAdd: function() {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditfarm () {
+            cancelEdit: function() {
                 this.$emit('closeEdit');
             }
-
         },
         destroyed () {
             if(this.edit){
                 for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
+                    this.letItem[key] = this.tmp[key];
+                }
             }
         },
     }
