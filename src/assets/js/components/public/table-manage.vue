@@ -97,14 +97,15 @@
             ref="tableList"
             :_key="_key"
             :component="component"
-            :searchUrl="searchUrl"
             :params="params"
             :excInit="excInit"
             :theads="theads"
             :protos="protos"
             :widths="widths"
             :showOperate="showOperate"
-            @getAllLists="init"
+            @getAllLists="getAllLists"
+            @destroy="destroy"
+            @batchDestroy="batchDestroy"
             @troggleEdit="troggleEdit"
         >
             <component :is="batchButtons" slot="batchButtons"></component>
@@ -233,7 +234,70 @@
             Paginator,
             Search
         },
+        watch: {
+            searchUrl: function(val) {
+                this.getAllLists()
+            }
+        },
+        mounted() {
+            this.getAllLists();
+        },
         methods: {
+
+            /**
+             * 获取所有列表项信息
+             */
+            getAllLists () {
+                if(this.excInit) {
+                    this.$tableList.invokingInit();
+                    this.$tableList.setShowList(false);
+                }
+                this.$tableList.setSlideList('slide-fade-right');
+                this.$tableList.setSlideListItem('slide-up');
+
+                this.$index(this, this.searchUrl, this.params).then((response) => {
+                    let data = response.body[this.searchUrl + 's'];
+                    this.$emit('getAllLists', data);
+                    this.$tableList.setList(data.data);
+                    this.$tableList.setShowList(true);
+                    this.total = data.last_page;
+                    this.$refs.paginator.init();
+                },(error) => {
+                    if(error.status == 401) {
+                        this.$router.push('/webapp/login/401')
+                    }else {
+                       this.$alert('连接出错', 'e'); 
+                    }
+                });
+            },
+
+            /**
+            * 单个删除
+            */
+            destroy() {
+                this.$destroyL(this, this.searchUrl, this.deleteList.id).then((response) => {
+                    this.$tableList.spliceList(this.deleteList.index);
+                    this.$alert('删除成功');
+                },(response) => {
+                    this.$alert('连接出错', 'e');
+                });
+            },
+
+            /**
+            * 批量删除
+            */
+            batchDestroy (ids) {
+                this.$batchDestroy(this, this.searchUrl, ids).then((response) => {
+                    this.$tableList.reverseSelectedLists('index');
+                    for(let deleteList of this.selectedLists) {
+                        this.$tableList.spliceList(deleteList.inde);
+                    }
+                    this.$tableList.setSelectedLists([]);
+                    this.$alert('成功删除'+response.body+'条');
+                },(response) => {
+                    this.$alert('连接出错', 'e');
+                });
+            },
 
             /**
             * 更新list中的一个
@@ -260,11 +324,17 @@
                 
             },
 
+            /**
+             * 点击上一页
+             */
             lastPageClicked () {
                 this.$tableList.setSlideList('slide-fade-left');
                 this.$tableList.setShowList(false);
             },
 
+            /**
+             * 点击下一页
+             */
             nextPageClicked () {
                 this.$tableList.setSlideList('slide-fade-right');
                 this.$tableList.setShowList(false);
@@ -277,11 +347,9 @@
                 this.showNewPanel=false;
             },
 
-            init(data) {
-                this.total = data.last_page;
-                this.$refs.paginator.init();
-            },
-
+            /**
+             * 每行操作按钮的点击事件回调
+             */
             troggleEdit(result) {
                 if(result) {
                     this.$tableList.setSlideListItem();

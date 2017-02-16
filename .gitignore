@@ -4,3 +4,4 @@ npm-debug.log
 .idea
 *.iml
 env.js
+!node_modules/node-sass
