@@ -157,28 +157,28 @@
                         'label': '施肥人',
                         'divfor': 'cultivate_mode',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'density': 
                     {
                         'label': '移栽密度',
                         'divfor': 'cultivate_density',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'operator': 
                     {
                         'label': '种植人',
                         'divfor': 'cultivate_operator',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'memo': 
                     {
                         'label': '备注',
                         'divfor': 'cultivate_new_note',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     }
                 },
                 val:''

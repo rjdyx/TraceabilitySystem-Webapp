@@ -139,7 +139,7 @@
                         'label': '检测项目名称',
                         'divfor': 'detect_item',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'expert_id': 
                     {
@@ -158,7 +158,7 @@
                         'label': '检测人',
                         'divfor': 'detect_operator',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'result':
                     {
@@ -176,7 +176,7 @@
                         'label': '备注',
                         'divfor': 'farming_new_note',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     }
                 },
                 val:''

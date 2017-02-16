@@ -94,7 +94,6 @@
         },
         data () {
             return {
-                weathers:['晴天', '雨天', '阴天', '雪天', '其他'],
                 tmp: {
                     'cultivate_id': 0,
                     'id': '',
@@ -163,7 +162,7 @@
                         'label': '备注',
                         'divfor': 'farming_new_note',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     }
                 },
                 val:''
@@ -184,8 +183,8 @@
               if (this.edit == false) {
                     this.inputData['weather']['index']=0;
                 } else {
-                  for(let index in this.weathers){
-                      if(this.weathers[index] == this.letItem.weather){
+                  for(let index in this.inputData['weather']['data']){
+                      if(this.inputData['weather']['data'][index] == this.letItem.weather){
                           this.inputData['weather']['index']=parseInt(index);
                       }
                   }
