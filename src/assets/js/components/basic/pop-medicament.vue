@@ -42,118 +42,16 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <table class="main form-pop">
-            <tbody class="form-body">
-                <tr>
-                    <td class="label-tit"><label for="medicament_category_id">分类</label></td>
-                    <td class="input-pop" colspan="2"><pop-select id="medicament_category_id" name="medicament_category_id"
-                    :items="categorys"
-                    :defaultIndex="parseInt(defaulCatIndex)"
-                    protoBack="id"
-                    protoShow="name"
-                    @callback="getMsgId"
-                ></pop-select></td>
-                </tr>
-                <tr v-show="errors.has('category_id')">
-                    <td colspan="2" class="error">{{ errors.first('category_id') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_fullName">农药名称</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.name" 
-                    v-validate.initial="letItem.name" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="农药名称" 
-                    type="text" id="medicament_new_fullName" name="name" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('name')">
-                    <td colspan="3" class="error">{{ errors.first('name') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_usage">用途</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.usage" type="text" id="medicament_usage" name="usage"></td>
-                </tr>
-                <tr v-show="errors.has('usage')">
-                    <td colspan="3" class="error">{{ errors.first('usage') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_control_objects">防治对象</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.control_objects" class="input-pop" type="text" id="medicament_new_control_objects" name="control_objects"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_toxicity_grade">分类</label></td>
-                    <td class="input-pop" colspan="2"><pop-select id="medicament_toxicity_grade" name="medicament_toxicity_grade"
-                    :items="toxicity"
-                    :defaultIndex="parseInt(defaultToxIndex)"
-                    @callback="getMsgGrade"
-                ></pop-select></td>
-                </tr>
-                <tr v-show="errors.has('toxicity_grade')">
-                    <td colspan="3" class="error">{{ errors.first('toxicity_grade') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_specification">包装规格</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.specification" type="text" id="medicament_new_specification" name="specification"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_dealer">经销商名称</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.dealer" type="text" id="medicament_new_dealer" name="dealer"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_origin">产地</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.origin" type="text" id="medicament_new_origin" name="origin"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_phone">联系方式</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.phone" 
-                    v-validate.initial="letItem.phone" 
-                    data-vv-rules="phone" 
-                    type="text" id="medicament_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
-                </tr>
-                <tr v-show="errors.has('phone')">
-                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="medicament_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditMedicament" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAddMedicament" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @closeEdit="cancelEdit"
+            @thisSet="getThis"
+            @getMsgDataVal="getMsgDataVal"
+            @getMsgDataId="getMsgDataId"
+        ></form-submit>
     </form>
 </template>
 
@@ -209,36 +107,89 @@
                     'phone': '',
                     'memo': ''
                 },
-                categorys: [],
-                toxicity: ['微毒','低毒','中毒','高毒'],
+                inputData: {
+                    'category_id':
+                    {
+                        'label': '农药分类',
+                        'divfor': 'medicament_category_id',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'name',
+                        'index': 0,
+                        'showVal': 'category_id',
+                        'data':[]
+                    },
+                    'name':
+                    {
+                        'label': '农药名称',
+                        'divfor': 'medicament_new_fullName',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'usage':
+                    {
+                        'label': '用途',
+                        'divfor': 'medicament_usage',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'control_objects': 
+                    {
+                        'label': '防治对象',
+                        'divfor': 'medicament_new_control_objects',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'toxicity_grade': 
+                    {
+                        'label': '毒性等级',
+                        'divfor': 'medicament_toxicity_grade',
+                        'placeholder': '',
+                        'rules': 'max:255',
+                        'select': '2',
+                        'index': 0,
+                        'data': ['微毒','低毒','中毒','高毒']
+                    },
+                    'specification': 
+                    {
+                        'label': '包装规格',
+                        'divfor': 'medicament_new_specification',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'dealer': 
+                    {
+                        'label': '经销商名称',
+                        'divfor': 'medicament_new_dealer',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'origin': 
+                    {
+                        'label': '产地',
+                        'divfor': 'medicament_new_origin',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'phone': 
+                    {
+                        'label': '联系方式',
+                        'divfor': 'medicament_new_phone',
+                        'placeholder': '请输入11位手机号(固话用-隔开)',
+                        'rules': 'phone'
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'medicament_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:''
             }
         },
         computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaulCatIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.categorys){
-                        if(this.categorys[index].id == this.letItem.category_id){
-                            return index;
-                        }
-                    }                                     
-                }
-            },
-            defaultToxIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {               
-                    for(let index in this.toxicity){                       
-                        if(this.toxicity[index] == this.letItem.toxicity_grade){
-                            //console.log(this.letItem.toxicity_grade);
-                            return index;
-                        }
-                    }                         
-                }
-            }
-
         },
         mounted () {
             this.getAllPlantation();
@@ -247,13 +198,31 @@
             }
         },
         methods: {
-
+            //判断是新建还是编辑
+            getIndex: function() {
+                if (this.edit == false) {
+                    this.inputData['category_id']['index']=0;
+                    this.inputData['toxicity_grade']['index']=0;
+                } else {
+                    for(let index in this.inputData['category_id']['data']) {
+                        if(this.inputData['category_id']['data'][index].id== this.letItem.category_id){
+                            this.inputData['category_id']['index']=parseInt(index);
+                        }
+                    }
+                    for(let index in this.inputData['toxicity_grade']['data']) {
+                        if(this.inputData['toxicity_grade']['data'][index]== this.letItem.toxicity_grade){
+                            this.inputData['toxicity_grade']['index']=parseInt(index);
+                        }
+                    }
+                }
+            },
             /**
             * 获取所有农药分类
             */
             getAllPlantation () {
                 this.$http.get(this.$adminUrl('medicament_category/query')).then((response)=>{
-                    this.$set(this, 'categorys', response.body.medicament_categorys.data);
+                    this.$set(this.inputData['category_id'], 'data', response.body.medicament_categorys.data);
+                    this.getIndex();
                 }, (response)=>{
 
                 });
@@ -268,14 +237,14 @@
                     'field': 'name',
                     'value': this.letItem.name
                 };
-                this.$unique(this, 'medicament', params, 'letItem.name').then(() => {
-                    for(let category of this.categorys){
+                this.$unique(this.val, 'medicament', params, 'letItem.name').then(() => {
+                    for(let category of this.inputData['category_id']['data']){
                         if(category.id == this.letItem.category_id){
                             this.letItem.category_name = category.name;
                         }
                     }
                     if(this.edit) {
-                        this.$update(this, 'medicament', this.letItem).then((response) => {
+                        this.$update(this.val, 'medicament', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }
@@ -288,7 +257,7 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'medicament', this.letItem).then((response) => {
+                        this.$storeL(this.val, 'medicament', this.letItem).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -305,35 +274,37 @@
                     return false;
                 });
             },
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
             * 隐藏新增模块
             */
-            cancelAddMedicament () {
+            cancelAdd: function() {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditMedicament () {
+            cancelEdit: function() {
                 this.$emit('closeEdit');
             },
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgId (msg) {
-                    this.letItem.category_id = msg;
+            getMsgDataId (msg) {
+                this.letItem.category_id = msg[1];
             },
-            getMsgGrade (msg) {
-                    this.letItem.toxicity_grade=msg;                
+            getMsgDataVal (msg) {
+                this.letItem.toxicity_grade=msg[1];                
             },
         },
         destroyed () {
             if(this.edit){
                 for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
+                    this.letItem[key] = this.tmp[key];
+                }
             }
         },
     }

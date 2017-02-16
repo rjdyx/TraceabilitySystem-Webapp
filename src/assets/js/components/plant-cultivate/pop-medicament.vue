@@ -151,7 +151,7 @@
                         'label': '施药方式',
                         'divfor': 'medicament_new_way',
                         'placeholder': '',
-                        'rules': 'max:255',
+                        'rules': '',
                     },
                     'amount':
                     {
@@ -169,14 +169,14 @@
                         'label': '施药浓度（倍）',
                         'divfor': 'medicament_concentration',
                         'placeholder': '',
-                        'rules': 'max:255',
+                        'rules': '',
                     },
                     'isolation_period': 
                     {
                         'label': '安全隔离期(天)',
                         'divfor': 'medicament_isolation_period',
                         'placeholder': '',
-                        'rules': 'max:255',
+                        'rules': '',
                     },
                     'expert_id': 
                     {
@@ -195,14 +195,14 @@
                         'label': '施药人',
                         'divfor': 'medicament_new_user',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'memo': 
                     {
                         'label': '备注',
                         'divfor': 'farming_new_note',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     }
                 },
                 val:''

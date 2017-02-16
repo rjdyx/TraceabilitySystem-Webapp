@@ -50,91 +50,6 @@
             @closeNew="cancelAdd"
             @thisSet="getThis"
         ></form-submit>
-
-
-        <!-- <table class="main form-pop">
-            <tbody class="form-body">
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_date">采收日期</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.harvest_date" 
-                    v-validate.initial="letItem.harvest_date" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="操作日期" 
-                    type="text" id="harvest_date" name="harvest_date" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('harvest_date')">
-                    <td colspan="3" class="error">{{ errors.first('harvest_date') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_plantation_name">所属种植区</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="constItem.plantation_name" type="text" id="harvest_plantation_name" name="plantation_name" disabled="disabled" class="input-pop"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_serial">种植批次号</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="constItem.serial" type="text" id="harvest_serial" name="serial" disabled="disabled" class="input-pop"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_plant_name">果蔬名称</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="constItem.plant_name" type="text" id="harvest_plant_name" name="plant_name" disabled="disabled" class="input-pop"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_cultivate_date">种植日期</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="constItem.cultivate_date" type="text" id="harvest_cultivate_date" name="cultivate_date" disabled="disabled" class="input-pop"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_area">种植面积</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="constItem.area" type="text" id="harvest_area" name="area" disabled="disabled" class="input-pop"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_amount">采收数量</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.amount" type="text" id="harvest_amount" name="amount"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_operator">采收人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.operator" type="text" id="harvest_operator" name="operator"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="harvest_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="harvest_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditharvest" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAddharvest" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table> -->
-        
     </form>
 </template>
 
@@ -244,22 +159,22 @@
                     {
                         'label': '采收数量',
                         'divfor': 'harvest_amount',
-                        'placeholder': '',
-                        'rules': 'max:255'
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
                     },
                     'operator': 
                     {
                         'label': '采收人',
                         'divfor': 'harvest_operator',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'memo': 
                     {
                         'label': '备注',
                         'divfor': 'harvest_new_note',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     }
                 },
                 val: ''

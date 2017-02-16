@@ -42,134 +42,15 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <table class="main form-pop">
-            <tbody class="form-body">
-                <tr>
-                    <td class="label-tit"><label for="expert_table_type">操作模块</label></td>
-                    <td class="input-pop" colspan="2"><pop-select id="expert_table_type" name="expert_table_type"
-                    :items="tableType"
-                    :defaultIndex="parseInt(defaultTypeIndex)"
-                    @callback="getMsgType"
-                ></pop-select></td>
-                </tr>
-                <tr v-show="errors.has('table_type')">
-                    <td colspan="2" class="error">{{ errors.first('table_type') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_new_fullName">专家名称</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.expert_name" 
-                    v-validate.initial="letItem.expert_name" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="专家名称" 
-                    type="text" id="expert_new_fullName" name="expert_name" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('expert_name')">
-                    <td colspan="3" class="error">{{ errors.first('expert_name') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_major">研究领域</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.major" 
-                    v-validate.initial="letItem.major" 
-                    data-vv-rules="required" 
-                    data-vv-as="研究领域" 
-                    type="text" id="expert_major" name="major" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('major')">
-                    <td colspan="3" class="error">{{ errors.first('major') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_level">级别</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.level" 
-                    v-validate.initial="letItem.level" 
-                    data-vv-rules="required" 
-                    data-vv-as="级别" 
-                    type="text" id="expert_level" name="level" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('level')">
-                    <td colspan="3" class="error">{{ errors.first('level') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_sex">性别</label></td>
-                    <td class="input-pop" colspan="2"><pop-select id="expert_sex" name="expert_sex"
-                    :items="sex"
-                    :defaultIndex="parseInt(defaultSexIndex)"
-                    @callback="getMsgSex"
-                ></pop-select></td>
-                </tr>
-                <tr v-show="errors.has('sex')">
-                    <td colspan="3" class="error">{{ errors.first('sex') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_new_age">年龄</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.age" 
-                    v-validate.initial="letItem.age" 
-                    data-vv-rules="decimal" 
-                    data-vv-as="年龄" 
-                    type="text" id="expert_new_age" name="age"></td>
-                </tr>
-                <tr v-show="errors.has('age')">
-                    <td colspan="3" class="error">{{ errors.first('age') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_new_unit">所属单位</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.unit" 
-                    class="input-pop" type="text" value="" id="expert_new_unit" name="unit"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_new_phone">联系方式</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.phone" 
-                    v-validate.initial="letItem.phone" 
-                    data-vv-rules="phone" 
-                    type="text" id="expert_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
-                </tr>
-                <tr v-show="errors.has('phone')">
-                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="expert_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditExpert" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAddExpert" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @closeEdit="cancelEdit"
+            @thisSet="getThis"
+            @getMsgDataVal="getMsgDataVal"
+        ></form-submit>
     </form>
 </template>
 
@@ -226,45 +107,111 @@
                     'memo': '',
                     //'class_type':0
                 },
-                sex: ['男','女'],
-                tableType: ['施肥','病虫害','检验检测','农事'],
-                tableSet: ['fertilize','spray','detect','farming'],
+                inputData: {
+                    'table_type':
+                    {
+                        'label': '操作模块',
+                        'divfor': 'expert_table_type',
+                        'placeholder': '',
+                        'rules': 'max:255',
+                        'select': '2',
+                        'index': 0,
+                        'showVal': 'table_type',
+                        'data': ['施肥','病虫害','检验检测','农事']
+                    },
+                    'expert_name':
+                    {
+                        'label': '专家名称',
+                        'divfor': 'expert_new_fullName',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'major':
+                    {
+                        'label': '研究领域',
+                        'divfor': 'expert_major',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'level': 
+                    {
+                        'label': '级别',
+                        'divfor': 'expert_level',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'sex': 
+                    {
+                        'label': '性别',
+                        'divfor': 'expert_sex',
+                        'placeholder': '',
+                        'rules': 'max:255',
+                        'select': '2',
+                        'index': 0,
+                        'showVal': 'sex',
+                        'data': ['男','女']
+                    },
+                    'age': 
+                    {
+                        'label': '年龄',
+                        'divfor': 'expert_new_age',
+                        'placeholder': '',
+                        'rules': 'decimal'
+                    },
+                    'unit': 
+                    {
+                        'label': '所属单位',
+                        'divfor': 'expert_new_unit',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'phone': 
+                    {
+                        'label': '联系方式',
+                        'divfor': 'expert_new_phone',
+                        'placeholder': '请输入11位手机号(固话用-隔开)',
+                        'rules': 'phone'
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'medicament_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:'',
+                tableSet: ['fertilize','spray','detect','farming']
             }
         },
         computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaultTypeIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.tableType){
-                        if(this.tableSet[index] == this.letItem.table_type){
-                            return index;
-                        }
-                    }                                      
-                }
-            },
-            defaultSexIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {               
-                    for(let index in this.sex){
-                        if(this.sex[index] == this.letItem.sex){
-                            return index;
-                        }
-                    };                        
-                }
-            }
-
-
+            
         },
         mounted () {
+            this.getIndex();
             for(let key of Object.keys(this.letItem)){
                 this.tmp[key] = this.letItem[key];
             }
         },
         methods: {
-
+            //判断是新建还是编辑
+            getIndex: function() {
+                if (this.edit == false) {
+                    this.inputData['table_type']['index']=0;
+                    this.inputData['sex']['index']=0;
+                } else {
+                    for(let index in this.inputData['table_type']['data']) {
+                        if(this.tableSet[index]== this.letItem.table_type){
+                            this.inputData['table_type']['index']=parseInt(index);
+                        }
+                    }
+                    for(let index in this.inputData['sex']['data']) {
+                        if(this.inputData['sex']['data'][index]== this.letItem.sex){
+                            this.inputData['sex']['index']=parseInt(index);
+                        }
+                    }
+                }
+            },
             /**
             * 提交表单
             */
@@ -274,10 +221,10 @@
                     'field': 'expert_name',
                     'value': this.letItem.expert_name
                 };
-                this.$unique(this, 'expert', params, 'letItem.expert_name').then(() => {
+                this.$unique(this.val, 'expert', params, 'letItem.expert_name').then(() => {
 
                     if(this.edit) {
-                        this.$update(this, 'expert', this.letItem).then((response) => {
+                        this.$update(this.val, 'expert', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }
@@ -290,7 +237,7 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'expert', this.letItem).then((response) => {
+                        this.$storeL(this.val, 'expert', this.letItem).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -307,39 +254,43 @@
                     return false;
                 });
             },
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
             * 隐藏新增模块
             */
-            cancelAddExpert () {
+            cancelAdd: function() {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditExpert () {
+            cancelEdit: function() {
                 this.$emit('closeEdit');
             },
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgType (msg) {
-                for(let index of Object.keys(this.tableType)) {
-                    if(this.tableType[index] == msg) {
-                        this.letItem.table_type = this.tableSet[index];
-                    }
+            getMsgDataVal (msg) {
+                if(msg[0]=='sex') {
+                    this.letItem.sex = msg[1];
                 }
-            },
-            getMsgSex (msg) {
-                    this.letItem.sex = msg;               
-            },
+                else {
+                    for(let index of Object.keys(this.inputData['table_type']['data'])) {
+                        if(this.inputData['table_type']['data'][index] == msg[1]) {
+                            this.letItem.table_type = this.tableSet[index];
+                        }
+                    }
+                }              
+            }
         },
         destroyed () {
             if(this.edit){
                 for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
+                    this.letItem[key] = this.tmp[key];
+                }
             }
         },
     }

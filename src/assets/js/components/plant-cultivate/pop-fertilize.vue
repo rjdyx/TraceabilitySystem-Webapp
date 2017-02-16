@@ -175,21 +175,21 @@
                         'label': '施肥人',
                         'divfor': 'fertilize_new_user',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'way': 
                     {
                         'label': '施肥方式',
                         'divfor': 'fertilize_new_way',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'memo': 
                     {
                         'label': '备注',
                         'divfor': 'farming_new_note',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     }
                 },
                 val:''
