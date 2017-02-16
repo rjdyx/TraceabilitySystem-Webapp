@@ -45,12 +45,12 @@
         <form-submit
             :letItem="letItem"
             :inputData="inputData"
-            :selectRoute="selectRoute"
             :edit="edit"
-            :select="expertIds"
-            :selectFault="weathers"
             @closeNew="cancelAdd"
             @thisSet="getThis"
+            @getDate="getDate"
+            @getMsgDataId="getMsgDataId"
+            @getMsgDataVal="getMsgDataVal"
         ></form-submit>
     </form>
 </template>
@@ -106,7 +106,6 @@
                     'expert_id': '',
                     'memo': ''
                 },
-                expertIds: [],
                 inputData: {
                     'farming_date':
                     {
@@ -114,7 +113,7 @@
                         'divfor': 'farming_farming_date',
                         'placeholder': '必填',
                         'rules': 'required',
-                        'date': true,
+                        'date': true
                     },
                     'method':
                     {
@@ -144,7 +143,8 @@
                         'placeholder': '',
                         'rules': 'max:255',
                         'select': '2',
-                        // 'selectName':''
+                        'index': 0,
+                        'data': ['晴天', '雨天', '阴天', '雪天', '其他']
                     },
                     'expert_id': 
                     {
@@ -152,8 +152,11 @@
                         'divfor': 'product_new_place_origin',
                         'placeholder': '必填',
                         'rules': 'max:255',
+                        'protoBack' :'id',
                         'select': '1',
-                        'selectName':'expert_name'
+                        'selectName':'expert_name',
+                        'index': 0,
+                        'data': []
                     },
                     'memo': 
                     {
@@ -163,12 +166,6 @@
                         'rules': 'max:255'
                     }
                 },
-                selectRoute: 
-                {
-                    'select': true,
-                    'data_id':'id',
-                    'letItem_id':'expert_id'
-                },
                 val:''
             }
         },
@@ -177,18 +174,31 @@
         },
         mounted () {
             this.getAllfarmingtion();
+            this.getWeatherIndex();
             for(let key of Object.keys(this.letItem)){
                 this.tmp[key] = this.letItem[key];
             }
         },
         methods: {
+            getWeatherIndex() {
+              if (this.edit == false) {
+                    this.inputData['weather']['index']=0;
+                } else {
+                  for(let index in this.weathers){
+                      if(this.weathers[index] == this.letItem.weather){
+                          this.inputData['weather']['index']=parseInt(index);
+                      }
+                  }
+                  this.inputData['weather']['index']=0;
+              }
+            },
             /**
             * 获取所有专家
             */
             getAllfarmingtion () {
                 this.$http.get(this.$adminUrl('expert/query?params[type]=farming')).then((response)=>{
-                    this.$set(this, 'expertIds', response.body.experts.data);
-                    this.expertIds.unshift({id: '' ,expert_name: '无'})
+                    this.$set(this.inputData['expert_id'], 'data', response.body.experts.data);
+                    this.inputData['expert_id']['data'].unshift({id: '' ,expert_name: '无'});
                 }, (response)=>{
 
                 });
@@ -234,6 +244,24 @@
             */
             cancelAdd () {
                 this.$emit('closeNew');
+            },
+            /**
+            * 获取时间
+            */
+            getDate: function(val) {
+                this.letItem.farming_date=val;
+            },
+            /**
+            * 获取下拉框id值
+            */
+            getMsgDataId: function(msg) {
+                this.letItem.expert_id=msg;
+            },
+            /**
+            * 隐藏获取下拉框非id值
+            */
+            getMsgDataVal: function(msg) {
+                this.letItem.weather=msg;
             }
         },
         destroyed () {
