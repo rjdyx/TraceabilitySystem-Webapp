@@ -1,3 +1,16 @@
-# First Chapter
+# 安装
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+[https://github.com/rjdyx/TraceabilitySystem-Webapp.git](https://github.com/rjdyx/TraceabilitySystem-Webapp.git)
+
+master分支存放上线的正式版本；
+
+dev分支为开发的主分支，请在dev分支的基础上创建自己的开发分支（如：rigar分支）；
+
+除了master和dev分支，其余自定义的分支请勿长时间存在远程库上。
+
+
+
+
+
+
+
