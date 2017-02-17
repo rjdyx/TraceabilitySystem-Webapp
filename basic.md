@@ -23,12 +23,45 @@
 | plugin | 存放自定义插件 |
 | route | 路由 |
 | utils | 存放自定义的全局函数、表单验证规则 |
-| views | 存放顶层组件 |
+| views | 存放顶层组件和次顶层组件 |
 | vuex | 存放vuex相关js文件 |
 | App.vue | 根组件 |
 | client-entry.js | 客户端入口js文件 |
 | server-entry.js | 服务端入口js文件 |
 | index.js | 客户端和服务端入口文件共用的入口js文件 |
+
+App.vue作为根组件，整个SPA的页面跳转都在此组件进行，App.vue的代码如下：
+
+```
+<template>
+    <div id="app">
+        <router-view></router-view>
+        <loading></loading>
+    </div>
+</template>
+
+<script>
+    export default {
+        name:'App'
+    }
+</script>
+
+<style>
+    .loader {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        bottom: 105px;
+        right: 15px;
+    }
+</style>
+```
+
+故App.vue的直接子组件都称为顶层组件，比如src/assets/js/views目录下的index.vue、404.vue和login.vue，即这些组件是写入routers.js里面的并作为顶层路由。
+
+而次顶层组件是以顶层组件作为父组件的，比如index.vue下面的basic.vue、dailylog.vue等且这些组件也写入routers.js里面的并作为index的子路由。
+
+
 
 
 
