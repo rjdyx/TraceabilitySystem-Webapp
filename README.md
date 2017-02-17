@@ -6,7 +6,7 @@
 
 * [基础](https://rjdyx.gitbooks.io/traceabilitysystem-webapp/content/basic.html)
 
-* [进阶](https://rjdyx.gitbooks.io/traceabilitysystem-webapp/content/progress.html)
+* 组件
 
 * [API文档](https://rjdyx.gitbooks.io/traceabilitysystem-webapp/content/api.html)
 
