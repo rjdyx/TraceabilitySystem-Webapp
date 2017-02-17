@@ -36,7 +36,7 @@ export default {
         onMonth: false,
         onDate: false,
         className:'',
-        dateVal:new Date(parseInt(Date.now())).toLocaleDateString().replace(/\//g,'-'),
+        dateVal: this.getSetVal(),
         yearLab: {'first':'','second':'','third':''},
         monthLab: {'first':'','second':'','third':''},
         dateLab: {'first':'','second':'','third':''},
@@ -49,7 +49,21 @@ export default {
         boxArr:{'year':'','month':'','date':''},
       }
     },
+    props: {
+      date: {
+        type:String,
+        default:''
+      }
+    },
     methods: {
+      getSetVal: function() {
+        if(this.date!='') {
+          return this.date;
+        }
+        else {
+          return new Date(parseInt(Date.now())).toLocaleDateString().replace(/\//g,'-');
+        }
+      },
       getDate: function() {
         this.show=!this.show;
         //获取input框数值

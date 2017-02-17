@@ -42,112 +42,16 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-
-        <table class="main form-pop">
-            <tbody class="form-body">
-
-                <tr>
-                    <td class="label-tit"><label for="plantation_fullName">种植场名称</label></td>
-                    <td class="input-pop" colspan="2"><pop-select name="pid"
-                    :items="plantations"
-                    :defaultIndex="parseInt(defaultPlaIndex)"
-                    protoBack="id"
-                    protoShow="name"
-                    @callback="getMsgPid"
-                ></pop-select></td>
-                </tr>
-                <tr v-show="errors.has('pid')">
-                    <td colspan="2" class="error">{{ errors.first('pid') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="planta_new_fullName">种植区名称</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.name" 
-                    v-validate.initial="letItem.name" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="种植区名称" 
-                    type="text" id="planta_new_fullName" name="name" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('name')">
-                    <td colspan="2" class="error">{{ errors.first('name') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="planta_new_area">种植面积</label></td>
-                    <td class="input-pop input-area"><input 
-                    v-model="letItem.area" 
-                    v-validate.initial="letItem.area" 
-                    data-vv-rules="required|decimal:2" 
-                    data-vv-as="种植面积" 
-                    type="text" id="planta_new_area" name="area"
-                       placeholder="请填写数字(必填)"></td>
-                   <td class="area_unit">
-                       <pop-select name="area_unit"
-                        :items="area_unit"
-                        :defaultIndex="parseInt(defaultUnitIndex)" 
-                        @callback="getMsgUnit"      
-                ></pop-select>
-                   </td>
-                </tr>
-                <tr v-show="errors.has('area')">
-                    <td colspan="3" class="error">{{ errors.first('area') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="planta_new_phone">详细电话</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.phone" 
-                    v-validate.initial="letItem.phone" 
-                    data-vv-rules="phone" 
-                    type="text" id="planta_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
-                </tr>
-                <tr v-show="errors.has('phone')">
-                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="planta_new_address">详细地址</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="planta_new_address" name="address"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="planta_new_principal">负责人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.director" type="text" value="" id="planta_new_principal" name="director"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="planta_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="planta_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditPlanta" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAddPlanta" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @closeEdit="cancelEdit"
+            @thisSet="getThis"
+            @getMsgDataId="getMsgDataId"
+            @getMsg="getMsg"
+        ></form-submit>
     </form>
 </template>
 
@@ -186,7 +90,6 @@
         },
         data () {
             return {
-                area_unit:['亩', '平方米', '公顷'],
                 tmp: {
                     'pid': 0,
                     'id': '',
@@ -198,37 +101,70 @@
                     'director': '',
                     'memo': ''
                 },
-                plantations: [],
+                inputData: {
+                    'pid':
+                    {
+                        'label': '种植场名称',
+                        'divfor': 'plantation_fullName',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'name',
+                        'index': 0,
+                        'showVal': 'plantation_name',
+                        'data':[]
+                    },
+                    'name':
+                    {
+                        'label': '种植区名称',
+                        'divfor': 'planta_new_fullName',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'area':
+                    {
+                        'label': '种植面积',
+                        'divfor': 'planta_new_area',
+                        'placeholder': '请填写数字(必填)',
+                        'rules': 'required|decimal:2',
+                        'select': '3',
+                        'index': 0,
+                        'unit' : 'area_unit',
+                        'data': ['亩', '平方米', '公顷']
+                    },
+                    'phone':
+                    {
+                        'label': '详细电话',
+                        'divfor': 'planta_new_phone',
+                        'placeholder': '请输入11位手机号(固话用-隔开)',
+                        'rules': 'phone'
+                    },
+                    'address': 
+                    {
+                        'label': '详细地址',
+                        'divfor': 'plantation_new_address',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'director': 
+                    {
+                        'label': '负责人',
+                        'divfor': 'planta_new_address',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'planta_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:''
             }
         },
         computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaultUnitIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.area_unit){
-                        if(this.area_unit[index] == this.letItem.area_unit){
-                            return index;
-                        }
-                    }
-                    
-                }
-            },
-            defaultPlaIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.plantations){
-                        if(this.plantations[index].id == this.letItem.pid){
-                            return index;
-                        }
-                    }
-                    
-                }
-            }
-
-
+            
         },
         mounted () {
             this.getAllPlantation();
@@ -237,13 +173,31 @@
             }
         },
         methods: {
-
+            //判断是新建还是编辑
+            getIndex: function() {
+                if (this.edit == false) {
+                    this.inputData['pid']['index']=0;
+                    this.inputData['area']['index']=0;
+                } else {
+                    for(let index in this.inputData['pid']['data']) {
+                        if(this.inputData['pid']['data'][index].id== this.letItem.pid){
+                            this.inputData['pid']['index']=parseInt(index);
+                        }
+                    }
+                    for(let index in this.inputData['area']['data']) {
+                        if(this.inputData['area']['data'][index]== this.letItem.area_unit){
+                            this.inputData['area']['index']=parseInt(index);
+                        }
+                    }     
+                }
+            },
             /**
             * 获取所有种植场
             */
             getAllPlantation () {
                 this.$http.get(this.$adminUrl('planta/create')).then((response)=>{
-                    this.$set(this, 'plantations', response.body);
+                    this.$set(this.inputData['pid'], 'data', response.body);
+                    this.getIndex();
                 }, (response)=>{
 
                 });
@@ -258,9 +212,9 @@
                     'field': 'name',
                     'value': this.letItem.name
                 };
-                this.$unique(this, 'planta', params, 'letItem.name').then(() => {
+                this.$unique(this.val, 'planta', params, 'letItem.name').then(() => {
                     if(this.edit) {
-                        this.$update(this, 'planta', this.letItem).then((response) => {
+                        this.$update(this.val, 'planta', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }
@@ -273,7 +227,7 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'planta', this.letItem).then((response) => {
+                        this.$storeL(this.val, 'planta', this.letItem).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -290,35 +244,37 @@
                     return false;
                 });
             },
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
             * 隐藏新增模块
             */
-            cancelAddPlanta () {
+            cancelAdd: function() {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditPlanta () {
+            cancelEdit: function() {
                 this.$emit('closeEdit');
             },
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgPid (msg) {
-                this.letItem.pid = msg;
+            getMsg (msg) {
+                this.letItem.area_unit = msg[1];
             },
-            getMsgUnit (msg) {
-                this.letItem.area_unit = msg;                
-            },
+            getMsgDataId (msg) {
+                this.letItem.pid = msg[1];
+            }
         },
         destroyed () {
             if(this.edit){
                 for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
+                    this.letItem[key] = this.tmp[key];
+                }
             }
         },
     }

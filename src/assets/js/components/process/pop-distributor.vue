@@ -129,14 +129,14 @@
                         'label': '经营范围',
                         'divfor': 'distributor_new_business_scope',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'memo': 
                     {
                         'label': '备注',
                         'divfor': 'distributor_new_note',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     }
                 },
                 val: ''

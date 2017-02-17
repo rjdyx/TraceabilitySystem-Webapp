@@ -94,7 +94,7 @@
              * 查询
              */
             search () {
-                let param = Object.assign({'query_text': this.searchInput}, this.params.params);
+                let param = Object.assign({'query_text': this.searchInput}, this.params);
                 this.$queryWithParams(this, this.searchUrl, {params:param}).then((response) => {
 
                     for(let proto of Object.keys(response.body)){

@@ -42,119 +42,17 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-
-        <table class="main form-pop">
-            <tbody class="form-body">
-
-                <tr>
-                    <td class="label-tit"><label for="plantation_name">所属种植区</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="plantation_name"
-                            :items="PlantationNames"
-                            protoBack="id"
-                            protoShow="name"
-                            :defaultIndex="parseInt(defaultPlantationNameIndex)"
-                            @callback="getMsgPlantationName"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="plant_name">种植果蔬名称</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="plant_name"
-                            :items="PlantNames"
-                            protoBack="id"
-                            protoShow="name"
-                            :defaultIndex="parseInt(defaultPlantNameIndex)"
-                            @callback="getMsgPlantName"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="fertilize_new_amount">种植面积</label></td>
-                    <td class="input-pop input-area">
-                        <input 
-                        v-model="letItem.area" 
-                        v-validate.initial="letItem.area" 
-                        data-vv-rules="required|decimal:2" 
-                        data-vv-as="种植面积" 
-                        type="text" id="fertilize_new_amount" name="area"
-                           placeholder="请填写数字(必填)">
-                    </td>
-                    <td class="area_unit">
-                       <pop-select name="area_unit"
-                        :items="area_unit"      
-                        :defaultIndex="parseInt(defaultIndex)"
-                        @callback="getMsg"  
-                        ></pop-select>
-                    </td>
-                </tr>
-                <tr v-show="errors.has('area')">
-                    <td colspan="3" class="error">{{ errors.first('area') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="cultivate_date">种植日期</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.cultivate_date" 
-                    v-validate.initial="letItem.cultivate_date" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="操作日期" 
-                    type="text" id="cultivate_date" name="cultivate_date" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('cultivate_date')">
-                    <td colspan="3" class="error">{{ errors.first('cultivate_date') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="fertilize_mode">育苗方式</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.mode" type="text" id="fertilize_mode" name="mode"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="fertilize_density">移栽密度</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.density" type="text" id="fertilize_density" name="density"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="fertilize_operator">种植人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.operator" type="text" id="fertilize_operator" name="operator"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="fertilize_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="fertilize_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditfertilize" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAddfertilize" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @closeEdit="cancelEdit"
+            @thisSet="getThis"
+            @getMsgDataId="getMsgDataId"
+            @getDate="getDate"
+            @getMsg="getMsg"
+        ></form-submit>
     </form>
 </template>
 
@@ -175,6 +73,10 @@
                     return {
                         'id': '',
                         'plantation_id': '',
+                        'plantation_name':'',
+                        'plant_id':'',
+                        'plant_name':'',
+                        'serial': '',
                         'area': '',
                         'area_unit': '亩',
                         'cultivate_date': '',
@@ -193,12 +95,13 @@
         },
         data () {
             return {
-                PlantationNames:[],
-                PlantNames:[],
-                area_unit:['亩', '平方米', '公顷'],
                 tmp: {
                     'id': '',
                     'plantation_id': '',
+                    'plantation_name':'',
+                    'plant_id':'',
+                    'plant_name':'',
+                    'serial': '',
                     'area': '',
                     'area_unit': '亩',
                     'cultivate_date': '',
@@ -207,47 +110,82 @@
                     'operator': '',
                     'memo': ''
                 },
-                
+                inputData: {
+                    'plantation_name':
+                    {
+                        'label': '所属种植区',
+                        'divfor': 'plantation_name',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'name',
+                        'index': 0,
+                        'showVal': 'plantation_name',
+                        'data':[]
+                    },
+                    'plant_name':
+                    {
+                        'label': '种植果蔬名称',
+                        'divfor': 'plant_name',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'name',
+                        'index': 0,
+                        'showVal': 'plant_name',
+                        'data':[]
+                    },
+                    'area':
+                    {
+                        'label': '种植面积',
+                        'divfor': 'cultivate_new_area',
+                        'placeholder': '请填写数字(必填)',
+                        'rules': 'required|decimal:2',
+                        'select': '3',
+                        'index': 0,
+                        'unit' : 'unit',
+                        'data': ['亩', '平方米', '公顷']
+                    },
+                    'cultivate_date':
+                    {
+                        'label': '种植日期',
+                        'divfor': 'cultivate_date',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255',
+                        'date': true
+                    },
+                    'mode': 
+                    {
+                        'label': '施肥人',
+                        'divfor': 'cultivate_mode',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'density': 
+                    {
+                        'label': '移栽密度',
+                        'divfor': 'cultivate_density',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'operator': 
+                    {
+                        'label': '种植人',
+                        'divfor': 'cultivate_operator',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'cultivate_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:''
             }
         },
         computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaultPlantationNameIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.PlantationNames){
-                        if(this.PlantationNames[index].name == this.letItem.plantation_name){
-                            return index;
-                        }
-                    }
-                    
-                }
-            },
-            defaultPlantNameIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.PlantNames){
-                        if(this.PlantNames[index].name == this.letItem.plant_name){
-                            return index;
-                        }
-                    }
-                    
-                }
-            },
-            defaultIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.area_unit){
-                        if(this.area_unit[index] == this.letItem.area_unit){
-                            return index;
-                        }
-                    }
-                    
-                }
-            }
+            
         },
         mounted () {
             let time = new Date();
@@ -259,15 +197,39 @@
             }
         },
         methods: {
+            //判断是新建还是编辑
+            getIndex: function() {
+                if (this.edit == false) {
+                    this.inputData['plantation_name']['index']=0;
+                    this.inputData['plant_name']['index']=0;
+                    this.inputData['area']['index']=0;
+                } else {
+                    for(let index in this.inputData['plantation_name']['data']) {
+                        if(this.inputData['plantation_name']['data'][index].name== this.letItem.plantation_name){
+                            this.inputData['plantation_name']['index']=parseInt(index);
+                        }
+                    }
+                    for(let index in this.inputData['plant_name']['data']) {
+                        if(this.inputData['plant_name']['data'][index].name== this.letItem.plant_name){
+                            this.inputData['plant_name']['index']=parseInt(index);
+                        }
+                    }
+                    for(let index in this.inputData['area']['data']) {
+                        if(this.inputData['area']['data'][index]== this.letItem.area_unit){
+                            this.inputData['area']['index']=parseInt(index);
+                        }
+                    }     
+                }
+            },
 
             /**
             * 获取所有种植相关信息
             */
             getAllPlantations () {
-
                 this.$http.get(this.$adminUrl('cultivate/create?params=')).then((response)=>{
-                    this.$set(this, 'PlantationNames', response.body.plantations);
-                    this.$set(this, 'PlantNames', response.body.plants);
+                    this.$set(this.inputData['plantation_name'], 'data', response.body.plantations);
+                    this.$set(this.inputData['plant_name'], 'data', response.body.plants);
+                    this.getIndex();
                 }, (response)=>{
 
                 });
@@ -278,7 +240,7 @@
             */
             validateBeforeSubmit () {
                 if(this.edit) {
-                    this.$update(this, 'cultivate', this.letItem).then((response) => {
+                    this.$update(this.val, 'cultivate', this.letItem).then((response) => {
                         for(let key of Object.keys(this.letItem)){
                             this.tmp[key] = this.letItem[key];
                         }
@@ -292,8 +254,9 @@
                     });
                 }else {
                     this.letItem.cultivate_id = this.cultivateId;
-                    this.$storeL(this, 'cultivate', this.letItem).then((response) => {
-                        this.letItem.id = response.body;
+                    this.$storeL(this.val, 'cultivate', this.letItem).then((response) => {
+                        this.letItem.id = response.body[0];
+                        this.letItem.serial=response.body[1];
                         this.$emit('callback', this.letItem);
                         this.$alert('新增成功', 's');
                     }, (response) => {
@@ -305,38 +268,47 @@
                     });
                 }
             },
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
             * 隐藏新增模块
             */
-            cancelAddfertilize () {
+            cancelAdd: function() {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditfertilize () {
+            cancelEdit: function() {
                 this.$emit('closeEdit');
             },
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgPlantationName (msg) {
-                this.letItem.plantation_id = msg;
-            },
-            getMsgPlantName (msg) {
-                this.letItem.plant_id = msg;
+            getMsgDataId (msg) {
+                if(msg[0]=="plantation_name") {
+                    this.letItem.plantation_name=msg[2];
+                    this.letItem.plantation_id = msg[1];
+                }
+                else {
+                    this.letItem.plant_name=msg[2];
+                    this.letItem.plant_id = msg[1];
+                }
             },
             getMsg (msg) {
-                this.letItem.unit = msg;
+                this.letItem.area_unit = msg[1];
+            },
+            getDate: function(val) {
+                this.letItem.cultivate_date = val;
             }
         },
         destroyed () {
             if(this.edit){
                 for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
+                    this.letItem[key] = this.tmp[key];
+                }
             }
         },
     }

@@ -134,35 +134,35 @@
                         'label': '产品规格',
                         'divfor': 'product_new_specification',
                         'placeholder': '',
-                        'rules': 'required|max:255'
+                        'rules': ''
                     },
                     'production_unit': 
                     {
                         'label': '生产单位',
                         'divfor': 'product_new_production_unit',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'place_origin': 
                     {
                         'label': '产地',
                         'divfor': 'product_new_place_origin',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'enforce_standard': 
                     {
                         'label': '执行标准',
                         'divfor': 'product_new_business_scope',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     },
                     'memo': 
                     {
                         'label': '备注',
                         'divfor': 'product_new_note',
                         'placeholder': '',
-                        'rules': 'max:255'
+                        'rules': ''
                     }
             },
             val:''
@@ -240,7 +240,7 @@
                 this.val=val;
             },
             getMsgDataId: function(msg) {
-                this.letItem.plant_id=msg;
+                this.letItem.plant_id=msg[1];
             },
             /**
             * 隐藏新增模块

@@ -85,6 +85,7 @@
         <search
             :placeholder="searchPlaceholder"
             :searchUrl="searchUrl"
+            :params="params"
             @callback="updateListByMore"
         >
             <slot name="search">
