@@ -9,7 +9,7 @@
 | src/assets/sass |  |
 | src/lang | 存放语言包 |
 | src/view | 存放html文件 |
-| env.js |  |
+| env.js | 环境配置文件 |
 | server.js |  |
 
 
