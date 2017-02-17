@@ -12,9 +12,7 @@
 | env.js | 环境配置文件 |
 | server.js | 项目启动时运行的构建文件 |
 
-
-
-####  src/assets/js目录：
+#### src/assets/js目录：
 
 | 目录名 | 说明 |
 | :--- | :--- |
@@ -31,6 +29,16 @@
 | client-entry.js | 客户端入口js文件 |
 | server-entry.js | 服务端入口js文件 |
 | index.js | 客户端和服务端入口文件共用的入口js文件 |
+
+
+
+#### src/assets/sass目录：
+
+| 目录名 | 说明 |
+| :--- | :--- |
+| function | 存放自定义function |
+| mixins | 存放自定义mixin |
+| public | 存放reset文件和项目公共的基础样式文件 |
 
 
 
