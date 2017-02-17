@@ -41,6 +41,18 @@
  * 默认值：''
  * 描述：搜索的url
  * 
+ * @param  params 
+ * 类型：Object
+ * 是否必填：false
+ * 默认值：null
+ * 描述：根url的参数
+ * 
+ * @param  excInit 
+ * 类型：Boolean
+ * 是否必填：false
+ * 默认值：true
+ * 描述：更新list的时候是否执行初始化函数
+ * 
  * @param  theads 
  * 类型：Array
  * 是否必填：true
