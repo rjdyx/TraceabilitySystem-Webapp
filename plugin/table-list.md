@@ -19,7 +19,13 @@
 
 | name | return value | require | description |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| selectAll |  | false | 点击全选按钮时触发 |
+| checkedBox | {'id':item.id, 'index':index, flag:getAllState\(item\)} | false | 点击checkbox时触发 |
+| destroy |  | false | 单个删除时触发 |
+| batchDestroy |  | false | 批量删除时触发 |
+| troggleEdit | true/false | false | 点击每一行的操作按钮时触发 |
+
+#### Slots
 
 
 
