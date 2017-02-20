@@ -254,6 +254,7 @@
         },
         mounted() {
             this.getAllLists();
+            console.log(this);
         },
         methods: {
 

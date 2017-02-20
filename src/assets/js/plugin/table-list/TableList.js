@@ -1,7 +1,5 @@
 
 class TableList {
-	
-	invokeInit
 
 	constructor (list, selectedLists, showList) {
 		this.list = list;
