@@ -2,11 +2,9 @@
 class TableList {
 
 	constructor (list, selectedLists, showList) {
-		this.list = list;
-		this.selectedLists = selectedLists;
-		this.showList = showList;
-		// 触发初始化
-		this.invokeInit = false;
+		this.list = list
+		this.selectedLists = selectedLists
+		this.showList = showList
         // 列表过渡效果
         this.slideList = 'slide-fade-right'
         // 列表项出现/消失效果
@@ -14,52 +12,48 @@ class TableList {
 	}
 
 	setList(list) {
-		this.list = list;
+		this.list = list
 	}
 
 	spliceList(index) {
-		this.list.splice(index, 1);
+		this.list.splice(index, 1)
 	}
 
 	unshiftList(item) {
-		this.list.unshift(item);
+		this.list.unshift(item)
 	}
 
 	setSelectedLists(selectedLists) {
-        this.selectedLists = selectedLists;
+        this.selectedLists = selectedLists
     }
 
     pushSelectedLists(deleteList) {
         let protos = ['id', 'index', 'flag'];
         let result = protos.every(function(item, index) {
             if(item in deleteList) {
-                return true;
+                return true
             }else {
-                return false;
+                return false
             }
         })
-        if (!result) console.error('传入的值必须是个包含id、index和flag这三个属性的对象');
-        this.selectedLists.push(deleteList);
+        if (!result) console.error('传入的值必须是个包含id、index和flag这三个属性的对象')
+        this.selectedLists.push(deleteList)
     }
 
     spliceSelectedLists(index) {
-        this.selectedLists.splice(index, 1);
+        this.selectedLists.splice(index, 1)
     }
 
     reverseSelectedLists(proto) {
-        this.selectedLists = reverseObj(this.selectedLists, proto);
+        this.selectedLists = reverseObj(this.selectedLists, proto)
     }
 
     setShowList(type) {
         if (typeof type == 'boolean') {
-            this.showList = type; 
+            this.showList = type
         }else {
-            console.error('传入的值必须是Boolean类型');
+            console.error('传入的值必须是Boolean类型')
         }
-    }
-
-    invokingInit() {
-    	this.invokeInit = !this.invokeInit;
     }
 
     setSlideList(name) {

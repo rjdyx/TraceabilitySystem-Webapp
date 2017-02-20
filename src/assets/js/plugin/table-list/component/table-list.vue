@@ -71,29 +71,22 @@
  * @function selectAll
  * 返回：
  * 必用：false
- * 描述：点击全选按钮的事件回调
- * 
+ * 描述：点击全选按钮时触发
  * 
  * @function checkedBox
- * 返回：{'id':item.id, 'index':index, flag:getAllState(item)}
+ * 返回：{'item':item, 'index':index}
  * 必用：false
- * 描述：点击checkbox后发生的事件回调
- * 
- * 
- * @function destroy
- * 返回：
+ * 描述：点击checkbox时触发
+ *
+ * @function longTouchEvent
+ * 返回：{'item':item, 'index':index}
  * 必用：false
- * 描述：单个删除的回调事件
- * 
- * @function batchDestroy
- * 返回：
- * 必用：false
- * 描述：批量删除的回调事件
+ * 描述：长按某一行时触发
  * 
  * @function troggleEdit
  * 返回：true or false
  * 必用：false
- * 描述：点击每一行的操作按钮的回调事件
+ * 描述：点击每一行的操作按钮时触发
  * 
  */
 <template xmlns:v-touchDelete="http://www.w3.org/1999/xhtml">
@@ -125,7 +118,7 @@
                 <transition-group :name="slideListItem" tag="ul" key="tbody" class="list-body" v-if="showList">
                     <template v-for="(item, index) in list">
                             <li 
-                                v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:getAllState(item), tip:tipMsg}" 
+                                v-touchAction:longTouchEvent="{vm:self, item:item, index:index}" 
                                 :id="_key + item.id" 
                                 :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" 
                                 :key="_key + item.id" 
@@ -135,7 +128,7 @@
                                 <span v-if="showCheckbox" class="checked" name="order">
                                     <span 
                                         :class="{'f-checkbox':true, 'f-checkbox-check': isCheck(item.id)}" 
-                                        @click="checkedBox({'id':item.id, 'index':index, flag:getAllState(item)})"></span>
+                                        @click="checkedBox({item:item, index:index})"></span>
                                 </span>
                                 
                                 <!-- middle item -->
@@ -175,10 +168,9 @@
                             <template v-else-if="component != null && component[_key] != null">
                                 <component 
                                     :is="component[_key]"
-                                    v-if="showEditPane"
                                     :letItem="item"
                                     :edit="true"
-                                    @closeEdit="closeOwnEditPane(item)"
+                                    @closeEdit="closeNextLine"
                                 ></component>
                             </template>
                             
@@ -194,20 +186,12 @@
                         <span :class="{'f-checkbox':true, 'f-checkbox-check': isAllCheck}" @click="selectAll"></span>
                     </span>
                     <span style="width: 86%">
-                        <slot name="batchButtons">
-                            <button @click="showConfirmDialog(1)" class="btn btn-del" type="button">删除</button>
-                        </slot>
-                        
+                        <slot name="batchButtons"></slot>
                     </span>
                 </div>
             </div>
         </div>
-        <!-- 确认模块 -->
-        <confirm
-                :show="showConfirm"
-                @confirmAction="oneOrBatchdestroy"
-                @cancelAction="showConfirm=false"
-        ></confirm>
+        
     </div>
 </template>
 
@@ -321,7 +305,7 @@
 
 <script>
 
-    import confirm from './confirm.vue';
+    // import { api } from '../../protoName.js'
 
     export default {
         name: 'List',
@@ -382,20 +366,10 @@
             return {
                 // 是否全选
                 isAllCheck: false,
-                // 临时记录待删除的列表项信息
-                deleteList: {'id':0, 'index': 0, 'flag': null},
-                // 单个删除或批量删除
-                oneOrBatch: 0,
                 // 存放是否展开列表项编辑模块的标志，
                 showItemDetail: '',
-                // 定义PopList是新增模块还是编辑模块，true：编辑模块，false：新增模块
-                showEditPane: true,
-                // 是否显示确认模块
-                showConfirm: false,
                 // vue实例
-                self: this,
-                // 无法删除时的提示信息
-                tipMsg: '被使用，无法删除'
+                self: this
             }
         },
         computed: {
@@ -416,12 +390,9 @@
                     this.isAllCheck = false;
                 }
             },
-            invokeInit: function(val) {
-                this.init()
-            }
-        },
-        components: {
-            confirm
+            // [api.invoke]: function(invoke) {
+            //     this.$pluginApi.excFn(this, 'init', 'closeNextLine');
+            // }
         },
         methods: {
 
@@ -430,29 +401,18 @@
              */
             init () {
                 this.$tableList.setSelectedLists([]);
-                this.deleteList = {'id':0, 'index': 0, 'flag': null};
-                this.oneOrBatch = 0;
                 this.isAllCheck = false;
-                this.closeEdit();
+                this.closeNextLine();
             },
 
 
             /**
             * 全选或取消全选
-            * @param e
             */
             selectAll () {
-                if(!this.isAllCheck) {
-                    this.$tableList.setSelectedLists([]);
-                    this.isAllCheck = true;
-                    for(let index of this.list.keys()) {
-                        this.$tableList.pushSelectedLists({'id':this.list[index].id, 'index':index, 'flag':this.getAllState(this.list[index])});
-                    }
-                }else {
-                    this.isAllCheck = false;
-                    this.$tableList.setSelectedLists([]);
-                }
-                this.$emit('selectAll');
+                this.isAllCheck = !this.isAllCheck
+                this.$tableList.setSelectedLists([])
+                this.$emit('selectAll', this.isAllCheck)
             },
 
             /**
@@ -460,13 +420,6 @@
              * @param  {Object} checkedMsg 
              */
             checkedBox (checkedMsg) {
-                for(let index of Object.keys(this.selectedLists)) {
-                    if(this.selectedLists[index].id == checkedMsg.id) {
-                        this.$tableList.spliceSelectedLists(index);
-                        return true;
-                    }
-                }
-                this.$tableList.pushSelectedLists(checkedMsg);
                 this.$emit('checkedBox', checkedMsg);
             },
 
@@ -483,42 +436,6 @@
                 return false;
             },
 
-            /**
-            * 单个删除
-            */
-            destroy() {
-                this.deleteList = {'id':0, 'index': 0};
-                this.showConfirm = false;
-                this.$emit('destroy');
-            },
-
-            /**
-            * 批量删除
-            */
-            batchDestroy () {
-                if(this.selectedLists.length != 0){
-                    let ids = [];
-                    for(let deleteList of this.selectedLists) {
-                        ids.push(deleteList.id);
-                    }
-                    this.showConfirm = false;
-                    this.$emit('batchDestroy', ids);
-                }else {
-                    this.$alert('请选择列表项');
-                }
-            },
-
-            /**
-             * 判断调用单个删除或批量删除
-             */
-            oneOrBatchdestroy () {
-                this.$tableList.setSlideListItem('slide-up');
-                if(this.oneOrBatch == 0) {
-                    this.destroy();
-                }else {
-                    this.batchDestroy();
-                }
-            },
 
             /**
             * 显示或隐藏编辑模块
@@ -534,62 +451,19 @@
             },
 
             /**
-            * 关闭编辑模块
-            * @param List
-            */
-            closeOwnEditPane(List) {
-                this.troggleEdit(List);
-            },
-
-            /**
-            * 显示确认窗口
-            * @param flag
-            * @param id
-            * @param index
-            */
-            showConfirmDialog (flag, id=0, index=0) {
-                for(let deleteList of this.selectedLists) {
-                    let flag = deleteList.flag;
-                    let canDelete = flag.every(function(item, index) {
-                        return item == null
-                    })
-                    if(!canDelete) {
-                        this.$alert(this.tipMsg);
-                        return false;
-                    }
-                }
-                if(flag == 1 &&this.selectedLists.length == 0){
-                    this.$alert('请选择列表项');
-                }else {
-                    this.oneOrBatch = flag;
-                    this.deleteList.id = id;
-                    this.deleteList.index = index;
-                    this.showConfirm = true;
-                }
-
-            },
-
-            /**
-             * 关闭编辑弹窗
+             * 关闭下一行组件
              */
-            closeEdit () {
+            closeNextLine () {
                 this.showItemDetail = '';
             },
 
             /**
-             * 从item中获取所有含有“state”字段的属性
-             * @param  {Object} item 
-             * @return {Array}
+             * 长按触发事件
              */
-            getAllState (item) {
-                let stateArr = new Array();
-                for(let proto in item) {
-                    if(proto.indexOf('_state') != -1 && proto != 'deleted_state') {
-                        stateArr.push(item[proto])
-                    }
-                }
-                return stateArr
+            longTouchEvent({item, index}) {
+                this.$emit('longTouchEvent', {item:item, index:index})
             }
+
         }
     }
 </script>

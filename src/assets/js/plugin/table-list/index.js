@@ -35,11 +35,6 @@ export default {
                     return this.$tableList.showList; 
 	            },
 
-	            // 触发初始化
-	            [tableList.invokeInit] () {
-	            	return this.$tableList.invokeInit;
-	            },
-
 	            // 列表过渡效果
 	            [tableList.slideList] () {
 	            	return this.$tableList.slideList;

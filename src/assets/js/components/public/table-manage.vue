@@ -117,11 +117,13 @@
             :widths="widths"
             :showOperate="showOperate"
             @getAllLists="getAllLists"
-            @destroy="destroy"
-            @batchDestroy="batchDestroy"
+            @checkedBox="checkedBox"
+            @selectAll="selectAll"
             @troggleEdit="troggleEdit"
+            @longTouchEvent="longTouchDelete"
         >
             <component :is="batchButtons" slot="batchButtons"></component>
+            <button v-if="!batchButtons" @click="showConfirmDialog(1)" slot="batchButtons" class="btn btn-del" type="button">删除</button>
         </table-list>
     
 
@@ -139,6 +141,13 @@
             ></paginator> 
         </div>
 
+        <!-- 确认模块 -->
+        <confirm
+                :show="showConfirm"
+                @confirmAction="oneOrBatchdestroy"
+                @cancelAction="showConfirm=false"
+        ></confirm>
+
     </div>
 </template>
 
@@ -147,6 +156,7 @@
     import { mapState, mapMutations } from 'vuex';
     import Search from './search.vue';
     import Paginator from './paginator.vue';
+    import confirm from './confirm.vue';
 
     export default {
         name: 'List',
@@ -240,12 +250,21 @@
                     'List_id': 0,
                     '_sort': 'id',
                     'order': ''
-                }
+                },
+                // 临时记录待删除的列表项信息
+                deleteList: {'id':0, 'index': 0, 'flag': null},
+                // 单个删除或批量删除
+                oneOrBatch: 0,
+                // 是否显示确认模块
+                showConfirm: false,
+                // 无法删除时的提示信息
+                tipMsg: '被使用，无法删除'
             }
         },
         components: {
             Paginator,
-            Search
+            Search,
+            confirm
         },
         watch: {
             searchUrl: function(val) {
@@ -254,7 +273,6 @@
         },
         mounted() {
             this.getAllLists();
-            console.log(this);
         },
         methods: {
 
@@ -263,7 +281,7 @@
              */
             getAllLists () {
                 if(this.excInit) {
-                    this.$tableList.invokingInit();
+                    this.$refs.tableList.init();
                     this.$tableList.setShowList(false);
                 }
                 this.$tableList.setSlideList('slide-fade-right');
@@ -286,11 +304,39 @@
             },
 
             /**
+             * 将选中的checkbox信息存入SelectedLists
+             */
+            checkedBox ({item, index}) {
+                let checkedMsg = {id: item.id, index:index, flag:this.getAllState(item)}
+                for(let index of Object.keys(this.selectedLists)) {
+                    if(this.selectedLists[index].id == item.id) {
+                        this.$tableList.spliceSelectedLists(index);
+                        return true;
+                    }
+                }
+                this.$tableList.pushSelectedLists(checkedMsg);
+            },
+
+            /**
+            * 全选或取消全选
+            * @param e
+            */
+            selectAll (isAllCheck) {
+                if(isAllCheck) {
+                    for(let index of this.list.keys()) {
+                        this.$tableList.pushSelectedLists({'id':this.list[index].id, 'index':index, 'flag':this.getAllState(this.list[index])});
+                    }
+                }
+            },
+
+            /**
             * 单个删除
             */
             destroy() {
                 this.$destroyL(this, this.searchUrl, this.deleteList.id).then((response) => {
                     this.$tableList.spliceList(this.deleteList.index);
+                    this.deleteList = {'id':0, 'index': 0};
+                    this.showConfirm = false;
                     this.$alert('删除成功');
                 },(response) => {
                     this.$alert('连接出错', 'e');
@@ -300,17 +346,67 @@
             /**
             * 批量删除
             */
-            batchDestroy (ids) {
-                this.$batchDestroy(this, this.searchUrl, ids).then((response) => {
-                    this.$tableList.reverseSelectedLists('index');
+            batchDestroy () {
+                if(this.selectedLists.length != 0){
+                    let ids = [];
                     for(let deleteList of this.selectedLists) {
-                        this.$tableList.spliceList(deleteList.inde);
+                        ids.push(deleteList.id);
                     }
-                    this.$tableList.setSelectedLists([]);
-                    this.$alert('成功删除'+response.body+'条');
-                },(response) => {
-                    this.$alert('连接出错', 'e');
-                });
+                    this.showConfirm = false;
+                    this.$batchDestroy(this, this.searchUrl, ids).then((response) => {
+                        this.$tableList.reverseSelectedLists('index');
+                        for(let deleteList of this.selectedLists) {
+                            this.$tableList.spliceList(deleteList.inde);
+                        }
+                        this.$tableList.setSelectedLists([]);
+                        this.$alert('成功删除'+response.body+'条');
+                    },(response) => {
+                        this.$alert('连接出错', 'e');
+                    });
+                }else {
+                    this.$alert('请选择列表项');
+                }
+                
+            },
+
+            /**
+             * 判断调用单个删除或批量删除
+             */
+            oneOrBatchdestroy () {
+                this.$tableList.setSlideListItem('slide-up');
+                if(this.oneOrBatch == 0) {
+                    this.destroy();
+                }else {
+                    this.batchDestroy();
+                }
+            },
+
+            /**
+            * 显示确认窗口
+            * @param flag
+            * @param id
+            * @param index
+            */
+            showConfirmDialog (flag, id=0, index=0) {
+                for(let deleteList of this.selectedLists) {
+                    let flag = deleteList.flag;
+                    let canDelete = flag.every(function(item, index) {
+                        return item == null
+                    })
+                    if(!canDelete) {
+                        this.$alert(this.tipMsg);
+                        return false;
+                    }
+                }
+                if(flag == 1 &&this.selectedLists.length == 0){
+                    this.$alert('请选择列表项');
+                }else {
+                    this.oneOrBatch = flag;
+                    this.deleteList.id = id;
+                    this.deleteList.index = index;
+                    this.showConfirm = true;
+                }
+
             },
 
             /**
@@ -329,7 +425,7 @@
             */
             updateListByMore(newList) {
                 this.$tableList.setShowList(true);
-                this.$tableList.invokingInit();
+                this.$refs.tableList.init();
                 this.$tableList.setList(newList.data)
                 this.total = newList.last_page;
                 if(newList.query_text != undefined){
@@ -369,6 +465,37 @@
                     this.$tableList.setSlideListItem();
                 }else {
                     this.$tableList.setSlideListItem('slide-up');
+                }
+                
+            },
+
+            /**
+             * 从item中获取所有含有“state”字段的属性
+             * @param  {Object} item 
+             * @return {Array}
+             */
+            getAllState (item) {
+                let stateArr = new Array();
+                for(let proto in item) {
+                    if(proto.indexOf('_state') != -1 && proto != 'deleted_state') {
+                        stateArr.push(item[proto])
+                    }
+                }
+                return stateArr
+            },
+
+            /**
+             * 长按删除
+             */
+            longTouchDelete({item, index}) {
+                let flag = this.getAllState(item);
+                let canDelete = flag.every(function(item, index) {
+                    return item == null
+                })
+                if(canDelete) {
+                    this.showConfirmDialog(0, item.id, index);
+                }else {
+                    this.$alert(this.tipMsg);
                 }
                 
             }
