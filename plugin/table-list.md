@@ -31,5 +31,60 @@
 | :--- | :--- |
 | batchButtons | 批量操作模块的按钮 |
 
+### 使用：
+
+示例代码：
+
+```
+<template>
+    <div>
+        <table-list
+            ref="tableList"
+            :_key="_key"
+            :component="component"
+            :theads="theads"
+            :protos="protos"
+            :widths="widths"
+        >
+            <button slot="batchButtons" class="btn btn-del" type="button">删除</button>
+        </table-list>
+    </div>
+</template>
+
+<script>
+    import PopPlantation from '../components/basic/pop-plantation.vue';
+    import AreaUnit from '../components/public/area-unit.vue';
+    export default{
+        name: 'Basic',
+        data(){
+            return{
+                _key: 'plantation',
+                component: {plantation: PopPlantation, area: AreaUnit},
+                theads: ['种植场名称', '种植面积', '负责人'],
+                protos: ['name', 'area', 'director'],
+                widths: [32, 24, 17]
+            }
+        },
+        components:{
+            PopPlantation,
+            AreaUnit
+        }
+    }
+</script>
+
+```
+
+界面：
+
+![](/assets/QQ截图20170221113019.png)
+
+数据：
+
+此页面获取到的json数据如下：
+
+![](/assets/QQ截图20170221114022.png)
+
+说明：
+
 
 
