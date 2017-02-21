@@ -7,7 +7,8 @@
 | name | type | default | description |
 | :--- | :--- | :--- | :--- |
 | \_key | String |  | 显示此table-list的唯一标识 |
-| component | Object | null |  |
+| component | Object | null | 存放“新增/编辑弹窗”组件、每一列的自定义组件和操作按钮组件 |
+| args | Object | {edit: true} | 传递给编辑模块的参数 |
 | theads | Array | \[''\] | table的thead里每一列显示的名字，例如\['种植区名称', '种植面积', '负责人'\] |
 | protos | Array | \[''\] | table每一列对应的属性，例如\['name', 'area', 'director'\] |
 | widths | Array | \[\] | table除去前后两列后的每一列的宽（单位%），合计不超过73%，例如\[32, 24, 17\] |
