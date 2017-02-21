@@ -28,9 +28,9 @@
 
 #### Slots
 
-|  |  |
+| name | description |
 | :--- | :--- |
-|  |  |
+| batchButtons | 批量操作模块的按钮 |
 
 
 
