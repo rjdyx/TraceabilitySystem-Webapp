@@ -31,6 +31,47 @@
 | :--- | :--- |
 | batchButtons | 批量操作模块的按钮 |
 
+
+
+#### 全局变量：
+
+| name | description |
+| :--- | :--- |
+| list | 存放列表项的数组 |
+| selectedLists | 存放被选中的列表项的数组 |
+| showList | 是否显示列表项 |
+| slideList | 列表过渡效果 |
+| slideListItem | 列表项出现/消失效果 |
+
+可在plugin目录先的protoName.js里面修改变量名，默认代码如下：
+
+```
+const tableList = {
+    list: 'list',
+    selectedLists: 'selectedLists',
+    showList: 'showList',
+    slideList: 'slideList',
+    slideListItem: 'slideListItem'
+}
+```
+
+#### 全局方法：
+
+| method | params | description |
+| :--- | :--- | :--- |
+| setList | list：存放列表项的数组 | 设置列表项数组 |
+| spliceList | index：列表项在数组中的下标 | 删除列表项数组中的某一项 |
+| unshiftList | item：列表项 | 把某个列表项插入列表项数组的首位置 |
+| setSelectedLists | selectedLists：存放被选中的列表项的数组 | 设置被选列表项数组 |
+| pushSelectedLists | selectedList：被选中的列表项 | 把某个被选中的列表项加入数组 |
+| spliceSelectedLists | index：列表项在数组中的下标 | 删除被选中列表项数组中的某一项 |
+| reverseSelectedLists | proto：属性名 | 按传入的属性名对selectedLists进行递增排序 |
+| setShowList | type | 显示或者一次列表项，参数type只能传入true或false |
+| setSlideList | name | 设置列表过渡效果，参数name传'slide-fade-left'表示左过渡效果，'slide-fade-right'表示右过渡效果，不传参数或传其他参数则会取消过渡效果 |
+| setSlideListItem | name | 设置每个列表项出现或消失的效果，传入‘slide-up’表示收缩效果，不传参数或传其他参数则会取消过渡效果 |
+
+
+
 ---
 
 ### 自定义编辑模块：
