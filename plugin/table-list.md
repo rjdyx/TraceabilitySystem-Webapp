@@ -168,7 +168,3 @@ Source:
 
 ![](/assets/QQ截图20170221114022.png)
 
-说明：
-
-对于传给table-list组件的props，其中的protos指定了组件每一行要显示的属性，上面的例子protos的值表明要读取name、area和director这三个属性，但是对比json数据和界面显示的结果会发现，面积那一列，json数据里的area只有数字，而界面显示的结果却多出了单位“亩”
-
