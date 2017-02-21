@@ -191,9 +191,7 @@
   </table>  
 </template>
 
-<style lang="sass" scoped>
-@import "../../../sass/function";
-</style>
+
 <script>
 export default {
     name: 'form-submit',
@@ -212,12 +210,12 @@ export default {
     },
     props: {
        letItem: {
-            type: Object,
-            default() {
-                return {
-                    
-                }
-            },
+          type: Object,
+          default() {
+              return {
+                  
+              }
+          },
         },
         inputData: {
           type: Object,
@@ -227,9 +225,12 @@ export default {
             }
           }
         },
-        edit: {
-            type: Boolean,
-            default: false
+        // 传递给component的参数
+        args: {
+          type: Object,
+          default () {
+            return {edit: true}
+          }
         },
         constItem: {
           type: Object,
@@ -237,6 +238,11 @@ export default {
             return {}
           }
         }
+    },
+    computed: {
+      edit () {
+        return this.args.edit
+      }
     },
     methods: {
       thisSet: function() {

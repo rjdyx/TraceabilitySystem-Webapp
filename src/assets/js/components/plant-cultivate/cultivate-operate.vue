@@ -6,7 +6,7 @@
  * 
  * Props:
  * 
- * @param  item 
+ * @param  letItem 
  * 类型：Object
  * 是否必填：false
  * 默认值：null
@@ -29,13 +29,13 @@
       <div v-if="show && !edit" class="pop">
         <component
           :is="component"
-          :cultivateId="item.id"
+          :cultivateId="letItem.id"
           @closeNew="show=false"
         ></component>
       </div>
       <div v-if="show && edit" class="pop">
         <pop-cultivate
-          :letItem="item"
+          :letItem="letItem"
           :edit="edit"
           @closeEdit="show=false"
         ></pop-cultivate>
@@ -64,7 +64,7 @@
   export default {
     name:'CultivateOperate',
     props:{
-        item: {
+        letItem: {
             type: Object,
             default () {
                 return null

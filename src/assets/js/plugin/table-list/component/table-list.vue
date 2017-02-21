@@ -26,8 +26,7 @@
  * 'area'属性名与protos数组里的某个值完全一样，
  * 这样遍历到此属性的时候，会用AreaUnit组件去显示而不是简单显示字符串
  * 第二，如果想要自定义每一行的操作按钮，则可以给此prop添加open属性，
- * open属性的值为{component: null, next: false}，其中next决定传给component属性的组件是作用于
- * 操作按钮还是作用于下一行组件
+ * open属性的值为自定义组件
  * 
  * 
  * @param  theads 
@@ -159,21 +158,13 @@
                             </li>
                         
                         <li v-if="showItemDetail != '' && showItemDetail == item.id" :key="_key + item.id + '-pop'">
-                            <template v-if="cusComponent">
-                                <component
-                                    :is="component.open.component"
-                                    :item="item"
-                                ></component>
-                            </template>
-                            <template v-else-if="component != null && component[_key] != null">
+                            <template v-if="component != null && component[_key] != null">
                                 <component 
                                     :is="component[_key]"
                                     :letItem="item"
-                                    :edit="true"
-                                    @closeEdit="closeNextLine"
+                                    :args="args"
                                 ></component>
                             </template>
-                            
                         </li>
                     </template>
                 </transition-group>
@@ -322,6 +313,13 @@
                     return null
                 }
             },
+            // 传递给component的参数
+            args: {
+                type: Object,
+                default () {
+                    return {edit: true}
+                }
+            },
             // thead
             theads: {
                 type: Array,
@@ -376,11 +374,7 @@
 
             // 是否显示自定义操作按钮
             cusButton () {
-                return this.component != null && this.component.open != null && this.component.open.component != null && !this.component.open.next
-            },
-            // 是否在下一行显示自定义组件
-            cusComponent () {
-                return this.component != null && this.component.open != null && this.component.open.component != null && this.component.open.next
+                return this.component != null && this.component.open != null
             }
         },
         watch: {

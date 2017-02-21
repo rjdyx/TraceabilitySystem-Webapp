@@ -23,11 +23,12 @@
  * 第一，如果每一列中的某个属性不是简单地显示字符串，可以给此prop对象添加新的属性，属性名与protos数组里的保持一致；
  * 例如：{planta: PopPlanta, area: AreaUnit}：
  * 其中'planta'属性名与_key完全一样，
+ * 默认情况下新增和编辑会共用'planta'里面的组件，如果新增和编辑想用不同的组件，则使用new属性名，
+ * 即{planta: PopPlanta, new: newPop, area: AreaUnit}：其中'planta'用于编辑，'new'用于新增；
  * 'area'属性名与protos数组里的某个值完全一样，
  * 这样遍历到此属性的时候，会用AreaUnit组件去显示而不是简单显示字符串
  * 第二，如果想要自定义每一行的操作按钮，则可以给此prop添加open属性，
- * open属性的值为{component: null, next: false}，其中next决定传给component属性的组件是作用于
- * 操作按钮还是作用于下一行组件
+ * open属性的值为自定义组件
  * 
  * @param  searchPlaceholder 
  * 类型：String
@@ -96,7 +97,7 @@
         <!-- 新增模块 -->
         <template v-if="component != null && component[_key] != null">
             <component 
-                :is="component[_key]"
+                :is="seleteComponent"
                 v-if="showNewPanel"
                 :edit="false"
                 @callback="updateListByOne"
@@ -110,6 +111,7 @@
             ref="tableList"
             :_key="_key"
             :component="component"
+            :args="args"
             :params="params"
             :excInit="excInit"
             :theads="theads"
@@ -171,6 +173,13 @@
                 type: Object,
                 default () {
                     return null
+                }
+            },
+            // 传递给component的参数
+            args: {
+                type: Object,
+                default () {
+                    return {edit: true}
                 }
             },
             // 搜索框的placeholder
@@ -259,6 +268,11 @@
                 showConfirm: false,
                 // 无法删除时的提示信息
                 tipMsg: '被使用，无法删除'
+            }
+        },
+        computed: {
+            seleteComponent () {
+                return this.component.new ? this.component.new : this.component[_key]
             }
         },
         components: {
