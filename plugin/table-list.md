@@ -31,8 +31,6 @@
 | :--- | :--- |
 | batchButtons | 批量操作模块的按钮 |
 
-
-
 #### 全局变量：
 
 | name | description |
@@ -43,7 +41,7 @@
 | slideList | 列表过渡效果 |
 | slideListItem | 列表项出现/消失效果 |
 
-可在plugin目录先的protoName.js里面修改变量名，默认代码如下：
+可在plugin目录里的protoName.js里面修改变量名，默认代码如下：
 
 ```
 const tableList = {
@@ -69,8 +67,6 @@ const tableList = {
 | setShowList | type | 显示或者一次列表项，参数type只能传入true或false |
 | setSlideList | name | 设置列表过渡效果，参数name传'slide-fade-left'表示左过渡效果，'slide-fade-right'表示右过渡效果，不传参数或传其他参数则会取消过渡效果 |
 | setSlideListItem | name | 设置每个列表项出现或消失的效果，传入‘slide-up’表示收缩效果，不传参数或传其他参数则会取消过渡效果 |
-
-
 
 ---
 
