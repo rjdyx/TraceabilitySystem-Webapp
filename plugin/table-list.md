@@ -46,6 +46,23 @@ _key: 'plantation',
 component: {plantation: PopPlantation}
 ```
 
+传递给自定义组件的props有
+
+| name | description |
+| :--- | :--- |
+| letItem | 传给此prop的值为这一行的数据 |
+| args | 传给此prop的值为传给table-list组件的args |
+
+Source:
+
+```
+<component 
+    :is="component[_key]"
+    :letItem="item"
+    :args="args"
+></component>
+```
+
 ---
 
 ### 自定义编辑按钮：
@@ -56,11 +73,46 @@ component: {plantation: PopPlantation}
 component: {open: Hispic}
 ```
 
+传递给自定义组件的props有
+
+| name | description |
+| :--- | :--- |
+| item | 传给此prop的值为这一行的数据 |
+
+Source:
+
+```
+<component 
+    :is="component.open"
+    :item="item"
+></component>
+```
+
 ---
 
 ### 自定义列显示内容：
 
+默认情况下，每一行显示的内容由protos里定义的属性名决定，即每一列默认情况下只是简单地显示后台传过来的json数据里对应的属性的值，如果想要对某一列的显示内容进行扩展，则需要把自定义的组件传给component，并且对应的属性名和protos里面的属性名保持一致，如下：
 
+```
+component: {plantation: PopPlantation, area: AreaUnit},
+protos: ['name', 'area', 'director']
+```
+
+传递给自定义组件的props有
+
+| name | description |
+| :--- | :--- |
+| item | 传给此prop的值为这一行的数据 |
+
+Source:
+
+```
+<component 
+    :is="component[proto]"
+    :item="item"
+></component>
+```
 
 ---
 
