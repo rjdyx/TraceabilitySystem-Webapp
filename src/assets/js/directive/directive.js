@@ -1,28 +1,15 @@
 
 /**
- * 长按提示删除
+ * 长按事件
  */
-exports.touchDelete = () => {
+exports.touchAction = () => {
     return (el, binding) => {
         let time = null;
         el.addEventListener("touchstart", (event) => {
             time = setTimeout(() => {
                 let vm = binding.value.vm;
-                let type = binding.value.type;
-                let id = binding.value.id;
-                let index = binding.value.index;
-                let flag = binding.value.flag;
-                let tip = binding.value.tip;
-                let canDelete = flag.every(function(item, index) {
-                    return item == null
-                })
-                if(canDelete) {
-                    let deleteFunction = binding.arg;
-                    vm[deleteFunction](type, id, index);
-                }else {
-                    vm.$alert(tip);
-                }
-                
+                let myFunction = binding.arg;
+                vm[myFunction](binding.value);
             }, 500);
         });
 

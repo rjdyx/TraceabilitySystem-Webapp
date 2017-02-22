@@ -1,5 +1,6 @@
-import Vue from 'vue';
+import Vue from 'vue'
 import TableList from './TableList'
+import { tableList } from '../protoName.js'
 import tableListComponent from './component/table-list.vue'
 
 export default {
@@ -15,37 +16,32 @@ export default {
 	    Vue.mixin({
 			data() {
 		        return {
-		            $tableList: TableList
+		            $tableList: TableList.tableList
 		        }
     		},
     		computed: {
     			// 存放列表项的数组
-    			list () {
+    			[tableList.list] () {
                     return this.$tableList.list;
 	            },
 
 	            // 存放被选中的列表项的数组
-	            selectedLists () {
+	            [tableList.selectedLists] () {
                     return this.$tableList.selectedLists;
 	            },
 
 	            // 是否显示列表项
-	            showList () {
+	            [tableList.showList] () {
                     return this.$tableList.showList; 
 	            },
 
-	            // 触发初始化
-	            invokeInit () {
-	            	return this.$tableList.invokeInit;
-	            },
-
 	            // 列表过渡效果
-	            slideList () {
+	            [tableList.slideList] () {
 	            	return this.$tableList.slideList;
 	            },
 
 	            // 列表项出现/消失效果
-	            slideListItem () {
+	            [tableList.slideListItem] () {
 	            	return this.$tableList.slideListItem;
 	            }
     		}

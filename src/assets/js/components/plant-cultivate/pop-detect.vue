@@ -42,112 +42,16 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <table class="main form-pop">
-            <tbody class="form-body">
-
-                <tr>
-                    <td class="label-tit"><label for="detect_content">检测类型</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="detect_content"
-                            :items="detectContents"
-                            :defaultIndex="parseInt(defaultdetectContentIndex)"
-                            @callback="getMsgdetectContent"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="detect_date">检测日期</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.detect_date" 
-                    v-validate.initial="letItem.detect_date" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="操作日期" 
-                    type="text" id="detect_date" name="detect_date" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('detect_date')">
-                    <td colspan="3" class="error">{{ errors.first('detect_date') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="department">检测机构</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.department" 
-                    v-validate.initial="letItem.department" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="检测机构" 
-                    type="text" id="department" name="department" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('department')">
-                    <td colspan="3" class="error">{{ errors.first('department') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="detect_item">检测项目名称</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.item" type="text" id="detect_item" name="item"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_id">指导专家</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="expert_id"
-                            :items="expertIds"
-                            protoBack="id"
-                            protoShow="expert_name"
-                            :defaultIndex="parseInt(defaultExpertIdIndex)"
-                            @callback="getMsgExpertId"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="detect_operator">检测人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.operator" type="text" id="detect_operator" name="operator"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="result">检测结果</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="result"
-                            :items="results"
-                            :defaultIndex="parseInt(defaultresultIndex)"
-                            @callback="getMsgresult"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="detect_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="detect_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditdetect" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAdddetect" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @thisSet="getThis"
+            @getMsgDataId="getMsgDataId"
+            @getDate="getDate"
+            @getMsgDataVal="getMsgDataVal"
+        ></form-submit>
     </form>
 </template>
 
@@ -191,9 +95,6 @@
         },
         data () {
             return {
-                detectContents:['水质检测', '土壤检测', '农药残留检测', '大气污染检测', '其他检测'],
-                results:['合格', '不合格'],
-                expertIds: [],
                 tmp: {
                     'cultivate_id': 0,
                     'id': '',
@@ -206,47 +107,83 @@
                     'result': '合格',
                     'memo': ''
                 },
-                
+                inputData: {
+                    'detect_content':
+                    {
+                        'label': '检测类型',
+                        'divfor': 'detect_content',
+                        'placeholder': '',
+                        'rules': 'max:255',
+                        'select': '2',
+                        'index': 0,
+                        'showVal': 'detect_content',
+                        'data': ['水质检测', '土壤检测', '农药残留检测', '大气污染检测', '其他检测']
+                    },
+                    'detect_date':
+                    {
+                        'label': '检测日期',
+                        'divfor': 'detect_date',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255',
+                        'date': true
+                    },
+                    'department':
+                    {
+                        'label': '检测机构',
+                        'divfor': 'department',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'item':
+                    {
+                        'label': '检测项目名称',
+                        'divfor': 'detect_item',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'expert_id': 
+                    {
+                        'label': '指导专家',
+                        'divfor': 'expert_id',
+                        'rules': 'required|max:255',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'expert_name',
+                        'index': 0,
+                        'showVal': 'expert_id',
+                        'data':[]
+                    },
+                    'operator': 
+                    {
+                        'label': '检测人',
+                        'divfor': 'detect_operator',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'result':
+                    {
+                        'label': '检测结果',
+                        'divfor': 'result',
+                        'placeholder': '',
+                        'rules': 'max:255',
+                        'select': '2',
+                        'index': 0,
+                        'showVal': 'result',
+                        'data': ['合格', '不合格']
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'farming_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:''
             }
         },
         computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaultExpertIdIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.expertIds){
-                        if(this.expertIds[index].id == this.letItem.expert_id){
-                            return index;
-                        }
-                    }
-                    
-                }
-            },
-            defaultdetectContentIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.detectContents){
-                        if(this.detectContents[index] == this.letItem.detect_content){
-                            return index;
-                        }
-                    }
-                    
-                }
-            },
-            defaultresultIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.results){
-                        if(this.results[index] == this.letItem.result){
-                            return index;
-                        }
-                    }
-                    
-                }
-            }
+            
         },
         mounted () {
             let time = new Date();
@@ -265,8 +202,8 @@
             getAlldetecttion () {
 
                 this.$http.get(this.$adminUrl('expert/query?params[type]=detect')).then((response)=>{
-                    this.$set(this, 'expertIds', response.body.experts.data);
-                    this.expertIds.unshift({id: '' ,expert_name: '无'})
+                    this.$set(this.inputData['expert_id'], 'data', response.body.experts.data);
+                    this.inputData['expert_id']['data'].unshift({id: '' ,expert_name: '无'})
                 }, (response)=>{
 
                 });
@@ -280,7 +217,7 @@
                     if (this.letItem.Approval == null) {
                         this.letItem.Approval = '';
                     }
-                    this.$update(this, 'detect', this.letItem).then((response) => {
+                    this.$update(this.val, 'detect', this.letItem).then((response) => {
                         for(let key of Object.keys(this.letItem)){
                             this.tmp[key] = this.letItem[key];
                         }
@@ -295,7 +232,7 @@
                 }else {
                     let cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
                     this.letItem.cultivate_id = cultivateId;
-                    this.$storeL(this, 'detect', this.letItem).then((response) => {
+                    this.$storeL(this.val, 'detect', this.letItem).then((response) => {
                         this.letItem.id = response.body;
                         this.$emit('callback', this.letItem);
                         this.$alert('新增成功', 's');
@@ -311,28 +248,31 @@
             /**
             * 隐藏新增模块
             */
-            cancelAdddetect () {
+            cancelAdd () {
                 this.$emit('closeNew');
             },
-
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
-            * 隐藏编辑模块
-            * @param letItem
+            * 获取时间
             */
-            cancelEditdetect () {
-                this.$emit('closeEdit');
+            getDate: function(val) {
+                this.letItem.detect_date=val;
             },
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgdetectContent (msg) {
-                this.letItem.detect_content = msg;
+            getMsgDataVal (msg) {
+                if(msg[0]=='detect_content') {
+                    this.letItem.detect_content = msg[1];
+                }
+                else {
+                    this.letItem.result = msg[1];
+                }
             },
-            getMsgresult (msg) {
-                this.letItem.result = msg;
-            },
-            getMsgExpertId (msg) {
-                this.letItem.expert_id = msg;                
+            getMsgDataId (msg) {
+                this.letItem.expert_id = msg[1];                
             }
         },
         destroyed () {

@@ -42,107 +42,15 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <table class="main form-pop">
-            <tbody class="form-body">
-
-                <tr>
-                    <td class="label-tit"><label for="drug_new_select">兽药类别</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select 
-                            name="drug_type"
-                            :items="categorys"
-                            :defaultIndex="parseInt(defaultdrugIndex)"
-                            protoBack="id"
-                            protoShow="name"
-                            @callback="getMsgPid"
-                        ></pop-select>
-                    </td>
-                </tr>
-                <tr v-show="errors.has('drug_type')">
-                    <td colspan="2" class="error">{{ errors.first('drug_type') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="drug_new_fullName">兽药名称</label></td>
-                    <td class="input-pop" colspan="2">
-                        <input 
-                            v-model="letItem.name" 
-                            v-validate.initial="letItem.name" 
-                            data-vv-rules="required|max:255" 
-                            data-vv-as="兽药名称" 
-                            type="text" id="drug_new_fullName" name="name" placeholder="必填">
-                    </td>
-                </tr>
-                <tr v-show="errors.has('name')">
-                    <td colspan="3" class="error">{{ errors.first('name') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="drug_new_use">用途</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.use" type="text" value="" id="drug_new_use" name="use"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="drug_new_specification">包装规格</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.specification" type="text" value="" id="drug_new_specification" name="specification"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="drug_new_vender_name">生产厂家名称</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.vender_name" type="text" value="" id="drug_new_vender_name" name="vender_name"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="drug_new_address">产地</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="drug_new_address" name="address"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="drug_new_phone">联系方式</label></td>
-                    <td class="input-pop" colspan="2">
-                        <input 
-                            v-model="letItem.phone" 
-                            v-validate.initial="letItem.phone" 
-                            data-vv-rules="phone" 
-                            type="text" id="drug_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)">
-                    </td>
-                </tr>
-                <tr v-show="errors.has('phone')">
-                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="drug_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="drug_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditdrug" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAdddrug" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @closeEdit="cancelEdit"
+            @thisSet="getThis"
+            @getMsgDataId="getMsgDataId"
+        ></form-submit>
     </form>
 </template>
 
@@ -194,49 +102,111 @@
                     'phone': '',
                     'memo': ''
                 },
-                categorys: [
-                    {id: 1, name: '疾病防治药'},
-                    {id: 2, name: '传染病防治药'},
-                    {id: 3, name: '寄生虫病防治药'},
-                    {id: 4, name: '促生长药'},
-                    {id: 5, name: '其他类'},
-                ]
+                inputData: {
+                    'drug_type':
+                    {
+                        'label': '兽药类别',
+                        'divfor': 'drug_new_select',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'name',
+                        'index': 0,
+                        'showVal': 'drug_type',
+                        'data':[
+                            {id: 1, name: '疾病防治药'},
+                            {id: 2, name: '传染病防治药'},
+                            {id: 3, name: '寄生虫病防治药'},
+                            {id: 4, name: '促生长药'},
+                            {id: 5, name: '其他类'},
+                        ]
+                    },
+                    'name':
+                    {
+                        'label': '兽药名称',
+                        'divfor': 'drug_new_fullName',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'use':
+                    {
+                        'label': '用途',
+                        'divfor': 'drug_new_use',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'specification':
+                    {
+                        'label': '包装规格',
+                        'divfor': 'drug_new_specification',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'vender_name': 
+                    {
+                        'label': '生产厂家名称',
+                        'divfor': 'drug_new_vender_name',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'address': 
+                    {
+                        'label': '产地',
+                        'divfor': 'drug_new_address',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'phone': 
+                    {
+                        'label': '联系方式',
+                        'divfor': 'drug_new_phone',
+                        'placeholder': '请输入11位手机号(固话用-隔开)',
+                        'rules': 'phone'
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'drug_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:''
             }
         },
         computed: {
-            defaultdrugIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.categorys){
-                        if(this.categorys[index].id == this.letItem.drug_type){
-                            return index;
-                        }
-                    }
-                    
-                }
-            }
+            
         },
         mounted () {
+            this.getIndex();
             for(let key of Object.keys(this.letItem)){
                 this.tmp[key] = this.letItem[key];
             }
         },
         methods: {
-
+            //判断是新建还是编辑
+            getIndex: function() {
+                if (this.edit == false) {
+                    this.inputData['drug_type']['index']=0;
+                } else {
+                    for(let index in this.inputData['drug_type']['data']) {
+                        if(this.inputData['drug_type']['data'][index].id== this.letItem.drug_type){
+                            this.inputData['drug_type']['index']=parseInt(index);
+                        }
+                    }
+                }
+            },
             /**
             * 提交表单
             */
             validateBeforeSubmit () {
-
                 let params = {
                     'id': this.letItem.id,
                     'field': 'name',
                     'value': this.letItem.name
                 };
-                this.$unique(this, 'drug', params, 'letItem.name').then(() => {
+                this.$unique(this.val, 'drug', params, 'letItem.name').then(() => {
                     if(this.edit) {
-                        this.$update(this, 'drug', this.letItem).then((response) => {
+                        this.$update(this.val, 'drug', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }
@@ -249,7 +219,7 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'drug', this.letItem).then((response) => {
+                        this.$storeL(this.val, 'drug', this.letItem).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -266,34 +236,34 @@
                 });
                 
             },
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
             * 隐藏新增模块
             */
-            cancelAdddrug () {
+            cancelAdd: function() {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditdrug () {
+            cancelEdit: function() {
                 this.$emit('closeEdit');
             },
-
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgPid (msg) {
-                this.letItem.drug_type = msg;
+            getMsgDataId (msg) {
+                this.letItem.drug_type = msg[1];
             }
-
         },
         destroyed () {
             if(this.edit){
                 for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
+                    this.letItem[key] = this.tmp[key];
+                }
             }
         },
     }

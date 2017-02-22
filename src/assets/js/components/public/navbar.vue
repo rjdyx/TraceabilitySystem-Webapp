@@ -45,7 +45,7 @@
         
 
         <div 
-            v-if="taps.length > 3"
+            v-if="taps.length > number"
             @click="toggleTap()"
             :class="{'tap-more': isMore, 'tap-shrink': !isMore}"
         ></div>

@@ -42,138 +42,16 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-
-        <table class="main form-pop">
-            <tbody class="form-body">
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_catagroy">农药类别</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="medicament_catagroy"
-                            :items="medicamentSelects"
-                            protoBack="id"
-                            protoShow="name"
-                            :defaultIndex="parseInt(defaultMedicamentSelectIndex)"
-                            @callback="getMsgMedicamentSelect"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_id">农药名称</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="medicament_id"
-                            :items="medicamentIds"
-                            protoBack="id"
-                            protoShow="name"
-                            :defaultIndex="parseInt(defaultMedicamentIdIndex)"
-                            @callback="getMsgMedicamentId"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit">
-                    <label for="spray_date">施药日期</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.spray_date" 
-                    v-validate.initial="letItem.spray_date" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="操作日期" 
-                    type="text" id="spray_date" name="spray_date" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('spray_date')">
-                    <td colspan="3" class="error">{{ errors.first('spray_date') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_way">施药方式</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.way" type="text" id="medicament_new_way" name="way"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_amount">平均施药量</label></td>
-                    <td class="input-pop input-area">
-                        <input 
-                        v-model="letItem.amount" 
-                        v-validate.initial="letItem.amount" 
-                        data-vv-rules="required|decimal:2" 
-                        data-vv-as="平均农药用量" 
-                        type="text" id="medicament_new_amount" name="amount"
-                           placeholder="请填写数字(必填)">
-                    </td>
-                    <td class="area_unit">
-                       <pop-select name="unit"
-                        :items="unit"      
-                        :defaultIndex="parseInt(defaultIndex)"
-                        @callback="getMsg"  
-                        ></pop-select>
-                    </td>
-                </tr>
-                <tr v-show="errors.has('amount')">
-                    <td colspan="3" class="error">{{ errors.first('amount') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_concentration">施药浓度（倍）</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.concentration" type="text" id="medicament_concentration" name="concentration"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_isolation_period">安全隔离期（天）</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.isolation_period" type="text" id="medicament_isolation_period" name="isolation_period"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="expert_id">指导专家</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select name="expert_id"
-                            :items="expertIds"
-                            protoBack="id"
-                            protoShow="expert_name"
-                            :defaultIndex="parseInt(defaultExpertIdIndex)"
-                            @callback="getMsgExpertId"
-                        ></pop-select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_user">施药人</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.operator" type="text" id="medicament_new_user" name="operator"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="medicament_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="medicament_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditmedicament" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAddmedicament" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @thisSet="getThis"
+            @getMsgDataId="getMsgDataId"
+            @getDate="getDate"
+            @getMsg="getMsg"
+        ></form-submit>
     </form>
 </template>
 
@@ -219,10 +97,6 @@
         },
         data () {
             return {
-                medicamentSelects:[],
-                medicamentIds:[],
-                expertIds: [],
-                unit:['ml/亩', 'ml/平方米', 'ml/公顷'],
                 tmp: {
                     'cultivate_id': 0,
                     'id': '',
@@ -237,59 +111,105 @@
                     'operator': '',
                     'memo': ''
                 },
-                
+                inputData: {
+                    'medicament_catagroy':
+                    {
+                        'label': '农药类别',
+                        'divfor': 'medicament_catagroy',
+                        'placeholder': '必填',
+                        'rules': 'max:255',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'name',
+                        'index': 0,
+                        'showVal': 'medicament_catagroy',
+                        'data':[]
+                    },
+                    'medicament_id':
+                    {
+                        'label': '农药名称',
+                        'divfor': 'medicament_id',
+                        'placeholder': '必填',
+                        'rules': 'max:255',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'name',
+                        'index': 0,
+                        'showVal': 'medicament_id',
+                        'data':[]
+                    },
+                    'spray_date':
+                    {
+                        'label': '施药日期',
+                        'divfor': 'spray_date',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255',
+                        'date': true
+                    },
+                    'way' :
+                    {
+                        'label': '施药方式',
+                        'divfor': 'medicament_new_way',
+                        'placeholder': '',
+                        'rules': '',
+                    },
+                    'amount':
+                    {
+                        'label': '平均施药量',
+                        'divfor': 'medicament_new_amount',
+                        'placeholder': '请填写数字(必填)',
+                        'rules': 'required|decimal:2',
+                        'select': '3',
+                        'index': 0,
+                        'unit' : 'unit',
+                        'data': ['ml/亩', 'ml/平方米', 'ml/公顷']
+                    },
+                    'concentration':
+                    {
+                        'label': '施药浓度（倍）',
+                        'divfor': 'medicament_concentration',
+                        'placeholder': '',
+                        'rules': '',
+                    },
+                    'isolation_period': 
+                    {
+                        'label': '安全隔离期(天)',
+                        'divfor': 'medicament_isolation_period',
+                        'placeholder': '',
+                        'rules': '',
+                    },
+                    'expert_id': 
+                    {
+                        'label': '指导专家',
+                        'divfor': 'expert_id',
+                        'rules': 'required|max:255',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'expert_name',
+                        'index': 0,
+                        'showVal': 'expert_id',
+                        'data':[]
+                    },
+                    'operator': 
+                    {
+                        'label': '施药人',
+                        'divfor': 'medicament_new_user',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'memo': 
+                    {
+                        'label': '备注',
+                        'divfor': 'farming_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:''
             }
         },
         computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaultExpertIdIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.expertIds){
-                        if(this.expertIds[index].expert_name == this.letItem.expert_name){
-                            return index;
-                        }
-                    }
-                    return 0;
-                }
-            },
-            defaultMedicamentSelectIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.medicamentSelects){
-                        if(this.medicamentSelects[index].id == this.letItem.category_id){
-                            return index;
-                        }
-                    }
-                    return 0;
-                }
-            },
-            defaultMedicamentIdIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.medicamentIds){
-                        if(this.medicamentIds[index].id == this.letItem.medicament_id){
-                            return index;
-                        }
-                    }
-                    return 0;
-                }
-            },
-            defaultIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {
-                    for(let index in this.unit){
-                        if(this.unit[index] == this.letItem.unit){
-                            return index;
-                        }
-                    }
-                    
-                }
-            }
+            
         },
         mounted () {
             let time = new Date();
@@ -308,7 +228,7 @@
             getAllmedicamenttion () {
 
                 this.$http.get(this.$adminUrl('medicament_category/query')).then((response)=>{
-                    this.$set(this, 'medicamentSelects', response.body.medicament_categorys.data);
+                    this.$set(this.inputData['medicament_catagroy'], 'data', response.body.medicament_categorys.data);
                 }, (response)=>{
 
                 });
@@ -321,8 +241,8 @@
                 }
 
                 this.$http.get(this.$adminUrl('expert/query?params[type]=spray')).then((response)=>{
-                    this.$set(this, 'expertIds', response.body.experts.data);
-                    this.expertIds.unshift({id: '' ,expert_name: '无'})
+                    this.$set(this.inputData['expert_id'], 'data', response.body.experts.data);
+                    this.inputData['expert_id']['data'].unshift({id: '' ,expert_name: '无'})
                 }, (response)=>{
 
                 });
@@ -333,7 +253,7 @@
             */
             validateBeforeSubmit () {
                 if(this.edit) {
-                    this.$update(this, 'spray', this.letItem).then((response) => {
+                    this.$update(this.val, 'spray', this.letItem).then((response) => {
                         for(let key of Object.keys(this.letItem)){
                             this.tmp[key] = this.letItem[key];
                         }
@@ -348,7 +268,7 @@
                 }else {
                     let cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
                     this.letItem.cultivate_id = cultivateId;
-                    this.$storeL(this, 'spray', this.letItem).then((response) => {
+                    this.$storeL(this.val, 'spray', this.letItem).then((response) => {
                         this.letItem.id = response.body;
                         this.$emit('callback', this.letItem);
                         this.$alert('新增成功', 's');
@@ -364,45 +284,47 @@
             /**
             * 隐藏新增模块
             */
-            cancelAddmedicament () {
+            cancelAdd () {
                 this.$emit('closeNew');
             },
-
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
-            * 隐藏编辑模块
-            * @param letItem
+            * 获取时间
             */
-            cancelEditmedicament () {
-                this.$emit('closeEdit');
+            getDate: function(val) {
+                this.letItem.spray_date=val;
             },
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgMedicamentSelect (msg) {
-                this.letItem.medicament_catagroy = msg;
-                this.$http.get(this.$adminUrl('medicament/query?params[query_class]='+msg)).then((response)=>{
-                    this.$set(this, 'medicamentIds', response.body.medicaments.data);
-                }, (response)=>{
+            getMsgDataId (msg) {
+                if(msg[0]=='medicament_catagroy') {
+                    this.letItem.medicament_catagroy = msg[1];
+                    this.$http.get(this.$adminUrl('medicament/query?params[query_class]='+msg[1])).then((response)=>{
+                        this.$set(this.inputData['medicament_id'], 'data', response.body.medicaments.data);
+                    }, (response)=>{
 
-                });
-            },
-            getMsgMedicamentId (msg) {
-                this.letItem.medicament_id = msg;
-            },
-            getMsgExpertId (msg) {
-                this.letItem.expert_id = msg;                
-            },
+                    });
+                }
+                else if(msg[0]=='medicament_id') {
+                    this.letItem.medicament_id = msg[1];
+                }
+                else if(msg[0]=='expert_id'){
+                    this.letItem.expert_id = msg[1];
+                }
+            },          
             getMsg (msg) {
-                this.letItem.unit = msg;
+                this.letItem.unit = msg[1];
+            },
+            destroyed () {
+                if(this.edit){
+                    for(let key of Object.keys(this.letItem)){
+                            this.letItem[key] = this.tmp[key];
+                        }
+                }
             }
-        },
-        destroyed () {
-            if(this.edit){
-                for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
-            }
-        },
+        }
     }
-
 </script>

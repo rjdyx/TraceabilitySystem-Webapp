@@ -96,6 +96,7 @@
                         component: {expert: PopExpert, table_type: ResearchField},
                         searchPlaceholder: '专家名称',
                         searchUrl: 'expert',
+                        params: {'class_type':0},
                         theads: ['专家名称', '研究领域', '操作模块'],
                         protos: ['expert_name', 'major', 'table_type'],
                         widths: [24, 28, 21]

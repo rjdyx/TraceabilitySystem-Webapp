@@ -42,106 +42,15 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-        <table class="main form-pop">
-            <tbody class="form-body">
-
-                <tr>
-                    <td class="label-tit"><label for="operate_new_fullName">姓名</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.name" 
-                    v-validate.initial="letItem.name" 
-                    data-vv-rules="required|max:255" 
-                    data-vv-as="姓名" 
-                    type="text" id="operate_new_fullName" name="name" placeholder="必填"></td>
-                </tr>
-                <tr v-show="errors.has('name')">
-                    <td colspan="3" class="error">{{ errors.first('name') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="operate_sex">性别</label></td>
-                    <td class="input-pop" colspan="2">
-                        <pop-select id="operate_sex" name="operate_sex"
-                            :items="sex"
-                            protoBack="id"
-                            protoShow="sex"
-                            :defaultIndex="parseInt(defaultSexIndex)"
-                            @callback="getMsgSex"
-                        ></pop-select>
-                    </td>
-                </tr>
-                <tr v-show="errors.has('sex')">
-                    <td colspan="3" class="error">{{ errors.first('sex') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="operate_new_age">年龄</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.age" 
-                    v-validate.initial="letItem.age" 
-                    data-vv-rules="decimal" 
-                    data-vv-as="年龄" 
-                    type="text" id="operate_new_age" name="age"></td>
-                </tr>
-                <tr v-show="errors.has('age')">
-                    <td colspan="3" class="error">{{ errors.first('age') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="operate_new_identity">身份</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.identity" 
-                    class="input-pop" type="text" value="" id="operate_new_identity" name="identity" placeholder="如后勤主管"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="operate_new_phone">联系方式</label></td>
-                    <td class="input-pop" colspan="2"><input 
-                    v-model="letItem.phone" 
-                    v-validate.initial="letItem.phone" 
-                    data-vv-rules="phone" 
-                    type="text" id="operate_new_phone" name="phone" placeholder="请输入11位手机号(固话用-隔开)"></td>
-                </tr>
-                <tr v-show="errors.has('phone')">
-                    <td colspan="3" class="error">{{ errors.first('phone') }}</td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="fodder_new_address">联系地址</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.address" type="text" id="fodder_new_address" name="address"></td>
-                </tr>
-
-                <tr>
-                    <td class="label-tit"><label for="operate_new_note">备注信息</label></td>
-                    <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="operate_new_note" name="memo"></td>
-                </tr>
-
-                <tr>
-                    <td colspan="3">
-                        <div class="footer-r">
-                            <a v-if="edit" href="javascript:void(0)">
-                                <button @click="cancelEditoperate" type="button">
-                                    取消
-                                </button>  
-                            </a>
-                            
-                            <a v-else href="javascript:void(0)">
-                                <button @click="cancelAddoperate" type="button">
-                                    取消
-                                </button>
-                            </a>
-                        </div>
-                        <div class="footer-r">
-                            <a href="javascript:void(0)">
-                                <button class="btn-pop">
-                                    保存
-                                </button>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <form-submit
+            :letItem="letItem"
+            :inputData="inputData"
+            :edit="edit"
+            @closeNew="cancelAdd"
+            @closeEdit="cancelEdit"
+            @thisSet="getThis"
+            @getMsgDataId="getMsgDataId"
+        ></form-submit>
     </form>
 </template>
 
@@ -190,33 +99,89 @@
                     'address': '',
                     'memo': ''
                 },
-                sex: [
-                    {id: 0, sex: '男'},
-                    {id: 1, sex: '女'}
-                ],
+                inputData: {
+                    'name':
+                    {
+                        'label': '姓名',
+                        'divfor': 'operate_new_fullName',
+                        'placeholder': '必填',
+                        'rules': 'required|max:255'
+                    },
+                    'sex':
+                    {
+                        'label': '性别',
+                        'divfor': 'operate_sex',
+                        'protoBack' :'id',
+                        'select': '1',
+                        'selectName':'sex',
+                        'index': 0,
+                        'showVal': 'sex',
+                        'data':[
+                            {id: 0, sex: '男'},
+                            {id: 1, sex: '女'}
+                        ]
+                    },
+                    'age':
+                    {
+                        'label': '年龄',
+                        'divfor': 'operate_new_age',
+                        'placeholder': '',
+                        'rules': 'decimal'
+                    },
+                    'identity': 
+                    {
+                        'label': '身份',
+                        'divfor': 'operate_new_identity',
+                        'placeholder': '如后勤主管',
+                        'rules': ''
+                    },
+                    'phone': 
+                    {
+                        'label': '联系方式',
+                        'divfor': 'operate_new_phone',
+                        'placeholder': '请输入11位手机号(固话用-隔开)',
+                        'rules': 'phone'
+                    },
+                    'address': 
+                    {
+                        'label': '联系地址',
+                        'divfor': 'operate_new_address',
+                        'placeholder': '',
+                        'rules': ''
+                    },
+                    'memo': 
+                    {
+                        'label': '备注信息',
+                        'divfor': 'operate_new_note',
+                        'placeholder': '',
+                        'rules': ''
+                    }
+                },
+                val:''
             }
         },
         computed: {
-            //判断是编辑状态还是新建状态，取出不同的下标
-            defaultSexIndex () {
-                if (this.edit == false) {
-                    return 0;
-                } else {               
-                    for(let index in this.sex){
-                        if(this.sex[index].id == this.letItem.sex){
-                            return index;
-                        }
-                    };                        
-                }
-            }
+            
         },
         mounted () {
+            this.getIndex();
             for(let key of Object.keys(this.letItem)){
                 this.tmp[key] = this.letItem[key];
             }
         },
         methods: {
-
+            //判断是新建还是编辑
+            getIndex: function() {
+                if (this.edit == false) {
+                    this.inputData['sex']['index']=0;
+                } else {
+                    for(let index in this.inputData['sex']['data']) {
+                        if(this.inputData['sex']['data'][index].id== this.letItem.sex){
+                            this.inputData['sex']['index']=parseInt(index);
+                        }
+                    }
+                }
+            },
             /**
             * 提交表单
             */
@@ -226,10 +191,9 @@
                     'field': 'name',
                     'value': this.letItem.name
                 };
-                this.$unique(this, 'operate', params, 'letItem.name').then(() => {
-
+                this.$unique(this.val, 'operate', params, 'letItem.name').then(() => {
                     if(this.edit) {
-                        this.$update(this, 'operate', this.letItem).then((response) => {
+                        this.$update(this.val, 'operate', this.letItem).then((response) => {
                             for(let key of Object.keys(this.letItem)){
                                 this.tmp[key] = this.letItem[key];
                             }
@@ -242,7 +206,7 @@
                             }
                         });
                     }else {
-                        this.$storeL(this, 'operate', this.letItem).then((response) => {
+                        this.$storeL(this.val, 'operate', this.letItem).then((response) => {
                             this.letItem.id = response.body;
                             this.$emit('callback', this.letItem);
                             this.$alert('新增成功', 's');
@@ -259,32 +223,34 @@
                     return false;
                 });
             },
+            getThis: function(val) {
+                this.val=val;
+            },
             /**
             * 隐藏新增模块
             */
-            cancelAddoperate () {
+            cancelAdd: function() {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
             */
-            cancelEditoperate () {
+            cancelEdit: function() {
                 this.$emit('closeEdit');
             },
             /**
             * CallBack函数,执行回调函数 
             */
-            getMsgSex (msg) {
-                this.letItem.sex = msg;               
-            },
+            getMsgDataId (msg) {
+                this.letItem.sex = msg[1];
+            }
         },
         destroyed () {
             if(this.edit){
                 for(let key of Object.keys(this.letItem)){
-                        this.letItem[key] = this.tmp[key];
-                    }
+                    this.letItem[key] = this.tmp[key];
+                }
             }
         },
     }

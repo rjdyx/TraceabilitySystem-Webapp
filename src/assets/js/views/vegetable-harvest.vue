@@ -38,7 +38,7 @@
         name: 'VegetableHarvest',
         data(){
             return{
-                component: {cultivate: PopVegetable, open: {component: EditVegetable, next: true}, serial: CultivateNumber},
+                component: {new: PopVegetable, cultivate: EditVegetable, serial: CultivateNumber},
                 theads: ['种植区', '批次号', '果蔬名称'],
                 protos: ['plantation_name', 'serial', 'plant_name'],
                 widths: [26, 30, 17]

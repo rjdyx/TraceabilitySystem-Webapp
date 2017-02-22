@@ -21,6 +21,7 @@
                 :component="component"
                 :searchPlaceholder="searchPlaceholder"
                 :searchUrl="searchUrl"
+                :params="params"
                 :theads="theads"
                 :protos="protos"
                 :widths="widths"
@@ -67,15 +68,13 @@
                         component: null,
                         searchPlaceholder: '',
                         searchUrl: '',
+                        params: null,
+                        excInit: true,
                         theads: [''],
                         protos: [''],
                         widths: [0]
                     }]
                 }
-            },
-            params: {
-                type: String,
-                default: ''
             }
         },
         data(){
@@ -84,6 +83,7 @@
                 component: null,
                 searchPlaceholder: '',
                 searchUrl: '',
+                params: null,
                 theads: [],
                 protos: [],
                 widths: []
@@ -98,6 +98,8 @@
             this._key = this.tableLists[0].key;
             this.searchPlaceholder = this.tableLists[0].searchPlaceholder;
             this.searchUrl = this.tableLists[0].searchUrl;
+            this.params = this.tableLists[0].params;
+            this.excInit = this.tableLists[0].excInit == undefined ? true:this.tableLists[0].excInit;
             this.theads = this.tableLists[0].theads;
             this.protos = this.tableLists[0].protos;
             this.widths = this.tableLists[0].widths;
@@ -116,6 +118,8 @@
                         this._key = item.key;
                         this.searchPlaceholder = item.searchPlaceholder;
                         this.searchUrl = item.searchUrl;
+                        this.params = item.params;
+                        this.excInit = item.excInit == undefined ? true:item.excInit;
                         this.theads = item.theads;
                         this.protos = item.protos;
                         this.widths = item.widths;

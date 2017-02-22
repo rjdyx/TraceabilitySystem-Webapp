@@ -95,6 +95,10 @@
             protoShow: {
                 type: String,
                 default: 'name'
+            },
+            showVal: {
+                type:String,
+                default: ''
             }
         },
         //计算属性
@@ -130,8 +134,8 @@
             msg: '',
             show: false,
             index: -1,
-            opacity: true
-
+            opacity: true,
+            selectVal:''
           }
         },
         watch: {
@@ -148,9 +152,9 @@
                     return false;
                 }
                 if(this.protoBack == '') {
-                    this.$emit('callback', this.items[index]);
+                    this.$emit('callback', [this.showVal,this.items[index],'']);
                 }else {
-                    this.$emit('callback', this.items[index][this.protoBack]);
+                    this.$emit('callback', [this.showVal,this.items[index][this.protoBack],this.items[this.index][this.protoShow]]);
                 }
                 
             },

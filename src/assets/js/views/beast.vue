@@ -109,6 +109,7 @@
                         component: {expert: PopExpert, table_type: OperateType},
                         searchPlaceholder: '专家名称',
                         searchUrl: 'expert',
+                        params: {'class_type':1},
                         theads: ['操作模块', '专家名称', '研究领域'],
                         protos: ['table_type', 'expert_name', 'major'],
                         widths: [28, 24, 21]

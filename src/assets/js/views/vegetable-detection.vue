@@ -37,7 +37,7 @@
         name: 'VegetableDetetion',
         data(){
             return{
-                component: {cultivate: PopVegetableDetection, open: {component: EditVegetableDetection, next: true}, serial: CultivateNumber},
+                component: {new: PopVegetableDetection, cultivate: EditVegetableDetection, serial: CultivateNumber},
                 theads: ['种植区', '批次号', '果蔬名称'],
                 protos: ['plantation_name', 'serial', 'plant_name'],
                 widths: [26, 30, 17]
