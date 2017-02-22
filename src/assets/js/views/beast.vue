@@ -19,7 +19,7 @@
 <style>
 </style>
 
-<script>
+<script> 
 
     import BasicModel from '../components/public/basic-model.vue';
     import AreaUnit from '../components/public/area-unit.vue';

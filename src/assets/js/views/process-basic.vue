@@ -20,7 +20,7 @@
 <style>
 </style>
 
-<script>
+<script> 
     import BasicModel from '../components/public/basic-model.vue';
     import PopProduct from '../components/process/pop-product.vue';
     import PopDistributor from '../components/process/pop-distributor.vue';

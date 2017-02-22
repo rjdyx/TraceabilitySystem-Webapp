@@ -60,7 +60,9 @@
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="harvest_plantation_name">所属种植区</label></td>
+                    <td class="label-tit">
+                        <label for="harvest_plantation_name">所属种植区</label>
+                    </td>
                     <td class="input-pop" colspan="2"><input v-model="constItem.plantation_name" type="text" id="harvest_plantation_name" name="plantation_name" disabled="disabled" class="input-pop"></td>
                 </tr>
 
@@ -198,13 +200,12 @@
             }
         },
         methods: {
-
             /**
             * 获取相关种植区信息
             */
             getHarvesttion () {
-
                 this.$http.get(this.$adminUrl('cultivate/' + this.cultivateId + '/data')).then((response)=>{
+                    console.log(response)
                     this.$set(this, 'constItem', response.body);
                 }, (response)=>{
 

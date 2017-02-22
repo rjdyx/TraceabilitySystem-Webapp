@@ -73,7 +73,8 @@
                 </tr>
 
                 <tr>
-                    <td class="label-tit"><label for="spray_date">施药日期</label></td>
+                    <td class="label-tit">
+                    <label for="spray_date">施药日期</label></td>
                     <td class="input-pop" colspan="2"><input 
                     v-model="letItem.spray_date" 
                     v-validate.initial="letItem.spray_date" 
@@ -316,7 +317,6 @@
                     this.$http.get(this.$adminUrl('spray/select_category?params='+this.letItem.category_id)).then((response)=>{
                         this.$set(this, 'medicamentIds', response.body);
                     }, (response)=>{
-
                     });
                 }
 

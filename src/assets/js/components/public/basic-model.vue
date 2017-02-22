@@ -34,7 +34,7 @@
 
 <style>
 </style>
-
+ 
 <script>
 
     import {mapMutations} from 'vuex';

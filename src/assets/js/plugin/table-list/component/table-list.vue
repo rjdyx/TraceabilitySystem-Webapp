@@ -118,14 +118,13 @@
                     <!-- 按钮列，宽度13% -->
                     <span v-if="showOperate" name="open" class="align-c"></span>
                 </div>
-            </div>
+            </div> 
 
             <!-- 表格的中间数据栏tbody -->
             <transition :name="slideList">
                 <transition-group :name="slideListItem" tag="ul" key="tbody" class="list-body" v-if="showList">
                     <template v-for="(item, index) in list">
-                            <li 
-                                v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:getAllState(item), tip:tipMsg}" 
+                            <li v-touchDelete:showConfirmDialog="{vm:self, type:0, id:item.id, index:index, flag:getAllState(item), tip:tipMsg}" 
                                 :id="_key + item.id" 
                                 :class="{'list-body-tr':true,'list-body-tr-event':(index%2 != 0)}" 
                                 :key="_key + item.id" 
@@ -133,9 +132,7 @@
 
                                 <!-- checkbox -->
                                 <span v-if="showCheckbox" class="checked" name="order">
-                                    <span 
-                                        :class="{'f-checkbox':true, 'f-checkbox-check': isCheck(item.id)}" 
-                                        @click="checkedBox({'id':item.id, 'index':index, flag:getAllState(item)})"></span>
+                                    <span :class="{'f-checkbox':true, 'f-checkbox-check': isCheck(item.id)}"  @click="checkedBox({'id':item.id, 'index':index, flag:getAllState(item)})"></span>
                                 </span>
                                 
                                 <!-- middle item -->
@@ -190,7 +187,7 @@
             <!-- 表格的底部栏tfoot -->
             <div v-if="showFooter" class="list-foot">
                 <div class="list-foot-tr">
-                    <span  name="order">
+                    <span name="order">
                         <span :class="{'f-checkbox':true, 'f-checkbox-check': isAllCheck}" @click="selectAll"></span>
                     </span>
                     <span style="width: 86%">

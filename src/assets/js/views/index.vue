@@ -102,6 +102,21 @@
                         ]
                     },
                     {
+                        name:'果蔬采收批次管理',
+                        role: 'plantation',
+                        isEvent: false,
+                        children: [
+                            {
+                                path: '/webapp/vegetable-harvest',
+                                name:'采收批次管理'
+                            },
+                            {
+                                path: '/webapp/vegetable-detection',
+                                name:'采收检测管理'
+                            }
+                        ]
+                    },
+                    {
                         name:'养殖管理',
                         role: 'beast',
                         isEvent: false,
@@ -124,7 +139,7 @@
                         ]
                     },
                 ],
-            }
+            } 
         },
         computed: {
             ...mapState([

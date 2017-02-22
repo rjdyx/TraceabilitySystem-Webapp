@@ -3,7 +3,7 @@
  * @description 
  * @author 苏锐佳
  * @date 2017/02/07
- * 
+ *  
  * Props:
  * 
  * @param  item 
@@ -17,7 +17,7 @@
 <template>
         <router-link :to="{name: 'plant-cultivate-detail', params: {id: item.id}}" tag="span" exact>{{item.serial}}</router-link>
 </template>
-
+    
 <script>
   export default {
     name:'ResearchField',

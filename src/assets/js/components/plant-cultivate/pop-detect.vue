@@ -42,7 +42,6 @@
  */
 <template>
     <form @submit.prevent="validateBeforeSubmit">
-
         <table class="main form-pop">
             <tbody class="form-body">
 

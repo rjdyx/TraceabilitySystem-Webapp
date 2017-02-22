@@ -15,8 +15,7 @@
  * @param  edit 
  * 类型：Boolean
  * 是否必填：false
- * 默认值：false
- * 描述：表明此组件是用于新增还是编辑，true表示编辑，false表示新增
+ * 默认值 
  * 
  * 
  * 
@@ -105,7 +104,6 @@
                 <tr v-show="errors.has('phone')">
                     <td colspan="3" class="error">{{ errors.first('phone') }}</td>
                 </tr>
-
                 <tr>
                     <td class="label-tit"><label for="manure_new_note">备注信息</label></td>
                     <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="manure_new_note" name="memo"></td>

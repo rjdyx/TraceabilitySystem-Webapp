@@ -26,7 +26,6 @@
  */
 <template>
     <div class="nav-top">
-
         <ul class="nt-ul">
             <li v-for="(tap, index) in taps" v-if="index < number" class="nt-li" :style="{width: 100/number + '%'}">
                 <span @click="getKey(tap.key)" :class="{'link-active': activeKey == tap.key}">{{tap.name}}</span>
@@ -50,7 +49,7 @@
             @click="toggleTap()"
             :class="{'tap-more': isMore, 'tap-shrink': !isMore}"
         ></div>
-
+ 
         <div>
             <slot></slot>
         </div>
@@ -116,7 +115,6 @@
         },
 
         touchmove (event) {
-
             let touch = event.targetTouches[0];
             let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
             if (scrollTop == 0) {

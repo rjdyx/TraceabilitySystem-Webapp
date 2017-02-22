@@ -173,7 +173,7 @@
                 type: Boolean,
                 default: true
             },
-            // thead
+            // thead 
             theads: {
                 type: Array,
                 required: true,
@@ -282,7 +282,7 @@
                     this.$alert('连接出错', 'e');
                 });
             },
-
+ 
             /**
             * 批量删除
             */
@@ -339,13 +339,13 @@
                 this.$tableList.setSlideList('slide-fade-right');
                 this.$tableList.setShowList(false);
             },
-
+ 
             /**
              * 关闭新增弹窗
              */
             closeNew () {
                 this.showNewPanel=false;
-            },
+            }, 
 
             /**
              * 每行操作按钮的点击事件回调

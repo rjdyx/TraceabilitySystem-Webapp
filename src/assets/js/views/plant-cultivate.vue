@@ -5,7 +5,7 @@
  * @author 苏锐佳
  * @date 2017/02/04
  * 
- */
+ */ 
 <template>
     <div id="cultivate">
         <table-manage
@@ -22,13 +22,13 @@
     </div>
 </template>
 <style lang="sass" scoped>
-
+ 
     @import "../../sass/function";
     @import "../../sass/_percent.scss";
-
+ 
 </style>
 <script>
-    
+     
     import {mapMutations} from 'vuex';
     import TableManage from '../components/public/table-manage.vue';
     import PopCultivate from '../components/plant-cultivate/pop-cultivate.vue';

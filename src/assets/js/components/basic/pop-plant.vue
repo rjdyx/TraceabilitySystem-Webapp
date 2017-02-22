@@ -103,7 +103,7 @@
                     <td class="input-pop" colspan="2"><input v-model="letItem.memo" type="text" id="plant_new_note" name="memo"></td>
                 </tr>
 
-                <tr>
+                    <tr>
                     <td colspan="3">
                         <div class="footer-r">
                             <a v-if="edit" href="javascript:void(0)">
@@ -272,7 +272,6 @@
 
                 // 获取选中的图片文件，并判断选中的图片数量是否合法
                 let file = event.target.files[0];
-
                 // 将pattern数组里的图片格式组装成"xxx|xxx|xxx"这样的格式，如："jpeg|png"
                 let regexParams = '';
                 for(let index = 0; index < this.pattern.length; index++) {

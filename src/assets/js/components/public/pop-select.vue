@@ -100,7 +100,6 @@
         //计算属性
         computed: {
             showMsg: {
-
                 get () {
                     if(this.items.length != 0) {
                         if(this.index == -1){
