@@ -27,17 +27,17 @@ class TableList {
         this.selectedLists = selectedLists
     }
 
-    pushSelectedLists(deleteList) {
+    pushSelectedLists(selectedList) {
         let protos = ['id', 'index', 'flag'];
         let result = protos.every(function(item, index) {
-            if(item in deleteList) {
+            if(item in selectedList) {
                 return true
             }else {
                 return false
             }
         })
         if (!result) console.error('传入的值必须是个包含id、index和flag这三个属性的对象')
-        this.selectedLists.push(deleteList)
+        this.selectedLists.push(selectedList)
     }
 
     spliceSelectedLists(index) {

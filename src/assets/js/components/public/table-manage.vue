@@ -18,7 +18,7 @@
  * 类型：Object
  * 是否必填：true
  * 默认值：null
- * 描述：此prop传入的是一个包含“新增/编辑弹窗”组件的对象，
+ * 描述：此prop传入的是一个包含“编辑模块”组件的对象，
  * 包含“新增/编辑弹窗”组件的属性名必须和_key完全一致；
  * 第一，如果每一列中的某个属性不是简单地显示字符串，可以给此prop对象添加新的属性，属性名与protos数组里的保持一致；
  * 例如：{planta: PopPlanta, area: AreaUnit}：
@@ -112,8 +112,6 @@
             :_key="_key"
             :component="component"
             :args="args"
-            :params="params"
-            :excInit="excInit"
             :theads="theads"
             :protos="protos"
             :widths="widths"
@@ -272,7 +270,7 @@
         },
         computed: {
             seleteComponent () {
-                return this.component.new ? this.component.new : this.component[_key]
+                return this.component.new ? this.component.new : this.component[this._key]
             }
         },
         components: {

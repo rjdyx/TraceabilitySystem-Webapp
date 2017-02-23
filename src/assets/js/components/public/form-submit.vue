@@ -148,7 +148,7 @@
           type="text" v-bind:id="item.divfor" :name="key" v-bind:placeholder="item.placeholder" disabled="disabled"></td>
       </tr>
       <!--input框无传值-->
-      <tr v-else="">
+      <tr v-else>
           <td class="label-tit"><label v-bind:for="item.divfor">{{item.label}}</label></td>
           <td class="input-pop" colspan="2"><input 
           v-model="letItem[key]" 

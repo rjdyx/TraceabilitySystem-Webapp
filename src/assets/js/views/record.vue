@@ -31,7 +31,7 @@
 		data() {
 			return {
 				key: 'record',
-				component: {open: {component: Hispic, next: false}},
+				component: {open: Hispic},
 				searchPlaceholder: '历史日期',
 				searchUrl: 'record',
 				theads: ['日期','天气','操作人'],

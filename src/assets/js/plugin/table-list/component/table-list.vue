@@ -28,6 +28,11 @@
  * 第二，如果想要自定义每一行的操作按钮，则可以给此prop添加open属性，
  * open属性的值为自定义组件
  * 
+ * @param  args 
+ * 类型：Object
+ * 是否必填：false
+ * 默认值：{edit: true}
+ * 描述：传递给编辑模块的参数
  * 
  * @param  theads 
  * 类型：Array
@@ -148,7 +153,7 @@
                                 <!-- open button -->
                                 <span v-if="cusButton && showOperate" class="align-c" name="open">
                                     <component
-                                        :is="component.open.component"
+                                        :is="component.open"
                                         :item="item"
                                     ></component>
                                 </span>
@@ -382,6 +387,8 @@
             selectedLists: function(val) {
                 if(this.selectedLists.length !== this.list.length) {
                     this.isAllCheck = false;
+                }else if(this.selectedLists.length !== 0) {
+                    this.isAllCheck = true;
                 }
             },
             // [api.invoke]: function(invoke) {
