@@ -107,5 +107,21 @@ App.vue作为根组件，整个SPA的页面跳转都在此组件进行，App.vue
 
 ---
 
+### 前端开发
+
+* element-ui和echarts是按需引入需要的组件，请在resources/assets/js/config目录下的echarts.js和element-ui.js按需引入
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
