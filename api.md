@@ -110,12 +110,28 @@ App.vue作为根组件，整个SPA的页面跳转都在此组件进行，App.vue
 ### 前端开发
 
 * element-ui和echarts是按需引入需要的组件，请在resources/assets/js/config目录下的echarts.js和element-ui.js按需引入
+* 开发阶段前端和后端进行交互时，请先配置根目录下的env.js里的app\_url为本地项目的映射地址，例如
 
+```
+app_url: 'http://www.szybigdata.com'
+```
 
+* 想要运行构建后的js文件，请修改根目录下的.env文件里的APP\_DEBUG为false
 
+```
+APP_DEBUG=false
+```
 
+* 想要改变语言环境请修改根目录下的env.js里的app\_lang，例如
 
+```
+app_lang: 'zh-CN'
+```
 
+> 前端国际化使用vue-i18n插件，docs：http://kazupon.github.io/vue-i18n/
+
+* 对http请求进行全局过滤操作，请在resources/assets/js/config目录下的http.js里进行
+* 注册全局的自定义vue组件，请在resources/assets/js/config目录下的init.js里进行
 
 
 
