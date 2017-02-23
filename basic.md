@@ -61,8 +61,6 @@ App.vue作为根组件，整个SPA的页面跳转都在此组件进行，App.vue
 
 而次顶层组件是以顶层组件作为父组件的，比如index.vue下面的basic.vue、dailylog.vue等且这些组件也写入routers.js里面的并作为index的子路由。
 
-
-
 #### src/assets/sass目录：
 
 | 目录名 | 说明 |
