@@ -128,12 +128,84 @@ APP_DEBUG=false
 app_lang: 'zh-CN'
 ```
 
-> 前端国际化使用vue-i18n插件，docs：http://kazupon.github.io/vue-i18n/
+> 前端国际化使用vue-i18n插件，docs：[http://kazupon.github.io/vue-i18n/](http://kazupon.github.io/vue-i18n/)
 
 * 对http请求进行全局过滤操作，请在resources/assets/js/config目录下的http.js里进行
+
+```
+// axios
+axios.interceptors.request.use(function (config) {
+    config.headers = Object.assign(config.headers,{'X-CSRF-TOKEN': Laravel.csrfToken});
+    return config;
+}, function (error) {
+    return Promise.reject(error);
+});
+
+axios.interceptors.response.use(function (response) {
+    return response;
+}, function (error) {
+    return Promise.reject(error);
+});
+```
+
 * 注册全局的自定义vue组件，请在resources/assets/js/config目录下的init.js里进行
 
+```
+// 注册全局组件
+Vue.component('passport-clients', require('components/passport/Clients.vue'));
+Vue.component('passport-authorized-clients', require('components/passport/AuthorizedClients.vue'));
+Vue.component('passport-personal-access-tokens', require('components/passport/PersonalAccessTokens.vue'));
 
+```
+
+* 自定义的sass文件和第三方js库的引入请在resources/assets/js/config目录下的require.js里进行
+
+```
+/**
+ * css库引入
+ */
+require('sass/index.scss');
+
+
+/**
+ * js库引入
+ */
+
+require('babel-polyfill'); // 解决手机端uc浏览器、qq浏览器和微信浏览器无法使用部分ES6语法
+require('animate.css'); // 动画css插件
+```
+
+* 
+---
+
+### 全局插件
+
+jquery、lodash、velocity-animate、axios、vue已配置成可全局调用，如需要新增全局插件，请在根目录下的webpack.config.js里的plugins里面进行：
+
+```
+// 定义全局引用
+new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+    'window.jQuery': 'jquery',
+    'window.$': 'jquery',
+
+    _: 'lodash',
+    'window._': 'lodash',
+
+    Velocity: 'velocity-animate',
+    'window.Velocity': 'velocity-animate',
+
+    axios: 'axios',
+    'window.axios': 'axios',
+
+    Vue: 'vue',
+    'window.Vue': 'vue',
+
+    echarts: 'echarts/lib/echarts',
+    'window.echarts': 'echarts/lib/echarts'
+})
+```
 
 
 
