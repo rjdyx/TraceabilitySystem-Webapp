@@ -75,7 +75,7 @@ App.vue作为根组件，整个SPA的页面跳转都在此组件进行，App.vue
 
 故App.vue的直接子组件都称为顶层组件，比如src/assets/js/views目录下的index.vue、404.vue和login.vue，即这些组件是写入routers.js里面的并作为顶层路由。
 
-而次顶层组件是以顶层组件作为父组件的，比如index.vue下面的basic.vue、dailylog.vue等且这些组件也写入routers.js里面的并作为index的子路由。
+而次顶层组件是以顶层组件作为父组件的，比如index.vue下面可能有basic.vue、dailylog.vue等组件，那么这些组件也写入routers.js里面的并作为index的子路由。
 
 #### resources/assets/sass目录：
 
@@ -84,8 +84,6 @@ App.vue作为根组件，整个SPA的页面跳转都在此组件进行，App.vue
 | function | 存放自定义function |
 | mixins | 存放自定义mixin |
 | public | 存放reset文件和项目公共的基础样式文件 |
-
-
 
 ---
 
