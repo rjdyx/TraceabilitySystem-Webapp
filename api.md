@@ -4,6 +4,16 @@
 
 ## 前端
 
+使用vue+vuex+vue-router+axios构建；
+
+使用饿了么基于vue的前端ui插件element-ui；
+
+使用echarts图标插件；
+
+> 为减少最终生成的js文件的体积，element-ui和echarts按需引用需要的组件
+
+---
+
 ### 安装
 
 master分支存放上线的正式版本；
@@ -85,7 +95,25 @@ App.vue作为根组件，整个SPA的页面跳转都在此组件进行，App.vue
 | mixins | 存放自定义mixin |
 | public | 存放reset文件和项目公共的基础样式文件 |
 
+#### 路径别名：
+
+| 别名 | 对应路径 | 说明 |
+| :--- | :--- | :--- |
+| projectRoot | / | 项目根目录 |
+| jsPath | resources/assets/js | js开发目录 |
+| sass | resources/assets/sass | sass开发目录 |
+| lang | resources/lang | 语音包目录 |
+| components | resources/assets/js/components | 组件目录 |
+
+
+
 ---
+
+
+
+
+
+
 
 
 
