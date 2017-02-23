@@ -237,7 +237,6 @@
                     this.$http.get(this.$adminUrl('spray/select_category?params='+this.letItem.category_id)).then((response)=>{
                         this.$set(this, 'medicamentIds', response.body);
                     }, (response)=>{
-
                     });
                 }
 

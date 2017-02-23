@@ -191,13 +191,12 @@
             }
         },
         methods: {
-
             /**
             * 获取相关种植区信息
             */
             getHarvesttion () {
-
                 this.$http.get(this.$adminUrl('cultivate/' + this.cultivateId + '/data')).then((response)=>{
+                    console.log(response)
                     this.$set(this, 'constItem', response.body);
                 }, (response)=>{
 

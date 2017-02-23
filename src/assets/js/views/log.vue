@@ -51,7 +51,7 @@
                         ></pop-log>
                     </td>
                 </tr>
-            </template>
+            </template> 
         </table>
 
 
@@ -62,7 +62,7 @@
                 url="dailylog/query"
                 :paginatorParams="params"
                 @result="updateList"
-            ></paginator> 
+            ></paginator>
         </div>
 
         <confirm

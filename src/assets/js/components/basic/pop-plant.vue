@@ -180,7 +180,7 @@
                         if(this.inputData['category']['data'][index]== this.letItem.category){
                             this.inputData['category']['index']=parseInt(index);
                         }
-                    }     
+                    } 
                 }
             },
             /**

@@ -51,6 +51,7 @@
         enter-active-class="animated slideInLeft"
         leave-active-class="animated slideOutLeft"
     >
+    <!-- transition-group下的子组件必须要有key属性 -->
         <div v-show="show" v-touchstart:initTouch="[self]" key="black" class="black-layer"></div>
         <div v-show="show" v-touchstart:initTouch="[self]" key="slider" class="slider-bar">
             <ul>
@@ -158,7 +159,6 @@
 </script>
 
 <style lang="sass" scoped>
-
     @import "../../../sass/function";
     
     .slider-bar {
@@ -203,7 +203,6 @@
 
             ul {
 
-
                 li {
                     width: 100%;
                     border-bottom: 1px solid #323232;
@@ -222,7 +221,6 @@
         }
 
         
-
         #bottom {
             position: absolute;
             bottom: 0;
@@ -243,7 +241,6 @@
         }
         
     }
-
     .black-layer {
         position:absolute;
         top: 0;

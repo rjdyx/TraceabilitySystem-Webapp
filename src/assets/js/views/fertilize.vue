@@ -17,7 +17,7 @@
             :theads="theads"
             :protos="protos"
             :widths="widths"
-        >
+        > 
         <router-link :to="{name:'cultivate-refer',params:{type: 'fertilize'}}" tag="button" slot="search" class="stl-btn" exact>新建</router-link>
         </table-manage> 
     </div>

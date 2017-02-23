@@ -11,7 +11,7 @@
  * 是否必填：false
  * 默认值：{}
  * 描述：批次信息对象
- * 
+ *   
  * @param  edit 
  * 类型：Boolean
  * 是否必填：false
@@ -39,7 +39,7 @@
  * 
  * 
  * 
- */
+ *   
 <template>
     <form @submit.prevent="validateBeforeSubmit">
         <form-submit

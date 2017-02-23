@@ -4,8 +4,8 @@
  * @description 
  * @author 苏锐佳
  * @date 2017/02/07
- * 
- */
+ *  
+ */ 
 <template>
     <div>
         <basic-model
@@ -20,7 +20,7 @@
 </style>
 
 <script>
-
+ 
     import {mapMutations} from 'vuex';
     import BasicModel from '../public/basic-model.vue';
     import PopFarm from './pop-farm.vue'

@@ -40,7 +40,7 @@
           @closeEdit="show=false"
         ></pop-cultivate>
       </div>
-      <!-- 确认模块 -->
+      <!-- 确认模块  -->
       <confirm
         :show="showConfirm"
         title="修改状态"
@@ -51,7 +51,7 @@
     </div>
     
 </template>
-
+  
 <script>
   import PopFarm from './pop-farm.vue'
   import PopFertilize from './pop-fertilize.vue'

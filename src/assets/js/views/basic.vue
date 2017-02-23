@@ -15,7 +15,7 @@
         ></basic-model>
     </div>
 </template>
-
+ 
 <style>
 </style>
 
@@ -81,7 +81,7 @@
                         theads: ['肥料类别', '肥料名称', '用途'],
                         protos: ['category_name', 'name', 'usage'],
                         widths: [24, 24, 25]
-                    },
+                    }, 
                     {
                         key: 'medicament',
                         component: {medicament: PopMedicament},
@@ -116,5 +116,5 @@
             PopExpert,
             ResearchField
         }
-    }
+    } 
 </script>

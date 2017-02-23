@@ -6,7 +6,7 @@
  * @date 2017/01/20
  * 
  */
-<template>
+<template> 
 	<div>
 		<table-manage
 			ref="TableManage"

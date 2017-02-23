@@ -15,8 +15,7 @@
  * @param  edit 
  * 类型：Boolean
  * 是否必填：false
- * 默认值：false
- * 描述：表明此组件是用于新增还是编辑，true表示编辑，false表示新增
+ * 默认值 
  * 
  * 
  * 
