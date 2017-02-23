@@ -155,7 +155,6 @@ axios.interceptors.response.use(function (response) {
 Vue.component('passport-clients', require('components/passport/Clients.vue'));
 Vue.component('passport-authorized-clients', require('components/passport/AuthorizedClients.vue'));
 Vue.component('passport-personal-access-tokens', require('components/passport/PersonalAccessTokens.vue'));
-
 ```
 
 * 自定义的sass文件和第三方js库的引入请在resources/assets/js/config目录下的require.js里进行
@@ -175,7 +174,6 @@ require('babel-polyfill'); // 解决手机端uc浏览器、qq浏览器和微信�
 require('animate.css'); // 动画css插件
 ```
 
-* 
 ---
 
 ### 全局插件
@@ -206,10 +204,6 @@ new webpack.ProvidePlugin({
     'window.echarts': 'echarts/lib/echarts'
 })
 ```
-
-
-
-
 
 
 
