@@ -167,7 +167,7 @@
         <td colspan="3">
             <div class="footer-r">
                 <a v-if="edit" href="#">
-                    <button @click="cancelEdit" type="button">
+                    <button @click="cancelAdd" type="button">
                         取消
                     </button>  
                 </a>
@@ -264,6 +264,7 @@ export default {
         this.$emit('closeEdit');
       },
       cancelAdd: function() {
+        console.log('form-submit');
         this.$emit('closeNew');
       },
       /**

@@ -64,23 +64,179 @@ module.exports =
 /******/ 	__webpack_require__.p = "/dist";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 142);
+/******/ 	return __webpack_require__(__webpack_require__.s = 248);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = require("vue");
+module.exports = require("vuex");
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = require("vuex");
+module.exports = require("vue");
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(79)
+
+/* template */
+var __vue_template__ = __webpack_require__(189)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(64)
+
+/* template */
+var __vue_template__ = __webpack_require__(196)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(44)
+
+/* template */
+var __vue_template__ = __webpack_require__(230)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-b4485032"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(49)
+
+/* template */
+var __vue_template__ = __webpack_require__(243)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-f773a7fe"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(56)
+
+/* template */
+var __vue_template__ = __webpack_require__(177)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-131b82ee"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10307,7 +10463,7 @@ return jQuery;
 
 
 /***/ }),
-/* 3 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -13834,7 +13990,7 @@ var install = function install(Vue) {
 ;
 
 /***/ }),
-/* 4 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -13846,7 +14002,228 @@ var __vue_styles__ = {}
 __vue_exports__ = __webpack_require__(31)
 
 /* template */
-var __vue_template__ = __webpack_require__(138)
+var __vue_template__ = __webpack_require__(214)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-734a7db7"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(43)
+
+/* template */
+var __vue_template__ = __webpack_require__(173)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-0650546d"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(53)
+
+/* template */
+var __vue_template__ = __webpack_require__(233)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-baa5306e"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(54)
+
+/* template */
+var __vue_template__ = __webpack_require__(234)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-c5bc7056"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(55)
+
+/* template */
+var __vue_template__ = __webpack_require__(212)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-711c9330"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(57)
+
+/* template */
+var __vue_template__ = __webpack_require__(226)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(59)
+
+/* template */
+var __vue_template__ = __webpack_require__(183)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-222f336a"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(63)
+
+/* template */
+var __vue_template__ = __webpack_require__(242)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13866,7 +14243,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 5 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -13875,10 +14252,40 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(32)
+__vue_exports__ = __webpack_require__(65)
 
 /* template */
-var __vue_template__ = __webpack_require__(113)
+var __vue_template__ = __webpack_require__(244)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-fa478820"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(69)
+
+/* template */
+var __vue_template__ = __webpack_require__(241)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13897,17 +14304,19 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 6 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
+/* styles */
+
 /* script */
-__vue_exports__ = __webpack_require__(35)
+__vue_exports__ = __webpack_require__(72)
 
 /* template */
-var __vue_template__ = __webpack_require__(137)
+var __vue_template__ = __webpack_require__(217)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13921,12 +14330,13 @@ if (typeof __vue_options__ === "function") {
 
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-755edde0"
 
 module.exports = __vue_exports__
 
 
 /***/ }),
-/* 7 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -13935,10 +14345,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(38)
+__vue_exports__ = __webpack_require__(73)
 
 /* template */
-var __vue_template__ = __webpack_require__(133)
+var __vue_template__ = __webpack_require__(235)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13958,7 +14368,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 8 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -13967,10 +14377,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(41)
+__vue_exports__ = __webpack_require__(77)
 
 /* template */
-var __vue_template__ = __webpack_require__(130)
+var __vue_template__ = __webpack_require__(229)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -13990,55 +14400,23 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(43)
-
-/* template */
-var __vue_template__ = __webpack_require__(118)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6cce69bd"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 10 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nprogress__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nprogress__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_nprogress___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_nprogress__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__route_routers_js__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__route_routers_js__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__ = __webpack_require__(247);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuex_router_sync___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vuex_router_sync__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vee_validate__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vee_validate__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_vee_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_vee_validate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lang_zh_CN_vee_validate_js__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lang_zh_CN_vee_validate_js__ = __webpack_require__(112);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__route_routers_js__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__vuex_index_js__["a"]; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return app; });
@@ -14065,7 +14443,7 @@ if (process.env.COUNT_ENV == 1) {
 	});
 }
 
-__webpack_require__(55);
+__webpack_require__(101);
 
 // 用vuex的store同步化router
 // 这会注册 `store.state.route`
@@ -14095,7 +14473,7 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MOD
 
 
 /***/ }),
-/* 11 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -14105,7 +14483,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 12 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14133,132 +14511,104 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 13 */
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pop_plantation_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pop_plantation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__pop_plantation_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+  name: 'CultivateOperate',
+  props: {
+    letItem: {
+      type: Object,
+      default: function _default() {
+        return null;
+      }
+    }
+  },
+  data: function data() {
+    return {
+      show: false,
+      isActive: false,
+      showVedio: false
+    };
+  },
+
+  computed: {
+    aHref: function aHref() {
+      if (!this.showVedio) {
+        return 'javascript:void(0)';
+      } else {
+        return 'https://open.ys7.com/view/h5/' + this.letItem.live_address;
+      }
+    }
+  },
+  components: {
+    PopPlantation: __WEBPACK_IMPORTED_MODULE_0__pop_plantation_vue___default.a
+  },
+  methods: {
+    edit: function edit() {
+      this.show = !this.show;
+      this.isActive = !this.isActive;
+    },
+    showVedioClick: function showVedioClick() {
+      if (this.letItem.live_address) {
+        this.showVedio = !this.showVedio;
+      } else {
+        this.$alert('请配置视频设备号');
+      }
+    }
+  }
+};
+
+/***/ }),
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -14366,38 +14716,78 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 'phone': '',
                 'memo': ''
             },
-            sex: ['男', '女'],
-            tableType: ['施肥', '病虫害', '检验检测', '农事'],
+            inputData: {
+                'table_type': {
+                    'label': '操作模块',
+                    'divfor': 'expert_table_type',
+                    'placeholder': '',
+                    'rules': 'max:255',
+                    'select': '2',
+                    'index': 0,
+                    'showVal': 'table_type',
+                    'data': ['施肥', '病虫害', '检验检测', '农事']
+                },
+                'expert_name': {
+                    'label': '专家名称',
+                    'divfor': 'expert_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'major': {
+                    'label': '研究领域',
+                    'divfor': 'expert_major',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'level': {
+                    'label': '级别',
+                    'divfor': 'expert_level',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'sex': {
+                    'label': '性别',
+                    'divfor': 'expert_sex',
+                    'placeholder': '',
+                    'rules': 'max:255',
+                    'select': '2',
+                    'index': 0,
+                    'showVal': 'sex',
+                    'data': ['男', '女']
+                },
+                'age': {
+                    'label': '年龄',
+                    'divfor': 'expert_new_age',
+                    'placeholder': '',
+                    'rules': 'decimal'
+                },
+                'unit': {
+                    'label': '所属单位',
+                    'divfor': 'expert_new_unit',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'phone': {
+                    'label': '联系方式',
+                    'divfor': 'expert_new_phone',
+                    'placeholder': '请输入11位手机号(固话用-隔开)',
+                    'rules': 'phone'
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'medicament_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: '',
             tableSet: ['fertilize', 'spray', 'detect', 'farming']
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaultTypeIndex: function defaultTypeIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.tableType) {
-                    if (this.tableSet[index] == this.letItem.table_type) {
-                        return index;
-                    }
-                }
-            }
-        },
-        defaultSexIndex: function defaultSexIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.sex) {
-                    if (this.sex[index] == this.letItem.sex) {
-                        return index;
-                    }
-                };
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
+        this.getIndex();
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
         var _iteratorError = undefined;
@@ -14425,7 +14815,24 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['table_type']['index'] = 0;
+                this.inputData['sex']['index'] = 0;
+            } else {
+                for (var index in this.inputData['table_type']['data']) {
+                    if (this.tableSet[index] == this.letItem.table_type) {
+                        this.inputData['table_type']['index'] = parseInt(index);
+                    }
+                }
+                for (var _index in this.inputData['sex']['data']) {
+                    if (this.inputData['sex']['data'][_index] == this.letItem.sex) {
+                        this.inputData['sex']['index'] = parseInt(_index);
+                    }
+                }
+            }
+        },
         /**
         * 提交表单
         */
@@ -14437,10 +14844,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 'field': 'expert_name',
                 'value': this.letItem.expert_name
             };
-            this.$unique(this, 'expert', params, 'letItem.expert_name').then(function () {
+            this.$unique(this.val, 'expert', params, 'letItem.expert_name').then(function () {
 
                 if (_this.edit) {
-                    _this.$update(_this, 'expert', _this.letItem).then(function (response) {
+                    _this.$update(_this.val, 'expert', _this.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
@@ -14475,7 +14882,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                         }
                     });
                 } else {
-                    _this.$storeL(_this, 'expert', _this.letItem).then(function (response) {
+                    _this.$storeL(_this.val, 'expert', _this.letItem).then(function (response) {
                         _this.letItem.id = response.body;
                         _this.$emit('callback', _this.letItem);
                         _this.$alert('新增成功', 's');
@@ -14492,55 +14899,56 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddExpert: function cancelAddExpert() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditExpert: function cancelEditExpert() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsgType: function getMsgType(msg) {
-            var _iteratorNormalCompletion3 = true;
-            var _didIteratorError3 = false;
-            var _iteratorError3 = undefined;
+        getMsgDataVal: function getMsgDataVal(msg) {
+            if (msg[0] == 'sex') {
+                this.letItem.sex = msg[1];
+            } else {
+                var _iteratorNormalCompletion3 = true;
+                var _didIteratorError3 = false;
+                var _iteratorError3 = undefined;
 
-            try {
-                for (var _iterator3 = Object.keys(this.tableType)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                    var index = _step3.value;
-
-                    if (this.tableType[index] == msg) {
-                        this.letItem.table_type = this.tableSet[index];
-                    }
-                }
-            } catch (err) {
-                _didIteratorError3 = true;
-                _iteratorError3 = err;
-            } finally {
                 try {
-                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                        _iterator3.return();
+                    for (var _iterator3 = Object.keys(this.inputData['table_type']['data'])[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                        var index = _step3.value;
+
+                        if (this.inputData['table_type']['data'][index] == msg[1]) {
+                            this.letItem.table_type = this.tableSet[index];
+                        }
                     }
+                } catch (err) {
+                    _didIteratorError3 = true;
+                    _iteratorError3 = err;
                 } finally {
-                    if (_didIteratorError3) {
-                        throw _iteratorError3;
+                    try {
+                        if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                            _iterator3.return();
+                        }
+                    } finally {
+                        if (_didIteratorError3) {
+                            throw _iteratorError3;
+                        }
                     }
                 }
             }
-        },
-        getMsgSex: function getMsgSex(msg) {
-            this.letItem.sex = msg;
         }
     },
     destroyed: function destroyed() {
@@ -14574,98 +14982,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 };
 
 /***/ }),
-/* 14 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -14770,25 +15091,65 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'phone': '',
                 'memo': ''
             },
-            categorys: []
+            inputData: {
+                'category_id': {
+                    'label': '肥料分类',
+                    'divfor': 'manure_category_id',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'category_id',
+                    'data': []
+                },
+                'name': {
+                    'label': '肥料名称',
+                    'divfor': 'manure_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'usage': {
+                    'label': '用途',
+                    'divfor': 'manure_usage',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'specification': {
+                    'label': '包装规格',
+                    'divfor': 'manure_new_specification',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'dealer': {
+                    'label': '经销商名称',
+                    'divfor': 'manure_new_dealer',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'origin': {
+                    'label': '产地',
+                    'divfor': 'manure_new_origin',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'phone': {
+                    'label': '联系方式',
+                    'divfor': 'manure_new_phone',
+                    'placeholder': '请输入11位手机号(固话用-隔开)',
+                    'rules': 'phone'
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'manure_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaultIndex: function defaultIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.categorys) {
-                    if (this.categorys[index].id == this.letItem.category_id) {
-                        return index;
-                    }
-                }
-                return -1;
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
         this.getAllManure();
         var _iteratorNormalCompletion = true;
@@ -14818,7 +15179,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['category_id']['index'] = 0;
+            } else {
+                for (var index in this.inputData['category_id']['data']) {
+                    if (this.inputData['category_id']['data'][index].id == this.letItem.category_id) {
+                        this.inputData['category_id']['index'] = parseInt(index);
+                    }
+                }
+            }
+        },
         /**
         * 获取所有肥料分类
         */
@@ -14826,7 +15198,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this = this;
 
             this.$http.get(this.$adminUrl('manure_category/query')).then(function (response) {
-                _this.$set(_this, 'categorys', response.body.manure_categorys.data);
+                _this.$set(_this.inputData['category_id'], 'data', response.body.manure_categorys.data);
+                _this.getIndex();
             }, function (response) {});
         },
 
@@ -14842,13 +15215,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'manure', params, 'letItem.name').then(function () {
+            this.$unique(this.val, 'manure', params, 'letItem.name').then(function () {
                 var _iteratorNormalCompletion2 = true;
                 var _didIteratorError2 = false;
                 var _iteratorError2 = undefined;
 
                 try {
-                    for (var _iterator2 = _this2.categorys[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                    for (var _iterator2 = _this2.inputData['category_id']['data'][Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                         var category = _step2.value;
 
                         if (category.id == _this2.letItem.category_id) {
@@ -14871,7 +15244,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }
 
                 if (_this2.edit) {
-                    _this2.$update(_this2, 'manure', _this2.letItem).then(function (response) {
+                    _this2.$update(_this2.val, 'manure', _this2.letItem).then(function (response) {
                         var _iteratorNormalCompletion3 = true;
                         var _didIteratorError3 = false;
                         var _iteratorError3 = undefined;
@@ -14906,7 +15279,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this2.$storeL(_this2, 'manure', _this2.letItem).then(function (response) {
+                    _this2.$storeL(_this2.val, 'manure', _this2.letItem).then(function (response) {
                         _this2.letItem.id = response.body;
                         _this2.$emit('callback', _this2.letItem);
                         _this2.$alert('新增成功', 's');
@@ -14923,27 +15296,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddManure: function cancelAddManure() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditManure: function cancelEditManure() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsg: function getMsg(msg) {
-            this.letItem.category_id = msg;
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.category_id = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -14977,113 +15350,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 15 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -15193,37 +15464,80 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'phone': '',
                 'memo': ''
             },
-            categorys: [],
-            toxicity: ['微毒', '低毒', '中毒', '高毒']
+            inputData: {
+                'category_id': {
+                    'label': '农药分类',
+                    'divfor': 'medicament_category_id',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'category_id',
+                    'data': []
+                },
+                'name': {
+                    'label': '农药名称',
+                    'divfor': 'medicament_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'usage': {
+                    'label': '用途',
+                    'divfor': 'medicament_usage',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'control_objects': {
+                    'label': '防治对象',
+                    'divfor': 'medicament_new_control_objects',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'toxicity_grade': {
+                    'label': '毒性等级',
+                    'divfor': 'medicament_toxicity_grade',
+                    'placeholder': '',
+                    'rules': 'max:255',
+                    'select': '2',
+                    'index': 0,
+                    'data': ['微毒', '低毒', '中毒', '高毒']
+                },
+                'specification': {
+                    'label': '包装规格',
+                    'divfor': 'medicament_new_specification',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'dealer': {
+                    'label': '经销商名称',
+                    'divfor': 'medicament_new_dealer',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'origin': {
+                    'label': '产地',
+                    'divfor': 'medicament_new_origin',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'phone': {
+                    'label': '联系方式',
+                    'divfor': 'medicament_new_phone',
+                    'placeholder': '请输入11位手机号(固话用-隔开)',
+                    'rules': 'phone'
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'medicament_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaulCatIndex: function defaulCatIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.categorys) {
-                    if (this.categorys[index].id == this.letItem.category_id) {
-                        return index;
-                    }
-                }
-            }
-        },
-        defaultToxIndex: function defaultToxIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.toxicity) {
-                    if (this.toxicity[index] == this.letItem.toxicity_grade) {
-                        //console.log(this.letItem.toxicity_grade);
-                        return index;
-                    }
-                }
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
         this.getAllPlantation();
         var _iteratorNormalCompletion = true;
@@ -15253,7 +15567,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['category_id']['index'] = 0;
+                this.inputData['toxicity_grade']['index'] = 0;
+            } else {
+                for (var index in this.inputData['category_id']['data']) {
+                    if (this.inputData['category_id']['data'][index].id == this.letItem.category_id) {
+                        this.inputData['category_id']['index'] = parseInt(index);
+                    }
+                }
+                for (var _index in this.inputData['toxicity_grade']['data']) {
+                    if (this.inputData['toxicity_grade']['data'][_index] == this.letItem.toxicity_grade) {
+                        this.inputData['toxicity_grade']['index'] = parseInt(_index);
+                    }
+                }
+            }
+        },
         /**
         * 获取所有农药分类
         */
@@ -15261,7 +15592,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this = this;
 
             this.$http.get(this.$adminUrl('medicament_category/query')).then(function (response) {
-                _this.$set(_this, 'categorys', response.body.medicament_categorys.data);
+                _this.$set(_this.inputData['category_id'], 'data', response.body.medicament_categorys.data);
+                _this.getIndex();
             }, function (response) {});
         },
 
@@ -15277,13 +15609,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'medicament', params, 'letItem.name').then(function () {
+            this.$unique(this.val, 'medicament', params, 'letItem.name').then(function () {
                 var _iteratorNormalCompletion2 = true;
                 var _didIteratorError2 = false;
                 var _iteratorError2 = undefined;
 
                 try {
-                    for (var _iterator2 = _this2.categorys[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                    for (var _iterator2 = _this2.inputData['category_id']['data'][Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                         var category = _step2.value;
 
                         if (category.id == _this2.letItem.category_id) {
@@ -15306,7 +15638,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }
 
                 if (_this2.edit) {
-                    _this2.$update(_this2, 'medicament', _this2.letItem).then(function (response) {
+                    _this2.$update(_this2.val, 'medicament', _this2.letItem).then(function (response) {
                         var _iteratorNormalCompletion3 = true;
                         var _didIteratorError3 = false;
                         var _iteratorError3 = undefined;
@@ -15341,7 +15673,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this2.$storeL(_this2, 'medicament', _this2.letItem).then(function (response) {
+                    _this2.$storeL(_this2.val, 'medicament', _this2.letItem).then(function (response) {
                         _this2.letItem.id = response.body;
                         _this2.$emit('callback', _this2.letItem);
                         _this2.$alert('新增成功', 's');
@@ -15358,30 +15690,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddMedicament: function cancelAddMedicament() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditMedicament: function cancelEditMedicament() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsgId: function getMsgId(msg) {
-            this.letItem.category_id = msg;
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.category_id = msg[1];
         },
-        getMsgGrade: function getMsgGrade(msg) {
-            this.letItem.toxicity_grade = msg;
+        getMsgDataVal: function getMsgDataVal(msg) {
+            this.letItem.toxicity_grade = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -15415,112 +15747,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 16 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -15622,33 +15853,56 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'description': '',
                 'memo': ''
             },
-            // 图片格式
-            pattern: {
-                type: Array,
-                default: function _default() {
-                    return ['jpeg', 'png'];
+            inputData: {
+                'file_name': {
+                    'label': '果蔬图片',
+                    'file_name': 'file_name',
+                    'pic': true,
+                    'image': '',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'category': {
+                    'label': '果蔬类别',
+                    'divfor': 'plant_categroy_select',
+                    'placeholder': '必填',
+                    'rules': 'required',
+                    'select': '2',
+                    'index': 0,
+                    'data': ['蔬菜类', '水果类']
+                },
+                'name': {
+                    'label': '果蔬名称',
+                    'divfor': 'plant_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'growth_cycle': {
+                    'label': '生长周期',
+                    'divfor': 'plant_new_growth_cycle',
+                    'placeholder': '必填，单位（天）',
+                    'rules': 'required|decimal:2'
+                },
+                'description': {
+                    'label': '特征描述',
+                    'divfor': 'plant_new_description',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'plant_new_note',
+                    'placeholder': '',
+                    'rules': ''
                 }
             },
-            image: 'upload.png',
-            categorys: ['蔬菜类', '水果类']
+            val: ''
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaultIndex: function defaultIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.categorys) {
-                    if (this.categorys[index] == this.letItem.category) {
-                        return index;
-                    }
-                }
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
+        this.getIndex();
         // 初始化tmp，同时过滤掉plant里面不需要的属性
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
@@ -15687,95 +15941,43 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
-        /**
-        * 触发input[type="file"]的click事件来选择图片
-        * @param  {object} event
-        */
-        selectPic: function selectPic(event) {
-
-            // 取出空格
-            var obj = event.target.parentNode.nextSibling;
-            if (obj.tagName != 'INPUT') {
-                obj = obj.nextSibling;
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['category']['index'] = 0;
+            } else {
+                for (var index in this.inputData['category']['data']) {
+                    if (this.inputData['category']['data'][index] == this.letItem.category) {
+                        this.inputData['category']['index'] = parseInt(index);
+                    }
+                }
             }
-
-            if (obj.tagName != 'INPUT') {
-                obj = event.target.nextSibling.nextSibling;
-            }
-
-            // 触发input的click事件
-            obj.click();
         },
-
-
-        /**
-        *  获取input[type="file"]里的图片，预览到页面上
-        */
-        previewPic: function previewPic(srcPic, event) {
-            var _this = this;
-
-            // 获取选中的图片文件，并判断选中的图片数量是否合法
-            var file = event.target.files[0];
-
-            // 将pattern数组里的图片格式组装成"xxx|xxx|xxx"这样的格式，如："jpeg|png"
-            var regexParams = '';
-            for (var index = 0; index < this.pattern.length; index++) {
-                regexParams += this.pattern[index] + (index == this.pattern.length - 1 ? '' : '|');
-            }
-            // 将组装后的图片格式字符串传给正则表达式构造器，最后生成如/\/(?:jpeg|png)/i这样的正则表达式
-            var regex = new RegExp('\/(?:' + regexParams + ')', 'i');
-
-            // 过滤图片格式，如果出现格式不合法的，则取消此图片的上传操作
-            if (!regex.test(file.type)) {
-                alert("请选择格式为 " + this.pattern + " 的图片");
-                return;
-            }
-
-            // 开始读取选中的图片，添加预览到页面
-            var reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onload = function (e) {
-                _this.letItem.image = e.target.result;
-                _this.letItem.file_name = file;
-            };
-        },
-
-
-        /**
-         * 删除图片
-         */
-        deletePic: function deletePic() {
-            this.letItem.image = 'upload.png';
-            this.letItem.file_name = '';
-        },
-
-
         /**
         * 提交表单
         */
         validateBeforeSubmit: function validateBeforeSubmit() {
-            var _this2 = this;
+            var _this = this;
 
             var params = {
                 'id': this.letItem.id,
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'plant', params, 'letItem.name').then(function () {
-                if (_this2.edit) {
-                    if (_this2.letItem.file_name != null) {
 
+            this.$unique(this.val, 'plant', params, 'letItem.name').then(function () {
+                if (_this.edit) {
+                    if (_this.letItem.file_name != null) {
                         var form = new FormData();
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
 
                         try {
-                            for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                                 var key = _step2.value;
 
-                                form.append(key, _this2.letItem[key]);
+                                form.append(key, _this.letItem[key]);
                             }
                         } catch (err) {
                             _didIteratorError2 = true;
@@ -15792,16 +15994,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                             }
                         }
 
-                        _this2.$update(_this2, 'plant', form, true).then(function (response) {
+                        _this.$update(_this.val, 'plant', form, true).then(function (response) {
                             var _iteratorNormalCompletion3 = true;
                             var _didIteratorError3 = false;
                             var _iteratorError3 = undefined;
 
                             try {
-                                for (var _iterator3 = Object.keys(_this2.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                                for (var _iterator3 = Object.keys(_this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
                                     var key = _step3.value;
 
-                                    _this2.tmp[key] = _this2.letItem[key];
+                                    _this.tmp[key] = _this.letItem[key];
                                 }
                             } catch (err) {
                                 _didIteratorError3 = true;
@@ -15818,24 +16020,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                                 }
                             }
 
-                            _this2.$alert('修改成功', 's');
+                            _this.$alert('修改成功', 's');
                         }, function (response) {
-                            _this2.$alert('连接出错', 'e');
+                            _this.$alert('连接出错', 'e');
                         });
                     } else {
 
-                        _this2.letItem.image = 'upload.png';
-                        _this2.$update(_this2, 'plant', _this2.letItem).then(function (response) {
+                        _this.letItem.image = 'upload.png';
+                        _this.$update(_this.val, 'plant', _this.letItem).then(function (response) {
                             var _iteratorNormalCompletion4 = true;
                             var _didIteratorError4 = false;
                             var _iteratorError4 = undefined;
 
                             try {
 
-                                for (var _iterator4 = Object.keys(_this2.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                                for (var _iterator4 = Object.keys(_this.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
                                     var _key = _step4.value;
 
-                                    _this2.tmp[_key] = _this2.letItem[_key];
+                                    _this.tmp[_key] = _this.letItem[_key];
                                 }
                             } catch (err) {
                                 _didIteratorError4 = true;
@@ -15852,10 +16054,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                                 }
                             }
 
-                            _this2.$alert('修改成功', 's');
+                            _this.$alert('修改成功', 's');
                         }, function (response) {
                             if (response != false) {
-                                _this2.$alert('连接出错', 'e');
+                                _this.$alert('连接出错', 'e');
                             } else {
                                 return false;
                             }
@@ -15869,10 +16071,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     var _iteratorError5 = undefined;
 
                     try {
-                        for (var _iterator5 = Object.keys(_this2.letItem)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                        for (var _iterator5 = Object.keys(_this.letItem)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
                             var _key2 = _step5.value;
 
-                            _form.append(_key2, _this2.letItem[_key2]);
+                            _form.append(_key2, _this.letItem[_key2]);
                         }
                     } catch (err) {
                         _didIteratorError5 = true;
@@ -15889,17 +16091,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     }
 
-                    if (_this2.letItem.file_name == null) {
-                        _this2.letItem.image = 'upload.png';
+                    if (_this.letItem.file_name == null) {
+                        _this.letItem.image = 'upload.png';
                     }
 
-                    _this2.$storeL(_this2, 'plant', _form, true).then(function (response) {
-                        _this2.letItem.id = response.body;
-                        _this2.$emit('callback', _this2.letItem);
-                        _this2.$alert('新增成功', 's');
+                    _this.$storeL(_this.val, 'plant', _form, true).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
                     }, function (response) {
                         if (response != false) {
-                            _this2.$alert('连接出错', 'e');
+                            _this.$alert('连接出错', 'e');
                         } else {
                             return false;
                         }
@@ -15911,26 +16113,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
 
         /**
+        * 获取图片路径
+        */
+        getPic: function getPic(val) {
+            this.letItem.file_name = val;
+        },
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
         * 隐藏新增模块
         */
-        cancelAddPlantation: function cancelAddPlantation() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditPlantation: function cancelEditPlantation() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsg: function getMsg(msg) {
-            this.letItem.category = msg;
+        getMsgDataVal: function getMsgDataVal(msg) {
+            this.letItem.category = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -15964,107 +16172,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 17 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -16157,7 +16269,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-            area_unit: ['亩', '平方米', '公顷'],
             tmp: {
                 'pid': 0,
                 'id': '',
@@ -16169,35 +16280,63 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'director': '',
                 'memo': ''
             },
-            plantations: []
+            inputData: {
+                'pid': {
+                    'label': '种植场名称',
+                    'divfor': 'plantation_fullName',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'plantation_name',
+                    'data': []
+                },
+                'name': {
+                    'label': '种植区名称',
+                    'divfor': 'planta_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'area': {
+                    'label': '种植面积',
+                    'divfor': 'planta_new_area',
+                    'placeholder': '请填写数字(必填)',
+                    'rules': 'required|decimal:2',
+                    'select': '3',
+                    'index': 0,
+                    'unit': 'area_unit',
+                    'data': ['亩', '平方米', '公顷']
+                },
+                'phone': {
+                    'label': '详细电话',
+                    'divfor': 'planta_new_phone',
+                    'placeholder': '请输入11位手机号(固话用-隔开)',
+                    'rules': 'phone'
+                },
+                'address': {
+                    'label': '详细地址',
+                    'divfor': 'plantation_new_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'director': {
+                    'label': '负责人',
+                    'divfor': 'planta_new_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'planta_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaultUnitIndex: function defaultUnitIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.area_unit) {
-                    if (this.area_unit[index] == this.letItem.area_unit) {
-                        return index;
-                    }
-                }
-            }
-        },
-        defaultPlaIndex: function defaultPlaIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.plantations) {
-                    if (this.plantations[index].id == this.letItem.pid) {
-                        return index;
-                    }
-                }
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
         this.getAllPlantation();
         var _iteratorNormalCompletion = true;
@@ -16227,7 +16366,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['pid']['index'] = 0;
+                this.inputData['area']['index'] = 0;
+            } else {
+                for (var index in this.inputData['pid']['data']) {
+                    if (this.inputData['pid']['data'][index].id == this.letItem.pid) {
+                        this.inputData['pid']['index'] = parseInt(index);
+                    }
+                }
+                for (var _index in this.inputData['area']['data']) {
+                    if (this.inputData['area']['data'][_index] == this.letItem.area_unit) {
+                        this.inputData['area']['index'] = parseInt(_index);
+                    }
+                }
+            }
+        },
         /**
         * 获取所有种植场
         */
@@ -16235,7 +16391,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this = this;
 
             this.$http.get(this.$adminUrl('planta/create')).then(function (response) {
-                _this.$set(_this, 'plantations', response.body);
+                _this.$set(_this.inputData['pid'], 'data', response.body);
+                _this.getIndex();
             }, function (response) {});
         },
 
@@ -16251,9 +16408,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'planta', params, 'letItem.name').then(function () {
+            this.$unique(this.val, 'planta', params, 'letItem.name').then(function () {
                 if (_this2.edit) {
-                    _this2.$update(_this2, 'planta', _this2.letItem).then(function (response) {
+                    _this2.$update(_this2.val, 'planta', _this2.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
@@ -16288,7 +16445,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this2.$storeL(_this2, 'planta', _this2.letItem).then(function (response) {
+                    _this2.$storeL(_this2.val, 'planta', _this2.letItem).then(function (response) {
                         _this2.letItem.id = response.body;
                         _this2.$emit('callback', _this2.letItem);
                         _this2.$alert('新增成功', 's');
@@ -16305,30 +16462,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddPlanta: function cancelAddPlanta() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditPlanta: function cancelEditPlanta() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsgPid: function getMsgPid(msg) {
-            this.letItem.pid = msg;
+        getMsg: function getMsg(msg) {
+            this.letItem.area_unit = msg[1];
         },
-        getMsgUnit: function getMsgUnit(msg) {
-            this.letItem.area_unit = msg;
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.pid = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -16362,92 +16519,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 18 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -16538,8 +16614,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-            // 单位
-            area_unit: ['亩', '平方米', '公顷'],
             // 作为编辑组件时，用于临时备份父组件传递过来的数据，
             // 以便在修改了数据但不保存时可以复原数据
             tmp: {
@@ -16551,25 +16625,62 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'address': '',
                 'director': '',
                 'memo': ''
-            }
+            },
+            inputData: {
+                'name': {
+                    'label': '种植场名称',
+                    'divfor': 'plantation_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'area': {
+                    'label': '种植面积',
+                    'divfor': 'plantation_new_area',
+                    'placeholder': '请填写数字(必填)',
+                    'rules': 'required|decimal:2',
+                    'select': '3',
+                    'index': 0,
+                    'unit': 'area_unit',
+                    'data': ['亩', '平方米', '公顷']
+                },
+                'phone': {
+                    'label': '详细电话',
+                    'divfor': 'plantation_new_phone',
+                    'placeholder': '',
+                    'rules': 'phone'
+                },
+                'address': {
+                    'label': '详细地址',
+                    'divfor': 'plantation_new_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'director': {
+                    'label': '负责人',
+                    'divfor': 'plantation_new_principal',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'live_address': {
+                    'label': '视频检测设备号',
+                    'divfor': 'live_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'plantation_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaultIndex: function defaultIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.area_unit) {
-                    if (this.area_unit[index] == this.letItem.area_unit) {
-                        return index;
-                    }
-                }
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
+        this.getIndex();
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
         var _iteratorError = undefined;
@@ -16597,7 +16708,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['area']['index'] = 0;
+            } else {
+                for (var index in this.inputData['area']['data']) {
+                    if (this.inputData['area']['data'][index] == this.letItem.area_unit) {
+                        this.inputData['area']['index'] = parseInt(index);
+                    }
+                }
+            }
+        },
         /**
         * 提交表单
         */
@@ -16609,7 +16731,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'plantation', params, 'letItem.name').then(function () {
+            this.$unique(this.val, 'plantation', params, 'letItem.name').then(function () {
                 if (_this.edit) {
                     _this.$update(_this, 'plantation', _this.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
@@ -16646,7 +16768,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this.$storeL(_this, 'plantation', _this.letItem).then(function (response) {
+                    _this.$storeL(_this.val, 'plantation', _this.letItem).then(function (response) {
                         _this.letItem.id = response.body;
                         _this.$emit('callback', _this.letItem);
                         _this.$alert('新增成功', 's');
@@ -16663,27 +16785,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddPlantation: function cancelAddPlantation() {
+        cancelAdd: function cancelAdd() {
+            console.log('pop-plantation');
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditPlantation: function cancelEditPlantation() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
         /**
         * CallBack函数,执行回调函数 
         */
         getMsg: function getMsg(msg) {
-            this.letItem.area_unit = msg;
+            this.letItem.area_unit = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -16717,7 +16840,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 19 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16771,7 +16894,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 20 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16828,7 +16951,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 21 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16887,7 +17010,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 22 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16942,72 +17065,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 23 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -17105,6 +17167,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 return {
                     'id': '',
                     'image': '',
+                    'file_name': null,
                     'name': '',
                     'ear': '',
                     'desctiption': '',
@@ -17123,36 +17186,51 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             tmp: {
                 'id': '',
                 'image': '',
+                'file_name': null,
                 'name': '',
                 'ear': '',
                 'desctiption': '',
                 'memo': ''
             },
-            // 图片格式
-            pattern: {
-                type: Array,
-                default: function _default() {
-                    return ['jpeg', 'png'];
+            inputData: {
+                'file_name': {
+                    'label': '畜禽图片',
+                    'file_name': 'file_name',
+                    'pic': true,
+                    'image': '',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'name': {
+                    'label': '畜禽名称',
+                    'divfor': 'beast_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'desctiption': {
+                    'label': '品种描述',
+                    'divfor': 'beast_new_desctiption',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'ear': {
+                    'label': 'RFID位置',
+                    'divfor': 'beast_new_ear',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'beast_new_note',
+                    'placeholder': '',
+                    'rules': ''
                 }
             },
-            image: 'upload.png'
+            val: ''
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaultIndex: function defaultIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.categorys) {
-                    if (this.categorys[index] == this.letItem.category) {
-                        return index;
-                    }
-                }
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
         // 初始化tmp，同时过滤掉beast里面不需要的属性
         var _iteratorNormalCompletion = true;
@@ -17192,84 +17270,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
-        /**
-        * 触发input[type="file"]的click事件来选择图片
-        * @param  {object} event
-        */
-        selectPic: function selectPic(event) {
-
-            // 取出空格
-            var obj = event.target.parentNode.nextSibling;
-            if (obj.tagName != 'INPUT') {
-                obj = obj.nextSibling;
-            }
-
-            if (obj.tagName != 'INPUT') {
-                obj = event.target.nextSibling.nextSibling;
-            }
-
-            // 触发input的click事件
-            obj.click();
-        },
-
-
-        /**
-        *  获取input[type="file"]里的图片，预览到页面上
-        */
-        previewPic: function previewPic(srcPic, event) {
-            var _this = this;
-
-            // 获取选中的图片文件，并判断选中的图片数量是否合法
-            var file = event.target.files[0];
-
-            // 将pattern数组里的图片格式组装成"xxx|xxx|xxx"这样的格式，如："jpeg|png"
-            var regexParams = '';
-            for (var index = 0; index < this.pattern.length; index++) {
-                regexParams += this.pattern[index] + (index == this.pattern.length - 1 ? '' : '|');
-            }
-            // 将组装后的图片格式字符串传给正则表达式构造器，最后生成如/\/(?:jpeg|png)/i这样的正则表达式
-            var regex = new RegExp('\/(?:' + regexParams + ')', 'i');
-
-            // 过滤图片格式，如果出现格式不合法的，则取消此图片的上传操作
-            if (!regex.test(file.type)) {
-                alert("请选择格式为 " + this.pattern + " 的图片");
-                return;
-            }
-
-            // 开始读取选中的图片，添加预览到页面
-            var reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onload = function (e) {
-                _this.letItem.image = e.target.result;
-                _this.letItem.file_name = file;
-            };
-        },
-
-
-        /**
-         * 删除图片
-         */
-        deletePic: function deletePic() {
-            this.letItem.image = 'upload.png';
-            this.letItem.file_name = '';
-        },
-
-
         /**
         * 提交表单
         */
         validateBeforeSubmit: function validateBeforeSubmit() {
-            var _this2 = this;
+            var _this = this;
 
             var params = {
                 'id': this.letItem.id,
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'beast', params, 'letItem.name').then(function () {
-                if (_this2.edit) {
-                    if (_this2.letItem.file_name != null) {
+            this.$unique(this.val, 'beast', params, 'letItem.name').then(function () {
+                if (_this.edit) {
+                    if (_this.letItem.file_name != null) {
 
                         var form = new FormData();
                         var _iteratorNormalCompletion2 = true;
@@ -17277,10 +17291,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         var _iteratorError2 = undefined;
 
                         try {
-                            for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                                 var key = _step2.value;
 
-                                form.append(key, _this2.letItem[key]);
+                                form.append(key, _this.letItem[key]);
                             }
                         } catch (err) {
                             _didIteratorError2 = true;
@@ -17297,16 +17311,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                             }
                         }
 
-                        _this2.$update(_this2, 'beast', form, true).then(function (response) {
+                        _this.$update(_this.val, 'beast', form, true).then(function (response) {
                             var _iteratorNormalCompletion3 = true;
                             var _didIteratorError3 = false;
                             var _iteratorError3 = undefined;
 
                             try {
-                                for (var _iterator3 = Object.keys(_this2.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                                for (var _iterator3 = Object.keys(_this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
                                     var key = _step3.value;
 
-                                    _this2.tmp[key] = _this2.letItem[key];
+                                    _this.tmp[key] = _this.letItem[key];
                                 }
                             } catch (err) {
                                 _didIteratorError3 = true;
@@ -17323,24 +17337,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                                 }
                             }
 
-                            _this2.$alert('修改成功', 's');
+                            _this.$alert('修改成功', 's');
                         }, function (response) {
-                            _this2.$alert('连接出错', 'e');
+                            _this.$alert('连接出错', 'e');
                         });
                     } else {
 
-                        _this2.letItem.image = 'upload.png';
-                        _this2.$update(_this2, 'beast', _this2.letItem).then(function (response) {
+                        _this.letItem.image = 'upload.png';
+                        _this.$update(_this.val, 'beast', _this.letItem).then(function (response) {
                             var _iteratorNormalCompletion4 = true;
                             var _didIteratorError4 = false;
                             var _iteratorError4 = undefined;
 
                             try {
 
-                                for (var _iterator4 = Object.keys(_this2.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                                for (var _iterator4 = Object.keys(_this.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
                                     var _key = _step4.value;
 
-                                    _this2.tmp[_key] = _this2.letItem[_key];
+                                    _this.tmp[_key] = _this.letItem[_key];
                                 }
                             } catch (err) {
                                 _didIteratorError4 = true;
@@ -17357,10 +17371,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                                 }
                             }
 
-                            _this2.$alert('修改成功', 's');
+                            _this.$alert('修改成功', 's');
                         }, function (response) {
                             if (response != false) {
-                                _this2.$alert('连接出错', 'e');
+                                _this.$alert('连接出错', 'e');
                             } else {
                                 return false;
                             }
@@ -17374,10 +17388,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     var _iteratorError5 = undefined;
 
                     try {
-                        for (var _iterator5 = Object.keys(_this2.letItem)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                        for (var _iterator5 = Object.keys(_this.letItem)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
                             var _key2 = _step5.value;
 
-                            _form.append(_key2, _this2.letItem[_key2]);
+                            _form.append(_key2, _this.letItem[_key2]);
                         }
                     } catch (err) {
                         _didIteratorError5 = true;
@@ -17394,17 +17408,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     }
 
-                    if (_this2.letItem.file_name == null) {
-                        _this2.letItem.image = 'upload.png';
+                    if (_this.letItem.file_name == null) {
+                        _this.letItem.image = 'upload.png';
                     }
 
-                    _this2.$storeL(_this2, 'beast', _form, true).then(function (response) {
-                        _this2.letItem.id = response.body;
-                        _this2.$emit('callback', _this2.letItem);
-                        _this2.$alert('新增成功', 's');
+                    _this.$storeL(_this.val, 'beast', _form, true).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
                     }, function (response) {
                         if (response != false) {
-                            _this2.$alert('连接出错', 'e');
+                            _this.$alert('连接出错', 'e');
                         } else {
                             return false;
                         }
@@ -17416,26 +17430,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
 
         /**
+        * 获取图片路径
+        */
+        getPic: function getPic(val) {
+            this.letItem.file_name = val;
+        },
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
         * 隐藏新增模块
         */
-        cancelAddbeastation: function cancelAddbeastation() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditbeastation: function cancelEditbeastation() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
-        },
-
-        /**
-        * CallBack函数,执行回调函数 
-        */
-        getMsg: function getMsg(msg) {
-            this.letItem.category = msg;
         }
     },
     destroyed: function destroyed() {
@@ -17469,103 +17483,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 24 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -17670,24 +17592,67 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'phone': '',
                 'memo': ''
             },
-            categorys: [{ id: 1, name: '疾病防治药' }, { id: 2, name: '传染病防治药' }, { id: 3, name: '寄生虫病防治药' }, { id: 4, name: '促生长药' }, { id: 5, name: '其他类' }]
+            inputData: {
+                'drug_type': {
+                    'label': '兽药类别',
+                    'divfor': 'drug_new_select',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'drug_type',
+                    'data': [{ id: 1, name: '疾病防治药' }, { id: 2, name: '传染病防治药' }, { id: 3, name: '寄生虫病防治药' }, { id: 4, name: '促生长药' }, { id: 5, name: '其他类' }]
+                },
+                'name': {
+                    'label': '兽药名称',
+                    'divfor': 'drug_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'use': {
+                    'label': '用途',
+                    'divfor': 'drug_new_use',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'specification': {
+                    'label': '包装规格',
+                    'divfor': 'drug_new_specification',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'vender_name': {
+                    'label': '生产厂家名称',
+                    'divfor': 'drug_new_vender_name',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'address': {
+                    'label': '产地',
+                    'divfor': 'drug_new_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'phone': {
+                    'label': '联系方式',
+                    'divfor': 'drug_new_phone',
+                    'placeholder': '请输入11位手机号(固话用-隔开)',
+                    'rules': 'phone'
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'drug_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
 
-    computed: {
-        defaultdrugIndex: function defaultdrugIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.categorys) {
-                    if (this.categorys[index].id == this.letItem.drug_type) {
-                        return index;
-                    }
-                }
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
+        this.getIndex();
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
         var _iteratorError = undefined;
@@ -17715,7 +17680,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['drug_type']['index'] = 0;
+            } else {
+                for (var index in this.inputData['drug_type']['data']) {
+                    if (this.inputData['drug_type']['data'][index].id == this.letItem.drug_type) {
+                        this.inputData['drug_type']['index'] = parseInt(index);
+                    }
+                }
+            }
+        },
         /**
         * 提交表单
         */
@@ -17727,9 +17703,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'drug', params, 'letItem.name').then(function () {
+            this.$unique(this.val, 'drug', params, 'letItem.name').then(function () {
                 if (_this.edit) {
-                    _this.$update(_this, 'drug', _this.letItem).then(function (response) {
+                    _this.$update(_this.val, 'drug', _this.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
@@ -17764,7 +17740,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this.$storeL(_this, 'drug', _this.letItem).then(function (response) {
+                    _this.$storeL(_this.val, 'drug', _this.letItem).then(function (response) {
                         _this.letItem.id = response.body;
                         _this.$emit('callback', _this.letItem);
                         _this.$alert('新增成功', 's');
@@ -17781,28 +17757,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAdddrug: function cancelAdddrug() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditdrug: function cancelEditdrug() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsgPid: function getMsgPid(msg) {
-            this.letItem.drug_type = msg;
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.drug_type = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -17836,130 +17811,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 25 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -18067,38 +17923,78 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'phone': '',
                 'memo': ''
             },
-            sex: ['男', '女'],
-            tableType: ['饲料使用', '畜禽病疫', '畜禽检疫', '畜禽圈舍'],
+            inputData: {
+                'table_type': {
+                    'label': '操作模块',
+                    'divfor': 'expert_table_type',
+                    'placeholder': '',
+                    'rules': 'max:255',
+                    'select': '2',
+                    'index': 0,
+                    'showVal': 'table_type',
+                    'data': ['饲料使用', '畜禽病疫', '畜禽检疫', '畜禽圈舍']
+                },
+                'expert_name': {
+                    'label': '专家名称',
+                    'divfor': 'expert_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'major': {
+                    'label': '研究领域',
+                    'divfor': 'expert_major',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'level': {
+                    'label': '级别',
+                    'divfor': 'expert_level',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'sex': {
+                    'label': '性别',
+                    'divfor': 'expert_sex',
+                    'placeholder': '',
+                    'rules': 'max:255',
+                    'select': '2',
+                    'index': 0,
+                    'showVal': 'sex',
+                    'data': ['男', '女']
+                },
+                'age': {
+                    'label': '年龄',
+                    'divfor': 'expert_new_age',
+                    'placeholder': '',
+                    'rules': 'decimal'
+                },
+                'unit': {
+                    'label': '所属单位',
+                    'divfor': 'expert_new_unit',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'phone': {
+                    'label': '联系方式',
+                    'divfor': 'expert_new_phone',
+                    'placeholder': '请输入11位手机号(固话用-隔开)',
+                    'rules': 'phone'
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'medicament_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: '',
             tableSet: ['fodderuse', 'disease', 'detection', 'area']
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaultTypeIndex: function defaultTypeIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.tableType) {
-                    if (this.tableSet[index] == this.letItem.table_type) {
-                        return index;
-                    }
-                }
-            }
-        },
-        defaultSexIndex: function defaultSexIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.sex) {
-                    if (this.sex[index] == this.letItem.sex) {
-                        return index;
-                    }
-                };
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
+        this.getIndex();
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
         var _iteratorError = undefined;
@@ -18126,7 +18022,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['table_type']['index'] = 0;
+                this.inputData['sex']['index'] = 0;
+            } else {
+                for (var index in this.inputData['table_type']['data']) {
+                    if (this.tableSet[index] == this.letItem.table_type) {
+                        this.inputData['table_type']['index'] = parseInt(index);
+                    }
+                }
+                for (var _index in this.inputData['sex']['data']) {
+                    if (this.inputData['sex']['data'][_index] == this.letItem.sex) {
+                        this.inputData['sex']['index'] = parseInt(_index);
+                    }
+                }
+            }
+        },
         /**
         * 提交表单
         */
@@ -18138,10 +18051,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'field': 'expert_name',
                 'value': this.letItem.expert_name
             };
-            this.$unique(this, 'expert', params, 'letItem.expert_name').then(function () {
+            this.$unique(this.val, 'expert', params, 'letItem.expert_name').then(function () {
 
                 if (_this.edit) {
-                    _this.$update(_this, 'expert', _this.letItem).then(function (response) {
+                    _this.$update(_this.val, 'expert', _this.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
@@ -18176,7 +18089,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this.$storeL(_this, 'expert', _this.letItem).then(function (response) {
+                    _this.$storeL(_this.val, 'expert', _this.letItem).then(function (response) {
                         _this.letItem.id = response.body;
                         _this.$emit('callback', _this.letItem);
                         _this.$alert('新增成功', 's');
@@ -18193,55 +18106,56 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddExpert: function cancelAddExpert() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditExpert: function cancelEditExpert() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsgType: function getMsgType(msg) {
-            var _iteratorNormalCompletion3 = true;
-            var _didIteratorError3 = false;
-            var _iteratorError3 = undefined;
+        getMsgDataVal: function getMsgDataVal(msg) {
+            if (msg[0] == 'sex') {
+                this.letItem.sex = msg[1];
+            } else {
+                var _iteratorNormalCompletion3 = true;
+                var _didIteratorError3 = false;
+                var _iteratorError3 = undefined;
 
-            try {
-                for (var _iterator3 = Object.keys(this.tableType)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                    var index = _step3.value;
-
-                    if (this.tableType[index] == msg) {
-                        this.letItem.table_type = this.tableSet[index];
-                    }
-                }
-            } catch (err) {
-                _didIteratorError3 = true;
-                _iteratorError3 = err;
-            } finally {
                 try {
-                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                        _iterator3.return();
+                    for (var _iterator3 = Object.keys(this.inputData['table_type']['data'])[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                        var index = _step3.value;
+
+                        if (this.inputData['table_type']['data'][index] == msg[1]) {
+                            this.letItem.table_type = this.tableSet[index];
+                        }
                     }
+                } catch (err) {
+                    _didIteratorError3 = true;
+                    _iteratorError3 = err;
                 } finally {
-                    if (_didIteratorError3) {
-                        throw _iteratorError3;
+                    try {
+                        if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                            _iterator3.return();
+                        }
+                    } finally {
+                        if (_didIteratorError3) {
+                            throw _iteratorError3;
+                        }
                     }
                 }
             }
-        },
-        getMsgSex: function getMsgSex(msg) {
-            this.letItem.sex = msg;
         }
     },
     destroyed: function destroyed() {
@@ -18275,84 +18189,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 26 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -18453,7 +18294,52 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'address': '',
                 'principal': '',
                 'memo': ''
-            }
+            },
+            inputData: {
+                'name': {
+                    'label': '养殖场名称',
+                    'divfor': 'farm_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'area': {
+                    'label': '养殖面积',
+                    'divfor': 'farm_new_area',
+                    'placeholder': '请填写数字(必填),单位是亩',
+                    'rules': 'required|decimal:2'
+                },
+                'principal': {
+                    'label': '负责人',
+                    'divfor': 'farm_new_principal',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'kind': {
+                    'label': '养殖畜禽种类',
+                    'divfor': 'farm_new_kind',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'scale': {
+                    'label': '养殖规模',
+                    'divfor': 'farm_new_scale',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'address': {
+                    'label': '地址',
+                    'divfor': 'farm_new_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'farm_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
     mounted: function mounted() {
@@ -18491,78 +18377,79 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validateBeforeSubmit: function validateBeforeSubmit() {
             var _this = this;
 
-            // let params = {
-            //     'id': this.letItem.id,
-            //     'field': 'name',
-            //     'value': this.letItem.name
-            // };
-            // this.$unique(this, 'farm', params, 'letItem.name').then(() => {
-            if (this.edit) {
-                this.$update(this, 'farm', this.letItem).then(function (response) {
-                    var _iteratorNormalCompletion2 = true;
-                    var _didIteratorError2 = false;
-                    var _iteratorError2 = undefined;
+            var params = {
+                'id': this.letItem.id,
+                'field': 'name',
+                'value': this.letItem.name
+            };
+            this.$unique(this.val, 'farm', params, 'letItem.name').then(function () {
+                if (_this.edit) {
+                    _this.$update(_this.val, 'farm', _this.letItem).then(function (response) {
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
 
-                    try {
-                        for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                            var key = _step2.value;
-
-                            _this.tmp[key] = _this.letItem[key];
-                        }
-                    } catch (err) {
-                        _didIteratorError2 = true;
-                        _iteratorError2 = err;
-                    } finally {
                         try {
-                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                                _iterator2.return();
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                _this.tmp[key] = _this.letItem[key];
                             }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
                         } finally {
-                            if (_didIteratorError2) {
-                                throw _iteratorError2;
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
                             }
                         }
-                    }
 
-                    _this.$alert('修改成功', 's');
-                }, function (response) {
-                    if (response != false) {
-                        _this.$alert('连接出错', 'e');
-                    } else {
-                        return false;
-                    }
-                });
-            } else {
-                this.$storeL(this, 'farm', this.letItem).then(function (response) {
-                    _this.letItem.id = response.body;
-                    _this.$emit('callback', _this.letItem);
-                    _this.$alert('新增成功', 's');
-                }, function (response) {
-                    if (response != false) {
-                        _this.$alert('连接出错', 'e');
-                    } else {
-                        return false;
-                    }
-                });
-            }
-            // }, () => {
-            //     return false;
-            // });
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                } else {
+                    _this.$storeL(_this.val, 'farm', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddfarm: function cancelAddfarm() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditfarm: function cancelEditfarm() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         }
     },
@@ -18597,98 +18484,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 27 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -18793,23 +18593,65 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'principal': '',
                 'memo': ''
             },
-            farms: []
+            inputData: {
+                'pid': {
+                    'label': '养殖场名称',
+                    'divfor': 'farmeded_new_select',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'farm_name',
+                    'data': []
+                },
+                'name': {
+                    'label': '养殖区名称',
+                    'divfor': 'farmed_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'area': {
+                    'label': '养殖面积',
+                    'divfor': 'farmed_new_area',
+                    'placeholder': '请填写数字(必填),单位是亩',
+                    'rules': 'required|decimal:2'
+                },
+                'principal': {
+                    'label': '负责人',
+                    'divfor': 'farmed_new_principal',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'kind': {
+                    'label': '养殖畜禽种类',
+                    'divfor': 'farmed_new_kind',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'scale': {
+                    'label': '养殖规模',
+                    'divfor': 'farmed_new_scale',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'address': {
+                    'label': '地址',
+                    'divfor': 'farmed_new_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'farmed_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
 
-    computed: {
-        defaultfarmedIndex: function defaultfarmedIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.farms) {
-                    if (this.farms[index].id == this.letItem.pid) {
-                        return index;
-                    }
-                }
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
         this.getAllfarmeds();
         var _iteratorNormalCompletion = true;
@@ -18839,18 +18681,31 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
         /**
-        * 获取所有养殖场
-        */
+         * 判断是新建还是编辑
+         */
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['pid']['index'] = 0;
+            } else {
+                for (var index in this.inputData['pid']['data']) {
+                    if (this.inputData['pid']['data'][index].id == this.letItem.pid) {
+                        this.inputData['pid']['index'] = parseInt(index);
+                    }
+                }
+            }
+        },
+        /**
+         * 获取所有养殖场
+         */
         getAllfarmeds: function getAllfarmeds() {
             var _this = this;
 
             this.$http.get(this.$adminUrl('farmed/create')).then(function (response) {
-                _this.$set(_this, 'farms', response.body);
+                _this.$set(_this.inputData['pid'], 'data', response.body);
+                _this.getIndex();
             }, function (response) {});
         },
-
 
         /**
         * 提交表单
@@ -18858,87 +18713,86 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         validateBeforeSubmit: function validateBeforeSubmit() {
             var _this2 = this;
 
-            // let params = {
-            //     'id': this.letItem.id,
-            //     'field': 'name',
-            //     'value': this.letItem.name
-            // };
-            // this.$unique(this, 'farmed', params, 'letItem.name').then(() => {
-            if (this.edit) {
-                this.$update(this, 'farmed', this.letItem).then(function (response) {
-                    var _iteratorNormalCompletion2 = true;
-                    var _didIteratorError2 = false;
-                    var _iteratorError2 = undefined;
+            var params = {
+                'id': this.letItem.id,
+                'field': 'name',
+                'value': this.letItem.name
+            };
+            this.$unique(this.val, 'farmed', params, 'letItem.name').then(function () {
+                if (_this2.edit) {
+                    _this2.$update(_this2.val, 'farmed', _this2.letItem).then(function (response) {
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
 
-                    try {
-                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                            var key = _step2.value;
-
-                            _this2.tmp[key] = _this2.letItem[key];
-                        }
-                    } catch (err) {
-                        _didIteratorError2 = true;
-                        _iteratorError2 = err;
-                    } finally {
                         try {
-                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                                _iterator2.return();
+                            for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                _this2.tmp[key] = _this2.letItem[key];
                             }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
                         } finally {
-                            if (_didIteratorError2) {
-                                throw _iteratorError2;
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
                             }
                         }
-                    }
 
-                    _this2.$alert('修改成功', 's');
-                }, function (response) {
-                    if (response != false) {
-                        _this2.$alert('连接出错', 'e');
-                    } else {
-                        return false;
-                    }
-                });
-            } else {
-                this.$storeL(this, 'farmed', this.letItem).then(function (response) {
-                    _this2.letItem.id = response.body;
-                    _this2.$emit('callback', _this2.letItem);
-                    _this2.$alert('新增成功', 's');
-                }, function (response) {
-                    if (response != false) {
-                        _this2.$alert('连接出错', 'e');
-                    } else {
-                        return false;
-                    }
-                });
-            }
-            // }, () => {
-            //     return false;
-            // });
+                        _this2.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this2.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                } else {
+                    _this2.$storeL(_this2.val, 'farmed', _this2.letItem).then(function (response) {
+                        _this2.letItem.id = response.body;
+                        _this2.$emit('callback', _this2.letItem);
+                        _this2.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this2.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddfarmed: function cancelAddfarmed() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditfarmed: function cancelEditfarmed() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsgPid: function getMsgPid(msg) {
-            this.letItem.pid = msg;
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.pid = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -18972,103 +18826,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 28 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -19173,24 +18935,61 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'phone': '',
                 'memo': ''
             },
-            categorys: [{ id: 1, name: '粗粮类' }, { id: 2, name: '维生素类' }, { id: 3, name: '青蔬类' }, { id: 4, name: '矿物质类' }, { id: 5, name: '干草料类' }, { id: 6, name: '其他类' }]
+            inputData: {
+                'fodder_type': {
+                    'label': '饲料类别',
+                    'divfor': 'fodder_new_select',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'fodder_type',
+                    'data': [{ id: 1, name: '粗粮类' }, { id: 2, name: '维生素类' }, { id: 3, name: '青蔬类' }, { id: 4, name: '矿物质类' }, { id: 5, name: '干草料类' }, { id: 6, name: '其他类' }]
+                },
+                'name': {
+                    'label': '饲料名称',
+                    'divfor': 'fodder_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'use': {
+                    'label': '用途',
+                    'divfor': 'fodder_new_specification',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'vender_name': {
+                    'label': '生产厂家名称',
+                    'divfor': 'fodder_new_vender_name',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'address': {
+                    'label': '产地',
+                    'divfor': 'fodder_new_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'phone': {
+                    'label': '联系方式',
+                    'divfor': 'fodder_new_phone',
+                    'placeholder': '请输入11位手机号(固话用-隔开)',
+                    'rules': 'phone'
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'fodder_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
 
-    computed: {
-        defaultfodderIndex: function defaultfodderIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.categorys) {
-                    if (this.categorys[index].id == this.letItem.fodder_type) {
-                        return index;
-                    }
-                }
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
+        this.getIndex();
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
         var _iteratorError = undefined;
@@ -19218,7 +19017,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['fodder_type']['index'] = 0;
+            } else {
+                for (var index in this.inputData['fodder_type']['data']) {
+                    if (this.inputData['fodder_type']['data'][index].id == this.letItem.fodder_type) {
+                        this.inputData['fodder_type']['index'] = parseInt(index);
+                    }
+                }
+            }
+        },
         /**
         * 提交表单
         */
@@ -19230,9 +19040,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'fodder', params, 'letItem.name').then(function () {
+            this.$unique(this.val, 'fodder', params, 'letItem.name').then(function () {
                 if (_this.edit) {
-                    _this.$update(_this, 'fodder', _this.letItem).then(function (response) {
+                    _this.$update(_this.val, 'fodder', _this.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
@@ -19267,7 +19077,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this.$storeL(_this, 'fodder', _this.letItem).then(function (response) {
+                    _this.$storeL(_this.val, 'fodder', _this.letItem).then(function (response) {
                         _this.letItem.id = response.body;
                         _this.$emit('callback', _this.letItem);
                         _this.$alert('新增成功', 's');
@@ -19284,28 +19094,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddfodder: function cancelAddfodder() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditfodder: function cancelEditfodder() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsgPid: function getMsgPid(msg) {
-            this.letItem.fodder_type = msg;
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.fodder_type = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -19339,102 +19148,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 29 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -19536,25 +19254,61 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'address': '',
                 'memo': ''
             },
-            sex: [{ id: 0, sex: '男' }, { id: 1, sex: '女' }]
+            inputData: {
+                'name': {
+                    'label': '姓名',
+                    'divfor': 'operate_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'sex': {
+                    'label': '性别',
+                    'divfor': 'operate_sex',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'sex',
+                    'index': 0,
+                    'showVal': 'sex',
+                    'data': [{ id: 0, sex: '男' }, { id: 1, sex: '女' }]
+                },
+                'age': {
+                    'label': '年龄',
+                    'divfor': 'operate_new_age',
+                    'placeholder': '',
+                    'rules': 'decimal'
+                },
+                'identity': {
+                    'label': '身份',
+                    'divfor': 'operate_new_identity',
+                    'placeholder': '如后勤主管',
+                    'rules': ''
+                },
+                'phone': {
+                    'label': '联系方式',
+                    'divfor': 'operate_new_phone',
+                    'placeholder': '请输入11位手机号(固话用-隔开)',
+                    'rules': 'phone'
+                },
+                'address': {
+                    'label': '联系地址',
+                    'divfor': 'operate_new_address',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注信息',
+                    'divfor': 'operate_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
         };
     },
 
-    computed: {
-        //判断是编辑状态还是新建状态，取出不同的下标
-        defaultSexIndex: function defaultSexIndex() {
-            if (this.edit == false) {
-                return 0;
-            } else {
-                for (var index in this.sex) {
-                    if (this.sex[index].id == this.letItem.sex) {
-                        return index;
-                    }
-                };
-            }
-        }
-    },
+    computed: {},
     mounted: function mounted() {
+        this.getIndex();
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
         var _iteratorError = undefined;
@@ -19582,7 +19336,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
-
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['sex']['index'] = 0;
+            } else {
+                for (var index in this.inputData['sex']['data']) {
+                    if (this.inputData['sex']['data'][index].id == this.letItem.sex) {
+                        this.inputData['sex']['index'] = parseInt(index);
+                    }
+                }
+            }
+        },
         /**
         * 提交表单
         */
@@ -19594,10 +19359,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'field': 'name',
                 'value': this.letItem.name
             };
-            this.$unique(this, 'operate', params, 'letItem.name').then(function () {
-
+            this.$unique(this.val, 'operate', params, 'letItem.name').then(function () {
                 if (_this.edit) {
-                    _this.$update(_this, 'operate', _this.letItem).then(function (response) {
+                    _this.$update(_this.val, 'operate', _this.letItem).then(function (response) {
                         var _iteratorNormalCompletion2 = true;
                         var _didIteratorError2 = false;
                         var _iteratorError2 = undefined;
@@ -19632,7 +19396,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     });
                 } else {
-                    _this.$storeL(_this, 'operate', _this.letItem).then(function (response) {
+                    _this.$storeL(_this.val, 'operate', _this.letItem).then(function (response) {
                         _this.letItem.id = response.body;
                         _this.$emit('callback', _this.letItem);
                         _this.$alert('新增成功', 's');
@@ -19649,27 +19413,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             });
         },
 
+        getThis: function getThis(val) {
+            this.val = val;
+        },
         /**
         * 隐藏新增模块
         */
-        cancelAddoperate: function cancelAddoperate() {
+        cancelAdd: function cancelAdd() {
             this.$emit('closeNew');
         },
-
-
         /**
         * 隐藏编辑模块
         * @param letItem
         */
-        cancelEditoperate: function cancelEditoperate() {
+        cancelEdit: function cancelEdit() {
             this.$emit('closeEdit');
         },
-
         /**
         * CallBack函数,执行回调函数 
         */
-        getMsgSex: function getMsgSex(msg) {
-            this.letItem.sex = msg;
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.sex = msg[1];
         }
     },
     destroyed: function destroyed() {
@@ -19703,7 +19467,200 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 30 */
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'HeadLeftBack',
+    methods: {
+        clickEvent: function clickEvent() {
+            this.$router.back();
+            this.$emit('clickEvent', 'back');
+        }
+    }
+};
+
+/***/ }),
+/* 44 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'HeadLeftSlider',
+    methods: {
+        clickEvent: function clickEvent() {
+            this.$emit('clickEvent', 'slider');
+        }
+    }
+};
+
+/***/ }),
+/* 45 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plant_cultivate_plant_cultivate_detail_msg_vue__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__plant_cultivate_plant_cultivate_detail_msg_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__plant_cultivate_plant_cultivate_detail_msg_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'HeadRightMore',
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setShowLayer', 'setLayerComponent']), {
+        clickEvent: function clickEvent() {
+            this.setShowLayer(true);
+            this.setLayerComponent(__WEBPACK_IMPORTED_MODULE_1__plant_cultivate_plant_cultivate_detail_msg_vue___default.a);
+            this.$emit('clickEvent', 'more');
+        }
+    })
+};
+
+/***/ }),
+/* 46 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'HeadRightRecord',
+    methods: {
+        clickEvent: function clickEvent() {
+            this.$emit('clickEvent', 'record');
+        }
+    }
+};
+
+/***/ }),
+/* 47 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+	name: 'hispic',
+	props: {
+		item: {
+			type: Object
+		}
+	}
+};
+
+/***/ }),
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19946,7 +19903,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this = this;
 
             this.$http.get(this.$adminUrl('dailylog') + '/' + this.cultivateId + '/edit').then(function (response) {
+
                 _this.$set(_this, 'log', response.body.dailylog);
+                console.log(response.body.fertilize_way);
                 _this.$set(_this, 'fertilizeWays', response.body.fertilize_way);
                 _this.$set(_this, 'manureNames', response.body.manure_category_name);
                 _this.$set(_this, 'medicamentNames', response.body.medicament_category_name);
@@ -20054,7 +20013,3704 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 31 */
+/* 49 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'ResearchField',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 50 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pop_farm_vue__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pop_farm_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__pop_farm_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_fertilize_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pop_fertilize_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__pop_fertilize_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pop_medicament_vue__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__pop_medicament_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pop_detect_vue__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pop_detect_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__pop_detect_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pop_harvest_vue__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pop_harvest_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__pop_harvest_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pop_grow_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pop_grow_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__pop_grow_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pop_cultivate_vue__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pop_cultivate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__pop_cultivate_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+  name: 'CultivateOperate',
+  props: {
+    letItem: {
+      type: Object,
+      default: function _default() {
+        return null;
+      }
+    }
+  },
+  data: function data() {
+    return {
+      show: false,
+      component: null,
+      edit: false,
+      showConfirm: false,
+      isActive: ''
+    };
+  },
+
+  components: {
+    PopCultivate: __WEBPACK_IMPORTED_MODULE_6__pop_cultivate_vue___default.a
+  },
+  methods: {
+
+    /**
+     * 修改批次状态
+     */
+    changeState: function changeState() {
+      var _this = this;
+
+      this.$http.get(this.$adminUrl('cultivate/state?params=1')).then(function (response) {
+        if (response.data) {
+          _this.$alert('修改成功', 's');
+        }
+      }, function (error) {
+        _this.$alert('连接出错', 'e');
+      });
+    },
+    popDialog: function popDialog(dialog) {
+      this.show = true;
+      this.edit = false;
+      switch (dialog) {
+        case 'farm':
+          this.component = __WEBPACK_IMPORTED_MODULE_0__pop_farm_vue___default.a;
+          this.isActive = 'farm';
+          break;
+        case 'fertilize':
+          this.component = __WEBPACK_IMPORTED_MODULE_1__pop_fertilize_vue___default.a;
+          this.isActive = 'fertilize';
+          break;
+        case 'medicament':
+          this.component = __WEBPACK_IMPORTED_MODULE_2__pop_medicament_vue___default.a;
+          this.isActive = 'medicament';
+          break;
+        case 'detect':
+          this.component = __WEBPACK_IMPORTED_MODULE_3__pop_detect_vue___default.a;
+          this.isActive = 'detect';
+          break;
+        case 'harvest':
+          this.component = __WEBPACK_IMPORTED_MODULE_4__pop_harvest_vue___default.a;
+          this.isActive = 'harvest';
+          break;
+        case 'grow':
+          this.component = __WEBPACK_IMPORTED_MODULE_5__pop_grow_vue___default.a;
+          this.isActive = 'grow';
+          break;
+        case 'cultivate':
+          this.edit = true;
+          this.isActive = 'cultivate';
+          break;
+      }
+    }
+  }
+};
+
+/***/ }),
+/* 51 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Basic',
+    data: function data() {
+        return {
+            cultivateMsg: {
+                serial: '',
+                plantation_name: '',
+                operator: '',
+                cultivate_date: '',
+                name: '',
+                address: '',
+                plant_name: '',
+                area: '',
+                area_unit: '',
+                memo: ''
+            }
+        };
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        var cultivateId = this.$route.params.id;
+        var params = {
+            msg: 1,
+            cid: cultivateId
+        };
+        this.$http.get(this.$adminUrl('plantation/cultivate/detail', 'p'), { params: params }).then(function (responce) {
+            _this.cultivateMsg = responce.data;
+        }, function (error) {});
+    }
+};
+
+/***/ }),
+/* 52 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_basic_model_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_basic_model_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__public_basic_model_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pop_farm_vue__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pop_farm_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__pop_farm_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pop_fertilize_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pop_fertilize_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__pop_fertilize_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pop_medicament_vue__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__pop_medicament_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pop_detect_vue__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pop_detect_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__pop_detect_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pop_grow_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pop_grow_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__pop_grow_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__public_amount_unit_vue__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__public_amount_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__public_amount_unit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__index_head_left_slider_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__index_head_left_slider_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__index_head_left_slider_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__index_head_left_back_vue__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__index_head_left_back_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__index_head_left_back_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__index_head_right_more_vue__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__index_head_right_more_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__index_head_right_more_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Basic',
+    data: function data() {
+        return {
+            taps: [{ name: '农事信息', key: 'farm' }, { name: '施肥信息', key: 'fertilize' }, { name: '病虫害信息', key: 'medicament' }, { name: '检测信息', key: 'detect' }, { name: '生长过程信息', key: 'grow' }],
+            tableLists: [{
+                key: 'farm',
+                component: { farm: __WEBPACK_IMPORTED_MODULE_2__pop_farm_vue___default.a },
+                searchPlaceholder: '操作方法',
+                searchUrl: 'farming',
+                theads: ['操作方法', '内容', '操作人'],
+                protos: ['method', 'content', 'operate'],
+                widths: [28, 28, 17]
+            }, {
+                key: 'fertilize',
+                component: { fertilize: __WEBPACK_IMPORTED_MODULE_3__pop_fertilize_vue___default.a, amount: __WEBPACK_IMPORTED_MODULE_7__public_amount_unit_vue___default.a },
+                searchPlaceholder: '肥料名称',
+                searchUrl: 'fertilize',
+                theads: ['肥料名称', '肥料用量', '施肥人'],
+                protos: ['manure_name', 'amount', 'operator'],
+                widths: [28, 24, 21]
+            }, {
+                key: 'medicament',
+                component: { medicament: __WEBPACK_IMPORTED_MODULE_4__pop_medicament_vue___default.a, amount: __WEBPACK_IMPORTED_MODULE_7__public_amount_unit_vue___default.a },
+                searchPlaceholder: '肥料名称',
+                searchUrl: 'spray',
+                theads: ['农药名称', '农药用量', '施药人'],
+                protos: ['medicament_name', 'amount', 'operator'],
+                widths: [28, 24, 21]
+            }, {
+                key: 'detect',
+                component: { detect: __WEBPACK_IMPORTED_MODULE_5__pop_detect_vue___default.a },
+                searchPlaceholder: '检测项目名称',
+                searchUrl: 'detect',
+                theads: ['检测机构', '项目名称', '检查人'],
+                protos: ['department', 'item', 'operator'],
+                widths: [28, 24, 21]
+            }, {
+                key: 'grow',
+                component: { grow: __WEBPACK_IMPORTED_MODULE_6__pop_grow_vue___default.a },
+                searchPlaceholder: '图片名称',
+                searchUrl: 'grow',
+                theads: ['图片名称', '图片描述', '上传日期'],
+                protos: ['name', 'description', 'image_date'],
+                widths: [28, 24, 21]
+            }]
+        };
+    },
+
+    components: {
+        BasicModel: __WEBPACK_IMPORTED_MODULE_1__public_basic_model_vue___default.a,
+        PopFarm: __WEBPACK_IMPORTED_MODULE_2__pop_farm_vue___default.a,
+        PopFertilize: __WEBPACK_IMPORTED_MODULE_3__pop_fertilize_vue___default.a,
+        PopMedicament: __WEBPACK_IMPORTED_MODULE_4__pop_medicament_vue___default.a,
+        PopDetect: __WEBPACK_IMPORTED_MODULE_5__pop_detect_vue___default.a,
+        PopGrow: __WEBPACK_IMPORTED_MODULE_6__pop_grow_vue___default.a,
+        AmountUnit: __WEBPACK_IMPORTED_MODULE_7__public_amount_unit_vue___default.a
+    },
+    created: function created() {
+        var cultivateId = this.$route.params.id;
+        var params = { params: { cultivate_id: cultivateId } };
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = this.tableLists[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var item = _step.value;
+
+                item.params = params;
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        this.setHeadLeftComponent(__WEBPACK_IMPORTED_MODULE_9__index_head_left_back_vue___default.a);
+        this.setHeadRightComponent(__WEBPACK_IMPORTED_MODULE_10__index_head_right_more_vue___default.a);
+    },
+
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setHeadLeftComponent', 'setHeadRightComponent'])),
+    destroyed: function destroyed() {
+        this.setHeadLeftComponent(__WEBPACK_IMPORTED_MODULE_8__index_head_left_slider_vue___default.a);
+        this.setHeadRightComponent(null);
+    }
+};
+
+/***/ }),
+/* 53 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popfertilize',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'id': '',
+                    'plantation_id': '',
+                    'plantation_name': '',
+                    'plant_id': '',
+                    'plant_name': '',
+                    'serial': '',
+                    'area': '',
+                    'area_unit': '亩',
+                    'cultivate_date': '',
+                    'mode': '',
+                    'density': '',
+                    'operator': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'id': '',
+                'plantation_id': '',
+                'plantation_name': '',
+                'plant_id': '',
+                'plant_name': '',
+                'serial': '',
+                'area': '',
+                'area_unit': '亩',
+                'cultivate_date': '',
+                'mode': '',
+                'density': '',
+                'operator': '',
+                'memo': ''
+            },
+            inputData: {
+                'plantation_name': {
+                    'label': '所属种植区',
+                    'divfor': 'plantation_name',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'plantation_name',
+                    'data': []
+                },
+                'plant_name': {
+                    'label': '种植果蔬名称',
+                    'divfor': 'plant_name',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'plant_name',
+                    'data': []
+                },
+                'area': {
+                    'label': '种植面积',
+                    'divfor': 'cultivate_new_area',
+                    'placeholder': '请填写数字(必填)',
+                    'rules': 'required|decimal:2',
+                    'select': '3',
+                    'index': 0,
+                    'unit': 'unit',
+                    'data': ['亩', '平方米', '公顷']
+                },
+                'cultivate_date': {
+                    'label': '种植日期',
+                    'divfor': 'cultivate_date',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255',
+                    'date': true
+                },
+                'mode': {
+                    'label': '施肥人',
+                    'divfor': 'cultivate_mode',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'density': {
+                    'label': '移栽密度',
+                    'divfor': 'cultivate_density',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'operator': {
+                    'label': '种植人',
+                    'divfor': 'cultivate_operator',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'cultivate_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+        };
+    },
+
+    computed: {},
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.cultivate_date = date;
+        this.getAllPlantations();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['plantation_name']['index'] = 0;
+                this.inputData['plant_name']['index'] = 0;
+                this.inputData['area']['index'] = 0;
+            } else {
+                for (var index in this.inputData['plantation_name']['data']) {
+                    if (this.inputData['plantation_name']['data'][index].name == this.letItem.plantation_name) {
+                        this.inputData['plantation_name']['index'] = parseInt(index);
+                    }
+                }
+                for (var _index in this.inputData['plant_name']['data']) {
+                    if (this.inputData['plant_name']['data'][_index].name == this.letItem.plant_name) {
+                        this.inputData['plant_name']['index'] = parseInt(_index);
+                    }
+                }
+                for (var _index2 in this.inputData['area']['data']) {
+                    if (this.inputData['area']['data'][_index2] == this.letItem.area_unit) {
+                        this.inputData['area']['index'] = parseInt(_index2);
+                    }
+                }
+            }
+        },
+
+        /**
+        * 获取所有种植相关信息
+        */
+        getAllPlantations: function getAllPlantations() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('cultivate/create?params=')).then(function (response) {
+                _this.$set(_this.inputData['plantation_name'], 'data', response.body.plantations);
+                _this.$set(_this.inputData['plant_name'], 'data', response.body.plants);
+                _this.getIndex();
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                this.$update(this.val, 'cultivate', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                this.letItem.cultivate_id = this.cultivateId;
+                this.$storeL(this.val, 'cultivate', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body[0];
+                    _this2.letItem.serial = response.body[1];
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEdit: function cancelEdit() {
+            this.$emit('closeEdit');
+        },
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgDataId: function getMsgDataId(msg) {
+            if (msg[0] == "plantation_name") {
+                this.letItem.plantation_name = msg[2];
+                this.letItem.plantation_id = msg[1];
+            } else {
+                this.letItem.plant_name = msg[2];
+                this.letItem.plant_id = msg[1];
+            }
+        },
+        getMsg: function getMsg(msg) {
+            this.letItem.area_unit = msg[1];
+        },
+
+        getDate: function getDate(val) {
+            this.letItem.cultivate_date = val;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 54 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popdetect',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'id': '',
+                    'detect_content': '水质检测',
+                    'detect_date': '',
+                    'department': '',
+                    'item': '',
+                    'expert_id': '',
+                    'operator': '',
+                    'result': '合格',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'detect_content': '水质检测',
+                'detect_date': '',
+                'department': '',
+                'item': '',
+                'expert_id': '',
+                'operator': '',
+                'result': '合格',
+                'memo': ''
+            },
+            inputData: {
+                'detect_content': {
+                    'label': '检测类型',
+                    'divfor': 'detect_content',
+                    'placeholder': '',
+                    'rules': 'max:255',
+                    'select': '2',
+                    'index': 0,
+                    'showVal': 'detect_content',
+                    'data': ['水质检测', '土壤检测', '农药残留检测', '大气污染检测', '其他检测']
+                },
+                'detect_date': {
+                    'label': '检测日期',
+                    'divfor': 'detect_date',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255',
+                    'date': true
+                },
+                'department': {
+                    'label': '检测机构',
+                    'divfor': 'department',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'item': {
+                    'label': '检测项目名称',
+                    'divfor': 'detect_item',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'expert_id': {
+                    'label': '指导专家',
+                    'divfor': 'expert_id',
+                    'rules': 'required|max:255',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'expert_name',
+                    'index': 0,
+                    'showVal': 'expert_id',
+                    'data': []
+                },
+                'operator': {
+                    'label': '检测人',
+                    'divfor': 'detect_operator',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'result': {
+                    'label': '检测结果',
+                    'divfor': 'result',
+                    'placeholder': '',
+                    'rules': 'max:255',
+                    'select': '2',
+                    'index': 0,
+                    'showVal': 'result',
+                    'data': ['合格', '不合格']
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'farming_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+        };
+    },
+
+    computed: {},
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.detect_date = date;
+        this.getAlldetecttion();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 获取所有专家
+        */
+        getAlldetecttion: function getAlldetecttion() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('expert/query?params[type]=detect')).then(function (response) {
+                _this.$set(_this.inputData['expert_id'], 'data', response.body.experts.data);
+                _this.inputData['expert_id']['data'].unshift({ id: '', expert_name: '无' });
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                if (this.letItem.Approval == null) {
+                    this.letItem.Approval = '';
+                }
+                this.$update(this.val, 'detect', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.$storeL(this.val, 'detect', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
+        * 获取时间
+        */
+        getDate: function getDate(val) {
+            this.letItem.detect_date = val;
+        },
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgDataVal: function getMsgDataVal(msg) {
+            if (msg[0] == 'detect_content') {
+                this.letItem.detect_content = msg[1];
+            } else {
+                this.letItem.result = msg[1];
+            }
+        },
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.expert_id = msg[1];
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 55 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popfarming',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'id': '',
+                    'farming_date': '',
+                    'method': '',
+                    'content': '',
+                    'operate': '',
+                    'weather': '晴天',
+                    'expert_id': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'farming_date': '',
+                'method': '',
+                'content': '',
+                'operate': '',
+                'weather': '晴天',
+                'expert_id': '',
+                'memo': ''
+            },
+            inputData: {
+                'farming_date': {
+                    'label': '操作日期',
+                    'divfor': 'farming_farming_date',
+                    'placeholder': '必填',
+                    'rules': 'required',
+                    'date': true
+                },
+                'method': {
+                    'label': '操作方法',
+                    'divfor': 'farming_method',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'content': {
+                    'label': '操作内容',
+                    'divfor': 'farming_content',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'operate': {
+                    'label': '操作人员',
+                    'divfor': 'farming_operate',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'weather': {
+                    'label': '天气状态',
+                    'divfor': 'weather',
+                    'placeholder': '',
+                    'rules': 'max:255',
+                    'select': '2',
+                    'index': 0,
+                    'data': ['晴天', '雨天', '阴天', '雪天', '其他']
+                },
+                'expert_id': {
+                    'label': '指导专家',
+                    'divfor': 'product_new_place_origin',
+                    'placeholder': '必填',
+                    'rules': 'max:255',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'expert_name',
+                    'index': 0,
+                    'data': []
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'farming_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+        };
+    },
+
+    computed: {},
+    mounted: function mounted() {
+        this.getAllfarmingtion();
+        this.getWeatherIndex();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+        getWeatherIndex: function getWeatherIndex() {
+            if (this.edit == false) {
+                this.inputData['weather']['index'] = 0;
+            } else {
+                for (var index in this.inputData['weather']['data']) {
+                    if (this.inputData['weather']['data'][index] == this.letItem.weather) {
+                        this.inputData['weather']['index'] = parseInt(index);
+                    }
+                }
+                this.inputData['weather']['index'] = 0;
+            }
+        },
+
+        /**
+        * 获取所有专家
+        */
+        getAllfarmingtion: function getAllfarmingtion() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('expert/query?params[type]=farming')).then(function (response) {
+                _this.$set(_this.inputData['expert_id'], 'data', response.body.experts.data);
+                _this.inputData['expert_id']['data'].unshift({ id: '', expert_name: '无' });
+            }, function (response) {});
+        },
+
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                this.$update(this.val, 'farming', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.$storeL(this.val, 'farming', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+
+        /**
+        * 获取时间
+        */
+        getDate: function getDate(val) {
+            this.letItem.farming_date = val;
+        },
+        /**
+        * 获取下拉框id值
+        */
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.expert_id = msg[1];
+        },
+        /**
+        * 隐藏获取下拉框非id值
+        */
+        getMsgDataVal: function getMsgDataVal(msg) {
+            this.letItem.weather = msg[1];
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 56 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popfertilize',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'id': '',
+                    'manure_id': '',
+                    'fertilize_date': '',
+                    'amount': '',
+                    'unit': 'kg/亩',
+                    'expert_id': '',
+                    'operator': '',
+                    'way': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        },
+        // 是否与批次相关联
+        referCultivate: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'manure_id': '',
+                'fertilize_date': '',
+                'amount': '',
+                'unit': 'kg/亩',
+                'expert_id': '',
+                'operator': '',
+                'way': '',
+                'memo': ''
+            },
+            inputData: {
+                'manure_select': {
+                    'label': '肥料类别',
+                    'divfor': 'manure_select',
+                    'placeholder': '必填',
+                    'rules': 'max:255',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'manure_select',
+                    'data': []
+                },
+                'manure_id': {
+                    'label': '肥料名称',
+                    'divfor': 'manure_id',
+                    'placeholder': '必填',
+                    'rules': 'max:255',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'manure_id',
+                    'data': []
+                },
+                'fertilize_date': {
+                    'label': '施肥日期',
+                    'divfor': 'fertilize_date',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255',
+                    'date': true
+                },
+                'amount': {
+                    'label': '平均肥料用量',
+                    'divfor': 'fertilize_new_amount',
+                    'placeholder': '请填写数字(必填)',
+                    'rules': 'required|decimal:2',
+                    'select': '3',
+                    'index': 0,
+                    'unit': 'unit',
+                    'data': ['kg/亩', 'kg/平方米', 'kg/公顷']
+                },
+                'expert_id': {
+                    'label': '指导专家',
+                    'divfor': 'expert_id',
+                    'rules': 'required|max:255',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'expert_name',
+                    'index': 0,
+                    'showVal': 'expert_id',
+                    'data': []
+                },
+                'operator': {
+                    'label': '施肥人',
+                    'divfor': 'fertilize_new_user',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'way': {
+                    'label': '施肥方式',
+                    'divfor': 'fertilize_new_way',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'farming_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+        };
+    },
+
+    computed: {},
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.fertilize_date = date;
+        this.getAllfertilizetion();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 获取所有肥料类别和专家
+        */
+        getAllfertilizetion: function getAllfertilizetion() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('manure_category/query')).then(function (response) {
+                _this.$set(_this.inputData['manure_select'], 'data', response.body.manure_categorys.data);
+            }, function (response) {});
+
+            if (this.edit) {
+                this.$http.get(this.$adminUrl('fertilize/select_category?params=' + this.letItem.category_id)).then(function (response) {
+                    _this.$set(_this, 'ManureIds', response.body);
+                }, function (response) {});
+            }
+
+            this.$http.get(this.$adminUrl('expert/query?params[type]=fertilize')).then(function (response) {
+                _this.$set(_this.inputData['expert_id'], 'data', response.body.experts.data);
+                _this.inputData['expert_id']['data'].unshift({ id: '', expert_name: '无' });
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                this.$update(this.val, 'fertilize', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.$storeL(this.val, 'fertilize', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
+        * 获取时间
+        */
+        getDate: function getDate(val) {
+            this.letItem.fertilize_date = val;
+        },
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgDataId: function getMsgDataId(msg) {
+            var _this3 = this;
+
+            if (msg[0] == 'manure_select') {
+                this.letItem.manure_select = msg[1];
+                this.$http.get(this.$adminUrl('manure/query?params[query_class]=' + msg[1])).then(function (response) {
+                    _this3.$set(_this3.inputData['manure_id'], 'data', response.body.manures.data);
+                }, function (response) {});
+            } else if (msg[0] == 'manure_id') {
+                this.letItem.manure_id = msg[1];
+            } else if (msg[0] == 'expert_id') {
+                this.letItem.expert_id = msg[1];
+            }
+        },
+        getMsg: function getMsg(msg) {
+            this.letItem.unit = msg[1];
+        },
+
+        /**
+         * 获取表单信息
+         * @return {Object} 表单对象
+         */
+        getFormMsg: function getFormMsg() {
+            return this.letItem;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 57 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popgrow',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'id': '',
+                    'image': '',
+                    'path': '',
+                    'image_date': '',
+                    'name': '',
+                    'description': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'image': '',
+                'path': '',
+                'image_date': '',
+                'name': '',
+                'description': '',
+                'memo': ''
+            },
+            inputData: {
+                'path': {
+                    'label': '生长图片',
+                    'file_name': 'path',
+                    'pic': true,
+                    'image': '',
+                    'placeholder': '必填',
+                    'rules': 'required'
+                },
+                'name': {
+                    'label': '图片标题',
+                    'divfor': 'grow_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'image_date': {
+                    'label': '上传日期',
+                    'divfor': 'image_date',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255',
+                    'date': true
+                },
+                'description': {
+                    'label': '特征描述',
+                    'divfor': 'grow_new_description',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'grow_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+        };
+    },
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.image_date = date;
+        // 初始化tmp，同时过滤掉grow里面不需要的属性
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                // 如果grow里面的属性tmp里面也有，那么那对应的值赋予tmp
+                if (key in this.tmp && this.tmp.hasOwnProperty(key)) {
+                    this.tmp[key] = this.letItem[key] == null ? '' : this.letItem[key];
+                } else {
+                    // 否则删除此属性
+                    delete this.letItem[key];
+                }
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+
+        if (this.edit) {
+            this.letItem.imageFlag = 'no';
+        }
+    },
+
+    methods: {
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this = this;
+
+            if (this.edit) {
+                if (this.letItem.path != null) {
+
+                    var form = new FormData();
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            form.append(key, this.letItem[key]);
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    form.append('cultivate_id', this.cultivateId);
+                    this.$update(this.val, 'grow', form, true).then(function (response) {
+                        var _iteratorNormalCompletion3 = true;
+                        var _didIteratorError3 = false;
+                        var _iteratorError3 = undefined;
+
+                        try {
+                            for (var _iterator3 = Object.keys(_this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                                var key = _step3.value;
+
+                                _this.tmp[key] = _this.letItem[key];
+                            }
+                        } catch (err) {
+                            _didIteratorError3 = true;
+                            _iteratorError3 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                                    _iterator3.return();
+                                }
+                            } finally {
+                                if (_didIteratorError3) {
+                                    throw _iteratorError3;
+                                }
+                            }
+                        }
+
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        _this.$alert('连接出错', 'e');
+                    });
+                } else {
+                    var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                    this.letItem.cultivate_id = cultivateId;
+                    this.letItem.image = 'upload.png';
+                    this.$update(this.val, 'grow', this.letItem).then(function (response) {
+                        var _iteratorNormalCompletion4 = true;
+                        var _didIteratorError4 = false;
+                        var _iteratorError4 = undefined;
+
+                        try {
+
+                            for (var _iterator4 = Object.keys(_this.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                                var _key = _step4.value;
+
+                                _this.tmp[_key] = _this.letItem[_key];
+                            }
+                        } catch (err) {
+                            _didIteratorError4 = true;
+                            _iteratorError4 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                                    _iterator4.return();
+                                }
+                            } finally {
+                                if (_didIteratorError4) {
+                                    throw _iteratorError4;
+                                }
+                            }
+                        }
+
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            } else {
+                var _form = new FormData();
+                var _iteratorNormalCompletion5 = true;
+                var _didIteratorError5 = false;
+                var _iteratorError5 = undefined;
+
+                try {
+                    for (var _iterator5 = Object.keys(this.letItem)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                        var _key2 = _step5.value;
+
+                        _form.append(_key2, this.letItem[_key2]);
+                    }
+                } catch (err) {
+                    _didIteratorError5 = true;
+                    _iteratorError5 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion5 && _iterator5.return) {
+                            _iterator5.return();
+                        }
+                    } finally {
+                        if (_didIteratorError5) {
+                            throw _iteratorError5;
+                        }
+                    }
+                }
+
+                _form.append('cultivate_id', this.cultivateId);
+                if (this.letItem.path == null) {
+                    this.letItem.image = 'upload.png';
+                }
+                this.$storeL(this.val, 'grow', _form, true).then(function (response) {
+                    _this.letItem.id = response.body;
+                    _this.$emit('callback', _this.letItem);
+                    _this.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 获取图片路径
+        */
+        getPic: function getPic(val) {
+            this.letItem.path = val;
+        },
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+        getDate: function getDate(val) {
+            this.letItem.image_date = val;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion6 = true;
+            var _didIteratorError6 = false;
+            var _iteratorError6 = undefined;
+
+            try {
+                for (var _iterator6 = Object.keys(this.letItem)[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+                    var key = _step6.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError6 = true;
+                _iteratorError6 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion6 && _iterator6.return) {
+                        _iterator6.return();
+                    }
+                } finally {
+                    if (_didIteratorError6) {
+                        throw _iteratorError6;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 58 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popharvest',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'id': '',
+                    'plantation_id': '',
+                    'harvest_date': '',
+                    'amount': '',
+                    'operator': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'plantation_id': '',
+                'harvest_date': '',
+                'amount': '',
+                'operator': '',
+                'memo': ''
+            },
+            constItem: {
+                'plantation_name': '',
+                'serial': '',
+                'plant_name': '',
+                'cultivate_date': '',
+                'area': ''
+            },
+            inputData: {
+                'harvest_date': {
+                    'label': '采收日期',
+                    'divfor': 'harvest_date',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255',
+                    'date': true
+                },
+                'plantation_name': {
+                    'label': '所属种植区',
+                    'divfor': 'harvest_plantation_name',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255',
+                    'val': true
+                },
+                'serial': {
+                    'label': '种植批次号',
+                    'divfor': 'harvest_serial',
+                    'placeholder': '必填',
+                    'rules': 'required',
+                    'val': true
+                },
+                'plant_name': {
+                    'label': '果蔬名称',
+                    'divfor': 'harvest_plant_name',
+                    'placeholder': '必填',
+                    'rules': 'required',
+                    'val': true
+                },
+                'cultivate_date': {
+                    'label': '种植日期',
+                    'divfor': 'harvest_cultivate_date',
+                    'placeholder': '必填',
+                    'rules': 'required',
+                    'val': true
+                },
+                'area': {
+                    'label': '种植面积',
+                    'divfor': 'harvest_area',
+                    'placeholder': '必填',
+                    'rules': 'required',
+                    'val': true
+                },
+                'amount': {
+                    'label': '采收数量',
+                    'divfor': 'harvest_amount',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'operator': {
+                    'label': '采收人',
+                    'divfor': 'harvest_operator',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'harvest_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+
+        };
+    },
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.harvest_date = date;
+        this.getHarvesttion();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+        /**
+        * 获取相关种植区信息
+        */
+        getHarvesttion: function getHarvesttion() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('cultivate/' + this.cultivateId + '/data')).then(function (response) {
+                console.log(response);
+                _this.$set(_this, 'constItem', response.body);
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                this.$update(this.val, 'harvest', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.letItem.plantation_id = this.constItem.plantation_name;
+                this.$storeL(this.val, 'harvest', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
+        * 获取时间
+        */
+        getDate: function getDate(val) {
+            this.letItem.harvest_date = val;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 59 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popmedicament',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'id': '',
+                    'medicament_id': '',
+                    'spray_date': '',
+                    'way': '',
+                    'amount': '',
+                    'unit': 'ml/亩',
+                    'concentration': '',
+                    'isolation_period': '',
+                    'expert_id': '',
+                    'operator': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'medicament_id': '',
+                'spray_date': '',
+                'way': '',
+                'amount': '',
+                'unit': 'ml/亩',
+                'concentration': '',
+                'isolation_period': '',
+                'expert_id': '',
+                'operator': '',
+                'memo': ''
+            },
+            inputData: {
+                'medicament_catagroy': {
+                    'label': '农药类别',
+                    'divfor': 'medicament_catagroy',
+                    'placeholder': '必填',
+                    'rules': 'max:255',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'medicament_catagroy',
+                    'data': []
+                },
+                'medicament_id': {
+                    'label': '农药名称',
+                    'divfor': 'medicament_id',
+                    'placeholder': '必填',
+                    'rules': 'max:255',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'name',
+                    'index': 0,
+                    'showVal': 'medicament_id',
+                    'data': []
+                },
+                'spray_date': {
+                    'label': '施药日期',
+                    'divfor': 'spray_date',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255',
+                    'date': true
+                },
+                'way': {
+                    'label': '施药方式',
+                    'divfor': 'medicament_new_way',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'amount': {
+                    'label': '平均施药量',
+                    'divfor': 'medicament_new_amount',
+                    'placeholder': '请填写数字(必填)',
+                    'rules': 'required|decimal:2',
+                    'select': '3',
+                    'index': 0,
+                    'unit': 'unit',
+                    'data': ['ml/亩', 'ml/平方米', 'ml/公顷']
+                },
+                'concentration': {
+                    'label': '施药浓度（倍）',
+                    'divfor': 'medicament_concentration',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'isolation_period': {
+                    'label': '安全隔离期(天)',
+                    'divfor': 'medicament_isolation_period',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'expert_id': {
+                    'label': '指导专家',
+                    'divfor': 'expert_id',
+                    'rules': 'required|max:255',
+                    'protoBack': 'id',
+                    'select': '1',
+                    'selectName': 'expert_name',
+                    'index': 0,
+                    'showVal': 'expert_id',
+                    'data': []
+                },
+                'operator': {
+                    'label': '施药人',
+                    'divfor': 'medicament_new_user',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'farming_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+        };
+    },
+
+    computed: {},
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.spray_date = date;
+        this.getAllmedicamenttion();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 获取所有农药类别和专家
+        */
+        getAllmedicamenttion: function getAllmedicamenttion() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('medicament_category/query')).then(function (response) {
+                _this.$set(_this.inputData['medicament_catagroy'], 'data', response.body.medicament_categorys.data);
+            }, function (response) {});
+
+            if (this.edit) {
+                this.$http.get(this.$adminUrl('spray/select_category?params=' + this.letItem.category_id)).then(function (response) {
+                    _this.$set(_this, 'medicamentIds', response.body);
+                }, function (response) {});
+            }
+
+            this.$http.get(this.$adminUrl('expert/query?params[type]=spray')).then(function (response) {
+                _this.$set(_this.inputData['expert_id'], 'data', response.body.experts.data);
+                _this.inputData['expert_id']['data'].unshift({ id: '', expert_name: '无' });
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                this.$update(this.val, 'spray', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.$storeL(this.val, 'spray', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
+        * 获取时间
+        */
+        getDate: function getDate(val) {
+            this.letItem.spray_date = val;
+        },
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgDataId: function getMsgDataId(msg) {
+            var _this3 = this;
+
+            if (msg[0] == 'medicament_catagroy') {
+                this.letItem.medicament_catagroy = msg[1];
+                this.$http.get(this.$adminUrl('medicament/query?params[query_class]=' + msg[1])).then(function (response) {
+                    _this3.$set(_this3.inputData['medicament_id'], 'data', response.body.medicaments.data);
+                }, function (response) {});
+            } else if (msg[0] == 'medicament_id') {
+                this.letItem.medicament_id = msg[1];
+            } else if (msg[0] == 'expert_id') {
+                this.letItem.expert_id = msg[1];
+            }
+        },
+        getMsg: function getMsg(msg) {
+            this.letItem.unit = msg[1];
+        },
+        destroyed: function destroyed() {
+            if (this.edit) {
+                var _iteratorNormalCompletion3 = true;
+                var _didIteratorError3 = false;
+                var _iteratorError3 = undefined;
+
+                try {
+                    for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                        var key = _step3.value;
+
+                        this.letItem[key] = this.tmp[key];
+                    }
+                } catch (err) {
+                    _didIteratorError3 = true;
+                    _iteratorError3 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                            _iterator3.return();
+                        }
+                    } finally {
+                        if (_didIteratorError3) {
+                            throw _iteratorError3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 60 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'PopDistributor',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'id': '',
+                    'name': '',
+                    'contacts': '',
+                    'phone': '',
+                    'address': '',
+                    'business_scope': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            // 作为编辑组件时，用于临时备份父组件传递过来的数据，
+            // 以便在修改了数据但不保存时可以复原数据
+            tmp: {
+                'id': '',
+                'name': '',
+                'contacts': '',
+                'phone': '',
+                'address': '',
+                'business_scope': '',
+                'memo': ''
+            },
+            inputData: {
+                'name': {
+                    'label': '经销商名称',
+                    'divfor': 'distributor_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'contacts': {
+                    'label': '联系人',
+                    'divfor': 'distributor_new_contacts',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'phone': {
+                    'label': '联系电话',
+                    'divfor': 'distributor_new_phone',
+                    'placeholder': '必填',
+                    'rules': 'required|phone'
+                },
+                'address': {
+                    'label': '地址',
+                    'divfor': 'distributor_new_address',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'business_scope': {
+                    'label': '经营范围',
+                    'divfor': 'distributor_new_business_scope',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'distributor_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+        };
+    },
+    mounted: function mounted() {
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this = this;
+
+            this.letItem['difference'] = 'plant';
+            var params = {
+                'id': this.letItem.id,
+                'field': 'name',
+                'type': 'plant',
+                'value': this.letItem.name
+            };
+            this.$unique(this.val, 'distributor', params, 'letItem.name').then(function () {
+                if (_this.edit) {
+                    _this.$update(_this.val, 'distributor', _this.letItem).then(function (response) {
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
+
+                        try {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                _this.tmp[key] = _this.letItem[key];
+                            }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
+                            }
+                        }
+
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                } else {
+                    _this.$storeL(_this.val, 'distributor', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
+        },
+
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEdit: function cancelEdit() {
+            this.$emit('closeEdit');
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 61 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'PopProduct',
+    props: {
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'id': '',
+                    'plant_id': '',
+                    'name': '',
+                    'marque': '',
+                    'specification': '',
+                    'production_unit': '',
+                    'place_origin': '',
+                    'enforce_standard': '',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            // 作为编辑组件时，用于临时备份父组件传递过来的数据，
+            // 以便在修改了数据但不保存时可以复原数据
+            tmp: {
+                'id': '',
+                'plant_id': '',
+                'name': '',
+                'marque': '',
+                'specification': '',
+                'production_unit': '',
+                'place_origin': '',
+                'enforce_standard': '',
+                'memo': ''
+            },
+            inputData: {
+                'plant_id': {
+                    'label': '所属果蔬',
+                    'divfor': 'product_new_plant',
+                    'placeholder': '必填',
+                    'rules': 'required',
+                    'protoBack': 'plant_id',
+                    'select': '1',
+                    'selectName': 'plant_name',
+                    'index': 0,
+                    'data': []
+                },
+                'name': {
+                    'label': '产品名称',
+                    'divfor': 'product_new_fullName',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'marque': {
+                    'label': '产品品牌',
+                    'divfor': 'product_new_marque',
+                    'placeholder': '必填',
+                    'rules': 'required|max:255'
+                },
+                'specification': {
+                    'label': '产品规格',
+                    'divfor': 'product_new_specification',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'production_unit': {
+                    'label': '生产单位',
+                    'divfor': 'product_new_production_unit',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'place_origin': {
+                    'label': '产地',
+                    'divfor': 'product_new_place_origin',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'enforce_standard': {
+                    'label': '执行标准',
+                    'divfor': 'product_new_business_scope',
+                    'placeholder': '',
+                    'rules': ''
+                },
+                'memo': {
+                    'label': '备注',
+                    'divfor': 'product_new_note',
+                    'placeholder': '',
+                    'rules': ''
+                }
+            },
+            val: ''
+        };
+    },
+    mounted: function mounted() {
+        this.getAllData();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this = this;
+
+            var params = {
+                'id': this.letItem.id,
+                'field': 'name',
+                'type': 'plant',
+                'value': this.letItem.name
+            };
+            this.$unique(this.val, 'product', params, 'letItem.name').then(function () {
+                if (_this.edit) {
+                    _this.$update(_this.val, 'product', _this.letItem).then(function (response) {
+                        var _iteratorNormalCompletion2 = true;
+                        var _didIteratorError2 = false;
+                        var _iteratorError2 = undefined;
+
+                        try {
+                            for (var _iterator2 = Object.keys(_this.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                                var key = _step2.value;
+
+                                _this.tmp[key] = _this.letItem[key];
+                            }
+                        } catch (err) {
+                            _didIteratorError2 = true;
+                            _iteratorError2 = err;
+                        } finally {
+                            try {
+                                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                    _iterator2.return();
+                                }
+                            } finally {
+                                if (_didIteratorError2) {
+                                    throw _iteratorError2;
+                                }
+                            }
+                        }
+
+                        _this.$alert('修改成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                } else {
+                    _this.$storeL(_this.val, 'product', _this.letItem).then(function (response) {
+                        _this.letItem.id = response.body;
+                        _this.$emit('callback', _this.letItem);
+                        _this.$alert('新增成功', 's');
+                    }, function (response) {
+                        if (response != false) {
+                            _this.$alert('连接出错', 'e');
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+            }, function () {
+                return false;
+            });
+        },
+
+        //判断是新建还是编辑
+        getIndex: function getIndex() {
+            if (this.edit == false) {
+                this.inputData['plant_id']['index'] = 0;
+            } else {
+                for (var index in this.inputData['plant_id']['data']) {
+                    if (this.inputData['plant_id']['data'][index].plant_id == this.letItem.plant_id) {
+                        this.inputData['plant_id']['index'] = parseInt(index);
+                    }
+                }
+            }
+        },
+        getAllData: function getAllData() {
+            var _this2 = this;
+
+            this.$http.get(this.$adminUrl('harvest/query')).then(function (response) {
+                _this2.$set(_this2['inputData']['plant_id'], 'data', response.body.harvests.data);
+                _this2.getIndex();
+            }, function (response) {});
+        },
+
+        getThis: function getThis(val) {
+            this.val = val;
+        },
+        getMsgDataId: function getMsgDataId(msg) {
+            this.letItem.plant_id = msg[1];
+        },
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdd: function cancelAdd() {
+            this.$emit('closeNew');
+        },
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEdit: function cancelEdit() {
+            this.$emit('closeEdit');
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 62 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'AmountUnit',
+    props: {
+        item: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    },
+    computed: {
+        amount: function amount() {
+            var amount_with_unit = '';
+            if (this.item.amount != null) {
+                amount_with_unit += this.item.amount;
+            }
+            if (this.item.unit != null) {
+                amount_with_unit += this.item.unit;
+            }
+            return amount_with_unit;
+        }
+    }
+};
+
+/***/ }),
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20107,19 +23763,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 32 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_vue__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_vue__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__navbar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_list_vue__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__table_list_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_manage_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_manage_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__table_manage_vue__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+//
+//
 //
 //
 //
@@ -20175,6 +23833,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 return [{ name: '', key: '' }];
             }
         },
+        number: {
+            type: Number,
+            default: 3
+        },
         tableLists: {
             type: Array,
             default: function _default() {
@@ -20183,6 +23845,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                     component: null,
                     searchPlaceholder: '',
                     searchUrl: '',
+                    params: null,
+                    excInit: true,
                     theads: [''],
                     protos: [''],
                     widths: [0]
@@ -20196,6 +23860,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             component: null,
             searchPlaceholder: '',
             searchUrl: '',
+            params: null,
             theads: [],
             protos: [],
             widths: []
@@ -20204,20 +23869,21 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
     components: {
         Navbar: __WEBPACK_IMPORTED_MODULE_1__navbar_vue___default.a,
-        tableList: __WEBPACK_IMPORTED_MODULE_2__table_list_vue___default.a
+        tableManage: __WEBPACK_IMPORTED_MODULE_2__table_manage_vue___default.a
     },
     created: function created() {
         this.setTitle(this.title);
         this._key = this.tableLists[0].key;
         this.searchPlaceholder = this.tableLists[0].searchPlaceholder;
         this.searchUrl = this.tableLists[0].searchUrl;
+        this.params = this.tableLists[0].params;
+        this.excInit = this.tableLists[0].excInit == undefined ? true : this.tableLists[0].excInit;
         this.theads = this.tableLists[0].theads;
         this.protos = this.tableLists[0].protos;
         this.widths = this.tableLists[0].widths;
     },
     mounted: function mounted() {
         this.component = this.tableLists[0].component;
-        this.$refs.tableList.getAllLists(this.searchUrl);
     },
 
     methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']), {
@@ -20234,16 +23900,13 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                         this._key = item.key;
                         this.searchPlaceholder = item.searchPlaceholder;
                         this.searchUrl = item.searchUrl;
+                        this.params = item.params;
+                        this.excInit = item.excInit == undefined ? true : item.excInit;
                         this.theads = item.theads;
                         this.protos = item.protos;
                         this.widths = item.widths;
                         this.component = item.component;
-                        // 同步调用获取数据的方法
-                        this.$refs.tableList.getAllLists(item.searchUrl);
-                        // 关闭新增弹窗
-                        this.$refs.tableList.closeNew();
-                        // 关闭编辑弹窗
-                        this.$refs.tableList.closeEdit();
+                        this.$refs.tableManage.closeNew();
                     }
                 }
             } catch (err) {
@@ -20265,11 +23928,18 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 };
 
 /***/ }),
-/* 33 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -20384,7 +24054,591 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 34 */
+/* 66 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+  name: 'date-picker',
+  data: function data() {
+    return {
+      show: false,
+      opacity: true,
+      onYear: false,
+      onMonth: false,
+      onDate: false,
+      className: '',
+      dateVal: this.getSetVal(),
+      yearLab: { 'first': '', 'second': '', 'third': '' },
+      monthLab: { 'first': '', 'second': '', 'third': '' },
+      dateLab: { 'first': '', 'second': '', 'third': '' },
+      yearArr: { 'num': '', 'clickTop': 'yt', 'clickBottom': 'yb',
+        'classTop': 'inc-year-top', 'classBottom': 'inc-year-bottom', 'on': 'onYear' },
+      monthArr: { 'num': '', 'clickTop': 'mt', 'clickBottom': 'mb',
+        'classTop': 'inc-month-top', 'classBottom': 'inc-month-bottom', 'on': 'onMonth' },
+      dateArr: { 'num': '', 'clickTop': 'dt', 'clickBottom': 'db',
+        'classTop': 'inc-month-top', 'classBottom': 'inc-month-bottom', 'on': 'onDate' },
+      boxArr: { 'year': '', 'month': '', 'date': '' }
+    };
+  },
+
+  props: {
+    date: {
+      type: String,
+      default: ''
+    }
+  },
+  methods: {
+    getSetVal: function getSetVal() {
+      if (this.date != '') {
+        return this.date;
+      } else {
+        return new Date(parseInt(Date.now())).toLocaleDateString().replace(/\//g, '-');
+      }
+    },
+    getDate: function getDate() {
+      this.show = !this.show;
+      //获取input框数值
+      var strs = this.dateVal.split("-");
+      this.yearLab['first'] = strs[0] - 1 + '年';
+      this.yearLab['second'] = strs[0] + '年';
+      this.yearLab['third'] = parseInt(strs[0]) + 1 + '年';
+      this.monthLab['first'] = strs[1] - 1 + '月';
+      this.monthLab['second'] = strs[1] + '月';
+      this.monthLab['third'] = parseInt(strs[1]) + 1 + '月';
+      this.dateLab['first'] = strs[2] - 1 + '日';
+      this.dateLab['second'] = strs[2] + '日';
+      this.dateLab['third'] = parseInt(strs[2]) + 1 + '日';
+      this.getBox(); //获得二维数组
+    },
+    getOnValue: function getOnValue(val) {
+      if (val == 'onYear') {
+        return this.onYear;
+      } else if (val == 'onMonth') {
+        return this.onMonth;
+      } else {
+        return this.onDate;
+      }
+    },
+    pop: function pop() {
+      if (this.show = true) {
+        this.show = false;
+        this.opacity = true;
+      }
+    },
+
+    getBox: function getBox() {
+      this.yearArr['num'] = this.yearLab;
+      this.monthArr['num'] = this.monthLab;
+      this.dateArr['num'] = this.dateLab;
+      this.boxArr['year'] = this.yearArr;
+      this.boxArr['month'] = this.monthArr;
+      this.boxArr['date'] = this.dateArr;
+    },
+    //向上滑动
+    slideTop: function slideTop(val) {
+      //年费向上滑动
+      if (val == 'yt') {
+        this.className = 'no-mode-translate-fade';
+        this.setOn('year');
+        this.yearLab['first'] = this.yearLab['second'];
+        this.yearLab['second'] = this.yearLab['third'];
+        this.yearLab['third'] = parseInt(this.yearLab['third']) + 1 + '年';
+        this.changeVal(0, this.yearLab['second']);
+        if (parseInt(this.monthLab['second']) == 2) {
+          this.getDate1();
+        }
+      }
+      //月份向上滑动
+      else if (val == 'mt') {
+          this.className = 'no-mode-translate-fade';
+          this.setOn('month');
+          this.monthLab['first'] = this.monthLab['second'];
+          this.monthLab['second'] = this.monthLab['third'];
+          this.monthLab['third'] = parseInt(this.monthLab['third']) + 1 + '月';
+          if (parseInt(this.monthLab['third']) > 12) {
+            this.monthLab['third'] = 1 + '月';
+          }
+          this.changeVal(1, this.monthLab['second']);
+          this.getDate1();
+        }
+        //日份向上滑动
+        else {
+            this.className = 'no-mode-translate-fade';
+            this.setOn('date');
+            this.dateLab['first'] = this.dateLab['second'];
+            this.dateLab['second'] = this.dateLab['third'];
+            this.dateLab['third'] = parseInt(this.dateLab['third']) + 1 + '日';
+            var lastMonthDay = this.getMaxDay();
+            if (parseInt(this.dateLab['third']) > lastMonthDay) {
+              this.dateArr['third'] = 1 + '日';
+            }
+            this.changeVal(2, this.dateLab['second']);
+          }
+    },
+    //向下滑动
+    slideBottom: function slideBottom(val) {
+      if (val == 'yb') {
+        this.className = 'on-mode-translate-fade';
+        this.setOn('year');
+        this.yearLab['third'] = this.yearLab['second'];
+        this.yearLab['second'] = this.yearLab['first'];
+        this.yearLab['first'] = parseInt(this.yearLab['first']) - 1 + '年';
+        this.changeVal(0, this.yearLab['second']);
+        if (parseInt(this.monthLab['second']) == 2) {
+          this.getDate1();
+        }
+      } else if (val == 'mb') {
+        this.className = 'on-mode-translate-fade';
+        this.setOn('month');
+        this.monthLab['third'] = this.monthLab['second'];
+        this.monthLab['second'] = this.monthLab['first'];
+        this.monthLab['first'] = parseInt(this.monthLab['first']) - 1 + '月';
+        if (parseInt(this.monthLab['first']) < 1) {
+          this.monthLab['first'] = 12 + '月';
+        }
+        this.changeVal(1, this.monthLab['second']);
+        this.getDate1();
+      } else {
+        this.className = 'on-mode-translate-fade';
+        this.setOn('date');
+        this.dateLab['third'] = this.dateLab['second'];
+        this.dateLab['second'] = this.dateLab['first'];
+        this.dateLab['first'] = parseInt(this.dateLab['first']) - 1 + '日';
+        var lastMonthDay = this.getMaxDay();
+        if (parseInt(this.dateLab['first']) < 1) {
+          this.dateLab['first'] = lastMonthDay + '日';
+        }
+        this.changeVal(2, this.dateLab['second']);
+      }
+    },
+    //判断月份获取最大日期
+    getDate1: function getDate1() {
+      var lastMonthDay = this.getMaxDay();
+      if ((parseInt(this.dateLab['third']) + parseInt(this.dateLab['second']) + parseInt(this.dateLab['first'])) / 3 < lastMonthDay) {
+        if (parseInt(this.dateLab['second']) == 1 || parseInt(this.dateLab['third']) == 1) {
+          this.dateLab['second'] = lastMonthDay + '日';
+          this.dateLab['first'] = lastMonthDay - 1 + '日';
+          this.dateLab['third'] = 1 + '日';
+        }
+      } else {
+        this.dateLab['second'] = lastMonthDay + '日';
+        this.dateLab['first'] = lastMonthDay - 1 + '日';
+        this.dateLab['third'] = 1 + '日';
+      }
+      this.changeVal(2, this.dateLab['second']);
+    },
+    //改变输入框时间
+    changeVal: function changeVal(num, date) {
+      var y = this.dateVal.split("-");
+      y[num] = parseInt(date);
+      var v = y.join('-');
+      this.dateVal = v;
+      this.getBox();
+      this.$emit('getDate', this.dateVal);
+    },
+    //获取日期最大一天
+    getMaxDay: function getMaxDay() {
+      var flag;
+      var lastMonthDay;
+      var year = parseInt(this.yearArr['second']);
+      var month = parseInt(this.monthArr['second']);
+      if (year % 4 == 0 && year % 100 != 0) {
+        flag = 1; //闰年
+      } else {
+        flag = 0; //平年
+      }
+      if ([1, 3, 5, 7, 8, 10, 12].indexOf(month) != -1) {
+        lastMonthDay = 31;
+      } else if (month == 2) {
+        if (flag == 1) {
+          lastMonthDay = 29;
+        } else {
+          lastMonthDay = 28;
+        }
+      } else {
+        lastMonthDay = 30;
+      }
+      return lastMonthDay;
+    },
+    //设置on函数
+    setOn: function setOn(val) {
+      if (val == 'year') {
+        this.onYear = !this.onYear;
+      }
+      if (val == 'month') {
+        this.onMonth = !this.onMonth;
+      }
+      if (val == 'date') {
+        this.onDate = !this.onDate;
+      }
+    }
+  }
+};
+
+/***/ }),
+/* 67 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = {
+  name: 'form-submit',
+  data: function data() {
+    return {
+      defaultData: 0,
+      image: 'upload.png',
+      pattern: {
+        type: Array,
+        default: function _default() {
+          return ['jpeg', 'png'];
+        }
+      },
+      imgHidden: ''
+    };
+  },
+
+  props: {
+    letItem: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    },
+    inputData: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    },
+    // 传递给component的参数
+    args: {
+      type: Object,
+      default: function _default() {
+        return { edit: true };
+      }
+    },
+    constItem: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    }
+  },
+  computed: {
+    edit: function edit() {
+      return this.args.edit;
+    }
+  },
+  methods: {
+    thisSet: function thisSet() {
+      this.$emit('thisSet', this);
+    },
+    getDate: function getDate(val) {
+      this.$emit('getDate', val);
+    },
+    getMsgDataId: function getMsgDataId(msg) {
+      this.$emit('getMsgDataId', msg);
+    },
+    getMsg: function getMsg(msg) {
+      this.$emit('getMsg', msg);
+    },
+    getMsgDataVal: function getMsgDataVal(msg) {
+      this.$emit('getMsgDataVal', msg);
+    },
+
+    cancelEdit: function cancelEdit() {
+      this.$emit('closeEdit');
+    },
+    cancelAdd: function cancelAdd() {
+      console.log('form-submit');
+      this.$emit('closeNew');
+    },
+    /**
+     *  获取input[type="file"]里的图片，预览到页面上
+     */
+    previewPic: function previewPic(srcPic, event) {
+      var _this = this;
+
+      // 获取选中的图片文件，并判断选中的图片数量是否合法
+      var file = event.target.files[0];
+      // 将pattern数组里的图片格式组装成"xxx|xxx|xxx"这样的格式，如："jpeg|png"
+      var regexParams = '';
+      for (var index = 0; index < this.pattern.length; index++) {
+        regexParams += this.pattern[index] + (index == this.pattern.length - 1 ? '' : '|');
+      }
+      // 将组装后的图片格式字符串传给正则表达式构造器，最后生成如/\/(?:jpeg|png)/i这样的正则表达式
+      var regex = new RegExp('\/(?:' + regexParams + ')', 'i');
+      // 过滤图片格式，如果出现格式不合法的，则取消此图片的上传操作
+      if (!regex.test(file.type)) {
+        alert("请选择格式为 " + this.pattern + " 的图片");
+        return;
+      }
+      // 开始读取选中的图片，添加预览到页面
+      var reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = function (e) {
+        _this.letItem.image = e.target.result;
+        _this.imgHidden = 'aa';
+        _this.$emit('getPic', file);
+      };
+    },
+
+    /**
+     * 触发input[type="file"]的click事件来选择图片
+     * @param  {object} event
+     */
+    selectPic: function selectPic(event) {
+      // 取出空格
+      var obj = event.target.parentNode.nextSibling;
+      if (obj.tagName != 'INPUT') {
+        obj = obj.nextSibling;
+      }
+      if (obj.tagName != 'INPUT') {
+        obj = event.target.nextSibling.nextSibling;
+      }
+      // 触发input的click事件
+      obj.click();
+    },
+
+    /**
+     * 删除图片
+     * 
+     */
+    deletePic: function deletePic() {
+      this.letItem.image = 'upload.png';
+      this.$emit('getPic', '');
+      this.imgHidden = '';
+    }
+  }
+};
+
+/***/ }),
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20437,7 +24691,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 35 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20483,7 +24737,58 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 36 */
+/* 70 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Dialog',
+    methods: {
+        confirm: function confirm() {
+            this.$emit('confirm');
+        }
+    }
+};
+
+/***/ }),
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20518,11 +24823,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 37 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -20583,6 +24893,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         taps: {
             type: Array,
             default: [{ name: 'default', key: 'default' }]
+        },
+        number: {
+            type: Number,
+            default: 3
         }
     },
     data: function data() {
@@ -20610,13 +24924,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         enter: function enter(el, done) {
             el.style.height = 0;
-            var num = Math.ceil((this.taps.length - 3) / 3);
+            var num = Math.ceil((this.taps.length - this.number) / this.number);
             var totalHeight = 45.4 * num + 'px';
             Velocity(el, { height: totalHeight }, { duration: 300 });
             Velocity(el, { height: totalHeight }, { complete: done });
         },
         leave: function leave(el, done) {
-            var num = Math.ceil((this.taps.length - 3) / 3);
+            var num = Math.ceil((this.taps.length - this.number) / this.number);
             var totalHeight = 45.4 * num + 'px';
             el.style.height = totalHeight;
             Velocity(el, { height: 0 }, { duration: 300 });
@@ -20628,7 +24942,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.yPosition = touch.pageY;
         },
         touchmove: function touchmove(event) {
-
             var touch = event.targetTouches[0];
             var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
             if (scrollTop == 0) {
@@ -20653,7 +24966,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 38 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20825,12 +25138,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     watch: {
         total: function total(val) {
-            this.index = 1;
-            this.showInput = true;
-            this.inputIndex = '';
+            this.init();
         }
     },
     methods: {
+        init: function init() {
+            this.index = 1;
+            this.showInput = true;
+            this.inputIndex = '';
+        },
         lastPage: function lastPage(lastIndex) {
             var _this = this;
 
@@ -20906,7 +25222,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 39 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21008,6 +25324,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         protoShow: {
             type: String,
             default: 'name'
+        },
+        showVal: {
+            type: String,
+            default: ''
         }
     },
     //计算属性
@@ -21042,8 +25362,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             msg: '',
             show: false,
             index: -1,
-            opacity: true
-
+            opacity: true,
+            selectVal: ''
         };
     },
 
@@ -21061,9 +25381,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 return false;
             }
             if (this.protoBack == '') {
-                this.$emit('callback', this.items[index]);
+                this.$emit('callback', [this.showVal, this.items[index], '']);
             } else {
-                this.$emit('callback', this.items[index][this.protoBack]);
+                this.$emit('callback', [this.showVal, this.items[index][this.protoBack], this.items[this.index][this.protoShow]]);
             }
         },
 
@@ -21078,7 +25398,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 40 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21129,7 +25449,49 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 41 */
+/* 76 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'AreaUnit',
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setSelectedLists']), {
+        reset: function reset() {
+            this.setSelectedLists([]);
+        }
+    })
+};
+
+/***/ }),
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21230,7 +25592,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         search: function search() {
             var _this = this;
 
-            var param = Object.assign({ 'query_text': this.searchInput }, this.params.params);
+            var param = Object.assign({ 'query_text': this.searchInput }, this.params);
             this.$queryWithParams(this, this.searchUrl, { params: param }).then(function (response) {
                 var _iteratorNormalCompletion = true;
                 var _didIteratorError = false;
@@ -21241,7 +25603,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     for (var _iterator = Object.keys(response.body)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                         var proto = _step.value;
 
-                        if (response.body[proto] instanceof Object) {
+                        if (response.body[proto] instanceof Object && !(response.body[proto] instanceof Array)) {
                             if (proto == 'data') {
                                 _this.$emit('callback', { data: response.body.data, last_page: response.body.last_page, query_text: _this.searchInput });
                             } else {
@@ -21272,13 +25634,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 42 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
+//
 //
 //
 //
@@ -21441,15 +25804,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 };
 
 /***/ }),
-/* 43 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__search_vue__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__paginator_vue__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__paginator_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search_vue__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__search_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__paginator_vue__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__paginator_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__confirm_vue__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__confirm_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__confirm_vue__);
 //
 //
 //
@@ -21603,150 +25970,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
 
 
 
@@ -21767,6 +25992,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 return null;
             }
         },
+        // 传递给component的参数
+        args: {
+            type: Object,
+            default: function _default() {
+                return { edit: true };
+            }
+        },
         // 搜索框的placeholder
         searchPlaceholder: {
             type: String,
@@ -21777,6 +26009,2589 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             type: String,
             required: true,
             default: ''
+        },
+        // url参数
+        params: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        },
+        // 更新list的时候是否执行初始化函数
+        excInit: {
+            type: Boolean,
+            default: true
+        },
+        // thead 
+        theads: {
+            type: Array,
+            required: true,
+            default: function _default() {
+                return [''];
+            }
+        },
+        // 属性
+        protos: {
+            type: Array,
+            required: true,
+            default: function _default() {
+                return [];
+            }
+        },
+        // 列表th的宽：%
+        widths: {
+            type: Array,
+            required: true,
+            default: function _default() {
+                return [];
+            }
+        },
+        // 是否显示checkbox
+        showCheckbox: {
+            type: Boolean,
+            default: true
+        },
+        // 是否显示操作按钮
+        showOperate: {
+            type: Boolean,
+            default: true
+        },
+        // 底部批量操作模块
+        batchButtons: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        }
+    },
+    data: function data() {
+        return {
+            // 是否显示新增模块
+            showNewPanel: false,
+            // 分页的总页数
+            total: 1,
+            // 搜索的参数对象
+            searchParams: {
+                'query_text': '',
+                'List_id': 0,
+                '_sort': 'id',
+                'order': ''
+            },
+            // 临时记录待删除的列表项信息
+            deleteList: { 'id': 0, 'index': 0, 'flag': null },
+            // 单个删除或批量删除
+            oneOrBatch: 0,
+            // 是否显示确认模块
+            showConfirm: false,
+            // 无法删除时的提示信息
+            tipMsg: '被使用，无法删除'
+        };
+    },
+
+    computed: {
+        seleteComponent: function seleteComponent() {
+            return this.component.new ? this.component.new : this.component[this._key];
+        }
+    },
+    components: {
+        Paginator: __WEBPACK_IMPORTED_MODULE_2__paginator_vue___default.a,
+        Search: __WEBPACK_IMPORTED_MODULE_1__search_vue___default.a,
+        confirm: __WEBPACK_IMPORTED_MODULE_3__confirm_vue___default.a
+    },
+    watch: {
+        searchUrl: function searchUrl(val) {
+            this.getAllLists();
+        }
+    },
+    mounted: function mounted() {
+        this.getAllLists();
+    },
+
+    methods: {
+
+        /**
+         * 获取所有列表项信息
+         */
+        getAllLists: function getAllLists() {
+            var _this = this;
+
+            if (this.excInit) {
+                this.$refs.tableList.init();
+                this.$tableList.setShowList(false);
+            }
+            this.$tableList.setSlideList('slide-fade-right');
+            this.$tableList.setSlideListItem('slide-up');
+
+            this.$index(this, this.searchUrl, this.params).then(function (response) {
+                var data = response.body[_this.searchUrl + 's'];
+                _this.$emit('getAllLists', data);
+                _this.$tableList.setList(data.data);
+                _this.$tableList.setShowList(true);
+                _this.total = data.last_page;
+                _this.$refs.paginator.init();
+            }, function (error) {
+                if (error.status == 401) {
+                    _this.$router.push('/webapp/login/401');
+                } else {
+                    _this.$alert('连接出错', 'e');
+                }
+            });
+        },
+
+
+        /**
+         * 将选中的checkbox信息存入SelectedLists
+         */
+        checkedBox: function checkedBox(_ref) {
+            var item = _ref.item,
+                index = _ref.index;
+
+            var checkedMsg = { id: item.id, index: index, flag: this.getAllState(item) };
+            var _iteratorNormalCompletion = true;
+            var _didIteratorError = false;
+            var _iteratorError = undefined;
+
+            try {
+                for (var _iterator = Object.keys(this.selectedLists)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                    var _index = _step.value;
+
+                    if (this.selectedLists[_index].id == item.id) {
+                        this.$tableList.spliceSelectedLists(_index);
+                        return true;
+                    }
+                }
+            } catch (err) {
+                _didIteratorError = true;
+                _iteratorError = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion && _iterator.return) {
+                        _iterator.return();
+                    }
+                } finally {
+                    if (_didIteratorError) {
+                        throw _iteratorError;
+                    }
+                }
+            }
+
+            this.$tableList.pushSelectedLists(checkedMsg);
+        },
+
+
+        /**
+        * 全选或取消全选
+        * @param e
+        */
+        selectAll: function selectAll(isAllCheck) {
+            if (isAllCheck) {
+                var _iteratorNormalCompletion2 = true;
+                var _didIteratorError2 = false;
+                var _iteratorError2 = undefined;
+
+                try {
+                    for (var _iterator2 = this.list.keys()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                        var index = _step2.value;
+
+                        this.$tableList.pushSelectedLists({ 'id': this.list[index].id, 'index': index, 'flag': this.getAllState(this.list[index]) });
+                    }
+                } catch (err) {
+                    _didIteratorError2 = true;
+                    _iteratorError2 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                            _iterator2.return();
+                        }
+                    } finally {
+                        if (_didIteratorError2) {
+                            throw _iteratorError2;
+                        }
+                    }
+                }
+            }
+        },
+
+
+        /**
+        * 单个删除
+        */
+        destroy: function destroy() {
+            var _this2 = this;
+
+            this.$destroyL(this, this.searchUrl, this.deleteList.id).then(function (response) {
+                _this2.$tableList.spliceList(_this2.deleteList.index);
+                _this2.deleteList = { 'id': 0, 'index': 0 };
+                _this2.showConfirm = false;
+                _this2.$alert('删除成功');
+            }, function (response) {
+                _this2.$alert('连接出错', 'e');
+            });
+        },
+
+
+        /**
+        * 批量删除
+        */
+        batchDestroy: function batchDestroy() {
+            var _this3 = this;
+
+            if (this.selectedLists.length != 0) {
+                var ids = [];
+                var _iteratorNormalCompletion3 = true;
+                var _didIteratorError3 = false;
+                var _iteratorError3 = undefined;
+
+                try {
+                    for (var _iterator3 = this.selectedLists[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                        var deleteList = _step3.value;
+
+                        ids.push(deleteList.id);
+                    }
+                } catch (err) {
+                    _didIteratorError3 = true;
+                    _iteratorError3 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                            _iterator3.return();
+                        }
+                    } finally {
+                        if (_didIteratorError3) {
+                            throw _iteratorError3;
+                        }
+                    }
+                }
+
+                this.showConfirm = false;
+                this.$batchDestroy(this, this.searchUrl, ids).then(function (response) {
+                    _this3.$tableList.reverseSelectedLists('index');
+                    var _iteratorNormalCompletion4 = true;
+                    var _didIteratorError4 = false;
+                    var _iteratorError4 = undefined;
+
+                    try {
+                        for (var _iterator4 = _this3.selectedLists[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                            var deleteList = _step4.value;
+
+                            _this3.$tableList.spliceList(deleteList.inde);
+                        }
+                    } catch (err) {
+                        _didIteratorError4 = true;
+                        _iteratorError4 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                                _iterator4.return();
+                            }
+                        } finally {
+                            if (_didIteratorError4) {
+                                throw _iteratorError4;
+                            }
+                        }
+                    }
+
+                    _this3.$tableList.setSelectedLists([]);
+                    _this3.$alert('成功删除' + response.body + '条');
+                }, function (response) {
+                    _this3.$alert('连接出错', 'e');
+                });
+            } else {
+                this.$alert('请选择列表项');
+            }
+        },
+
+
+        /**
+         * 判断调用单个删除或批量删除
+         */
+        oneOrBatchdestroy: function oneOrBatchdestroy() {
+            this.$tableList.setSlideListItem('slide-up');
+            if (this.oneOrBatch == 0) {
+                this.destroy();
+            } else {
+                this.batchDestroy();
+            }
+        },
+
+
+        /**
+        * 显示确认窗口
+        * @param flag
+        * @param id
+        * @param index
+        */
+        showConfirmDialog: function showConfirmDialog(flag) {
+            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+            var _iteratorNormalCompletion5 = true;
+            var _didIteratorError5 = false;
+            var _iteratorError5 = undefined;
+
+            try {
+                for (var _iterator5 = this.selectedLists[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                    var deleteList = _step5.value;
+
+                    var _flag = deleteList.flag;
+                    var canDelete = _flag.every(function (item, index) {
+                        return item == null;
+                    });
+                    if (!canDelete) {
+                        this.$alert(this.tipMsg);
+                        return false;
+                    }
+                }
+            } catch (err) {
+                _didIteratorError5 = true;
+                _iteratorError5 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion5 && _iterator5.return) {
+                        _iterator5.return();
+                    }
+                } finally {
+                    if (_didIteratorError5) {
+                        throw _iteratorError5;
+                    }
+                }
+            }
+
+            if (flag == 1 && this.selectedLists.length == 0) {
+                this.$alert('请选择列表项');
+            } else {
+                this.oneOrBatch = flag;
+                this.deleteList.id = id;
+                this.deleteList.index = index;
+                this.showConfirm = true;
+            }
+        },
+
+
+        /**
+        * 更新list中的一个
+        * @param List
+        */
+        updateListByOne: function updateListByOne(newOne) {
+            this.showNewPanel = false;
+            this.$tableList.setSlideListItem('slide-up');
+            this.$tableList.unshiftList(newOne);
+        },
+
+
+        /**
+        * 更新list中的多个
+        * @param List
+        */
+        updateListByMore: function updateListByMore(newList) {
+            this.$tableList.setShowList(true);
+            this.$refs.tableList.init();
+            this.$tableList.setList(newList.data);
+            this.total = newList.last_page;
+            if (newList.query_text != undefined) {
+                this.searchParams.query_text = newList.query_text;
+            }
+        },
+
+
+        /**
+         * 点击上一页
+         */
+        lastPageClicked: function lastPageClicked() {
+            this.$tableList.setSlideList('slide-fade-left');
+            this.$tableList.setShowList(false);
+        },
+
+
+        /**
+         * 点击下一页
+         */
+        nextPageClicked: function nextPageClicked() {
+            this.$tableList.setSlideList('slide-fade-right');
+            this.$tableList.setShowList(false);
+        },
+
+
+        /**
+         * 关闭新增弹窗
+         */
+        closeNew: function closeNew() {
+            this.showNewPanel = false;
+        },
+
+
+        /**
+         * 每行操作按钮的点击事件回调
+         */
+        troggleEdit: function troggleEdit(result) {
+            if (result) {
+                this.$tableList.setSlideListItem();
+            } else {
+                this.$tableList.setSlideListItem('slide-up');
+            }
+        },
+
+
+        /**
+         * 从item中获取所有含有“state”字段的属性
+         * @param  {Object} item 
+         * @return {Array}
+         */
+        getAllState: function getAllState(item) {
+            var stateArr = new Array();
+            for (var proto in item) {
+                if (proto.indexOf('_state') != -1 && proto != 'deleted_state') {
+                    stateArr.push(item[proto]);
+                }
+            }
+            return stateArr;
+        },
+
+
+        /**
+         * 长按删除
+         */
+        longTouchDelete: function longTouchDelete(_ref2) {
+            var item = _ref2.item,
+                index = _ref2.index;
+
+            var flag = this.getAllState(item);
+            var canDelete = flag.every(function (item, index) {
+                return item == null;
+            });
+            if (canDelete) {
+                this.showConfirmDialog(0, item.id, index);
+            } else {
+                this.$alert(this.tipMsg);
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 80 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Editvegetabledetection',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'plantation_name': '',
+                    'harvest_serial': '',
+                    'id': '',
+                    'residue_date': '',
+                    'departments': '',
+                    'condition': '',
+                    'number': '',
+                    'item': '',
+                    'operator': '',
+                    'result': '合格',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            detectContents: ['第三方', '自检'],
+            results: ['合格', '不合格'],
+            expertIds: [],
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'residue_date': '',
+                'departments': '',
+                'condition': '',
+                'number': '',
+                'item': '',
+                'operator': '',
+                'result': '合格',
+                'memo': ''
+            }
+
+        };
+    },
+
+    computed: {
+        //判断是编辑状态还是新建状态，取出不同的下标
+        defaultdetectContentIndex: function defaultdetectContentIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.detectContents) {
+                    if (this.detectContents[index] == this.letItem.detect_content) {
+                        return index;
+                    }
+                }
+            }
+        },
+        defaultresultIndex: function defaultresultIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.results) {
+                    if (this.results[index] == this.letItem.result) {
+                        return index;
+                    }
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.residue_date = date;
+        this.getHarvesttion();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+
+    methods: {
+
+        /**
+        * 获取所有数据
+        */
+        getHarvesttion: function getHarvesttion() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('residue/5/edit')).then(function (response) {
+                console.log(response);
+                _this.$set(_this, 'letItem', response.body);
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                if (this.letItem.Approval == null) {
+                    this.letItem.Approval = '';
+                }
+                this.$update(this, 'detect', this.letItem).then(function (response) {
+                    console.log(response);
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.$storeL(this, 'detect', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdddetect: function cancelAdddetect() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditdetect: function cancelEditdetect() {
+            this.$emit('closeEdit');
+        },
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgdetectContent: function getMsgdetectContent(msg) {
+            this.letItem.detect_content = msg;
+        },
+        getMsgresult: function getMsgresult(msg) {
+            this.letItem.result = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 81 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Editvegetable',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'id': '',
+                    'harvest_date': '',
+                    'amount': '',
+                    'operator': '',
+                    'memo': '',
+                    'cultivate_area': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            plantation_ids: ['冰糖心基地'],
+            cultivate_ids: ['CV201702130007'],
+            tmp: {
+                'cultivate_id': '',
+                'id': '',
+                'harvest_date': '',
+                'cultivate_area_unit': '',
+                'operator': '',
+                'memo': ''
+            },
+            constItem: {
+                'plantation_name': '',
+                'serial': '',
+                'plant_name': '',
+                'harvest_date': '',
+                'area': '',
+                'cultivate_area': '',
+                'cultivate_area_unit': '',
+                'amount': '',
+                'operator': '',
+                'cultivate_id': ''
+            }
+
+        };
+    },
+
+    computed: {
+        defaultdetectContentIndex: function defaultdetectContentIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.plantationId) {
+                    if (this.plantationId[index] == this.letItem.plantation_id) {
+                        return index;
+                    }
+                }
+            }
+        },
+        defaultresultIndex: function defaultresultIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.plantation_ids) {
+                    if (this.plantation_ids[index] == this.letItem.plantation_id) {
+                        return index;
+                    }
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.harvest_date = date;
+        this.getHarvesttion();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 获取相关采收批次信息
+        */
+        getHarvesttion: function getHarvesttion() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('harvest/16/edit')).then(function (response) {
+                console.log(response);
+                _this.$set(_this, 'constItem', response.body);
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                this.$update(this, 'harvest', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.letItem.plantation_id = this.constItem.plantation_name;
+                this.$storeL(this, 'harvest', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAddharvest: function cancelAddharvest() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditharvest: function cancelEditharvest() {
+            this.$emit('closeEdit');
+        },
+        getMsgdetectContent: function getMsgdetectContent(msg) {
+            this.letItem.plantation_name = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 82 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popvegetabledetection',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'plantation_name': '',
+                    harvest_serial: '',
+                    'id': '',
+                    'residue_date': '',
+                    'departments': '',
+                    'condition': '',
+                    'number': '',
+                    'item': '',
+                    'expert_id': '',
+                    'operator': '',
+                    'result': '合格',
+                    'memo': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            detectContents: ['第三方', '自检'],
+            results: ['合格', '不合格'],
+            expertIds: [],
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'residue_date': '',
+                'departments': '',
+                'condition': '',
+                'number': '',
+                'item': '',
+                'expert_id': '',
+                'operator': '',
+                'result': '合格',
+                'memo': ''
+            }
+
+        };
+    },
+
+    computed: {
+        //判断是编辑状态还是新建状态，取出不同的下标
+        defaultresultIndex: function defaultresultIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.results) {
+                    if (this.results[index].id == this.letItem.result) {
+                        return index;
+                    }
+                }
+            }
+        },
+        defaultdetectContentIndex: function defaultdetectContentIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.detectContents) {
+                    if (this.detectContents[index] == this.letItem.detect_content) {
+                        return index;
+                    }
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.residue_date = date;
+        this.getHarvesttion();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+
+        /**
+        * 获取所有专家
+        */
+        getHarvesttion: function getHarvesttion() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('residue/query')).then(function (response) {
+                console.log(response);
+                _this.$set(_this, 'letItem', response.body);
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                if (this.letItem.Approval == null) {
+                    this.letItem.Approval = '';
+                }
+                this.$update(this, 'detect', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion2 = true;
+                    var _didIteratorError2 = false;
+                    var _iteratorError2 = undefined;
+
+                    try {
+                        for (var _iterator2 = Object.keys(_this2.letItem)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                            var key = _step2.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError2 = true;
+                        _iteratorError2 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                                _iterator2.return();
+                            }
+                        } finally {
+                            if (_didIteratorError2) {
+                                throw _iteratorError2;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.$storeL(this, 'detect', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAdddetect: function cancelAdddetect() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditdetect: function cancelEditdetect() {
+            this.$emit('closeEdit');
+        },
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgdetectContent: function getMsgdetectContent(msg) {
+            this.letItem.detect_content = msg;
+        },
+        getMsgresult: function getMsgresult(msg) {
+            this.letItem.result = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = Object.keys(this.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var key = _step3.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 83 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Popmedicament',
+    props: {
+        cultivateId: {
+            type: Number,
+            default: 0
+        },
+        letItem: {
+            type: Object,
+            default: function _default() {
+                return {
+                    'cultivate_id': 0,
+                    'id': '',
+                    'cultivate_date': '',
+                    'harvest_date': '',
+                    'area_unit': '',
+                    'amount': '',
+                    'plant_name': '',
+                    'area': '',
+                    'expert_id': '',
+                    'operator': '',
+                    'memo': '',
+                    'plantation_id': ''
+                };
+            }
+        },
+        // 表示此模块是编辑模块还是新增模块的标志
+        edit: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data: function data() {
+        return {
+            PlantationName: [],
+            plantIds: [],
+            tmp: {
+                'cultivate_id': 0,
+                'id': '',
+                'cultivate_date': '',
+                'harvest_date': '',
+                'plant_name': '',
+                'area_unit': '',
+                'amount': '',
+                'area': '',
+                'expert_id': '',
+                'operator': '',
+                'memo': '',
+                'plantation_id': ''
+            },
+            arr: Array()
+        };
+    },
+
+    computed: {
+        //判断是编辑状态还是新建状态，取出不同的下标
+        defaultPlantationSelectIndex: function defaultPlantationSelectIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.PlantationName) {
+                    if (this.PlantationName[index].plantation_name == this.letItem.plantation_name) {
+                        return index;
+                    }
+                }
+                return 0;
+            }
+        },
+        defaultplantIdIndex: function defaultplantIdIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.plantIds) {
+                    if (this.plantIds[index].id == this.letItem.plantname) {
+                        return index;
+                    }
+                }
+                return 0;
+            }
+        },
+        defaultIndex: function defaultIndex() {
+            if (this.edit == false) {
+                return 0;
+            } else {
+                for (var index in this.unit) {
+                    if (this.unit[index] == this.letItem.unit) {
+                        return index;
+                    }
+                }
+            }
+        }
+    },
+    mounted: function mounted() {
+        var time = new Date();
+        var date = time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
+        this.letItem.harvest_date = date;
+        this.getAllplantation();
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = Object.keys(this.letItem)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var key = _step.value;
+
+                this.tmp[key] = this.letItem[key];
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    },
+
+    methods: {
+        /**
+        * 获取所有数据
+        */
+        getAllplantation: function getAllplantation() {
+            var _this = this;
+
+            this.$http.get(this.$adminUrl('cultivate/query')).then(function (response) {
+                var plantationName = [];
+                var names = response.body.cultivates.data;
+                // 先将第一个传入数组，再进行循环比较
+                if (names.length != 0) {
+                    plantationName.push(names[0]);
+                }
+                var _iteratorNormalCompletion2 = true;
+                var _didIteratorError2 = false;
+                var _iteratorError2 = undefined;
+
+                try {
+                    var _loop = function _loop() {
+                        var name = _step2.value;
+
+                        plantationName.forEach(function (item) {
+                            if (item.plantation_name !== name.plantation_name) {
+                                plantationName.push(name);
+                            }
+                        });
+                    };
+
+                    for (var _iterator2 = names[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                        _loop();
+                    }
+                } catch (err) {
+                    _didIteratorError2 = true;
+                    _iteratorError2 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                            _iterator2.return();
+                        }
+                    } finally {
+                        if (_didIteratorError2) {
+                            throw _iteratorError2;
+                        }
+                    }
+                }
+
+                _this.$set(_this, 'PlantationName', plantationName);
+            }, function (response) {});
+
+            if (this.edit) {
+                this.$http.get(this.$adminUrl('cultivate/query?params[plantation_id]=' + this.letItem.plantation_id + '&params[state]=0')).then(function (response) {
+                    _this.$set(_this, 'plantIds', response.body);
+                }, function (response) {});
+            }
+            this.$http.get(this.$adminUrl('cultivate/query?params[cultivate_id]=' + this.letItem.plantation_id)).then(function (response) {
+                _this.$set(_this, 'plantIds', response.body.cultivates.data);
+            }, function (response) {});
+        },
+
+
+        /**
+        * 提交表单
+        */
+        validateBeforeSubmit: function validateBeforeSubmit() {
+            var _this2 = this;
+
+            if (this.edit) {
+                this.$update(this, 'cultivate_id', this.letItem).then(function (response) {
+                    var _iteratorNormalCompletion3 = true;
+                    var _didIteratorError3 = false;
+                    var _iteratorError3 = undefined;
+
+                    try {
+                        for (var _iterator3 = Object.keys(_this2.letItem)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                            var key = _step3.value;
+
+                            _this2.tmp[key] = _this2.letItem[key];
+                        }
+                    } catch (err) {
+                        _didIteratorError3 = true;
+                        _iteratorError3 = err;
+                    } finally {
+                        try {
+                            if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                                _iterator3.return();
+                            }
+                        } finally {
+                            if (_didIteratorError3) {
+                                throw _iteratorError3;
+                            }
+                        }
+                    }
+
+                    _this2.$alert('修改成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            } else {
+                var cultivateId = this.cultivateId == 0 ? this.$route.params.id : this.cultivateId;
+                this.letItem.cultivate_id = cultivateId;
+                this.$storeL(this, 'spray', this.letItem).then(function (response) {
+                    _this2.letItem.id = response.body;
+                    _this2.$emit('callback', _this2.letItem);
+                    _this2.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this2.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        },
+
+        /**
+        * 隐藏新增模块
+        */
+        cancelAddmedicament: function cancelAddmedicament() {
+            this.$emit('closeNew');
+        },
+
+
+        /**
+        * 隐藏编辑模块
+        * @param letItem
+        */
+        cancelEditmedicament: function cancelEditmedicament() {
+            this.$emit('closeEdit');
+        },
+
+        /**
+        * CallBack函数,执行回调函数 
+        */
+        getMsgplantId: function getMsgplantId(msg) {
+            var _this3 = this;
+
+            this.letItem.cultivate_id = msg;
+            console.log(msg);
+            this.$http.get(this.$adminUrl('cultivate/query?params[cultivate_id]=' + msg)).then(function (response) {
+                // console.log(response)
+                // console.log(response.body.cultivates.data[0]['cultivate_area'])
+                _this3.letItem.plant_name = response.body.cultivates.data[0]['plant_name'];
+                _this3.letItem.cultivate_date = response.body.cultivates.data[0]['cultivate_date'];
+                _this3.letItem.area = response.body.cultivates.data[0]['area'];
+                _this3.letItem.area_unit = response.body.cultivates.data[0]['area_unit'];
+                // this.$set(this, 'plantIds', response.body.cultivates.data);
+            }, function (response) {});
+        },
+        getMsgPlantationSelect: function getMsgPlantationSelect(msg) {
+            var _this4 = this;
+
+            this.letItem.plantation_id = msg;
+            this.$http.get(this.$adminUrl('cultivate/query?params[plantation_id]=' + msg + '&params[state]=0')).then(function (response) {
+                _this4.$set(_this4, 'plantIds', response.body.cultivates.data);
+            }, function (response) {});
+        },
+        getMsg: function getMsg(msg) {
+            this.letItem.area_unit = msg;
+        }
+    },
+    destroyed: function destroyed() {
+        if (this.edit) {
+            var _iteratorNormalCompletion4 = true;
+            var _didIteratorError4 = false;
+            var _iteratorError4 = undefined;
+
+            try {
+                for (var _iterator4 = Object.keys(this.letItem)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                    var key = _step4.value;
+
+                    this.letItem[key] = this.tmp[key];
+                }
+            } catch (err) {
+                _didIteratorError4 = true;
+                _iteratorError4 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                        _iterator4.return();
+                    }
+                } finally {
+                    if (_didIteratorError4) {
+                        throw _iteratorError4;
+                    }
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+/* 84 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+// import { api } from '../../protoName.js'
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'List',
+    props: {
+        _key: {
+            type: String,
+            required: true,
+            default: ''
+        },
+        // 弹出框
+        component: {
+            type: Object,
+            default: function _default() {
+                return null;
+            }
+        },
+        // 传递给component的参数
+        args: {
+            type: Object,
+            default: function _default() {
+                return { edit: true };
+            }
         },
         // thead
         theads: {
@@ -21806,167 +28621,74 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         showCheckbox: {
             type: Boolean,
             default: true
+        },
+        // 是否显示操作按钮
+        showOperate: {
+            type: Boolean,
+            default: true
+        },
+        // 是否显示底部批量操作模块
+        showFooter: {
+            type: Boolean,
+            default: true
         }
     },
     data: function data() {
         return {
-            // 存放列表项的数组
-            list: [],
-            // 存放批量删除的列表项的数组
-            deleteLists: [],
             // 是否全选
             isAllCheck: false,
-            // 临时记录待删除的列表项信息
-            deleteList: { 'id': 0, 'index': 0, 'flag': null },
-            // 单个删除或批量删除
-            oneOrBatch: 0,
-            // 是否显示新增模块
-            showNewPanel: false,
             // 存放是否展开列表项编辑模块的标志，
             showItemDetail: '',
-            // 定义PopList是新增模块还是编辑模块，true：编辑模块，false：新增模块
-            showEditPane: true,
-            // 是否显示确认模块
-            showConfirm: false,
             // vue实例
-            self: this,
-            // 无法删除时的提示信息
-            tipMsg: '被使用，无法删除',
-            // 分页的总页数
-            total: 1,
-            // 搜索的参数对象
-            params: {
-                'query_text': '',
-                'List_id': 0,
-                '_sort': 'id',
-                'order': ''
-            },
-            // 动画效果
-            slide: 'slide-fade',
-            showUp: true
+            self: this
         };
     },
 
-    watch: {
-        showItemDetail: function showItemDetail(val) {
-            this.slide = 'slide';
+    computed: {
+
+        // 是否显示自定义操作按钮
+        cusButton: function cusButton() {
+            return this.component != null && this.component.open != null;
         }
     },
-    components: {
-        Paginator: __WEBPACK_IMPORTED_MODULE_1__paginator_vue___default.a,
-        Search: __WEBPACK_IMPORTED_MODULE_0__search_vue___default.a
+    watch: {
+        // 如果不是全部选中，则取消全选按钮的选中状态
+        selectedLists: function selectedLists(val) {
+            if (this.selectedLists.length !== this.list.length) {
+                this.isAllCheck = false;
+            } else if (this.selectedLists.length !== 0) {
+                this.isAllCheck = true;
+            }
+        }
     },
-    mounted: function mounted() {},
-
     methods: {
 
         /**
          * 初始化数据
          */
         init: function init() {
-            this.deleteLists = [];
-            this.deleteList = { 'id': 0, 'index': 0, 'flag': null };
-            this.oneOrBatch = 0;
+            this.$tableList.setSelectedLists([]);
             this.isAllCheck = false;
-        },
-
-
-        /**
-         * 获取所有列表项信息
-         */
-        getAllLists: function getAllLists(url) {
-            var _this = this;
-
-            this.init();
-            this.showUp = false;
-            this.$index(this, url).then(function (response) {
-                var data = response.body[url + 's'];
-                _this.total = data.last_page;
-                _this.$set(_this, 'list', data.data);
-                _this.showUp = true;
-            }, function (error) {
-                if (error.status == 401) {
-                    _this.$router.push('/webapp/login/401');
-                } else {
-                    _this.$alert('连接出错', 'e');
-                }
-            });
+            this.closeNextLine();
         },
 
 
         /**
         * 全选或取消全选
-        * @param e
         */
         selectAll: function selectAll() {
-            if (!this.isAllCheck) {
-                this.isAllCheck = true;
-                this.deleteLists = [];
-                var _iteratorNormalCompletion = true;
-                var _didIteratorError = false;
-                var _iteratorError = undefined;
-
-                try {
-                    for (var _iterator = this.list.keys()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                        var index = _step.value;
-
-                        this.deleteLists.push({ 'id': this.list[index].id, 'index': index, 'flag': this.list[index].serial_state });
-                    }
-                } catch (err) {
-                    _didIteratorError = true;
-                    _iteratorError = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion && _iterator.return) {
-                            _iterator.return();
-                        }
-                    } finally {
-                        if (_didIteratorError) {
-                            throw _iteratorError;
-                        }
-                    }
-                }
-            } else {
-                this.isAllCheck = false;
-                this.deleteLists = [];
-            }
+            this.isAllCheck = !this.isAllCheck;
+            this.$tableList.setSelectedLists([]);
+            this.$emit('selectAll', this.isAllCheck);
         },
 
 
         /**
-         * 将选中的checkbox信息存入deleteLists
+         * 将选中的checkbox信息存入SelectedLists
          * @param  {Object} checkedMsg 
          */
         checkedBox: function checkedBox(checkedMsg) {
-            var _iteratorNormalCompletion2 = true;
-            var _didIteratorError2 = false;
-            var _iteratorError2 = undefined;
-
-            try {
-                for (var _iterator2 = Object.keys(this.deleteLists)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                    var index = _step2.value;
-
-                    if (this.deleteLists[index].id == checkedMsg.id) {
-                        this.deleteLists.splice(index, 1);
-                        return true;
-                    }
-                }
-            } catch (err) {
-                _didIteratorError2 = true;
-                _iteratorError2 = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion2 && _iterator2.return) {
-                        _iterator2.return();
-                    }
-                } finally {
-                    if (_didIteratorError2) {
-                        throw _iteratorError2;
-                    }
-                }
-            }
-
-            this.deleteLists.push(checkedMsg);
+            this.$emit('checkedBox', checkedMsg);
         },
 
 
@@ -21975,135 +28697,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
          * @param  {Integer}  id
          */
         isCheck: function isCheck(id) {
-            var _iteratorNormalCompletion3 = true;
-            var _didIteratorError3 = false;
-            var _iteratorError3 = undefined;
+            var _iteratorNormalCompletion = true;
+            var _didIteratorError = false;
+            var _iteratorError = undefined;
 
             try {
-                for (var _iterator3 = Object.keys(this.deleteLists)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                    var index = _step3.value;
+                for (var _iterator = Object.keys(this.selectedLists)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                    var index = _step.value;
 
-                    if (this.deleteLists[index].id == id) {
+                    if (this.selectedLists[index].id == id) {
                         return true;
                     }
                 }
             } catch (err) {
-                _didIteratorError3 = true;
-                _iteratorError3 = err;
+                _didIteratorError = true;
+                _iteratorError = err;
             } finally {
                 try {
-                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                        _iterator3.return();
+                    if (!_iteratorNormalCompletion && _iterator.return) {
+                        _iterator.return();
                     }
                 } finally {
-                    if (_didIteratorError3) {
-                        throw _iteratorError3;
+                    if (_didIteratorError) {
+                        throw _iteratorError;
                     }
                 }
             }
 
             return false;
-        },
-
-
-        /**
-        * 单个删除
-        */
-        destroy: function destroy() {
-            var _this2 = this;
-
-            this.$destroyL(this, this.searchUrl, this.deleteList.id).then(function (response) {
-                _this2.list.splice(_this2.deleteList.index, 1);
-                _this2.deleteList = { 'id': 0, 'index': 0 };
-                _this2.showConfirm = false;
-                _this2.$alert('删除成功');
-            }, function (response) {
-                _this2.$alert('连接出错', 'e');
-            });
-        },
-
-
-        /**
-        * 批量删除
-        */
-        batchDestroy: function batchDestroy() {
-            var _this3 = this;
-
-            if (this.deleteLists.length != 0) {
-                var ids = [];
-                var _iteratorNormalCompletion4 = true;
-                var _didIteratorError4 = false;
-                var _iteratorError4 = undefined;
-
-                try {
-                    for (var _iterator4 = this.deleteLists[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-                        var deleteList = _step4.value;
-
-                        ids.push(deleteList.id);
-                    }
-                } catch (err) {
-                    _didIteratorError4 = true;
-                    _iteratorError4 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion4 && _iterator4.return) {
-                            _iterator4.return();
-                        }
-                    } finally {
-                        if (_didIteratorError4) {
-                            throw _iteratorError4;
-                        }
-                    }
-                }
-
-                this.$batchDestroy(this, this.searchUrl, ids).then(function (response) {
-                    _this3.deleteLists = _this3.$reverseObj(_this3.deleteLists, 'index');
-                    var _iteratorNormalCompletion5 = true;
-                    var _didIteratorError5 = false;
-                    var _iteratorError5 = undefined;
-
-                    try {
-                        for (var _iterator5 = _this3.deleteLists[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
-                            var deleteList = _step5.value;
-
-                            _this3.list.splice(deleteList.index, 1);
-                        }
-                    } catch (err) {
-                        _didIteratorError5 = true;
-                        _iteratorError5 = err;
-                    } finally {
-                        try {
-                            if (!_iteratorNormalCompletion5 && _iterator5.return) {
-                                _iterator5.return();
-                            }
-                        } finally {
-                            if (_didIteratorError5) {
-                                throw _iteratorError5;
-                            }
-                        }
-                    }
-
-                    _this3.deleteLists = [];
-                    _this3.showConfirm = false;
-                    _this3.$alert('成功删除' + response.body + '条');
-                }, function (response) {
-                    _this3.$alert('连接出错', 'e');
-                });
-            } else {
-                this.$alert('请选择列表项');
-            }
-        },
-
-
-        /**
-         * 判断调用单个删除或批量删除
-         */
-        oneOrBatchdestroy: function oneOrBatchdestroy() {
-            if (this.oneOrBatch == 0) {
-                this.destroy();
-            } else {
-                this.batchDestroy();
-            }
         },
 
 
@@ -22117,111 +28738,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             } else {
                 this.showItemDetail = '';
             }
+            this.$emit('troggleEdit', this.showItemDetail != id);
         },
 
 
         /**
-        * 关闭编辑模块
-        * @param List
-        */
-        closeOwnEditPane: function closeOwnEditPane(List) {
-            this.troggleEdit(List);
-        },
-
-
-        /**
-        * 显示确认窗口
-        * @param flag
-        * @param id
-        * @param index
-        */
-        showConfirmDialog: function showConfirmDialog(flag) {
-            var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-            var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-            var _iteratorNormalCompletion6 = true;
-            var _didIteratorError6 = false;
-            var _iteratorError6 = undefined;
-
-            try {
-                for (var _iterator6 = this.deleteLists[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
-                    var deleteList = _step6.value;
-
-                    if (deleteList.flag) {
-                        this.$alert(this.tipMsg);
-                        return false;
-                    }
-                }
-            } catch (err) {
-                _didIteratorError6 = true;
-                _iteratorError6 = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion6 && _iterator6.return) {
-                        _iterator6.return();
-                    }
-                } finally {
-                    if (_didIteratorError6) {
-                        throw _iteratorError6;
-                    }
-                }
-            }
-
-            if (flag == 1 && this.deleteLists.length == 0) {
-                this.$alert('请选择列表项');
-            } else {
-                this.oneOrBatch = flag;
-                this.deleteList.id = id;
-                this.deleteList.index = index;
-                this.showConfirm = true;
-            }
-        },
-
-
-        /**
-        * 更新list中的一个
-        * @param List
-        */
-        updateListByOne: function updateListByOne(newOne) {
-            this.slide = 'slide-fade';
-            this.showNewPanel = false;
-            this.list.unshift(newOne);
-        },
-
-
-        /**
-        * 更新list中的多个
-        * @param List
-        */
-        updateListByMore: function updateListByMore(newList) {
-            this.showUp = true;
-            this.init();
-            this.$set(this, 'list', newList.data);
-            this.total = newList.last_page;
-            if (newList.query_text != undefined) {
-                this.params.query_text = newList.query_text;
-            }
-        },
-
-
-        /**
-         * 关闭新增弹窗
+         * 关闭下一行组件
          */
-        closeNew: function closeNew() {
-            this.showNewPanel = false;
-        },
-
-
-        /**
-         * 关闭编辑弹窗
-         */
-        closeEdit: function closeEdit() {
+        closeNextLine: function closeNextLine() {
             this.showItemDetail = '';
+        },
+
+
+        /**
+         * 长按触发事件
+         */
+        longTouchEvent: function longTouchEvent(_ref) {
+            var item = _ref.item,
+                index = _ref.index;
+
+            this.$emit('longTouchEvent', { item: item, index: index });
         }
     }
 };
 
 /***/ }),
-/* 44 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22265,31 +28807,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 45 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_public_image_vue__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_public_image_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_public_image_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_plantation_operate_vue__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_basic_plantation_operate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_basic_plantation_operate_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_basic_pop_plantation_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_basic_pop_plantation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_basic_pop_plantation_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_area_unit_vue__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_area_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_public_area_unit_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_planta_vue__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_planta_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_basic_pop_planta_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_plant_vue__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_plant_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_basic_pop_plant_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_public_image_vue__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_public_image_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_public_image_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_manure_vue__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_manure_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_basic_pop_manure_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_medicament_vue__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_medicament_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_basic_pop_medicament_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_expert_vue__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_basic_pop_expert_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_research_field_vue__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_basic_research_field_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_basic_research_field_vue__);
 //
 //
 //
@@ -22311,6 +28855,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 
 
@@ -22331,7 +28876,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             taps: [{ name: '种植场信息', key: 'plantation' }, { name: '种植区信息', key: 'planta' }, { name: '果蔬档案', key: 'plant' }, { name: '肥料档案', key: 'manure' }, { name: '农药档案', key: 'medicament' }, { name: '专家档案', key: 'expert' }],
             tableLists: [{
                 key: 'plantation',
-                component: { plantation: __WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue___default.a },
+                component: { plantation: __WEBPACK_IMPORTED_MODULE_1__components_basic_plantation_operate_vue___default.a, new: __WEBPACK_IMPORTED_MODULE_2__components_basic_pop_plantation_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_3__components_public_area_unit_vue___default.a },
                 searchPlaceholder: '种植场名称',
                 searchUrl: 'plantation',
                 theads: ['种植场名称', '种植面积', '负责人'],
@@ -22339,7 +28884,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 widths: [32, 24, 17]
             }, {
                 key: 'planta',
-                component: { planta: __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue___default.a },
+                component: { planta: __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_planta_vue___default.a, area: __WEBPACK_IMPORTED_MODULE_3__components_public_area_unit_vue___default.a },
                 searchPlaceholder: '种植区名称',
                 searchUrl: 'planta',
                 theads: ['种植区名称', '种植面积', '负责人'],
@@ -22347,7 +28892,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 widths: [32, 24, 17]
             }, {
                 key: 'plant',
-                component: { plant: __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue___default.a, image: __WEBPACK_IMPORTED_MODULE_5__components_public_image_vue___default.a },
+                component: { plant: __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_plant_vue___default.a, image: __WEBPACK_IMPORTED_MODULE_6__components_public_image_vue___default.a },
                 searchPlaceholder: '果蔬名称',
                 searchUrl: 'plant',
                 theads: ['果蔬名称', '生长周期', '已传图片'],
@@ -22355,7 +28900,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 widths: [32, 24, 17]
             }, {
                 key: 'manure',
-                component: { manure: __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue___default.a },
+                component: { manure: __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_manure_vue___default.a },
                 searchPlaceholder: '肥料名称',
                 searchUrl: 'manure',
                 theads: ['肥料类别', '肥料名称', '用途'],
@@ -22363,7 +28908,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 widths: [24, 24, 25]
             }, {
                 key: 'medicament',
-                component: { medicament: __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue___default.a },
+                component: { medicament: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_medicament_vue___default.a },
                 searchPlaceholder: '农药名称',
                 searchUrl: 'medicament',
                 theads: ['农药类别', '农药名称', '用途'],
@@ -22371,9 +28916,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 widths: [26, 28, 19]
             }, {
                 key: 'expert',
-                component: { expert: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue___default.a, table_type: __WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue___default.a },
+                component: { expert: __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_expert_vue___default.a, table_type: __WEBPACK_IMPORTED_MODULE_10__components_basic_research_field_vue___default.a },
                 searchPlaceholder: '专家名称',
                 searchUrl: 'expert',
+                params: { 'class_type': 0 },
                 theads: ['专家名称', '研究领域', '操作模块'],
                 protos: ['expert_name', 'major', 'table_type'],
                 widths: [24, 28, 21]
@@ -22383,49 +28929,49 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     components: {
         BasicModel: __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default.a,
-        PopPlantation: __WEBPACK_IMPORTED_MODULE_1__components_basic_pop_plantation_vue___default.a,
-        AreaUnit: __WEBPACK_IMPORTED_MODULE_2__components_public_area_unit_vue___default.a,
-        PopPlanta: __WEBPACK_IMPORTED_MODULE_3__components_basic_pop_planta_vue___default.a,
-        PopPlant: __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_plant_vue___default.a,
-        MyImage: __WEBPACK_IMPORTED_MODULE_5__components_public_image_vue___default.a,
-        PopManure: __WEBPACK_IMPORTED_MODULE_6__components_basic_pop_manure_vue___default.a,
-        PopMedicament: __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_medicament_vue___default.a,
-        PopExpert: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_expert_vue___default.a,
-        ResearchField: __WEBPACK_IMPORTED_MODULE_9__components_basic_research_field_vue___default.a
+        PopPlantation: __WEBPACK_IMPORTED_MODULE_2__components_basic_pop_plantation_vue___default.a,
+        AreaUnit: __WEBPACK_IMPORTED_MODULE_3__components_public_area_unit_vue___default.a,
+        PopPlanta: __WEBPACK_IMPORTED_MODULE_4__components_basic_pop_planta_vue___default.a,
+        PopPlant: __WEBPACK_IMPORTED_MODULE_5__components_basic_pop_plant_vue___default.a,
+        MyImage: __WEBPACK_IMPORTED_MODULE_6__components_public_image_vue___default.a,
+        PopManure: __WEBPACK_IMPORTED_MODULE_7__components_basic_pop_manure_vue___default.a,
+        PopMedicament: __WEBPACK_IMPORTED_MODULE_8__components_basic_pop_medicament_vue___default.a,
+        PopExpert: __WEBPACK_IMPORTED_MODULE_9__components_basic_pop_expert_vue___default.a,
+        ResearchField: __WEBPACK_IMPORTED_MODULE_10__components_basic_research_field_vue___default.a
     }
 };
 
 /***/ }),
-/* 46 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_area_unit_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_image_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_image_vue__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_image_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_image_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_beast_pop_farm_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_beast_pop_farmed_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_beast_pop_beast_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_beast_pop_fodder_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_beast_fodder_type_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_beast_pop_drug_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_beast_drug_type_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_beast_pop_operate_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue__);
 //
 //
@@ -22522,6 +29068,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 component: { expert: __WEBPACK_IMPORTED_MODULE_11__components_beast_pop_expert_vue___default.a, table_type: __WEBPACK_IMPORTED_MODULE_12__components_beast_operate_type_vue___default.a },
                 searchPlaceholder: '专家名称',
                 searchUrl: 'expert',
+                params: { 'class_type': 1 },
                 theads: ['操作模块', '专家名称', '研究领域'],
                 protos: ['table_type', 'expert_name', 'major'],
                 widths: [28, 24, 21]
@@ -22546,11 +29093,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 47 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_navbar_vue__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_navbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_navbar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_manage_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_table_manage_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_table_manage_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_reset_button_vue__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_reset_button_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_public_reset_button_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_pop_fertilize_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_pop_fertilize_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_pop_fertilize_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 //
 //
 //
@@ -22615,6 +29174,261 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'Basic',
+    props: {
+        modelName: {
+            type: String,
+            default: '种植'
+        }
+    },
+    data: function data() {
+        return {
+            title: '',
+            taps: [{ name: '新建施肥信息', key: 'fertilize' }, { name: '选择种植批次', key: 'cultivate' }],
+            _key: '',
+            popComponent: null,
+            searchPlaceholder: '批次号',
+            searchUrl: 'cultivate',
+            theads: ['种植批次号', '所属种植区', '果蔬名称'],
+            protos: ['serial', 'plantation_name', 'plant_name'],
+            widths: [32, 30, 24],
+            // 是否显示新增模块
+            addNewItem: true,
+            // 是否隐藏footer
+            hideFooter: false,
+            batchButtons: __WEBPACK_IMPORTED_MODULE_3__components_public_reset_button_vue___default.a
+        };
+    },
+
+    components: {
+        Navbar: __WEBPACK_IMPORTED_MODULE_1__components_public_navbar_vue___default.a,
+        tableManage: __WEBPACK_IMPORTED_MODULE_2__components_public_table_manage_vue___default.a,
+        PopFertilize: __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_pop_fertilize_vue___default.a
+    },
+    created: function created() {
+        this.setTitle(this.title);
+    },
+    mounted: function mounted() {
+        this.popComponent = __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_pop_fertilize_vue___default.a;
+    },
+
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']), {
+        changeWindow: function changeWindow(key) {
+            this.addNewItem = !this.addNewItem;
+            if (key == 'cultivate') {
+                this.hideFooter = true;
+            } else {
+                this.hideFooter = false;
+            }
+        },
+        addListItem: function addListItem() {
+            var _this = this;
+
+            if (this.selectedLists.length == 0) {
+                this.$alert('请选择批次');
+            } else {
+                var form = this.$refs.popNew.getFormMsg();
+                var cultivateIds = [];
+                var _iteratorNormalCompletion = true;
+                var _didIteratorError = false;
+                var _iteratorError = undefined;
+
+                try {
+                    for (var _iterator = this.selectedLists[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                        var item = _step.value;
+
+                        cultivateIds.push(item['id']);
+                    }
+                } catch (err) {
+                    _didIteratorError = true;
+                    _iteratorError = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion && _iterator.return) {
+                            _iterator.return();
+                        }
+                    } finally {
+                        if (_didIteratorError) {
+                            throw _iteratorError;
+                        }
+                    }
+                }
+
+                form.cultivate_id = cultivateIds.join(",");
+                form.cultivate_num = this.selectedLists.length;
+                this.$storeL(this, 'fertilize', form).then(function (response) {
+                    _this.$router.back();
+                    _this.$alert('新增成功', 's');
+                }, function (response) {
+                    if (response != false) {
+                        _this.$alert('连接出错', 'e');
+                    } else {
+                        return false;
+                    }
+                });
+            }
+        }
+    })
+};
+
+/***/ }),
+/* 89 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index_head_left_back_vue__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_index_head_left_back_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_index_head_left_back_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_index_head_left_slider_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_index_head_left_slider_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_index_head_left_slider_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = {
@@ -22637,10 +29451,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     mounted: function mounted() {
+        this.setHeadLeftComponent(__WEBPACK_IMPORTED_MODULE_1__components_index_head_left_back_vue___default.a);
         this.getDailylog();
     },
 
-    methods: {
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setHeadLeftComponent']), {
+
         //获取日志详细信息
         getDailylog: function getDailylog() {
             var _this = this;
@@ -22798,41 +29614,96 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         toHide: function toHide() {
             this.showpic = false;
         }
+    }),
+    destroyed: function destroyed() {
+        this.setHeadLeftComponent(__WEBPACK_IMPORTED_MODULE_2__components_index_head_left_slider_vue___default.a);
     }
 };
 
 /***/ }),
-/* 48 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
 //
 
+
+
+
+
 /* harmony default export */ __webpack_exports__["default"] = {
-	name: 'hispic',
-	props: {
-		item: {
-			type: Object
-		}
-	}
+    name: 'PlantCultivate',
+    data: function data() {
+        return {
+            component: { fertilize: null },
+            theads: ['种植区', '批次号', '果蔬名称'],
+            protos: ['plantation_name', 'serial', 'plant_name'],
+            widths: [26, 30, 17]
+        };
+    },
+
+    components: {
+        TableManage: __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue___default.a
+    },
+    mounted: function mounted() {
+        this.setTitle('施肥管理');
+    },
+
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']))
 };
 
 /***/ }),
-/* 49 */
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_header_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_layer_vue__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_public_layer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_public_layer_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_index_head_left_slider_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_index_head_left_slider_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_index_head_left_slider_vue__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 //
@@ -22895,26 +29766,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
 
 
 
@@ -22940,26 +29793,60 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
                 isEvent: false,
                 children: [{
                     path: '/webapp/basic',
-                    name: '种植基础信息管理'
+                    name: '基础信息管理'
+                }, {
+                    path: '/webapp/plant-cultivate',
+                    name: '种植批次管理'
                 }]
-            }, {
+            },
+            // {
+            //     name:'果蔬采收批次管理',
+            //     role: 'plantation',
+            //     isEvent: false,
+            //     children: [
+            //         {
+            //             path: '/webapp/vegetable-harvest',
+            //             name:'采收批次管理'
+            //         },
+            //         {
+            //             path: '/webapp/vegetable-detection',
+            //             name:'采收检测管理'
+            //         }
+            //     ]
+            // },
+            {
                 name: '养殖管理',
                 role: 'beast',
                 isEvent: false,
                 children: [{
                     path: '/webapp/beast',
-                    name: '养殖基础信息管理'
+                    name: '基础信息管理'
+                }]
+            }, {
+                name: '果蔬加工管理',
+                role: 'process',
+                isEvent: false,
+                children: [{
+                    path: '/webapp/process-basic',
+                    name: '基础信息管理'
                 }]
             }]
         };
     },
 
-    computed: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapState"])(['title'])),
+    computed: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapState"])(['title', 'headLeftComponent', 'headRightComponent', 'showLayer', 'layerComponent'])),
     components: {
         MyHeader: __WEBPACK_IMPORTED_MODULE_1__components_public_header_vue___default.a,
-        SliderBar: __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue___default.a
+        SliderBar: __WEBPACK_IMPORTED_MODULE_2__components_public_slider_bar_vue___default.a,
+        Layer: __WEBPACK_IMPORTED_MODULE_3__components_public_layer_vue___default.a
     },
-    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])([]), {
+    mounted: function mounted() {
+        if (this.headLeftComponent == null || this.headLeftComponent.name == 'HeadLeftSlider') {
+            this.setHeadLeftComponent(__WEBPACK_IMPORTED_MODULE_4__components_index_head_left_slider_vue___default.a);
+        }
+    },
+
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setHeadLeftComponent', 'setShowLayer']), {
 
         /**
          * 获取子菜单项
@@ -23009,24 +29896,46 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
          */
         record: function record() {
             this.$router.push('/webapp/record');
+        },
+
+
+        /**
+         * 点击顶部左边按钮后的回调函数
+         */
+        clickLeftBtn: function clickLeftBtn(type) {
+            if (type == 'slider') {
+                this.show = true;
+            }
+        },
+
+
+        /**
+         * 点击顶部右边按钮后的回调函数
+         */
+        clickRightBtn: function clickRightBtn(type) {
+            if (type == 'record') {
+                this.record();
+            }
         }
     })
 };
 
 /***/ }),
-/* 50 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_search_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_search_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_public_paginator_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_log_pop_log_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_index_head_right_record_vue__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_index_head_right_record_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_index_head_right_record_vue__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 //
@@ -23170,6 +30079,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+
 
 
 
@@ -23184,7 +30095,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             // 顶部栏标题
             title: '每日农业日志',
             // 种植区列表数据
-            list: [],
+            logList: [],
             // 分页总数
             total: 1,
             // 存放是否展开编辑模块的标志，
@@ -23209,6 +30120,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
     },
     mounted: function mounted() {
         this.setTitle('农业日志');
+        this.setHeadRightComponent(__WEBPACK_IMPORTED_MODULE_4__components_index_head_right_record_vue___default.a);
         this.getAllPlanta();
     },
 
@@ -23217,14 +30129,14 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             this.getAllPlanta();
         }
     },
-    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']), {
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle', 'setHeadRightComponent']), {
 
         /**
          * 用搜索结果更新list
          * @param  {Object} newList
          */
         updateList: function updateList(newList) {
-            this.$set(this, 'list', newList.data);
+            this.$set(this, 'logList', newList.data);
             this.total = newList.last_page;
         },
 
@@ -23260,7 +30172,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             var _this = this;
 
             this.$http.get(this.$adminUrl('dailylog/query'), { params: this.params }).then(function (response) {
-                _this.$set(_this, 'list', response.body.data);
+                _this.$set(_this, 'logList', response.body.data);
             }, function (error) {
                 if (error.status == 401) {
                     _this.$router.push('/webapp/login/401');
@@ -23303,16 +30215,19 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
             this.plantaTmp.date = '';
             this.plantaTmp = null;
         }
-    })
+    }),
+    destroyed: function destroyed() {
+        this.setHeadRightComponent(null);
+    }
 };
 
 /***/ }),
-/* 51 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -23625,15 +30540,171 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 };
 
 /***/ }),
-/* 52 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_table_list_vue__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_table_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_public_table_list_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hispic_vue__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__hispic_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__hispic_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_plant_cultivate_pop_cultivate_vue__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_plant_cultivate_pop_cultivate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_plant_cultivate_pop_cultivate_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_plant_cultivate_cultivate_operate_vue__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_plant_cultivate_cultivate_operate_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_plant_cultivate_cultivate_operate_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'PlantCultivate',
+    data: function data() {
+        return {
+            component: { cultivate: __WEBPACK_IMPORTED_MODULE_3__components_plant_cultivate_cultivate_operate_vue___default.a, new: __WEBPACK_IMPORTED_MODULE_2__components_plant_cultivate_pop_cultivate_vue___default.a, serial: __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue___default.a },
+            theads: ['种植区', '批次号', '果蔬名称'],
+            protos: ['plantation_name', 'serial', 'plant_name'],
+            widths: [26, 30, 17]
+        };
+    },
+
+    components: {
+        TableManage: __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue___default.a,
+        PopCultivate: __WEBPACK_IMPORTED_MODULE_2__components_plant_cultivate_pop_cultivate_vue___default.a,
+        CultivateOperate: __WEBPACK_IMPORTED_MODULE_3__components_plant_cultivate_cultivate_operate_vue___default.a
+    },
+    mounted: function mounted() {
+        this.setTitle('种植批次管理');
+    },
+
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']))
+};
+
+/***/ }),
+/* 95 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_process_pop_product_vue__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_process_pop_product_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_process_pop_product_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_process_pop_distributor_vue__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_process_pop_distributor_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_process_pop_distributor_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'processBasic',
+    data: function data() {
+        return {
+            taps: [{ name: '产品信息', key: 'product' }, { name: '经销售信息', key: 'distributor' }],
+            tableLists: [{
+                key: 'product',
+                component: { product: __WEBPACK_IMPORTED_MODULE_1__components_process_pop_product_vue___default.a },
+                searchPlaceholder: '产品名称',
+                searchUrl: 'product',
+                theads: ['产品名称', '产品品牌', '生产单位'],
+                protos: ['name', 'marque', 'production_unit'],
+                widths: [32, 24, 17]
+            }, {
+                key: 'distributor',
+                component: { distributor: __WEBPACK_IMPORTED_MODULE_2__components_process_pop_distributor_vue___default.a },
+                searchPlaceholder: '经销商名称',
+                searchUrl: 'distributor',
+                theads: ['经销商名称', '联系人', '联系电话'],
+                protos: ['name', 'contacts', 'phone'],
+                widths: [32, 24, 17]
+            }]
+        };
+    },
+
+    components: {
+        BasicModel: __WEBPACK_IMPORTED_MODULE_0__components_public_basic_model_vue___default.a,
+        PopProduct: __WEBPACK_IMPORTED_MODULE_1__components_process_pop_product_vue___default.a,
+        PopDistributor: __WEBPACK_IMPORTED_MODULE_2__components_process_pop_distributor_vue___default.a
+    }
+};
+
+/***/ }),
+/* 96 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_table_manage_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_public_table_manage_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_public_table_manage_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_log_hispic_vue__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_log_hispic_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_log_hispic_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -23659,7 +30730,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	data: function data() {
 		return {
 			key: 'record',
-			component: { open: null, hispic: __WEBPACK_IMPORTED_MODULE_1__hispic_vue___default.a },
+			component: { open: __WEBPACK_IMPORTED_MODULE_1__components_log_hispic_vue___default.a },
 			searchPlaceholder: '历史日期',
 			searchUrl: 'record',
 			theads: ['日期', '天气', '操作人'],
@@ -23669,11 +30740,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	},
 
 	components: {
-		tableList: __WEBPACK_IMPORTED_MODULE_0__components_public_table_list_vue___default.a,
-		Hispic: __WEBPACK_IMPORTED_MODULE_1__hispic_vue___default.a
+		TableManage: __WEBPACK_IMPORTED_MODULE_0__components_public_table_manage_vue___default.a,
+		Hispic: __WEBPACK_IMPORTED_MODULE_1__components_log_hispic_vue___default.a
 	},
 	mounted: function mounted() {
-		this.$refs.tableList.getAllLists(this.searchUrl);
+		this.$refs.TableManage.getAllLists(this.searchUrl);
 	},
 
 	methods: {
@@ -23687,30 +30758,174 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 53 */
+/* 97 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_detection_vue__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_detection_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_detection_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_detection_vue__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_detection_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_detection_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'VegetableDetetion',
+    data: function data() {
+        return {
+            component: { new: __WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_detection_vue___default.a, cultivate: __WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_detection_vue___default.a, serial: __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue___default.a },
+            theads: ['种植区', '批次号', '果蔬名称'],
+            protos: ['plantation_name', 'serial', 'plant_name'],
+            widths: [26, 30, 17]
+        };
+    },
+
+    components: {
+        TableManage: __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue___default.a,
+        PopVegetableDetection: __WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_detection_vue___default.a,
+        EditVegetableDetection: __WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_detection_vue___default.a
+    },
+    mounted: function mounted() {
+        this.setTitle('采收检测管理');
+    },
+
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']))
+};
+
+/***/ }),
+/* 98 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_vue__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_vue__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = {
+    name: 'VegetableHarvest',
+    data: function data() {
+        return {
+            component: { new: __WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_vue___default.a, cultivate: __WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_vue___default.a, serial: __WEBPACK_IMPORTED_MODULE_4__components_plant_cultivate_cultivate_number_vue___default.a },
+            theads: ['种植区', '批次号', '果蔬名称'],
+            protos: ['plantation_name', 'serial', 'plant_name'],
+            widths: [26, 30, 17]
+        };
+    },
+
+    components: {
+        TableManage: __WEBPACK_IMPORTED_MODULE_1__components_public_table_manage_vue___default.a,
+        PopVegetable: __WEBPACK_IMPORTED_MODULE_2__components_vegetable_harvest_pop_vegetable_vue___default.a,
+        EditVegetable: __WEBPACK_IMPORTED_MODULE_3__components_vegetable_harvest_edit_vegetable_vue___default.a
+    },
+    mounted: function mounted() {
+        this.setTitle('采收批次管理');
+    },
+
+    methods: _extends({}, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_vuex__["mapMutations"])(['setTitle']))
+};
+
+/***/ }),
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {
 /**
- * 长按提示删除
+ * 长按事件
  */
-exports.touchDelete = function () {
+exports.touchAction = function () {
     return function (el, binding) {
         var time = null;
         el.addEventListener("touchstart", function (event) {
             time = setTimeout(function () {
                 var vm = binding.value.vm;
-                var type = binding.value.type;
-                var id = binding.value.id;
-                var index = binding.value.index;
-                var flag = binding.value.flag;
-                var tip = binding.value.tip;
-                if (!flag) {
-                    var deleteFunction = binding.arg;
-                    vm[deleteFunction](type, id, index);
-                } else {
-                    vm.$alert(tip);
-                }
+                var myFunction = binding.arg;
+                vm[myFunction](binding.value);
             }, 500);
         });
 
@@ -23842,10 +31057,10 @@ exports.sticky = function () {
         }
     };
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
-/* 54 */
+/* 100 */
 /***/ (function(module, exports) {
 
 
@@ -23863,30 +31078,32 @@ exports.getItemFromObject = function (object, index) {
 };
 
 /***/ }),
-/* 55 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vee_validate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vee_validate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_validate_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__utils_validate_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_directive_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__directive_directive_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_utils__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_easyAjax__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_utils__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_easyAjax__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filters_filters_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__filters_filters_js__);
 
 
 // 注册全局组件
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('confirm', __webpack_require__(83));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('PopTransition', __webpack_require__(88));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('pop-select', __webpack_require__(87));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('loading', __webpack_require__(85));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('confirm', __webpack_require__(17));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('PopTransition', __webpack_require__(149));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('pop-select', __webpack_require__(148));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('loading', __webpack_require__(147));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('date-picker', __webpack_require__(143));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('form-submit', __webpack_require__(144));
 
 // 注册自定义验证规则
 
@@ -23902,6 +31119,7 @@ Object.keys(__WEBPACK_IMPORTED_MODULE_3__directive_directive_js___default.a).for
 });
 
 // 注册全局方法
+__webpack_require__(102);
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_4__utils_utils__["a" /* default */]);
@@ -23914,7 +31132,228 @@ Object.keys(__WEBPACK_IMPORTED_MODULE_6__filters_filters_js___default.a).forEach
 });
 
 /***/ }),
-/* 56 */
+/* 102 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__table_list__ = __webpack_require__(105);
+
+// import api from './api'
+
+
+// Vue.use(api)
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1__table_list__["a" /* default */]);
+
+/***/ }),
+/* 103 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export api */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return tableList; });
+
+var api = {
+	invoke: 'invokePluginApi'
+};
+
+var tableList = {
+	list: 'list',
+	selectedLists: 'selectedLists',
+	showList: 'showList',
+	slideList: 'slideList',
+	slideListItem: 'slideListItem'
+};
+
+
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports) {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var TableList = function () {
+    function TableList(list, selectedLists, showList) {
+        _classCallCheck(this, TableList);
+
+        this.list = list;
+        this.selectedLists = selectedLists;
+        this.showList = showList;
+        // 列表过渡效果
+        this.slideList = 'slide-fade-right';
+        // 列表项出现/消失效果
+        this.slideListItem = 'slide-up';
+    }
+
+    _createClass(TableList, [{
+        key: 'setList',
+        value: function setList(list) {
+            this.list = list;
+        }
+    }, {
+        key: 'spliceList',
+        value: function spliceList(index) {
+            this.list.splice(index, 1);
+        }
+    }, {
+        key: 'unshiftList',
+        value: function unshiftList(item) {
+            this.list.unshift(item);
+        }
+    }, {
+        key: 'setSelectedLists',
+        value: function setSelectedLists(selectedLists) {
+            this.selectedLists = selectedLists;
+        }
+    }, {
+        key: 'pushSelectedLists',
+        value: function pushSelectedLists(selectedList) {
+            var protos = ['id', 'index', 'flag'];
+            var result = protos.every(function (item, index) {
+                if (item in selectedList) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+            if (!result) console.error('传入的值必须是个包含id、index和flag这三个属性的对象');
+            this.selectedLists.push(selectedList);
+        }
+    }, {
+        key: 'spliceSelectedLists',
+        value: function spliceSelectedLists(index) {
+            this.selectedLists.splice(index, 1);
+        }
+    }, {
+        key: 'reverseSelectedLists',
+        value: function reverseSelectedLists(proto) {
+            this.selectedLists = reverseObj(this.selectedLists, proto);
+        }
+    }, {
+        key: 'setShowList',
+        value: function setShowList(type) {
+            if (typeof type == 'boolean') {
+                this.showList = type;
+            } else {
+                console.error('传入的值必须是Boolean类型');
+            }
+        }
+    }, {
+        key: 'setSlideList',
+        value: function setSlideList(name) {
+            switch (name) {
+                case 'slide-fade-left':
+                    this.slideList = name;break;
+                case 'slide-fade-right':
+                    this.slideList = name;break;
+                default:
+                    this.slideList = '';
+            }
+        }
+    }, {
+        key: 'setSlideListItem',
+        value: function setSlideListItem(name) {
+            switch (name) {
+                case 'slide-up':
+                    this.slideListItem = name;break;
+                default:
+                    this.slideListItem = '';
+            }
+        }
+    }]);
+
+    return TableList;
+}();
+
+/**
+ * 比较器
+ * @param proto
+ * @returns {function()}
+ */
+
+
+function compare(proto) {
+    return function (ob1, ob2) {
+        return ob1[proto] - ob2[proto];
+    };
+}
+
+/**
+ * 根据传过来的属性参数对对象数组继续逆序排序
+ * @param arrObj 对象数组
+ * @param proto 对象的属性
+ * @returns {Array.<T>}
+ */
+function reverseObj(arrObj, proto) {
+    return arrObj.sort(compare(proto)).reverse();
+};
+
+var tableList = new TableList([], [], true);
+
+module.exports = { tableList: tableList };
+
+/***/ }),
+/* 105 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TableList__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__TableList___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__TableList__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__protoName_js__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__component_table_list_vue__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__component_table_list_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__component_table_list_vue__);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = {
+	install: function install() {
+		var _computed;
+
+		if (__WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$tableList == undefined) {
+			Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype, '$tableList', {
+				get: function get() {
+					return __WEBPACK_IMPORTED_MODULE_1__TableList___default.a.tableList;
+				}
+			});
+		}
+
+		__WEBPACK_IMPORTED_MODULE_0_vue___default.a.mixin({
+			data: function data() {
+				return {
+					$tableList: __WEBPACK_IMPORTED_MODULE_1__TableList___default.a.tableList
+				};
+			},
+
+			computed: (_computed = {}, _defineProperty(_computed, __WEBPACK_IMPORTED_MODULE_2__protoName_js__["a" /* tableList */].list, function () {
+				return this.$tableList.list;
+			}), _defineProperty(_computed, __WEBPACK_IMPORTED_MODULE_2__protoName_js__["a" /* tableList */].selectedLists, function () {
+				return this.$tableList.selectedLists;
+			}), _defineProperty(_computed, __WEBPACK_IMPORTED_MODULE_2__protoName_js__["a" /* tableList */].showList, function () {
+				return this.$tableList.showList;
+			}), _defineProperty(_computed, __WEBPACK_IMPORTED_MODULE_2__protoName_js__["a" /* tableList */].slideList, function () {
+				return this.$tableList.slideList;
+			}), _defineProperty(_computed, __WEBPACK_IMPORTED_MODULE_2__protoName_js__["a" /* tableList */].slideListItem, function () {
+				return this.$tableList.slideListItem;
+			}), _computed)
+		});
+
+		__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('table-list', __WEBPACK_IMPORTED_MODULE_3__component_table_list_vue___default.a);
+	}
+};
+
+/***/ }),
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23934,15 +31373,15 @@ function createView(component) {
 }
 
 /***/ }),
-/* 57 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CreateView__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CreateView__ = __webpack_require__(106);
 /**
  * 路由
  */
@@ -23954,32 +31393,48 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 //=============================顶层组件====================================
 //---------------------------最顶层组件----------------------------------
-var index = __webpack_require__(95);
+var index = __webpack_require__(163);
 
 //---------------------------登录租金----------------------------------
-var login = __webpack_require__(97);
+var login = __webpack_require__(165);
 
 //---------------------------农业日志----------------------------------
-var log = __webpack_require__(96);
+var log = __webpack_require__(164);
 
 //---------------------------404----------------------------------
-var notFound = __webpack_require__(90);
+var notFound = __webpack_require__(157);
 
 //---------------------------图片日志------------------------------
-var dailylog = __webpack_require__(93);
+var dailylog = __webpack_require__(161);
 
 //---------------------------历史图片------------------------------
-var record = __webpack_require__(98);
+var record = __webpack_require__(168);
 
 //=============================种植管理====================================
-
 //---------------------------种植基础信息管理----------------------------------
-var basic = __webpack_require__(91);
+var basic = __webpack_require__(158);
+
+//---------------------------种植批次管理----------------------------------
+var plantCultivate = __webpack_require__(166);
+var cultivateRefer = __webpack_require__(160);
+var plantCultivateDetail = __webpack_require__(138);
+
+//---------------------------施肥管理----------------------------------
+var fertilize = __webpack_require__(162);
+
+//=============================果蔬采收批次管理====================================
+//---------------------------果蔬采收批次管理----------------------------------
+var vegetableHarvest = __webpack_require__(170);
+//---------------------------果蔬检测管理----------------------------------
+var vegetableDetection = __webpack_require__(169);
+
+//=============================果蔬加工管理====================================
+//-----------------------------------------------------------------------------
+var processBasic = __webpack_require__(167);
 
 //=============================养殖管理====================================
-
 //---------------------------养殖基础信息管理----------------------------------
-var beast = __webpack_require__(92);
+var beast = __webpack_require__(159);
 
 var routes = [{
     path: '/',
@@ -23995,6 +31450,36 @@ var routes = [{
         path: 'basic',
         name: 'basic',
         component: basic,
+        meta: { requiresAuth: true }
+    }, {
+        path: 'plant-cultivate',
+        name: 'plant-cultivate',
+        component: plantCultivate,
+        meta: { requiresAuth: true }
+    }, {
+        path: 'vegetable-harvest',
+        name: 'vegetable-harvest',
+        component: vegetableHarvest,
+        meta: { requiresAuth: true }
+    }, {
+        path: 'vegetable-detection',
+        name: 'vegetable-detection',
+        component: vegetableDetection,
+        meta: { requiresAuth: true }
+    }, {
+        path: 'plant-cultivate-detail/:id',
+        name: 'plant-cultivate-detail',
+        component: plantCultivateDetail,
+        meta: { requiresAuth: true }
+    }, {
+        path: 'cultivate-refer/:type',
+        name: 'cultivate-refer',
+        component: cultivateRefer,
+        meta: { requiresAuth: true }
+    }, {
+        path: 'fertilize',
+        name: 'fertilize',
+        component: fertilize,
         meta: { requiresAuth: true }
     }, {
         path: 'beast',
@@ -24016,6 +31501,11 @@ var routes = [{
         name: 'record',
         component: record,
         meta: { requiresAuth: true }
+    }, {
+        path: 'process-basic',
+        name: 'process-basic',
+        component: processBasic,
+        meta: { requiresAuth: true }
     }]
 }, {
     path: '/webapp/login/:code',
@@ -24033,11 +31523,11 @@ var routes = [{
 });
 
 /***/ }),
-/* 58 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 
@@ -24054,9 +31544,9 @@ var routes = [{
          * @param resolve
          * @param reject
          */
-        __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$index = function (vm, url) {
+        __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$index = function (vm, url, params) {
             return new Promise(function (resolve, reject) {
-                vm.$http.get(vm.$adminUrl(url + '/query')).then(function (response) {
+                vm.$http.get(vm.$adminUrl(url + '/query'), { params: params }).then(function (response) {
                     resolve(response);
                 }, function (error) {
                     reject(error);
@@ -24196,11 +31686,11 @@ var routes = [{
 };
 
 /***/ }),
-/* 59 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 
@@ -24262,7 +31752,7 @@ var routes = [{
             }, 1500);
         };
 
-        var env = __webpack_require__(11);
+        var env = __webpack_require__(23);
         // let host = env.app_url;
         var host = '';
         /**
@@ -24367,9 +31857,11 @@ var routes = [{
          */
         __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$objectToParam = function (object) {
             var params = '';
-            Object.keys(object).forEach(function (k) {
-                return params += k + '=' + object[k] + '&';
-            });
+            if (object) {
+                Object.keys(object).forEach(function (k) {
+                    return params += k + '=' + object[k] + '&';
+                });
+            }
             return params;
         };
 
@@ -24416,10 +31908,10 @@ var routes = [{
         };
     }
 };
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)))
 
 /***/ }),
-/* 60 */
+/* 110 */
 /***/ (function(module, exports) {
 
 
@@ -24439,13 +31931,13 @@ exports.phone = function () {
 };
 
 /***/ }),
-/* 61 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vuex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
 // Vuex
 
@@ -24455,7 +31947,16 @@ __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_0_vuex
 var store = new __WEBPACK_IMPORTED_MODULE_0_vuex___default.a.Store({
     state: {
         userInfo: { userId: '' },
-        title: '农业日志'
+        // 顶部模块的标题
+        title: '农业日志',
+        // 顶部模块左边的按钮组件
+        headLeftComponent: null,
+        // 顶部模块右边的按钮组件
+        headRightComponent: null,
+        // 是否显示消息弹窗
+        showLayer: false,
+        // 弹窗的内容组件
+        layerComponent: null
     },
     mutations: {
 
@@ -24472,6 +31973,36 @@ var store = new __WEBPACK_IMPORTED_MODULE_0_vuex___default.a.Store({
          */
         setUserInfo: function setUserInfo(state, userInfo) {
             state.userInfo.userId = userInfo;
+        },
+
+
+        /**
+        * 设置顶部模块左边的按钮组件
+        * @param {Object} state
+        * @param {Object} component Vue实例
+        */
+        setHeadLeftComponent: function setHeadLeftComponent(state, component) {
+            state.headLeftComponent = component;
+        },
+
+
+        /**
+         * 设置顶部模块右边的按钮组件
+         * @param {Object} state
+         * @param {Object} component Vue实例
+         */
+        setHeadRightComponent: function setHeadRightComponent(state, component) {
+            state.headRightComponent = component;
+        },
+        setShowLayer: function setShowLayer(state, type) {
+            if (typeof type == 'boolean') {
+                state.showLayer = type;
+            } else {
+                console.error('传入的值必须是Boolean类型');
+            }
+        },
+        setLayerComponent: function setLayerComponent(state, component) {
+            state.layerComponent = component;
         }
     },
 
@@ -24486,7 +32017,7 @@ var store = new __WEBPACK_IMPORTED_MODULE_0_vuex___default.a.Store({
 /* harmony default export */ __webpack_exports__["a"] = store;
 
 /***/ }),
-/* 62 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24617,7 +32148,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 };
 
 /***/ }),
-/* 63 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
@@ -25103,7 +32634,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, 
 
 
 /***/ }),
-/* 64 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25112,10 +32643,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(12)
+__vue_exports__ = __webpack_require__(24)
 
 /* template */
-var __vue_template__ = __webpack_require__(111)
+var __vue_template__ = __webpack_require__(192)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25134,7 +32665,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 65 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25143,10 +32674,42 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(13)
+__vue_exports__ = __webpack_require__(25)
 
 /* template */
-var __vue_template__ = __webpack_require__(131)
+var __vue_template__ = __webpack_require__(207)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-661a8d1c"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(26)
+
+/* template */
+var __vue_template__ = __webpack_require__(231)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25166,7 +32729,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 66 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25175,10 +32738,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(14)
+__vue_exports__ = __webpack_require__(27)
 
 /* template */
-var __vue_template__ = __webpack_require__(121)
+var __vue_template__ = __webpack_require__(213)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25198,7 +32761,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 67 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25207,10 +32770,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(15)
+__vue_exports__ = __webpack_require__(28)
 
 /* template */
-var __vue_template__ = __webpack_require__(136)
+var __vue_template__ = __webpack_require__(240)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25230,7 +32793,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 68 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25239,10 +32802,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(16)
+__vue_exports__ = __webpack_require__(29)
 
 /* template */
-var __vue_template__ = __webpack_require__(125)
+var __vue_template__ = __webpack_require__(221)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25262,7 +32825,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 69 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25271,10 +32834,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(17)
+__vue_exports__ = __webpack_require__(30)
 
 /* template */
-var __vue_template__ = __webpack_require__(101)
+var __vue_template__ = __webpack_require__(176)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25294,7 +32857,123 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 70 */
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(32)
+
+/* template */
+var __vue_template__ = __webpack_require__(190)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 122 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(33)
+
+/* template */
+var __vue_template__ = __webpack_require__(219)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 123 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(34)
+
+/* template */
+var __vue_template__ = __webpack_require__(180)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(35)
+
+/* template */
+var __vue_template__ = __webpack_require__(209)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25303,158 +32982,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(18)
+__vue_exports__ = __webpack_require__(36)
 
 /* template */
-var __vue_template__ = __webpack_require__(122)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-734a7db7"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(19)
-
-/* template */
-var __vue_template__ = __webpack_require__(110)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(20)
-
-/* template */
-var __vue_template__ = __webpack_require__(124)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(21)
-
-/* template */
-var __vue_template__ = __webpack_require__(102)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(22)
-
-/* template */
-var __vue_template__ = __webpack_require__(116)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(23)
-
-/* template */
-var __vue_template__ = __webpack_require__(99)
+var __vue_template__ = __webpack_require__(171)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25474,7 +33005,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 76 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25483,10 +33014,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(24)
+__vue_exports__ = __webpack_require__(37)
 
 /* template */
-var __vue_template__ = __webpack_require__(120)
+var __vue_template__ = __webpack_require__(211)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25506,7 +33037,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 77 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25515,10 +33046,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(25)
+__vue_exports__ = __webpack_require__(38)
 
 /* template */
-var __vue_template__ = __webpack_require__(105)
+var __vue_template__ = __webpack_require__(184)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25538,7 +33069,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 78 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25547,10 +33078,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(26)
+__vue_exports__ = __webpack_require__(39)
 
 /* template */
-var __vue_template__ = __webpack_require__(127)
+var __vue_template__ = __webpack_require__(223)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25570,7 +33101,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 79 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25579,10 +33110,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(27)
+__vue_exports__ = __webpack_require__(40)
 
 /* template */
-var __vue_template__ = __webpack_require__(106)
+var __vue_template__ = __webpack_require__(185)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25602,7 +33133,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 80 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25611,10 +33142,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(28)
+__vue_exports__ = __webpack_require__(41)
 
 /* template */
-var __vue_template__ = __webpack_require__(126)
+var __vue_template__ = __webpack_require__(222)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25634,7 +33165,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 81 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25643,10 +33174,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(29)
+__vue_exports__ = __webpack_require__(42)
 
 /* template */
-var __vue_template__ = __webpack_require__(134)
+var __vue_template__ = __webpack_require__(237)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25666,7 +33197,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 82 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25675,10 +33206,106 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(30)
+__vue_exports__ = __webpack_require__(45)
 
 /* template */
-var __vue_template__ = __webpack_require__(103)
+var __vue_template__ = __webpack_require__(201)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-4c56db96"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 133 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(46)
+
+/* template */
+var __vue_template__ = __webpack_require__(175)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-0aec6f5c"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 134 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(47)
+
+/* template */
+var __vue_template__ = __webpack_require__(199)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-49df8ff3"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 135 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(48)
+
+/* template */
+var __vue_template__ = __webpack_require__(181)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25697,7 +33324,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 83 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25706,10 +33333,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(33)
+__vue_exports__ = __webpack_require__(50)
 
 /* template */
-var __vue_template__ = __webpack_require__(139)
+var __vue_template__ = __webpack_require__(191)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25723,13 +33350,13 @@ if (typeof __vue_options__ === "function") {
 
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-fa478820"
+__vue_options__._scopeId = "data-v-3ac97908"
 
 module.exports = __vue_exports__
 
 
 /***/ }),
-/* 84 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25738,10 +33365,265 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(34)
+__vue_exports__ = __webpack_require__(51)
 
 /* template */
-var __vue_template__ = __webpack_require__(114)
+var __vue_template__ = __webpack_require__(197)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-4634655f"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 138 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(52)
+
+/* template */
+var __vue_template__ = __webpack_require__(179)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 139 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(58)
+
+/* template */
+var __vue_template__ = __webpack_require__(225)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-9a7ea6b2"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 140 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(60)
+
+/* template */
+var __vue_template__ = __webpack_require__(216)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-75239f6b"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 141 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(61)
+
+/* template */
+var __vue_template__ = __webpack_require__(178)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-1463b31a"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 142 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(62)
+
+/* template */
+var __vue_template__ = __webpack_require__(220)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-7ed392ee"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 143 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(66)
+
+/* template */
+var __vue_template__ = __webpack_require__(239)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-dad98386"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 144 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(67)
+
+/* template */
+var __vue_template__ = __webpack_require__(200)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-4c42cc1e"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 145 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(68)
+
+/* template */
+var __vue_template__ = __webpack_require__(198)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25761,7 +33643,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 85 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25770,10 +33652,42 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(36)
+__vue_exports__ = __webpack_require__(70)
 
 /* template */
-var __vue_template__ = __webpack_require__(115)
+var __vue_template__ = __webpack_require__(206)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-616f4001"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 147 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(71)
+
+/* template */
+var __vue_template__ = __webpack_require__(205)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25793,7 +33707,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 86 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25802,42 +33716,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(37)
+__vue_exports__ = __webpack_require__(74)
 
 /* template */
-var __vue_template__ = __webpack_require__(123)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-755edde0"
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-
-/* script */
-__vue_exports__ = __webpack_require__(39)
-
-/* template */
-var __vue_template__ = __webpack_require__(135)
+var __vue_template__ = __webpack_require__(238)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25857,17 +33739,17 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 88 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(40)
+__vue_exports__ = __webpack_require__(75)
 
 /* template */
-var __vue_template__ = __webpack_require__(104)
+var __vue_template__ = __webpack_require__(182)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25886,7 +33768,36 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 89 */
+/* 150 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(76)
+
+/* template */
+var __vue_template__ = __webpack_require__(195)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25895,10 +33806,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(42)
+__vue_exports__ = __webpack_require__(78)
 
 /* template */
-var __vue_template__ = __webpack_require__(109)
+var __vue_template__ = __webpack_require__(188)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25918,7 +33829,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 90 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25927,10 +33838,170 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(44)
+__vue_exports__ = __webpack_require__(80)
 
 /* template */
-var __vue_template__ = __webpack_require__(107)
+var __vue_template__ = __webpack_require__(202)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-52dc21f8"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(81)
+
+/* template */
+var __vue_template__ = __webpack_require__(193)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-3f6a1300"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 154 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(82)
+
+/* template */
+var __vue_template__ = __webpack_require__(245)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-fcdbdb2a"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 155 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(83)
+
+/* template */
+var __vue_template__ = __webpack_require__(174)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-06ad319a"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 156 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(84)
+
+/* template */
+var __vue_template__ = __webpack_require__(215)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-734b5276"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(85)
+
+/* template */
+var __vue_template__ = __webpack_require__(186)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25950,7 +34021,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 91 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25959,10 +34030,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(45)
+__vue_exports__ = __webpack_require__(86)
 
 /* template */
-var __vue_template__ = __webpack_require__(128)
+var __vue_template__ = __webpack_require__(227)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -25981,7 +34052,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 92 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -25990,10 +34061,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(46)
+__vue_exports__ = __webpack_require__(87)
 
 /* template */
-var __vue_template__ = __webpack_require__(132)
+var __vue_template__ = __webpack_require__(232)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -26012,7 +34083,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 93 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -26021,10 +34092,42 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(47)
+__vue_exports__ = __webpack_require__(88)
 
 /* template */
-var __vue_template__ = __webpack_require__(117)
+var __vue_template__ = __webpack_require__(224)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-9955fc26"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(89)
+
+/* template */
+var __vue_template__ = __webpack_require__(210)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -26044,7 +34147,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 94 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -26053,10 +34156,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(48)
+__vue_exports__ = __webpack_require__(90)
 
 /* template */
-var __vue_template__ = __webpack_require__(119)
+var __vue_template__ = __webpack_require__(203)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -26070,13 +34173,13 @@ if (typeof __vue_options__ === "function") {
 
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6d4a5459"
+__vue_options__._scopeId = "data-v-5b16ff9f"
 
 module.exports = __vue_exports__
 
 
 /***/ }),
-/* 95 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -26085,10 +34188,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(49)
+__vue_exports__ = __webpack_require__(91)
 
 /* template */
-var __vue_template__ = __webpack_require__(112)
+var __vue_template__ = __webpack_require__(194)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -26108,7 +34211,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 96 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -26117,10 +34220,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(50)
+__vue_exports__ = __webpack_require__(92)
 
 /* template */
-var __vue_template__ = __webpack_require__(108)
+var __vue_template__ = __webpack_require__(187)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -26140,7 +34243,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 97 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -26149,10 +34252,10 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(51)
+__vue_exports__ = __webpack_require__(93)
 
 /* template */
-var __vue_template__ = __webpack_require__(129)
+var __vue_template__ = __webpack_require__(228)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -26172,7 +34275,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 98 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -26181,10 +34284,42 @@ var __vue_styles__ = {}
 /* styles */
 
 /* script */
-__vue_exports__ = __webpack_require__(52)
+__vue_exports__ = __webpack_require__(94)
 
 /* template */
-var __vue_template__ = __webpack_require__(100)
+var __vue_template__ = __webpack_require__(208)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6697bb58"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 167 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(95)
+
+/* template */
+var __vue_template__ = __webpack_require__(236)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -26203,7 +34338,102 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 99 */
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(96)
+
+/* template */
+var __vue_template__ = __webpack_require__(172)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 169 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(97)
+
+/* template */
+var __vue_template__ = __webpack_require__(218)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-75d6d388"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 170 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+
+/* script */
+__vue_exports__ = __webpack_require__(98)
+
+/* template */
+var __vue_template__ = __webpack_require__(204)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-5ca1012c"
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 171 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26214,255 +34444,28 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_c('td', {
+  }, [_c('form-submit', {
     attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "pic-preview",
-    on: {
-      "click": _vm.selectPic
-    }
-  }, [(_vm.letItem.image == '' || _vm.letItem.image == null) ? _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.image)
-    }
-  }) : (_vm.letItem.image == 'upload.png') ? _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.letItem.image)
-    }
-  }) : _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.letItem.image, false)
-    }
-  })]), _c('input', {
-    attrs: {
-      "name": "file_name",
-      "type": "file",
-      "hidden": "hidden"
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
     },
     on: {
-      "change": function($event) {
-        _vm.previewPic(_vm.letItem, $event)
-      }
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getPic": _vm.getPic
     }
-  }), _c('div', {
-    staticClass: "delete-pic-btn"
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.deletePic
-    }
-  }, [_vm._v("删除")])])])]), _c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "畜禽名称",
-      "type": "text",
-      "id": "beast_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.desctiption),
-      expression: "letItem.desctiption"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "beast_new_desctiption",
-      "name": "desctiption"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.desctiption)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.desctiption = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.ear),
-      expression: "letItem.ear"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "beast_new_ear",
-      "name": "ear"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.ear)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.ear = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "beast_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditbeastation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddbeastation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(4)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "beast_new_fullName"
-    }
-  }, [_vm._v("畜禽名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "beast_new_desctiption"
-    }
-  }, [_vm._v("品种描述")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "beast_new_ear"
-    }
-  }, [_vm._v("RFID位置")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "beast_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
+  })], 1)
+},staticRenderFns: []}
 
 /***/ }),
-/* 100 */
+/* 172 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('table-list', {
-    ref: "tableList",
+  return _c('div', [_c('table-manage', {
+    ref: "TableManage",
     attrs: {
       "component": _vm.component,
       "_key": _vm._key,
@@ -26482,7 +34485,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 101 */
+/* 173 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "left-btn",
+    on: {
+      "click": function($event) {
+        _vm.clickEvent()
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('back.png'),
+      "alt": ""
+    }
+  })])
+},staticRenderFns: []}
+
+/***/ }),
+/* 174 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26502,30 +34525,73 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "colspan": "2"
     }
-  }, [_c('pop-select', {
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.harvest_date),
+      expression: "letItem.harvest_date"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.harvest_date),
+      expression: "letItem.harvest_date",
+      modifiers: {
+        "initial": true
+      }
+    }],
     attrs: {
-      "name": "pid",
-      "items": _vm.plantations,
-      "defaultIndex": parseInt(_vm.defaultPlaIndex),
-      "protoBack": "id",
-      "protoShow": "name"
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "操作日期",
+      "type": "text",
+      "id": "harvest_new_date",
+      "name": "harvest_date",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.harvest_date)
     },
     on: {
-      "callback": _vm.getMsgPid
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.harvest_date = $event.target.value
+      }
     }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('pid')),
-      expression: "errors.has('pid')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
+  })])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
     attrs: {
       "colspan": "2"
     }
-  }, [_vm._v(_vm._s(_vm.errors.first('pid')))])]), _c('tr', [_vm._m(1), _c('td', {
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "plantation_id",
+      "id": "harvest_plantation_select",
+      "items": _vm.PlantationName,
+      "protoBack": "plantation_id",
+      "protoShow": "plantation_name",
+      "defaultIndex": parseInt(_vm.defaultPlantationSelectIndex)
+    },
+    on: {
+      "callback": _vm.getMsgPlantationSelect
+    }
+  })], 1)]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "cultivate_id",
+      "id": "harvest_cultivate_serial",
+      "items": _vm.plantIds,
+      "protoBack": "id",
+      "protoShow": "serial",
+      "defaultIndex": parseInt(_vm.defaultplantIdIndex)
+    },
+    on: {
+      "callback": _vm.getMsgplantId
+    }
+  })], 1)]), _c('tr', [_vm._m(3), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -26534,70 +34600,86 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
+      value: (_vm.letItem.plant_name),
+      expression: "letItem.plant_name"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "harvest_plant_new_gsName",
+      "disabled": ""
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.plant_name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.plant_name = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.cultivate_date),
+      expression: "letItem.cultivate_date"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
+      value: (_vm.letItem.cultivate_date),
+      expression: "letItem.cultivate_date",
       modifiers: {
         "initial": true
       }
     }],
     attrs: {
       "data-vv-rules": "required|max:255",
-      "data-vv-as": "种植区名称",
+      "data-vv-as": "操作日期",
       "type": "text",
-      "id": "planta_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
+      "id": "harvest_cultivate_date",
+      "name": "cultivate_date",
+      "disabled": ""
     },
     domProps: {
-      "value": _vm._s(_vm.letItem.name)
+      "value": _vm._s(_vm.letItem.cultivate_date)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
+        _vm.letItem.cultivate_date = $event.target.value
       }
     }
   })])]), _c('tr', {
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
+      value: (_vm.errors.has('cultivate_date')),
+      expression: "errors.has('cultivate_date')"
     }]
   }, [_c('td', {
     staticClass: "error",
     attrs: {
-      "colspan": "2"
+      "colspan": "3"
     }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop input-area"
+  }, [_vm._v(_vm._s(_vm.errors.first('cultivate_date')))])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop"
   }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
       value: (_vm.letItem.area),
       expression: "letItem.area"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.area),
-      expression: "letItem.area",
-      modifiers: {
-        "initial": true
-      }
     }],
     attrs: {
-      "data-vv-rules": "required|decimal:2",
-      "data-vv-as": "种植面积",
       "type": "text",
-      "id": "planta_new_area",
+      "id": "harvest_cultivate_new_area",
       "name": "area",
-      "placeholder": "请填写数字(必填)"
+      "disabled": ""
     },
     domProps: {
       "value": _vm._s(_vm.letItem.area)
@@ -26609,130 +34691,55 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   })]), _c('td', {
-    staticClass: "area_unit"
-  }, [_c('pop-select', {
+    staticClass: "input-pop"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.area_unit),
+      expression: "letItem.area_unit"
+    }],
     attrs: {
+      "type": "text",
       "name": "area_unit",
-      "items": _vm.area_unit,
-      "defaultIndex": parseInt(_vm.defaultUnitIndex)
-    },
-    on: {
-      "callback": _vm.getMsgUnit
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('area')),
-      expression: "errors.has('area')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "planta_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
+      "disabled": ""
     },
     domProps: {
-      "value": _vm._s(_vm.letItem.phone)
+      "value": _vm._s(_vm.letItem.area_unit)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.address),
-      expression: "letItem.address"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "planta_new_address",
-      "name": "address"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.address = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.director),
-      expression: "letItem.director"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "planta_new_principal",
-      "name": "director"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.director)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.director = $event.target.value
+        _vm.letItem.area_unit = $event.target.value
       }
     }
   })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.amount),
+      expression: "letItem.amount"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "harvest_new_amount",
+      "name": "amount"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.amount)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.amount = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(7), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -26746,7 +34753,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }],
     attrs: {
       "type": "text",
-      "id": "planta_new_note",
+      "id": "medicament_new_note",
       "name": "memo"
     },
     domProps: {
@@ -26766,49 +34773,73 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "footer-r"
   }, [(_vm.edit) ? _c('a', {
     attrs: {
-      "href": "#"
+      "href": "javascript:void(0)"
     }
   }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelEditPlanta
+      "click": _vm.cancelEditmedicament
     }
   }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
     attrs: {
-      "href": "#"
+      "href": "javascript:void(0)"
     }
   }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelAddPlanta
+      "click": _vm.cancelAddmedicament
     }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(7)])])])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "plantation_fullName"
+      "for": "new_date"
     }
-  }, [_vm._v("种植场名称")])])
+  }, [_vm._v("采收日期")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "planta_new_fullName"
+      "for": "new_plant"
     }
-  }, [_vm._v("种植区名称")])])
+  }, [_vm._v("所属种植区")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "planta_new_area"
+      "for": "new_matchinfor"
+    }
+  }, [_vm._v("种植批次号")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_gsName"
+    }
+  }, [_vm._v("果蔬名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_date"
+    }
+  }, [_vm._v("种植日期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "pop_area"
     }
   }, [_vm._v("种植面积")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26816,31 +34847,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "planta_new_phone"
+      "for": "new_user"
     }
-  }, [_vm._v("详细电话")])])
+  }, [_vm._v("采收重量")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "planta_new_address"
-    }
-  }, [_vm._v("详细地址")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "planta_new_principal"
-    }
-  }, [_vm._v("负责人")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "planta_new_note"
+      "for": "medicament_new_note"
     }
   }, [_vm._v("备注信息")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26848,7 +34863,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "footer-r"
   }, [_c('a', {
     attrs: {
-      "href": "#"
+      "href": "javascript:void(0)"
     }
   }, [_c('button', {
     staticClass: "btn-pop"
@@ -26856,7 +34871,124 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 102 */
+/* 175 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "right-btn",
+    on: {
+      "click": function($event) {
+        _vm.clickEvent()
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('eye.png'),
+      "alt": ""
+    }
+  })])
+},staticRenderFns: []}
+
+/***/ }),
+/* 176 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId,
+      "getMsg": _vm.getMsg
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 177 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId,
+      "getDate": _vm.getDate,
+      "getMsg": _vm.getMsg
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 178 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 179 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('basic-model', {
+    attrs: {
+      "title": "种植批次详细管理",
+      "taps": _vm.taps,
+      "tableLists": _vm.tableLists
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 180 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -26864,7 +34996,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 103 */
+/* 181 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -27319,7 +35451,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "footer-r"
   }, [_c('a', {
     attrs: {
-      "href": "#"
+      "href": "javascript:void(0)"
     }
   }, [_c('button', {
     attrs: {
@@ -27470,7 +35602,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "footer-r"
   }, [_c('a', {
     attrs: {
-      "href": "#"
+      "href": "javascript:void(0)"
     }
   }, [_c('button', {
     staticClass: "btn-pop"
@@ -27478,7 +35610,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 104 */
+/* 182 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -27495,7 +35627,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 105 */
+/* 183 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -27506,476 +35638,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
+  }, [_c('form-submit', {
     attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "id": "expert_table_type",
-      "name": "expert_table_type",
-      "items": _vm.tableType,
-      "defaultIndex": parseInt(_vm.defaultTypeIndex)
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
     },
     on: {
-      "callback": _vm.getMsgType
+      "closeNew": _vm.cancelAdd,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId,
+      "getDate": _vm.getDate,
+      "getMsg": _vm.getMsg
     }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('table_type')),
-      expression: "errors.has('table_type')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('table_type')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.expert_name),
-      expression: "letItem.expert_name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.expert_name),
-      expression: "letItem.expert_name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "专家名称",
-      "type": "text",
-      "id": "expert_new_fullName",
-      "name": "expert_name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.expert_name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.expert_name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('expert_name')),
-      expression: "errors.has('expert_name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('expert_name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.major),
-      expression: "letItem.major"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.major),
-      expression: "letItem.major",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required",
-      "data-vv-as": "研究领域",
-      "type": "text",
-      "id": "expert_major",
-      "name": "major",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.major)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.major = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('major')),
-      expression: "errors.has('major')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('major')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.level),
-      expression: "letItem.level"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.level),
-      expression: "letItem.level",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required",
-      "data-vv-as": "级别",
-      "type": "text",
-      "id": "expert_level",
-      "name": "level",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.level)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.level = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('level')),
-      expression: "errors.has('level')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('level')))])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "id": "expert_sex",
-      "name": "expert_sex",
-      "items": _vm.sex,
-      "defaultIndex": parseInt(_vm.defaultSexIndex)
-    },
-    on: {
-      "callback": _vm.getMsgSex
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('sex')),
-      expression: "errors.has('sex')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('sex')))])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.age),
-      expression: "letItem.age"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.age),
-      expression: "letItem.age",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "decimal",
-      "data-vv-as": "年龄",
-      "type": "text",
-      "id": "expert_new_age",
-      "name": "age"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.age)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.age = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('age')),
-      expression: "errors.has('age')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('age')))])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.unit),
-      expression: "letItem.unit"
-    }],
-    staticClass: "input-pop",
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "expert_new_unit",
-      "name": "unit"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.unit)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.unit = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(7), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "expert_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(8), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "expert_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditExpert
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddExpert
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(9)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_table_type"
-    }
-  }, [_vm._v("操作模块")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_fullName"
-    }
-  }, [_vm._v("专家名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_major"
-    }
-  }, [_vm._v("研究领域")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_level"
-    }
-  }, [_vm._v("级别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_sex"
-    }
-  }, [_vm._v("性别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_age"
-    }
-  }, [_vm._v("年龄")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_unit"
-    }
-  }, [_vm._v("所属单位")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_phone"
-    }
-  }, [_vm._v("联系方式")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
+  })], 1)
+},staticRenderFns: []}
 
 /***/ }),
-/* 106 */
+/* 184 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -27986,373 +35666,50 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
+  }, [_c('form-submit', {
     attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "name": "pid",
-      "items": _vm.farms,
-      "defaultIndex": parseInt(_vm.defaultfarmedIndex),
-      "protoBack": "id",
-      "protoShow": "name"
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
     },
     on: {
-      "callback": _vm.getMsgPid
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataVal": _vm.getMsgDataVal
     }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('pid')),
-      expression: "errors.has('pid')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('pid')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "养殖区名称",
-      "type": "text",
-      "id": "farmed_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.area),
-      expression: "letItem.area"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.area),
-      expression: "letItem.area",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|decimal:2",
-      "data-vv-as": "养殖面积",
-      "type": "text",
-      "id": "farmed_new_area",
-      "name": "area",
-      "placeholder": "请填写数字(必填),单位是亩"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.area)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.area = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('area')),
-      expression: "errors.has('area')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.principal),
-      expression: "letItem.principal"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "farmed_new_principal",
-      "name": "principal"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.principal)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.principal = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.kind),
-      expression: "letItem.kind"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "farmed_new_kind",
-      "name": "kind"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.kind)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.kind = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.scale),
-      expression: "letItem.scale"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "farmed_new_scale",
-      "name": "scale"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.scale)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.scale = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.address),
-      expression: "letItem.address"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "farmed_new_address",
-      "name": "address"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.address = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(7), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "farmed_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditfarmed
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddfarmed
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farmeded_new_select"
-    }
-  }, [_vm._v("养殖场名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farmed_new_fullName"
-    }
-  }, [_vm._v("养殖区名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farmed_new_area"
-    }
-  }, [_vm._v("养殖面积")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farmed_new_principal"
-    }
-  }, [_vm._v("负责人")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farmed_new_kind"
-    }
-  }, [_vm._v("养殖畜禽种类")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farmed_new_scale"
-    }
-  }, [_vm._v("养殖规模")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farmed_new_address"
-    }
-  }, [_vm._v("地址")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farmed_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
+  })], 1)
+},staticRenderFns: []}
 
 /***/ }),
-/* 107 */
+/* 185 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 186 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28364,7 +35721,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 108 */
+/* 187 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28392,7 +35749,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "table-list"
   }, [_vm._m(0), _c('tbody', {
     staticClass: "list-body"
-  }, [_vm._l((_vm.list), function(log, index) {
+  }, [_vm._l((_vm.logList), function(log, index) {
     return [_c('tr', {
       class: {
         'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
@@ -28463,6 +35820,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })], 1), _c('confirm', {
     attrs: {
+      "title": "提交",
       "show": _vm.show,
       "message": _vm.message
     },
@@ -28506,7 +35864,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 109 */
+/* 188 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28582,7 +35940,101 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 110 */
+/* 189 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('search', {
+    attrs: {
+      "placeholder": _vm.searchPlaceholder,
+      "searchUrl": _vm.searchUrl,
+      "params": _vm.params
+    },
+    on: {
+      "callback": _vm.updateListByMore
+    }
+  }, [_vm._t("search", [_c('button', {
+    staticClass: "stl-btn",
+    on: {
+      "click": function($event) {
+        _vm.showNewPanel = true
+      }
+    }
+  }, [_vm._v("新建")])])], 2), (_vm.component != null && _vm.component[_vm._key] != null) ? [(_vm.showNewPanel) ? _c(_vm.seleteComponent, {
+    tag: "component",
+    attrs: {
+      "edit": false
+    },
+    on: {
+      "callback": _vm.updateListByOne,
+      "closeNew": function($event) {
+        _vm.showNewPanel = false
+      }
+    }
+  }) : _vm._e()] : _vm._e(), _c('table-list', {
+    ref: "tableList",
+    attrs: {
+      "_key": _vm._key,
+      "component": _vm.component,
+      "args": _vm.args,
+      "theads": _vm.theads,
+      "protos": _vm.protos,
+      "widths": _vm.widths,
+      "showOperate": _vm.showOperate
+    },
+    on: {
+      "getAllLists": _vm.getAllLists,
+      "checkedBox": _vm.checkedBox,
+      "selectAll": _vm.selectAll,
+      "troggleEdit": _vm.troggleEdit,
+      "longTouchEvent": _vm.longTouchDelete
+    }
+  }, [_c(_vm.batchButtons, {
+    tag: "component",
+    slot: "batchButtons"
+  }), (!_vm.batchButtons) ? _c('button', {
+    staticClass: "btn btn-del",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.showConfirmDialog(1)
+      }
+    },
+    slot: "batchButtons"
+  }, [_vm._v("删除")]) : _vm._e()], 1), _c('div', {
+    staticClass: "paginator-module"
+  }, [_c('paginator', {
+    ref: "paginator",
+    attrs: {
+      "total": _vm.total,
+      "url": _vm.searchUrl + '/query',
+      "paginatorParams": _vm.params
+    },
+    on: {
+      "lastPageEvent": _vm.lastPageClicked,
+      "nextPageEvent": _vm.nextPageClicked,
+      "changePageEvent": function($event) {
+        _vm.$tableList.setShowList(false)
+      },
+      "result": _vm.updateListByMore
+    }
+  })], 1), _c('confirm', {
+    attrs: {
+      "show": _vm.showConfirm
+    },
+    on: {
+      "confirmAction": _vm.oneOrBatchdestroy,
+      "cancelAction": function($event) {
+        _vm.showConfirm = false
+      }
+    }
+  })], 2)
+},staticRenderFns: []}
+
+/***/ }),
+/* 190 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28590,7 +36042,152 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 111 */
+/* 191 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('ul', [_c('li', {
+    on: {
+      "click": function($event) {
+        _vm.showConfirm = true
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("状态")])]), _c('li', {
+    class: {
+      active: _vm.isActive == 'farm'
+    },
+    on: {
+      "click": function($event) {
+        _vm.popDialog('farm')
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("农事")])]), _c('li', {
+    class: {
+      active: _vm.isActive == 'fertilize'
+    },
+    on: {
+      "click": function($event) {
+        _vm.popDialog('fertilize')
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("施肥")])]), _c('li', {
+    class: {
+      active: _vm.isActive == 'medicament'
+    },
+    on: {
+      "click": function($event) {
+        _vm.popDialog('medicament')
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("施药")])]), _c('li', {
+    class: {
+      active: _vm.isActive == 'detect'
+    },
+    on: {
+      "click": function($event) {
+        _vm.popDialog('detect')
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("检测")])]), _c('li', {
+    class: {
+      active: _vm.isActive == 'harvest'
+    },
+    on: {
+      "click": function($event) {
+        _vm.popDialog('harvest')
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("采收")])]), _c('li', {
+    class: {
+      active: _vm.isActive == 'grow'
+    },
+    on: {
+      "click": function($event) {
+        _vm.popDialog('grow')
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("图片")])]), _c('li', {
+    class: {
+      active: _vm.isActive == 'cultivate'
+    },
+    on: {
+      "click": function($event) {
+        _vm.popDialog('cultivate')
+      }
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("编辑")])])]), (_vm.show && !_vm.edit) ? _c('div', {
+    staticClass: "pop"
+  }, [_c(_vm.component, {
+    tag: "component",
+    attrs: {
+      "cultivateId": _vm.letItem.id
+    },
+    on: {
+      "closeNew": function($event) {
+        _vm.show = false
+      }
+    }
+  })], 1) : _vm._e(), (_vm.show && _vm.edit) ? _c('div', {
+    staticClass: "pop"
+  }, [_c('pop-cultivate', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeEdit": function($event) {
+        _vm.show = false
+      }
+    }
+  })], 1) : _vm._e(), _c('confirm', {
+    attrs: {
+      "show": _vm.showConfirm,
+      "title": "修改状态",
+      "message": "确定要修改批次状态吗？"
+    },
+    on: {
+      "confirmAction": _vm.changeState,
+      "cancelAction": function($event) {
+        _vm.showConfirm = false
+      }
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 192 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28602,7 +36199,434 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 112 */
+/* 193 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.constItem.serial),
+      expression: "constItem.serial"
+    }],
+    staticClass: "input-pop inp_not_color",
+    attrs: {
+      "type": "text",
+      "id": "harvest_new_serial",
+      "name": "serial",
+      "readonly": "readonly",
+      "placeholder": "新建后自动生成",
+      "disabled": "disabled"
+    },
+    domProps: {
+      "value": _vm._s(_vm.constItem.serial)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.constItem.serial = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.harvest_date),
+      expression: "letItem.harvest_date"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.harvest_date),
+      expression: "letItem.harvest_date",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "操作日期",
+      "type": "text",
+      "id": "harvest_new_date",
+      "name": "harvest_date",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.harvest_date)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.harvest_date = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('harvest_date')),
+      expression: "errors.has('harvest_date')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('harvest_date')))])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "plantation_id",
+      "id": "harvest_plantation_select",
+      "items": _vm.plantation_ids,
+      "defaultIndex": parseInt(_vm.defaultdetectContentIndex)
+    },
+    on: {
+      "callback": _vm.getMsgdetectContent
+    }
+  })], 1)]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "cultivate_id",
+      "id": "harvest_cultivate_serial",
+      "items": _vm.cultivate_ids,
+      "defaultIndex": parseInt(_vm.defaultdetectContentIndex)
+    },
+    on: {
+      "callback": _vm.getMsgdetectContent
+    }
+  })], 1)]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop ",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.constItem.plant_name),
+      expression: "constItem.plant_name"
+    }],
+    staticClass: "input-pop inp_not_color",
+    attrs: {
+      "type": "text",
+      "id": "harvest_plant_new_gsName",
+      "name": "plant_name",
+      "disabled": "disabled"
+    },
+    domProps: {
+      "value": _vm._s(_vm.constItem.plant_name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.constItem.plant_name = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.constItem.cultivate_date),
+      expression: "constItem.cultivate_date"
+    }],
+    staticClass: "input-pop inp_not_color",
+    attrs: {
+      "type": "text",
+      "id": "harvest_cultivate_new_date",
+      "name": "cultivate_date",
+      "disabled": "disabled"
+    },
+    domProps: {
+      "value": _vm._s(_vm.constItem.cultivate_date)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.constItem.cultivate_date = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.constItem.cultivate_area),
+      expression: "constItem.cultivate_area"
+    }],
+    staticClass: "input-pop inp_not_color",
+    attrs: {
+      "type": "text",
+      "id": "harvest_cultivate_new_area",
+      "name": "cultivate_area"
+    },
+    domProps: {
+      "value": _vm._s(_vm.constItem.cultivate_area)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.constItem.cultivate_area = $event.target.value
+      }
+    }
+  })]), _c('td', {
+    staticClass: "input-pop"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.constItem.cultivate_area_unit),
+      expression: "constItem.cultivate_area_unit"
+    }],
+    attrs: {
+      "type": "text",
+      "name": "cultivate_area_unit"
+    },
+    domProps: {
+      "value": _vm._s(_vm.constItem.cultivate_area_unit)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.constItem.cultivate_area_unit = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.constItem.amount),
+      expression: "constItem.amount"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "harvest_new_amount",
+      "name": "amount",
+      "placeholder": "请输入正确的数字(单位为千克)"
+    },
+    domProps: {
+      "value": _vm._s(_vm.constItem.amount)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.constItem.amount = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(8), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.constItem.operator),
+      expression: "constItem.operator"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "harvest_new_user",
+      "name": "operator"
+    },
+    domProps: {
+      "value": _vm._s(_vm.constItem.operator)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.constItem.operator = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(9), _c('td', {
+    staticClass: "input-pop input_note",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "harvest_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditharvest
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAddharvest
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(10)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_matchinfor"
+    }
+  }, [_vm._v("采收批次号")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_data"
+    }
+  }, [_vm._v("采收日期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_plant"
+    }
+  }, [_vm._v("所属种植区")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_matchinfor"
+    }
+  }, [_vm._v("种植批次号")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_gsName"
+    }
+  }, [_vm._v("果蔬名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_data"
+    }
+  }, [_vm._v("种植日期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "pop_area"
+    }
+  }, [_vm._v("种植面积")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_user"
+    }
+  }, [_vm._v("采收数量")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_user"
+    }
+  }, [_vm._v("采收人")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 194 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28610,31 +36634,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "title": _vm.title
     }
-  }, [_c('div', {
-    staticClass: "show-sliderBar-btn",
+  }, [_c(_vm.headLeftComponent, {
+    tag: "component",
     on: {
-      "click": function($event) {
-        _vm.show = true
-      }
+      "clickEvent": _vm.clickLeftBtn
     },
     slot: "left"
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.$img('slider.png'),
-      "alt": ""
-    }
-  })]), _c('div', {
-    staticClass: "right-btn",
+  }), _c(_vm.headRightComponent, {
+    tag: "component",
     on: {
-      "click": _vm.record
+      "clickEvent": _vm.clickRightBtn
     },
     slot: "right"
-  }, [_c('img', {
-    attrs: {
-      "src": _vm.$img('eye.png'),
-      "alt": ""
-    }
-  })])]), _c('div', {
+  })], 1), _c('div', {
     attrs: {
       "id": "mynprogress"
     }
@@ -28649,28 +36661,54 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       "getSubNavbars": _vm.getSubNavbars
     }
-  })], 1)
+  }), (_vm.showLayer) ? _c('layer', {
+    on: {
+      "confirm": function($event) {
+        _vm.setShowLayer(false)
+      }
+    }
+  }, [_c(_vm.layerComponent, {
+    tag: "component"
+  })], 1) : _vm._e()], 1)
 },staticRenderFns: []}
 
 /***/ }),
-/* 113 */
+/* 195 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('button', {
+    staticClass: "btn btn-del",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.reset
+    }
+  }, [_vm._v("重置批次")])
+},staticRenderFns: []}
+
+/***/ }),
+/* 196 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('navbar', {
     attrs: {
-      "taps": _vm.taps
+      "taps": _vm.taps,
+      "number": _vm.number
     },
     on: {
       "getKey": _vm.flashList
     }
-  }, [_c('table-list', {
-    ref: "tableList",
+  }, [_c('table-manage', {
+    ref: "tableManage",
     attrs: {
       "_key": _vm._key,
       "component": _vm.component,
       "searchPlaceholder": _vm.searchPlaceholder,
       "searchUrl": _vm.searchUrl,
+      "params": _vm.params,
       "theads": _vm.theads,
       "protos": _vm.protos,
       "widths": _vm.widths
@@ -28679,7 +36717,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 114 */
+/* 197 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "content"
+  }, [_c('div', {
+    staticClass: "title"
+  }, [_vm._v("种植批次详细信息")]), _c('ul', [_c('li', [_c('span', [_vm._v("种植批次号:")]), _vm._v(_vm._s(_vm.cultivateMsg.serial))]), _c('li', [_c('span', [_vm._v("所属种植场:")]), _vm._v(_vm._s(_vm.cultivateMsg.plantation_name))]), _c('li', [_c('span', [_vm._v("种植人:")]), _vm._v(_vm._s(_vm.cultivateMsg.operator))]), _c('li', [_c('span', [_vm._v("种植日期:")]), _vm._v(_vm._s(_vm.cultivateMsg.cultivate_date))]), _c('li', [_c('span', [_vm._v("所属种植区:")]), _vm._v(_vm._s(_vm.cultivateMsg.name))]), _c('li', [_c('span', [_vm._v("种植地址:")]), _vm._v(_vm._s(_vm.cultivateMsg.address))]), _c('li', [_c('span', [_vm._v("种植果蔬名称:")]), _vm._v(_vm._s(_vm.cultivateMsg.plant_name))]), _c('li', [_c('span', [_vm._v("当前批次面积:")]), _vm._v(_vm._s(_vm.cultivateMsg.area + _vm.cultivateMsg.area_unit))]), _c('li', [_c('span', [_vm._v("种植备注:")]), _vm._v(_vm._s(_vm.cultivateMsg.memo))])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 198 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28691,7 +36741,926 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 115 */
+/* 199 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'dailylog',
+        params: {
+          date: _vm.item.date
+        }
+      },
+      "tag": "span",
+      "exact": ""
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('rightRaw.png'),
+      "alt": ""
+    }
+  })])
+},staticRenderFns: []}
+
+/***/ }),
+/* 200 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_vm._l((_vm.inputData), function(item, key) {
+    return [(item.date) ? _c('tr', [_c('td', {
+      staticClass: "label-tit"
+    }, [_c('label', {
+      attrs: {
+        "for": item.divfor
+      }
+    }, [_vm._v(_vm._s(item.label))])]), _c('td', {
+      staticClass: "input-pop",
+      attrs: {
+        "colspan": "2"
+      }
+    }, [_c('date-picker', {
+      attrs: {
+        "name": key,
+        "date": _vm.letItem[key]
+      },
+      on: {
+        "getDate": _vm.getDate
+      }
+    })], 1)]) : (item.pic) ? _c('tr', [_c('td', {
+      attrs: {
+        "colspan": "3"
+      }
+    }, [_c('div', {
+      staticClass: "pic-preview",
+      on: {
+        "click": _vm.selectPic
+      }
+    }, [(_vm.letItem.image == '' || _vm.letItem.image == null) ? _c('img', {
+      attrs: {
+        "src": _vm.$img(_vm.image)
+      }
+    }) : (_vm.letItem.image == 'upload.png') ? _c('img', {
+      attrs: {
+        "src": _vm.$img(_vm.letItem.image)
+      }
+    }) : _c('img', {
+      attrs: {
+        "src": _vm.$img(_vm.letItem.image, false)
+      }
+    })]), _c('input', {
+      attrs: {
+        "name": key,
+        "type": "file",
+        "hidden": "hidden"
+      },
+      on: {
+        "change": function($event) {
+          _vm.previewPic(item, $event)
+        }
+      }
+    }), _c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: (_vm.imgHidden),
+        expression: "imgHidden"
+      }, {
+        name: "validate",
+        rawName: "v-validate.initial",
+        value: (_vm.letItem[key]),
+        expression: "letItem[key]",
+        modifiers: {
+          "initial": true
+        }
+      }],
+      attrs: {
+        "name": key,
+        "type": "text",
+        "hidden": "hidden",
+        "placeholder": item.placeholder,
+        "data-vv-rules": item.rules,
+        "data-vv-as": item.label
+      },
+      domProps: {
+        "value": _vm._s(_vm.imgHidden)
+      },
+      on: {
+        "input": function($event) {
+          if ($event.target.composing) { return; }
+          _vm.imgHidden = $event.target.value
+        }
+      }
+    }), _c('div', {
+      staticClass: "delete-pic-btn"
+    }, [_c('button', {
+      attrs: {
+        "type": "button"
+      },
+      on: {
+        "click": _vm.deletePic
+      }
+    }, [_vm._v("删除")])])])]) : (item.select == '1') ? _c('tr', [_c('td', {
+      staticClass: "label-tit"
+    }, [_c('label', {
+      attrs: {
+        "for": item.divfor
+      }
+    }, [_vm._v(_vm._s(item.label))])]), _c('td', {
+      staticClass: "input-pop",
+      attrs: {
+        "colspan": "2"
+      }
+    }, [_c('pop-select', {
+      attrs: {
+        "name": key,
+        "items": item.data,
+        "defaultIndex": item.index,
+        "protoBack": item.protoBack,
+        "protoShow": item.selectName,
+        "showVal": item.showVal
+      },
+      on: {
+        "callback": _vm.getMsgDataId
+      }
+    })], 1)]) : (item.select == '2') ? _c('tr', [_c('td', {
+      staticClass: "label-tit"
+    }, [_c('label', {
+      attrs: {
+        "for": item.divfor
+      }
+    }, [_vm._v(_vm._s(item.label))])]), _c('td', {
+      staticClass: "input-pop",
+      attrs: {
+        "colspan": "2"
+      }
+    }, [_c('pop-select', {
+      attrs: {
+        "name": "weather",
+        "items": item.data,
+        "defaultIndex": item.index,
+        "showVal": item.showVal
+      },
+      on: {
+        "callback": _vm.getMsgDataVal
+      }
+    })], 1)]) : (item.select == '3') ? _c('tr', [_c('td', {
+      staticClass: "label-tit"
+    }, [_c('label', {
+      attrs: {
+        "for": item.divfor
+      }
+    }, [_vm._v(_vm._s(item.label))])]), _c('td', {
+      staticClass: "input-pop input-area"
+    }, [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: (_vm.letItem[key]),
+        expression: "letItem[key]"
+      }, {
+        name: "validate",
+        rawName: "v-validate.initial",
+        value: (_vm.letItem[key]),
+        expression: "letItem[key]",
+        modifiers: {
+          "initial": true
+        }
+      }],
+      attrs: {
+        "data-vv-rules": item.rules,
+        "data-vv-as": item.label,
+        "type": "text",
+        "id": item.divfor,
+        "name": key,
+        "placeholder": item.placeholder
+      },
+      domProps: {
+        "value": _vm._s(_vm.letItem[key])
+      },
+      on: {
+        "input": function($event) {
+          if ($event.target.composing) { return; }
+          var $$exp = _vm.letItem,
+            $$idx = key;
+          if (!Array.isArray($$exp)) {
+            _vm.letItem[key] = $event.target.value
+          } else {
+            $$exp.splice($$idx, 1, $event.target.value)
+          }
+        }
+      }
+    })]), _c('td', {
+      staticClass: "area_unit"
+    }, [_c('pop-select', {
+      attrs: {
+        "name": item.unit,
+        "items": item.data,
+        "defaultIndex": item.index
+      },
+      on: {
+        "callback": _vm.getMsg
+      }
+    })], 1)]) : (item.val) ? _c('tr', [_c('td', {
+      staticClass: "label-tit"
+    }, [_c('label', {
+      attrs: {
+        "for": item.divfor
+      }
+    }, [_vm._v(_vm._s(item.label))])]), _c('td', {
+      staticClass: "input-pop",
+      attrs: {
+        "colspan": "2"
+      }
+    }, [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: (_vm.constItem[key]),
+        expression: "constItem[key]"
+      }],
+      staticClass: "input-pop",
+      attrs: {
+        "type": "text",
+        "id": item.divfor,
+        "name": key,
+        "placeholder": item.placeholder,
+        "disabled": "disabled"
+      },
+      domProps: {
+        "value": _vm._s(_vm.constItem[key])
+      },
+      on: {
+        "input": function($event) {
+          if ($event.target.composing) { return; }
+          var $$exp = _vm.constItem,
+            $$idx = key;
+          if (!Array.isArray($$exp)) {
+            _vm.constItem[key] = $event.target.value
+          } else {
+            $$exp.splice($$idx, 1, $event.target.value)
+          }
+        }
+      }
+    })])]) : _c('tr', [_c('td', {
+      staticClass: "label-tit"
+    }, [_c('label', {
+      attrs: {
+        "for": item.divfor
+      }
+    }, [_vm._v(_vm._s(item.label))])]), _c('td', {
+      staticClass: "input-pop",
+      attrs: {
+        "colspan": "2"
+      }
+    }, [_c('input', {
+      directives: [{
+        name: "model",
+        rawName: "v-model",
+        value: (_vm.letItem[key]),
+        expression: "letItem[key]"
+      }, {
+        name: "validate",
+        rawName: "v-validate.initial",
+        value: (_vm.letItem[key]),
+        expression: "letItem[key]",
+        modifiers: {
+          "initial": true
+        }
+      }],
+      attrs: {
+        "data-vv-rules": item.rules,
+        "data-vv-as": item.label,
+        "type": "text",
+        "id": item.divfor,
+        "name": key,
+        "placeholder": item.placeholder
+      },
+      domProps: {
+        "value": _vm._s(_vm.letItem[key])
+      },
+      on: {
+        "input": function($event) {
+          if ($event.target.composing) { return; }
+          var $$exp = _vm.letItem,
+            $$idx = key;
+          if (!Array.isArray($$exp)) {
+            _vm.letItem[key] = $event.target.value
+          } else {
+            $$exp.splice($$idx, 1, $event.target.value)
+          }
+        }
+      }
+    })])]), (item.rules != '') ? [_c('tr', {
+      directives: [{
+        name: "show",
+        rawName: "v-show",
+        value: (_vm.errors.has(key)),
+        expression: "errors.has(key)"
+      }]
+    }, [_c('td', {
+      staticClass: "error",
+      attrs: {
+        "colspan": "3"
+      }
+    }, [_vm._v(_vm._s(_vm.errors.first(key)))])])] : _vm._e()]
+  }), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAdd
+    }
+  }, [_vm._v("\n                      取消\n                  ")])]) : _c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAdd
+    }
+  }, [_vm._v("\n                      取消\n                  ")])])]), _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop",
+    on: {
+      "click": _vm.thisSet
+    }
+  }, [_vm._v("\n                      保存\n                  ")])])])])])], 2)])
+},staticRenderFns: []}
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "right-btn",
+    on: {
+      "click": function($event) {
+        _vm.clickEvent()
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('more.png'),
+      "alt": ""
+    }
+  })])
+},staticRenderFns: []}
+
+/***/ }),
+/* 202 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('table', {
+    staticClass: "main form-pop"
+  }, [_c('tbody', {
+    staticClass: "form-body"
+  }, [_c('tr', [_vm._m(0), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.plantation_name),
+      expression: "letItem.plantation_name"
+    }],
+    staticClass: "input-pop",
+    attrs: {
+      "type": "text",
+      "id": "residue_edit_plantation",
+      "name": "plantation_name",
+      "disabled": "disabled"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.plantation_name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.plantation_name = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(1), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.harvest_serial),
+      expression: "letItem.harvest_serial"
+    }],
+    staticClass: "input-pop inp_not_color",
+    attrs: {
+      "type": "text",
+      "id": "residue_harvest_edit_serial",
+      "name": "harvest_serial",
+      "readonly": "readonly"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.harvest_serial)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.harvest_serial = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(2), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "detect_content",
+      "items": _vm.detectContents,
+      "defaultIndex": parseInt(_vm.defaultdetectContentIndex)
+    },
+    on: {
+      "callback": _vm.getMsgdetectContent
+    }
+  })], 1)]), _c('tr', [_vm._m(3), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.residue_date),
+      expression: "letItem.residue_date"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.residue_date),
+      expression: "letItem.residue_date",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "操作日期",
+      "type": "text",
+      "id": "residue_edit_date",
+      "name": "residue_date",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.residue_date)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.residue_date = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('residue_date')),
+      expression: "errors.has('residue_date')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('residue_date')))])]), _c('tr', [_vm._m(4), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.departments),
+      expression: "letItem.departments"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.departments),
+      expression: "letItem.departments",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "检测机构",
+      "type": "text",
+      "id": "residue_edit_departments",
+      "name": "departments",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.departments)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.departments = $event.target.value
+      }
+    }
+  })])]), _c('tr', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.errors.has('departments')),
+      expression: "errors.has('departments')"
+    }]
+  }, [_c('td', {
+    staticClass: "error",
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v(_vm._s(_vm.errors.first('departments')))])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.condition),
+      expression: "letItem.condition"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "residue_edit_condition",
+      "name": "condition"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.condition)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.condition = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(6), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.operator),
+      expression: "letItem.operator"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "residue_edit_user",
+      "name": "operator"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.operator)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.operator = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(7), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "result",
+      "items": _vm.results,
+      "defaultIndex": parseInt(_vm.defaultresultIndex)
+    },
+    on: {
+      "callback": _vm.getMsgresult
+    }
+  })], 1)]), _c('tr', [_vm._m(8), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.number),
+      expression: "letItem.number"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "residue_edit_number",
+      "name": "number"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.number)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.number = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(9), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.effective_date),
+      expression: "letItem.effective_date"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.effective_date),
+      expression: "letItem.effective_date",
+      modifiers: {
+        "initial": true
+      }
+    }],
+    attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "操作日期",
+      "type": "text",
+      "id": "residue_edit_effective_date",
+      "name": "effective_date",
+      "placeholder": "必填"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.effective_date)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.effective_date = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_vm._m(10), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.letItem.memo),
+      expression: "letItem.memo"
+    }],
+    attrs: {
+      "type": "text",
+      "id": "detect_new_note",
+      "name": "memo"
+    },
+    domProps: {
+      "value": _vm._s(_vm.letItem.memo)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.letItem.memo = $event.target.value
+      }
+    }
+  })])]), _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_c('div', {
+    staticClass: "footer-r"
+  }, [(_vm.edit) ? _c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelEditdetect
+    }
+  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_c('button', {
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.cancelAdddetect
+    }
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(11)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_matchinfor"
+    }
+  }, [_vm._v("种植区")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_matchinfor"
+    }
+  }, [_vm._v("采收批次号")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "detect_content"
+    }
+  }, [_vm._v("检测方式")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_date"
+    }
+  }, [_vm._v("检测日期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_matchinfor"
+    }
+  }, [_vm._v("检测机构")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_matchinfor"
+    }
+  }, [_vm._v("检测项目名称")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_matchinfor"
+    }
+  }, [_vm._v("检测人")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "result"
+    }
+  }, [_vm._v("检测结果")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_gsName"
+    }
+  }, [_vm._v("证书编号")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "new_gsName"
+    }
+  }, [_vm._v("有效期")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('td', {
+    staticClass: "label-tit"
+  }, [_c('label', {
+    attrs: {
+      "for": "detect_new_note"
+    }
+  }, [_vm._v("备注信息")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "footer-r"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_c('button', {
+    staticClass: "btn-pop"
+  }, [_vm._v("\n                                保存\n                            ")])])])
+}]}
+
+/***/ }),
+/* 203 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "fertilize"
+    }
+  }, [_c('table-manage', {
+    ref: "tableList",
+    attrs: {
+      "_key": "fertilize",
+      "component": _vm.component,
+      "searchPlaceholder": "肥料名称",
+      "searchUrl": "fertilize",
+      "theads": _vm.theads,
+      "protos": _vm.protos,
+      "widths": _vm.widths
+    }
+  }, [_c('router-link', {
+    staticClass: "stl-btn",
+    attrs: {
+      "to": {
+        name: 'cultivate-refer',
+        params: {
+          type: 'fertilize'
+        }
+      },
+      "tag": "button",
+      "exact": ""
+    },
+    slot: "search"
+  }, [_vm._v("新建")])], 1)], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 204 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "cultivate"
+    }
+  }, [_c('table-manage', {
+    ref: "tableList",
+    attrs: {
+      "_key": "cultivate",
+      "component": _vm.component,
+      "searchPlaceholder": "果蔬批次号搜索",
+      "searchUrl": "cultivate",
+      "theads": _vm.theads,
+      "protos": _vm.protos,
+      "widths": _vm.widths
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 205 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28735,7 +37704,111 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 116 */
+/* 206 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('transition-group', {
+    attrs: {
+      "name": "animate-class-transition",
+      "enter-active-class": "animated zoomIn",
+      "leave-active-class": "animated zoomOut"
+    }
+  }, [_c('div', {
+    key: "black",
+    staticClass: "black-layer"
+  }), _c('div', {
+    key: "layer",
+    staticClass: "layer"
+  }, [_c('div', {
+    staticClass: "content"
+  }, [_vm._t("default")], 2), _c('div', {
+    staticClass: "confirm"
+  }, [_c('div', {
+    attrs: {
+      "id": "confirm-btn"
+    },
+    on: {
+      "click": _vm.confirm
+    }
+  }, [_vm._v("确定")])])])])
+},staticRenderFns: []}
+
+/***/ }),
+/* 207 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('ul', [_c('li', [_c('a', {
+    attrs: {
+      "href": _vm.aHref,
+      "target": "vedioFrame"
+    },
+    on: {
+      "click": _vm.showVedioClick
+    }
+  }, [_vm._v("视频监控")])]), _c('li', {
+    class: {
+      active: _vm.isActive
+    },
+    on: {
+      "click": _vm.edit
+    }
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:void(0)"
+    }
+  }, [_vm._v("编辑")])])]), (_vm.showVedio && _vm.letItem.live_address) ? _c('iframe', {
+    staticStyle: {
+      "width": "100%",
+      "height": "180px"
+    },
+    attrs: {
+      "id": "vedioFrame",
+      "name": "vedioFrame",
+      "scrolling": "no",
+      "frameborder": "0"
+    }
+  }) : _vm._e(), (_vm.show) ? _c('div', {
+    staticClass: "pop"
+  }, [_c('pop-plantation', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "edit": true
+    },
+    on: {
+      "closeEdit": function($event) {
+        _vm.show = false
+      }
+    }
+  })], 1) : _vm._e()], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 208 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "cultivate"
+    }
+  }, [_c('table-manage', {
+    ref: "tableList",
+    attrs: {
+      "_key": "cultivate",
+      "component": _vm.component,
+      "searchPlaceholder": "种植批次号搜索",
+      "searchUrl": "cultivate",
+      "theads": _vm.theads,
+      "protos": _vm.protos,
+      "widths": _vm.widths
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 209 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28743,7 +37816,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 117 */
+/* 210 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -28788,37 +37861,120 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 118 */
+/* 211 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('search', {
-    attrs: {
-      "placeholder": _vm.searchPlaceholder,
-      "searchUrl": _vm.searchUrl
-    },
+  return _c('form', {
     on: {
-      "callback": _vm.updateListByMore
-    }
-  }, [_vm._t("search", [_c('button', {
-    staticClass: "stl-btn",
-    on: {
-      "click": function($event) {
-        _vm.showNewPanel = true
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_vm._v("新建")])])], 2), (_vm.component != null && _vm.component[_vm._key] != null) ? [(_vm.showNewPanel) ? _c(_vm.component[_vm._key], {
-    tag: "component",
+  }, [_c('form-submit', {
     attrs: {
-      "edit": false
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
     },
     on: {
-      "callback": _vm.updateListByOne,
-      "closeNew": function($event) {
-        _vm.showNewPanel = false
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 212 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
       }
     }
-  }) : _vm._e()] : _vm._e(), _c('div', {
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "thisSet": _vm.getThis,
+      "getDate": _vm.getDate,
+      "getMsgDataId": _vm.getMsgDataId,
+      "getMsgDataVal": _vm.getMsgDataVal
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 213 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 214 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsg": _vm.getMsg
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 215 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
     staticClass: "table-list"
   }, [_c('div', {
     staticClass: "list-head"
@@ -28838,44 +37994,41 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "name": _vm.protos[index]
       }
     }, [_vm._v("\n                        " + _vm._s(thead) + "\n                    ")])]
-  }), _c('span', {
+  }), (_vm.showOperate) ? _c('span', {
     staticClass: "align-c",
     attrs: {
       "name": "open"
     }
-  })], 2)]), _c('transition', {
+  }) : _vm._e()], 2)]), _c('transition', {
     attrs: {
-      "name": "slide-fade"
+      "name": _vm.slideList
     }
-  }, [(_vm.showUp) ? _c('transition-group', {
+  }, [(_vm.showList) ? _c('transition-group', {
     key: "tbody",
     staticClass: "list-body",
     attrs: {
-      "name": "slide-up",
+      "name": _vm.slideListItem,
       "tag": "ul"
     }
   }, [_vm._l((_vm.list), function(item, index) {
     return [_c('li', {
       directives: [{
-        name: "touchDelete",
-        rawName: "v-touchDelete:showConfirmDialog",
+        name: "touchAction",
+        rawName: "v-touchAction:longTouchEvent",
         value: ({
           vm: _vm.self,
-          type: 0,
-          id: item.id,
-          index: index,
-          flag: item.serial_state,
-          tip: _vm.tipMsg
+          item: item,
+          index: index
         }),
-        expression: "{vm:self, type:0, id:item.id, index:index, flag:item.serial_state, tip:tipMsg}",
-        arg: "showConfirmDialog"
+        expression: "{vm:self, item:item, index:index}",
+        arg: "longTouchEvent"
       }],
-      key: _vm.searchUrl + item.id,
+      key: _vm._key + item.id,
       class: {
         'list-body-tr': true, 'list-body-tr-event': (index % 2 != 0)
       },
       attrs: {
-        "id": _vm.searchUrl + item.id,
+        "id": _vm._key + item.id,
         "name": "order"
       }
     }, [(_vm.showCheckbox) ? _c('span', {
@@ -28890,9 +38043,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       on: {
         "click": function($event) {
           _vm.checkedBox({
-            'id': item.id,
-            'index': index,
-            flag: item.serial_state
+            item: item,
+            index: index
           })
         }
       }
@@ -28919,17 +38071,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           "name": proto
         }
       }, [_vm._v("\n                                    " + _vm._s(item[proto]) + "\n                                ")])]
-    }), (_vm.component != null && _vm.component.hispic != null) ? _c('span', {
+    }), (_vm.cusButton && _vm.showOperate) ? _c('span', {
       staticClass: "align-c",
       attrs: {
         "name": "open"
       }
-    }, [_c(_vm.component.hispic, {
+    }, [_c(_vm.component.open, {
       tag: "component",
       attrs: {
         "item": item
       }
-    })], 1) : _c('span', {
+    })], 1) : (_vm.showOperate) ? _c('span', {
       staticClass: "align-c",
       attrs: {
         "name": "open"
@@ -28943,21 +38095,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "src": _vm.$img('list.png')
       }
-    })])], 2), (_vm.showItemDetail != '' && _vm.showItemDetail == item.id) ? _c('li', {
-      key: _vm.searchUrl + item.id + '-pop'
-    }, [(_vm.component != null && _vm.component[_vm._key] != null) ? [(_vm.showEditPane) ? _c(_vm.component[_vm._key], {
+    })]) : _vm._e()], 2), (_vm.showItemDetail != '' && _vm.showItemDetail == item.id) ? _c('li', {
+      key: _vm._key + item.id + '-pop'
+    }, [(_vm.component != null && _vm.component[_vm._key] != null) ? [_c(_vm.component[_vm._key], {
       tag: "component",
       attrs: {
         "letItem": item,
-        "edit": true
-      },
-      on: {
-        "closeEdit": function($event) {
-          _vm.closeOwnEditPane(item)
-        }
+        "args": _vm.args
       }
-    }) : _vm._e()] : _vm._e()], 2) : _vm._e()]
-  })], 2) : _vm._e()], 1), _c('div', {
+    })] : _vm._e()], 2) : _vm._e()]
+  })], 2) : _vm._e()], 1), (_vm.showFooter) ? _c('div', {
     staticClass: "list-foot"
   }, [_c('div', {
     staticClass: "list-foot-tr"
@@ -28976,1183 +38123,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticStyle: {
       "width": "86%"
     }
-  }, [_c('button', {
-    staticClass: "btn btn-del",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.showConfirmDialog(1)
-      }
-    }
-  }, [_vm._v("删除")])])])])], 1), _c('div', {
-    staticClass: "paginator-module"
-  }, [_c('paginator', {
-    attrs: {
-      "total": _vm.total,
-      "url": _vm.searchUrl + '/query',
-      "paginatorParams": _vm.params
-    },
-    on: {
-      "lastPageEvent": function($event) {
-        _vm.showUp = false
-      },
-      "nextPageEvent": function($event) {
-        _vm.showUp = false
-      },
-      "changePageEvent": function($event) {
-        _vm.showUp = false
-      },
-      "result": _vm.updateListByMore
-    }
-  })], 1), _c('confirm', {
-    attrs: {
-      "show": _vm.showConfirm
-    },
-    on: {
-      "confirmAction": _vm.oneOrBatchdestroy,
-      "cancelAction": function($event) {
-        _vm.showConfirm = false
-      }
-    }
-  })], 2)
+  }, [_vm._t("batchButtons")], 2)])]) : _vm._e()], 1)])
 },staticRenderFns: []}
 
 /***/ }),
-/* 119 */
+/* 216 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('router-link', {
-    attrs: {
-      "to": {
-        name: 'dailylog',
-        params: {
-          date: _vm.item.date
-        }
-      },
-      "tag": "span",
-      "replace": ""
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
     }
-  }, [_c('img', {
+  }, [_c('form-submit', {
     attrs: {
-      "src": _vm.$img('rightRaw.png'),
-      "alt": ""
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis
     }
-  })])
+  })], 1)
 },staticRenderFns: []}
 
 /***/ }),
-/* 120 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        _vm.validateBeforeSubmit($event)
-      }
-    }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "name": "drug_type",
-      "items": _vm.categorys,
-      "defaultIndex": parseInt(_vm.defaultdrugIndex),
-      "protoBack": "id",
-      "protoShow": "name"
-    },
-    on: {
-      "callback": _vm.getMsgPid
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('drug_type')),
-      expression: "errors.has('drug_type')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('drug_type')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "兽药名称",
-      "type": "text",
-      "id": "drug_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.use),
-      expression: "letItem.use"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "drug_new_use",
-      "name": "use"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.use)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.use = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.specification),
-      expression: "letItem.specification"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "drug_new_specification",
-      "name": "specification"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.specification)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.specification = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.vender_name),
-      expression: "letItem.vender_name"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "drug_new_vender_name",
-      "name": "vender_name"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.vender_name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.vender_name = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.address),
-      expression: "letItem.address"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "drug_new_address",
-      "name": "address"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.address = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "drug_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(7), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "drug_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditdrug
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAdddrug
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "drug_new_select"
-    }
-  }, [_vm._v("兽药类别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "drug_new_fullName"
-    }
-  }, [_vm._v("兽药名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "drug_new_use"
-    }
-  }, [_vm._v("用途")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "drug_new_specification"
-    }
-  }, [_vm._v("包装规格")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "drug_new_vender_name"
-    }
-  }, [_vm._v("生产厂家名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "drug_new_address"
-    }
-  }, [_vm._v("产地")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "drug_new_phone"
-    }
-  }, [_vm._v("联系方式")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "drug_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
-
-/***/ }),
-/* 121 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        _vm.validateBeforeSubmit($event)
-      }
-    }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "id": "manure_category_id",
-      "name": "manure_category_id",
-      "items": _vm.categorys,
-      "defaultIndex": parseInt(_vm.defaultIndex),
-      "protoBack": "id",
-      "protoShow": "name"
-    },
-    on: {
-      "callback": _vm.getMsg
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('category_id')),
-      expression: "errors.has('category_id')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('category_id')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "肥料名称",
-      "type": "text",
-      "id": "manure_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.usage),
-      expression: "letItem.usage"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "manure_usage",
-      "name": "usage"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.usage)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.usage = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('usage')),
-      expression: "errors.has('usage')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('usage')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.specification),
-      expression: "letItem.specification"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "manure_new_specification",
-      "name": "specification"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.specification)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.specification = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.dealer),
-      expression: "letItem.dealer"
-    }],
-    staticClass: "input-pop",
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "manure_new_dealer",
-      "name": "dealer"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.dealer)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.dealer = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.origin),
-      expression: "letItem.origin"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "manure_new_origin",
-      "name": "origin"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.origin)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.origin = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "manure_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(7), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "manure_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditManure
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddManure
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_category_id"
-    }
-  }, [_vm._v("分类")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_fullName"
-    }
-  }, [_vm._v("肥料名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_usage"
-    }
-  }, [_vm._v("用途")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_specification"
-    }
-  }, [_vm._v("包装规格")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_dealer"
-    }
-  }, [_vm._v("经销商名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_origin"
-    }
-  }, [_vm._v("产地")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_phone"
-    }
-  }, [_vm._v("联系方式")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "manure_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
-
-/***/ }),
-/* 122 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('form', {
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        _vm.validateBeforeSubmit($event)
-      }
-    }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "种植场名称",
-      "type": "text",
-      "id": "plantation_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop input-area"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.area),
-      expression: "letItem.area"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.area),
-      expression: "letItem.area",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|decimal:2",
-      "data-vv-as": "种植面积",
-      "type": "text",
-      "id": "plantation_new_area",
-      "name": "area",
-      "placeholder": "请填写数字(必填)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.area)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.area = $event.target.value
-      }
-    }
-  })]), _c('td', {
-    staticClass: "area_unit"
-  }, [_c('pop-select', {
-    attrs: {
-      "name": "area_unit",
-      "items": _vm.area_unit,
-      "defaultIndex": parseInt(_vm.defaultIndex)
-    },
-    on: {
-      "callback": _vm.getMsg
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('area')),
-      expression: "errors.has('area')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "plantation_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.address),
-      expression: "letItem.address"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "plantation_new_address",
-      "name": "address"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.address = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.director),
-      expression: "letItem.director"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "plantation_new_principal",
-      "name": "director"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.director)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.director = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "plantation_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditPlantation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddPlantation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(6)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_fullName"
-    }
-  }, [_vm._v("种植场名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_area"
-    }
-  }, [_vm._v("种植面积")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_phone"
-    }
-  }, [_vm._v("详细电话")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_address"
-    }
-  }, [_vm._v("详细地址")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_principal"
-    }
-  }, [_vm._v("负责人")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plantation_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
-
-/***/ }),
-/* 123 */
+/* 217 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -30161,8 +38162,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('ul', {
     staticClass: "nt-ul"
   }, _vm._l((_vm.taps), function(tap, index) {
-    return (index < 3) ? _c('li', {
-      staticClass: "nt-li"
+    return (index < _vm.number) ? _c('li', {
+      staticClass: "nt-li",
+      style: ({
+        width: 100 / _vm.number + '%'
+      })
     }, [_c('span', {
       class: {
         'link-active': _vm.activeKey == tap.key
@@ -30184,8 +38188,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [(!_vm.isMore) ? _c('ul', {
     staticClass: "nt-ul"
   }, _vm._l((_vm.taps), function(tap, index) {
-    return (index >= 3) ? _c('li', {
-      staticClass: "nt-li"
+    return (index >= _vm.number) ? _c('li', {
+      staticClass: "nt-li",
+      style: ({
+        width: 100 / _vm.number + '%'
+      })
     }, [_c('span', {
       class: {
         'link-active': _vm.activeKey == tap.key
@@ -30196,7 +38203,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }
       }
     }, [_vm._v(_vm._s(tap.name))])]) : _vm._e()
-  })) : _vm._e()]), (_vm.taps.length > 3) ? _c('div', {
+  })) : _vm._e()]), (_vm.taps.length > _vm.number) ? _c('div', {
     class: {
       'tap-more': _vm.isMore, 'tap-shrink': !_vm.isMore
     },
@@ -30209,7 +38216,30 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 124 */
+/* 218 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "cultivate"
+    }
+  }, [_c('table-manage', {
+    ref: "tableList",
+    attrs: {
+      "_key": "cultivate",
+      "component": _vm.component,
+      "searchPlaceholder": "采收批次号搜索",
+      "searchUrl": "cultivate",
+      "theads": _vm.theads,
+      "protos": _vm.protos,
+      "widths": _vm.widths
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 219 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -30217,7 +38247,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 125 */
+/* 220 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._v("\n  " + _vm._s(_vm.amount) + " \n")])
+},staticRenderFns: []}
+
+/***/ }),
+/* 221 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -30228,296 +38266,148 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_c('td', {
+  }, [_c('form-submit', {
     attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "pic-preview",
-    on: {
-      "click": _vm.selectPic
-    }
-  }, [(_vm.letItem.image == '' || _vm.letItem.image == null) ? _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.image)
-    }
-  }) : (_vm.letItem.image == 'upload.png') ? _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.letItem.image)
-    }
-  }) : _c('img', {
-    attrs: {
-      "src": _vm.$img(_vm.letItem.image, false)
-    }
-  })]), _c('input', {
-    attrs: {
-      "name": "file_name",
-      "type": "file",
-      "hidden": "hidden"
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
     },
     on: {
-      "change": function($event) {
-        _vm.previewPic(_vm.letItem, $event)
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataVal": _vm.getMsgDataVal,
+      "getPic": _vm.getPic
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 222 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
       }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 223 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 224 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('navbar', {
+    attrs: {
+      "taps": _vm.taps,
+      "number": 2
+    },
+    on: {
+      "getKey": _vm.changeWindow
+    }
+  }), _c(_vm.popComponent, {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.addNewItem),
+      expression: "addNewItem"
+    }],
+    ref: "popNew",
+    tag: "component",
+    staticClass: "new-pop",
+    attrs: {
+      "referCultivate": true
+    }
+  }), _c('table-manage', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.addNewItem),
+      expression: "!addNewItem"
+    }],
+    ref: "tableManage",
+    attrs: {
+      "_key": _vm._key,
+      "searchPlaceholder": _vm.searchPlaceholder,
+      "searchUrl": _vm.searchUrl,
+      "excInit": false,
+      "theads": _vm.theads,
+      "protos": _vm.protos,
+      "widths": _vm.widths,
+      "showOperate": false,
+      "batchButtons": _vm.batchButtons
     }
   }), _c('div', {
-    staticClass: "delete-pic-btn"
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.deletePic
-    }
-  }, [_vm._v("删除")])])])]), _c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "name": "category",
-      "id": "plant_categroy_select",
-      "items": _vm.categorys,
-      "defaultIndex": parseInt(_vm.defaultIndex)
-    },
-    on: {
-      "callback": _vm.getMsg
-    }
-  })], 1)]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "果蔬名称",
-      "type": "text",
-      "id": "plant_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.growth_cycle),
-      expression: "letItem.growth_cycle"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.growth_cycle),
-      expression: "letItem.growth_cycle",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|decimal:2",
-      "data-vv-as": "生长周期",
-      "type": "text",
-      "id": "plant_new_growth_cycle",
-      "name": "growth_cycle",
-      "placeholder": "必填，单位（天）"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.growth_cycle)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.growth_cycle = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('growth_cycle')),
-      expression: "errors.has('growth_cycle')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('growth_cycle')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.description),
-      expression: "letItem.description"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "plant_new_description",
-      "name": "description"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.description)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.description = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "plant_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
+    class: {
+      footer: true, 'hide-footer': _vm.hideFooter
     }
   }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
+    staticClass: "cultivateNumber"
+  }, [_vm._v("\n            已选择："), _c('span', [_vm._v(_vm._s(_vm.selectedLists.length))]), _vm._v("个" + _vm._s(_vm.modelName) + "批次\n        ")]), _c('div', {
+    staticClass: "btns"
+  }, [_vm._m(0), _c('a', {
+    staticClass: "save",
     attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
+      "href": "javascript:void(0)"
     },
     on: {
-      "click": _vm.cancelEditPlantation
+      "click": _vm.addListItem
     }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddPlantation
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(5)])])])])])
+  }, [_c('button', [_vm._v("\n                    保存\n                ")])])])])], 1)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
+  return _c('a', {
     attrs: {
-      "for": "plant_categroy_select"
+      "href": "javascript:void(0)",
+      "type": "cancel"
     }
-  }, [_vm._v("果蔬类别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_new_fullName"
-    }
-  }, [_vm._v("果蔬名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_new_growth_cycle"
-    }
-  }, [_vm._v("生长周期")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_new_description"
-    }
-  }, [_vm._v("特征描述")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "plant_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
+  }, [_c('button', [_vm._v("\n                    取消\n                ")])])
 }]}
 
 /***/ }),
-/* 126 */
+/* 225 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -30528,375 +38418,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
+  }, [_c('form-submit', {
     attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "name": "fodder_type",
-      "items": _vm.categorys,
-      "defaultIndex": parseInt(_vm.defaultfodderIndex),
-      "protoBack": "id",
-      "protoShow": "name"
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit,
+      "constItem": _vm.constItem
     },
     on: {
-      "callback": _vm.getMsgPid
+      "closeNew": _vm.cancelAdd,
+      "thisSet": _vm.getThis
     }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('fodder_type')),
-      expression: "errors.has('fodder_type')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('fodder_type')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "饲料名称",
-      "type": "text",
-      "id": "fodder_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.use),
-      expression: "letItem.use"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "fodder_new_use",
-      "name": "use"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.use)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.use = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.specification),
-      expression: "letItem.specification"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "fodder_new_specification",
-      "name": "specification"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.specification)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.specification = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.vender_name),
-      expression: "letItem.vender_name"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "fodder_new_vender_name",
-      "name": "vender_name"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.vender_name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.vender_name = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.address),
-      expression: "letItem.address"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "fodder_new_address",
-      "name": "address"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.address = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "fodder_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(7), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "fodder_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditfodder
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddfodder
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(8)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_select"
-    }
-  }, [_vm._v("饲料类别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_fullName"
-    }
-  }, [_vm._v("饲料名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_use"
-    }
-  }, [_vm._v("用途")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_specification"
-    }
-  }, [_vm._v("包装规格")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_vender_name"
-    }
-  }, [_vm._v("生产厂家名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_address"
-    }
-  }, [_vm._v("产地")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_phone"
-    }
-  }, [_vm._v("联系方式")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
+  })], 1)
+},staticRenderFns: []}
 
 /***/ }),
-/* 127 */
+/* 226 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -30907,337 +38444,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
+  }, [_c('form-submit', {
     attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "养殖场名称",
-      "type": "text",
-      "id": "farm_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
     },
     on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
+      "closeNew": _vm.cancelAdd,
+      "thisSet": _vm.getThis,
+      "getDate": _vm.getDate,
+      "getPic": _vm.getPic
     }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop"
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.area),
-      expression: "letItem.area"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.area),
-      expression: "letItem.area",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|decimal:2",
-      "data-vv-as": "养殖面积",
-      "type": "text",
-      "id": "farm_new_area",
-      "name": "area",
-      "placeholder": "请填写数字(必填),单位是亩"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.area)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.area = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('area')),
-      expression: "errors.has('area')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('area')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.principal),
-      expression: "letItem.principal"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "farm_new_principal",
-      "name": "principal"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.principal)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.principal = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.kind),
-      expression: "letItem.kind"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "farm_new_kind",
-      "name": "kind"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.kind)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.kind = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.scale),
-      expression: "letItem.scale"
-    }],
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "farm_new_scale",
-      "name": "scale"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.scale)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.scale = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.address),
-      expression: "letItem.address"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "farm_new_address",
-      "name": "address"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.address = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "farm_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditfarm
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddfarm
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(7)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farm_new_fullName"
-    }
-  }, [_vm._v("养殖场名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farm_new_area"
-    }
-  }, [_vm._v("养殖面积")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farm_new_principal"
-    }
-  }, [_vm._v("负责人")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farm_new_kind"
-    }
-  }, [_vm._v("养殖畜禽种类")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farm_new_scale"
-    }
-  }, [_vm._v("养殖规模")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farm_new_address"
-    }
-  }, [_vm._v("地址")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "farm_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
+  })], 1)
+},staticRenderFns: []}
 
 /***/ }),
-/* 128 */
+/* 227 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -31251,7 +38474,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 129 */
+/* 228 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -31379,7 +38602,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 130 */
+/* 229 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -31420,7 +38643,27 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 131 */
+/* 230 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "left-btn",
+    on: {
+      "click": function($event) {
+        _vm.clickEvent()
+      }
+    }
+  }, [_c('img', {
+    attrs: {
+      "src": _vm.$img('slider.png'),
+      "alt": ""
+    }
+  })])
+},staticRenderFns: []}
+
+/***/ }),
+/* 231 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -31431,476 +38674,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
+  }, [_c('form-submit', {
     attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "id": "expert_table_type",
-      "name": "expert_table_type",
-      "items": _vm.tableType,
-      "defaultIndex": parseInt(_vm.defaultTypeIndex)
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
     },
     on: {
-      "callback": _vm.getMsgType
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataVal": _vm.getMsgDataVal
     }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('table_type')),
-      expression: "errors.has('table_type')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('table_type')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.expert_name),
-      expression: "letItem.expert_name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.expert_name),
-      expression: "letItem.expert_name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "专家名称",
-      "type": "text",
-      "id": "expert_new_fullName",
-      "name": "expert_name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.expert_name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.expert_name = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('expert_name')),
-      expression: "errors.has('expert_name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('expert_name')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.major),
-      expression: "letItem.major"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.major),
-      expression: "letItem.major",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required",
-      "data-vv-as": "研究领域",
-      "type": "text",
-      "id": "expert_major",
-      "name": "major",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.major)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.major = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('major')),
-      expression: "errors.has('major')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('major')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.level),
-      expression: "letItem.level"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.level),
-      expression: "letItem.level",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required",
-      "data-vv-as": "级别",
-      "type": "text",
-      "id": "expert_level",
-      "name": "level",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.level)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.level = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('level')),
-      expression: "errors.has('level')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('level')))])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "id": "expert_sex",
-      "name": "expert_sex",
-      "items": _vm.sex,
-      "defaultIndex": parseInt(_vm.defaultSexIndex)
-    },
-    on: {
-      "callback": _vm.getMsgSex
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('sex')),
-      expression: "errors.has('sex')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('sex')))])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.age),
-      expression: "letItem.age"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.age),
-      expression: "letItem.age",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "decimal",
-      "data-vv-as": "年龄",
-      "type": "text",
-      "id": "expert_new_age",
-      "name": "age"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.age)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.age = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('age')),
-      expression: "errors.has('age')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('age')))])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.unit),
-      expression: "letItem.unit"
-    }],
-    staticClass: "input-pop",
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "expert_new_unit",
-      "name": "unit"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.unit)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.unit = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(7), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "expert_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(8), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "expert_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditExpert
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddExpert
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(9)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_table_type"
-    }
-  }, [_vm._v("操作模块")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_fullName"
-    }
-  }, [_vm._v("专家名称")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_major"
-    }
-  }, [_vm._v("研究领域")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_level"
-    }
-  }, [_vm._v("级别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_sex"
-    }
-  }, [_vm._v("性别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_age"
-    }
-  }, [_vm._v("年龄")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_unit"
-    }
-  }, [_vm._v("所属单位")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_phone"
-    }
-  }, [_vm._v("联系方式")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "expert_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
+  })], 1)
+},staticRenderFns: []}
 
 /***/ }),
-/* 132 */
+/* 232 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -31914,7 +38704,64 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 133 */
+/* 233 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId,
+      "getDate": _vm.getDate,
+      "getMsg": _vm.getMsg
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId,
+      "getDate": _vm.getDate,
+      "getMsgDataVal": _vm.getMsgDataVal
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 235 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -31979,7 +38826,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 134 */
+/* 236 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('basic-model', {
+    attrs: {
+      "title": "果蔬加工基础信息管理",
+      "taps": _vm.taps,
+      "tableLists": _vm.tableLists,
+      "number": 2
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 237 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -31990,364 +38852,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.validateBeforeSubmit($event)
       }
     }
-  }, [_c('table', {
-    staticClass: "main form-pop"
-  }, [_c('tbody', {
-    staticClass: "form-body"
-  }, [_c('tr', [_vm._m(0), _c('td', {
-    staticClass: "input-pop",
+  }, [_c('form-submit', {
     attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "required|max:255",
-      "data-vv-as": "姓名",
-      "type": "text",
-      "id": "operate_new_fullName",
-      "name": "name",
-      "placeholder": "必填"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.name)
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
     },
     on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
-      }
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataId": _vm.getMsgDataId
     }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(1), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('pop-select', {
-    attrs: {
-      "id": "operate_sex",
-      "name": "operate_sex",
-      "items": _vm.sex,
-      "protoBack": "id",
-      "protoShow": "sex",
-      "defaultIndex": parseInt(_vm.defaultSexIndex)
-    },
-    on: {
-      "callback": _vm.getMsgSex
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('sex')),
-      expression: "errors.has('sex')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('sex')))])]), _c('tr', [_vm._m(2), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.age),
-      expression: "letItem.age"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.age),
-      expression: "letItem.age",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "decimal",
-      "data-vv-as": "年龄",
-      "type": "text",
-      "id": "operate_new_age",
-      "name": "age"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.age)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.age = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('age')),
-      expression: "errors.has('age')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('age')))])]), _c('tr', [_vm._m(3), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.identity),
-      expression: "letItem.identity"
-    }],
-    staticClass: "input-pop",
-    attrs: {
-      "type": "text",
-      "value": "",
-      "id": "operate_new_identity",
-      "name": "identity",
-      "placeholder": "如后勤主管"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.identity)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.identity = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(4), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
-    }, {
-      name: "validate",
-      rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
-      modifiers: {
-        "initial": true
-      }
-    }],
-    attrs: {
-      "data-vv-rules": "phone",
-      "type": "text",
-      "id": "operate_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.phone)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
-      }
-    }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.address),
-      expression: "letItem.address"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "fodder_new_address",
-      "name": "address"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.address = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(6), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.memo),
-      expression: "letItem.memo"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "operate_new_note",
-      "name": "memo"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.memo)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.memo = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_c('td', {
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_c('div', {
-    staticClass: "footer-r"
-  }, [(_vm.edit) ? _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelEditoperate
-    }
-  }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.cancelAddoperate
-    }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(7)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "operate_new_fullName"
-    }
-  }, [_vm._v("姓名")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "operate_sex"
-    }
-  }, [_vm._v("性别")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "operate_new_age"
-    }
-  }, [_vm._v("年龄")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "operate_new_identity"
-    }
-  }, [_vm._v("身份")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "operate_new_phone"
-    }
-  }, [_vm._v("联系方式")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "fodder_new_address"
-    }
-  }, [_vm._v("联系地址")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "operate_new_note"
-    }
-  }, [_vm._v("备注信息")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "footer-r"
-  }, [_c('a', {
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('button', {
-    staticClass: "btn-pop"
-  }, [_vm._v("\n                                保存\n                            ")])])])
-}]}
+  })], 1)
+},staticRenderFns: []}
 
 /***/ }),
-/* 135 */
+/* 238 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -32401,7 +38922,188 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 136 */
+/* 239 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "date-picker"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.dateVal),
+      expression: "dateVal"
+    }],
+    attrs: {
+      "readonly": "readonly"
+    },
+    domProps: {
+      "value": _vm._s(_vm.dateVal)
+    },
+    on: {
+      "click": _vm.getDate,
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.dateVal = $event.target.value
+      }
+    }
+  }), (_vm.show) ? _c('div', {
+    staticClass: "maskLayer",
+    class: {
+      'class-opacity': _vm.opacity
+    },
+    on: {
+      "click": _vm.pop
+    }
+  }) : _vm._e(), (_vm.show) ? _c('div', {
+    staticClass: "list"
+  }, _vm._l((_vm.boxArr), function(items, set) {
+    return _c('div', {
+      staticClass: "date-div no-mode-translate-demo-wrapper"
+    }, [_c('ul', [_c('i', {
+      class: items.classTop,
+      on: {
+        "click": function($event) {
+          _vm.slideTop(items.clickTop)
+        }
+      }
+    }, [_c('img', {
+      attrs: {
+        "src": _vm.$img('arrowTop.png')
+      }
+    })]), _vm._l((items.num), function(item, key) {
+      return _c('transition', {
+        attrs: {
+          "name": _vm.className
+        }
+      }, [(_vm.getOnValue(items.on)) ? _c('li', {
+        key: "onYear",
+        class: key
+      }, [_vm._v(_vm._s(item))]) : _c('li', {
+        key: "off",
+        class: key
+      }, [_vm._v(_vm._s(item))])])
+    }), _c('i', {
+      class: items.classBottom
+    }, [_c('img', {
+      attrs: {
+        "src": _vm.$img('arrowBottom.png')
+      },
+      on: {
+        "click": function($event) {
+          _vm.slideBottom(items.clickBottom)
+        }
+      }
+    })])], 2)])
+  })) : _vm._e()])
+},staticRenderFns: []}
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.validateBeforeSubmit($event)
+      }
+    }
+  }, [_c('form-submit', {
+    attrs: {
+      "letItem": _vm.letItem,
+      "inputData": _vm.inputData,
+      "edit": _vm.edit
+    },
+    on: {
+      "closeNew": _vm.cancelAdd,
+      "closeEdit": _vm.cancelEdit,
+      "thisSet": _vm.getThis,
+      "getMsgDataVal": _vm.getMsgDataVal,
+      "getMsgDataId": _vm.getMsgDataId
+    }
+  })], 1)
+},staticRenderFns: []}
+
+/***/ }),
+/* 241 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('span', [(_vm.showImg) ? _c('img', {
+    attrs: {
+      "src": _vm.$img('ok.png')
+    }
+  }) : _vm._e()])
+},staticRenderFns: []}
+
+/***/ }),
+/* 242 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._v("\n  " + _vm._s(_vm.area) + " \n")])
+},staticRenderFns: []}
+
+/***/ }),
+/* 243 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'plant-cultivate-detail',
+        params: {
+          id: _vm.item.id
+        }
+      },
+      "tag": "span",
+      "exact": ""
+    }
+  }, [_vm._v(_vm._s(_vm.item.serial))])
+},staticRenderFns: []}
+
+/***/ }),
+/* 244 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('pop-transition', [(_vm.show) ? _c('div', {
+    key: "black",
+    staticClass: "black-layer"
+  }) : _vm._e(), (_vm.show) ? _c('div', {
+    key: "dialog",
+    staticClass: "confirm"
+  }, [_c('div', {
+    staticClass: "title"
+  }, [_vm._v("\n            " + _vm._s(_vm.title) + "\n        ")]), _c('div', {
+    staticClass: "message"
+  }, [_vm._v("\n            " + _vm._s(_vm.message) + "\n        ")]), _c('div', {
+    staticClass: "btns"
+  }, [_c('a', {
+    staticClass: "btn btn-cancel",
+    attrs: {
+      "href": "javascript:void(0)"
+    },
+    on: {
+      "click": _vm.cancelMethod
+    }
+  }, [_vm._v(_vm._s(_vm.cancel))]), _c('a', {
+    staticClass: "btn btn-confirm",
+    attrs: {
+      "href": "javascript:void(0)"
+    },
+    on: {
+      "click": _vm.confirmMethod
+    }
+  }, [_vm._v(_vm._s(_vm.confirm))])])]) : _vm._e()])
+},staticRenderFns: []}
+
+/***/ }),
+/* 245 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -32423,29 +39125,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('pop-select', {
     attrs: {
-      "id": "medicament_category_id",
-      "name": "medicament_category_id",
-      "items": _vm.categorys,
-      "defaultIndex": parseInt(_vm.defaulCatIndex),
-      "protoBack": "id",
-      "protoShow": "name"
+      "name": "detect_content",
+      "items": _vm.detectContents,
+      "defaultIndex": parseInt(_vm.defaultdetectContentIndex)
     },
     on: {
-      "callback": _vm.getMsgId
+      "callback": _vm.getMsgdetectContent
     }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('category_id')),
-      expression: "errors.has('category_id')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('category_id')))])]), _c('tr', [_vm._m(1), _c('td', {
+  })], 1)]), _c('tr', [_vm._m(1), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -32454,47 +39141,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.letItem.name),
-      expression: "letItem.name"
+      value: (_vm.letItem.residue_date),
+      expression: "letItem.residue_date"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.letItem.name),
-      expression: "letItem.name",
+      value: (_vm.letItem.residue_date),
+      expression: "letItem.residue_date",
       modifiers: {
         "initial": true
       }
     }],
     attrs: {
       "data-vv-rules": "required|max:255",
-      "data-vv-as": "农药名称",
+      "data-vv-as": "操作日期",
       "type": "text",
-      "id": "medicament_new_fullName",
-      "name": "name",
+      "id": "residue_edit_date",
+      "name": "residue_date",
       "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.letItem.name)
+      "value": _vm._s(_vm.letItem.residue_date)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.letItem.name = $event.target.value
+        _vm.letItem.residue_date = $event.target.value
       }
     }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('name')),
-      expression: "errors.has('name')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('name')))])]), _c('tr', [_vm._m(2), _c('td', {
+  })])]), _c('tr', [_vm._m(2), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -32503,36 +39178,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.letItem.usage),
-      expression: "letItem.usage"
+      value: (_vm.letItem.departments),
+      expression: "letItem.departments"
+    }, {
+      name: "validate",
+      rawName: "v-validate.initial",
+      value: (_vm.letItem.departments),
+      expression: "letItem.departments",
+      modifiers: {
+        "initial": true
+      }
     }],
     attrs: {
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "检测机构",
       "type": "text",
-      "id": "medicament_usage",
-      "name": "usage"
+      "id": "residue_edit_departments",
+      "name": "departments",
+      "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.letItem.usage)
+      "value": _vm._s(_vm.letItem.departments)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.letItem.usage = $event.target.value
+        _vm.letItem.departments = $event.target.value
       }
     }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('usage')),
-      expression: "errors.has('usage')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('usage')))])]), _c('tr', [_vm._m(3), _c('td', {
+  })])]), _c('tr', [_vm._m(3), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -32541,22 +39215,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.letItem.control_objects),
-      expression: "letItem.control_objects"
+      value: (_vm.letItem.condition),
+      expression: "letItem.condition"
     }],
-    staticClass: "input-pop",
     attrs: {
       "type": "text",
-      "id": "medicament_new_control_objects",
-      "name": "control_objects"
+      "id": "residue_edit_condition",
+      "name": "condition"
     },
     domProps: {
-      "value": _vm._s(_vm.letItem.control_objects)
+      "value": _vm._s(_vm.letItem.condition)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.letItem.control_objects = $event.target.value
+        _vm.letItem.condition = $event.target.value
       }
     }
   })])]), _c('tr', [_vm._m(4), _c('td', {
@@ -32564,55 +39237,42 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "colspan": "2"
     }
-  }, [_c('pop-select', {
-    attrs: {
-      "id": "medicament_toxicity_grade",
-      "name": "medicament_toxicity_grade",
-      "items": _vm.toxicity,
-      "defaultIndex": parseInt(_vm.defaultToxIndex)
-    },
-    on: {
-      "callback": _vm.getMsgGrade
-    }
-  })], 1)]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('toxicity_grade')),
-      expression: "errors.has('toxicity_grade')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('toxicity_grade')))])]), _c('tr', [_vm._m(5), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
   }, [_c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.letItem.specification),
-      expression: "letItem.specification"
+      value: (_vm.letItem.operator),
+      expression: "letItem.operator"
     }],
     attrs: {
       "type": "text",
-      "id": "medicament_new_specification",
-      "name": "specification"
+      "id": "residue_edit_user",
+      "name": "operator"
     },
     domProps: {
-      "value": _vm._s(_vm.letItem.specification)
+      "value": _vm._s(_vm.letItem.operator)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.letItem.specification = $event.target.value
+        _vm.letItem.operator = $event.target.value
       }
     }
-  })])]), _c('tr', [_vm._m(6), _c('td', {
+  })])]), _c('tr', [_vm._m(5), _c('td', {
+    staticClass: "input-pop",
+    attrs: {
+      "colspan": "2"
+    }
+  }, [_c('pop-select', {
+    attrs: {
+      "name": "result",
+      "items": _vm.results,
+      "defaultIndex": parseInt(_vm.defaultresultIndex)
+    },
+    on: {
+      "callback": _vm.getMsgresult
+    }
+  })], 1)]), _c('tr', [_vm._m(6), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -32621,21 +39281,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.letItem.dealer),
-      expression: "letItem.dealer"
+      value: (_vm.letItem.number),
+      expression: "letItem.number"
     }],
     attrs: {
       "type": "text",
-      "id": "medicament_new_dealer",
-      "name": "dealer"
+      "id": "residue_edit_number",
+      "name": "number"
     },
     domProps: {
-      "value": _vm._s(_vm.letItem.dealer)
+      "value": _vm._s(_vm.letItem.number)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.letItem.dealer = $event.target.value
+        _vm.letItem.number = $event.target.value
       }
     }
   })])]), _c('tr', [_vm._m(7), _c('td', {
@@ -32647,72 +39307,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.letItem.origin),
-      expression: "letItem.origin"
-    }],
-    attrs: {
-      "type": "text",
-      "id": "medicament_new_origin",
-      "name": "origin"
-    },
-    domProps: {
-      "value": _vm._s(_vm.letItem.origin)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.letItem.origin = $event.target.value
-      }
-    }
-  })])]), _c('tr', [_vm._m(8), _c('td', {
-    staticClass: "input-pop",
-    attrs: {
-      "colspan": "2"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone"
+      value: (_vm.letItem.effective_date),
+      expression: "letItem.effective_date"
     }, {
       name: "validate",
       rawName: "v-validate.initial",
-      value: (_vm.letItem.phone),
-      expression: "letItem.phone",
+      value: (_vm.letItem.effective_date),
+      expression: "letItem.effective_date",
       modifiers: {
         "initial": true
       }
     }],
     attrs: {
-      "data-vv-rules": "phone",
+      "data-vv-rules": "required|max:255",
+      "data-vv-as": "操作日期",
       "type": "text",
-      "id": "medicament_new_phone",
-      "name": "phone",
-      "placeholder": "请输入11位手机号(固话用-隔开)"
+      "id": "residue_edit_effective_date",
+      "name": "effective_date",
+      "placeholder": "必填"
     },
     domProps: {
-      "value": _vm._s(_vm.letItem.phone)
+      "value": _vm._s(_vm.letItem.effective_date)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.letItem.phone = $event.target.value
+        _vm.letItem.effective_date = $event.target.value
       }
     }
-  })])]), _c('tr', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.errors.has('phone')),
-      expression: "errors.has('phone')"
-    }]
-  }, [_c('td', {
-    staticClass: "error",
-    attrs: {
-      "colspan": "3"
-    }
-  }, [_vm._v(_vm._s(_vm.errors.first('phone')))])]), _c('tr', [_vm._m(9), _c('td', {
+  })])]), _c('tr', [_vm._m(8), _c('td', {
     staticClass: "input-pop",
     attrs: {
       "colspan": "2"
@@ -32726,7 +39349,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }],
     attrs: {
       "type": "text",
-      "id": "medicament_new_note",
+      "id": "detect_new_note",
       "name": "memo"
     },
     domProps: {
@@ -32746,105 +39369,97 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "footer-r"
   }, [(_vm.edit) ? _c('a', {
     attrs: {
-      "href": "#"
+      "href": "javascript:void(0)"
     }
   }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelEditMedicament
+      "click": _vm.cancelEditdetect
     }
   }, [_vm._v("\n                                取消\n                            ")])]) : _c('a', {
     attrs: {
-      "href": "#"
+      "href": "javascript:void(0)"
     }
   }, [_c('button', {
     attrs: {
       "type": "button"
     },
     on: {
-      "click": _vm.cancelAddMedicament
+      "click": _vm.cancelAdddetect
     }
-  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(10)])])])])])
+  }, [_vm._v("\n                                取消\n                            ")])])]), _vm._m(9)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_category_id"
+      "for": "detect_content"
     }
-  }, [_vm._v("分类")])])
+  }, [_vm._v("检测方式")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_new_fullName"
+      "for": "new_date"
     }
-  }, [_vm._v("农药名称")])])
+  }, [_vm._v("检测日期")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_usage"
+      "for": "new_matchinfor"
     }
-  }, [_vm._v("用途")])])
+  }, [_vm._v("检测机构")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_new_control_objects"
+      "for": "new_matchinfor"
     }
-  }, [_vm._v("防治对象")])])
+  }, [_vm._v("检测项目名称")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_toxicity_grade"
+      "for": "new_matchinfor"
     }
-  }, [_vm._v("分类")])])
+  }, [_vm._v("检测人")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_new_specification"
+      "for": "result"
     }
-  }, [_vm._v("包装规格")])])
+  }, [_vm._v("检测结果")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_new_dealer"
+      "for": "new_gsName"
     }
-  }, [_vm._v("经销商名称")])])
+  }, [_vm._v("证书编号")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_new_origin"
+      "for": "new_gsName"
     }
-  }, [_vm._v("产地")])])
+  }, [_vm._v("有效期")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('td', {
     staticClass: "label-tit"
   }, [_c('label', {
     attrs: {
-      "for": "medicament_new_phone"
-    }
-  }, [_vm._v("联系方式")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('td', {
-    staticClass: "label-tit"
-  }, [_c('label', {
-    attrs: {
-      "for": "medicament_new_note"
+      "for": "detect_new_note"
     }
   }, [_vm._v("备注信息")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -32852,7 +39467,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "footer-r"
   }, [_c('a', {
     attrs: {
-      "href": "#"
+      "href": "javascript:void(0)"
     }
   }, [_c('button', {
     staticClass: "btn-pop"
@@ -32860,80 +39475,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 137 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('span', [(_vm.showImg) ? _c('img', {
-    attrs: {
-      "src": _vm.$img('ok.png')
-    }
-  }) : _vm._e()])
-},staticRenderFns: []}
-
-/***/ }),
-/* 138 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n  " + _vm._s(_vm.area) + " \n")])
-},staticRenderFns: []}
-
-/***/ }),
-/* 139 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('pop-transition', [(_vm.show) ? _c('div', {
-    key: "black",
-    staticClass: "black-layer"
-  }) : _vm._e(), (_vm.show) ? _c('div', {
-    key: "dialog",
-    staticClass: "confirm"
-  }, [_c('div', {
-    staticClass: "title"
-  }, [_vm._v("\n            " + _vm._s(_vm.title) + "\n        ")]), _c('div', {
-    staticClass: "message"
-  }, [_vm._v("\n            " + _vm._s(_vm.message) + "\n        ")]), _c('div', {
-    staticClass: "btns"
-  }, [_c('a', {
-    staticClass: "btn btn-cancel",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": _vm.cancelMethod
-    }
-  }, [_vm._v(_vm._s(_vm.cancel))]), _c('a', {
-    staticClass: "btn btn-confirm",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": _vm.confirmMethod
-    }
-  }, [_vm._v(_vm._s(_vm.confirm))])])]) : _vm._e()])
-},staticRenderFns: []}
-
-/***/ }),
-/* 140 */
+/* 246 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-router");
 
 /***/ }),
-/* 141 */
+/* 247 */
 /***/ (function(module, exports) {
 
 module.exports = require("vuex-router-sync");
 
 /***/ }),
-/* 142 */
+/* 248 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(22);
 
 
 var isDev = "production" !== 'production';
