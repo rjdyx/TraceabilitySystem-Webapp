@@ -148,7 +148,7 @@
           type="text" v-bind:id="item.divfor" :name="key" v-bind:placeholder="item.placeholder" disabled="disabled"></td>
       </tr>
       <!--input框无传值-->
-      <tr v-else="">
+      <tr v-else>
           <td class="label-tit"><label v-bind:for="item.divfor">{{item.label}}</label></td>
           <td class="input-pop" colspan="2"><input 
           v-model="letItem[key]" 
@@ -167,7 +167,7 @@
         <td colspan="3">
             <div class="footer-r">
                 <a v-if="edit" href="#">
-                    <button @click="cancelEdit" type="button">
+                    <button @click="cancelAdd" type="button">
                         取消
                     </button>  
                 </a>
@@ -264,6 +264,7 @@ export default {
         this.$emit('closeEdit');
       },
       cancelAdd: function() {
+        console.log('form-submit');
         this.$emit('closeNew');
       },
       /**

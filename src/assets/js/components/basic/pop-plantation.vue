@@ -140,6 +140,13 @@
                         'placeholder': '',
                         'rules': ''
                     },
+                    'live_address': 
+                    {
+                        'label': '视频检测设备号',
+                        'divfor': 'live_address',
+                        'placeholder': '',
+                        'rules': ''
+                    },
                     'memo': 
                     {
                         'label': '备注',
@@ -222,6 +229,7 @@
             * 隐藏新增模块
             */
             cancelAdd: function() {
+                console.log('pop-plantation');
                 this.$emit('closeNew');
             },
             /**

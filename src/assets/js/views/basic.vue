@@ -22,6 +22,7 @@
 <script>
 
     import BasicModel from '../components/public/basic-model.vue';
+    import PlantationOperate from '../components/basic/plantation-operate.vue';
     import PopPlantation from '../components/basic/pop-plantation.vue';
     import AreaUnit from '../components/public/area-unit.vue';
     import PopPlanta from '../components/basic/pop-planta.vue';
@@ -48,7 +49,7 @@
                 tableLists: [
                     {
                         key: 'plantation',
-                        component: {plantation: PopPlantation, area: AreaUnit},
+                        component: {plantation: PlantationOperate, new: PopPlantation, area: AreaUnit},
                         searchPlaceholder: '种植场名称',
                         searchUrl: 'plantation',
                         theads: ['种植场名称', '种植面积', '负责人'],
