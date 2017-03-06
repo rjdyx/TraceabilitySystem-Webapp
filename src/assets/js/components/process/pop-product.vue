@@ -247,7 +247,7 @@
             */
             cancelAdd: function() {
                 this.$emit('closeNew');
-            },
+            },  
             /**
             * 隐藏编辑模块
             * @param letItem

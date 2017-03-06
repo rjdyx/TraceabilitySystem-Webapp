@@ -290,6 +290,7 @@
                 this.$http.get(this.$adminUrl('cultivate/query')).then((response)=>{
                     let plantationName=[];
                     let names = response.body.cultivates.data;
+                    // console.log(names)
                     // 先将第一个传入数组，再进行循环比较
                     if(names.length !=0 ) {
                         plantationName.push(names[0])
@@ -299,6 +300,7 @@
                             if(item.plantation_name !== name.plantation_name){
                                 plantationName.push(name)
                             }
+                            // console.log(plantationName[0])
                         })
                         
                     }
@@ -308,13 +310,13 @@
 
                 if (this.edit) {
                     this.$http.get(this.$adminUrl('cultivate/query?params[plantation_id]='+this.letItem.plantation_id+'&params[state]=0')).then((response)=>{
-                        this.$set(this, 'plantIds', response.body);
+                        this.$set(this, 'plantIds', response.body.data);
+                        // console.log(response.body.data.cultivates.plantation_id)
                     }, (response)=>{
                     });
                 }
                 this.$http.get(this.$adminUrl('cultivate/query?params[cultivate_id]='+this.letItem.plantation_id)).then((response)=>{
                     this.$set(this, 'plantIds', response.body.cultivates.data);
-
                 }, (response)=>{
 
                 });
@@ -371,16 +373,15 @@
             * CallBack函数,执行回调函数 
             */
             getMsgplantId (msg) {
-                this.letItem.cultivate_id = msg;
-                console.log(msg)
-                 this.$http.get(this.$adminUrl('cultivate/query?params[cultivate_id]='+msg)).then((response)=>{
-                    // console.log(response)
-                        // console.log(response.body.cultivates.data[0]['cultivate_area'])
+                this.letItem.id = msg;
+                // console.log(msg)?
+                 this.$http.get(this.$adminUrl('cultivate/query?')).then((response)=>{
+                        this.$set(this, 'plantIds', response.body.cultivates.data);
+                        // console.log(msg)
                         this.letItem.plant_name=response.body.cultivates.data[0]['plant_name'];
                         this.letItem.cultivate_date=response.body.cultivates.data[0]['cultivate_date'];
                         this.letItem.area=response.body.cultivates.data[0]['area'];
                         this.letItem.area_unit=response.body.cultivates.data[0]['area_unit'];
-                        // this.$set(this, 'plantIds', response.body.cultivates.data);
                     }, (response)=>{
                     });
 
@@ -389,7 +390,8 @@
                 this.letItem.plantation_id = msg;      
                 this.$http.get(this.$adminUrl('cultivate/query?params[plantation_id]='+msg+'&params[state]=0')).then((response)=>{
                         this.$set(this, 'plantIds', response.body.cultivates.data);
-                    }, (response)=>{
+                        // console.log(msg)
+                    // }, (response)=>{
                     });
 
             },

@@ -27,6 +27,10 @@ const dailylog = require('../views/dailylog.vue')
 const record = require('../views/record.vue')
 
 
+
+
+
+ 
  
 //=============================种植管理====================================
 //---------------------------种植基础信息管理----------------------------------
@@ -44,6 +48,7 @@ const fertilize = require('../views/fertilize.vue')
 //=============================果蔬采收批次管理====================================
 //---------------------------果蔬采收批次管理----------------------------------
 const vegetableHarvest = require('../views/vegetable-harvest.vue')
+const cultivateDetail = require('../components/vegetable-harvest/cultivate-detail.vue')
 //---------------------------果蔬检测管理----------------------------------
 const vegetableDetection = require('../views/vegetable-detection.vue')
 
@@ -91,12 +96,19 @@ const routes = [
                 component: vegetableHarvest,
                 meta: { requiresAuth: true }
             },
+
+             {
+                path: 'cultivate-detail/:id',
+                name:'cultivate-detail',
+                component: cultivateDetail,
+                meta: { requiresAuth: true }
+            },
             {
                 path: 'vegetable-detection',
                 name:'vegetable-detection',
                 component: vegetableDetection,
                 meta: { requiresAuth: true }
-            },
+            }, 
             {
                 path: 'plant-cultivate-detail/:id',
                 name:'plant-cultivate-detail',

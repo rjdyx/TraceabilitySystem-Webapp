@@ -20,7 +20,7 @@
 </style>
 
 <script>
- 
+  
     import {mapMutations} from 'vuex';
     import BasicModel from '../public/basic-model.vue';
     import PopFarm from './pop-farm.vue'

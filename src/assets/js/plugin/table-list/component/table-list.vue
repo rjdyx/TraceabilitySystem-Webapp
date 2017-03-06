@@ -67,7 +67,7 @@
  * 
  * Events:
  * 
- * @function selectAll
+ * @function selectAll 
  * 返回：
  * 必用：false
  * 描述：点击全选按钮时触发

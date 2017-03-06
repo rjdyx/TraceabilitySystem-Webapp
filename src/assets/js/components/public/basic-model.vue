@@ -24,11 +24,11 @@
                 :params="params"
                 :theads="theads"
                 :protos="protos"
-                :widths="widths"
+                :widths="widths" 
             >
             </table-manage> 
         </navbar>
-        
+         
         
     </div>
 </template>
@@ -86,7 +86,7 @@
                 params: null,
                 theads: [],
                 protos: [],
-                widths: []
+                widths: [] 
             }
         },
         components:{

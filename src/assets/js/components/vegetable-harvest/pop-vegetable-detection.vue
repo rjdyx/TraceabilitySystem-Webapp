@@ -209,17 +209,19 @@
                 results:['合格', '不合格'],
                 expertIds: [],
                 tmp: {
-                    'cultivate_id': 0,
-                    'id': '',
-                    'residue_date': '',
-                    'departments': '',
-                    'condition':'',
-                    'number':'',
-                    'item': '',
-                    'expert_id': '',
-                    'operator': '',
-                    'result': '合格',
-                    'memo': ''
+                     'cultivate_id': 0,
+                        'plantation_name':'',
+                        harvest_serial:'',
+                        'id': '',
+                        'residue_date': '',
+                        'departments': '',
+                        'condition':'',
+                        'number':'',
+                        'item': '',
+                        'expert_id': '',
+                        'operator': '',
+                        'result': '合格',
+                        'memo': ''
                 },
                 
             }
@@ -268,7 +270,7 @@
            getHarvesttion () {
 
                 this.$http.get(this.$adminUrl('residue/query')).then((response)=>{
-                    console.log(response)
+                    // console.log(response)
                     this.$set(this, 'letItem', response.body);
                 }, (response)=>{
 

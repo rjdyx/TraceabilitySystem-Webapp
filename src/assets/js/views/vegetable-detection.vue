@@ -10,10 +10,10 @@
     <div id="cultivate">
         <table-manage
             ref="tableList"
-            _key="cultivate"
+            _key="residue"
             :component="component"
             searchPlaceholder="采收批次号搜索"
-            searchUrl="cultivate"
+            searchUrl="residue"
             :theads="theads"
             :protos="protos"
             :widths="widths"
@@ -22,7 +22,6 @@
     </div>
 </template>
 <style lang="sass" scoped> 
-
     @import "../../sass/function";
     @import "../../sass/_percent.scss";
 </style> 
@@ -37,9 +36,9 @@
         name: 'VegetableDetetion',
         data(){
             return{
-                component: {new: PopVegetableDetection, cultivate: EditVegetableDetection, serial: CultivateNumber},
+                component: {new: PopVegetableDetection, residue: EditVegetableDetection, serial: CultivateNumber},
                 theads: ['种植区', '批次号', '果蔬名称'],
-                protos: ['plantation_name', 'serial', 'plant_name'],
+                protos: ['plantation_name', 'harvest_serial', 'departments'],
                 widths: [26, 30, 17]
             }
         },

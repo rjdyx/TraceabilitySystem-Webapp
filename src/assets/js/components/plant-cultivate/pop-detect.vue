@@ -203,6 +203,7 @@
 
                 this.$http.get(this.$adminUrl('expert/query?params[type]=detect')).then((response)=>{
                     this.$set(this.inputData['expert_id'], 'data', response.body.experts.data);
+                    console.log(response.body)
                     this.inputData['expert_id']['data'].unshift({id: '' ,expert_name: '无'})
                 }, (response)=>{
 

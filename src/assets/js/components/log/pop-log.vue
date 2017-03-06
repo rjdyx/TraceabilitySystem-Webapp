@@ -233,7 +233,6 @@
             */
             getAllMsg () {
                 this.$http.get(this.$adminUrl('dailylog') + '/' + this.cultivateId + '/edit').then((response)=>{
-
                     this.$set(this, 'log', response.body.dailylog);
                     console.log(response.body.fertilize_way);
                     this.$set(this, 'fertilizeWays', response.body.fertilize_way);

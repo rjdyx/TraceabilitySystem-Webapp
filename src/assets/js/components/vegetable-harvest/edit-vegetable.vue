@@ -199,7 +199,7 @@
                         'operator': '',
                         'memo': '',
                         'cultivate_area':'',
-                    }
+                    } 
                 }  
             },
             // 表示此模块是编辑模块还是新增模块的标志
@@ -277,9 +277,10 @@
             */
             getHarvesttion () {
 
-                this.$http.get(this.$adminUrl('harvest/16/edit')).then((response)=>{
-                    console.log(response)
+                this.$http.get(this.$adminUrl('harvest/26/edit')).then((response)=>{
+                    // console.log(response)
                     this.$set(this, 'constItem', response.body);
+                    // this.$set(this.'plantation_ids',response.body.)
                 }, (response)=>{
 
                 });

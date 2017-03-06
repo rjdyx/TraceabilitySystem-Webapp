@@ -4,7 +4,7 @@
  * @description 
  * @author 苏锐佳
  * @date 2016/12/14
- * 
+ *  
  */
 <template>
     <div>
@@ -12,7 +12,7 @@
             title="种植基础信息管理"
             :taps="taps"
             :tableLists="tableLists"
-        ></basic-model>
+        ></basic-model> 
     </div>
 </template>
  
@@ -36,7 +36,7 @@
     export default{
         name: 'Basic',
         data(){
-            return{
+            return{ 
                 taps:[
                     {name: '种植场信息', key: 'plantation'},
                     {name: '种植区信息', key: 'planta'},
@@ -73,7 +73,7 @@
                         protos: ['name', 'growth_cycle', 'image'],
                         widths: [32, 24, 17]
                     },
-                    {
+                    { 
                         key: 'manure',
                         component: {manure: PopManure},
                         searchPlaceholder: '肥料名称',

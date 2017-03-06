@@ -3,7 +3,7 @@
  * 种植批次管理
  * @description 
  * @author 苏锐佳
- * @date 2017/02/04
+ * @date 2017/02/04  
  * 
  */ 
 <template>
@@ -27,7 +27,7 @@
     @import "../../sass/_percent.scss";
  
 </style>
-<script>
+<script> 
      
     import {mapMutations} from 'vuex';
     import TableManage from '../components/public/table-manage.vue';

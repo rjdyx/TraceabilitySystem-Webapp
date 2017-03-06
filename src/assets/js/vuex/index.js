@@ -15,10 +15,10 @@ const store = new Vuex.Store({
         // 是否显示消息弹窗
         showLayer: false,
         // 弹窗的内容组件
-        layerComponent: null
+        layerComponent: null 
     },
     mutations: {
-
+ 
     	/**
     	 * 设置标题
     	 */

@@ -100,7 +100,7 @@
                 type:String,
                 default: ''
             }
-        },
+        }, 
         //计算属性
         computed: {
             showMsg: {

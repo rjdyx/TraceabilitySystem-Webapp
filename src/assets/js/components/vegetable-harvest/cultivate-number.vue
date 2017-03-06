@@ -1,11 +1,11 @@
- /**
+/**
  * 批次号组件
  * @description 
- * @author 舒丹彤
- * @date 2017/02/22
+ * @author 苏锐佳
+ * @date 2017/02/07
  *  
  * Props:
- * 
+ *  
  * @param  item 
  * 类型：Object
  * 是否必填：false
@@ -17,7 +17,6 @@
 <template>
         <router-link :to="{name: 'cultivate-detail', params: {id: item.id}}" tag="span" exact>{{item.serial}}</router-link>
 </template>
-    
 <script>
   export default {
     name:'ResearchField',

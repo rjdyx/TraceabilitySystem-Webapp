@@ -19,7 +19,7 @@
 
 <style>
 </style>
-
+ 
 <script> 
     import BasicModel from '../components/public/basic-model.vue';
     import PopProduct from '../components/process/pop-product.vue';
@@ -42,7 +42,7 @@
                         protos: ['name', 'marque', 'production_unit'],
                         widths: [32, 24, 17]
                     },
-                    {
+                    { 
                         key: 'distributor',
                         component: {distributor: PopDistributor},
                         searchPlaceholder: '经销商名称',

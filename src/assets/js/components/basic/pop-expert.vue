@@ -58,7 +58,6 @@
 
 @import "../../../sass/function";
 
-
 </style>
 
 <script>

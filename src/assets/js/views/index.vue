@@ -7,7 +7,7 @@
  * 
  */
 <template>
-
+ 
     <div>
         <!-- 顶部 -->
         <my-header :title="title">
@@ -55,7 +55,7 @@
 	#mynprogress {
 	    width: 100%;
     	height: 3px;
-	}
+	} 
 
 </style>
 <script>
@@ -82,7 +82,7 @@
                         isEvent: true,
                         children: []
                     },
-                    {
+                    { 
                         name:'种植管理',
                         role: 'plantation',
                         isEvent: false,

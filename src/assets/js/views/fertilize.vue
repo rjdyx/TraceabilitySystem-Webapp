@@ -29,7 +29,7 @@
 
 </style>
 <script>
-    
+     
     import {mapMutations} from 'vuex';
     import TableManage from '../components/public/table-manage.vue';
 

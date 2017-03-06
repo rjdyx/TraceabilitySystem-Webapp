@@ -1,5 +1,5 @@
 /**
- * 
+ *  
  * 果蔬采收批次管理
  * @description 
  * @author 舒丹彤
@@ -10,16 +10,16 @@
     <div id="cultivate">
         <table-manage
             ref="tableList"
-            _key="cultivate"
+            _key="harvest"
             :component="component"
             searchPlaceholder="果蔬批次号搜索"
-            searchUrl="cultivate"
+            searchUrl="harvest"
             :theads="theads"
             :protos="protos"
             :widths="widths"
         > 
         </table-manage> 
-    </div>
+    </div> 
 </template>
 <style lang="sass" scoped>
 
@@ -30,15 +30,15 @@
 <script>
     import {mapMutations} from 'vuex';
     import TableManage from '../components/public/table-manage.vue';
-    import  PopVegetable from '../components/vegetable-harvest/pop-vegetable.vue';
+    import PopVegetable from '../components/vegetable-harvest/pop-vegetable.vue';
     import EditVegetable from '../components/vegetable-harvest/edit-vegetable.vue';
-    import CultivateNumber from '../components/plant-cultivate/cultivate-number.vue';
+    import CultivateNumber from '../components/vegetable-harvest/cultivate-number.vue';
 
     export default{
         name: 'VegetableHarvest',
         data(){
             return{
-                component: {new: PopVegetable, cultivate: EditVegetable, serial: CultivateNumber},
+                component: {new: PopVegetable, harvest: EditVegetable, serial: CultivateNumber},
                 theads: ['种植区', '批次号', '果蔬名称'],
                 protos: ['plantation_name', 'serial', 'plant_name'],
                 widths: [26, 30, 17]

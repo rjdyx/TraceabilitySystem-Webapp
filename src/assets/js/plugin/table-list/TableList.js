@@ -22,7 +22,7 @@ class TableList {
 	unshiftList(item) {
 		this.list.unshift(item)
 	}
-
+ 
 	setSelectedLists(selectedLists) {
         this.selectedLists = selectedLists
     }

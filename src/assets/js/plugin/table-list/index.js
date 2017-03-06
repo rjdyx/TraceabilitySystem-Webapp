@@ -5,14 +5,11 @@ import tableListComponent from './component/table-list.vue'
 
 export default {
     install() {
-
-
     	if(Vue.prototype.$tableList == undefined) {
     		Object.defineProperty(Vue.prototype, '$tableList', {
 			    get () { return TableList.tableList }
 			})
-    	}
-	    
+    	}	    
 	    Vue.mixin({
 			data() {
 		        return {

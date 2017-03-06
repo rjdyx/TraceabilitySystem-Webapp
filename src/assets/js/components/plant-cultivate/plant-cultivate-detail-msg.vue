@@ -86,6 +86,7 @@
             }
             this.$http.get(this.$adminUrl('plantation/cultivate/detail', 'p'), {params: params}).then((responce) => {
                 this.cultivateMsg = responce.data;
+                console.log(responce.data)
             }, (error) => {
 
             })
