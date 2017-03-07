@@ -19,7 +19,7 @@
             :widths="widths"
         >
         </table-manage> 
-    </div>
+    </div> 
 </template>
 <style lang="sass" scoped> 
     @import "../../sass/function";

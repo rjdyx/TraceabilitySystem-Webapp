@@ -288,7 +288,7 @@
             */
            getHarvesttion () {
                 this.$http.get(this.$adminUrl('residue/5/edit')).then((response)=>{
-                    console.log(response)
+                    // console.log(response)
                     this.$set(this, 'letItem', response.body);
                 }, (response)=>{
                 });
@@ -303,7 +303,7 @@
                         this.letItem.Approval = '';
                     }
                     this.$update(this, 'detect', this.letItem).then((response) => {
-                        console.log(response)
+                        // console.log(response)
                         for(let key of Object.keys(this.letItem)){
                             this.tmp[key] = this.letItem[key];
                         }

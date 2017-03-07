@@ -1,3 +1,4 @@
+es (327 sloc)  12.6 KB
 /**
  * 采收批次管理编辑组件
  * @description 
@@ -174,13 +175,10 @@
 </template>
 
 <style lang="sass" scoped>
-
 @import "../../../sass/function";
-
 </style>
 
 <script>
-
     export default {
         name: 'Editvegetable',
         props: {
@@ -271,21 +269,17 @@
             }
         },
         methods: {
-
             /**
             * 获取相关采收批次信息
             */
             getHarvesttion () {
-
                 this.$http.get(this.$adminUrl('harvest/26/edit')).then((response)=>{
                     // console.log(response)
                     this.$set(this, 'constItem', response.body);
                     // this.$set(this.'plantation_ids',response.body.)
                 }, (response)=>{
-
                 });
             },
-
             /**
             * 提交表单
             */
@@ -326,7 +320,6 @@
             cancelAddharvest () {
                 this.$emit('closeNew');
             },
-
             /**
             * 隐藏编辑模块
             * @param letItem
@@ -346,5 +339,4 @@
             }
         },
     }
-
 </script>
