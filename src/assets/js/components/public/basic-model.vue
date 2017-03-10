@@ -37,7 +37,7 @@
 </style>
  
 <script>
-
+ 
     import {mapMutations} from 'vuex';
     import Navbar from './navbar.vue';
     import tableManage from './table-manage.vue';
@@ -110,6 +110,11 @@
         methods: {
             ...mapMutations([
                 'setTitle'
+
+
+
+
+                
             ]),
 
             flashList (key) {

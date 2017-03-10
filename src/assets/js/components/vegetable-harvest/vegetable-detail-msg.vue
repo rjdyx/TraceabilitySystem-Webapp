@@ -22,7 +22,7 @@
             <li><span>备注信息:</span>{{vegetableMsg.memo}}</li>
         </ul>
     </div>
-</template>
+</template> 
 
 <style lang="sass" scoped>
 

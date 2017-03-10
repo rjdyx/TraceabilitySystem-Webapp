@@ -23,7 +23,7 @@
  * 默认值：3
  * 描述：定义每一行显示多少个tap
  * 
- */
+ */ 
 <template>
     <div class="nav-top">
         <ul class="nt-ul">
@@ -42,7 +42,6 @@
                 </li>
             </ul>
         </transition>
-        
 
         <div 
             v-if="taps.length > number"
@@ -136,7 +135,7 @@
                 this.isMore = true;
             }
         }
-
+ 
     }
   }
 

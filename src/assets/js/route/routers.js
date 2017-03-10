@@ -63,6 +63,15 @@ const processBasic = require('../views/process-basic.vue')
 const beast = require('../views/beast.vue')
 
 
+//=============================生产计划表====================================
+const calendar=require('../views/calendar.vue')
+//---------------------------新建生产计划信息表----------------------------------
+const message=require('../components/product/message.vue')
+//---------------------------选择种植批次----------------------------------
+const harvest=require('../components/product/harvest.vue')
+
+
+
 const routes = [
     
     { 
@@ -156,6 +165,24 @@ const routes = [
                 name: 'process-basic',
                 component: processBasic,
                 meta: { requiresAuth: true }
+            },
+            {
+                path: 'calendar',
+                name: 'calendar',
+                component: calendar,
+                meta: { requiresAuth: true }
+            },
+            {
+                path:'message',
+                name:'message',
+                component:message,
+                meta:{requiresAuth:true}
+            },
+            {
+                path:'harvest',
+                name:'harvest',
+                component:harvest,
+                meta:{requiresAuth:true}
             }
         ]
     },

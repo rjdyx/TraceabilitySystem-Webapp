@@ -249,7 +249,7 @@
                             return index;
                         }
                     }
-                    
+                     
                 }
             },
         },
@@ -263,14 +263,13 @@
             }
         },
         methods: {
-
+ 
             /**
             * 获取所有专家
             */
            getHarvesttion () {
-
                 this.$http.get(this.$adminUrl('residue/query')).then((response)=>{
-                    // console.log(response)
+                    // console.log(response) 
                     this.$set(this, 'letItem', response.body);
                 }, (response)=>{
 

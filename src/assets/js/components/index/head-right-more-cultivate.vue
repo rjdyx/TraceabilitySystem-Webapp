@@ -27,7 +27,7 @@
 
   export default {
     name:'HeadRightMore',
-    methods: {
+    methods: { 
 
         ...mapMutations([
             'setShowLayer',

@@ -9,7 +9,7 @@
 <template>
     <div>
         <basic-model
-            title="种植基础信息管理"
+            title="种植基础信息管理" 
             :taps="taps"
             :tableLists="tableLists"
         ></basic-model> 

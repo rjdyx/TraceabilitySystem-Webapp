@@ -50,7 +50,7 @@ const store = new Vuex.Store({
         setHeadRightComponent(state, component) {
             state.headRightComponent = component;
         },
-
+        
         setShowLayer(state, type) {
             if (typeof type == 'boolean') {
                 state.showLayer = type; 
