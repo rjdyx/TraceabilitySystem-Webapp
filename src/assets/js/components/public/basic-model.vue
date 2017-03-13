@@ -1,4 +1,4 @@
-/**
+ /**
  * 
  * 包含tap的列表顶层组件
  * @description 
@@ -37,7 +37,7 @@
 </style>
  
 <script>
- 
+  
     import {mapMutations} from 'vuex';
     import Navbar from './navbar.vue';
     import tableManage from './table-manage.vue';
@@ -78,7 +78,7 @@
             }
         },
         data(){
-            return {
+            return { 
                 _key: '',
                 component: null,
                 searchPlaceholder: '',

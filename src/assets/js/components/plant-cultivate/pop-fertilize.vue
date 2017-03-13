@@ -47,7 +47,7 @@
             :inputData="inputData"
             :edit="edit"
             @closeNew="cancelAdd"
-            @thisSet="getThis"
+            @thisSet="getThis"   
             @getMsgDataId="getMsgDataId"
             @getDate="getDate"
             @getMsg="getMsg"
@@ -195,7 +195,7 @@
                 val:''
             }
         },
-        computed: {
+        computed: { 
             
         },
         mounted () {

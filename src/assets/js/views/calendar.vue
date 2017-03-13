@@ -44,15 +44,20 @@
         <!-- 弹出提示框 --> 
         <div class="layer" v-if="willshow">
           
-            <div class="tip" @mousedown="play">
+            <div class="tip">
                 <span class="close" @click=close()></span>
                 <div class="tip_title">
-                    <router-link to="message" class="tip_title_message"><h2>新建生产计划信息</h2></router-link>
-                    <router-link to="harvest" class="tip_title_harvest"><h2>选择种植批次</h2></router-link>
-                    <!-- <navbar :taps="taps" @getKey="flashList"></navbar> -->
-
+                    <!-- <router-link to="message" class="tip_title_message"><h2>新建生产计划信息</h2></router-link>
+                    <router-link to="harvest" class="tip_title_harvest"><h2>选择种植批次</h2></router-link> -->
+                    <navbar :taps="taps"></navbar>
                 </div>
-               
+               <message></message>
+                <div class="tip_footer">
+              <div class="footer_btn">
+                  <a class="save" @click='save'>保存</a>
+                  <a class="cancel" @click='close'>取消</a>
+              </div>
+          </div>
             </div>
         </div>
     </div>
@@ -60,16 +65,20 @@
     </div>
 </template>
 <script>
- // import all from '../components/product/allcalendar.vue';
+ // import All from '../componesnts/product/allcalendar.vue';
  import Navbar from '../components/public/navbar.vue'
+ import  Message from '../components/product/message.vue';
+
 export default {
   name: 'hello',
         data() {
             return {
-                // taps:[
-                //   {name:'新建生产计划信息','key':'message'},
-                //   {name:'恢复而发','key':'harvest'}
-                // ],
+              active:0,
+              currentView:'child1',
+                taps:[
+                  {name:'新建生产计划信息','key':'message'},
+                  {name:'选择种植批次','key':'harvest'}
+                ],
                 currentDay: 1,
                 currentMonth: 1,
                 currentYear: 1970,
@@ -78,8 +87,6 @@ export default {
                 willshow:false,
                 taskShow:false,
                 msg:'',
-                
-                
             }
         },
         created() {
@@ -133,16 +140,15 @@ export default {
                 this.msg=today
             },
             save:function(){
-                // this.taskShow=!this.taskShow
+                this.taskShow=!this.taskShow
             },
             //判断select框文本改变触发的事件
-            select(){
-                
+            select(){    
 
             },
             close(){
                 this.willshow=!this.willshow
-                return false
+                
             },
             pickPre(year, month) {
                 // setDate(0); 上月最后一天
@@ -157,7 +163,7 @@ export default {
                 d.setDate(35);
                 this.initData(this.formatDate(d.getFullYear(), d.getMonth() + 1, 1));
             },
-            // 返回 类似 2016-01-02 格式的字符串
+             // 返回 类似 2016-01-02 格式的字符串
             formatDate(year, month, day) {
                 var y = year;
                 var m = month;
@@ -166,44 +172,20 @@ export default {
                 if(d < 10) d = "0" + d;
                 return y + "-" + m + "-" + d
             },
-             flashList (key) {
-                for(let item of this.tableLists){
-                    if(item.key == key) {
-                        this._key = item.key;
-                        this.searchPlaceholder = item.searchPlaceholder;
-                        this.searchUrl = item.searchUrl;
-                        this.params = item.params;
-                        this.excInit = item.excInit == undefined ? true:item.excInit;
-                        this.theads = item.theads;
-                        this.protos = item.protos;
-                        this.widths = item.widths;
-                        this.component = item.component;
-                        this.$refs.tableManage.closeNew();
-                    }
-                }
-            },
-            play(e){
-              var w=e.pageX-$(".box").offset().left;
-              var h=e.pageY-$(".box").offset().top;
-              $(document).mousemove(function(e){
-                $(".tip").css("left",e.pageX-w);
-                $(".box").css("top",e.pageY-h)
-              });
-              $(document).mouseup(function(){
-                $(document).off(); 
-              });
-            }
         },
         components:{
-            // all
-            Navbar
+            // All,
+            Navbar,
+            Message
         }
     }
 </script>
 
 <style lang='sass'>
     @import "../../sass/_percent.scss";
-
+.active{
+  color:red
+}
 html, body {
   height: 100%;
 }

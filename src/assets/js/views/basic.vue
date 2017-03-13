@@ -21,7 +21,7 @@
 
 <script>
 
-    import BasicModel from '../components/public/basic-model.vue';
+    import BasicModel from '../components/public/basic-model.vue' ;
     import PlantationOperate from '../components/basic/plantation-operate.vue';
     import PopPlantation from '../components/basic/pop-plantation.vue';
     import AreaUnit from '../components/public/area-unit.vue';
@@ -47,7 +47,7 @@
                     {name: '专家档案', key: 'expert'}
                 ],
                 tableLists: [
-                    {
+                    { 
                         key: 'plantation',
                         component: {plantation: PlantationOperate, new: PopPlantation, area: AreaUnit},
                         searchPlaceholder: '种植场名称',

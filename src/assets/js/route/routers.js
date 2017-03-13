@@ -172,7 +172,7 @@ const routes = [
                 component: calendar,
                 meta: { requiresAuth: true }
             },
-            {
+            {  
                 path:'message',
                 name:'message',
                 component:message,

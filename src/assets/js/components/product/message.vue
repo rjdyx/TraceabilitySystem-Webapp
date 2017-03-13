@@ -1,66 +1,55 @@
 <template>
   	<div>
   		<form>
-                    <div class="tip_content">
-                        <div class="tip_date">
-                            <em>*</em>
-                            <label>计划日期：</label>
-                            <span>{{msg}}</span>
-                        </div>
-                        <div class="tip_date">
-                            <em>*</em>
-                            <label>操作类型：</label>
-                            <select v-model="selected">
-                              <option v-for="yx in YX" :value="yx.text">
-                                  {{yx.text}}
-                              </option>
-                            </select>
-                        </div>
-                        <div class="tip_date">
-                            <em>*</em>
-                            <label>农药名称：</label>
-                         <select>
-                          <option v-for="zy in selection" :value="zy.text" :selected="$index == 0 ? true : false">
-                              {{zy.text}}
-                          </option>
-                        </select>
-                        </div>
-                        <div class="tip_date">
-                            <em>*</em>
-                            <label>计划数量：</label>
-                         <select>
-                          <option v-for="zy in selection" :value="zy.text" :selected="$index == 0 ? true : false">
-                              {{zy.text}}
-                          </option>
-                        </select>
-                        </div>
-                        <div class="tip_date">
-                            <label>计划内容：</label>
-                            <input type="text" name="">
-                        </div>
-                        <div class="tip_date">
-                            <label>安排人员：</label>
-                            <input type="text" name="">
-                        </div>
-                        <div class="tip_date">
-                            <label>备注信息：</label>
-                            <input type="text" name="" class="memo">
-                        </div>
-                    </div>
-                    <div class="tip_footer">
-                        <div class="footer_btn">
-                            <a class="save" @click='save'>保存</a>
-                            <a class="cancel" @click='close()'>取消</a>
-                        </div>
-                    </div>
-                </form>
+          <div class="tip_content">
+              <div class="tip_date">
+                  <em>*</em>
+                  <label>计划日期：</label>
+                  <span>{{msg}}</span>
+              </div>
+              <div class="tip_date">
+                  <em>*</em>
+                  <label>操作类型：</label>
+                  <select v-model="selected">
+                    <option v-for="yx in YX" :value="yx.text">
+                        {{yx.text}}
+                    </option>
+                  </select>
+              </div>
+              <div class="tip_date">
+                  <em>*</em>
+                  <label>农药名称：</label>
+               <select>
+                <option v-for="zy in selection" :value="zy.text" :selected="$index == 0 ? true : false">
+                    {{zy.text}}
+                </option>
+               </select>
+              </div>
+              <div class="tip_date">
+                  <em>*</em>
+                  <label>计划数量：</label>
+               <input type="text" name="">
+              </div>
+              <div class="tip_date">
+                  <label>计划内容：</label>
+                  <input type="text" name="">
+              </div>
+              <div class="tip_date">
+                  <label>安排人员：</label>
+                  <input type="text" name="">
+              </div>
+              <div class="tip_date">
+                  <label>备注信息：</label>
+                  <input type="text" name="" class="memo">
+              </div>
+          </div>
+         
+      </form>
   	</div>
 </template>
 
 <script>
-
 export default {
-	
   name: 'all',
 		data() {
 			return {
@@ -89,7 +78,7 @@ export default {
               },  {
                 text: "无害除草剂"
               }, {
-                text: "果树营养宝"
+                text: "果树营养"
               },]
             },{
               text:'采收'
@@ -108,11 +97,25 @@ export default {
         this.$http.get(this.$adminUrl('manure/query')).then((response)=>{
           console.log(response.body.all)
         },(response)=>{
-
         })
       },
+      submit(){
+        let self=this,
+        params={
+          id:0,
+          type:1,
+          content:'',
+          time:''
+        };
+        self.content=self.content.trim();
+        if(self.content){
+          params.content=self.content;
+          self.$store.dispatch('addevent',params);
+          self.content=''
+        }
+      },
     },
-     computed: {
+    computed: {
         selection: {
           get: function() {
             var that = this;
@@ -120,18 +123,19 @@ export default {
               return item.text == that.selected;
             })[0].ZY;
           }
-        }
-  }
+     }
+  },
 		}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="sass">
     @import "../../../sass/_percent.scss";
+
 .tip_date {
   width: 444px;
   margin-left: 61px;
-  margin-top: 20px;
+  margin-top: 10px;
   height: 30px;
   line-height: 30px;
   em, label, span {
